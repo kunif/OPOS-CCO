@@ -1,0 +1,54 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposCacc.hi
+//
+//   Coin Acceptor header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 2007-01-30 OPOS Release 1.11                                  CRM
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSCACC_HI)
+#define      OPOSCACC_HI
+
+
+#include "Opos.hi"
+#include "OposCacc.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXCacc_DepositAmount       =   1 + PIDX_CACC+PIDX_NUMBER;
+const LONG PIDXCacc_DepositStatus       =   2 + PIDX_CACC+PIDX_NUMBER;
+const LONG PIDXCacc_FullStatus          =   3 + PIDX_CACC+PIDX_NUMBER;
+const LONG PIDXCacc_RealTimeDataEnabled =   4 + PIDX_CACC+PIDX_NUMBER;
+
+// * Capabilities *
+
+const LONG PIDXCacc_CapDiscrepancy      = 501 + PIDX_CACC+PIDX_NUMBER;
+const LONG PIDXCacc_CapFullSensor       = 502 + PIDX_CACC+PIDX_NUMBER;
+const LONG PIDXCacc_CapJamSensor        = 503 + PIDX_CACC+PIDX_NUMBER;
+const LONG PIDXCacc_CapNearFullSensor   = 504 + PIDX_CACC+PIDX_NUMBER;
+const LONG PIDXCacc_CapPauseDeposit     = 505 + PIDX_CACC+PIDX_NUMBER;
+const LONG PIDXCacc_CapRealTimeData     = 506 + PIDX_CACC+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXCacc_CurrencyCode        =   1 + PIDX_CACC+PIDX_STRING;
+const LONG PIDXCacc_DepositCashList     =   2 + PIDX_CACC+PIDX_STRING;
+const LONG PIDXCacc_DepositCodeList     =   3 + PIDX_CACC+PIDX_STRING;
+const LONG PIDXCacc_DepositCounts       =   4 + PIDX_CACC+PIDX_STRING;
+
+
+#endif          // !defined(OPOSCACC_HI)

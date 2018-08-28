@@ -1,0 +1,43 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposMotion.hi
+//
+//   Motion Sensor header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 2002-08-17 OPOS Release 1.7                                   CRM
+// 2005-04-29 OPOS Release 1.9                                   CRM
+//   Remove validation functions.
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSMOTION_HI)
+#define      OPOSMOTION_HI
+
+
+#include "Opos.hi"
+#include "OposMotion.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXMotion_Timeout           =   1 + PIDX_MOTION+PIDX_NUMBER;
+const LONG PIDXMotion_Motion            =   2 + PIDX_MOTION+PIDX_NUMBER;
+
+
+// * Capabilities *
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+
+#endif          // !defined(OPOSMOTION_HI)

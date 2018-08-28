@@ -1,0 +1,88 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposChan.hi
+//
+//   Cash Changer header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 1997-06-04 OPOS Release 1.2                                   CRM
+// 2000-09-24 OPOS Release 1.5                                   BKS
+// 2005-04-29 OPOS Release 1.9                                   CRM
+//   Remove validation functions.
+// 2007-01-30 OPOS Release 1.11                                  CRM
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSCHAN_HI)
+#define      OPOSCHAN_HI
+
+
+#include "Opos.hi"
+#include "OposChan.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXChan_AsyncMode           =   1 + PIDX_CHAN+PIDX_NUMBER;
+const LONG PIDXChan_AsyncResultCode     =   2 + PIDX_CHAN+PIDX_NUMBER;
+const LONG PIDXChan_AsyncResultCodeExtended
+                                        =   3 + PIDX_CHAN+PIDX_NUMBER;
+const LONG PIDXChan_CurrentExit         =   4 + PIDX_CHAN+PIDX_NUMBER;
+const LONG PIDXChan_DeviceExits         =   5 + PIDX_CHAN+PIDX_NUMBER;
+const LONG PIDXChan_DeviceStatus        =   6 + PIDX_CHAN+PIDX_NUMBER;
+const LONG PIDXChan_FullStatus          =   7 + PIDX_CHAN+PIDX_NUMBER;
+
+// Added in Release 1.5
+const LONG PIDXChan_DepositAmount       =   8 + PIDX_CHAN+PIDX_NUMBER;
+const LONG PIDXChan_DepositStatus       =   9 + PIDX_CHAN+PIDX_NUMBER;
+
+// Added in Release 1.11
+const LONG PIDXChan_CurrentService      =  10 + PIDX_CHAN+PIDX_NUMBER;
+const LONG PIDXChan_RealTimeDataEnabled =  11 + PIDX_CHAN+PIDX_NUMBER;
+const LONG PIDXChan_ServiceCount        =  12 + PIDX_CHAN+PIDX_NUMBER;
+const LONG PIDXChan_ServiceIndex        =  13 + PIDX_CHAN+PIDX_NUMBER;
+
+
+// * Capabilities *
+
+const LONG PIDXChan_CapDiscrepancy      = 501 + PIDX_CHAN+PIDX_NUMBER;
+const LONG PIDXChan_CapEmptySensor      = 502 + PIDX_CHAN+PIDX_NUMBER;
+const LONG PIDXChan_CapFullSensor       = 503 + PIDX_CHAN+PIDX_NUMBER;
+const LONG PIDXChan_CapNearEmptySensor  = 504 + PIDX_CHAN+PIDX_NUMBER;
+const LONG PIDXChan_CapNearFullSensor   = 505 + PIDX_CHAN+PIDX_NUMBER;
+
+// Added in Release 1.5
+const LONG PIDXChan_CapDeposit          = 506 + PIDX_CHAN+PIDX_NUMBER;
+const LONG PIDXChan_CapDepositDataEvent = 507 + PIDX_CHAN+PIDX_NUMBER;
+const LONG PIDXChan_CapPauseDeposit     = 508 + PIDX_CHAN+PIDX_NUMBER;
+const LONG PIDXChan_CapRepayDeposit     = 509 + PIDX_CHAN+PIDX_NUMBER;
+
+// Added in Release 1.11
+const LONG PIDXChan_CapJamSensor        = 510 + PIDX_CHAN+PIDX_NUMBER;
+const LONG PIDXChan_CapRealTimeData     = 511 + PIDX_CHAN+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXChan_CurrencyCashList    =   1 + PIDX_CHAN+PIDX_STRING;
+const LONG PIDXChan_CurrencyCode        =   2 + PIDX_CHAN+PIDX_STRING;
+const LONG PIDXChan_CurrencyCodeList    =   3 + PIDX_CHAN+PIDX_STRING;
+const LONG PIDXChan_ExitCashList        =   4 + PIDX_CHAN+PIDX_STRING;
+
+// Added in Release 1.5
+const LONG PIDXChan_DepositCashList     =   5 + PIDX_CHAN+PIDX_STRING;
+const LONG PIDXChan_DepositCodeList     =   6 + PIDX_CHAN+PIDX_STRING;
+const LONG PIDXChan_DepositCounts       =   7 + PIDX_CHAN+PIDX_STRING;
+
+
+#endif          // !defined(OPOSCHAN_HI)
+

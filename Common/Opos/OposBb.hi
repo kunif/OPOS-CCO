@@ -1,0 +1,57 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposBb.hi
+//
+//   Bump Bar header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 1998-03-06 OPOS Release 1.3                                   CRM
+// 2005-04-29 OPOS Release 1.9                                   CRM
+//   Remove validation functions.
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSBB_HI)
+#define      OPOSBB_HI
+
+
+#include "Opos.hi"
+#include "OposBb.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXBb_AsyncMode             =   1 + PIDX_BB+PIDX_NUMBER;
+const LONG PIDXBb_AutoToneDuration      =   2 + PIDX_BB+PIDX_NUMBER;
+const LONG PIDXBb_AutoToneFrequency     =   3 + PIDX_BB+PIDX_NUMBER;
+const LONG PIDXBb_BumpBarDataCount      =   4 + PIDX_BB+PIDX_NUMBER;
+const LONG PIDXBb_CurrentUnitID         =   5 + PIDX_BB+PIDX_NUMBER;
+const LONG PIDXBb_ErrorUnits            =   6 + PIDX_BB+PIDX_NUMBER;
+const LONG PIDXBb_EventUnitID           =   7 + PIDX_BB+PIDX_NUMBER;
+const LONG PIDXBb_EventUnits            =   8 + PIDX_BB+PIDX_NUMBER;
+const LONG PIDXBb_Keys                  =   9 + PIDX_BB+PIDX_NUMBER;
+const LONG PIDXBb_Timeout               =  10 + PIDX_BB+PIDX_NUMBER;
+const LONG PIDXBb_UnitsOnline           =  11 + PIDX_BB+PIDX_NUMBER;
+
+
+// * Capabilities *
+
+const LONG PIDXBb_CapTone               = 501 + PIDX_BB+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXBb_ErrorString           =   1 + PIDX_BB+PIDX_STRING;
+const LONG PIDXBb_EventString           =   2 + PIDX_BB+PIDX_STRING;
+
+
+#endif          // !defined(OPOSBB_HI)

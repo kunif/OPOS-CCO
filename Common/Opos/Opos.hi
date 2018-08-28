@@ -1,0 +1,253 @@
+//////////////////////////////////////////////////////////////////////
+//
+// Opos.hi
+//
+//   General header file for OPOS Control Objects and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 1995-12-08 OPOS Release 1.0                                   CRM
+// 1996-03-18 OPOS Release 1.01                                  CRM
+//   Remove HKEY_LOCAL_MACHINE from the root keys, so that they
+//     may be directly used by RegOpenKey.
+// 1996-04-22 OPOS Release 1.1                                   CRM
+//   Add POS Keyboard values.
+// 1997-06-04 OPOS Release 1.2                                   CRM
+//   Add Cash Changer and Tone Indicator.
+//   Add the following properties:
+//     AutoDisable, BinaryConversion, DataCount
+// 1998-03-06 OPOS Release 1.3                                   CRM
+//   Add Bump Bar, Fiscal Printer, PIN Pad, Remote Order Display.
+//   Add the following properties:
+//     CapPowerReporting, PowerNotify, PowerState
+// 1998-09-29 OPOS Release 1.4                                OPOS-J
+//   Add CAT.
+// 2000-09-24 OPOS Release 1.5                                   BKS
+//   Add Point Card Reader Writer and POS Power.
+// 2002-08-17 OPOS Release 1.7                                   CRM
+//   Add Check Scanner and Motion Sensor.
+// 2004-03-22 OPOS Release 1.8                                   CRM
+//   Add Smart Card Reader Writer.
+// 2005-04-29 OPOS Release 1.9                                   CRM
+//   Add the following properties:
+//     CapCompareFirmwareVersion, CapUpdateFirmware
+//   Remove validation functions.
+// 2006-03-15 OPOS Release 1.10                                  CRM
+//   Add Biometrics and Electronic Journal
+// 2007-01-30 OPOS Release 1.11                                  CRM
+//   Add BillAcceptor, BillDispensor, CoinAcceptor, ImageScanner
+// 2008-08-30 OPOS Release 1.12                                  CRM
+//   Add Belt, ElectronicValueRW, Gate, ItemDispenser,
+//   Lights, RFIDScanner
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOS_HI)
+#define      OPOS_HI
+
+
+#include "Opos.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Registry Keys
+//////////////////////////////////////////////////////////////////////
+
+// OPOS_ROOTKEY is the key under which all OPOS Service Object keys
+//   and values are placed.  This key will contain device class keys.
+//   (The base key is HKEY_LOCAL_MACHINE.)
+#define OPOS_ROOTKEY \
+    "SOFTWARE\\OLEforRetail\\ServiceOPOS"
+
+// Device Class Keys
+//   Release 1.0
+#define OPOS_CLASSKEY_CASH    "CashDrawer"
+#define OPOS_CLASSKEY_COIN    "CoinDispenser"
+#define OPOS_CLASSKEY_TOT     "HardTotals"
+#define OPOS_CLASSKEY_LOCK    "Keylock"
+#define OPOS_CLASSKEY_DISP    "LineDisplay"
+#define OPOS_CLASSKEY_MICR    "MICR"
+#define OPOS_CLASSKEY_MSR     "MSR"
+#define OPOS_CLASSKEY_PTR     "POSPrinter"
+#define OPOS_CLASSKEY_SCAL    "Scale"
+#define OPOS_CLASSKEY_SCAN    "Scanner"
+#define OPOS_CLASSKEY_SIG     "SignatureCapture"
+//   Release 1.1
+#define OPOS_CLASSKEY_KBD     "POSKeyboard"
+//   Release 1.2
+#define OPOS_CLASSKEY_CHAN    "CashChanger"
+#define OPOS_CLASSKEY_TONE    "ToneIndicator"
+//   Release 1.3
+#define OPOS_CLASSKEY_BB      "BumpBar"
+#define OPOS_CLASSKEY_FPTR    "FiscalPrinter"
+#define OPOS_CLASSKEY_PPAD    "PINPad"
+#define OPOS_CLASSKEY_ROD     "RemoteOrderDisplay"
+//   Release 1.4
+#define OPOS_CLASSKEY_CAT     "CAT"
+//   Release 1.5
+#define OPOS_CLASSKEY_PCRW    "PointCardRW"
+#define OPOS_CLASSKEY_PWR     "POSPower"
+//   Release 1.7
+#define OPOS_CLASSKEY_CHK     "CheckScanner"
+#define OPOS_CLASSKEY_MOTION  "MotionSensor"
+//   Release 1.8
+#define OPOS_CLASSKEY_SCRW    "SmartCardRW"
+//   Release 1.10
+#define OPOS_CLASSKEY_BIO     "Biometrics"
+#define OPOS_CLASSKEY_EJ      "ElectronicJournal"
+//   Release 1.11
+#define OPOS_CLASSKEY_BACC    "BillAcceptor"
+#define OPOS_CLASSKEY_BDSP    "BillDispenser"
+#define OPOS_CLASSKEY_CACC    "CoinAcceptor"
+#define OPOS_CLASSKEY_IMG     "ImageScanner"
+//   Release 1.12
+#define OPOS_CLASSKEY_BELT    "Belt"
+#define OPOS_CLASSKEY_EVRW    "ElectronicValueRW"
+#define OPOS_CLASSKEY_GATE    "Gate"
+#define OPOS_CLASSKEY_ITEM    "ItemDispenser"
+#define OPOS_CLASSKEY_LGT     "Lights"
+#define OPOS_CLASSKEY_RFID    "RFIDScanner"
+
+// OPOS_ROOTKEY_PROVIDER is the key under which a Service Object
+//   provider may place provider-specific information.
+//   (The base key is HKEY_LOCAL_MACHINE.)
+#define OPOS_ROOTKEY_PROVIDER \
+    "SOFTWARE\\OLEforRetail\\ServiceInfo"
+
+
+//////////////////////////////////////////////////////////////////////
+// Common Property Base Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Base Indices *
+
+const LONG PIDX_NUMBER                  =        0;
+const LONG PIDX_STRING                  =  1000000; // 1,000,000
+
+// * Range Test Functions *
+
+inline BOOL IsNumericPidx(LONG Pidx)
+{
+  return ( Pidx < PIDX_STRING ) ? TRUE : FALSE;
+}
+inline BOOL IsStringPidx(LONG Pidx)
+{
+  return ( Pidx >= PIDX_STRING ) ? TRUE : FALSE;
+}
+
+// **Warning**
+//   OPOS property indices may not be changed by future releases.
+//   New indices must be added sequentially at the end of the
+//     numeric, capability, and string sections.
+
+// Note: The ControlObjectDescription and ControlObjectVersion
+//   properties are processed entirely by the CO. Therefore, no
+//   property index values are required below.
+
+
+//////////////////////////////////////////////////////////////////////
+// Common Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDX_Claimed                 =   1 + PIDX_NUMBER;
+const LONG PIDX_DataEventEnabled        =   2 + PIDX_NUMBER;
+const LONG PIDX_DeviceEnabled           =   3 + PIDX_NUMBER;
+const LONG PIDX_FreezeEvents            =   4 + PIDX_NUMBER;
+const LONG PIDX_OutputID                =   5 + PIDX_NUMBER;
+const LONG PIDX_ResultCode              =   6 + PIDX_NUMBER;
+const LONG PIDX_ResultCodeExtended      =   7 + PIDX_NUMBER;
+const LONG PIDX_ServiceObjectVersion    =   8 + PIDX_NUMBER;
+const LONG PIDX_State                   =   9 + PIDX_NUMBER;
+
+//      Added for Release 1.2:
+const LONG PIDX_AutoDisable             =  10 + PIDX_NUMBER;
+const LONG PIDX_BinaryConversion        =  11 + PIDX_NUMBER;
+const LONG PIDX_DataCount               =  12 + PIDX_NUMBER;
+
+//      Added for Release 1.3:
+const LONG PIDX_PowerNotify             =  13 + PIDX_NUMBER;
+const LONG PIDX_PowerState              =  14 + PIDX_NUMBER;
+
+
+// * Capabilities *
+
+//      Added for Release 1.3:
+const LONG PIDX_CapPowerReporting       = 501 + PIDX_NUMBER;
+
+//      Added for Release 1.8:
+const LONG PIDX_CapStatisticsReporting  = 502 + PIDX_NUMBER;
+const LONG PIDX_CapUpdateStatistics     = 503 + PIDX_NUMBER;
+
+//      Added for Release 1.9:
+const LONG PIDX_CapCompareFirmwareVersion = 504 + PIDX_NUMBER;
+const LONG PIDX_CapUpdateFirmware       = 505 + PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// Common String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDX_CheckHealthText         =   1 + PIDX_STRING;
+const LONG PIDX_DeviceDescription       =   2 + PIDX_STRING;
+const LONG PIDX_DeviceName              =   3 + PIDX_STRING;
+const LONG PIDX_ServiceObjectDescription=   4 + PIDX_STRING;
+
+
+//////////////////////////////////////////////////////////////////////
+// Class Property Base Index Values.
+//////////////////////////////////////////////////////////////////////
+
+//   Release 1.0
+const LONG PIDX_CASH    =  1000;  // Cash Drawer.
+const LONG PIDX_COIN    =  2000;  // Coin Dispenser.
+const LONG PIDX_TOT     =  3000;  // Hard Totals.
+const LONG PIDX_LOCK    =  4000;  // Keylock.
+const LONG PIDX_DISP    =  5000;  // Line Display.
+const LONG PIDX_MICR    =  6000;  // Magnetic Ink Character Recognition.
+const LONG PIDX_MSR     =  7000;  // Magnetic Stripe Reader.
+const LONG PIDX_PTR     =  8000;  // POS Printer.
+const LONG PIDX_SCAL    =  9000;  // Scale.
+const LONG PIDX_SCAN    = 10000;  // Scanner - Bar Code Reader.
+const LONG PIDX_SIG     = 11000;  // Signature Capture.
+//   Release 1.1
+const LONG PIDX_KBD     = 12000;  // POS Keyboard.
+//   Release 1.2
+const LONG PIDX_CHAN    = 13000;  // Cash Changer.
+const LONG PIDX_TONE    = 14000;  // Tone Indicator.
+//   Release 1.3
+const LONG PIDX_BB      = 15000;  // Bump Bar.
+const LONG PIDX_FPTR    = 16000;  // Fiscal Printer.
+const LONG PIDX_PPAD    = 17000;  // PIN Pad.
+const LONG PIDX_ROD     = 18000;  // Remote Order Display.
+//   Release 1.4
+const LONG PIDX_CAT     = 19000;  // CAT.
+//   Release 1.5
+const LONG PIDX_PCRW    = 20000;  // Point Card Reader Writer.
+const LONG PIDX_PWR     = 21000;  // POS Power.
+//   Release 1.7
+const LONG PIDX_CHK     = 22000;  // Check Scanner.
+const LONG PIDX_MOTION  = 23000;  // Motion Sensor.
+//   Release 1.8
+const LONG PIDX_SCRW    = 24000;  // Smart Card Reader Writer.
+//   Release 1.10
+const LONG PIDX_BIO     = 25000;  // Biometrics.
+const LONG PIDX_EJ      = 26000;  // Electronic Journal.
+//   Release 1.11
+const LONG PIDX_BACC    = 27000;  // Bill Acceptor.
+const LONG PIDX_BDSP    = 28000;  // Bill Dispenser.
+const LONG PIDX_CACC    = 29000;  // Coin Acceptor.
+const LONG PIDX_IMG     = 30000;  // Image Scanner.
+//   Release 1.12
+const LONG PIDX_BELT    = 31000;  // Belt.
+const LONG PIDX_EVRW    = 32000;  // Electronic Value Reader Writer.
+const LONG PIDX_GATE    = 33000;  // Gate.
+const LONG PIDX_ITEM    = 34000;  // Item Dispenser.
+const LONG PIDX_LGT     = 35000;  // Lights.
+const LONG PIDX_RFID    = 36000;  // RFID Scanner.
+
+
+#endif                  // !defined(OPOS_HI)

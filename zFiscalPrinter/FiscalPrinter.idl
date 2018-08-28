@@ -1,0 +1,855 @@
+/****************************************************************************
+**
+** FiscalPrinter.idl -- IDL source for FiscalPrinter.ocx
+**
+**     Date                   Modification                          Author
+** -----------|----------------------------------------------------|----------
+**  1999/03/20 Initial version.                                     C. Monroe
+**  2008/01/15 Enhance for independent interfaces.
+**  2008/08/30 More interface updates.
+**  2013/09/29 Update license section.
+**  2015/02/07 Update license section.
+**  2015/02/07 Version 1.14.001.
+**
+*****************************************************************************
+**
+{{Begin License}}
+
+Copyright 2015 Monroe Consulting Services, Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+{{End License}}
+*/
+
+// This file will be processed by the MIDL tool to
+// produce the type library (FiscalPrinter.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+#include "olectl.h"
+
+
+///////////////////////////////////////////////////////////////////////////////
+//// Interfaces
+///////////////////////////////////////////////////////////////////////////////
+
+// Separate Dependent Interfaces implementation:
+//  - First interface with the APIs defined from original through that release.
+//  - Later interfaces derive from previous and add their releases' new APIs.
+//  - Current interface derives from previous and adds its release's new APIs.
+
+//
+//========== Previous Interface: 1.6 ==========
+//
+
+    [
+        object,
+        uuid(CCB92071-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSFiscalPrinter 1.6 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSFiscalPrinter_1_6 : IDispatch
+    {
+    // Methods for use only by the Service Object
+        [id(1), hidden, helpstring("method SODataDummy")] HRESULT SODataDummy( [in] long Status );
+        [id(2), hidden, helpstring("method SODirectIO")] HRESULT SODirectIO( [in] long EventNumber, [in, out] long* pData, [in, out] BSTR* pString );
+        [id(3), hidden, helpstring("method SOError")] HRESULT SOError( [in] long ResultCode, [in] long ResultCodeExtended, [in] long ErrorLocus, [in, out] long* pErrorResponse );
+        [id(4), hidden, helpstring("method SOOutputComplete")] HRESULT SOOutputComplete( [in] long OutputID );
+        [id(5), hidden, helpstring("method SOStatusUpdate")] HRESULT SOStatusUpdate( [in] long Data );
+        [id(9), hidden, helpstring("method SOProcessID")] HRESULT SOProcessID( [out, retval] long* pProcessID );
+    // Release 1.3
+        [propget, id(49), helpstring("property OpenResult")]
+        HRESULT OpenResult( [out, retval] long* pOpenResult );
+        [propget, id(11), helpstring("property BinaryConversion")]
+        HRESULT BinaryConversion( [out, retval] long* pBinaryConversion );
+        [propput, id(11), helpstring("property BinaryConversion")]
+        HRESULT BinaryConversion( [in] long BinaryConversion );
+        [propget, id(12), helpstring("property CapPowerReporting")]
+        HRESULT CapPowerReporting( [out, retval] long* pCapPowerReporting );
+        [propget, id(13), helpstring("property CheckHealthText")]
+        HRESULT CheckHealthText( [out, retval] BSTR* pCheckHealthText );
+        [propget, id(14), helpstring("property Claimed")]
+        HRESULT Claimed( [out, retval] VARIANT_BOOL* pClaimed );
+        [propget, id(17), helpstring("property DeviceEnabled")]
+        HRESULT DeviceEnabled( [out, retval] VARIANT_BOOL* pDeviceEnabled );
+        [propput, id(17), helpstring("property DeviceEnabled")]
+        HRESULT DeviceEnabled( [in] VARIANT_BOOL DeviceEnabled );
+        [propget, id(18), helpstring("property FreezeEvents")]
+        HRESULT FreezeEvents( [out, retval] VARIANT_BOOL* pFreezeEvents );
+        [propput, id(18), helpstring("property FreezeEvents")]
+        HRESULT FreezeEvents( [in] VARIANT_BOOL FreezeEvents );
+        [propget, id(19), helpstring("property OutputID")]
+        HRESULT OutputID( [out, retval] long* pOutputID );
+        [propget, id(20), helpstring("property PowerNotify")]
+        HRESULT PowerNotify( [out, retval] long* pPowerNotify );
+        [propput, id(20), helpstring("property PowerNotify")]
+        HRESULT PowerNotify( [in] long PowerNotify );
+        [propget, id(21), helpstring("property PowerState")]
+        HRESULT PowerState( [out, retval] long* pPowerState );
+        [propget, id(22), helpstring("property ResultCode")]
+        HRESULT ResultCode( [out, retval] long* pResultCode );
+        [propget, id(23), helpstring("property ResultCodeExtended")]
+        HRESULT ResultCodeExtended( [out, retval] long* pResultCodeExtended );
+        [propget, id(24), helpstring("property State")]
+        HRESULT State( [out, retval] long* pState );
+        [propget, id(25), helpstring("property ControlObjectDescription")]
+        HRESULT ControlObjectDescription( [out, retval] BSTR* pControlObjectDescription );
+        [propget, id(26), helpstring("property ControlObjectVersion")]
+        HRESULT ControlObjectVersion( [out, retval] long* pControlObjectVersion );
+        [propget, id(27), helpstring("property ServiceObjectDescription")]
+        HRESULT ServiceObjectDescription( [out, retval] BSTR* pServiceObjectDescription );
+        [propget, id(28), helpstring("property ServiceObjectVersion")]
+        HRESULT ServiceObjectVersion( [out, retval] long* pServiceObjectVersion );
+        [propget, id(29), helpstring("property DeviceDescription")]
+        HRESULT DeviceDescription( [out, retval] BSTR* pDeviceDescription );
+        [propget, id(30), helpstring("property DeviceName")]
+        HRESULT DeviceName( [out, retval] BSTR* pDeviceName );
+        [id(31), helpstring("method CheckHealth")]
+        HRESULT CheckHealth( 
+            [in] long Level, 
+            [out, retval] long* pRC );
+        [id(32), helpstring("method ClaimDevice")]
+        HRESULT ClaimDevice( 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(34), helpstring("method ClearOutput")]
+        HRESULT ClearOutput( 
+            [out, retval] long* pRC );
+        [id(35), helpstring("method Close")]
+        HRESULT Close( 
+            [out, retval] long* pRC );
+        [id(36), helpstring("method DirectIO")]
+        HRESULT DirectIO( 
+            [in] long Command, 
+            [in, out] long* pData, 
+            [in, out] BSTR* pString, 
+            [out, retval] long* pRC );
+        [id(37), helpstring("method Open")]
+        HRESULT Open( 
+            [in] BSTR DeviceName, 
+            [out, retval] long* pRC );
+        [id(38), helpstring("method ReleaseDevice")]
+        HRESULT ReleaseDevice( 
+            [out, retval] long* pRC );
+        [propget, id(50), helpstring("property AmountDecimalPlaces")]
+        HRESULT AmountDecimalPlaces( [out, retval] long* pAmountDecimalPlaces );
+        [propget, id(51), helpstring("property AsyncMode")]
+        HRESULT AsyncMode( [out, retval] VARIANT_BOOL* pAsyncMode );
+        [propput, id(51), helpstring("property AsyncMode")]
+        HRESULT AsyncMode( [in] VARIANT_BOOL AsyncMode );
+        [propget, id(52), helpstring("property CapAdditionalLines")]
+        HRESULT CapAdditionalLines( [out, retval] VARIANT_BOOL* pCapAdditionalLines );
+        [propget, id(53), helpstring("property CapAmountAdjustment")]
+        HRESULT CapAmountAdjustment( [out, retval] VARIANT_BOOL* pCapAmountAdjustment );
+        [propget, id(54), helpstring("property CapAmountNotPaid")]
+        HRESULT CapAmountNotPaid( [out, retval] VARIANT_BOOL* pCapAmountNotPaid );
+        [propget, id(55), helpstring("property CapCheckTotal")]
+        HRESULT CapCheckTotal( [out, retval] VARIANT_BOOL* pCapCheckTotal );
+        [propget, id(56), helpstring("property CapCoverSensor")]
+        HRESULT CapCoverSensor( [out, retval] VARIANT_BOOL* pCapCoverSensor );
+        [propget, id(57), helpstring("property CapDoubleWidth")]
+        HRESULT CapDoubleWidth( [out, retval] VARIANT_BOOL* pCapDoubleWidth );
+        [propget, id(58), helpstring("property CapDuplicateReceipt")]
+        HRESULT CapDuplicateReceipt( [out, retval] VARIANT_BOOL* pCapDuplicateReceipt );
+        [propget, id(59), helpstring("property CapFixedOutput")]
+        HRESULT CapFixedOutput( [out, retval] VARIANT_BOOL* pCapFixedOutput );
+        [propget, id(60), helpstring("property CapHasVatTable")]
+        HRESULT CapHasVatTable( [out, retval] VARIANT_BOOL* pCapHasVatTable );
+        [propget, id(61), helpstring("property CapIndependentHeader")]
+        HRESULT CapIndependentHeader( [out, retval] VARIANT_BOOL* pCapIndependentHeader );
+        [propget, id(62), helpstring("property CapItemList")]
+        HRESULT CapItemList( [out, retval] VARIANT_BOOL* pCapItemList );
+        [propget, id(63), helpstring("property CapJrnEmptySensor")]
+        HRESULT CapJrnEmptySensor( [out, retval] VARIANT_BOOL* pCapJrnEmptySensor );
+        [propget, id(64), helpstring("property CapJrnNearEndSensor")]
+        HRESULT CapJrnNearEndSensor( [out, retval] VARIANT_BOOL* pCapJrnNearEndSensor );
+        [propget, id(65), helpstring("property CapJrnPresent")]
+        HRESULT CapJrnPresent( [out, retval] VARIANT_BOOL* pCapJrnPresent );
+        [propget, id(66), helpstring("property CapNonFiscalMode")]
+        HRESULT CapNonFiscalMode( [out, retval] VARIANT_BOOL* pCapNonFiscalMode );
+        [propget, id(67), helpstring("property CapOrderAdjustmentFirst")]
+        HRESULT CapOrderAdjustmentFirst( [out, retval] VARIANT_BOOL* pCapOrderAdjustmentFirst );
+        [propget, id(68), helpstring("property CapPercentAdjustment")]
+        HRESULT CapPercentAdjustment( [out, retval] VARIANT_BOOL* pCapPercentAdjustment );
+        [propget, id(69), helpstring("property CapPositiveAdjustment")]
+        HRESULT CapPositiveAdjustment( [out, retval] VARIANT_BOOL* pCapPositiveAdjustment );
+        [propget, id(70), helpstring("property CapPowerLossReport")]
+        HRESULT CapPowerLossReport( [out, retval] VARIANT_BOOL* pCapPowerLossReport );
+        [propget, id(71), helpstring("property CapPredefinedPaymentLines")]
+        HRESULT CapPredefinedPaymentLines( [out, retval] VARIANT_BOOL* pCapPredefinedPaymentLines );
+        [propget, id(72), helpstring("property CapReceiptNotPaid")]
+        HRESULT CapReceiptNotPaid( [out, retval] VARIANT_BOOL* pCapReceiptNotPaid );
+        [propget, id(73), helpstring("property CapRecEmptySensor")]
+        HRESULT CapRecEmptySensor( [out, retval] VARIANT_BOOL* pCapRecEmptySensor );
+        [propget, id(74), helpstring("property CapRecNearEndSensor")]
+        HRESULT CapRecNearEndSensor( [out, retval] VARIANT_BOOL* pCapRecNearEndSensor );
+        [propget, id(75), helpstring("property CapRecPresent")]
+        HRESULT CapRecPresent( [out, retval] VARIANT_BOOL* pCapRecPresent );
+        [propget, id(76), helpstring("property CapRemainingFiscalMemory")]
+        HRESULT CapRemainingFiscalMemory( [out, retval] VARIANT_BOOL* pCapRemainingFiscalMemory );
+        [propget, id(77), helpstring("property CapReservedWord")]
+        HRESULT CapReservedWord( [out, retval] VARIANT_BOOL* pCapReservedWord );
+        [propget, id(78), helpstring("property CapSetHeader")]
+        HRESULT CapSetHeader( [out, retval] VARIANT_BOOL* pCapSetHeader );
+        [propget, id(79), helpstring("property CapSetPOSID")]
+        HRESULT CapSetPOSID( [out, retval] VARIANT_BOOL* pCapSetPOSID );
+        [propget, id(80), helpstring("property CapSetStoreFiscalID")]
+        HRESULT CapSetStoreFiscalID( [out, retval] VARIANT_BOOL* pCapSetStoreFiscalID );
+        [propget, id(81), helpstring("property CapSetTrailer")]
+        HRESULT CapSetTrailer( [out, retval] VARIANT_BOOL* pCapSetTrailer );
+        [propget, id(82), helpstring("property CapSetVatTable")]
+        HRESULT CapSetVatTable( [out, retval] VARIANT_BOOL* pCapSetVatTable );
+        [propget, id(83), helpstring("property CapSlpEmptySensor")]
+        HRESULT CapSlpEmptySensor( [out, retval] VARIANT_BOOL* pCapSlpEmptySensor );
+        [propget, id(84), helpstring("property CapSlpFiscalDocument")]
+        HRESULT CapSlpFiscalDocument( [out, retval] VARIANT_BOOL* pCapSlpFiscalDocument );
+        [propget, id(85), helpstring("property CapSlpFullSlip")]
+        HRESULT CapSlpFullSlip( [out, retval] VARIANT_BOOL* pCapSlpFullSlip );
+        [propget, id(86), helpstring("property CapSlpNearEndSensor")]
+        HRESULT CapSlpNearEndSensor( [out, retval] VARIANT_BOOL* pCapSlpNearEndSensor );
+        [propget, id(87), helpstring("property CapSlpPresent")]
+        HRESULT CapSlpPresent( [out, retval] VARIANT_BOOL* pCapSlpPresent );
+        [propget, id(88), helpstring("property CapSlpValidation")]
+        HRESULT CapSlpValidation( [out, retval] VARIANT_BOOL* pCapSlpValidation );
+        [propget, id(89), helpstring("property CapSubAmountAdjustment")]
+        HRESULT CapSubAmountAdjustment( [out, retval] VARIANT_BOOL* pCapSubAmountAdjustment );
+        [propget, id(90), helpstring("property CapSubPercentAdjustment")]
+        HRESULT CapSubPercentAdjustment( [out, retval] VARIANT_BOOL* pCapSubPercentAdjustment );
+        [propget, id(91), helpstring("property CapSubtotal")]
+        HRESULT CapSubtotal( [out, retval] VARIANT_BOOL* pCapSubtotal );
+        [propget, id(92), helpstring("property CapTrainingMode")]
+        HRESULT CapTrainingMode( [out, retval] VARIANT_BOOL* pCapTrainingMode );
+        [propget, id(93), helpstring("property CapValidateJournal")]
+        HRESULT CapValidateJournal( [out, retval] VARIANT_BOOL* pCapValidateJournal );
+        [propget, id(94), helpstring("property CapXReport")]
+        HRESULT CapXReport( [out, retval] VARIANT_BOOL* pCapXReport );
+        [propget, id(95), helpstring("property CheckTotal")]
+        HRESULT CheckTotal( [out, retval] VARIANT_BOOL* pCheckTotal );
+        [propput, id(95), helpstring("property CheckTotal")]
+        HRESULT CheckTotal( [in] VARIANT_BOOL CheckTotal );
+        [propget, id(96), helpstring("property CountryCode")]
+        HRESULT CountryCode( [out, retval] long* pCountryCode );
+        [propget, id(97), helpstring("property CoverOpen")]
+        HRESULT CoverOpen( [out, retval] VARIANT_BOOL* pCoverOpen );
+        [propget, id(98), helpstring("property DayOpened")]
+        HRESULT DayOpened( [out, retval] VARIANT_BOOL* pDayOpened );
+        [propget, id(99), helpstring("property DescriptionLength")]
+        HRESULT DescriptionLength( [out, retval] long* pDescriptionLength );
+        [propget, id(100), helpstring("property DuplicateReceipt")]
+        HRESULT DuplicateReceipt( [out, retval] VARIANT_BOOL* pDuplicateReceipt );
+        [propput, id(100), helpstring("property DuplicateReceipt")]
+        HRESULT DuplicateReceipt( [in] VARIANT_BOOL DuplicateReceipt );
+        [propget, id(101), helpstring("property ErrorLevel")]
+        HRESULT ErrorLevel( [out, retval] long* pErrorLevel );
+        [propget, id(102), helpstring("property ErrorOutID")]
+        HRESULT ErrorOutID( [out, retval] long* pErrorOutID );
+        [propget, id(103), helpstring("property ErrorState")]
+        HRESULT ErrorState( [out, retval] long* pErrorState );
+        [propget, id(104), helpstring("property ErrorStation")]
+        HRESULT ErrorStation( [out, retval] long* pErrorStation );
+        [propget, id(105), helpstring("property ErrorString")]
+        HRESULT ErrorString( [out, retval] BSTR* pErrorString );
+        [propget, id(106), helpstring("property FlagWhenIdle")]
+        HRESULT FlagWhenIdle( [out, retval] VARIANT_BOOL* pFlagWhenIdle );
+        [propput, id(106), helpstring("property FlagWhenIdle")]
+        HRESULT FlagWhenIdle( [in] VARIANT_BOOL FlagWhenIdle );
+        [propget, id(107), helpstring("property JrnEmpty")]
+        HRESULT JrnEmpty( [out, retval] VARIANT_BOOL* pJrnEmpty );
+        [propget, id(108), helpstring("property JrnNearEnd")]
+        HRESULT JrnNearEnd( [out, retval] VARIANT_BOOL* pJrnNearEnd );
+        [propget, id(109), helpstring("property MessageLength")]
+        HRESULT MessageLength( [out, retval] long* pMessageLength );
+        [propget, id(110), helpstring("property NumHeaderLines")]
+        HRESULT NumHeaderLines( [out, retval] long* pNumHeaderLines );
+        [propget, id(111), helpstring("property NumTrailerLines")]
+        HRESULT NumTrailerLines( [out, retval] long* pNumTrailerLines );
+        [propget, id(112), helpstring("property NumVatRates")]
+        HRESULT NumVatRates( [out, retval] long* pNumVatRates );
+        [propget, id(113), helpstring("property PredefinedPaymentLines")]
+        HRESULT PredefinedPaymentLines( [out, retval] BSTR* pPredefinedPaymentLines );
+        [propget, id(114), helpstring("property PrinterState")]
+        HRESULT PrinterState( [out, retval] long* pPrinterState );
+        [propget, id(115), helpstring("property QuantityDecimalPlaces")]
+        HRESULT QuantityDecimalPlaces( [out, retval] long* pQuantityDecimalPlaces );
+        [propget, id(116), helpstring("property QuantityLength")]
+        HRESULT QuantityLength( [out, retval] long* pQuantityLength );
+        [propget, id(117), helpstring("property RecEmpty")]
+        HRESULT RecEmpty( [out, retval] VARIANT_BOOL* pRecEmpty );
+        [propget, id(118), helpstring("property RecNearEnd")]
+        HRESULT RecNearEnd( [out, retval] VARIANT_BOOL* pRecNearEnd );
+        [propget, id(119), helpstring("property RemainingFiscalMemory")]
+        HRESULT RemainingFiscalMemory( [out, retval] long* pRemainingFiscalMemory );
+        [propget, id(120), helpstring("property ReservedWord")]
+        HRESULT ReservedWord( [out, retval] BSTR* pReservedWord );
+        [propget, id(121), helpstring("property SlipSelection")]
+        HRESULT SlipSelection( [out, retval] long* pSlipSelection );
+        [propput, id(121), helpstring("property SlipSelection")]
+        HRESULT SlipSelection( [in] long SlipSelection );
+        [propget, id(122), helpstring("property SlpEmpty")]
+        HRESULT SlpEmpty( [out, retval] VARIANT_BOOL* pSlpEmpty );
+        [propget, id(123), helpstring("property SlpNearEnd")]
+        HRESULT SlpNearEnd( [out, retval] VARIANT_BOOL* pSlpNearEnd );
+        [propget, id(124), helpstring("property TrainingModeActive")]
+        HRESULT TrainingModeActive( [out, retval] VARIANT_BOOL* pTrainingModeActive );
+        [id(140), helpstring("method BeginFiscalDocument")]
+        HRESULT BeginFiscalDocument( 
+            [in] long DocumentAmount, 
+            [out, retval] long* pRC );
+        [id(141), helpstring("method BeginFiscalReceipt")]
+        HRESULT BeginFiscalReceipt( 
+            [in] VARIANT_BOOL PrintHeader, 
+            [out, retval] long* pRC );
+        [id(142), helpstring("method BeginFixedOutput")]
+        HRESULT BeginFixedOutput( 
+            [in] long Station, 
+            [in] long DocumentType, 
+            [out, retval] long* pRC );
+        [id(143), helpstring("method BeginInsertion")]
+        HRESULT BeginInsertion( 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(144), helpstring("method BeginItemList")]
+        HRESULT BeginItemList( 
+            [in] long VatID, 
+            [out, retval] long* pRC );
+        [id(145), helpstring("method BeginNonFiscal")]
+        HRESULT BeginNonFiscal( 
+            [out, retval] long* pRC );
+        [id(146), helpstring("method BeginRemoval")]
+        HRESULT BeginRemoval( 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(147), helpstring("method BeginTraining")]
+        HRESULT BeginTraining( 
+            [out, retval] long* pRC );
+        [id(148), helpstring("method ClearError")]
+        HRESULT ClearError( 
+            [out, retval] long* pRC );
+        [id(149), helpstring("method EndFiscalDocument")]
+        HRESULT EndFiscalDocument( 
+            [out, retval] long* pRC );
+        [id(150), helpstring("method EndFiscalReceipt")]
+        HRESULT EndFiscalReceipt( 
+            [in] VARIANT_BOOL PrintHeader, 
+            [out, retval] long* pRC );
+        [id(151), helpstring("method EndFixedOutput")]
+        HRESULT EndFixedOutput( 
+            [out, retval] long* pRC );
+        [id(152), helpstring("method EndInsertion")]
+        HRESULT EndInsertion( 
+            [out, retval] long* pRC );
+        [id(153), helpstring("method EndItemList")]
+        HRESULT EndItemList( 
+            [out, retval] long* pRC );
+        [id(154), helpstring("method EndNonFiscal")]
+        HRESULT EndNonFiscal( 
+            [out, retval] long* pRC );
+        [id(155), helpstring("method EndRemoval")]
+        HRESULT EndRemoval( 
+            [out, retval] long* pRC );
+        [id(156), helpstring("method EndTraining")]
+        HRESULT EndTraining( 
+            [out, retval] long* pRC );
+        [id(157), helpstring("method GetData")]
+        HRESULT GetData( 
+            [in] long DataItem, 
+            [out] long* OptArgs, 
+            [out] BSTR* Data, 
+            [out, retval] long* pRC );
+        [id(158), helpstring("method GetDate")]
+        HRESULT GetDate( 
+            [out] BSTR* Date, 
+            [out, retval] long* pRC );
+        [id(159), helpstring("method GetTotalizer")]
+        HRESULT GetTotalizer( 
+            [in] long VatID, 
+            [in] long OptArgs, 
+            [out] BSTR* Data, 
+            [out, retval] long* pRC );
+        [id(160), helpstring("method GetVatEntry")]
+        HRESULT GetVatEntry( 
+            [in] long VatID, 
+            [in] long OptArgs, 
+            [out] long* VatRate, 
+            [out, retval] long* pRC );
+        [id(161), helpstring("method PrintDuplicateReceipt")]
+        HRESULT PrintDuplicateReceipt( 
+            [out, retval] long* pRC );
+        [id(162), helpstring("method PrintFiscalDocumentLine")]
+        HRESULT PrintFiscalDocumentLine( 
+            [in] BSTR DocumentLine, 
+            [out, retval] long* pRC );
+        [id(163), helpstring("method PrintFixedOutput")]
+        HRESULT PrintFixedOutput( 
+            [in] long DocumentType, 
+            [in] long LineNumber, 
+            [in] BSTR Data, 
+            [out, retval] long* pRC );
+        [id(164), helpstring("method PrintNormal")]
+        HRESULT PrintNormal( 
+            [in] long Station, 
+            [in] BSTR Data, 
+            [out, retval] long* pRC );
+        [id(165), helpstring("method PrintPeriodicTotalsReport")]
+        HRESULT PrintPeriodicTotalsReport( 
+            [in] BSTR Date1, 
+            [in] BSTR Date2, 
+            [out, retval] long* pRC );
+        [id(166), helpstring("method PrintPowerLossReport")]
+        HRESULT PrintPowerLossReport( 
+            [out, retval] long* pRC );
+        [id(167), helpstring("method PrintRecItem")]
+        HRESULT PrintRecItem( 
+            [in] BSTR Description, 
+            [in] CURRENCY Price, 
+            [in] long Quantity, 
+            [in] long VatInfo, 
+            [in] CURRENCY UnitPrice, 
+            [in] BSTR UnitName, 
+            [out, retval] long* pRC );
+        [id(168), helpstring("method PrintRecItemAdjustment")]
+        HRESULT PrintRecItemAdjustment( 
+            [in] long AdjustmentType, 
+            [in] BSTR Description, 
+            [in] CURRENCY Amount, 
+            [in] long VatInfo, 
+            [out, retval] long* pRC );
+        [id(169), helpstring("method PrintRecMessage")]
+        HRESULT PrintRecMessage( 
+            [in] BSTR Message, 
+            [out, retval] long* pRC );
+        [id(170), helpstring("method PrintRecNotPaid")]
+        HRESULT PrintRecNotPaid( 
+            [in] BSTR Description, 
+            [in] CURRENCY Amount, 
+            [out, retval] long* pRC );
+        [id(171), helpstring("method PrintRecRefund")]
+        HRESULT PrintRecRefund( 
+            [in] BSTR Description, 
+            [in] CURRENCY Amount, 
+            [in] long VatInfo, 
+            [out, retval] long* pRC );
+        [id(172), helpstring("method PrintRecSubtotal")]
+        HRESULT PrintRecSubtotal( 
+            [in] CURRENCY Amount, 
+            [out, retval] long* pRC );
+        [id(173), helpstring("method PrintRecSubtotalAdjustment")]
+        HRESULT PrintRecSubtotalAdjustment( 
+            [in] long AdjustmentType, 
+            [in] BSTR Description, 
+            [in] CURRENCY Amount, 
+            [out, retval] long* pRC );
+        [id(174), helpstring("method PrintRecTotal")]
+        HRESULT PrintRecTotal( 
+            [in] CURRENCY Total, 
+            [in] CURRENCY Payment, 
+            [in] BSTR Description, 
+            [out, retval] long* pRC );
+        [id(175), helpstring("method PrintRecVoid")]
+        HRESULT PrintRecVoid( 
+            [in] BSTR Description, 
+            [out, retval] long* pRC );
+        [id(176), helpstring("method PrintRecVoidItem")]
+        HRESULT PrintRecVoidItem( 
+            [in] BSTR Description, 
+            [in] CURRENCY Amount, 
+            [in] long Quantity, 
+            [in] long AdjustmentType, 
+            [in] CURRENCY Adjustment, 
+            [in] long VatInfo, 
+            [out, retval] long* pRC );
+        [id(177), helpstring("method PrintReport")]
+        HRESULT PrintReport( 
+            [in] long ReportType, 
+            [in] BSTR StartNum, 
+            [in] BSTR EndNum, 
+            [out, retval] long* pRC );
+        [id(178), helpstring("method PrintXReport")]
+        HRESULT PrintXReport( 
+            [out, retval] long* pRC );
+        [id(179), helpstring("method PrintZReport")]
+        HRESULT PrintZReport( 
+            [out, retval] long* pRC );
+        [id(180), helpstring("method ResetPrinter")]
+        HRESULT ResetPrinter( 
+            [out, retval] long* pRC );
+        [id(181), helpstring("method SetDate")]
+        HRESULT SetDate( 
+            [in] BSTR Date, 
+            [out, retval] long* pRC );
+        [id(182), helpstring("method SetHeaderLine")]
+        HRESULT SetHeaderLine( 
+            [in] long LineNumber, 
+            [in] BSTR Text, 
+            [in] VARIANT_BOOL DoubleWidth, 
+            [out, retval] long* pRC );
+        [id(183), helpstring("method SetPOSID")]
+        HRESULT SetPOSID( 
+            [in] BSTR POSID, 
+            [in] BSTR CashierID, 
+            [out, retval] long* pRC );
+        [id(184), helpstring("method SetStoreFiscalID")]
+        HRESULT SetStoreFiscalID( 
+            [in] BSTR ID, 
+            [out, retval] long* pRC );
+        [id(185), helpstring("method SetTrailerLine")]
+        HRESULT SetTrailerLine( 
+            [in] long LineNumber, 
+            [in] BSTR Text, 
+            [in] VARIANT_BOOL DoubleWidth, 
+            [out, retval] long* pRC );
+        [id(186), helpstring("method SetVatTable")]
+        HRESULT SetVatTable( 
+            [out, retval] long* pRC );
+        [id(187), helpstring("method SetVatValue")]
+        HRESULT SetVatValue( 
+            [in] long VatID, 
+            [in] BSTR VatValue, 
+            [out, retval] long* pRC );
+        [id(188), helpstring("method VerifyItem")]
+        HRESULT VerifyItem( 
+            [in] BSTR ItemName, 
+            [in] long VatID, 
+            [out, retval] long* pRC );
+    // Release 1.4
+    // Release 1.5
+    // Release 1.6
+        [propget, id(210), helpstring("property ActualCurrency")]
+        HRESULT ActualCurrency( [out, retval] long* pActualCurrency );
+        [propget, id(211), helpstring("property AdditionalHeader")]
+        HRESULT AdditionalHeader( [out, retval] BSTR* pAdditionalHeader );
+        [propput, id(211), helpstring("property AdditionalHeader")]
+        HRESULT AdditionalHeader( [in] BSTR AdditionalHeader );
+        [propget, id(212), helpstring("property AdditionalTrailer")]
+        HRESULT AdditionalTrailer( [out, retval] BSTR* pAdditionalTrailer );
+        [propput, id(212), helpstring("property AdditionalTrailer")]
+        HRESULT AdditionalTrailer( [in] BSTR AdditionalTrailer );
+        [propget, id(213), helpstring("property CapAdditionalHeader")]
+        HRESULT CapAdditionalHeader( [out, retval] VARIANT_BOOL* pCapAdditionalHeader );
+        [propget, id(214), helpstring("property CapAdditionalTrailer")]
+        HRESULT CapAdditionalTrailer( [out, retval] VARIANT_BOOL* pCapAdditionalTrailer );
+        [propget, id(215), helpstring("property CapChangeDue")]
+        HRESULT CapChangeDue( [out, retval] VARIANT_BOOL* pCapChangeDue );
+        [propget, id(216), helpstring("property CapEmptyReceiptIsVoidable")]
+        HRESULT CapEmptyReceiptIsVoidable( [out, retval] VARIANT_BOOL* pCapEmptyReceiptIsVoidable );
+        [propget, id(217), helpstring("property CapFiscalReceiptStation")]
+        HRESULT CapFiscalReceiptStation( [out, retval] VARIANT_BOOL* pCapFiscalReceiptStation );
+        [propget, id(218), helpstring("property CapFiscalReceiptType")]
+        HRESULT CapFiscalReceiptType( [out, retval] VARIANT_BOOL* pCapFiscalReceiptType );
+        [propget, id(219), helpstring("property CapMultiContractor")]
+        HRESULT CapMultiContractor( [out, retval] VARIANT_BOOL* pCapMultiContractor );
+        [propget, id(220), helpstring("property CapOnlyVoidLastItem")]
+        HRESULT CapOnlyVoidLastItem( [out, retval] VARIANT_BOOL* pCapOnlyVoidLastItem );
+        [propget, id(221), helpstring("property CapPackageAdjustment")]
+        HRESULT CapPackageAdjustment( [out, retval] VARIANT_BOOL* pCapPackageAdjustment );
+        [propget, id(222), helpstring("property CapPostPreLine")]
+        HRESULT CapPostPreLine( [out, retval] VARIANT_BOOL* pCapPostPreLine );
+        [propget, id(223), helpstring("property CapSetCurrency")]
+        HRESULT CapSetCurrency( [out, retval] VARIANT_BOOL* pCapSetCurrency );
+        [propget, id(224), helpstring("property CapTotalizerType")]
+        HRESULT CapTotalizerType( [out, retval] VARIANT_BOOL* pCapTotalizerType );
+        [propget, id(225), helpstring("property ChangeDue")]
+        HRESULT ChangeDue( [out, retval] BSTR* pChangeDue );
+        [propput, id(225), helpstring("property ChangeDue")]
+        HRESULT ChangeDue( [in] BSTR ChangeDue );
+        [propget, id(226), helpstring("property ContractorId")]
+        HRESULT ContractorId( [out, retval] long* pContractorId );
+        [propput, id(226), helpstring("property ContractorId")]
+        HRESULT ContractorId( [in] long ContractorId );
+        [propget, id(227), helpstring("property DateType")]
+        HRESULT DateType( [out, retval] long* pDateType );
+        [propput, id(227), helpstring("property DateType")]
+        HRESULT DateType( [in] long DateType );
+        [propget, id(228), helpstring("property FiscalReceiptStation")]
+        HRESULT FiscalReceiptStation( [out, retval] long* pFiscalReceiptStation );
+        [propput, id(228), helpstring("property FiscalReceiptStation")]
+        HRESULT FiscalReceiptStation( [in] long FiscalReceiptStation );
+        [propget, id(229), helpstring("property FiscalReceiptType")]
+        HRESULT FiscalReceiptType( [out, retval] long* pFiscalReceiptType );
+        [propput, id(229), helpstring("property FiscalReceiptType")]
+        HRESULT FiscalReceiptType( [in] long FiscalReceiptType );
+        [propget, id(230), helpstring("property MessageType")]
+        HRESULT MessageType( [out, retval] long* pMessageType );
+        [propput, id(230), helpstring("property MessageType")]
+        HRESULT MessageType( [in] long MessageType );
+        [propget, id(231), helpstring("property PostLine")]
+        HRESULT PostLine( [out, retval] BSTR* pPostLine );
+        [propput, id(231), helpstring("property PostLine")]
+        HRESULT PostLine( [in] BSTR PostLine );
+        [propget, id(232), helpstring("property PreLine")]
+        HRESULT PreLine( [out, retval] BSTR* pPreLine );
+        [propput, id(232), helpstring("property PreLine")]
+        HRESULT PreLine( [in] BSTR PreLine );
+        [propget, id(233), helpstring("property TotalizerType")]
+        HRESULT TotalizerType( [out, retval] long* pTotalizerType );
+        [propput, id(233), helpstring("property TotalizerType")]
+        HRESULT TotalizerType( [in] long TotalizerType );
+        [id(189), helpstring("method PrintRecCash")]
+        HRESULT PrintRecCash( 
+            [in] CURRENCY Amount, 
+            [out, retval] long* pRC );
+        [id(190), helpstring("method PrintRecItemFuel")]
+        HRESULT PrintRecItemFuel( 
+            [in] BSTR Description, 
+            [in] CURRENCY Price, 
+            [in] long Quantity, 
+            [in] long VatInfo, 
+            [in] CURRENCY UnitPrice, 
+            [in] BSTR UnitName, 
+            [in] CURRENCY SpecialTax, 
+            [in] BSTR SpecialTaxName, 
+            [out, retval] long* pRC );
+        [id(191), helpstring("method PrintRecItemFuelVoid")]
+        HRESULT PrintRecItemFuelVoid( 
+            [in] BSTR Description, 
+            [in] CURRENCY Price, 
+            [in] long VatInfo, 
+            [in] CURRENCY SpecialTax, 
+            [out, retval] long* pRC );
+        [id(192), helpstring("method PrintRecPackageAdjustment")]
+        HRESULT PrintRecPackageAdjustment( 
+            [in] long AdjustmentType, 
+            [in] BSTR Description, 
+            [in] BSTR VatAdjustment, 
+            [out, retval] long* pRC );
+        [id(193), helpstring("method PrintRecPackageAdjustVoid")]
+        HRESULT PrintRecPackageAdjustVoid( 
+            [in] long AdjustmentType, 
+            [in] BSTR VatAdjustment, 
+            [out, retval] long* pRC );
+        [id(194), helpstring("method PrintRecRefundVoid")]
+        HRESULT PrintRecRefundVoid( 
+            [in] BSTR Description, 
+            [in] CURRENCY Amount, 
+            [in] long VatInfo, 
+            [out, retval] long* pRC );
+        [id(195), helpstring("method PrintRecSubtotalAdjustVoid")]
+        HRESULT PrintRecSubtotalAdjustVoid( 
+            [in] long AdjustmentType, 
+            [in] CURRENCY Amount, 
+            [out, retval] long* pRC );
+        [id(196), helpstring("method PrintRecTaxID")]
+        HRESULT PrintRecTaxID( 
+            [in] BSTR TaxID, 
+            [out, retval] long* pRC );
+        [id(197), helpstring("method SetCurrency")]
+        HRESULT SetCurrency( 
+            [in] long NewCurrency, 
+            [out, retval] long* pRC );
+    // Release 1.7
+    };
+
+//
+//========== Previous Interface: 1.8 ==========
+//
+
+    [
+        object,
+        uuid(CCB93071-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSFiscalPrinter 1.8 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSFiscalPrinter_1_8 : IOPOSFiscalPrinter_1_6
+    {
+    // Release 1.8
+        [propget, id(39), helpstring("property CapStatisticsReporting")]
+        HRESULT CapStatisticsReporting( [out, retval] VARIANT_BOOL* pCapStatisticsReporting );
+        [propget, id(40), helpstring("property CapUpdateStatistics")]
+        HRESULT CapUpdateStatistics( [out, retval] VARIANT_BOOL* pCapUpdateStatistics );
+        [id(41), helpstring("method ResetStatistics")]
+        HRESULT ResetStatistics( 
+            [in] BSTR StatisticsBuffer, 
+            [out, retval] long* pRC );
+        [id(42), helpstring("method RetrieveStatistics")]
+        HRESULT RetrieveStatistics( 
+            [in, out] BSTR* pStatisticsBuffer, 
+            [out, retval] long* pRC );
+        [id(43), helpstring("method UpdateStatistics")]
+        HRESULT UpdateStatistics( 
+            [in] BSTR StatisticsBuffer, 
+            [out, retval] long* pRC );
+    };
+
+//
+//========== Previous Interface: 1.9 ==========
+//
+
+    [
+        object,
+        uuid(CCB94071-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSFiscalPrinter 1.9 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSFiscalPrinter_1_9 : IOPOSFiscalPrinter_1_8
+    {
+    // Release 1.9
+        [propget, id(44), helpstring("property CapCompareFirmwareVersion")]
+        HRESULT CapCompareFirmwareVersion( [out, retval] VARIANT_BOOL* pCapCompareFirmwareVersion );
+        [propget, id(45), helpstring("property CapUpdateFirmware")]
+        HRESULT CapUpdateFirmware( [out, retval] VARIANT_BOOL* pCapUpdateFirmware );
+        [id(46), helpstring("method CompareFirmwareVersion")]
+        HRESULT CompareFirmwareVersion( 
+            [in] BSTR FirmwareFileName, 
+            [out] long* pResult, 
+            [out, retval] long* pRC );
+        [id(47), helpstring("method UpdateFirmware")]
+        HRESULT UpdateFirmware( 
+            [in] BSTR FirmwareFileName, 
+            [out, retval] long* pRC );
+    // Release 1.10
+    };
+
+//
+//========== Previous Interface: 1.11 ==========
+//
+
+    [
+        object,
+        uuid(CCB95071-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSFiscalPrinter 1.11 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSFiscalPrinter_1_11 : IOPOSFiscalPrinter_1_9
+    {
+    // Release 1.11
+        [propget, id(234), helpstring("property CapPositiveSubtotalAdjustment")]
+        HRESULT CapPositiveSubtotalAdjustment( [out, retval] VARIANT_BOOL* pCapPositiveSubtotalAdjustment );
+        [id(199), helpstring("method PrintRecItemAdjustmentVoid")]
+        HRESULT PrintRecItemAdjustmentVoid( 
+            [in] long AdjustmentType, 
+            [in] BSTR Description, 
+            [in] CURRENCY Amount, 
+            [in] long VatInfo, 
+            [out, retval] long* pRC );
+        [id(198), helpstring("method PrintRecItemVoid")]
+        HRESULT PrintRecItemVoid( 
+            [in] BSTR Description, 
+            [in] CURRENCY Price, 
+            [in] long Quantity, 
+            [in] long VatInfo, 
+            [in] CURRENCY UnitPrice, 
+            [in] BSTR UnitName, 
+            [out, retval] long* pRC );
+    };
+
+//
+//========== Current Interface: 1.12 ==========
+//
+
+    [
+        object,
+        uuid(CCB96071-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSFiscalPrinter 1.12 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSFiscalPrinter_1_12 : IOPOSFiscalPrinter_1_11
+    {
+    // Release 1.12
+        [id(200), helpstring("method PrintRecItemRefund")]
+        HRESULT PrintRecItemRefund( 
+            [in] BSTR Description, 
+            [in] CURRENCY Amount, 
+            [in] long Quantity, 
+            [in] long VatInfo, 
+            [in] CURRENCY UnitAmount, 
+            [in] BSTR UnitName, 
+            [out, retval] long* pRC );
+        [id(201), helpstring("method PrintRecItemRefundVoid")]
+        HRESULT PrintRecItemRefundVoid( 
+            [in] BSTR Description, 
+            [in] CURRENCY Amount, 
+            [in] long Quantity, 
+            [in] long VatInfo, 
+            [in] CURRENCY UnitAmount, 
+            [in] BSTR UnitName, 
+            [out, retval] long* pRC );
+    // Release 1.13
+    // Release 1.14
+    };
+
+//
+//---------- IOPOSFiscalPrinter Interface: Invariant Name ----------
+//
+    [
+        object,
+        uuid(CCB97071-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSFiscalPrinter Current Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSFiscalPrinter : IOPOSFiscalPrinter_1_12
+    {
+    };
+
+
+///////////////////////////////////////////////////////////////////////////////
+//// Library
+///////////////////////////////////////////////////////////////////////////////
+
+[
+    uuid(CCB90070-B81E-11D2-AB74-0040054C3719),
+    version(1.0),
+    helpstring("OPOS FiscalPrinter Control 1.14.001 [Public, by CRM/MCS]")
+]
+library OposFiscalPrinter_CCO
+{
+    importlib("stdole32.tlb");
+    importlib("stdole2.tlb");
+
+    //*************************************************************************
+    //** Event interface
+    //*************************************************************************
+    [
+        uuid(CCB90073-B81E-11D2-AB74-0040054C3719),
+        helpstring("_IOPOSFiscalPrinterEvents Interface")
+    ]
+    dispinterface _IOPOSFiscalPrinterEvents
+    {
+        properties:
+        methods:
+        [id(2), helpstring("method DirectIOEvent")]
+            void DirectIOEvent( [in] long EventNumber, [in, out] long *pData, [in, out] BSTR *pString );
+        [id(3), helpstring("method ErrorEvent")]
+            void ErrorEvent( [in] long ResultCode, [in] long ResultCodeExtended, [in] long ErrorLocus, [in, out] long* pErrorResponse );
+        [id(4), helpstring("method OutputCompleteEvent")]
+            void OutputCompleteEvent( [in] long OutputID );
+        [id(5), helpstring("method StatusUpdateEvent")]
+            void StatusUpdateEvent( [in] long Data );
+    };
+
+    //*************************************************************************
+    //** COM Class
+    //*************************************************************************
+    [
+        uuid(CCB90072-B81E-11D2-AB74-0040054C3719),
+        helpstring("OPOS FiscalPrinter Control 1.14.001 [Public, by CRM/MCS]")
+    ]
+    coclass OPOSFiscalPrinter
+    {
+        [default] interface IOPOSFiscalPrinter;
+        interface IOPOSFiscalPrinter_1_12;
+        interface IOPOSFiscalPrinter_1_11;
+        interface IOPOSFiscalPrinter_1_9;
+        interface IOPOSFiscalPrinter_1_8;
+        interface IOPOSFiscalPrinter_1_6;
+        [default, source] dispinterface _IOPOSFiscalPrinterEvents;
+    };
+};
+
+// End FiscalPrinter.idl

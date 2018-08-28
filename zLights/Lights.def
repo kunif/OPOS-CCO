@@ -1,0 +1,18 @@
+;****************************************************************************
+;*
+;* Lights.def -- Linker parameters
+;*
+;*     Date                   Modification                          Author
+;* -----------|----------------------------------------------------|----------
+;*  1999/03/20 Initial version.                                     C. Monroe
+;*  2015/02/07 Version 1.14.001.
+;*
+;****************************************************************************
+
+LIBRARY      "OPOSLights.OCX"
+
+EXPORTS
+    DllCanUnloadNow      PRIVATE
+    DllGetClassObject    PRIVATE
+    DllRegisterServer    PRIVATE
+    DllUnregisterServer  PRIVATE

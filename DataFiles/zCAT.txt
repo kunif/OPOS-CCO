@@ -1,0 +1,177 @@
+!!***************************************************************************
+!!
+!! Cat Opos Control Object Data File
+!!
+!!     Date                   Modification                          Author
+!! -----------|----------------------------------------------------|----------
+!!  1999/02/06 1.4.991: Initial version.                            C. Monroe
+!!  1999/06/18 1.5.000: Change OpenText to OpenResult. Update GUIDs.
+!!  2000/09/09 1.5.100: Add properties and methods for 1.5.
+!!  2004/03/22 1.8.000: Add properties and methods for 1.8.
+!!  2005/04/29 1.9.000: Add properties and methods for 1.9.
+!!  2006/03/15 1.10.000: Add properties and methods for 1.10.
+!!
+!!***************************************************************************
+
+! Names: Device, Uppercase Device
+DeviceName      =CAT
+DeviceUpper     =CAT
+
+! Short device designation used by OPOS.
+!   Include file is Opos@DeviceShortName@.hi
+!   Property index prefix is PIDX@DeviceShortName@.
+DeviceShortName =Cat
+! Short upper case device designation used by OPOS.
+!   Device registry key is OPOS_CLASSKEY_@DeviceShortUpper@
+DeviceShortUpper=CAT
+
+! If Claim and Release are not supported, comment out the next line.
+!   (The macro values are not important. We only check for defined or not defined.)
+ClaimRelease    =
+
+! If sharable device, comment out the next line.
+!   (The macro value is not important. We only check for defined or not defined.)
+Exclusive       =
+
+! If any methods or properties use currency, then define "Currency"
+Currency        =
+
+! Supported events. Comment out the unsupported ones.
+!   (The macro values are not important. We only check for defined or not defined.)
+!!EventData       =
+EventDirectIO   =
+EventError      =
+EventOutput     =
+EventStatus     =
+
+! UUIDs. UUIDLibrary is required to be the full GUID.
+!   The others can be specified in full, or a "*" indicates that the bytes 3-4
+!   (hexadecimal chars 5-8) of the UUIDLibrary should be incremented to
+!   form their GUIDs.
+UUIDControl     =0050
+UUIDLibrary     =UUID:@UUIDPre@@UUIDControl@-@UUIDPost@
+UUIDInterface   =UUID*
+UUIDCoclass     =UUID*
+UUIDEvents      =UUID*
+
+! For each version up to the @Version@, list the properties and methods.
+!   If method:
+!     M  = Method.
+!     Release = 1.x
+!     Number = Dispatch ID.
+!     Details = IDL formatted method and parameters, with assumed ", [out] LONG* pRC )" at end.
+!       If usage omitted, assume [in].
+!       Parameter types restricted to BOOL, LONG, CURRENCY, and BSTR.
+!   If parameter:
+!     First char = C for Common (or S for Specific [optional]).
+!     Next one or two chars = R for Readable or W for Writable.
+!     Release = 1.x
+!     Number = Dispatch ID.
+!     Details = Property name followed by type in parentheses.
+!       Type restricted to BOOL, LONG, CURRENCY, and BSTR.
+!     Property Index name without prefix (optional)
+
+:MethodsProperties
+!> Added Property
+ CR  1.4  49 OpenResult(LONG)
+!> Common Properties
+!CRW 1.4  10 AutoDisable(BOOL)
+ CRW 1.4  11 BinaryConversion(LONG)
+ CR  1.4  12 CapPowerReporting(LONG)
+ CR  1.4  13 CheckHealthText(BSTR)
+ CR  1.4  14 Claimed(BOOL)
+!CR  1.4  15 DataCount(LONG)
+!CRW 1.4  16 DataEventEnabled(BOOL)
+ CRW 1.4  17 DeviceEnabled(BOOL)
+ CRW 1.4  18 FreezeEvents(BOOL)
+ CR  1.4  19 OutputID(LONG)
+ CRW 1.4  20 PowerNotify(LONG)
+ CR  1.4  21 PowerState(LONG)
+ CR  1.4  22 ResultCode(LONG)
+ CR  1.4  23 ResultCodeExtended(LONG)
+ CR  1.4  24 State(LONG)
+!
+ CR  1.4  25 ControlObjectDescription(BSTR)
+ CR  1.4  26 ControlObjectVersion(LONG)
+ CR  1.4  27 ServiceObjectDescription(BSTR)
+ CR  1.4  28 ServiceObjectVersion(LONG)
+ CR  1.4  29 DeviceDescription(BSTR)
+ CR  1.4  30 DeviceName(BSTR)
+!     Added in Release 1.8
+ CR  1.8  39 CapStatisticsReporting(BOOL)
+ CR  1.8  40 CapUpdateStatistics(BOOL)
+!     Added in Release 1.9
+ CR  1.9  44 CapCompareFirmwareVersion(BOOL)
+ CR  1.9  45 CapUpdateFirmware(BOOL)
+!
+!> Common Methods
+ M   1.4  31 CheckHealth(LONG Level)
+ M   1.4  32 Claim(LONG Timeout)
+!M   1.4  33 ClearInput()
+ M   1.4  34 ClearOutput()
+ M   1.4  35 Close()
+ M   1.4  36 DirectIO(LONG Command, [in, out] LONG* pData, [in, out] BSTR* pString)
+ M   1.4  37 Open(BSTR DeviceName)
+ M   1.4  38 Release()
+!     Added in Release 1.8
+ M   1.8  41 ResetStatistics(BSTR StatisticsBuffer)
+ M   1.8  42 RetrieveStatistics([in, out] BSTR* pStatisticsBuffer)
+ M   1.8  43 UpdateStatistics(BSTR StatisticsBuffer)
+!     Added in Release 1.9
+ M   1.9  46 CompareFirmwareVersion(BSTR FirmwareFileName, [out] LONG* pResult)
+ M   1.9  47 UpdateFirmware(BSTR FirmwareFileName)
+!     Added in Release 1.10
+!M   1.10 48 ClearInputProperties()
+!
+!> Specific Properties
+  R  1.4  50 AccountNumber(BSTR)
+  RW 1.4  51 AdditionalSecurityInformation(BSTR)
+  R  1.4  52 ApprovalCode(BSTR)
+  RW 1.4  53 AsyncMode(BOOL)
+  R  1.9  79 Balance(CURRENCY)
+  R  1.4  54 CapAdditionalSecurityInformation(BOOL)
+  R  1.4  55 CapAuthorizeCompletion(BOOL)
+  R  1.4  56 CapAuthorizePreSales(BOOL)
+  R  1.4  57 CapAuthorizeRefund(BOOL)
+  R  1.4  58 CapAuthorizeVoid(BOOL)
+  R  1.4  59 CapAuthorizeVoidPreSales(BOOL)
+  R  1.9  80 CapCashDeposit(BOOL)
+  R  1.4  60 CapCenterResultCode(BOOL)
+  R  1.4  61 CapCheckCard(BOOL)
+  R  1.4  62 CapDailyLog(LONG)
+  R  1.4  63 CapInstallments(BOOL)
+  R  1.9  81 CapLockTerminal(BOOL)
+  R  1.9  82 CapLogStatus(BOOL)
+  R  1.4  64 CapPaymentDetail(BOOL)
+  R  1.4  65 CapTaxOthers(BOOL)
+  R  1.4  67 CapTrainingMode(BOOL)
+  R  1.4  66 CapTransactionNumber(BOOL)
+  R  1.9  83 CapUnlockTerminal(BOOL)
+  R  1.4  68 CardCompanyID(BSTR)
+  R  1.4  69 CenterResultCode(BSTR)
+  R  1.4  70 DailyLog(BSTR)
+  R  1.9  84 LogStatus(LONG)
+  R  1.4  71 PaymentCondition(LONG)
+  R  1.4  72 PaymentDetail(BSTR)
+  RW 1.5  78 PaymentMedia(LONG)
+  R  1.4  73 SequenceNumber(LONG)
+  R  1.9  85 SettledAmount(CURRENCY)
+  R  1.4  74 SlipNumber(BSTR)
+  RW 1.4  75 TrainingMode(BOOL)
+  R  1.4  76 TransactionNumber(BSTR)
+  R  1.4  77 TransactionType(LONG)
+!
+!> Specific Methods
+ M   1.4  90 AccessDailyLog(LONG SequenceNumber, LONG Type, LONG Timeout)
+ M   1.4  91 AuthorizeCompletion(LONG SequenceNumber, CURRENCY Amount, CURRENCY TaxOthers, LONG Timeout)
+ M   1.4  92 AuthorizePreSales(LONG SequenceNumber, CURRENCY Amount, CURRENCY TaxOthers, LONG Timeout)
+ M   1.4  93 AuthorizeRefund(LONG SequenceNumber, CURRENCY Amount, CURRENCY TaxOthers, LONG Timeout)
+ M   1.4  94 AuthorizeSales(LONG SequenceNumber, CURRENCY Amount, CURRENCY TaxOthers, LONG Timeout)
+ M   1.4  95 AuthorizeVoid(LONG SequenceNumber, CURRENCY Amount, CURRENCY TaxOthers, LONG Timeout)
+ M   1.4  96 AuthorizeVoidPreSales(LONG SequenceNumber, CURRENCY Amount, CURRENCY TaxOthers, LONG Timeout)
+ M   1.9  98 CashDeposit(LONG SequenceNumber, CURRENCY Amount, LONG Timeout)
+ M   1.4  97 CheckCard(LONG SequenceNumber, LONG Timeout)
+ M   1.9  99 LockTerminal()
+ M   1.9 100 UnlockTerminal()
+
+!!End

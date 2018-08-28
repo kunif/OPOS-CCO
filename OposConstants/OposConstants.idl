@@ -1,0 +1,92 @@
+/****************************************************************************
+**
+** OposConstants.idl : IDL source for OposConstants.dll
+**
+*****************************************************************************
+**
+{{Begin License}}
+
+Copyright 2015 Monroe Consulting Services, Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+{{End License}}
+*/
+
+
+// This file will be processed by the MIDL tool to
+// produce the type library (OposConstants.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+///////////////////////////////////////////////////////////////////////////////
+//// Library
+////   Note that no interfaces or coclasses are defined.
+////   This DLL exists solely to provide constant enumerations.
+///////////////////////////////////////////////////////////////////////////////
+
+[
+    uuid(CCB99150-B81E-11D2-AB74-0040054C3719),
+    //        ^^^
+    // As the constants were updated, I was originally planning to increment these digits:
+    //   150 = OPOS Release 1.5 Patch 0.
+    // But decided to leave at original value, since
+    //   1) Updates should be either corrections or supersets of previous.
+    //   2) Don't want to force projects to bring in updated library.
+    version(1.0),
+    helpstring("OPOS 1.14.1 Constants")
+]
+library OPOSCONSTANTSLib
+{
+    importlib("stdole32.tlb");
+    importlib("stdole2.tlb");
+
+    #include "OposConst.h"
+    #include "IDL\OposConstBelt.h"                              // Added in 1.12
+    #include "IDL\OposConstBillAcceptor.h"                      // Added in 1.11
+    #include "IDL\OposConstBillDispenser.h"                     // Added in 1.11
+    #include "IDL\OposConstBiometrics.h"                        // Added in 1.10
+    #include "IDL\OposConstBumpBar.h"
+    #include "IDL\OposConstCashChanger.h"
+    #include "IDL\OposConstCashDrawer.h"
+    #include "IDL\OposConstCAT.h"
+    #include "IDL\OposConstCheckScanner.h"                      // Added in 1.7
+    #include "IDL\OposConstCoinAcceptor.h"                      // Added in 1.11
+    #include "IDL\OposConstCoinDispenser.h"
+    #include "IDL\OposConstElectronicJournal.h"                 // Added in 1.10
+    #include "IDL\OposConstElectronicValueRW.h"                 // Added in 1.12
+    #include "IDL\OposConstFiscalPrinter.h"
+    #include "IDL\OposConstGate.h"                              // Added in 1.12
+    #include "IDL\OposConstImageScanner.h"                      // Added in 1.11
+    #include "IDL\OposConstItemDispenser.h"                     // Added in 1.12
+    #include "IDL\OposConstKeylock.h"
+    #include "IDL\OposConstLights.h"                            // Added in 1.12
+    #include "IDL\OposConstLineDisplay.h"
+    #include "IDL\OposConstMICR.h"
+    #include "IDL\OposConstMotionSensor.h"                      // Added in 1.7
+    #include "IDL\OposConstMSR.h"
+    #include "IDL\OposConstPINPad.h"
+    #include "IDL\OposConstPointCardRW.h"
+    #include "IDL\OposConstPOSKeyboard.h"
+    #include "IDL\OposConstPOSPower.h"
+    #include "IDL\OposConstPOSPrinter.h"
+    #include "IDL\OposConstRemoteOrderDisplay.h"
+    #include "IDL\OposConstRFIDScanner.h"                       // Added in 1.12
+    #include "IDL\OposConstScale.h"
+    #include "IDL\OposConstScanner.h"
+    #include "IDL\OposConstSigCap.h"
+    #include "IDL\OposConstSmartCardRW.h"                       // Added in 1.8
+    #include "IDL\OposConstToneIndicator.h"
+    #include "IDL\OposConstTotals.h"
+};

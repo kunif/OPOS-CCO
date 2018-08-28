@@ -1,0 +1,43 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposLights.hi
+//
+//   Lights header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 2008-08-30 OPOS Release 1.12                                  CRM
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSLGT_HI)
+#define      OPOSLGT_HI
+
+
+#include "Opos.hi"
+#include "OposLgt.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXLgt_MaxLights                        =   1 + PIDX_LGT+PIDX_NUMBER;
+
+// * Capabilities *
+
+const LONG PIDXLgt_CapAlarm                         = 501 + PIDX_LGT+PIDX_NUMBER;
+const LONG PIDXLgt_CapBlink                         = 502 + PIDX_LGT+PIDX_NUMBER;
+const LONG PIDXLgt_CapColor                         = 503 + PIDX_LGT+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+
+#endif          // !defined(OPOSLGT_HI)

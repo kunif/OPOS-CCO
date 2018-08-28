@@ -1,0 +1,581 @@
+/****************************************************************************
+**
+** ElectronicValueRW.idl -- IDL source for ElectronicValueRW.ocx
+**
+**     Date                   Modification                          Author
+** -----------|----------------------------------------------------|----------
+**  1999/03/20 Initial version.                                     C. Monroe
+**  2008/01/15 Enhance for independent interfaces.
+**  2008/08/30 More interface updates.
+**  2013/09/29 Update license section.
+**  2015/02/07 Update license section.
+**  2015/02/07 Version 1.14.100.
+**
+*****************************************************************************
+**
+{{Begin License}}
+
+Copyright 2015 Monroe Consulting Services, Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+{{End License}}
+*/
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ElectronicValueRW.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+#include "olectl.h"
+
+
+///////////////////////////////////////////////////////////////////////////////
+//// Interfaces
+///////////////////////////////////////////////////////////////////////////////
+
+// Separate Dependent Interfaces implementation:
+//  - First interface with the APIs defined from original through that release.
+//  - Later interfaces derive from previous and add their releases' new APIs.
+//  - Current interface derives from previous and adds its release's new APIs.
+
+//
+//========== Previous Interface: 1.12 ==========
+//
+
+    [
+        object,
+        uuid(CCB90331-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSElectronicValueRW 1.12 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSElectronicValueRW_1_12 : IDispatch
+    {
+    // Methods for use only by the Service Object
+        [id(1), hidden, helpstring("method SOData")] HRESULT SOData( [in] long Status );
+        [id(2), hidden, helpstring("method SODirectIO")] HRESULT SODirectIO( [in] long EventNumber, [in, out] long* pData, [in, out] BSTR* pString );
+        [id(3), hidden, helpstring("method SOError")] HRESULT SOError( [in] long ResultCode, [in] long ResultCodeExtended, [in] long ErrorLocus, [in, out] long* pErrorResponse );
+        [id(4), hidden, helpstring("method SOOutputComplete")] HRESULT SOOutputComplete( [in] long OutputID );
+        [id(5), hidden, helpstring("method SOStatusUpdate")] HRESULT SOStatusUpdate( [in] long Data );
+        [id(9), hidden, helpstring("method SOProcessID")] HRESULT SOProcessID( [out, retval] long* pProcessID );
+    // Release 1.12
+        [propget, id(49), helpstring("property OpenResult")]
+        HRESULT OpenResult( [out, retval] long* pOpenResult );
+        [propget, id(10), helpstring("property AutoDisable")]
+        HRESULT AutoDisable( [out, retval] VARIANT_BOOL* pAutoDisable );
+        [propput, id(10), helpstring("property AutoDisable")]
+        HRESULT AutoDisable( [in] VARIANT_BOOL AutoDisable );
+        [propget, id(11), helpstring("property BinaryConversion")]
+        HRESULT BinaryConversion( [out, retval] long* pBinaryConversion );
+        [propput, id(11), helpstring("property BinaryConversion")]
+        HRESULT BinaryConversion( [in] long BinaryConversion );
+        [propget, id(12), helpstring("property CapPowerReporting")]
+        HRESULT CapPowerReporting( [out, retval] long* pCapPowerReporting );
+        [propget, id(13), helpstring("property CheckHealthText")]
+        HRESULT CheckHealthText( [out, retval] BSTR* pCheckHealthText );
+        [propget, id(14), helpstring("property Claimed")]
+        HRESULT Claimed( [out, retval] VARIANT_BOOL* pClaimed );
+        [propget, id(15), helpstring("property DataCount")]
+        HRESULT DataCount( [out, retval] long* pDataCount );
+        [propget, id(16), helpstring("property DataEventEnabled")]
+        HRESULT DataEventEnabled( [out, retval] VARIANT_BOOL* pDataEventEnabled );
+        [propput, id(16), helpstring("property DataEventEnabled")]
+        HRESULT DataEventEnabled( [in] VARIANT_BOOL DataEventEnabled );
+        [propget, id(17), helpstring("property DeviceEnabled")]
+        HRESULT DeviceEnabled( [out, retval] VARIANT_BOOL* pDeviceEnabled );
+        [propput, id(17), helpstring("property DeviceEnabled")]
+        HRESULT DeviceEnabled( [in] VARIANT_BOOL DeviceEnabled );
+        [propget, id(18), helpstring("property FreezeEvents")]
+        HRESULT FreezeEvents( [out, retval] VARIANT_BOOL* pFreezeEvents );
+        [propput, id(18), helpstring("property FreezeEvents")]
+        HRESULT FreezeEvents( [in] VARIANT_BOOL FreezeEvents );
+        [propget, id(19), helpstring("property OutputID")]
+        HRESULT OutputID( [out, retval] long* pOutputID );
+        [propget, id(20), helpstring("property PowerNotify")]
+        HRESULT PowerNotify( [out, retval] long* pPowerNotify );
+        [propput, id(20), helpstring("property PowerNotify")]
+        HRESULT PowerNotify( [in] long PowerNotify );
+        [propget, id(21), helpstring("property PowerState")]
+        HRESULT PowerState( [out, retval] long* pPowerState );
+        [propget, id(22), helpstring("property ResultCode")]
+        HRESULT ResultCode( [out, retval] long* pResultCode );
+        [propget, id(23), helpstring("property ResultCodeExtended")]
+        HRESULT ResultCodeExtended( [out, retval] long* pResultCodeExtended );
+        [propget, id(24), helpstring("property State")]
+        HRESULT State( [out, retval] long* pState );
+        [propget, id(25), helpstring("property ControlObjectDescription")]
+        HRESULT ControlObjectDescription( [out, retval] BSTR* pControlObjectDescription );
+        [propget, id(26), helpstring("property ControlObjectVersion")]
+        HRESULT ControlObjectVersion( [out, retval] long* pControlObjectVersion );
+        [propget, id(27), helpstring("property ServiceObjectDescription")]
+        HRESULT ServiceObjectDescription( [out, retval] BSTR* pServiceObjectDescription );
+        [propget, id(28), helpstring("property ServiceObjectVersion")]
+        HRESULT ServiceObjectVersion( [out, retval] long* pServiceObjectVersion );
+        [propget, id(29), helpstring("property DeviceDescription")]
+        HRESULT DeviceDescription( [out, retval] BSTR* pDeviceDescription );
+        [propget, id(30), helpstring("property DeviceName")]
+        HRESULT DeviceName( [out, retval] BSTR* pDeviceName );
+        [propget, id(39), helpstring("property CapStatisticsReporting")]
+        HRESULT CapStatisticsReporting( [out, retval] VARIANT_BOOL* pCapStatisticsReporting );
+        [propget, id(40), helpstring("property CapUpdateStatistics")]
+        HRESULT CapUpdateStatistics( [out, retval] VARIANT_BOOL* pCapUpdateStatistics );
+        [propget, id(44), helpstring("property CapCompareFirmwareVersion")]
+        HRESULT CapCompareFirmwareVersion( [out, retval] VARIANT_BOOL* pCapCompareFirmwareVersion );
+        [propget, id(45), helpstring("property CapUpdateFirmware")]
+        HRESULT CapUpdateFirmware( [out, retval] VARIANT_BOOL* pCapUpdateFirmware );
+        [id(31), helpstring("method CheckHealth")]
+        HRESULT CheckHealth( 
+            [in] long Level, 
+            [out, retval] long* pRC );
+        [id(32), helpstring("method ClaimDevice")]
+        HRESULT ClaimDevice( 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(33), helpstring("method ClearInput")]
+        HRESULT ClearInput( 
+            [out, retval] long* pRC );
+        [id(34), helpstring("method ClearOutput")]
+        HRESULT ClearOutput( 
+            [out, retval] long* pRC );
+        [id(35), helpstring("method Close")]
+        HRESULT Close( 
+            [out, retval] long* pRC );
+        [id(36), helpstring("method DirectIO")]
+        HRESULT DirectIO( 
+            [in] long Command, 
+            [in, out] long* pData, 
+            [in, out] BSTR* pString, 
+            [out, retval] long* pRC );
+        [id(37), helpstring("method Open")]
+        HRESULT Open( 
+            [in] BSTR DeviceName, 
+            [out, retval] long* pRC );
+        [id(38), helpstring("method ReleaseDevice")]
+        HRESULT ReleaseDevice( 
+            [out, retval] long* pRC );
+        [id(41), helpstring("method ResetStatistics")]
+        HRESULT ResetStatistics( 
+            [in] BSTR StatisticsBuffer, 
+            [out, retval] long* pRC );
+        [id(42), helpstring("method RetrieveStatistics")]
+        HRESULT RetrieveStatistics( 
+            [in, out] BSTR* pStatisticsBuffer, 
+            [out, retval] long* pRC );
+        [id(43), helpstring("method UpdateStatistics")]
+        HRESULT UpdateStatistics( 
+            [in] BSTR StatisticsBuffer, 
+            [out, retval] long* pRC );
+        [id(46), helpstring("method CompareFirmwareVersion")]
+        HRESULT CompareFirmwareVersion( 
+            [in] BSTR FirmwareFileName, 
+            [out] long* pResult, 
+            [out, retval] long* pRC );
+        [id(47), helpstring("method UpdateFirmware")]
+        HRESULT UpdateFirmware( 
+            [in] BSTR FirmwareFileName, 
+            [out, retval] long* pRC );
+        [id(48), helpstring("method ClearInputProperties")]
+        HRESULT ClearInputProperties( 
+            [out, retval] long* pRC );
+        [propget, id(70), helpstring("property AccountNumber")]
+        HRESULT AccountNumber( [out, retval] BSTR* pAccountNumber );
+        [propget, id(71), helpstring("property AdditionalSecurityInformation")]
+        HRESULT AdditionalSecurityInformation( [out, retval] BSTR* pAdditionalSecurityInformation );
+        [propput, id(71), helpstring("property AdditionalSecurityInformation")]
+        HRESULT AdditionalSecurityInformation( [in] BSTR AdditionalSecurityInformation );
+        [propget, id(72), helpstring("property Amount")]
+        HRESULT Amount( [out, retval] CURRENCY* pAmount );
+        [propput, id(72), helpstring("property Amount")]
+        HRESULT Amount( [in] CURRENCY Amount );
+        [propget, id(73), helpstring("property ApprovalCode")]
+        HRESULT ApprovalCode( [out, retval] BSTR* pApprovalCode );
+        [propput, id(73), helpstring("property ApprovalCode")]
+        HRESULT ApprovalCode( [in] BSTR ApprovalCode );
+        [propget, id(74), helpstring("property AsyncMode")]
+        HRESULT AsyncMode( [out, retval] VARIANT_BOOL* pAsyncMode );
+        [propput, id(74), helpstring("property AsyncMode")]
+        HRESULT AsyncMode( [in] VARIANT_BOOL AsyncMode );
+        [propget, id(75), helpstring("property Balance")]
+        HRESULT Balance( [out, retval] CURRENCY* pBalance );
+        [propget, id(76), helpstring("property BalanceOfPoint")]
+        HRESULT BalanceOfPoint( [out, retval] CURRENCY* pBalanceOfPoint );
+        [propget, id(77), helpstring("property CapActivateService")]
+        HRESULT CapActivateService( [out, retval] VARIANT_BOOL* pCapActivateService );
+        [propget, id(78), helpstring("property CapAddValue")]
+        HRESULT CapAddValue( [out, retval] VARIANT_BOOL* pCapAddValue );
+        [propget, id(79), helpstring("property CapCancelValue")]
+        HRESULT CapCancelValue( [out, retval] VARIANT_BOOL* pCapCancelValue );
+        [propget, id(80), helpstring("property CapCardSensor")]
+        HRESULT CapCardSensor( [out, retval] long* pCapCardSensor );
+        [propget, id(81), helpstring("property CapDetectionControl")]
+        HRESULT CapDetectionControl( [out, retval] long* pCapDetectionControl );
+        [propget, id(82), helpstring("property CapElectronicMoney")]
+        HRESULT CapElectronicMoney( [out, retval] VARIANT_BOOL* pCapElectronicMoney );
+        [propget, id(83), helpstring("property CapEnumerateCardServices")]
+        HRESULT CapEnumerateCardServices( [out, retval] VARIANT_BOOL* pCapEnumerateCardServices );
+        [propget, id(84), helpstring("property CapIndirectTransactionLog")]
+        HRESULT CapIndirectTransactionLog( [out, retval] VARIANT_BOOL* pCapIndirectTransactionLog );
+        [propget, id(85), helpstring("property CapLockTerminal")]
+        HRESULT CapLockTerminal( [out, retval] VARIANT_BOOL* pCapLockTerminal );
+        [propget, id(86), helpstring("property CapLogStatus")]
+        HRESULT CapLogStatus( [out, retval] VARIANT_BOOL* pCapLogStatus );
+        [propget, id(87), helpstring("property CapMediumID")]
+        HRESULT CapMediumID( [out, retval] VARIANT_BOOL* pCapMediumID );
+        [propget, id(88), helpstring("property CapPoint")]
+        HRESULT CapPoint( [out, retval] VARIANT_BOOL* pCapPoint );
+        [propget, id(89), helpstring("property CapSubtractValue")]
+        HRESULT CapSubtractValue( [out, retval] VARIANT_BOOL* pCapSubtractValue );
+        [propget, id(90), helpstring("property CapTransaction")]
+        HRESULT CapTransaction( [out, retval] VARIANT_BOOL* pCapTransaction );
+        [propget, id(91), helpstring("property CapTransactionLog")]
+        HRESULT CapTransactionLog( [out, retval] VARIANT_BOOL* pCapTransactionLog );
+        [propget, id(92), helpstring("property CapUnlockTerminal")]
+        HRESULT CapUnlockTerminal( [out, retval] VARIANT_BOOL* pCapUnlockTerminal );
+        [propget, id(93), helpstring("property CapUpdateKey")]
+        HRESULT CapUpdateKey( [out, retval] VARIANT_BOOL* pCapUpdateKey );
+        [propget, id(94), helpstring("property CapVoucher")]
+        HRESULT CapVoucher( [out, retval] VARIANT_BOOL* pCapVoucher );
+        [propget, id(95), helpstring("property CapWriteValue")]
+        HRESULT CapWriteValue( [out, retval] VARIANT_BOOL* pCapWriteValue );
+        [propget, id(96), helpstring("property CardServiceList")]
+        HRESULT CardServiceList( [out, retval] BSTR* pCardServiceList );
+        [propget, id(97), helpstring("property CurrentService")]
+        HRESULT CurrentService( [out, retval] BSTR* pCurrentService );
+        [propput, id(97), helpstring("property CurrentService")]
+        HRESULT CurrentService( [in] BSTR CurrentService );
+        [propget, id(98), helpstring("property DetectionControl")]
+        HRESULT DetectionControl( [out, retval] VARIANT_BOOL* pDetectionControl );
+        [propput, id(98), helpstring("property DetectionControl")]
+        HRESULT DetectionControl( [in] VARIANT_BOOL DetectionControl );
+        [propget, id(99), helpstring("property DetectionStatus")]
+        HRESULT DetectionStatus( [out, retval] long* pDetectionStatus );
+        [propget, id(100), helpstring("property ExpirationDate")]
+        HRESULT ExpirationDate( [out, retval] BSTR* pExpirationDate );
+        [propget, id(101), helpstring("property LastUsedDate")]
+        HRESULT LastUsedDate( [out, retval] BSTR* pLastUsedDate );
+        [propget, id(102), helpstring("property LogStatus")]
+        HRESULT LogStatus( [out, retval] long* pLogStatus );
+        [propget, id(103), helpstring("property MediumID")]
+        HRESULT MediumID( [out, retval] BSTR* pMediumID );
+        [propput, id(103), helpstring("property MediumID")]
+        HRESULT MediumID( [in] BSTR MediumID );
+        [propget, id(104), helpstring("property Point")]
+        HRESULT Point( [out, retval] CURRENCY* pPoint );
+        [propput, id(104), helpstring("property Point")]
+        HRESULT Point( [in] CURRENCY Point );
+        [propget, id(105), helpstring("property ReaderWriterServiceList")]
+        HRESULT ReaderWriterServiceList( [out, retval] BSTR* pReaderWriterServiceList );
+        [propget, id(106), helpstring("property SequenceNumber")]
+        HRESULT SequenceNumber( [out, retval] long* pSequenceNumber );
+        [propget, id(107), helpstring("property SettledAmount")]
+        HRESULT SettledAmount( [out, retval] CURRENCY* pSettledAmount );
+        [propget, id(108), helpstring("property SettledPoint")]
+        HRESULT SettledPoint( [out, retval] CURRENCY* pSettledPoint );
+        [propget, id(109), helpstring("property TransactionLog")]
+        HRESULT TransactionLog( [out, retval] BSTR* pTransactionLog );
+        [propget, id(110), helpstring("property VoucherID")]
+        HRESULT VoucherID( [out, retval] BSTR* pVoucherID );
+        [propput, id(110), helpstring("property VoucherID")]
+        HRESULT VoucherID( [in] BSTR VoucherID );
+        [propget, id(111), helpstring("property VoucherIDList")]
+        HRESULT VoucherIDList( [out, retval] BSTR* pVoucherIDList );
+        [propput, id(111), helpstring("property VoucherIDList")]
+        HRESULT VoucherIDList( [in] BSTR VoucherIDList );
+        [id(140), helpstring("method AccessLog")]
+        HRESULT AccessLog( 
+            [in] long SequenceNumber, 
+            [in] long Type, 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(141), helpstring("method ActivateService")]
+        HRESULT ActivateService( 
+            [in, out] long* pData, 
+            [in, out] BSTR* pObj, 
+            [out, retval] long* pRC );
+        [id(142), helpstring("method AddValue")]
+        HRESULT AddValue( 
+            [in] long SequenceNumber, 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(143), helpstring("method BeginDetection")]
+        HRESULT BeginDetection( 
+            [in] long Type, 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(144), helpstring("method BeginRemoval")]
+        HRESULT BeginRemoval( 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(145), helpstring("method CancelValue")]
+        HRESULT CancelValue( 
+            [in] long SequenceNumber, 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(146), helpstring("method CaptureCard")]
+        HRESULT CaptureCard( 
+            [out, retval] long* pRC );
+        [id(147), helpstring("method EndDetection")]
+        HRESULT EndDetection( 
+            [out, retval] long* pRC );
+        [id(148), helpstring("method EndRemoval")]
+        HRESULT EndRemoval( 
+            [out, retval] long* pRC );
+        [id(149), helpstring("method EnumerateCardServices")]
+        HRESULT EnumerateCardServices( 
+            [out, retval] long* pRC );
+        [id(150), helpstring("method LockTerminal")]
+        HRESULT LockTerminal( 
+            [out, retval] long* pRC );
+        [id(151), helpstring("method ReadValue")]
+        HRESULT ReadValue( 
+            [in] long SequenceNumber, 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(152), helpstring("method SubtractValue")]
+        HRESULT SubtractValue( 
+            [in] long SequenceNumber, 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(153), helpstring("method TransactionAccess")]
+        HRESULT TransactionAccess( 
+            [in] long Control, 
+            [out, retval] long* pRC );
+        [id(154), helpstring("method UnlockTerminal")]
+        HRESULT UnlockTerminal( 
+            [out, retval] long* pRC );
+        [id(155), helpstring("method UpdateKey")]
+        HRESULT UpdateKey( 
+            [in, out] long* pData, 
+            [in, out] BSTR* pObj, 
+            [out, retval] long* pRC );
+        [id(156), helpstring("method WriteValue")]
+        HRESULT WriteValue( 
+            [in] long SequenceNumber, 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+    // Release 1.13
+    };
+
+    [
+        object,
+        uuid(CCB91331-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSElectronicValueRW 1.12 Interface (Old Invariant)"),
+        pointer_default(unique),
+        hidden
+    ]
+    interface IOPOSElectronicValueRW_1_12_zz : IOPOSElectronicValueRW_1_12
+    {
+    };
+
+//
+//========== Previous Interface: 1.14 ==========
+//
+
+    [
+        object,
+        uuid(CCB92331-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSElectronicValueRW 1.14 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSElectronicValueRW_1_14 : IOPOSElectronicValueRW_1_12
+    {
+    // Release 1.14
+        // Special event added for EVRW only.
+        [id(6), hidden, helpstring("method SOTransition")] HRESULT SOTransition( [in] long EventNumber, [in, out] long* pData, [in, out] BSTR* pString );
+
+        [propget, id(112), helpstring("property CapPINDevice")]
+        HRESULT CapPINDevice( [out, retval] VARIANT_BOOL* pCapPINDevice );
+        [propget, id(113), helpstring("property CapTrainingMode")]
+        HRESULT CapTrainingMode( [out, retval] VARIANT_BOOL* pCapTrainingMode );
+        [propget, id(114), helpstring("property PINEntry")]
+        HRESULT PINEntry( [out, retval] long* pPINEntry );
+        [propput, id(114), helpstring("property PINEntry")]
+        HRESULT PINEntry( [in] long PINEntry );
+        [propget, id(115), helpstring("property TrainingModeState")]
+        HRESULT TrainingModeState( [out, retval] long* pTrainingModeState );
+        [propput, id(115), helpstring("property TrainingModeState")]
+        HRESULT TrainingModeState( [in] long TrainingModeState );
+        [id(157), helpstring("method ClearParameterInformation")]
+        HRESULT ClearParameterInformation( 
+            [out, retval] long* pRC );
+        [id(158), helpstring("method QueryLastSuccessfulTransactionResult")]
+        HRESULT QueryLastSuccessfulTransactionResult( 
+            [out, retval] long* pRC );
+        [id(159), helpstring("method RetrieveResultInformation")]
+        HRESULT RetrieveResultInformation( 
+            [in] BSTR Name, 
+            [in, out] BSTR* pValue, 
+            [out, retval] long* pRC );
+        [id(160), helpstring("method SetParameterInformation")]
+        HRESULT SetParameterInformation( 
+            [in] BSTR Name, 
+            [in] BSTR Value, 
+            [out, retval] long* pRC );
+    };
+
+    [
+        object,
+        uuid(CCB93331-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSElectronicValueRW 1.14 Interface (Old Invariant)"),
+        pointer_default(unique),
+        hidden
+    ]
+    interface IOPOSElectronicValueRW_1_14_zz : IOPOSElectronicValueRW_1_14
+    {
+    };
+
+//
+//========== Current Interface: 1.14.100 ==========
+//
+
+    [
+        object,
+        uuid(CCB94331-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSElectronicValueRW 1.14.100 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSElectronicValueRW_1_14_100 : IOPOSElectronicValueRW_1_14
+    {
+    // Release 1.14.100
+        [propget, id(116), helpstring("property CapMembershipCertificate")]
+        HRESULT CapMembershipCertificate( [out, retval] VARIANT_BOOL* pCapMembershipCertificate );
+        [propget, id(117), helpstring("property ServiceType")]
+        HRESULT ServiceType( [out, retval] long* pServiceType );
+        [id(161), helpstring("method AccessData")]
+        HRESULT AccessData( 
+            [in] long DataType, 
+            [in, out] long* pData, 
+            [in, out] BSTR* pObj, 
+            [out, retval] long* pRC );
+        [id(162), helpstring("method ActivateEVService")]
+        HRESULT ActivateEVService( 
+            [in, out] long* pData, 
+            [in, out] BSTR* pObj, 
+            [out, retval] long* pRC );
+        [id(163), helpstring("method CheckServiceRegistrationToMedium")]
+        HRESULT CheckServiceRegistrationToMedium( 
+            [in] long SequenceNumber, 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(164), helpstring("method CloseDailyEVService")]
+        HRESULT CloseDailyEVService( 
+            [in, out] long* pData, 
+            [in, out] BSTR* pObj, 
+            [out, retval] long* pRC );
+        [id(165), helpstring("method DeactivateEVService")]
+        HRESULT DeactivateEVService( 
+            [in, out] long* pData, 
+            [in, out] BSTR* pObj, 
+            [out, retval] long* pRC );
+        [id(166), helpstring("method OpenDailyEVService")]
+        HRESULT OpenDailyEVService( 
+            [in, out] long* pData, 
+            [in, out] BSTR* pObj, 
+            [out, retval] long* pRC );
+        [id(167), helpstring("method RegisterServiceToMedium")]
+        HRESULT RegisterServiceToMedium( 
+            [in] long SequenceNumber, 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(168), helpstring("method UnregisterServiceToMedium")]
+        HRESULT UnregisterServiceToMedium( 
+            [in] long SequenceNumber, 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(169), helpstring("method UpdateData")]
+        HRESULT UpdateData( 
+            [in] long DataType, 
+            [in, out] long* pData, 
+            [in, out] BSTR* pObj, 
+            [out, retval] long* pRC );
+    };
+
+//
+//---------- IOPOSElectronicValueRW Interface: Invariant Name ----------
+//
+    [
+        object,
+        uuid(CCB95331-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSElectronicValueRW Current Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSElectronicValueRW : IOPOSElectronicValueRW_1_14_100
+    {
+    };
+
+
+///////////////////////////////////////////////////////////////////////////////
+//// Library
+///////////////////////////////////////////////////////////////////////////////
+
+[
+    uuid(CCB90330-B81E-11D2-AB74-0040054C3719),
+    version(1.0),
+    helpstring("OPOS ElectronicValueRW Control 1.14.100 [Public, by CRM/MCS]")
+]
+library OposElectronicValueRW_CCO
+{
+    importlib("stdole32.tlb");
+    importlib("stdole2.tlb");
+
+    //*************************************************************************
+    //** Event interface
+    //*************************************************************************
+    [
+        uuid(CCB90333-B81E-11D2-AB74-0040054C3719),
+        helpstring("_IOPOSElectronicValueRWEvents Interface")
+    ]
+    dispinterface _IOPOSElectronicValueRWEvents
+    {
+        properties:
+        methods:
+        [id(1), helpstring("method DataEvent")]
+            void DataEvent( [in] long Status );
+        [id(2), helpstring("method DirectIOEvent")]
+            void DirectIOEvent( [in] long EventNumber, [in, out] long *pData, [in, out] BSTR *pString );
+        [id(3), helpstring("method ErrorEvent")]
+            void ErrorEvent( [in] long ResultCode, [in] long ResultCodeExtended, [in] long ErrorLocus, [in, out] long* pErrorResponse );
+        [id(4), helpstring("method OutputCompleteEvent")]
+            void OutputCompleteEvent( [in] long OutputID );
+        [id(5), helpstring("method StatusUpdateEvent")]
+            void StatusUpdateEvent( [in] long Data );
+        [id(6), helpstring("method TransitionEvent")]
+            void TransitionEvent( [in] long EventNumber, [in, out] long *pData, [in, out] BSTR *pString );
+    };
+
+    //*************************************************************************
+    //** COM Class
+    //*************************************************************************
+    [
+        uuid(CCB90332-B81E-11D2-AB74-0040054C3719),
+        helpstring("OPOS ElectronicValueRW Control 1.14.100 [Public, by CRM/MCS]")
+    ]
+    coclass OPOSElectronicValueRW
+    {
+        [default] interface IOPOSElectronicValueRW;
+        interface IOPOSElectronicValueRW_1_14_100;
+        interface IOPOSElectronicValueRW_1_14;
+        interface IOPOSElectronicValueRW_1_14_zz; // (Old invariant interface.)
+        interface IOPOSElectronicValueRW_1_12;
+        interface IOPOSElectronicValueRW_1_12_zz; // (Old invariant interface.)
+        [default, source] dispinterface _IOPOSElectronicValueRWEvents;
+    };
+};
+
+// End ElectronicValueRW.idl

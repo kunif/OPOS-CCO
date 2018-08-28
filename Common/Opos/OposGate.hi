@@ -1,0 +1,41 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposGate.hi
+//
+//   Gate header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 2008-08-30 OPOS Release 1.12                                  CRM
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSGATE_HI)
+#define      OPOSGATE_HI
+
+
+#include "Opos.hi"
+#include "OposGate.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXGate_GateStatus                      =   1 + PIDX_GATE+PIDX_NUMBER;
+
+// * Capabilities *
+
+const LONG PIDXGate_CapGateStatus                   = 501 + PIDX_GATE+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+
+#endif          // !defined(OPOSGATE_HI)

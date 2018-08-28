@@ -1,0 +1,13 @@
+;****************************************************************************
+;*
+;* OposConstants.def -- Linker parameters
+;*
+;****************************************************************************
+
+LIBRARY      "OposConstants.DLL"
+
+EXPORTS
+    DllCanUnloadNow     PRIVATE
+    DllGetClassObject   PRIVATE
+    DllRegisterServer   PRIVATE
+    DllUnregisterServer PRIVATE

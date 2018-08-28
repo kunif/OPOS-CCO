@@ -1,0 +1,39 @@
+HKCR
+{
+    OPOS.SigCap.1.14 = s 'OPOS SigCap Control 1.14.001 [Public, by CRM/MCS]'
+    {
+        CLSID = s '{CCB90192-B81E-11D2-AB74-0040054C3719}'
+    }
+    OPOS.SigCap = s 'OPOS SigCap Control 1.14.001 [Public, by CRM/MCS]'
+    {
+        CLSID = s '{CCB90192-B81E-11D2-AB74-0040054C3719}'
+        CurVer = s 'OPOS.SigCap.1.14'
+    }
+    NoRemove CLSID
+    {
+        ForceRemove {CCB90192-B81E-11D2-AB74-0040054C3719} = s 'OPOS SigCap Control 1.14.001 [Public, by CRM/MCS]'
+        {
+            ProgID = s 'OPOS.SigCap.1.14'
+            VersionIndependentProgID = s 'OPOS.SigCap'
+            ForceRemove 'Programmable'
+            InprocServer32 = s '%MODULE%'
+            {
+                val ThreadingModel = s 'Apartment'
+            }
+            ForceRemove 'Control'
+            ForceRemove 'Insertable'
+            ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 101'
+            'MiscStatus' = s '0'
+            {
+                '1' = s '132497'
+            }
+            'TypeLib' = s '{CCB90190-B81E-11D2-AB74-0040054C3719}'
+            'Version' = s '1.0'
+            'BuildInformation' = s 'OPOS 1.14. Build 001; 2015/02/07.'
+        }
+    }
+    NoRemove Interface
+    {
+        Delete {CCB90191-B81E-11D2-AB74-0040054C3719}
+    }
+}

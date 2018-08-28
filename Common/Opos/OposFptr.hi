@@ -1,0 +1,179 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposFptr.hi
+//
+//   Fiscal Printer header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 1998-03-06 OPOS Release 1.3                                   PDU
+// 2001-07-15 OPOS Release 1.6                                   TNN
+// 2005-04-29 OPOS Release 1.9                                   CRM
+//   Remove validation functions.
+// 2007-01-30 OPOS Release 1.11                                  CRM
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSFPTR_HI)
+#define      OPOSFPTR_HI
+
+
+#include "Opos.hi"
+#include "OposFptr.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXFptr_AmountDecimalPlaces =   1 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_AsyncMode           =   2 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CheckTotal          =   3 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CountryCode         =   4 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CoverOpen           =   5 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_DayOpened           =   6 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_DescriptionLength   =   7 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_DuplicateReceipt    =   8 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_ErrorLevel          =   9 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_ErrorOutID          =  10 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_ErrorState          =  11 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_ErrorStation        =  12 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_FlagWhenIdle        =  13 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_JrnEmpty            =  14 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_JrnNearEnd          =  15 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_MessageLength       =  16 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_NumHeaderLines      =  17 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_NumTrailerLines     =  18 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_NumVatRates         =  19 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_PrinterState        =  20 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_QuantityDecimalPlaces
+                                        =  21 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_QuantityLength      =  22 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_RecEmpty            =  23 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_RecNearEnd          =  24 + PIDX_FPTR+PIDX_NUMBER;
+
+const LONG PIDXFptr_RemainingFiscalMemory
+                                        =  25 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_SlpEmpty            =  26 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_SlpNearEnd          =  27 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_SlipSelection       =  28 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_TrainingModeActive  =  29 + PIDX_FPTR+PIDX_NUMBER;
+
+//      Added for Release 1.6:
+const LONG PIDXFptr_ActualCurrency      =  30 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_ContractorId        =  31 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_DateType            =  32 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_FiscalReceiptStation
+                                        =  33 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_FiscalReceiptType   =  34 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_MessageType         =  35 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_TotalizerType       =  36 + PIDX_FPTR+PIDX_NUMBER;
+
+
+// * Capabilities *
+
+const LONG PIDXFptr_CapAdditionalLines  = 501 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapAmountAdjustment = 502 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapAmountNotPaid    = 503 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapCheckTotal       = 504 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapCoverSensor      = 505 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapDoubleWidth      = 506 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapDuplicateReceipt = 507 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapFixedOutput      = 508 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapHasVatTable      = 509 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapIndependentHeader
+                                        = 510 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapItemList         = 511 + PIDX_FPTR+PIDX_NUMBER;
+
+const LONG PIDXFptr_CapJrnEmptySensor   = 512 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapJrnNearEndSensor = 513 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapJrnPresent       = 514 + PIDX_FPTR+PIDX_NUMBER;
+
+const LONG PIDXFptr_CapNonFiscalMode    = 515 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapOrderAdjustmentFirst
+                                        = 516 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapPercentAdjustment
+                                        = 517 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapPositiveAdjustment
+                                        = 518 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapPowerLossReport  = 519 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapPredefinedPaymentLines
+                                        = 520 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapReceiptNotPaid   = 521 + PIDX_FPTR+PIDX_NUMBER;
+
+const LONG PIDXFptr_CapRecEmptySensor   = 522 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapRecNearEndSensor = 523 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapRecPresent       = 524 + PIDX_FPTR+PIDX_NUMBER;
+
+const LONG PIDXFptr_CapRemainingFiscalMemory
+                                        = 525 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapReservedWord     = 526 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapSetHeader        = 527 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapSetPOSID         = 528 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapSetStoreFiscalID = 529 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapSetTrailer       = 530 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapSetVatTable      = 531 + PIDX_FPTR+PIDX_NUMBER;
+
+const LONG PIDXFptr_CapSlpEmptySensor   = 532 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapSlpFiscalDocument
+                                        = 533 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapSlpFullSlip      = 534 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapSlpNearEndSensor = 535 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapSlpPresent       = 536 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapSlpValidation    = 537 + PIDX_FPTR+PIDX_NUMBER;
+
+const LONG PIDXFptr_CapSubAmountAdjustment
+                                        = 538 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapSubPercentAdjustment
+                                        = 539 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapSubtotal         = 540 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapTrainingMode     = 541 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapValidateJournal  = 542 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapXReport          = 543 + PIDX_FPTR+PIDX_NUMBER;
+
+//      Added for Release 1.6:
+const LONG PIDXFptr_CapAdditionalHeader = 544 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapAdditionalTrailer
+                                        = 545 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapChangeDue        = 546 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapEmptyReceiptIsVoidable
+                                        = 547 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapFiscalReceiptStation
+                                        = 548 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapFiscalReceiptType
+                                        = 549 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapMultiContractor  = 550 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapOnlyVoidLastItem = 551 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapPackageAdjustment
+                                        = 552 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapPostPreLine      = 553 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapSetCurrency      = 554 + PIDX_FPTR+PIDX_NUMBER;
+const LONG PIDXFptr_CapTotalizerType    = 555 + PIDX_FPTR+PIDX_NUMBER;
+
+//      Added for Release 1.11:
+const LONG PIDXFptr_CapPositiveSubtotalAdjustment
+                                        = 556 + PIDX_FPTR+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXFptr_ErrorString         =   1 + PIDX_FPTR+PIDX_STRING;
+const LONG PIDXFptr_PredefinedPaymentLines
+                                        =   2 + PIDX_FPTR+PIDX_STRING;
+const LONG PIDXFptr_ReservedWord        =   3 + PIDX_FPTR+PIDX_STRING;
+
+//      Added for Release 1.6:
+const LONG PIDXFptr_AdditionalHeader    =   4 + PIDX_FPTR+PIDX_STRING;
+const LONG PIDXFptr_AdditionalTrailer   =   5 + PIDX_FPTR+PIDX_STRING;
+const LONG PIDXFptr_ChangeDue           =   6 + PIDX_FPTR+PIDX_STRING;
+const LONG PIDXFptr_PostLine            =   7 + PIDX_FPTR+PIDX_STRING;
+const LONG PIDXFptr_PreLine             =   8 + PIDX_FPTR+PIDX_STRING;
+
+
+#endif          // !defined(OPOSFPTR_HI)

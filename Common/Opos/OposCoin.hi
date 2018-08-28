@@ -1,0 +1,46 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposCoin.hi
+//
+//   Coin Dispenser header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 1995-12-08 OPOS Release 1.0                                   CRM
+// 2005-04-29 OPOS Release 1.9                                   CRM
+//   Remove validation functions.
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSCOIN_HI)
+#define      OPOSCOIN_HI
+
+
+#include "Opos.hi"
+#include "OposCoin.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXCoin_DispenserStatus     =   1 + PIDX_COIN+PIDX_NUMBER;
+
+
+// * Capabilities *
+
+const LONG PIDXCoin_CapEmptySensor      = 501 + PIDX_COIN+PIDX_NUMBER;
+const LONG PIDXCoin_CapJamSensor        = 502 + PIDX_COIN+PIDX_NUMBER;
+const LONG PIDXCoin_CapNearEmptySensor  = 503 + PIDX_COIN+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+
+#endif          // !defined(OPOSCOIN_HI)

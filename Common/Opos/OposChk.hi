@@ -1,0 +1,81 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposChk.hi
+//
+//   Check Scanner header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 2002-08-17 OPOS Release 1.7                                   CRM
+// 2005-04-29 OPOS Release 1.9                                   CRM
+//   Add the following properties:
+//     CapAutoContrast, CapContrast, Contrast
+//   Remove validation functions.
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSCHK_HI)
+#define      OPOSCHK_HI
+
+
+#include "Opos.hi"
+#include "OposChk.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXChk_Color                =   1 + PIDX_CHK+PIDX_NUMBER;
+const LONG PIDXChk_ConcurrentMICR       =   2 + PIDX_CHK+PIDX_NUMBER;
+const LONG PIDXChk_CropAreaCount        =   3 + PIDX_CHK+PIDX_NUMBER;
+const LONG PIDXChk_DocumentHeight       =   4 + PIDX_CHK+PIDX_NUMBER;
+const LONG PIDXChk_DocumentWidth        =   5 + PIDX_CHK+PIDX_NUMBER;
+const LONG PIDXChk_FileIndex            =   6 + PIDX_CHK+PIDX_NUMBER;
+const LONG PIDXChk_ImageFormat          =   7 + PIDX_CHK+PIDX_NUMBER;
+const LONG PIDXChk_ImageMemoryStatus    =   8 + PIDX_CHK+PIDX_NUMBER;
+const LONG PIDXChk_MapMode              =   9 + PIDX_CHK+PIDX_NUMBER;
+const LONG PIDXChk_MaxCropAreas         =  10 + PIDX_CHK+PIDX_NUMBER;
+const LONG PIDXChk_Quality              =  11 + PIDX_CHK+PIDX_NUMBER;
+const LONG PIDXChk_RemainingImagesEstimate
+                                        =  12 + PIDX_CHK+PIDX_NUMBER;
+
+//  Added in Release 1.9
+const LONG PIDXChk_Contrast             =  13 + PIDX_CHK+PIDX_NUMBER;
+
+
+// * Capabilities *
+
+const LONG PIDXChk_CapAutoGenerateFileID= 501 + PIDX_CHK+PIDX_NUMBER;
+const LONG PIDXChk_CapAutoGenerateImageTagData
+                                        = 502 + PIDX_CHK+PIDX_NUMBER;
+const LONG PIDXChk_CapAutoSize          = 503 + PIDX_CHK+PIDX_NUMBER;
+const LONG PIDXChk_CapColor             = 504 + PIDX_CHK+PIDX_NUMBER;
+const LONG PIDXChk_CapConcurrentMICR    = 505 + PIDX_CHK+PIDX_NUMBER;
+const LONG PIDXChk_CapDefineCropArea    = 506 + PIDX_CHK+PIDX_NUMBER;
+const LONG PIDXChk_CapImageFormat       = 507 + PIDX_CHK+PIDX_NUMBER;
+const LONG PIDXChk_CapImageTagData      = 508 + PIDX_CHK+PIDX_NUMBER;
+const LONG PIDXChk_CapMICRDevice        = 509 + PIDX_CHK+PIDX_NUMBER;
+const LONG PIDXChk_CapStoreImageFiles   = 510 + PIDX_CHK+PIDX_NUMBER;
+const LONG PIDXChk_CapValidationDevice  = 511 + PIDX_CHK+PIDX_NUMBER;
+
+//  Added in Release 1.9
+const LONG PIDXChk_CapAutoContrast      = 512 + PIDX_CHK+PIDX_NUMBER;
+const LONG PIDXChk_CapContrast          = 513 + PIDX_CHK+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXChk_FileID               =   1 + PIDX_CHK+PIDX_STRING;
+const LONG PIDXChk_ImageData            =   2 + PIDX_CHK+PIDX_STRING;
+const LONG PIDXChk_ImageTagData         =   3 + PIDX_CHK+PIDX_STRING;
+const LONG PIDXChk_QualityList          =   4 + PIDX_CHK+PIDX_STRING;
+
+
+#endif          // !defined(OPOSCHK_HI)

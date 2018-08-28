@@ -1,0 +1,39 @@
+HKCR
+{
+    OPOS.CAT.1.14 = s 'OPOS CAT Control 1.14.001 [Public, by CRM/MCS]'
+    {
+        CLSID = s '{CCB90052-B81E-11D2-AB74-0040054C3719}'
+    }
+    OPOS.CAT = s 'OPOS CAT Control 1.14.001 [Public, by CRM/MCS]'
+    {
+        CLSID = s '{CCB90052-B81E-11D2-AB74-0040054C3719}'
+        CurVer = s 'OPOS.CAT.1.14'
+    }
+    NoRemove CLSID
+    {
+        ForceRemove {CCB90052-B81E-11D2-AB74-0040054C3719} = s 'OPOS CAT Control 1.14.001 [Public, by CRM/MCS]'
+        {
+            ProgID = s 'OPOS.CAT.1.14'
+            VersionIndependentProgID = s 'OPOS.CAT'
+            ForceRemove 'Programmable'
+            InprocServer32 = s '%MODULE%'
+            {
+                val ThreadingModel = s 'Apartment'
+            }
+            ForceRemove 'Control'
+            ForceRemove 'Insertable'
+            ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 101'
+            'MiscStatus' = s '0'
+            {
+                '1' = s '132497'
+            }
+            'TypeLib' = s '{CCB90050-B81E-11D2-AB74-0040054C3719}'
+            'Version' = s '1.0'
+            'BuildInformation' = s 'OPOS 1.14. Build 001; 2015/02/07.'
+        }
+    }
+    NoRemove Interface
+    {
+        Delete {CCB90051-B81E-11D2-AB74-0040054C3719}
+    }
+}

@@ -1,0 +1,154 @@
+/****************************************************************************
+**
+** OposConstants.rc -- Resource Script.
+**
+*****************************************************************************
+**
+{{Begin License}}
+
+Copyright 2015 Monroe Consulting Services, Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+{{End License}}
+*/
+
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "1 TYPELIB ""OposConstants.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,14,1,0
+ PRODUCTVERSION 1,14,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Author", "Curtiss R. Monroe"
+            VALUE "BuildInformation", "OPOS 1.14. Build 001\0"
+            VALUE "CompanyName", "Monroe Consulting Services; Dayton OH\0"
+            VALUE "FileDescription", "OPOS Constants\0"
+            VALUE "FileVersion", "1, 14, 1, 0"
+            VALUE "InternalName", "OPOSConstants"
+            VALUE "OriginalFilename", "OPOSConstants.dll"
+            VALUE "ProductName", "OPOS Common Controls (CRM/MCS)\0"
+            VALUE "ProductVersion", "1, 14, 1, 0"
+            VALUE "OLESelfRegister", "\0"
+            VALUE "LegalCopyright", "Copyright 2015; MCS; Dayton OH, USA. See full text of license in the 'Comments' item.\0"
+            VALUE "Comments",    "{Start}\r\n"
+    "Copyright 2015 Monroe Consulting Services, Inc.\r\n"
+    "\r\n"
+	"Licensed under the Apache License, Version 2.0 (the 'License');\r\n"
+    "you may not use this file except in compliance with the License.\r\n"
+    "You may obtain a copy of the License at\r\n"
+    "\r\n"
+    "    http://www.apache.org/licenses/LICENSE-2.0\r\n"
+    "\r\n"
+    "Unless required by applicable law or agreed to in writing, software\r\n"
+    "distributed under the License is distributed on an 'AS IS' BASIS,\r\n"
+    "WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\r\n"
+    "See the License for the specific language governing permissions and\r\n"
+    "limitations under the License.\r\n"
+    "{End}\r\n\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "OposConstants"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "OposConstants.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

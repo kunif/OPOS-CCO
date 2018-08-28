@@ -1,0 +1,298 @@
+/****************************************************************************
+**
+** BillAcceptor.idl -- IDL source for BillAcceptor.ocx
+**
+**     Date                   Modification                          Author
+** -----------|----------------------------------------------------|----------
+**  1999/03/20 Initial version.                                     C. Monroe
+**  2008/01/15 Enhance for independent interfaces.
+**  2008/08/30 More interface updates.
+**  2013/09/29 Update license section.
+**  2015/02/07 Update license section.
+**  2015/02/07 Version 1.14.001.
+**
+*****************************************************************************
+**
+{{Begin License}}
+
+Copyright 2015 Monroe Consulting Services, Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+{{End License}}
+*/
+
+// This file will be processed by the MIDL tool to
+// produce the type library (BillAcceptor.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+#include "olectl.h"
+
+
+///////////////////////////////////////////////////////////////////////////////
+//// Interfaces
+///////////////////////////////////////////////////////////////////////////////
+
+// Separate Dependent Interfaces implementation:
+//  - First interface with the APIs defined from original through that release.
+//  - Later interfaces derive from previous and add their releases' new APIs.
+//  - Current interface derives from previous and adds its release's new APIs.
+
+    [
+        object,
+        uuid(CCB90281-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSBillAcceptor 1.11 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSBillAcceptor_1_11 : IDispatch
+    {
+    // Methods for use only by the Service Object
+        [id(1), hidden, helpstring("method SOData")] HRESULT SOData( [in] long Status );
+        [id(2), hidden, helpstring("method SODirectIO")] HRESULT SODirectIO( [in] long EventNumber, [in, out] long* pData, [in, out] BSTR* pString );
+        [id(3), hidden, helpstring("method SOErrorDummy")] HRESULT SOErrorDummy( [in] long ResultCode, [in] long ResultCodeExtended, [in] long ErrorLocus, [in, out] long* pErrorResponse );
+        [id(4), hidden, helpstring("method SOOutputCompleteDummy")] HRESULT SOOutputCompleteDummy( [in] long OutputID );
+        [id(5), hidden, helpstring("method SOStatusUpdate")] HRESULT SOStatusUpdate( [in] long Data );
+        [id(9), hidden, helpstring("method SOProcessID")] HRESULT SOProcessID( [out, retval] long* pProcessID );
+    // Release 1.11
+        [propget, id(49), helpstring("property OpenResult")]
+        HRESULT OpenResult( [out, retval] long* pOpenResult );
+        [propget, id(11), helpstring("property BinaryConversion")]
+        HRESULT BinaryConversion( [out, retval] long* pBinaryConversion );
+        [propput, id(11), helpstring("property BinaryConversion")]
+        HRESULT BinaryConversion( [in] long BinaryConversion );
+        [propget, id(12), helpstring("property CapPowerReporting")]
+        HRESULT CapPowerReporting( [out, retval] long* pCapPowerReporting );
+        [propget, id(13), helpstring("property CheckHealthText")]
+        HRESULT CheckHealthText( [out, retval] BSTR* pCheckHealthText );
+        [propget, id(14), helpstring("property Claimed")]
+        HRESULT Claimed( [out, retval] VARIANT_BOOL* pClaimed );
+        [propget, id(15), helpstring("property DataCount")]
+        HRESULT DataCount( [out, retval] long* pDataCount );
+        [propget, id(16), helpstring("property DataEventEnabled")]
+        HRESULT DataEventEnabled( [out, retval] VARIANT_BOOL* pDataEventEnabled );
+        [propput, id(16), helpstring("property DataEventEnabled")]
+        HRESULT DataEventEnabled( [in] VARIANT_BOOL DataEventEnabled );
+        [propget, id(17), helpstring("property DeviceEnabled")]
+        HRESULT DeviceEnabled( [out, retval] VARIANT_BOOL* pDeviceEnabled );
+        [propput, id(17), helpstring("property DeviceEnabled")]
+        HRESULT DeviceEnabled( [in] VARIANT_BOOL DeviceEnabled );
+        [propget, id(18), helpstring("property FreezeEvents")]
+        HRESULT FreezeEvents( [out, retval] VARIANT_BOOL* pFreezeEvents );
+        [propput, id(18), helpstring("property FreezeEvents")]
+        HRESULT FreezeEvents( [in] VARIANT_BOOL FreezeEvents );
+        [propget, id(20), helpstring("property PowerNotify")]
+        HRESULT PowerNotify( [out, retval] long* pPowerNotify );
+        [propput, id(20), helpstring("property PowerNotify")]
+        HRESULT PowerNotify( [in] long PowerNotify );
+        [propget, id(21), helpstring("property PowerState")]
+        HRESULT PowerState( [out, retval] long* pPowerState );
+        [propget, id(22), helpstring("property ResultCode")]
+        HRESULT ResultCode( [out, retval] long* pResultCode );
+        [propget, id(23), helpstring("property ResultCodeExtended")]
+        HRESULT ResultCodeExtended( [out, retval] long* pResultCodeExtended );
+        [propget, id(24), helpstring("property State")]
+        HRESULT State( [out, retval] long* pState );
+        [propget, id(25), helpstring("property ControlObjectDescription")]
+        HRESULT ControlObjectDescription( [out, retval] BSTR* pControlObjectDescription );
+        [propget, id(26), helpstring("property ControlObjectVersion")]
+        HRESULT ControlObjectVersion( [out, retval] long* pControlObjectVersion );
+        [propget, id(27), helpstring("property ServiceObjectDescription")]
+        HRESULT ServiceObjectDescription( [out, retval] BSTR* pServiceObjectDescription );
+        [propget, id(28), helpstring("property ServiceObjectVersion")]
+        HRESULT ServiceObjectVersion( [out, retval] long* pServiceObjectVersion );
+        [propget, id(29), helpstring("property DeviceDescription")]
+        HRESULT DeviceDescription( [out, retval] BSTR* pDeviceDescription );
+        [propget, id(30), helpstring("property DeviceName")]
+        HRESULT DeviceName( [out, retval] BSTR* pDeviceName );
+        [propget, id(39), helpstring("property CapStatisticsReporting")]
+        HRESULT CapStatisticsReporting( [out, retval] VARIANT_BOOL* pCapStatisticsReporting );
+        [propget, id(40), helpstring("property CapUpdateStatistics")]
+        HRESULT CapUpdateStatistics( [out, retval] VARIANT_BOOL* pCapUpdateStatistics );
+        [propget, id(44), helpstring("property CapCompareFirmwareVersion")]
+        HRESULT CapCompareFirmwareVersion( [out, retval] VARIANT_BOOL* pCapCompareFirmwareVersion );
+        [propget, id(45), helpstring("property CapUpdateFirmware")]
+        HRESULT CapUpdateFirmware( [out, retval] VARIANT_BOOL* pCapUpdateFirmware );
+        [id(31), helpstring("method CheckHealth")]
+        HRESULT CheckHealth( 
+            [in] long Level, 
+            [out, retval] long* pRC );
+        [id(32), helpstring("method ClaimDevice")]
+        HRESULT ClaimDevice( 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(33), helpstring("method ClearInput")]
+        HRESULT ClearInput( 
+            [out, retval] long* pRC );
+        [id(35), helpstring("method Close")]
+        HRESULT Close( 
+            [out, retval] long* pRC );
+        [id(36), helpstring("method DirectIO")]
+        HRESULT DirectIO( 
+            [in] long Command, 
+            [in, out] long* pData, 
+            [in, out] BSTR* pString, 
+            [out, retval] long* pRC );
+        [id(37), helpstring("method Open")]
+        HRESULT Open( 
+            [in] BSTR DeviceName, 
+            [out, retval] long* pRC );
+        [id(38), helpstring("method ReleaseDevice")]
+        HRESULT ReleaseDevice( 
+            [out, retval] long* pRC );
+        [id(41), helpstring("method ResetStatistics")]
+        HRESULT ResetStatistics( 
+            [in] BSTR StatisticsBuffer, 
+            [out, retval] long* pRC );
+        [id(42), helpstring("method RetrieveStatistics")]
+        HRESULT RetrieveStatistics( 
+            [in, out] BSTR* pStatisticsBuffer, 
+            [out, retval] long* pRC );
+        [id(43), helpstring("method UpdateStatistics")]
+        HRESULT UpdateStatistics( 
+            [in] BSTR StatisticsBuffer, 
+            [out, retval] long* pRC );
+        [id(46), helpstring("method CompareFirmwareVersion")]
+        HRESULT CompareFirmwareVersion( 
+            [in] BSTR FirmwareFileName, 
+            [out] long* pResult, 
+            [out, retval] long* pRC );
+        [id(47), helpstring("method UpdateFirmware")]
+        HRESULT UpdateFirmware( 
+            [in] BSTR FirmwareFileName, 
+            [out, retval] long* pRC );
+        [propget, id(60), helpstring("property CapDiscrepancy")]
+        HRESULT CapDiscrepancy( [out, retval] VARIANT_BOOL* pCapDiscrepancy );
+        [propget, id(61), helpstring("property CapFullSensor")]
+        HRESULT CapFullSensor( [out, retval] VARIANT_BOOL* pCapFullSensor );
+        [propget, id(62), helpstring("property CapJamSensor")]
+        HRESULT CapJamSensor( [out, retval] VARIANT_BOOL* pCapJamSensor );
+        [propget, id(63), helpstring("property CapNearFullSensor")]
+        HRESULT CapNearFullSensor( [out, retval] VARIANT_BOOL* pCapNearFullSensor );
+        [propget, id(64), helpstring("property CapPauseDeposit")]
+        HRESULT CapPauseDeposit( [out, retval] VARIANT_BOOL* pCapPauseDeposit );
+        [propget, id(65), helpstring("property CapRealTimeData")]
+        HRESULT CapRealTimeData( [out, retval] VARIANT_BOOL* pCapRealTimeData );
+        [propget, id(66), helpstring("property CurrencyCode")]
+        HRESULT CurrencyCode( [out, retval] BSTR* pCurrencyCode );
+        [propput, id(66), helpstring("property CurrencyCode")]
+        HRESULT CurrencyCode( [in] BSTR CurrencyCode );
+        [propget, id(67), helpstring("property DepositAmount")]
+        HRESULT DepositAmount( [out, retval] long* pDepositAmount );
+        [propget, id(68), helpstring("property DepositCashList")]
+        HRESULT DepositCashList( [out, retval] BSTR* pDepositCashList );
+        [propget, id(69), helpstring("property DepositCodeList")]
+        HRESULT DepositCodeList( [out, retval] BSTR* pDepositCodeList );
+        [propget, id(70), helpstring("property DepositCounts")]
+        HRESULT DepositCounts( [out, retval] BSTR* pDepositCounts );
+        [propget, id(71), helpstring("property DepositStatus")]
+        HRESULT DepositStatus( [out, retval] long* pDepositStatus );
+        [propget, id(72), helpstring("property FullStatus")]
+        HRESULT FullStatus( [out, retval] long* pFullStatus );
+        [propget, id(73), helpstring("property RealTimeDataEnabled")]
+        HRESULT RealTimeDataEnabled( [out, retval] VARIANT_BOOL* pRealTimeDataEnabled );
+        [propput, id(73), helpstring("property RealTimeDataEnabled")]
+        HRESULT RealTimeDataEnabled( [in] VARIANT_BOOL RealTimeDataEnabled );
+        [id(90), helpstring("method AdjustCashCounts")]
+        HRESULT AdjustCashCounts( 
+            [in] BSTR CashCounts, 
+            [out, retval] long* pRC );
+        [id(91), helpstring("method BeginDeposit")]
+        HRESULT BeginDeposit( 
+            [out, retval] long* pRC );
+        [id(92), helpstring("method EndDeposit")]
+        HRESULT EndDeposit( 
+            [in] long Success, 
+            [out, retval] long* pRC );
+        [id(93), helpstring("method FixDeposit")]
+        HRESULT FixDeposit( 
+            [out, retval] long* pRC );
+        [id(94), helpstring("method PauseDeposit")]
+        HRESULT PauseDeposit( 
+            [in] long Control, 
+            [out, retval] long* pRC );
+        [id(95), helpstring("method ReadCashCounts")]
+        HRESULT ReadCashCounts( 
+            [out] BSTR* pCashCounts, 
+            [out] VARIANT_BOOL* pDiscrepancy, 
+            [out, retval] long* pRC );
+    // Release 1.12
+    // Release 1.13
+    // Release 1.14
+    };
+
+//
+//---------- IOPOSBillAcceptor Interface: Invariant Name ----------
+//
+    [
+        object,
+        uuid(CCB91281-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSBillAcceptor Current Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSBillAcceptor : IOPOSBillAcceptor_1_11
+    {
+    };
+
+
+///////////////////////////////////////////////////////////////////////////////
+//// Library
+///////////////////////////////////////////////////////////////////////////////
+
+[
+    uuid(CCB90280-B81E-11D2-AB74-0040054C3719),
+    version(1.0),
+    helpstring("OPOS BillAcceptor Control 1.14.001 [Public, by CRM/MCS]")
+]
+library OposBillAcceptor_CCO
+{
+    importlib("stdole32.tlb");
+    importlib("stdole2.tlb");
+
+    //*************************************************************************
+    //** Event interface
+    //*************************************************************************
+    [
+        uuid(CCB90283-B81E-11D2-AB74-0040054C3719),
+        helpstring("_IOPOSBillAcceptorEvents Interface")
+    ]
+    dispinterface _IOPOSBillAcceptorEvents
+    {
+        properties:
+        methods:
+        [id(1), helpstring("method DataEvent")]
+            void DataEvent( [in] long Status );
+        [id(2), helpstring("method DirectIOEvent")]
+            void DirectIOEvent( [in] long EventNumber, [in, out] long *pData, [in, out] BSTR *pString );
+        [id(5), helpstring("method StatusUpdateEvent")]
+            void StatusUpdateEvent( [in] long Data );
+    };
+
+    //*************************************************************************
+    //** COM Class
+    //*************************************************************************
+    [
+        uuid(CCB90282-B81E-11D2-AB74-0040054C3719),
+        helpstring("OPOS BillAcceptor Control 1.14.001 [Public, by CRM/MCS]")
+    ]
+    coclass OPOSBillAcceptor
+    {
+        [default] interface IOPOSBillAcceptor;
+        interface IOPOSBillAcceptor_1_11;
+        [default, source] dispinterface _IOPOSBillAcceptorEvents;
+    };
+};
+
+// End BillAcceptor.idl

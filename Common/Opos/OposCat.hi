@@ -1,0 +1,95 @@
+/////////////////////////////////////////////////////////////////////
+//
+// OposCat.hi
+//
+//   CAT header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// ------------------------------------------------------------------
+// 1998-06-01 OPOS Release 1.4                                OPOS-J
+// 2000-09-24 OPOS Release 1.5                                   BKS
+// 2005-04-29 OPOS Release 1.9                                   CRM
+//   Remove validation functions.
+//
+/////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSCAT_HI)
+#define      OPOSCAT_HI
+
+
+#include "Opos.hi"
+#include "OposCat.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXCat_AsyncMode            =   1 + PIDX_CAT+PIDX_NUMBER;
+const LONG PIDXCat_TrainingMode         =   2 + PIDX_CAT+PIDX_NUMBER;
+
+//  Changed in Release 1.5: In 1.4 TransactionType was incorrectly
+//    identified as a String property
+const LONG PIDXCat_TransactionType      =   3 + PIDX_CAT+PIDX_NUMBER;
+
+//  Added in Release 1.5
+const LONG PIDXCat_PaymentMedia         =   4 + PIDX_CAT+PIDX_NUMBER;
+
+//  Added in Release 1.9
+const LONG PIDXCat_LogStatus            =   5 + PIDX_CAT+PIDX_NUMBER;
+
+
+// * Capabilities *
+
+const LONG PIDXCat_CapAdditionalSecurityInformation
+                                                    = 501 + PIDX_CAT+PIDX_NUMBER;
+const LONG PIDXCat_CapAuthorizeCompletion
+                                                    = 502 + PIDX_CAT+PIDX_NUMBER;
+const LONG PIDXCat_CapAuthorizePreSales = 503 + PIDX_CAT+PIDX_NUMBER;
+const LONG PIDXCat_CapAuthorizeRefund   = 504 + PIDX_CAT+PIDX_NUMBER;
+const LONG PIDXCat_CapAuthorizeVoid     = 505 + PIDX_CAT+PIDX_NUMBER;
+const LONG PIDXCat_CapAuthorizeVoidPreSales
+                                                    = 506 + PIDX_CAT+PIDX_NUMBER;
+const LONG PIDXCat_CapCenterResultCode  = 507 + PIDX_CAT+PIDX_NUMBER;
+const LONG PIDXCat_CapCheckCard         = 508 + PIDX_CAT+PIDX_NUMBER;
+const LONG PIDXCat_CapDailyLog          = 509 + PIDX_CAT+PIDX_NUMBER;
+const LONG PIDXCat_CapInstallments      = 510 + PIDX_CAT+PIDX_NUMBER;
+const LONG PIDXCat_CapPaymentDetail     = 511 + PIDX_CAT+PIDX_NUMBER;
+const LONG PIDXCat_CapTaxOthers         = 512 + PIDX_CAT+PIDX_NUMBER;
+const LONG PIDXCat_CapTransactionNumber = 513 + PIDX_CAT+PIDX_NUMBER;
+const LONG PIDXCat_CapTrainingMode      = 514 + PIDX_CAT+PIDX_NUMBER;
+
+//  Added in Release 1.9
+const LONG PIDXCat_CapCashDeposit       = 515 + PIDX_CAT+PIDX_NUMBER;
+const LONG PIDXCat_CapLockTerminal      = 516 + PIDX_CAT+PIDX_NUMBER;
+const LONG PIDXCat_CapLogStatus         = 517 + PIDX_CAT+PIDX_NUMBER;
+const LONG PIDXCat_CapUnlockTerminal    = 518 + PIDX_CAT+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXCat_AccountNumber        =   1 + PIDX_CAT+PIDX_STRING;
+const LONG PIDXCat_AdditionalSecurityInformation
+                                        =   2 + PIDX_CAT+PIDX_STRING;
+const LONG PIDXCat_ApprovalCode         =   3 + PIDX_CAT+PIDX_STRING;
+const LONG PIDXCat_CardCompanyID        =   4 + PIDX_CAT+PIDX_STRING;
+const LONG PIDXCat_CenterResultCode     =   5 + PIDX_CAT+PIDX_STRING;
+const LONG PIDXCat_DailyLog             =   6 + PIDX_CAT+PIDX_STRING;
+const LONG PIDXCat_PaymentCondition     =   7 + PIDX_CAT+PIDX_STRING;
+const LONG PIDXCat_PaymentDetail        =   8 + PIDX_CAT+PIDX_STRING;
+const LONG PIDXCat_SequenceNumber       =   9 + PIDX_CAT+PIDX_STRING;
+const LONG PIDXCat_SlipNumber           =  10 + PIDX_CAT+PIDX_STRING;
+const LONG PIDXCat_TransactionNumber    =  11 + PIDX_CAT+PIDX_STRING;
+
+//  Changed in Release 1.5: In 1.4 TransactionType was incorrectly
+//    identified as a String property
+//const LONG PIDXCat_TransactionType    =  12 + PIDX_CAT+PIDX_STRING;
+
+
+#endif          // !defined(OPOSCAT_HI)

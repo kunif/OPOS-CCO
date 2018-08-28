@@ -1,0 +1,187 @@
+!!***************************************************************************
+!!
+!! Point Card Reader Writer Opos Control Object Data File
+!!
+!!     Date                   Modification                          Author
+!! -----------|----------------------------------------------------|----------
+!!  2000/09/09 1.5.100: Initial version.                            C. Monroe
+!!  2002/08/17 1.7.000: Add properties and methods for 1.7.
+!!  2004/03/22 1.8.000: Add properties and methods for 1.8.
+!!  2005/04/29 1.9.000: Add properties and methods for 1.9.
+!!  2006/03/15 1.10.000: Add properties and methods for 1.10.
+!!
+!!***************************************************************************
+
+! Names: Device, Uppercase Device
+DeviceName      =PointCardRW
+DeviceUpper     =POINTCARDRW
+
+! Short device designation used by OPOS.
+!   Include file is Opos@DeviceShortName@.hi
+!   Property index prefix is PIDX@DeviceShortName@.
+DeviceShortName =Pcrw
+! Short upper case device designation used by OPOS.
+!   Device registry key is OPOS_CLASSKEY_@DeviceShortUpper@
+DeviceShortUpper=PCRW
+
+! If Claim and Release are not supported, comment out the next line.
+!   (The macro values are not important. We only check for defined or not defined.)
+ClaimRelease    =
+
+! If sharable device, comment out the next line.
+!   (The macro value is not important. We only check for defined or not defined.)
+Exclusive       =
+
+! Supported events. Comment out the unsupported ones.
+!   (The macro values are not important. We only check for defined or not defined.)
+EventData       =
+EventDirectIO   =
+EventError      =
+EventOutput     =
+EventStatus     =
+
+! UUIDs. UUIDLibrary is required to be the full GUID.
+!   The others can be specified in full, or a "*" indicates that the bytes 3-4
+!   (hexadecimal chars 5-8) of the UUIDLibrary should be incremented to
+!   form their GUIDs.
+UUIDControl     =0210
+UUIDLibrary     =UUID:@UUIDPre@@UUIDControl@-@UUIDPost@
+UUIDInterface   =UUID*
+UUIDCoclass     =UUID*
+UUIDEvents      =UUID*
+
+! For each version up to the @Version@, list the properties and methods.
+!   If method:
+!     M  = Method.
+!     Release = 1.x
+!     Number = Dispatch ID.
+!     Details = IDL formatted method and parameters, with assumed ", [out] LONG* pRC )" at end.
+!       If usage omitted, assume [in].
+!       Parameter types restricted to BOOL, LONG, CURRENCY, and BSTR.
+!   If parameter:
+!     First char = C for Common (or S for Specific [optional]).
+!     Next one or two chars = R for Readable or W for Writable.
+!     Release = 1.x
+!     Number = Dispatch ID.
+!     Details = Property name followed by type in parentheses.
+!       Type restricted to BOOL, LONG, CURRENCY, and BSTR.
+!     Property Index name without prefix (optional)
+
+:MethodsProperties
+!> Added Property
+ CR  1.5  49 OpenResult(LONG)
+!> Common Properties
+!CRW 1.5  10 AutoDisable(BOOL)
+ CRW 1.5  11 BinaryConversion(LONG)
+ CR  1.5  12 CapPowerReporting(LONG)
+ CR  1.5  13 CheckHealthText(BSTR)
+ CR  1.5  14 Claimed(BOOL)
+ CR  1.5  15 DataCount(LONG)
+ CRW 1.5  16 DataEventEnabled(BOOL)
+ CRW 1.5  17 DeviceEnabled(BOOL)
+ CRW 1.5  18 FreezeEvents(BOOL)
+ CR  1.5  19 OutputID(LONG)
+ CRW 1.5  20 PowerNotify(LONG)
+ CR  1.5  21 PowerState(LONG)
+ CR  1.5  22 ResultCode(LONG)
+ CR  1.5  23 ResultCodeExtended(LONG)
+ CR  1.5  24 State(LONG)
+!
+ CR  1.5  25 ControlObjectDescription(BSTR)
+ CR  1.5  26 ControlObjectVersion(LONG)
+ CR  1.5  27 ServiceObjectDescription(BSTR)
+ CR  1.5  28 ServiceObjectVersion(LONG)
+ CR  1.5  29 DeviceDescription(BSTR)
+ CR  1.5  30 DeviceName(BSTR)
+!     Added in Release 1.8
+ CR  1.8  39 CapStatisticsReporting(BOOL)
+ CR  1.8  40 CapUpdateStatistics(BOOL)
+!     Added in Release 1.9
+ CR  1.9  44 CapCompareFirmwareVersion(BOOL)
+ CR  1.9  45 CapUpdateFirmware(BOOL)
+!
+!> Common Methods
+ M   1.5  31 CheckHealth(LONG Level)
+ M   1.5  32 Claim(LONG Timeout)
+ M   1.5  33 ClearInput()
+ M   1.5  34 ClearOutput()
+ M   1.5  35 Close()
+ M   1.5  36 DirectIO(LONG Command, [in, out] LONG* pData, [in, out] BSTR* pString)
+ M   1.5  37 Open(BSTR DeviceName)
+ M   1.5  38 Release()
+!     Added in Release 1.8
+ M   1.8  41 ResetStatistics(BSTR StatisticsBuffer)
+ M   1.8  42 RetrieveStatistics([in, out] BSTR* pStatisticsBuffer)
+ M   1.8  43 UpdateStatistics(BSTR StatisticsBuffer)
+!     Added in Release 1.9
+ M   1.9  46 CompareFirmwareVersion(BSTR FirmwareFileName, [out] LONG* pResult)
+ M   1.9  47 UpdateFirmware(BSTR FirmwareFileName)
+!     Added in Release 1.10
+ M   1.10 48 ClearInputProperties()
+!
+!> Specific Properties
+  R  1.5  50 CapBold(BOOL)
+  R  1.5  51 CapCardEntranceSensor(BOOL)
+  R  1.5  52 CapCharacterSet(LONG)
+  R  1.5  53 CapCleanCard(BOOL)
+  R  1.5  54 CapClearPrint(BOOL)
+  R  1.5  55 CapDhigh(BOOL)
+  R  1.5  56 CapDwide(BOOL)
+  R  1.5  57 CapDwideDhigh(BOOL)
+  R  1.5  58 CapItalic(BOOL)
+  R  1.5  59 CapLeft90(BOOL)
+  R  1.7 100 CapMapCharacterSet(BOOL)
+  R  1.5  60 CapPrint(BOOL)
+  R  1.5  61 CapPrintMode(BOOL)
+  R  1.5  62 CapRight90(BOOL)
+  R  1.5  63 CapRotate180(BOOL)
+  R  1.5  64 CapTracksToRead(LONG)
+  R  1.5  65 CapTracksToWrite(LONG)
+  R  1.5  66 CardState(LONG)
+  RW 1.5  67 CharacterSet(LONG)
+  R  1.5  68 CharacterSetList(BSTR)
+  R  1.5  69 FontTypeFaceList(BSTR)
+  RW 1.5  70 LineChars(LONG)
+  R  1.5  71 LineCharsList(BSTR)
+  RW 1.5  72 LineHeight(LONG)
+  RW 1.5  73 LineSpacing(LONG)
+  R  1.5  74 LineWidth(LONG)
+  RW 1.7 101 MapCharacterSet(BOOL)
+  RW 1.5  75 MapMode(LONG)
+  R  1.5  76 MaxLine(LONG)
+  R  1.5  77 PrintHeight(LONG)
+  R  1.5  78 ReadState1(LONG)
+  R  1.5  79 ReadState2(LONG)
+  R  1.5  80 RecvLength1(LONG)
+  R  1.5  81 RecvLength2(LONG)
+  R  1.5  82 SidewaysMaxChars(LONG)
+  R  1.5  83 SidewaysMaxLines(LONG)
+  R  1.5  86 Track1Data(BSTR)
+  R  1.5  87 Track2Data(BSTR)
+  R  1.5  88 Track3Data(BSTR)
+  R  1.5  89 Track4Data(BSTR)
+  R  1.5  90 Track5Data(BSTR)
+  R  1.5  91 Track6Data(BSTR)
+  RW 1.5  84 TracksToRead(LONG)
+  RW 1.5  85 TracksToWrite(LONG)
+  RW 1.5  94 Write1Data(BSTR)
+  RW 1.5  95 Write2Data(BSTR)
+  RW 1.5  96 Write3Data(BSTR)
+  RW 1.5  97 Write4Data(BSTR)
+  RW 1.5  98 Write5Data(BSTR)
+  RW 1.5  99 Write6Data(BSTR)
+  R  1.5  92 WriteState1(LONG)
+  R  1.5  93 WriteState2(LONG)
+!
+!> Specific Methods
+ M   1.5 120 BeginInsertion(LONG Timeout)
+ M   1.5 121 BeginRemoval(LONG Timeout)
+ M   1.5 122 CleanCard()
+ M   1.5 123 ClearPrintWrite(LONG Kind, LONG Hposition, LONG Vposition, LONG Width, LONG Height)
+ M   1.5 124 EndInsertion()
+ M   1.5 125 EndRemoval()
+ M   1.5 126 PrintWrite(LONG Kind, LONG Hposition, LONG Vposition, BSTR Data)
+ M   1.5 127 RotatePrint(LONG Rotation)
+ M   1.5 128 ValidateData(BSTR Data)
+
+!!End

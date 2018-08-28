@@ -1,0 +1,55 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposMicr.hi
+//
+//   MICR header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 1995-12-08 OPOS Release 1.0                                   CRM
+// 1997-06-04 OPOS Release 1.2                                   CRM
+//   Correct TransitNumber from number to string.
+// 2005-04-29 OPOS Release 1.9                                   CRM
+//   Remove validation functions.
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSMICR_HI)
+#define      OPOSMICR_HI
+
+
+#include "Opos.hi"
+#include "OposMicr.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXMicr_CheckType           =   1 + PIDX_MICR+PIDX_NUMBER;
+const LONG PIDXMicr_CountryCode         =   2 + PIDX_MICR+PIDX_NUMBER;
+
+
+// * Capabilities *
+
+const LONG PIDXMicr_CapValidationDevice = 501 + PIDX_MICR+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXMicr_AccountNumber       =   1 + PIDX_MICR+PIDX_STRING;
+const LONG PIDXMicr_Amount              =   2 + PIDX_MICR+PIDX_STRING;
+const LONG PIDXMicr_BankNumber          =   3 + PIDX_MICR+PIDX_STRING;
+const LONG PIDXMicr_EPC                 =   4 + PIDX_MICR+PIDX_STRING;
+const LONG PIDXMicr_RawData             =   5 + PIDX_MICR+PIDX_STRING;
+const LONG PIDXMicr_SerialNumber        =   6 + PIDX_MICR+PIDX_STRING;
+const LONG PIDXMicr_TransitNumber       =   7 + PIDX_MICR+PIDX_STRING;
+
+
+#endif          // !defined(OPOSMICR_HI)

@@ -1,0 +1,116 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposDisp.hi
+//
+//   Line Display header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 1995-12-08 OPOS Release 1.0                                   CRM
+// 1996-03-18 OPOS Release 1.01                                  CRM
+//   Add MarqueeFormat property.
+// 2001-07-15 OPOS Release 1.6                                   BKS
+//   Added BlinkRate, CursorType, CustomSSGlyphList, GlyphHeight
+//     and GlyphWidth properties.
+//   Added CapBlinkRate, CapCursorType, CapCustomGlyph, CapReadBack
+//     and CapReverse capabilities.
+// 2002-08-17 OPOS Release 1.7                                   CRM
+//   Added MapCharacterSet, MaximumX, MaximumY, ScreenMode,
+//     and ScreenModeList properties.
+//   Added CapBitmap, CapMapCharacterSet, and CapScreenMode
+//     capabilities.
+// 2005-04-29 OPOS Release 1.9                                   CRM
+//   Remove validation functions.
+//
+//////////////////////////////////////////////////////////////////////
+
+
+#if !defined(OPOSDISP_HI)
+#define      OPOSDISP_HI
+
+
+#include "Opos.hi"
+#include "OposDisp.h"
+
+
+#if defined(CreateWindow) // If Win32 defines "CreateWindow":
+#undef CreateWindow       //   Undefine it to avoid conflict
+#endif                    //   with the line display method.
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXDisp_CharacterSet        =   1 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_Columns             =   2 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_CurrentWindow       =   3 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_CursorColumn        =   4 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_CursorRow           =   5 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_CursorUpdate        =   6 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_DeviceBrightness    =   7 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_DeviceColumns       =   8 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_DeviceDescriptors   =   9 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_DeviceRows          =  10 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_DeviceWindows       =  11 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_InterCharacterWait  =  12 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_MarqueeRepeatWait   =  13 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_MarqueeType         =  14 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_MarqueeUnitWait     =  15 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_Rows                =  16 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_MarqueeFormat       =  17 + PIDX_DISP+PIDX_NUMBER;
+
+// Added in Release 1.6
+const LONG PIDXDisp_BlinkRate           =  18 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_CursorType          =  19 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_GlyphHeight         =  20 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_GlyphWidth          =  21 + PIDX_DISP+PIDX_NUMBER;
+
+// Added in Release 1.7
+const LONG PIDXDisp_MapCharacterSet     =  22 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_MaximumX            =  23 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_MaximumY            =  24 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_ScreenMode          =  25 + PIDX_DISP+PIDX_NUMBER;
+
+
+// * Capabilities *
+
+const LONG PIDXDisp_CapBlink            = 501 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_CapBrightness       = 502 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_CapCharacterSet     = 503 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_CapDescriptors      = 504 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_CapHMarquee         = 505 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_CapICharWait        = 506 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_CapVMarquee         = 507 + PIDX_DISP+PIDX_NUMBER;
+
+// Added in Release 1.6
+const LONG PIDXDisp_CapBlinkRate        = 508 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_CapCursorType       = 509 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_CapCustomGlyph      = 510 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_CapReadBack         = 511 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_CapReverse          = 512 + PIDX_DISP+PIDX_NUMBER;
+
+// Added in Release 1.7
+const LONG PIDXDisp_CapBitmap           = 513 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_CapMapCharacterSet  = 514 + PIDX_DISP+PIDX_NUMBER;
+const LONG PIDXDisp_CapScreenMode       = 515 + PIDX_DISP+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXDisp_CharacterSetList    =   1 + PIDX_DISP+PIDX_STRING;
+
+// Added in Release 1.6
+const LONG PIDXDisp_CustomGlyphList     =   2 + PIDX_DISP+PIDX_STRING;
+
+// Added in Release 1.7
+const LONG PIDXDisp_ScreenModeList      =   3 + PIDX_DISP+PIDX_STRING;
+
+
+#endif          // !defined(OPOSDISP_HI)

@@ -1,0 +1,474 @@
+/****************************************************************************
+**
+** MSR.idl -- IDL source for MSR.ocx
+**
+**     Date                   Modification                          Author
+** -----------|----------------------------------------------------|----------
+**  1999/03/20 Initial version.                                     C. Monroe
+**  2008/01/15 Enhance for independent interfaces.
+**  2008/08/30 More interface updates.
+**  2013/09/29 Update license section.
+**  2015/02/07 Update license section.
+**  2015/02/07 Version 1.14.001.
+**
+*****************************************************************************
+**
+{{Begin License}}
+
+Copyright 2015 Monroe Consulting Services, Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+{{End License}}
+*/
+
+// This file will be processed by the MIDL tool to
+// produce the type library (MSR.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+#include "olectl.h"
+
+
+///////////////////////////////////////////////////////////////////////////////
+//// Interfaces
+///////////////////////////////////////////////////////////////////////////////
+
+// Separate Dependent Interfaces implementation:
+//  - First interface with the APIs defined from original through that release.
+//  - Later interfaces derive from previous and add their releases' new APIs.
+//  - Current interface derives from previous and adds its release's new APIs.
+
+//
+//========== Previous Interface: 1.5 ==========
+//
+
+    [
+        object,
+        uuid(CCB91121-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSMSR 1.5 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSMSR_1_5 : IDispatch
+    {
+    // Methods for use only by the Service Object
+        [id(1), hidden, helpstring("method SOData")] HRESULT SOData( [in] long Status );
+        [id(2), hidden, helpstring("method SODirectIO")] HRESULT SODirectIO( [in] long EventNumber, [in, out] long* pData, [in, out] BSTR* pString );
+        [id(3), hidden, helpstring("method SOError")] HRESULT SOError( [in] long ResultCode, [in] long ResultCodeExtended, [in] long ErrorLocus, [in, out] long* pErrorResponse );
+        [id(4), hidden, helpstring("method SOOutputCompleteDummy")] HRESULT SOOutputCompleteDummy( [in] long OutputID );
+        [id(5), hidden, helpstring("method SOStatusUpdate")] HRESULT SOStatusUpdate( [in] long Data );
+        [id(9), hidden, helpstring("method SOProcessID")] HRESULT SOProcessID( [out, retval] long* pProcessID );
+    // Release 1.0
+        [propget, id(49), helpstring("property OpenResult")]
+        HRESULT OpenResult( [out, retval] long* pOpenResult );
+        [propget, id(13), helpstring("property CheckHealthText")]
+        HRESULT CheckHealthText( [out, retval] BSTR* pCheckHealthText );
+        [propget, id(14), helpstring("property Claimed")]
+        HRESULT Claimed( [out, retval] VARIANT_BOOL* pClaimed );
+        [propget, id(16), helpstring("property DataEventEnabled")]
+        HRESULT DataEventEnabled( [out, retval] VARIANT_BOOL* pDataEventEnabled );
+        [propput, id(16), helpstring("property DataEventEnabled")]
+        HRESULT DataEventEnabled( [in] VARIANT_BOOL DataEventEnabled );
+        [propget, id(17), helpstring("property DeviceEnabled")]
+        HRESULT DeviceEnabled( [out, retval] VARIANT_BOOL* pDeviceEnabled );
+        [propput, id(17), helpstring("property DeviceEnabled")]
+        HRESULT DeviceEnabled( [in] VARIANT_BOOL DeviceEnabled );
+        [propget, id(18), helpstring("property FreezeEvents")]
+        HRESULT FreezeEvents( [out, retval] VARIANT_BOOL* pFreezeEvents );
+        [propput, id(18), helpstring("property FreezeEvents")]
+        HRESULT FreezeEvents( [in] VARIANT_BOOL FreezeEvents );
+        [propget, id(22), helpstring("property ResultCode")]
+        HRESULT ResultCode( [out, retval] long* pResultCode );
+        [propget, id(23), helpstring("property ResultCodeExtended")]
+        HRESULT ResultCodeExtended( [out, retval] long* pResultCodeExtended );
+        [propget, id(24), helpstring("property State")]
+        HRESULT State( [out, retval] long* pState );
+        [propget, id(25), helpstring("property ControlObjectDescription")]
+        HRESULT ControlObjectDescription( [out, retval] BSTR* pControlObjectDescription );
+        [propget, id(26), helpstring("property ControlObjectVersion")]
+        HRESULT ControlObjectVersion( [out, retval] long* pControlObjectVersion );
+        [propget, id(27), helpstring("property ServiceObjectDescription")]
+        HRESULT ServiceObjectDescription( [out, retval] BSTR* pServiceObjectDescription );
+        [propget, id(28), helpstring("property ServiceObjectVersion")]
+        HRESULT ServiceObjectVersion( [out, retval] long* pServiceObjectVersion );
+        [propget, id(29), helpstring("property DeviceDescription")]
+        HRESULT DeviceDescription( [out, retval] BSTR* pDeviceDescription );
+        [propget, id(30), helpstring("property DeviceName")]
+        HRESULT DeviceName( [out, retval] BSTR* pDeviceName );
+        [id(31), helpstring("method CheckHealth")]
+        HRESULT CheckHealth( 
+            [in] long Level, 
+            [out, retval] long* pRC );
+        [id(32), helpstring("method ClaimDevice")]
+        HRESULT ClaimDevice( 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(33), helpstring("method ClearInput")]
+        HRESULT ClearInput( 
+            [out, retval] long* pRC );
+        [id(35), helpstring("method Close")]
+        HRESULT Close( 
+            [out, retval] long* pRC );
+        [id(36), helpstring("method DirectIO")]
+        HRESULT DirectIO( 
+            [in] long Command, 
+            [in, out] long* pData, 
+            [in, out] BSTR* pString, 
+            [out, retval] long* pRC );
+        [id(37), helpstring("method Open")]
+        HRESULT Open( 
+            [in] BSTR DeviceName, 
+            [out, retval] long* pRC );
+        [id(38), helpstring("method ReleaseDevice")]
+        HRESULT ReleaseDevice( 
+            [out, retval] long* pRC );
+        [propget, id(50), helpstring("property AccountNumber")]
+        HRESULT AccountNumber( [out, retval] BSTR* pAccountNumber );
+        [propget, id(51), helpstring("property CapISO")]
+        HRESULT CapISO( [out, retval] VARIANT_BOOL* pCapISO );
+        [propget, id(52), helpstring("property CapJISOne")]
+        HRESULT CapJISOne( [out, retval] VARIANT_BOOL* pCapJISOne );
+        [propget, id(53), helpstring("property CapJISTwo")]
+        HRESULT CapJISTwo( [out, retval] VARIANT_BOOL* pCapJISTwo );
+        [propget, id(54), helpstring("property DecodeData")]
+        HRESULT DecodeData( [out, retval] VARIANT_BOOL* pDecodeData );
+        [propput, id(54), helpstring("property DecodeData")]
+        HRESULT DecodeData( [in] VARIANT_BOOL DecodeData );
+        [propget, id(56), helpstring("property ExpirationDate")]
+        HRESULT ExpirationDate( [out, retval] BSTR* pExpirationDate );
+        [propget, id(57), helpstring("property FirstName")]
+        HRESULT FirstName( [out, retval] BSTR* pFirstName );
+        [propget, id(58), helpstring("property MiddleInitial")]
+        HRESULT MiddleInitial( [out, retval] BSTR* pMiddleInitial );
+        [propget, id(59), helpstring("property ParseDecodeData")]
+        HRESULT ParseDecodeData( [out, retval] VARIANT_BOOL* pParseDecodeData );
+        [propput, id(59), helpstring("property ParseDecodeData")]
+        HRESULT ParseDecodeData( [in] VARIANT_BOOL ParseDecodeData );
+        [propget, id(60), helpstring("property ParseDecodedData")]
+        HRESULT ParseDecodedData( [out, retval] VARIANT_BOOL* pParseDecodedData );
+        [propput, id(60), helpstring("property ParseDecodedData")]
+        HRESULT ParseDecodedData( [in] VARIANT_BOOL ParseDecodedData );
+        [propget, id(61), helpstring("property ServiceCode")]
+        HRESULT ServiceCode( [out, retval] BSTR* pServiceCode );
+        [propget, id(62), helpstring("property Suffix")]
+        HRESULT Suffix( [out, retval] BSTR* pSuffix );
+        [propget, id(63), helpstring("property Surname")]
+        HRESULT Surname( [out, retval] BSTR* pSurname );
+        [propget, id(64), helpstring("property Title")]
+        HRESULT Title( [out, retval] BSTR* pTitle );
+        [propget, id(65), helpstring("property Track1Data")]
+        HRESULT Track1Data( [out, retval] BSTR* pTrack1Data );
+        [propget, id(66), helpstring("property Track1DiscretionaryData")]
+        HRESULT Track1DiscretionaryData( [out, retval] BSTR* pTrack1DiscretionaryData );
+        [propget, id(67), helpstring("property Track2Data")]
+        HRESULT Track2Data( [out, retval] BSTR* pTrack2Data );
+        [propget, id(68), helpstring("property Track2DiscretionaryData")]
+        HRESULT Track2DiscretionaryData( [out, retval] BSTR* pTrack2DiscretionaryData );
+        [propget, id(69), helpstring("property Track3Data")]
+        HRESULT Track3Data( [out, retval] BSTR* pTrack3Data );
+        [propget, id(70), helpstring("property TracksToRead")]
+        HRESULT TracksToRead( [out, retval] long* pTracksToRead );
+        [propput, id(70), helpstring("property TracksToRead")]
+        HRESULT TracksToRead( [in] long TracksToRead );
+    // Release 1.1
+    // Release 1.2
+        [propget, id(10), helpstring("property AutoDisable")]
+        HRESULT AutoDisable( [out, retval] VARIANT_BOOL* pAutoDisable );
+        [propput, id(10), helpstring("property AutoDisable")]
+        HRESULT AutoDisable( [in] VARIANT_BOOL AutoDisable );
+        [propget, id(11), helpstring("property BinaryConversion")]
+        HRESULT BinaryConversion( [out, retval] long* pBinaryConversion );
+        [propput, id(11), helpstring("property BinaryConversion")]
+        HRESULT BinaryConversion( [in] long BinaryConversion );
+        [propget, id(15), helpstring("property DataCount")]
+        HRESULT DataCount( [out, retval] long* pDataCount );
+        [propget, id(55), helpstring("property ErrorReportingType")]
+        HRESULT ErrorReportingType( [out, retval] long* pErrorReportingType );
+        [propput, id(55), helpstring("property ErrorReportingType")]
+        HRESULT ErrorReportingType( [in] long ErrorReportingType );
+    // Release 1.3
+        [propget, id(12), helpstring("property CapPowerReporting")]
+        HRESULT CapPowerReporting( [out, retval] long* pCapPowerReporting );
+        [propget, id(20), helpstring("property PowerNotify")]
+        HRESULT PowerNotify( [out, retval] long* pPowerNotify );
+        [propput, id(20), helpstring("property PowerNotify")]
+        HRESULT PowerNotify( [in] long PowerNotify );
+        [propget, id(21), helpstring("property PowerState")]
+        HRESULT PowerState( [out, retval] long* pPowerState );
+    // Release 1.4
+    // Release 1.5
+        [propget, id(71), helpstring("property CapTransmitSentinels")]
+        HRESULT CapTransmitSentinels( [out, retval] VARIANT_BOOL* pCapTransmitSentinels );
+        [propget, id(72), helpstring("property Track4Data")]
+        HRESULT Track4Data( [out, retval] BSTR* pTrack4Data );
+        [propget, id(73), helpstring("property TransmitSentinels")]
+        HRESULT TransmitSentinels( [out, retval] VARIANT_BOOL* pTransmitSentinels );
+        [propput, id(73), helpstring("property TransmitSentinels")]
+        HRESULT TransmitSentinels( [in] VARIANT_BOOL TransmitSentinels );
+    // Release 1.6
+    // Release 1.7
+    };
+
+//
+//========== Previous Interface: 1.8 ==========
+//
+
+    [
+        object,
+        uuid(CCB92121-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSMSR 1.8 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSMSR_1_8 : IOPOSMSR_1_5
+    {
+    // Release 1.8
+        [propget, id(39), helpstring("property CapStatisticsReporting")]
+        HRESULT CapStatisticsReporting( [out, retval] VARIANT_BOOL* pCapStatisticsReporting );
+        [propget, id(40), helpstring("property CapUpdateStatistics")]
+        HRESULT CapUpdateStatistics( [out, retval] VARIANT_BOOL* pCapUpdateStatistics );
+        [id(41), helpstring("method ResetStatistics")]
+        HRESULT ResetStatistics( 
+            [in] BSTR StatisticsBuffer, 
+            [out, retval] long* pRC );
+        [id(42), helpstring("method RetrieveStatistics")]
+        HRESULT RetrieveStatistics( 
+            [in, out] BSTR* pStatisticsBuffer, 
+            [out, retval] long* pRC );
+        [id(43), helpstring("method UpdateStatistics")]
+        HRESULT UpdateStatistics( 
+            [in] BSTR StatisticsBuffer, 
+            [out, retval] long* pRC );
+    };
+
+//
+//========== Previous Interface: 1.9 ==========
+//
+
+    [
+        object,
+        uuid(CCB93121-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSMSR 1.9 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSMSR_1_9 : IOPOSMSR_1_8
+    {
+    // Release 1.9
+        [propget, id(44), helpstring("property CapCompareFirmwareVersion")]
+        HRESULT CapCompareFirmwareVersion( [out, retval] VARIANT_BOOL* pCapCompareFirmwareVersion );
+        [propget, id(45), helpstring("property CapUpdateFirmware")]
+        HRESULT CapUpdateFirmware( [out, retval] VARIANT_BOOL* pCapUpdateFirmware );
+        [id(46), helpstring("method CompareFirmwareVersion")]
+        HRESULT CompareFirmwareVersion( 
+            [in] BSTR FirmwareFileName, 
+            [out] long* pResult, 
+            [out, retval] long* pRC );
+        [id(47), helpstring("method UpdateFirmware")]
+        HRESULT UpdateFirmware( 
+            [in] BSTR FirmwareFileName, 
+            [out, retval] long* pRC );
+    };
+
+//
+//========== Previous Interface: 1.10 ==========
+//
+
+    [
+        object,
+        uuid(CCB94121-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSMSR 1.10 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSMSR_1_10 : IOPOSMSR_1_9
+    {
+    // Release 1.10
+        [id(48), helpstring("method ClearInputProperties")]
+        HRESULT ClearInputProperties( 
+            [out, retval] long* pRC );
+        [propget, id(74), helpstring("property CapWritableTracks")]
+        HRESULT CapWritableTracks( [out, retval] long* pCapWritableTracks );
+        [propget, id(75), helpstring("property EncodingMaxLength")]
+        HRESULT EncodingMaxLength( [out, retval] long* pEncodingMaxLength );
+        [propget, id(76), helpstring("property TracksToWrite")]
+        HRESULT TracksToWrite( [out, retval] long* pTracksToWrite );
+        [propput, id(76), helpstring("property TracksToWrite")]
+        HRESULT TracksToWrite( [in] long TracksToWrite );
+        [id(90), helpstring("method WriteTracks")]
+        HRESULT WriteTracks( 
+            [in] VARIANT /*(SAFEARRAY of BSTR = Type VT_BSTR|VT_ARRAY)*/ Data, 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+    // Release 1.11
+    };
+
+//
+//========== Current Interface: 1.12 ==========
+//
+
+    [
+        object,
+        uuid(CCB95121-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSMSR 1.12 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSMSR_1_12 : IOPOSMSR_1_10
+    {
+    // Release 1.12
+        [propget, id(77), helpstring("property AdditionalSecurityInformation")]
+        HRESULT AdditionalSecurityInformation( [out, retval] BSTR* pAdditionalSecurityInformation );
+        [propget, id(78), helpstring("property CapCardAuthentication")]
+        HRESULT CapCardAuthentication( [out, retval] BSTR* pCapCardAuthentication );
+        [propget, id(79), helpstring("property CapDataEncryption")]
+        HRESULT CapDataEncryption( [out, retval] long* pCapDataEncryption );
+        [propget, id(80), helpstring("property CapDeviceAuthentication")]
+        HRESULT CapDeviceAuthentication( [out, retval] long* pCapDeviceAuthentication );
+        [propget, id(81), helpstring("property CapTrackDataMasking")]
+        HRESULT CapTrackDataMasking( [out, retval] VARIANT_BOOL* pCapTrackDataMasking );
+        [propget, id(82), helpstring("property CardAuthenticationData")]
+        HRESULT CardAuthenticationData( [out, retval] BSTR* pCardAuthenticationData );
+        [propget, id(83), helpstring("property CardAuthenticationDataLength")]
+        HRESULT CardAuthenticationDataLength( [out, retval] long* pCardAuthenticationDataLength );
+        [propget, id(84), helpstring("property CardPropertyList")]
+        HRESULT CardPropertyList( [out, retval] BSTR* pCardPropertyList );
+        [propget, id(85), helpstring("property CardType")]
+        HRESULT CardType( [out, retval] BSTR* pCardType );
+        [propget, id(86), helpstring("property CardTypeList")]
+        HRESULT CardTypeList( [out, retval] BSTR* pCardTypeList );
+        [propget, id(87), helpstring("property DataEncryptionAlgorithm")]
+        HRESULT DataEncryptionAlgorithm( [out, retval] long* pDataEncryptionAlgorithm );
+        [propput, id(87), helpstring("property DataEncryptionAlgorithm")]
+        HRESULT DataEncryptionAlgorithm( [in] long DataEncryptionAlgorithm );
+        [propget, id(88), helpstring("property DeviceAuthenticated")]
+        HRESULT DeviceAuthenticated( [out, retval] VARIANT_BOOL* pDeviceAuthenticated );
+        [propget, id(89), helpstring("property DeviceAuthenticationProtocol")]
+        HRESULT DeviceAuthenticationProtocol( [out, retval] long* pDeviceAuthenticationProtocol );
+        [propget, id(110), helpstring("property Track1EncryptedData")]
+        HRESULT Track1EncryptedData( [out, retval] BSTR* pTrack1EncryptedData );
+        [propget, id(111), helpstring("property Track1EncryptedDataLength")]
+        HRESULT Track1EncryptedDataLength( [out, retval] long* pTrack1EncryptedDataLength );
+        [propget, id(112), helpstring("property Track2EncryptedData")]
+        HRESULT Track2EncryptedData( [out, retval] BSTR* pTrack2EncryptedData );
+        [propget, id(113), helpstring("property Track2EncryptedDataLength")]
+        HRESULT Track2EncryptedDataLength( [out, retval] long* pTrack2EncryptedDataLength );
+        [propget, id(114), helpstring("property Track3EncryptedData")]
+        HRESULT Track3EncryptedData( [out, retval] BSTR* pTrack3EncryptedData );
+        [propget, id(115), helpstring("property Track3EncryptedDataLength")]
+        HRESULT Track3EncryptedDataLength( [out, retval] long* pTrack3EncryptedDataLength );
+        [propget, id(116), helpstring("property Track4EncryptedData")]
+        HRESULT Track4EncryptedData( [out, retval] BSTR* pTrack4EncryptedData );
+        [propget, id(117), helpstring("property Track4EncryptedDataLength")]
+        HRESULT Track4EncryptedDataLength( [out, retval] long* pTrack4EncryptedDataLength );
+        [propget, id(118), helpstring("property WriteCardType")]
+        HRESULT WriteCardType( [out, retval] BSTR* pWriteCardType );
+        [propput, id(118), helpstring("property WriteCardType")]
+        HRESULT WriteCardType( [in] BSTR WriteCardType );
+        [id(91), helpstring("method AuthenticateDevice")]
+        HRESULT AuthenticateDevice( 
+            [in] BSTR Response, 
+            [out, retval] long* pRC );
+        [id(92), helpstring("method DeauthenticateDevice")]
+        HRESULT DeauthenticateDevice( 
+            [in] BSTR Response, 
+            [out, retval] long* pRC );
+        [id(93), helpstring("method RetrieveCardProperty")]
+        HRESULT RetrieveCardProperty( 
+            [in] BSTR Name, 
+            [out] BSTR* pValue, 
+            [out, retval] long* pRC );
+        [id(94), helpstring("method RetrieveDeviceAuthenticationData")]
+        HRESULT RetrieveDeviceAuthenticationData( 
+            [in, out] BSTR* pChallenge, 
+            [out, retval] long* pRC );
+        [id(95), helpstring("method UpdateKey")]
+        HRESULT UpdateKey( 
+            [in] BSTR Key, 
+            [in] BSTR KeyName, 
+            [out, retval] long* pRC );
+    // Release 1.13
+    // Release 1.14
+    };
+
+//
+//---------- IOPOSMSR Interface: Invariant Name ----------
+//
+    [
+        object,
+        uuid(CCB96121-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSMSR Current Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSMSR : IOPOSMSR_1_12
+    {
+    };
+
+
+///////////////////////////////////////////////////////////////////////////////
+//// Library
+///////////////////////////////////////////////////////////////////////////////
+
+[
+    uuid(CCB90120-B81E-11D2-AB74-0040054C3719),
+    version(1.0),
+    helpstring("OPOS MSR Control 1.14.001 [Public, by CRM/MCS]")
+]
+library OposMSR_CCO
+{
+    importlib("stdole32.tlb");
+    importlib("stdole2.tlb");
+
+    //*************************************************************************
+    //** Event interface
+    //*************************************************************************
+    [
+        uuid(CCB90123-B81E-11D2-AB74-0040054C3719),
+        helpstring("_IOPOSMSREvents Interface")
+    ]
+    dispinterface _IOPOSMSREvents
+    {
+        properties:
+        methods:
+        [id(1), helpstring("method DataEvent")]
+            void DataEvent( [in] long Status );
+        [id(2), helpstring("method DirectIOEvent")]
+            void DirectIOEvent( [in] long EventNumber, [in, out] long *pData, [in, out] BSTR *pString );
+        [id(3), helpstring("method ErrorEvent")]
+            void ErrorEvent( [in] long ResultCode, [in] long ResultCodeExtended, [in] long ErrorLocus, [in, out] long* pErrorResponse );
+        [id(5), helpstring("method StatusUpdateEvent")]
+            void StatusUpdateEvent( [in] long Data );
+    };
+
+    //*************************************************************************
+    //** COM Class
+    //*************************************************************************
+    [
+        uuid(CCB90122-B81E-11D2-AB74-0040054C3719),
+        helpstring("OPOS MSR Control 1.14.001 [Public, by CRM/MCS]")
+    ]
+    coclass OPOSMSR
+    {
+        [default] interface IOPOSMSR;
+        interface IOPOSMSR_1_12;
+        interface IOPOSMSR_1_10;
+        interface IOPOSMSR_1_9;
+        interface IOPOSMSR_1_8;
+        interface IOPOSMSR_1_5;
+        [default, source] dispinterface _IOPOSMSREvents;
+    };
+};
+
+// End MSR.idl

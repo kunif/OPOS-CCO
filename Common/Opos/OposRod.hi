@@ -1,0 +1,80 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposRod.hi
+//
+//   Remote Order Display header file for OPOS Controls and
+//     Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 1998-03-06 OPOS Release 1.3                                   CRM
+// 2002-08-17 OPOS Release 1.7                                   CRM
+//   Added MapCharacterSet property.
+//   Added CapMapCharacterSet capability.
+// 2005-04-29 OPOS Release 1.9                                   CRM
+//   Remove validation functions.
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSROD_HI)
+#define      OPOSROD_HI
+
+
+#include "Opos.hi"
+#include "OposRod.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXRod_AsyncMode            =   1 + PIDX_ROD+PIDX_NUMBER;
+const LONG PIDXRod_AutoToneDuration     =   2 + PIDX_ROD+PIDX_NUMBER;
+const LONG PIDXRod_AutoToneFrequency    =   3 + PIDX_ROD+PIDX_NUMBER;
+const LONG PIDXRod_CharacterSet         =   4 + PIDX_ROD+PIDX_NUMBER;
+const LONG PIDXRod_Clocks               =   5 + PIDX_ROD+PIDX_NUMBER;
+const LONG PIDXRod_CurrentUnitID        =   6 + PIDX_ROD+PIDX_NUMBER;
+const LONG PIDXRod_ErrorUnits           =   7 + PIDX_ROD+PIDX_NUMBER;
+const LONG PIDXRod_EventType            =   8 + PIDX_ROD+PIDX_NUMBER;
+const LONG PIDXRod_EventUnitID          =   9 + PIDX_ROD+PIDX_NUMBER;
+const LONG PIDXRod_EventUnits           =  10 + PIDX_ROD+PIDX_NUMBER;
+const LONG PIDXRod_SystemClocks         =  11 + PIDX_ROD+PIDX_NUMBER;
+const LONG PIDXRod_SystemVideoSaveBuffers
+                                        =  12 + PIDX_ROD+PIDX_NUMBER;
+const LONG PIDXRod_Timeout              =  13 + PIDX_ROD+PIDX_NUMBER;
+const LONG PIDXRod_UnitsOnline          =  14 + PIDX_ROD+PIDX_NUMBER;
+const LONG PIDXRod_VideoDataCount       =  15 + PIDX_ROD+PIDX_NUMBER;
+const LONG PIDXRod_VideoMode            =  16 + PIDX_ROD+PIDX_NUMBER;
+const LONG PIDXRod_VideoSaveBuffers     =  17 + PIDX_ROD+PIDX_NUMBER;
+
+// Added in Release 1.7
+const LONG PIDXRod_MapCharacterSet      =  18 + PIDX_ROD+PIDX_NUMBER;
+
+
+// * Capabilities *
+
+const LONG PIDXRod_CapSelectCharacterSet
+                                        = 501 + PIDX_ROD+PIDX_NUMBER;
+const LONG PIDXRod_CapTone              = 502 + PIDX_ROD+PIDX_NUMBER;
+const LONG PIDXRod_CapTouch             = 503 + PIDX_ROD+PIDX_NUMBER;
+const LONG PIDXRod_CapTransaction       = 504 + PIDX_ROD+PIDX_NUMBER;
+
+// Added in Release 1.7
+const LONG PIDXRod_CapMapCharacterSet   = 505 + PIDX_ROD+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXRod_CharacterSetList     =   1 + PIDX_ROD+PIDX_STRING;
+const LONG PIDXRod_ErrorString          =   2 + PIDX_ROD+PIDX_STRING;
+const LONG PIDXRod_EventString          =   3 + PIDX_ROD+PIDX_STRING;
+const LONG PIDXRod_VideoModesList       =   4 + PIDX_ROD+PIDX_STRING;
+
+
+#endif          // !defined(OPOSROD_HI)

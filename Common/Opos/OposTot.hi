@@ -1,0 +1,49 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposTot.hi
+//
+//   Hard Totals header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 1995-12-08 OPOS Release 1.0                                   CRM
+// 2005-04-29 OPOS Release 1.9                                   CRM
+//   Remove validation functions.
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSTOT_HI)
+#define      OPOSTOT_HI
+
+
+#include "Opos.hi"
+#include "OposTot.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXTot_FreeData             =   1 + PIDX_TOT+PIDX_NUMBER;
+const LONG PIDXTot_NumberOfFiles        =   2 + PIDX_TOT+PIDX_NUMBER;
+const LONG PIDXTot_TotalsSize           =   3 + PIDX_TOT+PIDX_NUMBER;
+const LONG PIDXTot_TransactionInProgress
+                                        =   4 + PIDX_TOT+PIDX_NUMBER;
+
+// * Capabilities *
+
+const LONG PIDXTot_CapErrorDetection    = 501 + PIDX_TOT+PIDX_NUMBER;
+const LONG PIDXTot_CapSingleFile        = 502 + PIDX_TOT+PIDX_NUMBER;
+const LONG PIDXTot_CapTransactions      = 503 + PIDX_TOT+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+
+#endif          // !defined(OPOSTOT_HI)

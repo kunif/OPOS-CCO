@@ -1,0 +1,764 @@
+/****************************************************************************
+**
+** POSPrinter.idl -- IDL source for POSPrinter.ocx
+**
+**     Date                   Modification                          Author
+** -----------|----------------------------------------------------|----------
+**  1999/03/20 Initial version.                                     C. Monroe
+**  2008/01/15 Enhance for independent interfaces.
+**  2008/08/30 More interface updates.
+**  2013/09/29 Update license section.
+**  2015/02/07 Update license section.
+**  2015/02/07 Version 1.14.001.
+**
+*****************************************************************************
+**
+{{Begin License}}
+
+Copyright 2015 Monroe Consulting Services, Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+{{End License}}
+*/
+
+// This file will be processed by the MIDL tool to
+// produce the type library (POSPrinter.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+#include "olectl.h"
+
+
+///////////////////////////////////////////////////////////////////////////////
+//// Interfaces
+///////////////////////////////////////////////////////////////////////////////
+
+// Separate Dependent Interfaces implementation:
+//  - First interface with the APIs defined from original through that release.
+//  - Later interfaces derive from previous and add their releases' new APIs.
+//  - Current interface derives from previous and adds its release's new APIs.
+
+//
+//========== Previous Interface: 1.5 ==========
+//
+
+    [
+        object,
+        uuid(CCB91151-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSPOSPrinter 1.5 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSPOSPrinter_1_5 : IDispatch
+    {
+    // Methods for use only by the Service Object
+        [id(1), hidden, helpstring("method SODataDummy")] HRESULT SODataDummy( [in] long Status );
+        [id(2), hidden, helpstring("method SODirectIO")] HRESULT SODirectIO( [in] long EventNumber, [in, out] long* pData, [in, out] BSTR* pString );
+        [id(3), hidden, helpstring("method SOError")] HRESULT SOError( [in] long ResultCode, [in] long ResultCodeExtended, [in] long ErrorLocus, [in, out] long* pErrorResponse );
+        [id(4), hidden, helpstring("method SOOutputComplete")] HRESULT SOOutputComplete( [in] long OutputID );
+        [id(5), hidden, helpstring("method SOStatusUpdate")] HRESULT SOStatusUpdate( [in] long Data );
+        [id(9), hidden, helpstring("method SOProcessID")] HRESULT SOProcessID( [out, retval] long* pProcessID );
+    // Release 1.0
+        [propget, id(49), helpstring("property OpenResult")]
+        HRESULT OpenResult( [out, retval] long* pOpenResult );
+        [propget, id(13), helpstring("property CheckHealthText")]
+        HRESULT CheckHealthText( [out, retval] BSTR* pCheckHealthText );
+        [propget, id(14), helpstring("property Claimed")]
+        HRESULT Claimed( [out, retval] VARIANT_BOOL* pClaimed );
+        [propget, id(17), helpstring("property DeviceEnabled")]
+        HRESULT DeviceEnabled( [out, retval] VARIANT_BOOL* pDeviceEnabled );
+        [propput, id(17), helpstring("property DeviceEnabled")]
+        HRESULT DeviceEnabled( [in] VARIANT_BOOL DeviceEnabled );
+        [propget, id(18), helpstring("property FreezeEvents")]
+        HRESULT FreezeEvents( [out, retval] VARIANT_BOOL* pFreezeEvents );
+        [propput, id(18), helpstring("property FreezeEvents")]
+        HRESULT FreezeEvents( [in] VARIANT_BOOL FreezeEvents );
+        [propget, id(19), helpstring("property OutputID")]
+        HRESULT OutputID( [out, retval] long* pOutputID );
+        [propget, id(22), helpstring("property ResultCode")]
+        HRESULT ResultCode( [out, retval] long* pResultCode );
+        [propget, id(23), helpstring("property ResultCodeExtended")]
+        HRESULT ResultCodeExtended( [out, retval] long* pResultCodeExtended );
+        [propget, id(24), helpstring("property State")]
+        HRESULT State( [out, retval] long* pState );
+        [propget, id(25), helpstring("property ControlObjectDescription")]
+        HRESULT ControlObjectDescription( [out, retval] BSTR* pControlObjectDescription );
+        [propget, id(26), helpstring("property ControlObjectVersion")]
+        HRESULT ControlObjectVersion( [out, retval] long* pControlObjectVersion );
+        [propget, id(27), helpstring("property ServiceObjectDescription")]
+        HRESULT ServiceObjectDescription( [out, retval] BSTR* pServiceObjectDescription );
+        [propget, id(28), helpstring("property ServiceObjectVersion")]
+        HRESULT ServiceObjectVersion( [out, retval] long* pServiceObjectVersion );
+        [propget, id(29), helpstring("property DeviceDescription")]
+        HRESULT DeviceDescription( [out, retval] BSTR* pDeviceDescription );
+        [propget, id(30), helpstring("property DeviceName")]
+        HRESULT DeviceName( [out, retval] BSTR* pDeviceName );
+        [id(31), helpstring("method CheckHealth")]
+        HRESULT CheckHealth( 
+            [in] long Level, 
+            [out, retval] long* pRC );
+        [id(32), helpstring("method ClaimDevice")]
+        HRESULT ClaimDevice( 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(34), helpstring("method ClearOutput")]
+        HRESULT ClearOutput( 
+            [out, retval] long* pRC );
+        [id(35), helpstring("method Close")]
+        HRESULT Close( 
+            [out, retval] long* pRC );
+        [id(36), helpstring("method DirectIO")]
+        HRESULT DirectIO( 
+            [in] long Command, 
+            [in, out] long* pData, 
+            [in, out] BSTR* pString, 
+            [out, retval] long* pRC );
+        [id(37), helpstring("method Open")]
+        HRESULT Open( 
+            [in] BSTR DeviceName, 
+            [out, retval] long* pRC );
+        [id(38), helpstring("method ReleaseDevice")]
+        HRESULT ReleaseDevice( 
+            [out, retval] long* pRC );
+        [propget, id(50), helpstring("property AsyncMode")]
+        HRESULT AsyncMode( [out, retval] VARIANT_BOOL* pAsyncMode );
+        [propput, id(50), helpstring("property AsyncMode")]
+        HRESULT AsyncMode( [in] VARIANT_BOOL AsyncMode );
+        [propget, id(52), helpstring("property CapConcurrentJrnRec")]
+        HRESULT CapConcurrentJrnRec( [out, retval] VARIANT_BOOL* pCapConcurrentJrnRec );
+        [propget, id(53), helpstring("property CapConcurrentJrnSlp")]
+        HRESULT CapConcurrentJrnSlp( [out, retval] VARIANT_BOOL* pCapConcurrentJrnSlp );
+        [propget, id(54), helpstring("property CapConcurrentRecSlp")]
+        HRESULT CapConcurrentRecSlp( [out, retval] VARIANT_BOOL* pCapConcurrentRecSlp );
+        [propget, id(55), helpstring("property CapCoverSensor")]
+        HRESULT CapCoverSensor( [out, retval] VARIANT_BOOL* pCapCoverSensor );
+        [propget, id(56), helpstring("property CapJrn2Color")]
+        HRESULT CapJrn2Color( [out, retval] VARIANT_BOOL* pCapJrn2Color );
+        [propget, id(57), helpstring("property CapJrnBold")]
+        HRESULT CapJrnBold( [out, retval] VARIANT_BOOL* pCapJrnBold );
+        [propget, id(58), helpstring("property CapJrnDhigh")]
+        HRESULT CapJrnDhigh( [out, retval] VARIANT_BOOL* pCapJrnDhigh );
+        [propget, id(59), helpstring("property CapJrnDwide")]
+        HRESULT CapJrnDwide( [out, retval] VARIANT_BOOL* pCapJrnDwide );
+        [propget, id(60), helpstring("property CapJrnDwideDhigh")]
+        HRESULT CapJrnDwideDhigh( [out, retval] VARIANT_BOOL* pCapJrnDwideDhigh );
+        [propget, id(61), helpstring("property CapJrnEmptySensor")]
+        HRESULT CapJrnEmptySensor( [out, retval] VARIANT_BOOL* pCapJrnEmptySensor );
+        [propget, id(62), helpstring("property CapJrnItalic")]
+        HRESULT CapJrnItalic( [out, retval] VARIANT_BOOL* pCapJrnItalic );
+        [propget, id(63), helpstring("property CapJrnNearEndSensor")]
+        HRESULT CapJrnNearEndSensor( [out, retval] VARIANT_BOOL* pCapJrnNearEndSensor );
+        [propget, id(64), helpstring("property CapJrnPresent")]
+        HRESULT CapJrnPresent( [out, retval] VARIANT_BOOL* pCapJrnPresent );
+        [propget, id(65), helpstring("property CapJrnUnderline")]
+        HRESULT CapJrnUnderline( [out, retval] VARIANT_BOOL* pCapJrnUnderline );
+        [propget, id(66), helpstring("property CapRec2Color")]
+        HRESULT CapRec2Color( [out, retval] VARIANT_BOOL* pCapRec2Color );
+        [propget, id(67), helpstring("property CapRecBarCode")]
+        HRESULT CapRecBarCode( [out, retval] VARIANT_BOOL* pCapRecBarCode );
+        [propget, id(68), helpstring("property CapRecBitmap")]
+        HRESULT CapRecBitmap( [out, retval] VARIANT_BOOL* pCapRecBitmap );
+        [propget, id(69), helpstring("property CapRecBold")]
+        HRESULT CapRecBold( [out, retval] VARIANT_BOOL* pCapRecBold );
+        [propget, id(70), helpstring("property CapRecDhigh")]
+        HRESULT CapRecDhigh( [out, retval] VARIANT_BOOL* pCapRecDhigh );
+        [propget, id(71), helpstring("property CapRecDwide")]
+        HRESULT CapRecDwide( [out, retval] VARIANT_BOOL* pCapRecDwide );
+        [propget, id(72), helpstring("property CapRecDwideDhigh")]
+        HRESULT CapRecDwideDhigh( [out, retval] VARIANT_BOOL* pCapRecDwideDhigh );
+        [propget, id(73), helpstring("property CapRecEmptySensor")]
+        HRESULT CapRecEmptySensor( [out, retval] VARIANT_BOOL* pCapRecEmptySensor );
+        [propget, id(74), helpstring("property CapRecItalic")]
+        HRESULT CapRecItalic( [out, retval] VARIANT_BOOL* pCapRecItalic );
+        [propget, id(75), helpstring("property CapRecLeft90")]
+        HRESULT CapRecLeft90( [out, retval] VARIANT_BOOL* pCapRecLeft90 );
+        [propget, id(76), helpstring("property CapRecNearEndSensor")]
+        HRESULT CapRecNearEndSensor( [out, retval] VARIANT_BOOL* pCapRecNearEndSensor );
+        [propget, id(77), helpstring("property CapRecPapercut")]
+        HRESULT CapRecPapercut( [out, retval] VARIANT_BOOL* pCapRecPapercut );
+        [propget, id(78), helpstring("property CapRecPresent")]
+        HRESULT CapRecPresent( [out, retval] VARIANT_BOOL* pCapRecPresent );
+        [propget, id(79), helpstring("property CapRecRight90")]
+        HRESULT CapRecRight90( [out, retval] VARIANT_BOOL* pCapRecRight90 );
+        [propget, id(80), helpstring("property CapRecRotate180")]
+        HRESULT CapRecRotate180( [out, retval] VARIANT_BOOL* pCapRecRotate180 );
+        [propget, id(81), helpstring("property CapRecStamp")]
+        HRESULT CapRecStamp( [out, retval] VARIANT_BOOL* pCapRecStamp );
+        [propget, id(82), helpstring("property CapRecUnderline")]
+        HRESULT CapRecUnderline( [out, retval] VARIANT_BOOL* pCapRecUnderline );
+        [propget, id(83), helpstring("property CapSlp2Color")]
+        HRESULT CapSlp2Color( [out, retval] VARIANT_BOOL* pCapSlp2Color );
+        [propget, id(84), helpstring("property CapSlpBarCode")]
+        HRESULT CapSlpBarCode( [out, retval] VARIANT_BOOL* pCapSlpBarCode );
+        [propget, id(85), helpstring("property CapSlpBitmap")]
+        HRESULT CapSlpBitmap( [out, retval] VARIANT_BOOL* pCapSlpBitmap );
+        [propget, id(86), helpstring("property CapSlpBold")]
+        HRESULT CapSlpBold( [out, retval] VARIANT_BOOL* pCapSlpBold );
+        [propget, id(87), helpstring("property CapSlpDhigh")]
+        HRESULT CapSlpDhigh( [out, retval] VARIANT_BOOL* pCapSlpDhigh );
+        [propget, id(88), helpstring("property CapSlpDwide")]
+        HRESULT CapSlpDwide( [out, retval] VARIANT_BOOL* pCapSlpDwide );
+        [propget, id(89), helpstring("property CapSlpDwideDhigh")]
+        HRESULT CapSlpDwideDhigh( [out, retval] VARIANT_BOOL* pCapSlpDwideDhigh );
+        [propget, id(90), helpstring("property CapSlpEmptySensor")]
+        HRESULT CapSlpEmptySensor( [out, retval] VARIANT_BOOL* pCapSlpEmptySensor );
+        [propget, id(91), helpstring("property CapSlpFullslip")]
+        HRESULT CapSlpFullslip( [out, retval] VARIANT_BOOL* pCapSlpFullslip );
+        [propget, id(92), helpstring("property CapSlpItalic")]
+        HRESULT CapSlpItalic( [out, retval] VARIANT_BOOL* pCapSlpItalic );
+        [propget, id(93), helpstring("property CapSlpLeft90")]
+        HRESULT CapSlpLeft90( [out, retval] VARIANT_BOOL* pCapSlpLeft90 );
+        [propget, id(94), helpstring("property CapSlpNearEndSensor")]
+        HRESULT CapSlpNearEndSensor( [out, retval] VARIANT_BOOL* pCapSlpNearEndSensor );
+        [propget, id(95), helpstring("property CapSlpPresent")]
+        HRESULT CapSlpPresent( [out, retval] VARIANT_BOOL* pCapSlpPresent );
+        [propget, id(96), helpstring("property CapSlpRight90")]
+        HRESULT CapSlpRight90( [out, retval] VARIANT_BOOL* pCapSlpRight90 );
+        [propget, id(97), helpstring("property CapSlpRotate180")]
+        HRESULT CapSlpRotate180( [out, retval] VARIANT_BOOL* pCapSlpRotate180 );
+        [propget, id(98), helpstring("property CapSlpUnderline")]
+        HRESULT CapSlpUnderline( [out, retval] VARIANT_BOOL* pCapSlpUnderline );
+        [propget, id(100), helpstring("property CharacterSet")]
+        HRESULT CharacterSet( [out, retval] long* pCharacterSet );
+        [propput, id(100), helpstring("property CharacterSet")]
+        HRESULT CharacterSet( [in] long CharacterSet );
+        [propget, id(101), helpstring("property CharacterSetList")]
+        HRESULT CharacterSetList( [out, retval] BSTR* pCharacterSetList );
+        [propget, id(102), helpstring("property CoverOpen")]
+        HRESULT CoverOpen( [out, retval] VARIANT_BOOL* pCoverOpen );
+        [propget, id(104), helpstring("property ErrorStation")]
+        HRESULT ErrorStation( [out, retval] long* pErrorStation );
+        [propget, id(106), helpstring("property FlagWhenIdle")]
+        HRESULT FlagWhenIdle( [out, retval] VARIANT_BOOL* pFlagWhenIdle );
+        [propput, id(106), helpstring("property FlagWhenIdle")]
+        HRESULT FlagWhenIdle( [in] VARIANT_BOOL FlagWhenIdle );
+        [propget, id(108), helpstring("property JrnEmpty")]
+        HRESULT JrnEmpty( [out, retval] VARIANT_BOOL* pJrnEmpty );
+        [propget, id(109), helpstring("property JrnLetterQuality")]
+        HRESULT JrnLetterQuality( [out, retval] VARIANT_BOOL* pJrnLetterQuality );
+        [propput, id(109), helpstring("property JrnLetterQuality")]
+        HRESULT JrnLetterQuality( [in] VARIANT_BOOL JrnLetterQuality );
+        [propget, id(110), helpstring("property JrnLineChars")]
+        HRESULT JrnLineChars( [out, retval] long* pJrnLineChars );
+        [propput, id(110), helpstring("property JrnLineChars")]
+        HRESULT JrnLineChars( [in] long JrnLineChars );
+        [propget, id(111), helpstring("property JrnLineCharsList")]
+        HRESULT JrnLineCharsList( [out, retval] BSTR* pJrnLineCharsList );
+        [propget, id(112), helpstring("property JrnLineHeight")]
+        HRESULT JrnLineHeight( [out, retval] long* pJrnLineHeight );
+        [propput, id(112), helpstring("property JrnLineHeight")]
+        HRESULT JrnLineHeight( [in] long JrnLineHeight );
+        [propget, id(113), helpstring("property JrnLineSpacing")]
+        HRESULT JrnLineSpacing( [out, retval] long* pJrnLineSpacing );
+        [propput, id(113), helpstring("property JrnLineSpacing")]
+        HRESULT JrnLineSpacing( [in] long JrnLineSpacing );
+        [propget, id(114), helpstring("property JrnLineWidth")]
+        HRESULT JrnLineWidth( [out, retval] long* pJrnLineWidth );
+        [propget, id(115), helpstring("property JrnNearEnd")]
+        HRESULT JrnNearEnd( [out, retval] VARIANT_BOOL* pJrnNearEnd );
+        [propget, id(116), helpstring("property MapMode")]
+        HRESULT MapMode( [out, retval] long* pMapMode );
+        [propput, id(116), helpstring("property MapMode")]
+        HRESULT MapMode( [in] long MapMode );
+        [propget, id(118), helpstring("property RecEmpty")]
+        HRESULT RecEmpty( [out, retval] VARIANT_BOOL* pRecEmpty );
+        [propget, id(119), helpstring("property RecLetterQuality")]
+        HRESULT RecLetterQuality( [out, retval] VARIANT_BOOL* pRecLetterQuality );
+        [propput, id(119), helpstring("property RecLetterQuality")]
+        HRESULT RecLetterQuality( [in] VARIANT_BOOL RecLetterQuality );
+        [propget, id(120), helpstring("property RecLineChars")]
+        HRESULT RecLineChars( [out, retval] long* pRecLineChars );
+        [propput, id(120), helpstring("property RecLineChars")]
+        HRESULT RecLineChars( [in] long RecLineChars );
+        [propget, id(121), helpstring("property RecLineCharsList")]
+        HRESULT RecLineCharsList( [out, retval] BSTR* pRecLineCharsList );
+        [propget, id(122), helpstring("property RecLineHeight")]
+        HRESULT RecLineHeight( [out, retval] long* pRecLineHeight );
+        [propput, id(122), helpstring("property RecLineHeight")]
+        HRESULT RecLineHeight( [in] long RecLineHeight );
+        [propget, id(123), helpstring("property RecLineSpacing")]
+        HRESULT RecLineSpacing( [out, retval] long* pRecLineSpacing );
+        [propput, id(123), helpstring("property RecLineSpacing")]
+        HRESULT RecLineSpacing( [in] long RecLineSpacing );
+        [propget, id(124), helpstring("property RecLinesToPaperCut")]
+        HRESULT RecLinesToPaperCut( [out, retval] long* pRecLinesToPaperCut );
+        [propget, id(125), helpstring("property RecLineWidth")]
+        HRESULT RecLineWidth( [out, retval] long* pRecLineWidth );
+        [propget, id(126), helpstring("property RecNearEnd")]
+        HRESULT RecNearEnd( [out, retval] VARIANT_BOOL* pRecNearEnd );
+        [propget, id(127), helpstring("property RecSidewaysMaxChars")]
+        HRESULT RecSidewaysMaxChars( [out, retval] long* pRecSidewaysMaxChars );
+        [propget, id(128), helpstring("property RecSidewaysMaxLines")]
+        HRESULT RecSidewaysMaxLines( [out, retval] long* pRecSidewaysMaxLines );
+        [propget, id(131), helpstring("property SlpEmpty")]
+        HRESULT SlpEmpty( [out, retval] VARIANT_BOOL* pSlpEmpty );
+        [propget, id(132), helpstring("property SlpLetterQuality")]
+        HRESULT SlpLetterQuality( [out, retval] VARIANT_BOOL* pSlpLetterQuality );
+        [propput, id(132), helpstring("property SlpLetterQuality")]
+        HRESULT SlpLetterQuality( [in] VARIANT_BOOL SlpLetterQuality );
+        [propget, id(133), helpstring("property SlpLineChars")]
+        HRESULT SlpLineChars( [out, retval] long* pSlpLineChars );
+        [propput, id(133), helpstring("property SlpLineChars")]
+        HRESULT SlpLineChars( [in] long SlpLineChars );
+        [propget, id(134), helpstring("property SlpLineCharsList")]
+        HRESULT SlpLineCharsList( [out, retval] BSTR* pSlpLineCharsList );
+        [propget, id(135), helpstring("property SlpLineHeight")]
+        HRESULT SlpLineHeight( [out, retval] long* pSlpLineHeight );
+        [propput, id(135), helpstring("property SlpLineHeight")]
+        HRESULT SlpLineHeight( [in] long SlpLineHeight );
+        [propget, id(136), helpstring("property SlpLinesNearEndToEnd")]
+        HRESULT SlpLinesNearEndToEnd( [out, retval] long* pSlpLinesNearEndToEnd );
+        [propget, id(137), helpstring("property SlpLineSpacing")]
+        HRESULT SlpLineSpacing( [out, retval] long* pSlpLineSpacing );
+        [propput, id(137), helpstring("property SlpLineSpacing")]
+        HRESULT SlpLineSpacing( [in] long SlpLineSpacing );
+        [propget, id(138), helpstring("property SlpLineWidth")]
+        HRESULT SlpLineWidth( [out, retval] long* pSlpLineWidth );
+        [propget, id(139), helpstring("property SlpMaxLines")]
+        HRESULT SlpMaxLines( [out, retval] long* pSlpMaxLines );
+        [propget, id(140), helpstring("property SlpNearEnd")]
+        HRESULT SlpNearEnd( [out, retval] VARIANT_BOOL* pSlpNearEnd );
+        [propget, id(141), helpstring("property SlpSidewaysMaxChars")]
+        HRESULT SlpSidewaysMaxChars( [out, retval] long* pSlpSidewaysMaxChars );
+        [propget, id(142), helpstring("property SlpSidewaysMaxLines")]
+        HRESULT SlpSidewaysMaxLines( [out, retval] long* pSlpSidewaysMaxLines );
+        [id(160), helpstring("method BeginInsertion")]
+        HRESULT BeginInsertion( 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(161), helpstring("method BeginRemoval")]
+        HRESULT BeginRemoval( 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(162), helpstring("method CutPaper")]
+        HRESULT CutPaper( 
+            [in] long Percentage, 
+            [out, retval] long* pRC );
+        [id(163), helpstring("method EndInsertion")]
+        HRESULT EndInsertion( 
+            [out, retval] long* pRC );
+        [id(164), helpstring("method EndRemoval")]
+        HRESULT EndRemoval( 
+            [out, retval] long* pRC );
+        [id(165), helpstring("method PrintBarCode")]
+        HRESULT PrintBarCode( 
+            [in] long Station, 
+            [in] BSTR Data, 
+            [in] long Symbology, 
+            [in] long Height, 
+            [in] long Width, 
+            [in] long Alignment, 
+            [in] long TextPosition, 
+            [out, retval] long* pRC );
+        [id(166), helpstring("method PrintBitmap")]
+        HRESULT PrintBitmap( 
+            [in] long Station, 
+            [in] BSTR FileName, 
+            [in] long Width, 
+            [in] long Alignment, 
+            [out, retval] long* pRC );
+        [id(167), helpstring("method PrintImmediate")]
+        HRESULT PrintImmediate( 
+            [in] long Station, 
+            [in] BSTR Data, 
+            [out, retval] long* pRC );
+        [id(168), helpstring("method PrintNormal")]
+        HRESULT PrintNormal( 
+            [in] long Station, 
+            [in] BSTR Data, 
+            [out, retval] long* pRC );
+        [id(169), helpstring("method PrintTwoNormal")]
+        HRESULT PrintTwoNormal( 
+            [in] long Stations, 
+            [in] BSTR Data1, 
+            [in] BSTR Data2, 
+            [out, retval] long* pRC );
+        [id(170), helpstring("method RotatePrint")]
+        HRESULT RotatePrint( 
+            [in] long Station, 
+            [in] long Rotation, 
+            [out, retval] long* pRC );
+        [id(171), helpstring("method SetBitmap")]
+        HRESULT SetBitmap( 
+            [in] long BitmapNumber, 
+            [in] long Station, 
+            [in] BSTR FileName, 
+            [in] long Width, 
+            [in] long Alignment, 
+            [out, retval] long* pRC );
+        [id(172), helpstring("method SetLogo")]
+        HRESULT SetLogo( 
+            [in] long Location, 
+            [in] BSTR Data, 
+            [out, retval] long* pRC );
+    // Release 1.1
+        [propget, id(51), helpstring("property CapCharacterSet")]
+        HRESULT CapCharacterSet( [out, retval] long* pCapCharacterSet );
+        [propget, id(99), helpstring("property CapTransaction")]
+        HRESULT CapTransaction( [out, retval] VARIANT_BOOL* pCapTransaction );
+        [propget, id(103), helpstring("property ErrorLevel")]
+        HRESULT ErrorLevel( [out, retval] long* pErrorLevel );
+        [propget, id(105), helpstring("property ErrorString")]
+        HRESULT ErrorString( [out, retval] BSTR* pErrorString );
+        [propget, id(107), helpstring("property FontTypefaceList")]
+        HRESULT FontTypefaceList( [out, retval] BSTR* pFontTypefaceList );
+        [propget, id(117), helpstring("property RecBarCodeRotationList")]
+        HRESULT RecBarCodeRotationList( [out, retval] BSTR* pRecBarCodeRotationList );
+        [propget, id(129), helpstring("property RotateSpecial")]
+        HRESULT RotateSpecial( [out, retval] long* pRotateSpecial );
+        [propput, id(129), helpstring("property RotateSpecial")]
+        HRESULT RotateSpecial( [in] long RotateSpecial );
+        [propget, id(130), helpstring("property SlpBarCodeRotationList")]
+        HRESULT SlpBarCodeRotationList( [out, retval] BSTR* pSlpBarCodeRotationList );
+        [id(173), helpstring("method TransactionPrint")]
+        HRESULT TransactionPrint( 
+            [in] long Station, 
+            [in] long Control, 
+            [out, retval] long* pRC );
+        [id(174), helpstring("method ValidateData")]
+        HRESULT ValidateData( 
+            [in] long Station, 
+            [in] BSTR Data, 
+            [out, retval] long* pRC );
+    // Release 1.2
+        [propget, id(11), helpstring("property BinaryConversion")]
+        HRESULT BinaryConversion( [out, retval] long* pBinaryConversion );
+        [propput, id(11), helpstring("property BinaryConversion")]
+        HRESULT BinaryConversion( [in] long BinaryConversion );
+    // Release 1.3
+        [propget, id(12), helpstring("property CapPowerReporting")]
+        HRESULT CapPowerReporting( [out, retval] long* pCapPowerReporting );
+        [propget, id(20), helpstring("property PowerNotify")]
+        HRESULT PowerNotify( [out, retval] long* pPowerNotify );
+        [propput, id(20), helpstring("property PowerNotify")]
+        HRESULT PowerNotify( [in] long PowerNotify );
+        [propget, id(21), helpstring("property PowerState")]
+        HRESULT PowerState( [out, retval] long* pPowerState );
+    // Release 1.4
+    // Release 1.5
+        [propget, id(143), helpstring("property CapJrnCartridgeSensor")]
+        HRESULT CapJrnCartridgeSensor( [out, retval] long* pCapJrnCartridgeSensor );
+        [propget, id(144), helpstring("property CapJrnColor")]
+        HRESULT CapJrnColor( [out, retval] long* pCapJrnColor );
+        [propget, id(145), helpstring("property CapRecCartridgeSensor")]
+        HRESULT CapRecCartridgeSensor( [out, retval] long* pCapRecCartridgeSensor );
+        [propget, id(146), helpstring("property CapRecColor")]
+        HRESULT CapRecColor( [out, retval] long* pCapRecColor );
+        [propget, id(147), helpstring("property CapRecMarkFeed")]
+        HRESULT CapRecMarkFeed( [out, retval] long* pCapRecMarkFeed );
+        [propget, id(148), helpstring("property CapSlpBothSidesPrint")]
+        HRESULT CapSlpBothSidesPrint( [out, retval] VARIANT_BOOL* pCapSlpBothSidesPrint );
+        [propget, id(149), helpstring("property CapSlpCartridgeSensor")]
+        HRESULT CapSlpCartridgeSensor( [out, retval] long* pCapSlpCartridgeSensor );
+        [propget, id(150), helpstring("property CapSlpColor")]
+        HRESULT CapSlpColor( [out, retval] long* pCapSlpColor );
+        [propget, id(151), helpstring("property CartridgeNotify")]
+        HRESULT CartridgeNotify( [out, retval] long* pCartridgeNotify );
+        [propput, id(151), helpstring("property CartridgeNotify")]
+        HRESULT CartridgeNotify( [in] long CartridgeNotify );
+        [propget, id(152), helpstring("property JrnCartridgeState")]
+        HRESULT JrnCartridgeState( [out, retval] long* pJrnCartridgeState );
+        [propget, id(153), helpstring("property JrnCurrentCartridge")]
+        HRESULT JrnCurrentCartridge( [out, retval] long* pJrnCurrentCartridge );
+        [propput, id(153), helpstring("property JrnCurrentCartridge")]
+        HRESULT JrnCurrentCartridge( [in] long JrnCurrentCartridge );
+        [propget, id(154), helpstring("property RecCartridgeState")]
+        HRESULT RecCartridgeState( [out, retval] long* pRecCartridgeState );
+        [propget, id(155), helpstring("property RecCurrentCartridge")]
+        HRESULT RecCurrentCartridge( [out, retval] long* pRecCurrentCartridge );
+        [propput, id(155), helpstring("property RecCurrentCartridge")]
+        HRESULT RecCurrentCartridge( [in] long RecCurrentCartridge );
+        [propget, id(156), helpstring("property SlpCartridgeState")]
+        HRESULT SlpCartridgeState( [out, retval] long* pSlpCartridgeState );
+        [propget, id(157), helpstring("property SlpCurrentCartridge")]
+        HRESULT SlpCurrentCartridge( [out, retval] long* pSlpCurrentCartridge );
+        [propput, id(157), helpstring("property SlpCurrentCartridge")]
+        HRESULT SlpCurrentCartridge( [in] long SlpCurrentCartridge );
+        [propget, id(158), helpstring("property SlpPrintSide")]
+        HRESULT SlpPrintSide( [out, retval] long* pSlpPrintSide );
+        [id(175), helpstring("method ChangePrintSide")]
+        HRESULT ChangePrintSide( 
+            [in] long Side, 
+            [out, retval] long* pRC );
+        [id(176), helpstring("method MarkFeed")]
+        HRESULT MarkFeed( 
+            [in] long Type, 
+            [out, retval] long* pRC );
+    // Release 1.6
+    };
+
+//
+//========== Previous Interface: 1.7 ==========
+//
+
+    [
+        object,
+        uuid(CCB92151-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSPOSPrinter 1.7 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSPOSPrinter_1_7 : IOPOSPOSPrinter_1_5
+    {
+    // Release 1.7
+        [propget, id(190), helpstring("property CapMapCharacterSet")]
+        HRESULT CapMapCharacterSet( [out, retval] VARIANT_BOOL* pCapMapCharacterSet );
+        [propget, id(191), helpstring("property MapCharacterSet")]
+        HRESULT MapCharacterSet( [out, retval] VARIANT_BOOL* pMapCharacterSet );
+        [propput, id(191), helpstring("property MapCharacterSet")]
+        HRESULT MapCharacterSet( [in] VARIANT_BOOL MapCharacterSet );
+        [propget, id(192), helpstring("property RecBitmapRotationList")]
+        HRESULT RecBitmapRotationList( [out, retval] BSTR* pRecBitmapRotationList );
+        [propget, id(193), helpstring("property SlpBitmapRotationList")]
+        HRESULT SlpBitmapRotationList( [out, retval] BSTR* pSlpBitmapRotationList );
+    };
+
+//
+//========== Previous Interface: 1.8 ==========
+//
+
+    [
+        object,
+        uuid(CCB93151-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSPOSPrinter 1.8 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSPOSPrinter_1_8 : IOPOSPOSPrinter_1_7
+    {
+    // Release 1.8
+        [propget, id(39), helpstring("property CapStatisticsReporting")]
+        HRESULT CapStatisticsReporting( [out, retval] VARIANT_BOOL* pCapStatisticsReporting );
+        [propget, id(40), helpstring("property CapUpdateStatistics")]
+        HRESULT CapUpdateStatistics( [out, retval] VARIANT_BOOL* pCapUpdateStatistics );
+        [id(41), helpstring("method ResetStatistics")]
+        HRESULT ResetStatistics( 
+            [in] BSTR StatisticsBuffer, 
+            [out, retval] long* pRC );
+        [id(42), helpstring("method RetrieveStatistics")]
+        HRESULT RetrieveStatistics( 
+            [in, out] BSTR* pStatisticsBuffer, 
+            [out, retval] long* pRC );
+        [id(43), helpstring("method UpdateStatistics")]
+        HRESULT UpdateStatistics( 
+            [in] BSTR StatisticsBuffer, 
+            [out, retval] long* pRC );
+    };
+
+//
+//========== Previous Interface: 1.9 ==========
+//
+
+    [
+        object,
+        uuid(CCB94151-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSPOSPrinter 1.9 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSPOSPrinter_1_9 : IOPOSPOSPrinter_1_8
+    {
+    // Release 1.9
+        [propget, id(44), helpstring("property CapCompareFirmwareVersion")]
+        HRESULT CapCompareFirmwareVersion( [out, retval] VARIANT_BOOL* pCapCompareFirmwareVersion );
+        [propget, id(45), helpstring("property CapUpdateFirmware")]
+        HRESULT CapUpdateFirmware( [out, retval] VARIANT_BOOL* pCapUpdateFirmware );
+        [id(46), helpstring("method CompareFirmwareVersion")]
+        HRESULT CompareFirmwareVersion( 
+            [in] BSTR FirmwareFileName, 
+            [out] long* pResult, 
+            [out, retval] long* pRC );
+        [id(47), helpstring("method UpdateFirmware")]
+        HRESULT UpdateFirmware( 
+            [in] BSTR FirmwareFileName, 
+            [out, retval] long* pRC );
+        [propget, id(194), helpstring("property CapConcurrentPageMode")]
+        HRESULT CapConcurrentPageMode( [out, retval] VARIANT_BOOL* pCapConcurrentPageMode );
+        [propget, id(195), helpstring("property CapRecPageMode")]
+        HRESULT CapRecPageMode( [out, retval] VARIANT_BOOL* pCapRecPageMode );
+        [propget, id(196), helpstring("property CapSlpPageMode")]
+        HRESULT CapSlpPageMode( [out, retval] VARIANT_BOOL* pCapSlpPageMode );
+        [propget, id(197), helpstring("property PageModeArea")]
+        HRESULT PageModeArea( [out, retval] BSTR* pPageModeArea );
+        [propget, id(198), helpstring("property PageModeDescriptor")]
+        HRESULT PageModeDescriptor( [out, retval] long* pPageModeDescriptor );
+        [propget, id(199), helpstring("property PageModeHorizontalPosition")]
+        HRESULT PageModeHorizontalPosition( [out, retval] long* pPageModeHorizontalPosition );
+        [propput, id(199), helpstring("property PageModeHorizontalPosition")]
+        HRESULT PageModeHorizontalPosition( [in] long PageModeHorizontalPosition );
+        [propget, id(200), helpstring("property PageModePrintArea")]
+        HRESULT PageModePrintArea( [out, retval] BSTR* pPageModePrintArea );
+        [propput, id(200), helpstring("property PageModePrintArea")]
+        HRESULT PageModePrintArea( [in] BSTR PageModePrintArea );
+        [propget, id(201), helpstring("property PageModePrintDirection")]
+        HRESULT PageModePrintDirection( [out, retval] long* pPageModePrintDirection );
+        [propput, id(201), helpstring("property PageModePrintDirection")]
+        HRESULT PageModePrintDirection( [in] long PageModePrintDirection );
+        [propget, id(202), helpstring("property PageModeStation")]
+        HRESULT PageModeStation( [out, retval] long* pPageModeStation );
+        [propput, id(202), helpstring("property PageModeStation")]
+        HRESULT PageModeStation( [in] long PageModeStation );
+        [propget, id(203), helpstring("property PageModeVerticalPosition")]
+        HRESULT PageModeVerticalPosition( [out, retval] long* pPageModeVerticalPosition );
+        [propput, id(203), helpstring("property PageModeVerticalPosition")]
+        HRESULT PageModeVerticalPosition( [in] long PageModeVerticalPosition );
+        [id(177), helpstring("method ClearPrintArea")]
+        HRESULT ClearPrintArea( 
+            [out, retval] long* pRC );
+        [id(178), helpstring("method PageModePrint")]
+        HRESULT PageModePrint( 
+            [in] long Control, 
+            [out, retval] long* pRC );
+    };
+
+//
+//========== Previous Interface: 1.10 ==========
+//
+
+    [
+        object,
+        uuid(CCB95151-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSPOSPrinter 1.10 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSPOSPrinter_1_10 : IOPOSPOSPrinter_1_9
+    {
+    // Release 1.10
+        [id(179), helpstring("method PrintMemoryBitmap")]
+        HRESULT PrintMemoryBitmap( 
+            [in] long Station, 
+            [in] BSTR Data, 
+            [in] long Type, 
+            [in] long Width, 
+            [in] long Alignment, 
+            [out, retval] long* pRC );
+    // Release 1.11
+    // Release 1.12
+    };
+
+    [
+        object,
+        uuid(CCB96151-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSPOSPrinter 1.10 Interface (Old Invariant)"),
+        pointer_default(unique),
+        hidden
+    ]
+    interface IOPOSPOSPrinter_1_10_zz : IOPOSPOSPrinter_1_10
+    {
+    };
+
+//
+//========== Current Interface: 1.13 ==========
+//
+
+    [
+        object,
+        uuid(CCB97151-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSPOSPrinter 1.13 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSPOSPrinter_1_13 : IOPOSPOSPrinter_1_10
+    {
+    // Release 1.13
+        [propget, id(204), helpstring("property CapRecRuledLine")]
+        HRESULT CapRecRuledLine( [out, retval] long* pCapRecRuledLine );
+        [propget, id(205), helpstring("property CapSlpRuledLine")]
+        HRESULT CapSlpRuledLine( [out, retval] long* pCapSlpRuledLine );
+        [id(180), helpstring("method DrawRuledLine")]
+        HRESULT DrawRuledLine( 
+            [in] long Station, 
+            [in] BSTR PositionList, 
+            [in] long LineDirection, 
+            [in] long LineWidth, 
+            [in] long LineStyle, 
+            [in] long LineColor, 
+            [out, retval] long* pRC );
+    // Release 1.14
+    };
+
+//
+//---------- IOPOSPOSPrinter Interface: Invariant Name ----------
+//
+    [
+        object,
+        uuid(CCB98151-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSPOSPrinter Current Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSPOSPrinter : IOPOSPOSPrinter_1_13
+    {
+    };
+
+
+///////////////////////////////////////////////////////////////////////////////
+//// Library
+///////////////////////////////////////////////////////////////////////////////
+
+[
+    uuid(CCB90150-B81E-11D2-AB74-0040054C3719),
+    version(1.0),
+    helpstring("OPOS POSPrinter Control 1.14.001 [Public, by CRM/MCS]")
+]
+library OposPOSPrinter_CCO
+{
+    importlib("stdole32.tlb");
+    importlib("stdole2.tlb");
+
+    //*************************************************************************
+    //** Event interface
+    //*************************************************************************
+    [
+        uuid(CCB90153-B81E-11D2-AB74-0040054C3719),
+        helpstring("_IOPOSPOSPrinterEvents Interface")
+    ]
+    dispinterface _IOPOSPOSPrinterEvents
+    {
+        properties:
+        methods:
+        [id(2), helpstring("method DirectIOEvent")]
+            void DirectIOEvent( [in] long EventNumber, [in, out] long *pData, [in, out] BSTR *pString );
+        [id(3), helpstring("method ErrorEvent")]
+            void ErrorEvent( [in] long ResultCode, [in] long ResultCodeExtended, [in] long ErrorLocus, [in, out] long* pErrorResponse );
+        [id(4), helpstring("method OutputCompleteEvent")]
+            void OutputCompleteEvent( [in] long OutputID );
+        [id(5), helpstring("method StatusUpdateEvent")]
+            void StatusUpdateEvent( [in] long Data );
+    };
+
+    //*************************************************************************
+    //** COM Class
+    //*************************************************************************
+    [
+        uuid(CCB90152-B81E-11D2-AB74-0040054C3719),
+        helpstring("OPOS POSPrinter Control 1.14.001 [Public, by CRM/MCS]")
+    ]
+    coclass OPOSPOSPrinter
+    {
+        [default] interface IOPOSPOSPrinter;
+        interface IOPOSPOSPrinter_1_13;
+        interface IOPOSPOSPrinter_1_10;
+        interface IOPOSPOSPrinter_1_10_zz; // (Old invariant interface.)
+        interface IOPOSPOSPrinter_1_9;
+        interface IOPOSPOSPrinter_1_8;
+        interface IOPOSPOSPrinter_1_7;
+        interface IOPOSPOSPrinter_1_5;
+        [default, source] dispinterface _IOPOSPOSPrinterEvents;
+    };
+};
+
+// End POSPrinter.idl

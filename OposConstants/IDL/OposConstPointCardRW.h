@@ -1,0 +1,52 @@
+//*************************************************************************
+//** OPOS PointCardRW Constants
+//*************************************************************************
+
+typedef [helpstring("OPOS PointCardRW Constants")]
+enum
+{
+    PCRW_CCS_ALPHA                            = 1,
+    PCRW_CCS_ASCII                            = 998,
+    PCRW_CCS_KANA                             = 10,
+    PCRW_CCS_KANJI                            = 11,
+    PCRW_CCS_UNICODE                          = 997,
+    PCRW_STATE_NOCARD                         = 1,
+    PCRW_STATE_REMAINING                      = 2,
+    PCRW_STATE_INRW                           = 4,
+    PCRW_TRACK1                               = 0x0001,
+    PCRW_TRACK2                               = 0x0002,
+    PCRW_TRACK3                               = 0x0004,
+    PCRW_TRACK4                               = 0x0008,
+    PCRW_TRACK5                               = 0x0010,
+    PCRW_TRACK6                               = 0x0020,
+    PCRW_CS_UNICODE                           = 997,
+    PCRW_CS_ASCII                             = 998,
+    PCRW_CS_WINDOWS                           = 999,
+    PCRW_CS_ANSI                              = 999,
+    PCRW_MM_DOTS                              = 1,
+    PCRW_MM_TWIPS                             = 2,
+    PCRW_MM_ENGLISH                           = 3,
+    PCRW_MM_METRIC                            = 4,
+    OPOS_EPCRW_READ                           = 201,
+    OPOS_EPCRW_WRITE                          = 202,
+    OPOS_EPCRW_JAM                            = 203,
+    OPOS_EPCRW_MOTOR                          = 204,
+    OPOS_EPCRW_COVER                          = 205,
+    OPOS_EPCRW_PRINTER                        = 206,
+    OPOS_EPCRW_RELEASE                        = 207,
+    OPOS_EPCRW_DISPLAY                        = 208,
+    OPOS_EPCRW_NOCARD                         = 209,
+    OPOS_EPCRW_START                          = 211,
+    OPOS_EPCRW_END                            = 212,
+    OPOS_EPCRW_PARITY                         = 213,
+    OPOS_EPCRW_ENCODE                         = 214,
+    OPOS_EPCRW_LRC                            = 215,
+    OPOS_EPCRW_VERIFY                         = 216,
+    PCRW_RP_NORMAL                            = 0x0001,
+    PCRW_RP_RIGHT90                           = 0x0101,
+    PCRW_RP_LEFT90                            = 0x0102,
+    PCRW_RP_ROTATE180                         = 0x0103,
+    PCRW_SUE_NOCARD                           = 1,
+    PCRW_SUE_REMAINING                        = 2,
+    PCRW_SUE_INRW                             = 4
+} OPOSPointCardRWConstants;

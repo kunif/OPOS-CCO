@@ -1,0 +1,61 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposBelt.hi
+//
+//   Belt header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 2008-08-30 OPOS Release 1.12                                  CRM
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSBELT_HI)
+#define      OPOSBELT_HI
+
+
+#include "Opos.hi"
+#include "OposBelt.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXBelt_AutoStopBackward                =   1 + PIDX_BELT+PIDX_NUMBER;
+const LONG PIDXBelt_AutoStopBackwardDelayTime       =   2 + PIDX_BELT+PIDX_NUMBER;
+const LONG PIDXBelt_AutoStopBackwardItemCount       =   3 + PIDX_BELT+PIDX_NUMBER;
+const LONG PIDXBelt_AutoStopForward                 =   4 + PIDX_BELT+PIDX_NUMBER;
+const LONG PIDXBelt_AutoStopForwardDelayTime        =   5 + PIDX_BELT+PIDX_NUMBER;
+const LONG PIDXBelt_AutoStopForwardItemCount        =   6 + PIDX_BELT+PIDX_NUMBER;
+const LONG PIDXBelt_LightBarrierBackwardInterrupted =   7 + PIDX_BELT+PIDX_NUMBER;
+const LONG PIDXBelt_LightBarrierForwardInterrupted  =   8 + PIDX_BELT+PIDX_NUMBER;
+const LONG PIDXBelt_MotionStatus                    =   9 + PIDX_BELT+PIDX_NUMBER;
+const LONG PIDXBelt_SecurityFlapBackwardOpened      =  10 + PIDX_BELT+PIDX_NUMBER;
+const LONG PIDXBelt_SecurityFlapForwardOpened       =  11 + PIDX_BELT+PIDX_NUMBER;
+
+// * Capabilities *
+
+const LONG PIDXBelt_CapAutoStopBackward             = 501 + PIDX_BELT+PIDX_NUMBER;
+const LONG PIDXBelt_CapAutoStopBackwardItemCount    = 502 + PIDX_BELT+PIDX_NUMBER;
+const LONG PIDXBelt_CapAutoStopForward              = 503 + PIDX_BELT+PIDX_NUMBER;
+const LONG PIDXBelt_CapAutoStopForwardItemCount     = 504 + PIDX_BELT+PIDX_NUMBER;
+const LONG PIDXBelt_CapLightBarrierBackward         = 505 + PIDX_BELT+PIDX_NUMBER;
+const LONG PIDXBelt_CapLightBarrierForward          = 506 + PIDX_BELT+PIDX_NUMBER;
+const LONG PIDXBelt_CapMoveBackward                 = 507 + PIDX_BELT+PIDX_NUMBER;
+const LONG PIDXBelt_CapSecurityFlapBackward         = 508 + PIDX_BELT+PIDX_NUMBER;
+const LONG PIDXBelt_CapSecurityFlapForward          = 509 + PIDX_BELT+PIDX_NUMBER;
+const LONG PIDXBelt_CapSpeedStepsBackward           = 510 + PIDX_BELT+PIDX_NUMBER;
+const LONG PIDXBelt_CapSpeedStepsForward            = 511 + PIDX_BELT+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+
+#endif          // !defined(OPOSBELT_HI)

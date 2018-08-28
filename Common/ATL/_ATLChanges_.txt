@@ -1,0 +1,89 @@
+Active Template Library
+Microsoft Visual Studio 2008
+Directory ...\VC\atlmfc\include
+
+
+###############################################################################
+###############################################################################
+### Modified files...
+###############################################################################
+###############################################################################
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+~~~~~~ ATLCOM.H ~~~~~~
+
+
+>>> After the line...
+#pragma once
+
+>>> Begin addition...
+//###############################################################
+//## CRM -- Modified CComTypeInfoHolder::GetIDsOfNames to map
+//##          Claim->ClaimDevice and Release->ReleaseDevice.
+#pragma message( ">>> Including OPOS-modified ATL files from VS9:" )
+#pragma message( ">>>   ATLCOM.H: Modified so Claim and Release recognized in Control's dispatch." )
+//###############################################################
+
+>>> End addition.
+
+
+>>> Replaced CComTypeInfoHolder::GetIDsOfNames.
+>>> Begin replacement...
+    HRESULT GetIDsOfNames(REFIID /* riid */, _In_count_(cNames) LPOLESTR* rgszNames, UINT cNames,
+        LCID lcid, DISPID* rgdispid)
+    {
+        HRESULT hRes = EnsureTI(lcid);
+        if (m_pInfo != NULL)
+        {
+            hRes = E_FAIL;
+            // Look in cache if
+            //  cache is populated
+            //  parameter names are not requested
+            if (m_pMap != NULL && cNames == 1)
+            {
+                int n = int( ocslen(rgszNames[0]) );
+#if 1           // CRM: Start additions to ATL class.
+                static OLECHAR s_Claim[]   = L"ClaimDevice";
+                static OLECHAR s_Release[] = L"ReleaseDevice";
+                OLECHAR* pName = rgszNames[0];                  // Get pointer to name.
+                if ( n == 5 &&                                  //  - If length and
+                     memcmp(pName, s_Claim, 10 )  == 0 )        //      data match L"Claim",
+                {
+                    pName = s_Claim;                            //      replace with L"ClaimDevice".
+                    n = 11;
+                }
+                else if ( n == 7 &&                             //  - If length and
+                          memcmp(pName, s_Release, 14 ) == 0 )  //      data match L"Release",
+                {
+                    pName = s_Release;                          //      replace with L"ReleaseDevice".
+                    n = 13;
+                }
+                for (int j=m_nCount-1; j>=0; j--)
+                {
+                    if ((n == m_pMap[j].nLen) &&
+                        (memcmp(m_pMap[j].bstr, pName, m_pMap[j].nLen * sizeof(OLECHAR)) == 0))
+                // CRM: End additions to ATL class.
+#else           // CRM: Begin replaced code.
+                for (int j=m_nCount-1; j>=0; j--)
+                {
+                    if ((n == m_pMap[j].nLen) &&
+                        (memcmp(m_pMap[j].bstr, rgszNames[0], m_pMap[j].nLen * sizeof(OLECHAR)) == 0))
+#endif          // CRM: End replaced code.
+                    {
+                        rgdispid[0] = m_pMap[j].id;
+                        hRes = S_OK;
+                        break;
+                    }
+                }
+            }
+            // if cache is empty or name not in cache or parameter names are requested,
+            // delegate to ITypeInfo::GetIDsOfNames
+            if (FAILED(hRes))
+            {
+                hRes = m_pInfo->GetIDsOfNames(rgszNames, cNames, rgdispid);
+            }
+        }
+        return hRes;
+    }
+
+>>> End updates.

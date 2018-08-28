@@ -1,0 +1,72 @@
+/////////////////////////////////////////////////////////////////////
+//
+// OposPwr.hi
+//
+//   POS Power header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// ------------------------------------------------------------------
+// 2000-09-24 OPOS Release 1.5                                   BKS
+// 2005-04-29 OPOS Release 1.9                                   CRM
+//   Add the following properties:
+//     BatteryCapacityRemaining, BatteryCriticallyLowThreshold,
+//     BatteryLowThreshold, CapBatteryCapacityRemaining,
+//     CapRestartPOS, CapStandbyPOS, CapSuspendPOS,
+//     CapVariableBatteryCriticallyLowThreshold,
+//     CapVariableBatteryLowThreshold, PowerSource
+//   Remove validation functions.
+//
+/////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSPWR_HI)
+#define      OPOSPWR_HI
+
+
+#include "Opos.hi"
+#include "OposPwr.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXPwr_EnforcedShutdownDelayTime        =   1 + PIDX_PWR+PIDX_NUMBER;
+const LONG PIDXPwr_PowerFailDelayTime               =   2 + PIDX_PWR+PIDX_NUMBER;
+const LONG PIDXPwr_QuickChargeMode                  =   3 + PIDX_PWR+PIDX_NUMBER;
+const LONG PIDXPwr_QuickChargeTime                  =   4 + PIDX_PWR+PIDX_NUMBER;
+const LONG PIDXPwr_UPSChargeState                   =   5 + PIDX_PWR+PIDX_NUMBER;
+
+//      Added for Release 1.9:
+const LONG PIDXPwr_BatteryCapacityRemaining         =   6 + PIDX_PWR+PIDX_NUMBER;
+const LONG PIDXPwr_BatteryCriticallyLowThreshold    =   7 + PIDX_PWR+PIDX_NUMBER;
+const LONG PIDXPwr_BatteryLowThreshold              =   8 + PIDX_PWR+PIDX_NUMBER;
+const LONG PIDXPwr_PowerSource                      =   9 + PIDX_PWR+PIDX_NUMBER;
+
+
+// * Capabilities *
+
+const LONG PIDXPwr_CapFanAlarm                              = 501 + PIDX_PWR+PIDX_NUMBER;
+const LONG PIDXPwr_CapHeatAlarm                             = 502 + PIDX_PWR+PIDX_NUMBER;
+const LONG PIDXPwr_CapQuickCharge                           = 503 + PIDX_PWR+PIDX_NUMBER;
+const LONG PIDXPwr_CapShutdownPOS                           = 504 + PIDX_PWR+PIDX_NUMBER;
+const LONG PIDXPwr_CapUPSChargeState                        = 505 + PIDX_PWR+PIDX_NUMBER;
+
+//      Added for Release 1.9:
+const LONG PIDXPwr_CapBatteryCapacityRemaining              = 506 + PIDX_PWR+PIDX_NUMBER;
+const LONG PIDXPwr_CapRestartPOS                            = 507 + PIDX_PWR+PIDX_NUMBER;
+const LONG PIDXPwr_CapStandbyPOS                            = 508 + PIDX_PWR+PIDX_NUMBER;
+const LONG PIDXPwr_CapSuspendPOS                            = 509 + PIDX_PWR+PIDX_NUMBER;
+const LONG PIDXPwr_CapVariableBatteryCriticallyLowThreshold = 510 + PIDX_PWR+PIDX_NUMBER;
+const LONG PIDXPwr_CapVariableBatteryLowThreshold           = 511 + PIDX_PWR+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+
+#endif          // !defined(OPOSPWR_HI)

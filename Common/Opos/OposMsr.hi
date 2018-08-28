@@ -1,0 +1,122 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposMsr.hi
+//
+//   MSR header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 1995-12-08 OPOS Release 1.0                                   CRM
+// 1997-06-04 OPOS Release 1.2                                   CRM
+//   Add the following properties:
+//     ErrorReportingType, ParseDecodedData
+// 2000-09-24 OPOS Release 1.5                                   BKS
+//   Add the following properties:
+//     CapTransmitSentinels, Track4Data, TransmitSentinels
+// 2005-04-29 OPOS Release 1.9                                   CRM
+//   Remove validation functions.
+// 2006-03-15 OPOS Release 1.10                                  CRM
+//   Add the following properties:
+//     CapWritableTracks, EncodingMaxLength, TracksToWrite
+// 2008-08-30 OPOS Release 1.12                                  CRM
+//   Add many properties for AAMVA, encryption, authentication.
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSMSR_HI)
+#define      OPOSMSR_HI
+
+
+#include "Opos.hi"
+#include "OposMsr.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXMsr_DecodeData                    =   1 + PIDX_MSR+PIDX_NUMBER;
+const LONG PIDXMsr_ParseDecodeData               =   2 + PIDX_MSR+PIDX_NUMBER;
+const LONG PIDXMsr_TracksToRead                  =   3 + PIDX_MSR+PIDX_NUMBER;
+
+//      Added for Release 1.2:
+const LONG PIDXMsr_ParseDecodedData              =   2 + PIDX_MSR+PIDX_NUMBER;
+//        ParseDecodedData = ParseDecodeData: Support both, due to
+//        editing error in the pre-1.2 APG.
+const LONG PIDXMsr_ErrorReportingType            =   4 + PIDX_MSR+PIDX_NUMBER;
+
+//      Added for Release 1.5:
+const LONG PIDXMsr_TransmitSentinels             =   5 + PIDX_MSR+PIDX_NUMBER;
+
+//      Added for Release 1.10:
+const LONG PIDXMsr_EncodingMaxLength             =   6 + PIDX_MSR+PIDX_NUMBER;
+const LONG PIDXMsr_TracksToWrite                 =   7 + PIDX_MSR+PIDX_NUMBER;
+
+//      Added for Release 1.12:
+const LONG PIDXMsr_CardAuthenticationDataLength  =   8 + PIDX_MSR+PIDX_NUMBER;
+const LONG PIDXMsr_DataEncryptionAlgorithm       =   9 + PIDX_MSR+PIDX_NUMBER;
+const LONG PIDXMsr_DeviceAuthenticated           =  10 + PIDX_MSR+PIDX_NUMBER;
+const LONG PIDXMsr_DeviceAuthenticationProtocol  =  11 + PIDX_MSR+PIDX_NUMBER;
+const LONG PIDXMsr_Track1EncryptedDataLength     =  12 + PIDX_MSR+PIDX_NUMBER;
+const LONG PIDXMsr_Track2EncryptedDataLength     =  13 + PIDX_MSR+PIDX_NUMBER;
+const LONG PIDXMsr_Track3EncryptedDataLength     =  14 + PIDX_MSR+PIDX_NUMBER;
+const LONG PIDXMsr_Track4EncryptedDataLength     =  15 + PIDX_MSR+PIDX_NUMBER;
+
+// * Capabilities *
+
+const LONG PIDXMsr_CapISO                        = 501 + PIDX_MSR+PIDX_NUMBER;
+const LONG PIDXMsr_CapJISOne                     = 502 + PIDX_MSR+PIDX_NUMBER;
+const LONG PIDXMsr_CapJISTwo                     = 503 + PIDX_MSR+PIDX_NUMBER;
+
+//      Added for Release 1.5:
+const LONG PIDXMsr_CapTransmitSentinels          = 504 + PIDX_MSR+PIDX_NUMBER;
+
+//      Added for Release 1.10:
+const LONG PIDXMsr_CapWritableTracks             = 505 + PIDX_MSR+PIDX_NUMBER;
+
+//      Added for Release 1.12:
+const LONG PIDXMsr_CapDataEncryption             = 506 + PIDX_MSR+PIDX_NUMBER;
+const LONG PIDXMsr_CapDeviceAuthentication       = 507 + PIDX_MSR+PIDX_NUMBER;
+const LONG PIDXMsr_CapTrackDataMasking           = 508 + PIDX_MSR+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXMsr_AccountNumber                 =   1 + PIDX_MSR+PIDX_STRING;
+const LONG PIDXMsr_ExpirationDate                =   2 + PIDX_MSR+PIDX_STRING;
+const LONG PIDXMsr_FirstName                     =   3 + PIDX_MSR+PIDX_STRING;
+const LONG PIDXMsr_MiddleInitial                 =   4 + PIDX_MSR+PIDX_STRING;
+const LONG PIDXMsr_ServiceCode                   =   5 + PIDX_MSR+PIDX_STRING;
+const LONG PIDXMsr_Suffix                        =   6 + PIDX_MSR+PIDX_STRING;
+const LONG PIDXMsr_Surname                       =   7 + PIDX_MSR+PIDX_STRING;
+const LONG PIDXMsr_Title                         =   8 + PIDX_MSR+PIDX_STRING;
+const LONG PIDXMsr_Track1Data                    =   9 + PIDX_MSR+PIDX_STRING;
+const LONG PIDXMsr_Track1DiscretionaryData       =  10 + PIDX_MSR+PIDX_STRING;
+const LONG PIDXMsr_Track2Data                    =  11 + PIDX_MSR+PIDX_STRING;
+const LONG PIDXMsr_Track2DiscretionaryData       =  12 + PIDX_MSR+PIDX_STRING;
+const LONG PIDXMsr_Track3Data                    =  13 + PIDX_MSR+PIDX_STRING;
+
+//      Added for Release 1.5:
+const LONG PIDXMsr_Track4Data                    =  14 + PIDX_MSR+PIDX_STRING;
+
+//      Added for Release 1.12:
+const LONG PIDXMsr_AdditionalSecurityInformation =  15 + PIDX_MSR+PIDX_STRING;
+const LONG PIDXMsr_CapCardAuthentication         =  16 + PIDX_MSR+PIDX_STRING;
+const LONG PIDXMsr_CardAuthenticationData        =  17 + PIDX_MSR+PIDX_STRING;
+const LONG PIDXMsr_CardPropertyList              =  18 + PIDX_MSR+PIDX_STRING;
+const LONG PIDXMsr_CardType                      =  19 + PIDX_MSR+PIDX_STRING;
+const LONG PIDXMsr_CardTypeList                  =  20 + PIDX_MSR+PIDX_STRING;
+const LONG PIDXMsr_Track1EncryptedData           =  21 + PIDX_MSR+PIDX_STRING;
+const LONG PIDXMsr_Track2EncryptedData           =  22 + PIDX_MSR+PIDX_STRING;
+const LONG PIDXMsr_Track3EncryptedData           =  23 + PIDX_MSR+PIDX_STRING;
+const LONG PIDXMsr_Track4EncryptedData           =  24 + PIDX_MSR+PIDX_STRING;
+const LONG PIDXMsr_WriteCardType                 =  25 + PIDX_MSR+PIDX_STRING;
+
+
+#endif          // !defined(OPOSMSR_HI)

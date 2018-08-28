@@ -1,0 +1,193 @@
+!!***************************************************************************
+!!
+!! MSR Opos Control Object Data File
+!!
+!!     Date                   Modification                          Author
+!! -----------|----------------------------------------------------|----------
+!!  1999/02/06 1.4.991:  Initial version.                           C. Monroe
+!!  1999/06/18 1.5.000:  Change OpenText to OpenResult. Update GUIDs.
+!!  2000/09/09 1.5.100:  Add properties and methods for 1.5.
+!!  2004/03/22 1.8.000:  Add properties and methods for 1.8.
+!!  2005/04/29 1.9.000:  Add properties and methods for 1.9.
+!!  2006/03/15 1.10.000: Add properties and methods for 1.10.
+!!  2007/01/30 1.11.000: Update WriteTracks parameter.
+!!  2008/01/15 1.12.000: Add properties and methods for 1.12.
+!!  2009/10/02 1.13.000: Update RetrieveCardProperty's pValue
+!!                         parameter from inout to out.
+!!
+!!***************************************************************************
+
+! Names: Device, Uppercase Device
+DeviceName      =MSR
+DeviceUpper     =MSR
+
+! Short device designation used by OPOS.
+!   Include file is Opos@DeviceShortName@.hi
+!   Property index prefix is PIDX@DeviceShortName@.
+DeviceShortName =Msr
+! Short upper case device designation used by OPOS.
+!   Device registry key is OPOS_CLASSKEY_@DeviceShortUpper@
+DeviceShortUpper=MSR
+
+! If Claim and Release are not supported, comment out the next line.
+!   (The macro values are not important. We only check for defined or not defined.)
+ClaimRelease    =
+
+! If sharable device, comment out the next line.
+!   (The macro value is not important. We only check for defined or not defined.)
+Exclusive       =
+
+! If any methods or properties use currency, then define "Currency"
+!!Currency        =
+
+! Supported events. Comment out the unsupported ones.
+!   (The macro values are not important. We only check for defined or not defined.)
+EventData       =
+EventDirectIO   =
+EventError      =
+!!EventOutput     =
+EventStatus     =
+
+! If SAFEARRAYs are used, then uncomment the following line to enable debug trace logic.
+SafeArray       =
+
+! UUIDs. UUIDLibrary is required to be the full GUID.
+!   The others can be specified in full, or a "*" indicates that the bytes 3-4
+!   (hexadecimal chars 5-8) of the UUIDLibrary should be incremented to
+!   form their GUIDs.
+UUIDControl     =0120
+UUIDLibrary     =UUID:@UUIDPre@@UUIDControl@-@UUIDPost@
+UUIDInterface   =UUID*
+UUIDCoclass     =UUID*
+UUIDEvents      =UUID*
+
+! For each version up to the @Version@, list the properties and methods.
+!   If method:
+!     M  = Method.
+!     Release = 1.x
+!     Number = Dispatch ID.
+!     Details = IDL formatted method and parameters, with assumed ", [out] LONG* pRC )" at end.
+!       If usage omitted, assume [in].
+!       Parameter types restricted to BOOL, LONG, CURRENCY, and BSTR.
+!   If parameter:
+!     First char = C for Common (or S for Specific [optional]).
+!     Next one or two chars = R for Readable or W for Writable.
+!     Release = 1.x
+!     Number = Dispatch ID.
+!     Details = Property name followed by type in parentheses.
+!       Type restricted to BOOL, LONG, CURRENCY, and BSTR.
+!     Property Index name without prefix (optional)
+
+:MethodsProperties
+!> Added Property
+ CR  1.0   49 OpenResult(LONG)
+!> Common Properties
+ CRW 1.2   10 AutoDisable(BOOL)
+ CRW 1.2   11 BinaryConversion(LONG)
+ CR  1.3   12 CapPowerReporting(LONG)
+ CR  1.0   13 CheckHealthText(BSTR)
+ CR  1.0   14 Claimed(BOOL)
+ CR  1.2   15 DataCount(LONG)
+ CRW 1.0   16 DataEventEnabled(BOOL)
+ CRW 1.0   17 DeviceEnabled(BOOL)
+ CRW 1.0   18 FreezeEvents(BOOL)
+!CR  1.0   19 OutputID(LONG)
+ CRW 1.3   20 PowerNotify(LONG)
+ CR  1.3   21 PowerState(LONG)
+ CR  1.0   22 ResultCode(LONG)
+ CR  1.0   23 ResultCodeExtended(LONG)
+ CR  1.0   24 State(LONG)
+!
+ CR  1.0   25 ControlObjectDescription(BSTR)
+ CR  1.0   26 ControlObjectVersion(LONG)
+ CR  1.0   27 ServiceObjectDescription(BSTR)
+ CR  1.0   28 ServiceObjectVersion(LONG)
+ CR  1.0   29 DeviceDescription(BSTR)
+ CR  1.0   30 DeviceName(BSTR)
+!     Added in Release 1.8
+ CR  1.8   39 CapStatisticsReporting(BOOL)
+ CR  1.8   40 CapUpdateStatistics(BOOL)
+!     Added in Release 1.9
+ CR  1.9   44 CapCompareFirmwareVersion(BOOL)
+ CR  1.9   45 CapUpdateFirmware(BOOL)
+!
+!> Common Methods
+ M   1.0   31 CheckHealth(LONG Level)
+ M   1.0   32 Claim(LONG Timeout)
+ M   1.0   33 ClearInput()
+!M   1.0   34 ClearOutput()
+ M   1.0   35 Close()
+ M   1.0   36 DirectIO(LONG Command, [in, out] LONG* pData, [in, out] BSTR* pString)
+ M   1.0   37 Open(BSTR DeviceName)
+ M   1.0   38 Release()
+!     Added in Release 1.8
+ M   1.8   41 ResetStatistics(BSTR StatisticsBuffer)
+ M   1.8   42 RetrieveStatistics([in, out] BSTR* pStatisticsBuffer)
+ M   1.8   43 UpdateStatistics(BSTR StatisticsBuffer)
+!     Added in Release 1.9
+ M   1.9   46 CompareFirmwareVersion(BSTR FirmwareFileName, [out] LONG* pResult)
+ M   1.9   47 UpdateFirmware(BSTR FirmwareFileName)
+!     Added in Release 1.10
+ M   1.10  48 ClearInputProperties()
+!
+!> Specific Properties
+  R  1.0   50 AccountNumber(BSTR)
+  R  1.12  77 AdditionalSecurityInformation(BSTR)
+  R  1.12  78 CapCardAuthentication(BSTR)
+  R  1.12  79 CapDataEncryption(LONG)
+  R  1.12  80 CapDeviceAuthentication(LONG)
+  R  1.0   51 CapISO(BOOL)
+  R  1.0   52 CapJISOne(BOOL)
+  R  1.0   53 CapJISTwo(BOOL)
+  R  1.12  81 CapTrackDataMasking(BOOL)
+  R  1.5   71 CapTransmitSentinels(BOOL)
+  R  1.10  74 CapWritableTracks(LONG)
+  R  1.12  82 CardAuthenticationData(BSTR)
+  R  1.12  83 CardAuthenticationDataLength(LONG)
+  R  1.12  84 CardPropertyList(BSTR)
+  R  1.12  85 CardType(BSTR)
+  R  1.12  86 CardTypeList(BSTR)
+  RW 1.12  87 DataEncryptionAlgorithm(LONG)
+  RW 1.0   54 DecodeData(BOOL)
+  R  1.12  88 DeviceAuthenticated(BOOL)
+  R  1.12  89 DeviceAuthenticationProtocol(LONG)
+  R  1.10  75 EncodingMaxLength(LONG)
+  RW 1.2   55 ErrorReportingType(LONG)
+  R  1.0   56 ExpirationDate(BSTR)
+  R  1.0   57 FirstName(BSTR)
+  R  1.0   58 MiddleInitial(BSTR)
+  RW 1.0   59 ParseDecodeData(BOOL)
+  RW 1.0   60 ParseDecodedData(BOOL) ParseDecodeData
+  R  1.0   61 ServiceCode(BSTR)
+  R  1.0   62 Suffix(BSTR)
+  R  1.0   63 Surname(BSTR)
+  R  1.0   64 Title(BSTR)
+  R  1.0   65 Track1Data(BSTR)
+  R  1.0   66 Track1DiscretionaryData(BSTR)
+  R  1.12 110 Track1EncryptedData(BSTR)
+  R  1.12 111 Track1EncryptedDataLength(LONG)
+  R  1.0   67 Track2Data(BSTR)
+  R  1.0   68 Track2DiscretionaryData(BSTR)
+  R  1.12 112 Track2EncryptedData(BSTR)
+  R  1.12 113 Track2EncryptedDataLength(LONG)
+  R  1.0   69 Track3Data(BSTR)
+  R  1.12 114 Track3EncryptedData(BSTR)
+  R  1.12 115 Track3EncryptedDataLength(LONG)
+  R  1.5   72 Track4Data(BSTR)
+  R  1.12 116 Track4EncryptedData(BSTR)
+  R  1.12 117 Track4EncryptedDataLength(LONG)
+  RW 1.0   70 TracksToRead(LONG)
+  RW 1.10  76 TracksToWrite(LONG)
+  RW 1.5   73 TransmitSentinels(BOOL)
+  RW 1.12 118 WriteCardType(BSTR)
+!
+!> Specific Methods
+  M  1.12  91 AuthenticateDevice(BSTR Response)
+  M  1.12  92 DeauthenticateDevice(BSTR Response)
+! M  1.12  93 RetrieveCardProperty(BSTR Name, [in, out] BSTR* pValue) ... Changed per committee for 1.13:
+  M  1.12  93 RetrieveCardProperty(BSTR Name, [out] BSTR* pValue)
+  M  1.12  94 RetrieveDeviceAuthenticationData([in, out] BSTR* pChallenge)
+  M  1.12  95 UpdateKey(BSTR Key, BSTR KeyName)
+  M  1.10  90 WriteTracks(BSTR[] Data, LONG Timeout)
+
+!!End

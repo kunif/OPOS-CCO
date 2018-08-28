@@ -1,0 +1,63 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposEj.hi
+//
+//   Electronic Journal header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 2006-03-15 OPOS Release 1.10                                  CRM
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSEJ_HI)
+#define      OPOSEJ_HI
+
+
+#include "Opos.hi"
+#include "OposEj.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXEj_AsyncMode                 =   1 + PIDX_EJ+PIDX_NUMBER;
+const LONG PIDXEj_FlagWhenIdle              =   2 + PIDX_EJ+PIDX_NUMBER;
+const LONG PIDXEj_MediumIsAvailable         =   3 + PIDX_EJ+PIDX_NUMBER;
+const LONG PIDXEj_Station                   =   4 + PIDX_EJ+PIDX_NUMBER;
+const LONG PIDXEj_StorageEnabled            =   5 + PIDX_EJ+PIDX_NUMBER;
+const LONG PIDXEj_Suspended                 =   6 + PIDX_EJ+PIDX_NUMBER;
+const LONG PIDXEj_WaterMark                 =   7 + PIDX_EJ+PIDX_NUMBER;
+
+// * Capabilities *
+
+const LONG PIDXEj_CapAddMarker              = 501 + PIDX_EJ+PIDX_NUMBER;
+const LONG PIDXEj_CapErasableMedium         = 502 + PIDX_EJ+PIDX_NUMBER;
+const LONG PIDXEj_CapInitializeMedium       = 503 + PIDX_EJ+PIDX_NUMBER;
+const LONG PIDXEj_CapMediumIsAvailable      = 504 + PIDX_EJ+PIDX_NUMBER;
+const LONG PIDXEj_CapPrintContent           = 505 + PIDX_EJ+PIDX_NUMBER;
+const LONG PIDXEj_CapPrintContentFile       = 506 + PIDX_EJ+PIDX_NUMBER;
+const LONG PIDXEj_CapRetrieveCurrentMarker  = 507 + PIDX_EJ+PIDX_NUMBER;
+const LONG PIDXEj_CapRetrieveMarker         = 508 + PIDX_EJ+PIDX_NUMBER;
+const LONG PIDXEj_CapRetrieveMarkerByDateTime=509 + PIDX_EJ+PIDX_NUMBER;
+const LONG PIDXEj_CapRetrieveMarkersDateTime= 510 + PIDX_EJ+PIDX_NUMBER;
+const LONG PIDXEj_CapStation                = 511 + PIDX_EJ+PIDX_NUMBER;
+const LONG PIDXEj_CapStorageEnabled         = 512 + PIDX_EJ+PIDX_NUMBER;
+const LONG PIDXEj_CapSuspendPrintContent    = 513 + PIDX_EJ+PIDX_NUMBER;
+const LONG PIDXEj_CapSuspendQueryContent    = 514 + PIDX_EJ+PIDX_NUMBER;
+const LONG PIDXEj_CapWaterMark              = 515 + PIDX_EJ+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXEj_MediumID                  =   1 + PIDX_EJ+PIDX_STRING;
+
+
+#endif          // !defined(OPOSEJ_HI)

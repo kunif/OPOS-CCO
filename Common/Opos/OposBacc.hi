@@ -1,0 +1,54 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposBacc.hi
+//
+//   Bill Acceptor header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 2007-01-30 OPOS Release 1.11                                  CRM
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSBACC_HI)
+#define      OPOSBACC_HI
+
+
+#include "Opos.hi"
+#include "OposBacc.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXBacc_DepositAmount       =   1 + PIDX_BACC+PIDX_NUMBER;
+const LONG PIDXBacc_DepositStatus       =   2 + PIDX_BACC+PIDX_NUMBER;
+const LONG PIDXBacc_FullStatus          =   3 + PIDX_BACC+PIDX_NUMBER;
+const LONG PIDXBacc_RealTimeDataEnabled =   4 + PIDX_BACC+PIDX_NUMBER;
+
+// * Capabilities *
+
+const LONG PIDXBacc_CapDiscrepancy      = 501 + PIDX_BACC+PIDX_NUMBER;
+const LONG PIDXBacc_CapFullSensor       = 502 + PIDX_BACC+PIDX_NUMBER;
+const LONG PIDXBacc_CapJamSensor        = 503 + PIDX_BACC+PIDX_NUMBER;
+const LONG PIDXBacc_CapNearFullSensor   = 504 + PIDX_BACC+PIDX_NUMBER;
+const LONG PIDXBacc_CapPauseDeposit     = 505 + PIDX_BACC+PIDX_NUMBER;
+const LONG PIDXBacc_CapRealTimeData     = 506 + PIDX_BACC+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXBacc_CurrencyCode        =   1 + PIDX_BACC+PIDX_STRING;
+const LONG PIDXBacc_DepositCashList     =   2 + PIDX_BACC+PIDX_STRING;
+const LONG PIDXBacc_DepositCodeList     =   3 + PIDX_BACC+PIDX_STRING;
+const LONG PIDXBacc_DepositCounts       =   4 + PIDX_BACC+PIDX_STRING;
+
+
+#endif          // !defined(OPOSBACC_HI)

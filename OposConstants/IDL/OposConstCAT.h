@@ -1,0 +1,51 @@
+//*************************************************************************
+//** OPOS CAT Constants
+//*************************************************************************
+
+typedef [helpstring("OPOS CAT Constants")]
+enum
+{
+    CAT_DL_NONE                               = 0,
+    CAT_DL_REPORTING                          = 1,
+    CAT_DL_SETTLEMENT                         = 2,
+    CAT_DL_REPORTING_SETTLEMENT               = 3,
+    CAT_LOGSTATUS_OK                          = 1,
+    CAT_LOGSTATUS_NEARFULL                    = 2,
+    CAT_LOGSTATUS_FULL                        = 3,
+    CAT_PAYMENT_LUMP                          = 10,
+    CAT_PAYMENT_BONUS_1                       = 21,
+    CAT_PAYMENT_BONUS_2                       = 22,
+    CAT_PAYMENT_BONUS_3                       = 23,
+    CAT_PAYMENT_BONUS_4                       = 24,
+    CAT_PAYMENT_BONUS_5                       = 25,
+    CAT_PAYMENT_INSTALLMENT_1                 = 61,
+    CAT_PAYMENT_INSTALLMENT_2                 = 62,
+    CAT_PAYMENT_INSTALLMENT_3                 = 63,
+    CAT_PAYMENT_BONUS_COMBINATION_1           = 31,
+    CAT_PAYMENT_BONUS_COMBINATION_2           = 32,
+    CAT_PAYMENT_BONUS_COMBINATION_3           = 33,
+    CAT_PAYMENT_BONUS_COMBINATION_4           = 34,
+    CAT_PAYMENT_REVOLVING                     = 80,
+    CAT_PAYMENT_DEBIT                         = 110,
+    CAT_PAYMENT_ELECTRONIC_MONEY              = 111,
+    CAT_MEDIA_UNSPECIFIED                     = 0,
+    CAT_MEDIA_NONDEFINE                       = 0,
+    CAT_MEDIA_CREDIT                          = 1,
+    CAT_MEDIA_DEBIT                           = 2,
+    CAT_MEDIA_ELECTRONIC_MONEY                = 3,
+    CAT_TRANSACTION_SALES                     = 10,
+    CAT_TRANSACTION_VOID                      = 20,
+    CAT_TRANSACTION_REFUND                    = 21,
+    CAT_TRANSACTION_VOIDPRESALES              = 29,
+    CAT_TRANSACTION_COMPLETION                = 30,
+    CAT_TRANSACTION_PRESALES                  = 40,
+    CAT_TRANSACTION_CHECKCARD                 = 41,
+    CAT_TRANSACTION_CASHDEPOSIT               = 50,
+    OPOS_ECAT_CENTERERROR                     = 01,
+    OPOS_ECAT_COMMANDERROR                    = 90,
+    OPOS_ECAT_RESET                           = 91,
+    OPOS_ECAT_COMMUNICATIONERROR              = 92,
+    OPOS_ECAT_DAILYLOGOVERFLOW                = 200,
+    OPOS_ECAT_DEFICIENT                       = 201,
+    OPOS_ECAT_OVERDEPOSIT                     = 202
+} OPOSCATConstants;

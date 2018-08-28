@@ -1,0 +1,103 @@
+/////////////////////////////////////////////////////////////////////
+//
+// OposPcrw.hi
+//
+//   Point Card Reader Writer  header file for OPOS Controls and
+//   Service Objects.
+//
+// Modification history
+// ------------------------------------------------------------------
+// 2000-09-24 OPOS Release 1.5                                   BKS
+// 2002-08-17 OPOS Release 1.7                                   CRM
+//   Added MapCharacterSet property.
+//   Added CapMapCharacterSet capability.
+// 2005-04-29 OPOS Release 1.9                                   CRM
+//   Remove validation functions.
+//
+/////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSPCRW_HI)
+#define      OPOSPCRW_HI
+
+
+#include "Opos.hi"
+#include "OposPcrw.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXPcrw_CardState           =   1 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_CharacterSet        =   2 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_LineChars           =   3 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_LineHeight          =   4 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_LineSpacing         =   5 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_LineWidth           =   6 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_MapMode             =   7 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_MaxLine             =   8 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_PrintHeight         =   9 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_ReadState1          =  10 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_ReadState2          =  11 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_RecvLength1         =  12 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_RecvLength2         =  13 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_SidewaysMaxChars    =  14 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_SidewaysMaxLines    =  15 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_TracksToRead        =  16 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_TracksToWrite       =  17 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_WriteState1         =  18 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_WriteState2         =  19 + PIDX_PCRW+PIDX_NUMBER;
+
+// Added in Release 1.7
+const LONG PIDXPcrw_MapCharacterSet     =  20 + PIDX_PCRW+PIDX_NUMBER;
+
+
+// * Capabilities *
+
+const LONG PIDXPcrw_CapBold               = 501 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_CapCardEntranceSensor = 502 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_CapCharacterSet       = 503 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_CapCleanCard          = 504 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_CapClearPrint         = 505 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_CapDhigh              = 506 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_CapDwide              = 507 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_CapDwideDhigh         = 508 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_CapItalic             = 509 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_CapLeft90             = 510 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_CapPrint              = 511 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_CapPrintMode          = 512 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_CapRight90            = 513 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_CapRotate180          = 514 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_CapTracksToRead       = 515 + PIDX_PCRW+PIDX_NUMBER;
+const LONG PIDXPcrw_CapTracksToWrite      = 516 + PIDX_PCRW+PIDX_NUMBER;
+
+// Added in Release 1.7
+const LONG PIDXPcrw_CapMapCharacterSet    = 517 + PIDX_PCRW+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXPcrw_CharacterSetList    =  1 + PIDX_PCRW+PIDX_STRING;
+const LONG PIDXPcrw_FontTypeFaceList    =  2 + PIDX_PCRW+PIDX_STRING;
+const LONG PIDXPcrw_LineCharsList       =  3 + PIDX_PCRW+PIDX_STRING;
+const LONG PIDXPcrw_Track1Data          =  4 + PIDX_PCRW+PIDX_STRING;
+const LONG PIDXPcrw_Track2Data          =  5 + PIDX_PCRW+PIDX_STRING;
+const LONG PIDXPcrw_Track3Data          =  6 + PIDX_PCRW+PIDX_STRING;
+const LONG PIDXPcrw_Track4Data          =  7 + PIDX_PCRW+PIDX_STRING;
+const LONG PIDXPcrw_Track5Data          =  8 + PIDX_PCRW+PIDX_STRING;
+const LONG PIDXPcrw_Track6Data          =  9 + PIDX_PCRW+PIDX_STRING;
+const LONG PIDXPcrw_Write1Data          = 10 + PIDX_PCRW+PIDX_STRING;
+const LONG PIDXPcrw_Write2Data          = 11 + PIDX_PCRW+PIDX_STRING;
+const LONG PIDXPcrw_Write3Data          = 12 + PIDX_PCRW+PIDX_STRING;
+const LONG PIDXPcrw_Write4Data          = 13 + PIDX_PCRW+PIDX_STRING;
+const LONG PIDXPcrw_Write5Data          = 14 + PIDX_PCRW+PIDX_STRING;
+const LONG PIDXPcrw_Write6Data          = 15 + PIDX_PCRW+PIDX_STRING;
+
+
+#endif          // !defined(OPOSPCRW_HI)

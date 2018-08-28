@@ -1,0 +1,100 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposScal.hi
+//
+//   Scale header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 1995-12-08 OPOS Release 1.0                                   CRM
+// 1996-03-18 OPOS Release 1.01                                  CRM
+//   Correct WeightUnits value from 1 to 2.
+// 1997-06-04 OPOS Release 1.2                                   CRM
+//   Add the following properties: CapDisplay, WeightUnit
+// 1998-03-06 OPOS Release 1.3                                   CRM
+//   Add the following properties:
+//     CapDisplayText, CapPriceCalculating, CapTareWeight,
+//     CapZeroScale, AsyncMode, MaxDisplayTextChars, SalesPrice,
+//     TareWeight, UnitPrice
+// 2005-04-29 OPOS Release 1.9                                   CRM
+//   Add the following properties:
+//     CapStatusUpdate, ScaleLiveWeight, StatusNotify
+//   Remove validation functions.
+// 2009-10-02 OPOS Release 1.13                                  CRM
+//   Add the following property: ZeroValid
+// 2013-10-03 OPOS Release 1.14                                  CRM
+//   Add the following properties:
+//     CapFreezeValue, CapReadLiveWeightWithTare,
+//     CapSetPriceCalculationMode, CapSetUnitPriceWithWeightUnit,
+//     CapSpecialTare, CapTarePriority, MinimumWeight
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSSCAL_HI)
+#define      OPOSSCAL_HI
+
+
+#include "Opos.hi"
+#include "OposScal.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXScal_MaximumWeight       =   1 + PIDX_SCAL+PIDX_NUMBER;
+const LONG PIDXScal_WeightUnits         =   2 + PIDX_SCAL+PIDX_NUMBER;
+
+//      Added for Release 1.2:
+const LONG PIDXScal_WeightUnit          =   2 + PIDX_SCAL+PIDX_NUMBER;
+//        WeightUnit = WeightUnits: Support both, due to
+//        editing error in the pre-1.2 APG.
+
+//      Added for Release 1.3:
+const LONG PIDXScal_AsyncMode           =   3 + PIDX_SCAL+PIDX_NUMBER;
+const LONG PIDXScal_MaxDisplayTextChars =   4 + PIDX_SCAL+PIDX_NUMBER;
+const LONG PIDXScal_TareWeight          =   5 + PIDX_SCAL+PIDX_NUMBER;
+
+//      Added for Release 1.9:
+const LONG PIDXScal_ScaleLiveWeight     =   6 + PIDX_SCAL+PIDX_NUMBER;
+const LONG PIDXScal_StatusNotify        =   7 + PIDX_SCAL+PIDX_NUMBER;
+
+//      Added for Release 1.13:
+const LONG PIDXScal_ZeroValid           =   8 + PIDX_SCAL+PIDX_NUMBER;
+
+//      Added for Release 1.14:
+const LONG PIDXScal_MinimumWeight       =   9 + PIDX_SCAL+PIDX_NUMBER;
+
+// * Capabilities *
+
+//      Added for Release 1.1:
+const LONG PIDXScal_CapDisplay          = 501 + PIDX_SCAL+PIDX_NUMBER;
+
+//      Added for Release 1.3:
+const LONG PIDXScal_CapDisplayText      = 502 + PIDX_SCAL+PIDX_NUMBER;
+const LONG PIDXScal_CapPriceCalculating = 503 + PIDX_SCAL+PIDX_NUMBER;
+const LONG PIDXScal_CapTareWeight       = 504 + PIDX_SCAL+PIDX_NUMBER;
+const LONG PIDXScal_CapZeroScale        = 505 + PIDX_SCAL+PIDX_NUMBER;
+
+//      Added for Release 1.9:
+const LONG PIDXScal_CapStatusUpdate     = 506 + PIDX_SCAL+PIDX_NUMBER;
+
+//      Added for Release 1.14:
+const LONG PIDXScal_CapFreezeValue                  = 507 + PIDX_SCAL+PIDX_NUMBER;
+const LONG PIDXScal_CapReadLiveWeightWithTare       = 508 + PIDX_SCAL+PIDX_NUMBER;
+const LONG PIDXScal_CapSetPriceCalculationMode      = 509 + PIDX_SCAL+PIDX_NUMBER;
+const LONG PIDXScal_CapSetUnitPriceWithWeightUnit   = 510 + PIDX_SCAL+PIDX_NUMBER;
+const LONG PIDXScal_CapSpecialTare                  = 511 + PIDX_SCAL+PIDX_NUMBER;
+const LONG PIDXScal_CapTarePriority                 = 512 + PIDX_SCAL+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+
+#endif          // !defined(OPOSSCAL_HI)

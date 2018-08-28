@@ -1,0 +1,75 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposPpad.hi
+//
+//   PIN Pad header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 1998-04-07 OPOS Release 1.3                                   JDB
+// 1999-12-07 OPOS Release 1.5                                   CRM
+//   Remove Amount property index Amount is of type CURRENCY,
+//     so it is not accessed by Get/SetPropertyXxx.
+// 2000-09-24 OPOS Release 1.5                                   BKS
+//   Added the Track4Data property
+//   (01-01-23 Corrected its value from 10 to 12)
+// 2005-04-29 OPOS Release 1.9                                   CRM
+//   Remove validation functions.
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSPPAD_HI)
+#define      OPOSPPAD_HI
+
+
+#include "Opos.hi"
+#include "OposPpad.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXPpad_MaximumPINLength    =   1 + PIDX_PPAD+PIDX_NUMBER;
+const LONG PIDXPpad_MinimumPINLength    =   2 + PIDX_PPAD+PIDX_NUMBER;
+const LONG PIDXPpad_PINEntryEnabled     =   3 + PIDX_PPAD+PIDX_NUMBER;
+const LONG PIDXPpad_Prompt              =   4 + PIDX_PPAD+PIDX_NUMBER;
+const LONG PIDXPpad_PromptLanguage      =   5 + PIDX_PPAD+PIDX_NUMBER;
+const LONG PIDXPpad_TransactionType     =   6 + PIDX_PPAD+PIDX_NUMBER;
+
+
+// * Capabilities *
+const LONG PIDXPpad_CapDisplay          = 501 + PIDX_PPAD+PIDX_NUMBER;
+const LONG PIDXPpad_CapKeyboard         = 502 + PIDX_PPAD+PIDX_NUMBER;
+const LONG PIDXPpad_CapLanguage         = 503 + PIDX_PPAD+PIDX_NUMBER;
+const LONG PIDXPpad_CapMACCalculation   = 504 + PIDX_PPAD+PIDX_NUMBER;
+const LONG PIDXPpad_CapTone             = 505 + PIDX_PPAD+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXPpad_AccountNumber       =   1 + PIDX_PPAD+PIDX_STRING;
+const LONG PIDXPpad_AdditionalSecurityInformation
+                                        =   2 + PIDX_PPAD+PIDX_STRING;
+const LONG PIDXPpad_AvailableLanguagesList
+                                        =   3 + PIDX_PPAD+PIDX_STRING;
+//  (Unused)                                4 + PIDX_PPAD+PIDX_STRING;
+const LONG PIDXPpad_AvailablePromptsList=   5 + PIDX_PPAD+PIDX_STRING;
+const LONG PIDXPpad_EncryptedPIN        =   6 + PIDX_PPAD+PIDX_STRING;
+const LONG PIDXPpad_MerchantID          =   7 + PIDX_PPAD+PIDX_STRING;
+const LONG PIDXPpad_TerminalID          =   8 + PIDX_PPAD+PIDX_STRING;
+const LONG PIDXPpad_Track1Data          =   9 + PIDX_PPAD+PIDX_STRING;
+const LONG PIDXPpad_Track2Data          =  10 + PIDX_PPAD+PIDX_STRING;
+const LONG PIDXPpad_Track3Data          =  11 + PIDX_PPAD+PIDX_STRING;
+
+// Added in Release 1.5
+const LONG PIDXPpad_Track4Data          =  12 + PIDX_PPAD+PIDX_STRING;
+
+
+#endif          // !defined(OPOSPPAD_HI)

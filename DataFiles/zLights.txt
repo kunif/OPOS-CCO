@@ -1,0 +1,133 @@
+!!***************************************************************************
+!!
+!! Lights Opos Control Object Data File
+!!
+!!     Date                   Modification                          Author
+!! -----------|----------------------------------------------------|----------
+!!  2008/01/15 1.12.000: Initial version.                           C. Monroe
+!!
+!!***************************************************************************
+
+! Names: Device, Uppercase Device
+DeviceName      =Lights
+DeviceUpper     =LIGHTS
+
+! Short device designation used by OPOS.
+!   Include file is Opos@DeviceShortName@.hi
+!   Property index prefix is PIDX@DeviceShortName@.
+DeviceShortName =Lgt
+! Short upper case device designation used by OPOS.
+!   Device registry key is OPOS_CLASSKEY_@DeviceShortUpper@
+DeviceShortUpper=LGT
+
+! If Claim and Release are not supported, comment out the next line.
+!   (The macro values are not important. We only check for defined or not defined.)
+ClaimRelease    =
+
+! If sharable device, comment out the next line.
+!   (The macro value is not important. We only check for defined or not defined.)
+Exclusive       =
+
+! If any methods or properties use currency, then define "Currency"
+!!Currency        =
+
+! Supported events. Comment out the unsupported ones.
+!   (The macro values are not important. We only check for defined or not defined.)
+!!EventData       =
+EventDirectIO   =
+!!EventError      =
+!!EventOutput     =
+EventStatus     =
+
+! If SAFEARRAYs are used, then uncomment the following line to enable debug trace logic.
+!!SafeArray       =
+
+! UUIDs. UUIDLibrary is required to be the full GUID.
+!   The others can be specified in full, or a "*" indicates that the bytes 3-4
+!   (hexadecimal chars 5-8) of the UUIDLibrary should be incremented to
+!   form their GUIDs.
+UUIDControl     =0360
+UUIDLibrary     =UUID:@UUIDPre@@UUIDControl@-@UUIDPost@
+UUIDInterface   =UUID*
+UUIDCoclass     =UUID*
+UUIDEvents      =UUID*
+
+! For each version up to the @Version@, list the properties and methods.
+!   If method:
+!     M  = Method.
+!     Release = 1.x
+!     Number = Dispatch ID.
+!     Details = IDL formatted method and parameters, with assumed ", [out] LONG* pRC )" at end.
+!       If usage omitted, assume [in].
+!       Parameter types restricted to BOOL, LONG, CURRENCY, and BSTR.
+!   If parameter:
+!     First char = C for Common (or S for Specific [optional]).
+!     Next one or two chars = R for Readable or W for Writable.
+!     Release = 1.x
+!     Number = Dispatch ID.
+!     Details = Property name followed by type in parentheses.
+!       Type restricted to BOOL, LONG, CURRENCY, and BSTR.
+!     Property Index name without prefix (optional)
+
+:MethodsProperties
+!> Added Property
+ CR  1.12  49 OpenResult(LONG)
+!> Common Properties
+!CRW 1.12  10 AutoDisable(BOOL)
+ CRW 1.12  11 BinaryConversion(LONG)
+ CR  1.12  12 CapPowerReporting(LONG)
+ CR  1.12  13 CheckHealthText(BSTR)
+ CR  1.12  14 Claimed(BOOL)
+!CR  1.12  15 DataCount(LONG)
+!CRW 1.12  16 DataEventEnabled(BOOL)
+ CRW 1.12  17 DeviceEnabled(BOOL)
+ CRW 1.12  18 FreezeEvents(BOOL)
+!CR  1.12  19 OutputID(LONG)
+ CRW 1.12  20 PowerNotify(LONG)
+ CR  1.12  21 PowerState(LONG)
+ CR  1.12  22 ResultCode(LONG)
+ CR  1.12  23 ResultCodeExtended(LONG)
+ CR  1.12  24 State(LONG)
+!
+ CR  1.12  25 ControlObjectDescription(BSTR)
+ CR  1.12  26 ControlObjectVersion(LONG)
+ CR  1.12  27 ServiceObjectDescription(BSTR)
+ CR  1.12  28 ServiceObjectVersion(LONG)
+ CR  1.12  29 DeviceDescription(BSTR)
+ CR  1.12  30 DeviceName(BSTR)
+!     Added in Release 1.8
+ CR  1.12  39 CapStatisticsReporting(BOOL)
+ CR  1.12  40 CapUpdateStatistics(BOOL)
+!     Added in Release 1.9
+ CR  1.12  44 CapCompareFirmwareVersion(BOOL)
+ CR  1.12  45 CapUpdateFirmware(BOOL)
+!
+!> Common Methods
+ M   1.12  31 CheckHealth(LONG Level)
+ M   1.12  32 Claim(LONG Timeout)
+!M   1.12  33 ClearInput()
+!M   1.12  34 ClearOutput()
+ M   1.12  35 Close()
+ M   1.12  36 DirectIO(LONG Command, [in, out] LONG* pData, [in, out] BSTR* pString)
+ M   1.12  37 Open(BSTR DeviceName)
+ M   1.12  38 Release()
+!     Added in Release 1.8
+ M   1.12  41 ResetStatistics(BSTR StatisticsBuffer)
+ M   1.12  42 RetrieveStatistics([in, out] BSTR* pStatisticsBuffer)
+ M   1.12  43 UpdateStatistics(BSTR StatisticsBuffer)
+!     Added in Release 1.9
+ M   1.12  46 CompareFirmwareVersion(BSTR FirmwareFileName, [out] LONG* pResult)
+ M   1.12  47 UpdateFirmware(BSTR FirmwareFileName)
+!     Added in Release 1.10
+!M   1.12  48 ClearInputProperties()
+!
+!> Specific Properties
+  R  1.12  70 CapAlarm(LONG)
+  R  1.12  71 CapBlink(BOOL)
+  R  1.12  72 CapColor(LONG)
+  R  1.12  73 MaxLights(LONG)
+!> Specific Methods
+ M   1.12  90 SwitchOff(LONG LightNumber)
+ M   1.12  91 SwitchOn(LONG LightNumber, LONG BlinkOnCycle, LONG BlinkOffCycle, LONG Color, LONG Alarm)
+
+!!End

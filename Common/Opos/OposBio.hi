@@ -1,0 +1,59 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposBio.hi
+//
+//   Biometrics header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 2006-03-15 OPOS Release 1.10                                  CRM
+// 2006-08-08 OPOS Release 1.10 - Bug fix.                       CRM
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSBIO_HI)
+#define      OPOSBIO_HI
+
+
+#include "Opos.hi"
+#include "OposBio.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXBio_Algorithm                =   1 + PIDX_BIO+PIDX_NUMBER;
+const LONG PIDXBio_RealTimeDataEnabled      =   2 + PIDX_BIO+PIDX_NUMBER;
+const LONG PIDXBio_SensorBPP                =   3 + PIDX_BIO+PIDX_NUMBER;
+const LONG PIDXBio_SensorColor              =   4 + PIDX_BIO+PIDX_NUMBER;
+const LONG PIDXBio_SensorHeight             =   5 + PIDX_BIO+PIDX_NUMBER;
+const LONG PIDXBio_SensorOrientation        =   6 + PIDX_BIO+PIDX_NUMBER;
+const LONG PIDXBio_SensorType               =   7 + PIDX_BIO+PIDX_NUMBER;
+const LONG PIDXBio_SensorWidth              =   8 + PIDX_BIO+PIDX_NUMBER;
+
+// * Capabilities *
+
+const LONG PIDXBio_CapPrematchData          = 501 + PIDX_BIO+PIDX_NUMBER;
+const LONG PIDXBio_CapRawSensorData         = 502 + PIDX_BIO+PIDX_NUMBER;
+const LONG PIDXBio_CapRealTimeData          = 503 + PIDX_BIO+PIDX_NUMBER;
+const LONG PIDXBio_CapSensorColor           = 504 + PIDX_BIO+PIDX_NUMBER;
+const LONG PIDXBio_CapSensorOrientation     = 505 + PIDX_BIO+PIDX_NUMBER;
+const LONG PIDXBio_CapSensorType            = 506 + PIDX_BIO+PIDX_NUMBER;
+const LONG PIDXBio_CapTemplateAdaptation    = 507 + PIDX_BIO+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXBio_AlgorithmList            =   1 + PIDX_BIO+PIDX_STRING;
+const LONG PIDXBio_BIR                      =   2 + PIDX_BIO+PIDX_STRING;
+const LONG PIDXBio_RawSensorData            =   3 + PIDX_BIO+PIDX_STRING;
+
+
+#endif          // !defined(OPOSBIO_HI)

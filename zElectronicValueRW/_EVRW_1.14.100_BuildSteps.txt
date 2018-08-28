@@ -1,0 +1,35 @@
+EVRW 1.14.100 was built with manual steps because:
+ * In the 1.14.001 UnifiedPOS spec, the UnifiedPOS committee added properties
+    and methods to EVRW, but chose not to raise the minor version.
+ * OPOS-J needed 1.14.100 to be backward compatible with 1.14.
+
+Therefore, the following steps were taken:
+
+ * Build generation:
+    - Updated _Build_Dep.txt so that EVWR is not generated with the other CCOs.
+    - Created _Build_EVRW.txt and _Build_EVRW.bat.
+    - Update _Build_EVRW.txt as follows:
+        o Set MinorVersion=15 and BuildVersion=100.
+        o Updated ":DataFiles" to only build "zElectronicValueRW.txt".
+    - Update zElectronicValueRW.txt as follows:
+        o In ":MethodsProperties" section, set the 1.14.100 APIs to
+            release 1.15.
+    - Run _Build_EVRW.bat.
+
+ * Correct version from 1.15 to 1.14.100:
+    - Load the project into VS2008.
+    - Do the following Find and Replace in the EVRW project, selecting Replace
+        All for each:
+        o 1.15.100 => 1.14.100
+        o 1.15     => 1.14.100
+        o _1_15    => _1_14_100
+    - ElectronicValueRW.rc: Change FILEVERSION and PRODUCTVERSION from 15 to 14.
+    > Note-ElectronicValueRWImpl.cpp: Don't change "15 /*MinorVersion*/".
+        We will update the API version checking code so that 15 means 1.14.100.
+
+ * ElectronicValueRWImpl.h (Changes marked with CRMMod)
+    - Add comment to _nSOMinor definition: 15 = 1.14.100.
+
+ * ElectronicValueRWImpl.cpp (Changes marked with CRMMod)
+    - g_ControlVersion: Change from minor version 15 to 14.
+    - Open: If ServiceObjectVersion is >= 1.14.100, then set _nSOMinor to 15.

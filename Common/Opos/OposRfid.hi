@@ -1,0 +1,53 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposRfid.hi
+//
+//   RFID Scanner header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 2008-08-30 OPOS Release 1.12                                  CRM
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSRFID_HI)
+#define      OPOSRFID_HI
+
+
+#include "Opos.hi"
+#include "OposRfid.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXRfid_ContinuousReadMode              =   1 + PIDX_RFID+PIDX_NUMBER;
+const LONG PIDXRfid_CurrentTagProtocol              =   2 + PIDX_RFID+PIDX_NUMBER;
+const LONG PIDXRfid_ProtocolMask                    =   3 + PIDX_RFID+PIDX_NUMBER;
+const LONG PIDXRfid_ReadTimerInterval               =   4 + PIDX_RFID+PIDX_NUMBER;
+const LONG PIDXRfid_TagCount                        =   5 + PIDX_RFID+PIDX_NUMBER;
+
+// * Capabilities *
+
+const LONG PIDXRfid_CapContinuousRead               = 501 + PIDX_RFID+PIDX_NUMBER;
+const LONG PIDXRfid_CapDisableTag                   = 502 + PIDX_RFID+PIDX_NUMBER;
+const LONG PIDXRfid_CapLockTag                      = 503 + PIDX_RFID+PIDX_NUMBER;
+const LONG PIDXRfid_CapMultipleProtocols            = 504 + PIDX_RFID+PIDX_NUMBER;
+const LONG PIDXRfid_CapReadTimer                    = 505 + PIDX_RFID+PIDX_NUMBER;
+const LONG PIDXRfid_CapWriteTag                     = 506 + PIDX_RFID+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXRfid_CurrentTagID                    =   1 + PIDX_RFID+PIDX_STRING;
+const LONG PIDXRfid_CurrentTagUserData              =   2 + PIDX_RFID+PIDX_STRING;
+
+
+#endif          // !defined(OPOSRFID_HI)

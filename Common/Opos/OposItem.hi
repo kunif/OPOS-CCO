@@ -1,0 +1,45 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposItem.hi
+//
+//   Item Dispenser header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 2008-08-30 OPOS Release 1.12                                  CRM
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSITEM_HI)
+#define      OPOSITEM_HI
+
+
+#include "Opos.hi"
+#include "OposItem.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXItem_DispenserStatus                 =   1 + PIDX_ITEM+PIDX_NUMBER;
+const LONG PIDXItem_MaxSlots                        =   2 + PIDX_ITEM+PIDX_NUMBER;
+
+// * Capabilities *
+
+const LONG PIDXItem_CapEmptySensor                  = 501 + PIDX_ITEM+PIDX_NUMBER;
+const LONG PIDXItem_CapIndividualSlotStatus         = 502 + PIDX_ITEM+PIDX_NUMBER;
+const LONG PIDXItem_CapJamSensor                    = 503 + PIDX_ITEM+PIDX_NUMBER;
+const LONG PIDXItem_CapNearEmptySensor              = 504 + PIDX_ITEM+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+
+#endif          // !defined(OPOSITEM_HI)

@@ -1,0 +1,47 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposLock.hi
+//
+//   Keylock header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 1995-12-08 OPOS Release 1.0                                   CRM
+// 2005-04-29 OPOS Release 1.9                                   CRM
+//   Remove validation functions.
+// 2007-01-30 OPOS Release 1.11                                  CRM
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSLOCK_HI)
+#define      OPOSLOCK_HI
+
+
+#include "Opos.hi"
+#include "OposLock.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXLock_KeyPosition         =   1 + PIDX_LOCK+PIDX_NUMBER;
+const LONG PIDXLock_PositionCount       =   2 + PIDX_LOCK+PIDX_NUMBER;
+
+// * Capabilities *
+//      Added for Release 1.11:
+const LONG PIDXLock_CapKeylockType      =   501 + PIDX_LOCK+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+//      Added for Release 1.11:
+const LONG PIDXLock_ElectronicKeyValue  =   1 + PIDX_LOCK+PIDX_STRING;
+
+
+#endif          // !defined(OPOSLOCK_HI)

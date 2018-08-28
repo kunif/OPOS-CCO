@@ -1,0 +1,55 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposBdsp.hi
+//
+//   Bill Dispenser header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 2007-01-30 OPOS Release 1.11                                  CRM
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSBDSP_HI)
+#define      OPOSBDSP_HI
+
+
+#include "Opos.hi"
+#include "OposBdsp.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXBdsp_AsyncMode           =   1 + PIDX_BDSP+PIDX_NUMBER;
+const LONG PIDXBdsp_AsyncResultCode     =   2 + PIDX_BDSP+PIDX_NUMBER;
+const LONG PIDXBdsp_AsyncResultCodeExtended
+                                        =   3 + PIDX_BDSP+PIDX_NUMBER;
+const LONG PIDXBdsp_CurrentExit         =   4 + PIDX_BDSP+PIDX_NUMBER;
+const LONG PIDXBdsp_DeviceExits         =   5 + PIDX_BDSP+PIDX_NUMBER;
+const LONG PIDXBdsp_DeviceStatus        =   6 + PIDX_BDSP+PIDX_NUMBER;
+
+// * Capabilities *
+
+const LONG PIDXBdsp_CapDiscrepancy      = 501 + PIDX_BDSP+PIDX_NUMBER;
+const LONG PIDXBdsp_CapEmptySensor      = 502 + PIDX_BDSP+PIDX_NUMBER;
+const LONG PIDXBdsp_CapJamSensor        = 503 + PIDX_BDSP+PIDX_NUMBER;
+const LONG PIDXBdsp_CapNearEmptySensor  = 504 + PIDX_BDSP+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXBdsp_CurrencyCashList    =   1 + PIDX_BDSP+PIDX_STRING;
+const LONG PIDXBdsp_CurrencyCode        =   2 + PIDX_BDSP+PIDX_STRING;
+const LONG PIDXBdsp_CurrencyCodeList    =   3 + PIDX_BDSP+PIDX_STRING;
+const LONG PIDXBdsp_ExitCashList        =   4 + PIDX_BDSP+PIDX_STRING;
+
+
+#endif          // !defined(OPOSBDSP_HI)

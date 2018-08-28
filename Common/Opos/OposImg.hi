@@ -1,0 +1,60 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposImg.hi
+//
+//   Image Scanner header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 2007-01-30 OPOS Release 1.11                                  CRM
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSIMG_HI)
+#define      OPOSIMG_HI
+
+
+#include "Opos.hi"
+#include "OposImg.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXImg_AimMode              =   1 + PIDX_IMG+PIDX_NUMBER;
+const LONG PIDXImg_BitsPerPixel         =   2 + PIDX_IMG+PIDX_NUMBER;
+const LONG PIDXImg_FrameType            =   3 + PIDX_IMG+PIDX_NUMBER;
+const LONG PIDXImg_IlluminateMode       =   4 + PIDX_IMG+PIDX_NUMBER;
+const LONG PIDXImg_ImageHeight          =   5 + PIDX_IMG+PIDX_NUMBER;
+const LONG PIDXImg_ImageLength          =   6 + PIDX_IMG+PIDX_NUMBER;
+const LONG PIDXImg_ImageMode            =   7 + PIDX_IMG+PIDX_NUMBER;
+const LONG PIDXImg_ImageQuality         =   8 + PIDX_IMG+PIDX_NUMBER;
+const LONG PIDXImg_ImageType            =   9 + PIDX_IMG+PIDX_NUMBER;
+const LONG PIDXImg_ImageWidth           =  10 + PIDX_IMG+PIDX_NUMBER;
+const LONG PIDXImg_VideoCount           =  11 + PIDX_IMG+PIDX_NUMBER;
+const LONG PIDXImg_VideoRate            =  12 + PIDX_IMG+PIDX_NUMBER;
+
+// * Capabilities *
+
+const LONG PIDXImg_CapAim               = 501 + PIDX_IMG+PIDX_NUMBER;
+const LONG PIDXImg_CapDecodeData        = 502 + PIDX_IMG+PIDX_NUMBER;
+const LONG PIDXImg_CapHostTriggered     = 503 + PIDX_IMG+PIDX_NUMBER;
+const LONG PIDXImg_CapIlluminate        = 504 + PIDX_IMG+PIDX_NUMBER;
+const LONG PIDXImg_CapImageData         = 505 + PIDX_IMG+PIDX_NUMBER;
+const LONG PIDXImg_CapImageQuality      = 506 + PIDX_IMG+PIDX_NUMBER;
+const LONG PIDXImg_CapVideoData         = 507 + PIDX_IMG+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXImg_FrameData            =   1 + PIDX_IMG+PIDX_STRING;
+
+
+#endif          // !defined(OPOSIMG_HI)

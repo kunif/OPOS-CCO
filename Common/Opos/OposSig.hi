@@ -1,0 +1,63 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposSig.hi
+//
+//   Signature Capture header file for OPOS Controls and
+//     Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 1995-12-08 OPOS Release 1.0                                   CRM
+// 1996-03-18 OPOS Release 1.01                                  CRM
+//   Change TotalVectors to TotalPoints.
+//   Change VectorArray to PointArray.
+// 1997-06-04 OPOS Release 1.2                                   CRM
+//   Add the following properties: CapRealTimeData, RealTimeDataEnabled
+//   Correct spelling of TotalPoitns to TotalPoints.
+// 2005-04-29 OPOS Release 1.9                                   CRM
+//   Remove validation functions.
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSSIG_HI)
+#define      OPOSSIG_HI
+
+
+#include "Opos.hi"
+#include "OposSig.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXSig_MaximumX             =   1 + PIDX_SIG+PIDX_NUMBER;
+const LONG PIDXSig_MaximumY             =   2 + PIDX_SIG+PIDX_NUMBER;
+const LONG PIDXSig_TotalPoints          =   3 + PIDX_SIG+PIDX_NUMBER;
+
+//      Added for Release 1.2:
+const LONG PIDXSig_RealTimeDataEnabled  =   4 + PIDX_SIG+PIDX_NUMBER;
+
+
+// * Capabilities *
+
+const LONG PIDXSig_CapDisplay           = 501 + PIDX_SIG+PIDX_NUMBER;
+const LONG PIDXSig_CapUserTerminated    = 502 + PIDX_SIG+PIDX_NUMBER;
+
+//      Added for Release 1.2:
+const LONG PIDXSig_CapRealTimeData      = 503 + PIDX_SIG+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXSig_RawData              =   1 + PIDX_SIG+PIDX_STRING;
+const LONG PIDXSig_PointArray           =   2 + PIDX_SIG+PIDX_STRING;
+
+
+#endif          // !defined(OPOSSIG_HI)

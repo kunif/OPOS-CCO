@@ -1,0 +1,167 @@
+!!***************************************************************************
+!!
+!! Electronic Journal Opos Control Object Data File
+!!
+!!     Date                   Modification                          Author
+!! -----------|----------------------------------------------------|----------
+!!  2006/03/15 1.10.000: Initial version.                           C. Monroe
+!!
+!!***************************************************************************
+
+! Names: Device, Uppercase Device
+DeviceName      =ElectronicJournal
+DeviceUpper     =ELECTRONICJOURNAL
+
+! Short device designation used by OPOS.
+!   Include file is Opos@DeviceShortName@.hi
+!   Property index prefix is PIDX@DeviceShortName@.
+DeviceShortName =Ej
+! Short upper case device designation used by OPOS.
+!   Device registry key is OPOS_CLASSKEY_@DeviceShortUpper@
+DeviceShortUpper=EJ
+
+! If Claim and Release are not supported, comment out the next line.
+!   (The macro values are not important. We only check for defined or not defined.)
+ClaimRelease    =
+
+! If sharable device, comment out the next line.
+!   (The macro value is not important. We only check for defined or not defined.)
+Exclusive       =
+
+! If any methods or properties use currency, then define "Currency"
+Currency        =
+
+! Supported events. Comment out the unsupported ones.
+!   (The macro values are not important. We only check for defined or not defined.)
+EventData       =
+EventDirectIO   =
+EventError      =
+EventOutput     =
+EventStatus     =
+
+! UUIDs. UUIDLibrary is required to be the full GUID.
+!   The others can be specified in full, or a "*" indicates that the bytes 3-4
+!   (hexadecimal chars 5-8) of the UUIDLibrary should be incremented to
+!   form their GUIDs.
+UUIDControl     =0270
+UUIDLibrary     =UUID:@UUIDPre@@UUIDControl@-@UUIDPost@
+UUIDInterface   =UUID*
+UUIDCoclass     =UUID*
+UUIDEvents      =UUID*
+
+! For each version up to the @Version@, list the properties and methods.
+!   If method:
+!     M  = Method.
+!     Release = 1.x
+!     Number = Dispatch ID.
+!     Details = IDL formatted method and parameters, with assumed ", [out] LONG* pRC )" at end.
+!       If usage omitted, assume [in].
+!       Parameter types restricted to BOOL, LONG, CURRENCY, and BSTR.
+!   If parameter:
+!     First char = C for Common (or S for Specific [optional]).
+!     Next one or two chars = R for Readable or W for Writable.
+!     Release = 1.x
+!     Number = Dispatch ID.
+!     Details = Property name followed by type in parentheses.
+!       Type restricted to BOOL, LONG, CURRENCY, and BSTR.
+!     Property Index name without prefix (optional)
+
+:MethodsProperties
+!> Added Property
+ CR  1.10   49 OpenResult(LONG)
+!> Common Properties
+ CRW 1.10   10 AutoDisable(BOOL)
+ CRW 1.10   11 BinaryConversion(LONG)
+ CR  1.10   12 CapPowerReporting(LONG)
+ CR  1.10   13 CheckHealthText(BSTR)
+ CR  1.10   14 Claimed(BOOL)
+ CR  1.10   15 DataCount(LONG)
+ CRW 1.10   16 DataEventEnabled(BOOL)
+ CRW 1.10   17 DeviceEnabled(BOOL)
+ CRW 1.10   18 FreezeEvents(BOOL)
+ CR  1.10   19 OutputID(LONG)
+ CRW 1.10   20 PowerNotify(LONG)
+ CR  1.10   21 PowerState(LONG)
+ CR  1.10   22 ResultCode(LONG)
+ CR  1.10   23 ResultCodeExtended(LONG)
+ CR  1.10   24 State(LONG)
+!
+ CR  1.10   25 ControlObjectDescription(BSTR)
+ CR  1.10   26 ControlObjectVersion(LONG)
+ CR  1.10   27 ServiceObjectDescription(BSTR)
+ CR  1.10   28 ServiceObjectVersion(LONG)
+ CR  1.10   29 DeviceDescription(BSTR)
+ CR  1.10   30 DeviceName(BSTR)
+!     Added in Release 1.8
+ CR  1.10   39 CapStatisticsReporting(BOOL)
+ CR  1.10   40 CapUpdateStatistics(BOOL)
+!     Added in Release 1.9
+ CR  1.10   44 CapCompareFirmwareVersion(BOOL)
+ CR  1.10   45 CapUpdateFirmware(BOOL)
+!
+!> Common Methods
+ M   1.10   31 CheckHealth(LONG Level)
+ M   1.10   32 Claim(LONG Timeout)
+ M   1.10   33 ClearInput()
+ M   1.10   34 ClearOutput()
+ M   1.10   35 Close()
+ M   1.10   36 DirectIO(LONG Command, [in, out] LONG* pData, [in, out] BSTR* pString)
+ M   1.10   37 Open(BSTR DeviceName)
+ M   1.10   38 Release()
+!     Added in Release 1.8
+ M   1.10   41 ResetStatistics(BSTR StatisticsBuffer)
+ M   1.10   42 RetrieveStatistics([in, out] BSTR* pStatisticsBuffer)
+ M   1.10   43 UpdateStatistics(BSTR StatisticsBuffer)
+!     Added in Release 1.9
+ M   1.10   46 CompareFirmwareVersion(BSTR FirmwareFileName, [out] LONG* pResult)
+ M   1.10   47 UpdateFirmware(BSTR FirmwareFileName)
+!     Added in Release 1.10
+!M   1.10   48 ClearInputProperties()
+!
+!> Specific Properties
+  RW 1.10   60 AsyncMode(BOOL)
+  R  1.10   61 CapAddMarker(BOOL)
+  R  1.10   62 CapErasableMedium(BOOL)
+  R  1.10   63 CapInitializeMedium(BOOL)
+  R  1.10   64 CapMediumIsAvailable(BOOL)
+  R  1.10   65 CapPrintContent(BOOL)
+  R  1.10   66 CapPrintContentFile(BOOL)
+  R  1.10   67 CapRetrieveCurrentMarker(BOOL)
+  R  1.10   68 CapRetrieveMarker(BOOL)
+  R  1.10   69 CapRetrieveMarkerByDateTime(BOOL)
+  R  1.10   70 CapRetrieveMarkersDateTime(BOOL)
+  R  1.10   71 CapStation(LONG)
+  R  1.10   72 CapStorageEnabled(BOOL)
+  R  1.10   73 CapSuspendPrintContent(BOOL)
+  R  1.10   74 CapSuspendQueryContent(BOOL)
+  R  1.10   75 CapWaterMark(BOOL)
+  RW 1.10   76 FlagWhenIdle(BOOL)
+  R  1.10   77 MediumFreeSpace(CURRENCY)
+  R  1.10   78 MediumID(BSTR)
+  R  1.10   79 MediumIsAvailable(BOOL)
+  R  1.10   80 MediumSize(CURRENCY)
+  RW 1.10   81 Station(LONG)
+  RW 1.10   82 StorageEnabled(BOOL)
+  R  1.10   83 Suspended(BOOL)
+  RW 1.10   84 WaterMark(BOOL)
+!
+!> Specific Methods
+ M   1.10  100 AddMarker(BSTR Marker)
+ M   1.10  101 CancelPrintContent()
+ M   1.10  102 CancelQueryContent()
+ M   1.10  103 EraseMedium()
+ M   1.10  104 InitializeMedium(BSTR MediumID)
+ M   1.10  105 PrintContent(BSTR FromMarker, BSTR ToMarker)
+ M   1.10  106 PrintContentFile(BSTR FileName)
+ M   1.10  107 QueryContent(BSTR FileName, BSTR FromMarker, BSTR ToMarker)
+ M   1.10  108 ResumePrintContent()
+ M   1.10  109 ResumeQueryContent()
+ M   1.10  110 RetrieveCurrentMarker( LONG MarkerType, [out] BSTR* pMarker)
+ M   1.10  111 RetrieveMarker( LONG MarkerType, LONG SessionNumber, LONG DocumentNumber, [out] BSTR* pMarker)
+ M   1.10  112 RetrieveMarkerByDateTime(LONG MarkerType, BSTR DateTime, BSTR MarkerNumber, [out] BSTR* pMarker)
+ M   1.10  113 RetrieveMarkersDateTime(BSTR Marker, [out] BSTR* pDateTime)
+ M   1.10  114 SuspendPrintContent()
+ M   1.10  115 SuspendQueryContent()
+!!End
+
+

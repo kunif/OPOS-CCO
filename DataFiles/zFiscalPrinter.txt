@@ -1,0 +1,298 @@
+!!***************************************************************************
+!!
+!! FiscalPrinter Opos Control Object Data File
+!!
+!!     Date                   Modification                          Author
+!! -----------|----------------------------------------------------|----------
+!!  1999/02/06 1.4.991: Initial version.                            C. Monroe
+!!  1999/06/18 1.5.000: Change OpenText to OpenResult. Update GUIDs.
+!!  2001/07/20 1.6.000: Add properties and methods for 1.6.
+!!  2002/03/07 1.6.001: Correct PrintRecItemVoidFuel to
+!!                        PrintRecItemFuelVoid.
+!!  2004/03/22 1.8.000: Add properties and methods for 1.8.
+!!  2005/04/29 1.9.000: Add properties and methods for 1.9.
+!!  2006/03/15 1.10.000: Add properties and methods for 1.10.
+!!  2007/01/30 1.11.000: Add properties and methods for 1.11.
+!!  2008/01/15 1.12.000: Add methods for 1.12.
+!!
+!!***************************************************************************
+
+! Names: Device, Uppercase Device
+DeviceName      =FiscalPrinter
+DeviceUpper     =FISCALPRINTER
+
+! Short device designation used by OPOS.
+!   Include file is Opos@DeviceShortName@.hi
+!   Property index prefix is PIDX@DeviceShortName@.
+DeviceShortName =Fptr
+! Short upper case device designation used by OPOS.
+!   Device registry key is OPOS_CLASSKEY_@DeviceShortUpper@
+DeviceShortUpper=FPTR
+
+! If Claim and Release are not supported, comment out the next line.
+!   (The macro values are not important. We only check for defined or not defined.)
+ClaimRelease    =
+
+! If sharable device, comment out the next line.
+!   (The macro value is not important. We only check for defined or not defined.)
+Exclusive       =
+
+! If any methods or properties use currency, then define "Currency"
+Currency        =
+
+! Supported events. Comment out the unsupported ones.
+!   (The macro values are not important. We only check for defined or not defined.)
+!!EventData       =
+EventDirectIO   =
+EventError      =
+EventOutput     =
+EventStatus     =
+
+! UUIDs. UUIDLibrary is required to be the full GUID.
+!   The others can be specified in full, or a "*" indicates that the bytes 3-4
+!   (hexadecimal chars 5-8) of the UUIDLibrary should be incremented to
+!   form their GUIDs.
+UUIDControl     =0070
+UUIDLibrary     =UUID:@UUIDPre@@UUIDControl@-@UUIDPost@
+UUIDInterface   =UUID*
+UUIDCoclass     =UUID*
+UUIDEvents      =UUID*
+
+! For each version up to the @Version@, list the properties and methods.
+!   If method:
+!     M  = Method.
+!     Release = 1.x
+!     Number = Dispatch ID.
+!     Details = IDL formatted method and parameters, with assumed ", [out] LONG* pRC )" at end.
+!       If usage omitted, assume [in].
+!       Parameter types restricted to BOOL, LONG, CURRENCY, and BSTR.
+!   If parameter:
+!     First char = C for Common (or S for Specific [optional]).
+!     Next one or two chars = R for Readable or W for Writable.
+!     Release = 1.x
+!     Number = Dispatch ID.
+!     Details = Property name followed by type in parentheses.
+!       Type restricted to BOOL, LONG, CURRENCY, and BSTR.
+!     Property Index name without prefix (optional)
+
+:MethodsProperties
+!> Added Property
+ CR  1.3   49 OpenResult(LONG)
+!> Common Properties
+!CRW 1.3   10 AutoDisable(BOOL)
+ CRW 1.3   11 BinaryConversion(LONG)
+ CR  1.3   12 CapPowerReporting(LONG)
+ CR  1.3   13 CheckHealthText(BSTR)
+ CR  1.3   14 Claimed(BOOL)
+!CR  1.3   15 DataCount(LONG)
+!CRW 1.3   16 DataEventEnabled(BOOL)
+ CRW 1.3   17 DeviceEnabled(BOOL)
+ CRW 1.3   18 FreezeEvents(BOOL)
+ CR  1.3   19 OutputID(LONG)
+ CRW 1.3   20 PowerNotify(LONG)
+ CR  1.3   21 PowerState(LONG)
+ CR  1.3   22 ResultCode(LONG)
+ CR  1.3   23 ResultCodeExtended(LONG)
+ CR  1.3   24 State(LONG)
+!
+ CR  1.3   25 ControlObjectDescription(BSTR)
+ CR  1.3   26 ControlObjectVersion(LONG)
+ CR  1.3   27 ServiceObjectDescription(BSTR)
+ CR  1.3   28 ServiceObjectVersion(LONG)
+ CR  1.3   29 DeviceDescription(BSTR)
+ CR  1.3   30 DeviceName(BSTR)
+!     Added in Release 1.8
+ CR  1.8   39 CapStatisticsReporting(BOOL)
+ CR  1.8   40 CapUpdateStatistics(BOOL)
+!     Added in Release 1.9
+ CR  1.9   44 CapCompareFirmwareVersion(BOOL)
+ CR  1.9   45 CapUpdateFirmware(BOOL)
+!
+!> Common Methods
+ M   1.3   31 CheckHealth(LONG Level)
+ M   1.3   32 Claim(LONG Timeout)
+!M   1.3   33 ClearInput()
+ M   1.3   34 ClearOutput()
+ M   1.3   35 Close()
+ M   1.3   36 DirectIO(LONG Command, [in, out] LONG* pData, [in, out] BSTR* pString)
+ M   1.3   37 Open(BSTR DeviceName)
+ M   1.3   38 Release()
+!     Added in Release 1.8
+ M   1.8   41 ResetStatistics(BSTR StatisticsBuffer)
+ M   1.8   42 RetrieveStatistics([in, out] BSTR* pStatisticsBuffer)
+ M   1.8   43 UpdateStatistics(BSTR StatisticsBuffer)
+!     Added in Release 1.9
+ M   1.9   46 CompareFirmwareVersion(BSTR FirmwareFileName, [out] LONG* pResult)
+ M   1.9   47 UpdateFirmware(BSTR FirmwareFileName)
+!     Added in Release 1.10
+!M   1.10  48 ClearInputProperties()
+!
+!> Specific Properties
+!   Deprecated in 1.11: CapAmountNotPaid
+  R  1.6  210 ActualCurrency(LONG)
+  RW 1.6  211 AdditionalHeader(BSTR)
+  RW 1.6  212 AdditionalTrailer(BSTR)
+  R  1.3   50 AmountDecimalPlaces(LONG)
+  RW 1.3   51 AsyncMode(BOOL)
+  R  1.6  213 CapAdditionalHeader(BOOL)
+  R  1.3   52 CapAdditionalLines(BOOL)
+  R  1.6  214 CapAdditionalTrailer(BOOL)
+  R  1.3   53 CapAmountAdjustment(BOOL)
+  R  1.3   54 CapAmountNotPaid(BOOL)
+  R  1.6  215 CapChangeDue(BOOL)
+  R  1.3   55 CapCheckTotal(BOOL)
+  R  1.3   56 CapCoverSensor(BOOL)
+  R  1.3   57 CapDoubleWidth(BOOL)
+  R  1.3   58 CapDuplicateReceipt(BOOL)
+  R  1.6  216 CapEmptyReceiptIsVoidable(BOOL)
+  R  1.6  217 CapFiscalReceiptStation(BOOL)
+  R  1.6  218 CapFiscalReceiptType(BOOL)
+  R  1.3   59 CapFixedOutput(BOOL)
+  R  1.3   60 CapHasVatTable(BOOL)
+  R  1.3   61 CapIndependentHeader(BOOL)
+  R  1.3   62 CapItemList(BOOL)
+  R  1.3   63 CapJrnEmptySensor(BOOL)
+  R  1.3   64 CapJrnNearEndSensor(BOOL)
+  R  1.3   65 CapJrnPresent(BOOL)
+  R  1.6  219 CapMultiContractor(BOOL)
+  R  1.3   66 CapNonFiscalMode(BOOL)
+  R  1.6  220 CapOnlyVoidLastItem(BOOL)
+  R  1.3   67 CapOrderAdjustmentFirst(BOOL)
+  R  1.6  221 CapPackageAdjustment(BOOL)
+  R  1.3   68 CapPercentAdjustment(BOOL)
+  R  1.3   69 CapPositiveAdjustment(BOOL)
+  R  1.11 234 CapPositiveSubtotalAdjustment(BOOL)
+  R  1.6  222 CapPostPreLine(BOOL)
+  R  1.3   70 CapPowerLossReport(BOOL)
+  R  1.3   71 CapPredefinedPaymentLines(BOOL)
+  R  1.3   72 CapReceiptNotPaid(BOOL)
+  R  1.3   73 CapRecEmptySensor(BOOL)
+  R  1.3   74 CapRecNearEndSensor(BOOL)
+  R  1.3   75 CapRecPresent(BOOL)
+  R  1.3   76 CapRemainingFiscalMemory(BOOL)
+  R  1.3   77 CapReservedWord(BOOL)
+  R  1.6  223 CapSetCurrency(BOOL)
+  R  1.3   78 CapSetHeader(BOOL)
+  R  1.3   79 CapSetPOSID(BOOL)
+  R  1.3   80 CapSetStoreFiscalID(BOOL)
+  R  1.3   81 CapSetTrailer(BOOL)
+  R  1.3   82 CapSetVatTable(BOOL)
+  R  1.3   83 CapSlpEmptySensor(BOOL)
+  R  1.3   84 CapSlpFiscalDocument(BOOL)
+  R  1.3   85 CapSlpFullSlip(BOOL)
+  R  1.3   86 CapSlpNearEndSensor(BOOL)
+  R  1.3   87 CapSlpPresent(BOOL)
+  R  1.3   88 CapSlpValidation(BOOL)
+  R  1.3   89 CapSubAmountAdjustment(BOOL)
+  R  1.3   90 CapSubPercentAdjustment(BOOL)
+  R  1.3   91 CapSubtotal(BOOL)
+  R  1.6  224 CapTotalizerType(BOOL)
+  R  1.3   92 CapTrainingMode(BOOL)
+  R  1.3   93 CapValidateJournal(BOOL)
+  R  1.3   94 CapXReport(BOOL)
+  RW 1.6  225 ChangeDue(BSTR)
+  RW 1.3   95 CheckTotal(BOOL)
+  RW 1.6  226 ContractorId(LONG)
+  R  1.3   96 CountryCode(LONG)
+  R  1.3   97 CoverOpen(BOOL)
+  RW 1.6  227 DateType(LONG)
+  R  1.3   98 DayOpened(BOOL)
+  R  1.3   99 DescriptionLength(LONG)
+  RW 1.3  100 DuplicateReceipt(BOOL)
+  R  1.3  101 ErrorLevel(LONG)
+  R  1.3  102 ErrorOutID(LONG)
+  R  1.3  103 ErrorState(LONG)
+  R  1.3  104 ErrorStation(LONG)
+  R  1.3  105 ErrorString(BSTR)
+  RW 1.6  228 FiscalReceiptStation(LONG)
+  RW 1.6  229 FiscalReceiptType(LONG)
+  RW 1.3  106 FlagWhenIdle(BOOL)
+  R  1.3  107 JrnEmpty(BOOL)
+  R  1.3  108 JrnNearEnd(BOOL)
+  R  1.3  109 MessageLength(LONG)
+  RW 1.6  230 MessageType(LONG)
+  R  1.3  110 NumHeaderLines(LONG)
+  R  1.3  111 NumTrailerLines(LONG)
+  R  1.3  112 NumVatRates(LONG)
+  RW 1.6  231 PostLine(BSTR)
+  R  1.3  113 PredefinedPaymentLines(BSTR)
+  RW 1.6  232 PreLine(BSTR)
+  R  1.3  114 PrinterState(LONG)
+  R  1.3  115 QuantityDecimalPlaces(LONG)
+  R  1.3  116 QuantityLength(LONG)
+  R  1.3  117 RecEmpty(BOOL)
+  R  1.3  118 RecNearEnd(BOOL)
+  R  1.3  119 RemainingFiscalMemory(LONG)
+  R  1.3  120 ReservedWord(BSTR)
+  RW 1.3  121 SlipSelection(LONG)
+  R  1.3  122 SlpEmpty(BOOL)
+  R  1.3  123 SlpNearEnd(BOOL)
+  RW 1.6  233 TotalizerType(LONG)
+  R  1.3  124 TrainingModeActive(BOOL)
+!
+!> Specific Methods
+!   Deprecated in 1.11: PrintRecVoidItem
+ M   1.3  140 BeginFiscalDocument(LONG DocumentAmount)
+ M   1.3  141 BeginFiscalReceipt(BOOL PrintHeader)
+ M   1.3  142 BeginFixedOutput(LONG Station, LONG DocumentType)
+ M   1.3  143 BeginInsertion(LONG Timeout)
+ M   1.3  144 BeginItemList(LONG VatID)
+ M   1.3  145 BeginNonFiscal()
+ M   1.3  146 BeginRemoval(LONG Timeout)
+ M   1.3  147 BeginTraining()
+ M   1.3  148 ClearError()
+ M   1.3  149 EndFiscalDocument()
+ M   1.3  150 EndFiscalReceipt(BOOL PrintHeader)
+ M   1.3  151 EndFixedOutput()
+ M   1.3  152 EndInsertion()
+ M   1.3  153 EndItemList()
+ M   1.3  154 EndNonFiscal()
+ M   1.3  155 EndRemoval()
+ M   1.3  156 EndTraining()
+ M   1.3  157 GetData(LONG DataItem, [out] LONG* OptArgs, [out] BSTR* Data)
+ M   1.3  158 GetDate([out] BSTR* Date)
+ M   1.3  159 GetTotalizer(LONG VatID, LONG OptArgs, [out] BSTR* Data)
+ M   1.3  160 GetVatEntry(LONG VatID, LONG OptArgs, [out] LONG* VatRate)
+ M   1.3  161 PrintDuplicateReceipt()
+ M   1.3  162 PrintFiscalDocumentLine(BSTR DocumentLine)
+ M   1.3  163 PrintFixedOutput(LONG DocumentType, LONG LineNumber, BSTR Data)
+ M   1.3  164 PrintNormal(LONG Station, BSTR Data)
+ M   1.3  165 PrintPeriodicTotalsReport(BSTR Date1, BSTR Date2)
+ M   1.3  166 PrintPowerLossReport()
+ M   1.6  189 PrintRecCash(CURRENCY Amount)
+ M   1.3  167 PrintRecItem(BSTR Description, CURRENCY Price, LONG Quantity, LONG VatInfo, CURRENCY UnitPrice, BSTR UnitName)
+ M   1.3  168 PrintRecItemAdjustment(LONG AdjustmentType, BSTR Description, CURRENCY Amount, LONG VatInfo)
+ M   1.11 199 PrintRecItemAdjustmentVoid(LONG AdjustmentType, BSTR Description, CURRENCY Amount, LONG VatInfo)
+ M   1.6  190 PrintRecItemFuel(BSTR Description, CURRENCY Price, LONG Quantity, LONG VatInfo, CURRENCY UnitPrice, BSTR UnitName, CURRENCY SpecialTax, BSTR SpecialTaxName)
+ M   1.6  191 PrintRecItemFuelVoid(BSTR Description, CURRENCY Price, LONG VatInfo, CURRENCY SpecialTax)
+ M   1.12 200 PrintRecItemRefund(BSTR Description, CURRENCY Amount, LONG Quantity, LONG VatInfo, CURRENCY UnitAmount, BSTR UnitName)
+ M   1.12 201 PrintRecItemRefundVoid(BSTR Description, CURRENCY Amount, LONG Quantity, LONG VatInfo, CURRENCY UnitAmount, BSTR UnitName)
+ M   1.11 198 PrintRecItemVoid(BSTR Description, CURRENCY Price, LONG Quantity, LONG VatInfo, CURRENCY UnitPrice, BSTR UnitName)
+ M   1.3  169 PrintRecMessage(BSTR Message)
+ M   1.3  170 PrintRecNotPaid(BSTR Description, CURRENCY Amount)
+ M   1.6  192 PrintRecPackageAdjustment(LONG AdjustmentType, BSTR Description, BSTR VatAdjustment)
+ M   1.6  193 PrintRecPackageAdjustVoid(LONG AdjustmentType, BSTR VatAdjustment)
+ M   1.3  171 PrintRecRefund(BSTR Description, CURRENCY Amount, LONG VatInfo)
+ M   1.6  194 PrintRecRefundVoid(BSTR Description, CURRENCY Amount, LONG VatInfo)
+ M   1.3  172 PrintRecSubtotal(CURRENCY Amount)
+ M   1.3  173 PrintRecSubtotalAdjustment(LONG AdjustmentType, BSTR Description, CURRENCY Amount)
+ M   1.6  195 PrintRecSubtotalAdjustVoid(LONG AdjustmentType, CURRENCY Amount)
+ M   1.6  196 PrintRecTaxID(BSTR TaxID)
+ M   1.3  174 PrintRecTotal(CURRENCY Total, CURRENCY Payment, BSTR Description)
+ M   1.3  175 PrintRecVoid(BSTR Description)
+ M   1.3  176 PrintRecVoidItem(BSTR Description, CURRENCY Amount, LONG Quantity, LONG AdjustmentType, CURRENCY Adjustment, LONG VatInfo)
+ M   1.3  177 PrintReport(LONG ReportType, BSTR StartNum, BSTR EndNum)
+ M   1.3  178 PrintXReport()
+ M   1.3  179 PrintZReport()
+ M   1.3  180 ResetPrinter()
+ M   1.6  197 SetCurrency(LONG NewCurrency)
+ M   1.3  181 SetDate(BSTR Date)
+ M   1.3  182 SetHeaderLine(LONG LineNumber, BSTR Text, BOOL DoubleWidth)
+ M   1.3  183 SetPOSID(BSTR POSID, BSTR CashierID)
+ M   1.3  184 SetStoreFiscalID(BSTR ID)
+ M   1.3  185 SetTrailerLine(LONG LineNumber, BSTR Text, BOOL DoubleWidth)
+ M   1.3  186 SetVatTable()
+ M   1.3  187 SetVatValue(LONG VatID, BSTR VatValue)
+ M   1.3  188 VerifyItem(BSTR ItemName, LONG VatID)
+
+!!End

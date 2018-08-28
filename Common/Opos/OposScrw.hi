@@ -1,0 +1,55 @@
+/////////////////////////////////////////////////////////////////////
+//
+// OposScrw.hi
+//
+//   Smart Card Reader Writer  header file for OPOS Controls and
+//   Service Objects.
+//
+// Modification history
+// ------------------------------------------------------------------
+// 2004-03-22 OPOS Release 1.8                                   CRM
+// 2005-04-29 OPOS Release 1.9                                   CRM
+//   Remove validation functions.
+//
+/////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSSCRW_HI)
+#define      OPOSSCRW_HI
+
+
+#include "Opos.hi"
+#include "OposScrw.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXScrw_InterfaceMode           =   1 + PIDX_SCRW+PIDX_NUMBER;
+const LONG PIDXScrw_IsoEmvMode              =   2 + PIDX_SCRW+PIDX_NUMBER;
+const LONG PIDXScrw_SCPresentSensor         =   3 + PIDX_SCRW+PIDX_NUMBER;
+const LONG PIDXScrw_SCSlot                  =   4 + PIDX_SCRW+PIDX_NUMBER;
+const LONG PIDXScrw_TransactionInProgress   =   5 + PIDX_SCRW+PIDX_NUMBER;
+const LONG PIDXScrw_TransmissionProtocol    =   6 + PIDX_SCRW+PIDX_NUMBER;
+
+
+// * Capabilities *
+
+const LONG PIDXScrw_CapCardErrorDetection   = 501 + PIDX_SCRW+PIDX_NUMBER;
+const LONG PIDXScrw_CapInterfaceMode        = 502 + PIDX_SCRW+PIDX_NUMBER;
+const LONG PIDXScrw_CapIsoEmvMode           = 503 + PIDX_SCRW+PIDX_NUMBER;
+const LONG PIDXScrw_CapSCPresentSensor      = 504 + PIDX_SCRW+PIDX_NUMBER;
+const LONG PIDXScrw_CapSCSlots              = 505 + PIDX_SCRW+PIDX_NUMBER;
+const LONG PIDXScrw_CapTransmissionProtocol = 506 + PIDX_SCRW+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+
+#endif          // !defined(OPOSSCRW_HI)

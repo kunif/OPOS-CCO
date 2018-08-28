@@ -1,0 +1,52 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposKbd.hi
+//
+//   POS Keyboard header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 1996-04-22 OPOS Release 1.1                                   CRM
+// 1997-06-04 OPOS Release 1.2                                   CRM
+//   Add the following properties:
+//     CapKeyUp, EventTypes, POSKeyEventType
+// 2005-04-29 OPOS Release 1.9                                   CRM
+//   Remove validation functions.
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSKBD_HI)
+#define      OPOSKBD_HI
+
+
+#include "Opos.hi"
+#include "OposKbd.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXKbd_POSKeyData          =   1 + PIDX_KBD+PIDX_NUMBER;
+
+//      Added for Release 1.2:
+const LONG PIDXKbd_EventTypes          =   2 + PIDX_KBD+PIDX_NUMBER;
+const LONG PIDXKbd_POSKeyEventType     =   3 + PIDX_KBD+PIDX_NUMBER;
+
+
+// * Capabilities *
+
+//      Added for Release 1.2:
+const LONG PIDXKbd_CapKeyUp            = 501 + PIDX_KBD+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+
+#endif          // !defined(OPOSKBD_HI)

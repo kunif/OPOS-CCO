@@ -1,0 +1,97 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposEvrw.hi
+//
+//   Electronic Value Reader Writer header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 2008-08-30 OPOS Release 1.12                                  CRM
+// 2013-10-03 OPOS Release 1.14                                  CRM
+//   Add the following properties:
+//     CapPINDevice, CapTrainingMode, PINEntry,
+//     TrainingModeState
+// 2015-02-07 OPOS Release 1.14.1                                CRM
+//   Add the following properties:
+//     CapMembershipCertificate, ServiceType
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSEVRW_HI)
+#define      OPOSEVRW_HI
+
+
+#include "Opos.hi"
+#include "OposEvrw.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXEvrw_AsyncMode                       =   1 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_DetectionControl                =   2 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_DetectionStatus                 =   3 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_LogStatus                       =   4 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_SequenceNumber                  =   5 + PIDX_EVRW+PIDX_NUMBER;
+
+//      Added for Release 1.14:
+const LONG PIDXEvrw_PINEntry                        =   6 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_TrainingModeState               =   7 + PIDX_EVRW+PIDX_NUMBER;
+
+//      Added for Release 1.14.1:
+const LONG PIDXEvrw_ServiceType                     =   8 + PIDX_EVRW+PIDX_NUMBER;
+
+// * Capabilities *
+
+const LONG PIDXEvrw_CapActivateService              = 501 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapAddValue                     = 502 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapCancelValue                  = 503 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapCardSensor                   = 504 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapDetectionControl             = 505 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapElectronicMoney              = 506 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapEnumerateCardServices        = 507 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapIndirectTransactionLog       = 508 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapLockTerminal                 = 509 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapLogStatus                    = 510 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapMediumID                     = 511 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapPoint                        = 512 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapSubtractValue                = 513 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapTransaction                  = 514 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapTransactionLog               = 515 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapUnlockTerminal               = 516 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapUpdateKey                    = 517 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapVoucher                      = 518 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapWriteValue                   = 519 + PIDX_EVRW+PIDX_NUMBER;
+
+//      Added for Release 1.14:
+const LONG PIDXEvrw_CapPINDevice                    = 520 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapTrainingMode                 = 521 + PIDX_EVRW+PIDX_NUMBER;
+
+//      Added for Release 1.14.1:
+const LONG PIDXEvrw_CapMembershipCertificate        = 522 + PIDX_EVRW+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXEvrw_AccountNumber                   =   1 + PIDX_EVRW+PIDX_STRING;
+const LONG PIDXEvrw_AdditionalSecurityInformation   =   2 + PIDX_EVRW+PIDX_STRING;
+const LONG PIDXEvrw_ApprovalCode                    =   3 + PIDX_EVRW+PIDX_STRING;
+const LONG PIDXEvrw_CardServiceList                 =   4 + PIDX_EVRW+PIDX_STRING;
+const LONG PIDXEvrw_CurrentService                  =   5 + PIDX_EVRW+PIDX_STRING;
+const LONG PIDXEvrw_ExpirationDate                  =   6 + PIDX_EVRW+PIDX_STRING;
+const LONG PIDXEvrw_LastUsedDate                    =   7 + PIDX_EVRW+PIDX_STRING;
+const LONG PIDXEvrw_MediumID                        =   8 + PIDX_EVRW+PIDX_STRING;
+const LONG PIDXEvrw_ReaderWriterServiceList         =   9 + PIDX_EVRW+PIDX_STRING;
+const LONG PIDXEvrw_TransactionLog                  =  10 + PIDX_EVRW+PIDX_STRING;
+const LONG PIDXEvrw_VoucherID                       =  11 + PIDX_EVRW+PIDX_STRING;
+const LONG PIDXEvrw_VoucherIDList                   =  12 + PIDX_EVRW+PIDX_STRING;
+
+
+#endif          // !defined(OPOSEVRW_HI)

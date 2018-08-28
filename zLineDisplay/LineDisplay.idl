@@ -1,0 +1,479 @@
+/****************************************************************************
+**
+** LineDisplay.idl -- IDL source for LineDisplay.ocx
+**
+**     Date                   Modification                          Author
+** -----------|----------------------------------------------------|----------
+**  1999/03/20 Initial version.                                     C. Monroe
+**  2008/01/15 Enhance for independent interfaces.
+**  2008/08/30 More interface updates.
+**  2013/09/29 Update license section.
+**  2015/02/07 Update license section.
+**  2015/02/07 Version 1.14.001.
+**
+*****************************************************************************
+**
+{{Begin License}}
+
+Copyright 2015 Monroe Consulting Services, Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+{{End License}}
+*/
+
+// This file will be processed by the MIDL tool to
+// produce the type library (LineDisplay.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+#include "olectl.h"
+
+
+///////////////////////////////////////////////////////////////////////////////
+//// Interfaces
+///////////////////////////////////////////////////////////////////////////////
+
+// Separate Dependent Interfaces implementation:
+//  - First interface with the APIs defined from original through that release.
+//  - Later interfaces derive from previous and add their releases' new APIs.
+//  - Current interface derives from previous and adds its release's new APIs.
+
+//
+//========== Previous Interface: 1.6 ==========
+//
+
+    [
+        object,
+        uuid(CCB92101-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSLineDisplay 1.6 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSLineDisplay_1_6 : IDispatch
+    {
+    // Methods for use only by the Service Object
+        [id(1), hidden, helpstring("method SODataDummy")] HRESULT SODataDummy( [in] long Status );
+        [id(2), hidden, helpstring("method SODirectIO")] HRESULT SODirectIO( [in] long EventNumber, [in, out] long* pData, [in, out] BSTR* pString );
+        [id(3), hidden, helpstring("method SOErrorDummy")] HRESULT SOErrorDummy( [in] long ResultCode, [in] long ResultCodeExtended, [in] long ErrorLocus, [in, out] long* pErrorResponse );
+        [id(4), hidden, helpstring("method SOOutputCompleteDummy")] HRESULT SOOutputCompleteDummy( [in] long OutputID );
+        [id(5), hidden, helpstring("method SOStatusUpdate")] HRESULT SOStatusUpdate( [in] long Data );
+        [id(9), hidden, helpstring("method SOProcessID")] HRESULT SOProcessID( [out, retval] long* pProcessID );
+    // Release 1.0
+        [propget, id(49), helpstring("property OpenResult")]
+        HRESULT OpenResult( [out, retval] long* pOpenResult );
+        [propget, id(13), helpstring("property CheckHealthText")]
+        HRESULT CheckHealthText( [out, retval] BSTR* pCheckHealthText );
+        [propget, id(14), helpstring("property Claimed")]
+        HRESULT Claimed( [out, retval] VARIANT_BOOL* pClaimed );
+        [propget, id(17), helpstring("property DeviceEnabled")]
+        HRESULT DeviceEnabled( [out, retval] VARIANT_BOOL* pDeviceEnabled );
+        [propput, id(17), helpstring("property DeviceEnabled")]
+        HRESULT DeviceEnabled( [in] VARIANT_BOOL DeviceEnabled );
+        [propget, id(18), helpstring("property FreezeEvents")]
+        HRESULT FreezeEvents( [out, retval] VARIANT_BOOL* pFreezeEvents );
+        [propput, id(18), helpstring("property FreezeEvents")]
+        HRESULT FreezeEvents( [in] VARIANT_BOOL FreezeEvents );
+        [propget, id(22), helpstring("property ResultCode")]
+        HRESULT ResultCode( [out, retval] long* pResultCode );
+        [propget, id(23), helpstring("property ResultCodeExtended")]
+        HRESULT ResultCodeExtended( [out, retval] long* pResultCodeExtended );
+        [propget, id(24), helpstring("property State")]
+        HRESULT State( [out, retval] long* pState );
+        [propget, id(25), helpstring("property ControlObjectDescription")]
+        HRESULT ControlObjectDescription( [out, retval] BSTR* pControlObjectDescription );
+        [propget, id(26), helpstring("property ControlObjectVersion")]
+        HRESULT ControlObjectVersion( [out, retval] long* pControlObjectVersion );
+        [propget, id(27), helpstring("property ServiceObjectDescription")]
+        HRESULT ServiceObjectDescription( [out, retval] BSTR* pServiceObjectDescription );
+        [propget, id(28), helpstring("property ServiceObjectVersion")]
+        HRESULT ServiceObjectVersion( [out, retval] long* pServiceObjectVersion );
+        [propget, id(29), helpstring("property DeviceDescription")]
+        HRESULT DeviceDescription( [out, retval] BSTR* pDeviceDescription );
+        [propget, id(30), helpstring("property DeviceName")]
+        HRESULT DeviceName( [out, retval] BSTR* pDeviceName );
+        [id(31), helpstring("method CheckHealth")]
+        HRESULT CheckHealth( 
+            [in] long Level, 
+            [out, retval] long* pRC );
+        [id(32), helpstring("method ClaimDevice")]
+        HRESULT ClaimDevice( 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(35), helpstring("method Close")]
+        HRESULT Close( 
+            [out, retval] long* pRC );
+        [id(36), helpstring("method DirectIO")]
+        HRESULT DirectIO( 
+            [in] long Command, 
+            [in, out] long* pData, 
+            [in, out] BSTR* pString, 
+            [out, retval] long* pRC );
+        [id(37), helpstring("method Open")]
+        HRESULT Open( 
+            [in] BSTR DeviceName, 
+            [out, retval] long* pRC );
+        [id(38), helpstring("method ReleaseDevice")]
+        HRESULT ReleaseDevice( 
+            [out, retval] long* pRC );
+        [propget, id(50), helpstring("property CapBlink")]
+        HRESULT CapBlink( [out, retval] long* pCapBlink );
+        [propget, id(51), helpstring("property CapBrightness")]
+        HRESULT CapBrightness( [out, retval] VARIANT_BOOL* pCapBrightness );
+        [propget, id(52), helpstring("property CapCharacterSet")]
+        HRESULT CapCharacterSet( [out, retval] long* pCapCharacterSet );
+        [propget, id(53), helpstring("property CapDescriptors")]
+        HRESULT CapDescriptors( [out, retval] VARIANT_BOOL* pCapDescriptors );
+        [propget, id(54), helpstring("property CapHMarquee")]
+        HRESULT CapHMarquee( [out, retval] VARIANT_BOOL* pCapHMarquee );
+        [propget, id(55), helpstring("property CapICharWait")]
+        HRESULT CapICharWait( [out, retval] VARIANT_BOOL* pCapICharWait );
+        [propget, id(56), helpstring("property CapVMarquee")]
+        HRESULT CapVMarquee( [out, retval] VARIANT_BOOL* pCapVMarquee );
+        [propget, id(57), helpstring("property CharacterSet")]
+        HRESULT CharacterSet( [out, retval] long* pCharacterSet );
+        [propput, id(57), helpstring("property CharacterSet")]
+        HRESULT CharacterSet( [in] long CharacterSet );
+        [propget, id(58), helpstring("property CharacterSetList")]
+        HRESULT CharacterSetList( [out, retval] BSTR* pCharacterSetList );
+        [propget, id(59), helpstring("property Columns")]
+        HRESULT Columns( [out, retval] long* pColumns );
+        [propget, id(60), helpstring("property CurrentWindow")]
+        HRESULT CurrentWindow( [out, retval] long* pCurrentWindow );
+        [propput, id(60), helpstring("property CurrentWindow")]
+        HRESULT CurrentWindow( [in] long CurrentWindow );
+        [propget, id(61), helpstring("property CursorColumn")]
+        HRESULT CursorColumn( [out, retval] long* pCursorColumn );
+        [propput, id(61), helpstring("property CursorColumn")]
+        HRESULT CursorColumn( [in] long CursorColumn );
+        [propget, id(62), helpstring("property CursorRow")]
+        HRESULT CursorRow( [out, retval] long* pCursorRow );
+        [propput, id(62), helpstring("property CursorRow")]
+        HRESULT CursorRow( [in] long CursorRow );
+        [propget, id(63), helpstring("property CursorUpdate")]
+        HRESULT CursorUpdate( [out, retval] VARIANT_BOOL* pCursorUpdate );
+        [propput, id(63), helpstring("property CursorUpdate")]
+        HRESULT CursorUpdate( [in] VARIANT_BOOL CursorUpdate );
+        [propget, id(64), helpstring("property DeviceBrightness")]
+        HRESULT DeviceBrightness( [out, retval] long* pDeviceBrightness );
+        [propput, id(64), helpstring("property DeviceBrightness")]
+        HRESULT DeviceBrightness( [in] long DeviceBrightness );
+        [propget, id(65), helpstring("property DeviceColumns")]
+        HRESULT DeviceColumns( [out, retval] long* pDeviceColumns );
+        [propget, id(66), helpstring("property DeviceDescriptors")]
+        HRESULT DeviceDescriptors( [out, retval] long* pDeviceDescriptors );
+        [propget, id(67), helpstring("property DeviceRows")]
+        HRESULT DeviceRows( [out, retval] long* pDeviceRows );
+        [propget, id(68), helpstring("property DeviceWindows")]
+        HRESULT DeviceWindows( [out, retval] long* pDeviceWindows );
+        [propget, id(69), helpstring("property InterCharacterWait")]
+        HRESULT InterCharacterWait( [out, retval] long* pInterCharacterWait );
+        [propput, id(69), helpstring("property InterCharacterWait")]
+        HRESULT InterCharacterWait( [in] long InterCharacterWait );
+        [propget, id(70), helpstring("property MarqueeFormat")]
+        HRESULT MarqueeFormat( [out, retval] long* pMarqueeFormat );
+        [propput, id(70), helpstring("property MarqueeFormat")]
+        HRESULT MarqueeFormat( [in] long MarqueeFormat );
+        [propget, id(71), helpstring("property MarqueeRepeatWait")]
+        HRESULT MarqueeRepeatWait( [out, retval] long* pMarqueeRepeatWait );
+        [propput, id(71), helpstring("property MarqueeRepeatWait")]
+        HRESULT MarqueeRepeatWait( [in] long MarqueeRepeatWait );
+        [propget, id(72), helpstring("property MarqueeType")]
+        HRESULT MarqueeType( [out, retval] long* pMarqueeType );
+        [propput, id(72), helpstring("property MarqueeType")]
+        HRESULT MarqueeType( [in] long MarqueeType );
+        [propget, id(73), helpstring("property MarqueeUnitWait")]
+        HRESULT MarqueeUnitWait( [out, retval] long* pMarqueeUnitWait );
+        [propput, id(73), helpstring("property MarqueeUnitWait")]
+        HRESULT MarqueeUnitWait( [in] long MarqueeUnitWait );
+        [propget, id(74), helpstring("property Rows")]
+        HRESULT Rows( [out, retval] long* pRows );
+        [id(80), helpstring("method ClearDescriptors")]
+        HRESULT ClearDescriptors( 
+            [out, retval] long* pRC );
+        [id(81), helpstring("method ClearText")]
+        HRESULT ClearText( 
+            [out, retval] long* pRC );
+        [id(82), helpstring("method CreateWindow")]
+        HRESULT CreateWindow( 
+            [in] long ViewportRow, 
+            [in] long ViewportColumn, 
+            [in] long ViewportHeight, 
+            [in] long ViewportWidth, 
+            [in] long WindowHeight, 
+            [in] long WindowWidth, 
+            [out, retval] long* pRC );
+        [id(83), helpstring("method DestroyWindow")]
+        HRESULT DestroyWindow( 
+            [out, retval] long* pRC );
+        [id(84), helpstring("method DisplayText")]
+        HRESULT DisplayText( 
+            [in] BSTR Data, 
+            [in] long Attribute, 
+            [out, retval] long* pRC );
+        [id(85), helpstring("method DisplayTextAt")]
+        HRESULT DisplayTextAt( 
+            [in] long Row, 
+            [in] long Column, 
+            [in] BSTR Data, 
+            [in] long Attribute, 
+            [out, retval] long* pRC );
+        [id(86), helpstring("method RefreshWindow")]
+        HRESULT RefreshWindow( 
+            [in] long Window, 
+            [out, retval] long* pRC );
+        [id(87), helpstring("method ScrollText")]
+        HRESULT ScrollText( 
+            [in] long Direction, 
+            [in] long Units, 
+            [out, retval] long* pRC );
+        [id(88), helpstring("method SetDescriptor")]
+        HRESULT SetDescriptor( 
+            [in] long Descriptor, 
+            [in] long Attribute, 
+            [out, retval] long* pRC );
+    // Release 1.1
+    // Release 1.2
+        [propget, id(11), helpstring("property BinaryConversion")]
+        HRESULT BinaryConversion( [out, retval] long* pBinaryConversion );
+        [propput, id(11), helpstring("property BinaryConversion")]
+        HRESULT BinaryConversion( [in] long BinaryConversion );
+    // Release 1.3
+        [propget, id(12), helpstring("property CapPowerReporting")]
+        HRESULT CapPowerReporting( [out, retval] long* pCapPowerReporting );
+        [propget, id(20), helpstring("property PowerNotify")]
+        HRESULT PowerNotify( [out, retval] long* pPowerNotify );
+        [propput, id(20), helpstring("property PowerNotify")]
+        HRESULT PowerNotify( [in] long PowerNotify );
+        [propget, id(21), helpstring("property PowerState")]
+        HRESULT PowerState( [out, retval] long* pPowerState );
+    // Release 1.4
+    // Release 1.5
+    // Release 1.6
+        [propget, id(100), helpstring("property BlinkRate")]
+        HRESULT BlinkRate( [out, retval] long* pBlinkRate );
+        [propput, id(100), helpstring("property BlinkRate")]
+        HRESULT BlinkRate( [in] long BlinkRate );
+        [propget, id(101), helpstring("property CapBlinkRate")]
+        HRESULT CapBlinkRate( [out, retval] VARIANT_BOOL* pCapBlinkRate );
+        [propget, id(102), helpstring("property CapCursorType")]
+        HRESULT CapCursorType( [out, retval] long* pCapCursorType );
+        [propget, id(103), helpstring("property CapCustomGlyph")]
+        HRESULT CapCustomGlyph( [out, retval] VARIANT_BOOL* pCapCustomGlyph );
+        [propget, id(104), helpstring("property CapReadBack")]
+        HRESULT CapReadBack( [out, retval] long* pCapReadBack );
+        [propget, id(105), helpstring("property CapReverse")]
+        HRESULT CapReverse( [out, retval] long* pCapReverse );
+        [propget, id(106), helpstring("property CursorType")]
+        HRESULT CursorType( [out, retval] long* pCursorType );
+        [propput, id(106), helpstring("property CursorType")]
+        HRESULT CursorType( [in] long CursorType );
+        [propget, id(107), helpstring("property CustomGlyphList")]
+        HRESULT CustomGlyphList( [out, retval] BSTR* pCustomGlyphList );
+        [propget, id(108), helpstring("property GlyphHeight")]
+        HRESULT GlyphHeight( [out, retval] long* pGlyphHeight );
+        [propget, id(109), helpstring("property GlyphWidth")]
+        HRESULT GlyphWidth( [out, retval] long* pGlyphWidth );
+        [id(89), helpstring("method DefineGlyph")]
+        HRESULT DefineGlyph( 
+            [in] long GlyphCode, 
+            [in] BSTR Glyph, 
+            [out, retval] long* pRC );
+        [id(90), helpstring("method ReadCharacterAtCursor")]
+        HRESULT ReadCharacterAtCursor( 
+            [out] long* pChar, 
+            [out, retval] long* pRC );
+    };
+
+//
+//========== Previous Interface: 1.7 ==========
+//
+
+    [
+        object,
+        uuid(CCB93101-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSLineDisplay 1.7 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSLineDisplay_1_7 : IOPOSLineDisplay_1_6
+    {
+    // Release 1.7
+        [propget, id(110), helpstring("property CapBitmap")]
+        HRESULT CapBitmap( [out, retval] VARIANT_BOOL* pCapBitmap );
+        [propget, id(111), helpstring("property CapMapCharacterSet")]
+        HRESULT CapMapCharacterSet( [out, retval] VARIANT_BOOL* pCapMapCharacterSet );
+        [propget, id(112), helpstring("property CapScreenMode")]
+        HRESULT CapScreenMode( [out, retval] VARIANT_BOOL* pCapScreenMode );
+        [propget, id(113), helpstring("property MapCharacterSet")]
+        HRESULT MapCharacterSet( [out, retval] VARIANT_BOOL* pMapCharacterSet );
+        [propput, id(113), helpstring("property MapCharacterSet")]
+        HRESULT MapCharacterSet( [in] VARIANT_BOOL MapCharacterSet );
+        [propget, id(114), helpstring("property MaximumX")]
+        HRESULT MaximumX( [out, retval] long* pMaximumX );
+        [propget, id(115), helpstring("property MaximumY")]
+        HRESULT MaximumY( [out, retval] long* pMaximumY );
+        [propget, id(116), helpstring("property ScreenMode")]
+        HRESULT ScreenMode( [out, retval] long* pScreenMode );
+        [propput, id(116), helpstring("property ScreenMode")]
+        HRESULT ScreenMode( [in] long ScreenMode );
+        [propget, id(117), helpstring("property ScreenModeList")]
+        HRESULT ScreenModeList( [out, retval] BSTR* pScreenModeList );
+        [id(91), helpstring("method DisplayBitmap")]
+        HRESULT DisplayBitmap( 
+            [in] BSTR FileName, 
+            [in] long Width, 
+            [in] long AlignmentX, 
+            [in] long AlignmentY, 
+            [out, retval] long* pRC );
+        [id(92), helpstring("method SetBitmap")]
+        HRESULT SetBitmap( 
+            [in] long BitmapNumber, 
+            [in] BSTR FileName, 
+            [in] long Width, 
+            [in] long AlignmentX, 
+            [in] long AlignmentY, 
+            [out, retval] long* pRC );
+    };
+
+//
+//========== Previous Interface: 1.8 ==========
+//
+
+    [
+        object,
+        uuid(CCB94101-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSLineDisplay 1.8 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSLineDisplay_1_8 : IOPOSLineDisplay_1_7
+    {
+    // Release 1.8
+        [propget, id(39), helpstring("property CapStatisticsReporting")]
+        HRESULT CapStatisticsReporting( [out, retval] VARIANT_BOOL* pCapStatisticsReporting );
+        [propget, id(40), helpstring("property CapUpdateStatistics")]
+        HRESULT CapUpdateStatistics( [out, retval] VARIANT_BOOL* pCapUpdateStatistics );
+        [id(41), helpstring("method ResetStatistics")]
+        HRESULT ResetStatistics( 
+            [in] BSTR StatisticsBuffer, 
+            [out, retval] long* pRC );
+        [id(42), helpstring("method RetrieveStatistics")]
+        HRESULT RetrieveStatistics( 
+            [in, out] BSTR* pStatisticsBuffer, 
+            [out, retval] long* pRC );
+        [id(43), helpstring("method UpdateStatistics")]
+        HRESULT UpdateStatistics( 
+            [in] BSTR StatisticsBuffer, 
+            [out, retval] long* pRC );
+    };
+
+//
+//========== Current Interface: 1.9 ==========
+//
+
+    [
+        object,
+        uuid(CCB95101-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSLineDisplay 1.9 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSLineDisplay_1_9 : IOPOSLineDisplay_1_8
+    {
+    // Release 1.9
+        [propget, id(44), helpstring("property CapCompareFirmwareVersion")]
+        HRESULT CapCompareFirmwareVersion( [out, retval] VARIANT_BOOL* pCapCompareFirmwareVersion );
+        [propget, id(45), helpstring("property CapUpdateFirmware")]
+        HRESULT CapUpdateFirmware( [out, retval] VARIANT_BOOL* pCapUpdateFirmware );
+        [id(46), helpstring("method CompareFirmwareVersion")]
+        HRESULT CompareFirmwareVersion( 
+            [in] BSTR FirmwareFileName, 
+            [out] long* pResult, 
+            [out, retval] long* pRC );
+        [id(47), helpstring("method UpdateFirmware")]
+        HRESULT UpdateFirmware( 
+            [in] BSTR FirmwareFileName, 
+            [out, retval] long* pRC );
+    // Release 1.10
+    // Release 1.11
+    // Release 1.12
+    // Release 1.13
+    // Release 1.14
+    };
+
+//
+//---------- IOPOSLineDisplay Interface: Invariant Name ----------
+//
+    [
+        object,
+        uuid(CCB96101-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSLineDisplay Current Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSLineDisplay : IOPOSLineDisplay_1_9
+    {
+    };
+
+
+///////////////////////////////////////////////////////////////////////////////
+//// Library
+///////////////////////////////////////////////////////////////////////////////
+
+[
+    uuid(CCB90100-B81E-11D2-AB74-0040054C3719),
+    version(1.0),
+    helpstring("OPOS LineDisplay Control 1.14.001 [Public, by CRM/MCS]")
+]
+library OposLineDisplay_CCO
+{
+    importlib("stdole32.tlb");
+    importlib("stdole2.tlb");
+
+    //*************************************************************************
+    //** Event interface
+    //*************************************************************************
+    [
+        uuid(CCB90103-B81E-11D2-AB74-0040054C3719),
+        helpstring("_IOPOSLineDisplayEvents Interface")
+    ]
+    dispinterface _IOPOSLineDisplayEvents
+    {
+        properties:
+        methods:
+        [id(2), helpstring("method DirectIOEvent")]
+            void DirectIOEvent( [in] long EventNumber, [in, out] long *pData, [in, out] BSTR *pString );
+        [id(5), helpstring("method StatusUpdateEvent")]
+            void StatusUpdateEvent( [in] long Data );
+    };
+
+    //*************************************************************************
+    //** COM Class
+    //*************************************************************************
+    [
+        uuid(CCB90102-B81E-11D2-AB74-0040054C3719),
+        helpstring("OPOS LineDisplay Control 1.14.001 [Public, by CRM/MCS]")
+    ]
+    coclass OPOSLineDisplay
+    {
+        [default] interface IOPOSLineDisplay;
+        interface IOPOSLineDisplay_1_9;
+        interface IOPOSLineDisplay_1_8;
+        interface IOPOSLineDisplay_1_7;
+        interface IOPOSLineDisplay_1_6;
+        [default, source] dispinterface _IOPOSLineDisplayEvents;
+    };
+};
+
+// End LineDisplay.idl

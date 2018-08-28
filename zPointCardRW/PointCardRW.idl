@@ -1,0 +1,501 @@
+/****************************************************************************
+**
+** PointCardRW.idl -- IDL source for PointCardRW.ocx
+**
+**     Date                   Modification                          Author
+** -----------|----------------------------------------------------|----------
+**  1999/03/20 Initial version.                                     C. Monroe
+**  2008/01/15 Enhance for independent interfaces.
+**  2008/08/30 More interface updates.
+**  2013/09/29 Update license section.
+**  2015/02/07 Update license section.
+**  2015/02/07 Version 1.14.001.
+**
+*****************************************************************************
+**
+{{Begin License}}
+
+Copyright 2015 Monroe Consulting Services, Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+{{End License}}
+*/
+
+// This file will be processed by the MIDL tool to
+// produce the type library (PointCardRW.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+#include "olectl.h"
+
+
+///////////////////////////////////////////////////////////////////////////////
+//// Interfaces
+///////////////////////////////////////////////////////////////////////////////
+
+// Separate Dependent Interfaces implementation:
+//  - First interface with the APIs defined from original through that release.
+//  - Later interfaces derive from previous and add their releases' new APIs.
+//  - Current interface derives from previous and adds its release's new APIs.
+
+//
+//========== Previous Interface: 1.5 ==========
+//
+
+    [
+        object,
+        uuid(CCB91211-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSPointCardRW 1.5 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSPointCardRW_1_5 : IDispatch
+    {
+    // Methods for use only by the Service Object
+        [id(1), hidden, helpstring("method SOData")] HRESULT SOData( [in] long Status );
+        [id(2), hidden, helpstring("method SODirectIO")] HRESULT SODirectIO( [in] long EventNumber, [in, out] long* pData, [in, out] BSTR* pString );
+        [id(3), hidden, helpstring("method SOError")] HRESULT SOError( [in] long ResultCode, [in] long ResultCodeExtended, [in] long ErrorLocus, [in, out] long* pErrorResponse );
+        [id(4), hidden, helpstring("method SOOutputComplete")] HRESULT SOOutputComplete( [in] long OutputID );
+        [id(5), hidden, helpstring("method SOStatusUpdate")] HRESULT SOStatusUpdate( [in] long Data );
+        [id(9), hidden, helpstring("method SOProcessID")] HRESULT SOProcessID( [out, retval] long* pProcessID );
+    // Release 1.5
+        [propget, id(49), helpstring("property OpenResult")]
+        HRESULT OpenResult( [out, retval] long* pOpenResult );
+        [propget, id(11), helpstring("property BinaryConversion")]
+        HRESULT BinaryConversion( [out, retval] long* pBinaryConversion );
+        [propput, id(11), helpstring("property BinaryConversion")]
+        HRESULT BinaryConversion( [in] long BinaryConversion );
+        [propget, id(12), helpstring("property CapPowerReporting")]
+        HRESULT CapPowerReporting( [out, retval] long* pCapPowerReporting );
+        [propget, id(13), helpstring("property CheckHealthText")]
+        HRESULT CheckHealthText( [out, retval] BSTR* pCheckHealthText );
+        [propget, id(14), helpstring("property Claimed")]
+        HRESULT Claimed( [out, retval] VARIANT_BOOL* pClaimed );
+        [propget, id(15), helpstring("property DataCount")]
+        HRESULT DataCount( [out, retval] long* pDataCount );
+        [propget, id(16), helpstring("property DataEventEnabled")]
+        HRESULT DataEventEnabled( [out, retval] VARIANT_BOOL* pDataEventEnabled );
+        [propput, id(16), helpstring("property DataEventEnabled")]
+        HRESULT DataEventEnabled( [in] VARIANT_BOOL DataEventEnabled );
+        [propget, id(17), helpstring("property DeviceEnabled")]
+        HRESULT DeviceEnabled( [out, retval] VARIANT_BOOL* pDeviceEnabled );
+        [propput, id(17), helpstring("property DeviceEnabled")]
+        HRESULT DeviceEnabled( [in] VARIANT_BOOL DeviceEnabled );
+        [propget, id(18), helpstring("property FreezeEvents")]
+        HRESULT FreezeEvents( [out, retval] VARIANT_BOOL* pFreezeEvents );
+        [propput, id(18), helpstring("property FreezeEvents")]
+        HRESULT FreezeEvents( [in] VARIANT_BOOL FreezeEvents );
+        [propget, id(19), helpstring("property OutputID")]
+        HRESULT OutputID( [out, retval] long* pOutputID );
+        [propget, id(20), helpstring("property PowerNotify")]
+        HRESULT PowerNotify( [out, retval] long* pPowerNotify );
+        [propput, id(20), helpstring("property PowerNotify")]
+        HRESULT PowerNotify( [in] long PowerNotify );
+        [propget, id(21), helpstring("property PowerState")]
+        HRESULT PowerState( [out, retval] long* pPowerState );
+        [propget, id(22), helpstring("property ResultCode")]
+        HRESULT ResultCode( [out, retval] long* pResultCode );
+        [propget, id(23), helpstring("property ResultCodeExtended")]
+        HRESULT ResultCodeExtended( [out, retval] long* pResultCodeExtended );
+        [propget, id(24), helpstring("property State")]
+        HRESULT State( [out, retval] long* pState );
+        [propget, id(25), helpstring("property ControlObjectDescription")]
+        HRESULT ControlObjectDescription( [out, retval] BSTR* pControlObjectDescription );
+        [propget, id(26), helpstring("property ControlObjectVersion")]
+        HRESULT ControlObjectVersion( [out, retval] long* pControlObjectVersion );
+        [propget, id(27), helpstring("property ServiceObjectDescription")]
+        HRESULT ServiceObjectDescription( [out, retval] BSTR* pServiceObjectDescription );
+        [propget, id(28), helpstring("property ServiceObjectVersion")]
+        HRESULT ServiceObjectVersion( [out, retval] long* pServiceObjectVersion );
+        [propget, id(29), helpstring("property DeviceDescription")]
+        HRESULT DeviceDescription( [out, retval] BSTR* pDeviceDescription );
+        [propget, id(30), helpstring("property DeviceName")]
+        HRESULT DeviceName( [out, retval] BSTR* pDeviceName );
+        [id(31), helpstring("method CheckHealth")]
+        HRESULT CheckHealth( 
+            [in] long Level, 
+            [out, retval] long* pRC );
+        [id(32), helpstring("method ClaimDevice")]
+        HRESULT ClaimDevice( 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(33), helpstring("method ClearInput")]
+        HRESULT ClearInput( 
+            [out, retval] long* pRC );
+        [id(34), helpstring("method ClearOutput")]
+        HRESULT ClearOutput( 
+            [out, retval] long* pRC );
+        [id(35), helpstring("method Close")]
+        HRESULT Close( 
+            [out, retval] long* pRC );
+        [id(36), helpstring("method DirectIO")]
+        HRESULT DirectIO( 
+            [in] long Command, 
+            [in, out] long* pData, 
+            [in, out] BSTR* pString, 
+            [out, retval] long* pRC );
+        [id(37), helpstring("method Open")]
+        HRESULT Open( 
+            [in] BSTR DeviceName, 
+            [out, retval] long* pRC );
+        [id(38), helpstring("method ReleaseDevice")]
+        HRESULT ReleaseDevice( 
+            [out, retval] long* pRC );
+        [propget, id(50), helpstring("property CapBold")]
+        HRESULT CapBold( [out, retval] VARIANT_BOOL* pCapBold );
+        [propget, id(51), helpstring("property CapCardEntranceSensor")]
+        HRESULT CapCardEntranceSensor( [out, retval] VARIANT_BOOL* pCapCardEntranceSensor );
+        [propget, id(52), helpstring("property CapCharacterSet")]
+        HRESULT CapCharacterSet( [out, retval] long* pCapCharacterSet );
+        [propget, id(53), helpstring("property CapCleanCard")]
+        HRESULT CapCleanCard( [out, retval] VARIANT_BOOL* pCapCleanCard );
+        [propget, id(54), helpstring("property CapClearPrint")]
+        HRESULT CapClearPrint( [out, retval] VARIANT_BOOL* pCapClearPrint );
+        [propget, id(55), helpstring("property CapDhigh")]
+        HRESULT CapDhigh( [out, retval] VARIANT_BOOL* pCapDhigh );
+        [propget, id(56), helpstring("property CapDwide")]
+        HRESULT CapDwide( [out, retval] VARIANT_BOOL* pCapDwide );
+        [propget, id(57), helpstring("property CapDwideDhigh")]
+        HRESULT CapDwideDhigh( [out, retval] VARIANT_BOOL* pCapDwideDhigh );
+        [propget, id(58), helpstring("property CapItalic")]
+        HRESULT CapItalic( [out, retval] VARIANT_BOOL* pCapItalic );
+        [propget, id(59), helpstring("property CapLeft90")]
+        HRESULT CapLeft90( [out, retval] VARIANT_BOOL* pCapLeft90 );
+        [propget, id(60), helpstring("property CapPrint")]
+        HRESULT CapPrint( [out, retval] VARIANT_BOOL* pCapPrint );
+        [propget, id(61), helpstring("property CapPrintMode")]
+        HRESULT CapPrintMode( [out, retval] VARIANT_BOOL* pCapPrintMode );
+        [propget, id(62), helpstring("property CapRight90")]
+        HRESULT CapRight90( [out, retval] VARIANT_BOOL* pCapRight90 );
+        [propget, id(63), helpstring("property CapRotate180")]
+        HRESULT CapRotate180( [out, retval] VARIANT_BOOL* pCapRotate180 );
+        [propget, id(64), helpstring("property CapTracksToRead")]
+        HRESULT CapTracksToRead( [out, retval] long* pCapTracksToRead );
+        [propget, id(65), helpstring("property CapTracksToWrite")]
+        HRESULT CapTracksToWrite( [out, retval] long* pCapTracksToWrite );
+        [propget, id(66), helpstring("property CardState")]
+        HRESULT CardState( [out, retval] long* pCardState );
+        [propget, id(67), helpstring("property CharacterSet")]
+        HRESULT CharacterSet( [out, retval] long* pCharacterSet );
+        [propput, id(67), helpstring("property CharacterSet")]
+        HRESULT CharacterSet( [in] long CharacterSet );
+        [propget, id(68), helpstring("property CharacterSetList")]
+        HRESULT CharacterSetList( [out, retval] BSTR* pCharacterSetList );
+        [propget, id(69), helpstring("property FontTypeFaceList")]
+        HRESULT FontTypeFaceList( [out, retval] BSTR* pFontTypeFaceList );
+        [propget, id(70), helpstring("property LineChars")]
+        HRESULT LineChars( [out, retval] long* pLineChars );
+        [propput, id(70), helpstring("property LineChars")]
+        HRESULT LineChars( [in] long LineChars );
+        [propget, id(71), helpstring("property LineCharsList")]
+        HRESULT LineCharsList( [out, retval] BSTR* pLineCharsList );
+        [propget, id(72), helpstring("property LineHeight")]
+        HRESULT LineHeight( [out, retval] long* pLineHeight );
+        [propput, id(72), helpstring("property LineHeight")]
+        HRESULT LineHeight( [in] long LineHeight );
+        [propget, id(73), helpstring("property LineSpacing")]
+        HRESULT LineSpacing( [out, retval] long* pLineSpacing );
+        [propput, id(73), helpstring("property LineSpacing")]
+        HRESULT LineSpacing( [in] long LineSpacing );
+        [propget, id(74), helpstring("property LineWidth")]
+        HRESULT LineWidth( [out, retval] long* pLineWidth );
+        [propget, id(75), helpstring("property MapMode")]
+        HRESULT MapMode( [out, retval] long* pMapMode );
+        [propput, id(75), helpstring("property MapMode")]
+        HRESULT MapMode( [in] long MapMode );
+        [propget, id(76), helpstring("property MaxLine")]
+        HRESULT MaxLine( [out, retval] long* pMaxLine );
+        [propget, id(77), helpstring("property PrintHeight")]
+        HRESULT PrintHeight( [out, retval] long* pPrintHeight );
+        [propget, id(78), helpstring("property ReadState1")]
+        HRESULT ReadState1( [out, retval] long* pReadState1 );
+        [propget, id(79), helpstring("property ReadState2")]
+        HRESULT ReadState2( [out, retval] long* pReadState2 );
+        [propget, id(80), helpstring("property RecvLength1")]
+        HRESULT RecvLength1( [out, retval] long* pRecvLength1 );
+        [propget, id(81), helpstring("property RecvLength2")]
+        HRESULT RecvLength2( [out, retval] long* pRecvLength2 );
+        [propget, id(82), helpstring("property SidewaysMaxChars")]
+        HRESULT SidewaysMaxChars( [out, retval] long* pSidewaysMaxChars );
+        [propget, id(83), helpstring("property SidewaysMaxLines")]
+        HRESULT SidewaysMaxLines( [out, retval] long* pSidewaysMaxLines );
+        [propget, id(86), helpstring("property Track1Data")]
+        HRESULT Track1Data( [out, retval] BSTR* pTrack1Data );
+        [propget, id(87), helpstring("property Track2Data")]
+        HRESULT Track2Data( [out, retval] BSTR* pTrack2Data );
+        [propget, id(88), helpstring("property Track3Data")]
+        HRESULT Track3Data( [out, retval] BSTR* pTrack3Data );
+        [propget, id(89), helpstring("property Track4Data")]
+        HRESULT Track4Data( [out, retval] BSTR* pTrack4Data );
+        [propget, id(90), helpstring("property Track5Data")]
+        HRESULT Track5Data( [out, retval] BSTR* pTrack5Data );
+        [propget, id(91), helpstring("property Track6Data")]
+        HRESULT Track6Data( [out, retval] BSTR* pTrack6Data );
+        [propget, id(84), helpstring("property TracksToRead")]
+        HRESULT TracksToRead( [out, retval] long* pTracksToRead );
+        [propput, id(84), helpstring("property TracksToRead")]
+        HRESULT TracksToRead( [in] long TracksToRead );
+        [propget, id(85), helpstring("property TracksToWrite")]
+        HRESULT TracksToWrite( [out, retval] long* pTracksToWrite );
+        [propput, id(85), helpstring("property TracksToWrite")]
+        HRESULT TracksToWrite( [in] long TracksToWrite );
+        [propget, id(94), helpstring("property Write1Data")]
+        HRESULT Write1Data( [out, retval] BSTR* pWrite1Data );
+        [propput, id(94), helpstring("property Write1Data")]
+        HRESULT Write1Data( [in] BSTR Write1Data );
+        [propget, id(95), helpstring("property Write2Data")]
+        HRESULT Write2Data( [out, retval] BSTR* pWrite2Data );
+        [propput, id(95), helpstring("property Write2Data")]
+        HRESULT Write2Data( [in] BSTR Write2Data );
+        [propget, id(96), helpstring("property Write3Data")]
+        HRESULT Write3Data( [out, retval] BSTR* pWrite3Data );
+        [propput, id(96), helpstring("property Write3Data")]
+        HRESULT Write3Data( [in] BSTR Write3Data );
+        [propget, id(97), helpstring("property Write4Data")]
+        HRESULT Write4Data( [out, retval] BSTR* pWrite4Data );
+        [propput, id(97), helpstring("property Write4Data")]
+        HRESULT Write4Data( [in] BSTR Write4Data );
+        [propget, id(98), helpstring("property Write5Data")]
+        HRESULT Write5Data( [out, retval] BSTR* pWrite5Data );
+        [propput, id(98), helpstring("property Write5Data")]
+        HRESULT Write5Data( [in] BSTR Write5Data );
+        [propget, id(99), helpstring("property Write6Data")]
+        HRESULT Write6Data( [out, retval] BSTR* pWrite6Data );
+        [propput, id(99), helpstring("property Write6Data")]
+        HRESULT Write6Data( [in] BSTR Write6Data );
+        [propget, id(92), helpstring("property WriteState1")]
+        HRESULT WriteState1( [out, retval] long* pWriteState1 );
+        [propget, id(93), helpstring("property WriteState2")]
+        HRESULT WriteState2( [out, retval] long* pWriteState2 );
+        [id(120), helpstring("method BeginInsertion")]
+        HRESULT BeginInsertion( 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(121), helpstring("method BeginRemoval")]
+        HRESULT BeginRemoval( 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(122), helpstring("method CleanCard")]
+        HRESULT CleanCard( 
+            [out, retval] long* pRC );
+        [id(123), helpstring("method ClearPrintWrite")]
+        HRESULT ClearPrintWrite( 
+            [in] long Kind, 
+            [in] long Hposition, 
+            [in] long Vposition, 
+            [in] long Width, 
+            [in] long Height, 
+            [out, retval] long* pRC );
+        [id(124), helpstring("method EndInsertion")]
+        HRESULT EndInsertion( 
+            [out, retval] long* pRC );
+        [id(125), helpstring("method EndRemoval")]
+        HRESULT EndRemoval( 
+            [out, retval] long* pRC );
+        [id(126), helpstring("method PrintWrite")]
+        HRESULT PrintWrite( 
+            [in] long Kind, 
+            [in] long Hposition, 
+            [in] long Vposition, 
+            [in] BSTR Data, 
+            [out, retval] long* pRC );
+        [id(127), helpstring("method RotatePrint")]
+        HRESULT RotatePrint( 
+            [in] long Rotation, 
+            [out, retval] long* pRC );
+        [id(128), helpstring("method ValidateData")]
+        HRESULT ValidateData( 
+            [in] BSTR Data, 
+            [out, retval] long* pRC );
+    // Release 1.6
+    };
+
+//
+//========== Previous Interface: 1.7 ==========
+//
+
+    [
+        object,
+        uuid(CCB92211-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSPointCardRW 1.7 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSPointCardRW_1_7 : IOPOSPointCardRW_1_5
+    {
+    // Release 1.7
+        [propget, id(100), helpstring("property CapMapCharacterSet")]
+        HRESULT CapMapCharacterSet( [out, retval] VARIANT_BOOL* pCapMapCharacterSet );
+        [propget, id(101), helpstring("property MapCharacterSet")]
+        HRESULT MapCharacterSet( [out, retval] VARIANT_BOOL* pMapCharacterSet );
+        [propput, id(101), helpstring("property MapCharacterSet")]
+        HRESULT MapCharacterSet( [in] VARIANT_BOOL MapCharacterSet );
+    };
+
+//
+//========== Previous Interface: 1.8 ==========
+//
+
+    [
+        object,
+        uuid(CCB93211-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSPointCardRW 1.8 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSPointCardRW_1_8 : IOPOSPointCardRW_1_7
+    {
+    // Release 1.8
+        [propget, id(39), helpstring("property CapStatisticsReporting")]
+        HRESULT CapStatisticsReporting( [out, retval] VARIANT_BOOL* pCapStatisticsReporting );
+        [propget, id(40), helpstring("property CapUpdateStatistics")]
+        HRESULT CapUpdateStatistics( [out, retval] VARIANT_BOOL* pCapUpdateStatistics );
+        [id(41), helpstring("method ResetStatistics")]
+        HRESULT ResetStatistics( 
+            [in] BSTR StatisticsBuffer, 
+            [out, retval] long* pRC );
+        [id(42), helpstring("method RetrieveStatistics")]
+        HRESULT RetrieveStatistics( 
+            [in, out] BSTR* pStatisticsBuffer, 
+            [out, retval] long* pRC );
+        [id(43), helpstring("method UpdateStatistics")]
+        HRESULT UpdateStatistics( 
+            [in] BSTR StatisticsBuffer, 
+            [out, retval] long* pRC );
+    };
+
+//
+//========== Previous Interface: 1.9 ==========
+//
+
+    [
+        object,
+        uuid(CCB94211-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSPointCardRW 1.9 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSPointCardRW_1_9 : IOPOSPointCardRW_1_8
+    {
+    // Release 1.9
+        [propget, id(44), helpstring("property CapCompareFirmwareVersion")]
+        HRESULT CapCompareFirmwareVersion( [out, retval] VARIANT_BOOL* pCapCompareFirmwareVersion );
+        [propget, id(45), helpstring("property CapUpdateFirmware")]
+        HRESULT CapUpdateFirmware( [out, retval] VARIANT_BOOL* pCapUpdateFirmware );
+        [id(46), helpstring("method CompareFirmwareVersion")]
+        HRESULT CompareFirmwareVersion( 
+            [in] BSTR FirmwareFileName, 
+            [out] long* pResult, 
+            [out, retval] long* pRC );
+        [id(47), helpstring("method UpdateFirmware")]
+        HRESULT UpdateFirmware( 
+            [in] BSTR FirmwareFileName, 
+            [out, retval] long* pRC );
+    };
+
+//
+//========== Current Interface: 1.10 ==========
+//
+
+    [
+        object,
+        uuid(CCB95211-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSPointCardRW 1.10 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSPointCardRW_1_10 : IOPOSPointCardRW_1_9
+    {
+    // Release 1.10
+        [id(48), helpstring("method ClearInputProperties")]
+        HRESULT ClearInputProperties( 
+            [out, retval] long* pRC );
+    // Release 1.11
+    // Release 1.12
+    // Release 1.13
+    // Release 1.14
+    };
+
+//
+//---------- IOPOSPointCardRW Interface: Invariant Name ----------
+//
+    [
+        object,
+        uuid(CCB96211-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSPointCardRW Current Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSPointCardRW : IOPOSPointCardRW_1_10
+    {
+    };
+
+
+///////////////////////////////////////////////////////////////////////////////
+//// Library
+///////////////////////////////////////////////////////////////////////////////
+
+[
+    uuid(CCB90210-B81E-11D2-AB74-0040054C3719),
+    version(1.0),
+    helpstring("OPOS PointCardRW Control 1.14.001 [Public, by CRM/MCS]")
+]
+library OposPointCardRW_CCO
+{
+    importlib("stdole32.tlb");
+    importlib("stdole2.tlb");
+
+    //*************************************************************************
+    //** Event interface
+    //*************************************************************************
+    [
+        uuid(CCB90213-B81E-11D2-AB74-0040054C3719),
+        helpstring("_IOPOSPointCardRWEvents Interface")
+    ]
+    dispinterface _IOPOSPointCardRWEvents
+    {
+        properties:
+        methods:
+        [id(1), helpstring("method DataEvent")]
+            void DataEvent( [in] long Status );
+        [id(2), helpstring("method DirectIOEvent")]
+            void DirectIOEvent( [in] long EventNumber, [in, out] long *pData, [in, out] BSTR *pString );
+        [id(3), helpstring("method ErrorEvent")]
+            void ErrorEvent( [in] long ResultCode, [in] long ResultCodeExtended, [in] long ErrorLocus, [in, out] long* pErrorResponse );
+        [id(4), helpstring("method OutputCompleteEvent")]
+            void OutputCompleteEvent( [in] long OutputID );
+        [id(5), helpstring("method StatusUpdateEvent")]
+            void StatusUpdateEvent( [in] long Data );
+    };
+
+    //*************************************************************************
+    //** COM Class
+    //*************************************************************************
+    [
+        uuid(CCB90212-B81E-11D2-AB74-0040054C3719),
+        helpstring("OPOS PointCardRW Control 1.14.001 [Public, by CRM/MCS]")
+    ]
+    coclass OPOSPointCardRW
+    {
+        [default] interface IOPOSPointCardRW;
+        interface IOPOSPointCardRW_1_10;
+        interface IOPOSPointCardRW_1_9;
+        interface IOPOSPointCardRW_1_8;
+        interface IOPOSPointCardRW_1_7;
+        interface IOPOSPointCardRW_1_5;
+        [default, source] dispinterface _IOPOSPointCardRWEvents;
+    };
+};
+
+// End PointCardRW.idl

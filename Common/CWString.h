@@ -82,7 +82,11 @@ void f(const OLECHAR* pWide, HWND hwnd)
 #include <stdlib.h>
 #include <string.h>
 
+#if defined(_M_X64)
+#pragma pack( push ) // Pack on default size.
+#else
 #pragma pack( push, 4 ) // Pack on double-word.
+#endif
 
 #if !defined( CM_API )
     #define CM_API __stdcall

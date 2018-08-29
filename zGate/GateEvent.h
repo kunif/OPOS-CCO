@@ -303,7 +303,7 @@ limitations under the License.
         else
         {
             _Event_DIO_pString = pString;
-            DoEvent( WMU_DIRECT_IO_EVENT, EventNumber, (long) pData );
+            DoEvent( WMU_DIRECT_IO_EVENT, EventNumber, (LPARAM) pData );
         }
 
     #ifdef _DEBUG
@@ -389,7 +389,7 @@ limitations under the License.
 // Argument         : long lParam   - Event parameter (optional).
 /////////////////////////////////////////////////////////////////////////////
 
-    void DoEvent( UINT Msg, long wParam, long lParam )
+    void DoEvent( UINT Msg, WPARAM wParam, LPARAM lParam )
     {
         // Restrict access of the following code to one thread at a time.
         ::WaitForSingleObject( _Event_DoEventMutex, INFINITE );
@@ -466,13 +466,13 @@ limitations under the License.
         if ( uMsg == WM_CREATE )
         {
             pThis = (COPOSGate*) ((LPCREATESTRUCT) lParam)->lpCreateParams;
-            ::SetWindowLong( hwnd, 0, (LONG) pThis );
+            ::SetWindowLongPtr( hwnd, 0, (LONG_PTR) pThis );
         }
 
         // If other message, give our class a chance to handle.
         else
         {
-            pThis = (COPOSGate*) ::GetWindowLong( hwnd, 0 );
+            pThis = (COPOSGate*) ::GetWindowLongPtr( hwnd, 0 );
             if ( pThis != 0 &&
                  pThis->EventWindowProc( uMsg, wParam, lParam ) )
                     return 0;

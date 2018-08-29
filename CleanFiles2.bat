@@ -8,7 +8,7 @@ del %1.tlb
 del %1.*.user
 del %1.*.vspscc
 del dlldata.c
-rd /s /q Release
-rd /s /q Debug
+rd /s /q Win32
+rd /s /q x64
 cd ..
 :end

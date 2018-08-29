@@ -39,7 +39,6 @@ if not exist OCX\* goto :NoOCX
 cd ocx
 del /q /s *.exp
 del /q /s *.lib
-del /q /s *.map
 cd ..
 :NoOCX
 
@@ -52,8 +51,8 @@ del OposConstants.plg
 del OposConstants.tlb
 del OposConstants.*.user
 del OposConstants.*.vspscc
-rd /s /q Release
-rd /s /q Debug
+rd /s /q Win32
+rd /s /q x64
 cd ..
 :NoConstants
 

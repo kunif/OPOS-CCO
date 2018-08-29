@@ -23,10 +23,12 @@ limitations under the License.
 {{End License}}
 */
 
-#ifndef RCSALIGNED
+#if defined(_M_IX86)
 #pragma message(">> Intel x86: Non-aligned data transfers are OK")
+#elif defined(_M_X64)
+#pragma message(">> Intel x64: Non-aligned data transfers are OK")
 #else
-#pragma message(">> Non-Intel x86: Must not transfer non-aligned data")
+#pragma message(">> Non-Intel x86, x64: Must not transfer non-aligned data")
 #endif
 
 #ifndef _CWString_cpp_
@@ -46,7 +48,7 @@ limitations under the License.
 void cw_memset(char* pTarget, char cChar, int nCount)        // Set char array.
 {
     // If Intel x86, resort to assembly...
-#ifndef RCSALIGNED
+#if defined(_M_IX86)
     _asm
     {
         mov ecx, nCount                 // Get count.
@@ -74,7 +76,7 @@ void cw_memset(char* pTarget, char cChar, int nCount)        // Set char array.
 void cw_memset(wchar_t* pTarget, wchar_t cChar, int nCount)  // Set wide char array.
 {
     // If Intel x86, resort to assembly...
-#ifndef RCSALIGNED
+#if defined(_M_IX86)
     _asm
     {
         mov ecx, nCount                 // Get count.
@@ -119,7 +121,7 @@ int cw_strlen(const char* pChar)     // String length.
 
 int cw_strlen(const wchar_t* pChar)  // Wide string length.
 {
-#ifndef RCSALIGNED
+#if defined(_M_IX86) || defined(_M_X64)
     int nCount = 0;
     if ( pChar && *pChar )
     {
@@ -161,7 +163,7 @@ int CM_API cw_memcpy(
     if ( nCount < 0 )
         nCount = cw_strlen( pSrc ) + 1;
 
-#ifndef RCSALIGNED
+#if defined(_M_IX86) || defined(_M_X64)
     return MultiByteToWideChar(
         CP_ACP,         // code page
         0,              // character-type options
@@ -206,7 +208,7 @@ int CM_API cw_memcpy(
     if ( nCount < 0 )
         nCount = cw_strlen( pSrc ) + 1;
 
-#ifndef RCSALIGNED
+#if defined(_M_IX86) || defined(_M_X64)
     return WideCharToMultiByte(
         CP_ACP,         // code page
         0,              // performance and mapping flags
@@ -256,7 +258,7 @@ int CM_API cw_memcpy(
     if ( pTarget && nCount )
     {
         // If Intel x86, resort to assembly...
-#ifndef RCSALIGNED
+#if defined(_M_IX86)
         _asm
         {
             mov ecx, nCount                 // Get count.

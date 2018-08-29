@@ -4,7 +4,7 @@
 ;*
 ;****************************************************************************
 
-LIBRARY      "OposConstants.DLL"
+LIBRARY      "Opos_Constants.DLL"
 
 EXPORTS
     DllCanUnloadNow     PRIVATE

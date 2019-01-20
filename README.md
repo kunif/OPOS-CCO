@@ -12,7 +12,7 @@ In addition to the above, the following measures are taken.
   - Platform toolset is Visual Studio 2017 (v141).  
   - Windows SDK version 8.1.  
   - Change atlcom.h before remodeling to one in the folder of Visual Studio Community 2017.  
-  - Include guard for .h files changed from #ifdef \_\_XXXX\_H\_\_ to #pragma once.  
+  - Include guard for .h files changed from #ifndef \_\_XXXX\_H\_\_ to #pragma once.  
   - Change the name of the type library to with OPOS at the beginning and leave it as a build result.  
   - .map, .pdb file also changed to leave it as a build result.  
 - Change the number of supported versions to Windows 7 or later.  

@@ -6,14 +6,14 @@
 ** -----------|----------------------------------------------------|----------
 **  1999/03/20 Initial version.                                     C. Monroe
 **  2013/09/29 Update license section.
-**  2015/02/07 Update license section.
-**  2015/02/07 Version 1.14.001.
+**  2019/01/20 Update year annotation of license.
+**  2019/01/20 Version 1.15.000.
 **
 *****************************************************************************
 **
 {{Begin License}}
 
-Copyright 2015 Monroe Consulting Services, Inc.
+Copyright 2019 Monroe Consulting Services, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

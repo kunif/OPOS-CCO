@@ -56,6 +56,34 @@ rd /s /q x64
 cd ..
 :NoConstants
 
+if not exist OposInternals\* goto :NoInternals
+cd OposInternals
+del OposInternals.aps
+del OposInternals.h
+del OposInternals_i.c
+del OposInternals.plg
+del OposInternals.tlb
+del OposInternals.*.user
+del OposInternals.*.vspscc
+rd /s /q Win32
+rd /s /q x64
+cd ..
+:NoInternals
+
+if not exist OposInterfaces\* goto :NoInterfaces
+cd OposInterfaces
+del OposInterfaces.aps
+del OposInterfaces.h
+del OposInterfaces_i.c
+del OposInterfaces.plg
+del OposInterfaces.tlb
+del OposInterfaces.*.user
+del OposInterfaces.*.vspscc
+rd /s /q Win32
+rd /s /q x64
+cd ..
+:NoInterfaces
+
 del /q Opos.Net\GAC.txt
 
 del /q OposControls.ncb

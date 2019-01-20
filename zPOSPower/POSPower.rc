@@ -6,14 +6,14 @@
 ** -----------|----------------------------------------------------|----------
 **  1999/03/20 Initial version.                                     C. Monroe
 **  2013/10/03 Update license section and some version settings.
-**  2015/02/07 Update license section.
-**  2015/02/07 Version 1.14.001.
+**  2019/01/20 Update year annotation of license.
+**  2019/01/20 Version 1.15.000.
 **
 *****************************************************************************
 **
 {{Begin License}}
 
-Copyright 2015 Monroe Consulting Services, Inc.
+Copyright 2019 Monroe Consulting Services, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -70,7 +70,7 @@ END
 
 3 TEXTINCLUDE DISCARDABLE
 BEGIN
-    "1 TYPELIB ""POSPower.tlb""\r\n"
+    "1 TYPELIB ""OPOSPOSPower.tlb""\r\n"
     "\0"
 END
 
@@ -82,8 +82,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,14,001,0
- PRODUCTVERSION 1,14,001,0
+ FILEVERSION 1,15,000,0
+ PRODUCTVERSION 1,15,000,0
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -99,22 +99,22 @@ BEGIN
         BLOCK "040904B0"
         BEGIN
             VALUE "Author", "Curtiss R. Monroe\0"
-            VALUE "BuildInformation", "OPOS 1.14. Build 001; 2015/02/07.\0"
+            VALUE "BuildInformation", "OPOS 1.15. Build 000; 2019/01/20.\0"
             VALUE "CompanyName", "Monroe Consulting Services; Dayton OH\0"
 #if !defined(_DEBUG)
             VALUE "FileDescription", "OPOS POSPower Control\0"
 #else
             VALUE "FileDescription", "OPOS POSPower Control (Debug)\0"
 #endif
-            VALUE "FileVersion", "1.14.001.0\0"
+            VALUE "FileVersion", "1.15.000.0\0"
             VALUE "InternalName", "OPOSPOSPower\0"
             VALUE "OriginalFilename", "OPOSPOSPower.OCX\0"
             VALUE "ProductName", "OPOS Common Controls (CRM/MCS)\0"
-            VALUE "ProductVersion", "1.14.001.0\0"
+            VALUE "ProductVersion", "1.15.000.0\0"
             VALUE "OLESelfRegister", "\0"
-            VALUE "LegalCopyright", "Copyright 2015; MCS; Dayton OH, USA. See full text of license in the 'Comments' item.\0"
+            VALUE "LegalCopyright", "Copyright 2019; MCS; Dayton OH, USA. See full text of license in the 'Comments' item.\0"
             VALUE "Comments",    "{Start}\r\n"
-	"Copyright 2015 Monroe Consulting Services, Inc.\r\n"
+	"Copyright 2019 Monroe Consulting Services, Inc.\r\n"
 	"\r\n"
 	"Licensed under the Apache License, Version 2.0 (the 'License');\r\n"
 	"you may not use this file except in compliance with the License.\r\n"
@@ -169,7 +169,7 @@ END
 //
 // Generated from the TEXTINCLUDE 3 resource.
 //
-1 TYPELIB "POSPower.tlb"
+1 TYPELIB "OPOSPOSPower.tlb"
 
 /////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED

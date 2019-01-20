@@ -10,12 +10,14 @@
 **  2013/09/29 Update license section.
 **  2015/02/07 Update license section.
 **  2015/02/07 Version 1.14.100.
+**  2019/01/20 Update year annotation of license.
+**  2019/01/20 Version 1.15.000.
 **
 *****************************************************************************
 **
 {{Begin License}}
 
-Copyright 2015 Monroe Consulting Services, Inc.
+Copyright 2019 Monroe Consulting Services, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -439,7 +441,7 @@ import "ocidl.idl";
     };
 
 //
-//========== Current Interface: 1.14.100 ==========
+//========== Previous Interface: 1.14.100 ==========
 //
 
     [
@@ -512,10 +514,147 @@ import "ocidl.idl";
         object,
         uuid(CCB95331-B81E-11D2-AB74-0040054C3719),
         dual,
+        helpstring("IOPOSElectronicValueRW 1.14.100 Interface (Old Invariant)"),
+        pointer_default(unique)
+    ]
+    interface IOPOSElectronicValueRW_1_14_100_zz : IOPOSElectronicValueRW_1_14_100
+    {
+    };
+
+//
+//========== Current Interface: 1.15 ==========
+//
+
+    [
+        object,
+        uuid(CCB96331-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSElectronicValueRW 1.15 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSElectronicValueRW_1_15 : IOPOSElectronicValueRW_1_14_100
+    {
+    // Release 1.15
+        [propget, id(118), helpstring("property CapAdditionalSecurityInformation")]
+        HRESULT CapAdditionalSecurityInformation( [out, retval] VARIANT_BOOL* pCapAdditionalSecurityInformation );
+        [propget, id(119), helpstring("property CapAuthorizeCompletion")]
+        HRESULT CapAuthorizeCompletion( [out, retval] VARIANT_BOOL* pCapAuthorizeCompletion );
+        [propget, id(120), helpstring("property CapAuthorizePreSales")]
+        HRESULT CapAuthorizePreSales( [out, retval] VARIANT_BOOL* pCapAuthorizePreSales );
+        [propget, id(121), helpstring("property CapAuthorizeRefund")]
+        HRESULT CapAuthorizeRefund( [out, retval] VARIANT_BOOL* pCapAuthorizeRefund );
+        [propget, id(122), helpstring("property CapAuthorizeVoid")]
+        HRESULT CapAuthorizeVoid( [out, retval] VARIANT_BOOL* pCapAuthorizeVoid );
+        [propget, id(123), helpstring("property CapAuthorizeVoidPreSales")]
+        HRESULT CapAuthorizeVoidPreSales( [out, retval] VARIANT_BOOL* pCapAuthorizeVoidPreSales );
+        [propget, id(124), helpstring("property CapCashDeposit")]
+        HRESULT CapCashDeposit( [out, retval] VARIANT_BOOL* pCapCashDeposit );
+        [propget, id(125), helpstring("property CapCenterResultCode")]
+        HRESULT CapCenterResultCode( [out, retval] VARIANT_BOOL* pCapCenterResultCode );
+        [propget, id(126), helpstring("property CapCheckCard")]
+        HRESULT CapCheckCard( [out, retval] VARIANT_BOOL* pCapCheckCard );
+        [propget, id(127), helpstring("property CapDailyLog")]
+        HRESULT CapDailyLog( [out, retval] long* pCapDailyLog );
+        [propget, id(128), helpstring("property CapInstallments")]
+        HRESULT CapInstallments( [out, retval] VARIANT_BOOL* pCapInstallments );
+        [propget, id(129), helpstring("property CapPaymentDetail")]
+        HRESULT CapPaymentDetail( [out, retval] VARIANT_BOOL* pCapPaymentDetail );
+        [propget, id(130), helpstring("property CapTaxOthers")]
+        HRESULT CapTaxOthers( [out, retval] VARIANT_BOOL* pCapTaxOthers );
+        [propget, id(131), helpstring("property CapTransactionNumber")]
+        HRESULT CapTransactionNumber( [out, retval] VARIANT_BOOL* pCapTransactionNumber );
+        [propget, id(132), helpstring("property CardCompanyID")]
+        HRESULT CardCompanyID( [out, retval] BSTR* pCardCompanyID );
+        [propget, id(133), helpstring("property CenterResultCode")]
+        HRESULT CenterResultCode( [out, retval] BSTR* pCenterResultCode );
+        [propget, id(134), helpstring("property DailyLog")]
+        HRESULT DailyLog( [out, retval] BSTR* pDailyLog );
+        [propget, id(135), helpstring("property PaymentCondition")]
+        HRESULT PaymentCondition( [out, retval] long* pPaymentCondition );
+        [propget, id(136), helpstring("property PaymentDetail")]
+        HRESULT PaymentDetail( [out, retval] BSTR* pPaymentDetail );
+        [propget, id(137), helpstring("property SlipNumber")]
+        HRESULT SlipNumber( [out, retval] BSTR* pSlipNumber );
+        [propget, id(138), helpstring("property PaymentMedia")]
+        HRESULT PaymentMedia( [out, retval] long* pPaymentMedia );
+        [propput, id(138), helpstring("property PaymentMedia")]
+        HRESULT PaymentMedia( [in] long PaymentMedia );
+        [propget, id(139), helpstring("property TransactionNumber")]
+        HRESULT TransactionNumber( [out, retval] BSTR* pTransactionNumber );
+        [propget, id(210), helpstring("property TransactionType")]
+        HRESULT TransactionType( [out, retval] long* pTransactionType );
+        [id(170), helpstring("method AccessDailyLog")]
+        HRESULT AccessDailyLog( 
+            [in] long SequenceNumber, 
+            [in] long Type, 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(171), helpstring("method AuthorizeCompletion")]
+        HRESULT AuthorizeCompletion( 
+            [in] long SequenceNumber, 
+            [in] CURRENCY Amount, 
+            [in] CURRENCY TaxOthers, 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(172), helpstring("method AuthorizePreSales")]
+        HRESULT AuthorizePreSales( 
+            [in] long SequenceNumber, 
+            [in] CURRENCY Amount, 
+            [in] CURRENCY TaxOthers, 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(173), helpstring("method AuthorizeRefund")]
+        HRESULT AuthorizeRefund( 
+            [in] long SequenceNumber, 
+            [in] CURRENCY Amount, 
+            [in] CURRENCY TaxOthers, 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(174), helpstring("method AuthorizeSales")]
+        HRESULT AuthorizeSales( 
+            [in] long SequenceNumber, 
+            [in] CURRENCY Amount, 
+            [in] CURRENCY TaxOthers, 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(175), helpstring("method AuthorizeVoid")]
+        HRESULT AuthorizeVoid( 
+            [in] long SequenceNumber, 
+            [in] CURRENCY Amount, 
+            [in] CURRENCY TaxOthers, 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(176), helpstring("method AuthorizeVoidPreSales")]
+        HRESULT AuthorizeVoidPreSales( 
+            [in] long SequenceNumber, 
+            [in] CURRENCY Amount, 
+            [in] CURRENCY TaxOthers, 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(177), helpstring("method CashDeposit")]
+        HRESULT CashDeposit( 
+            [in] long SequenceNumber, 
+            [in] CURRENCY Amount, 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+        [id(178), helpstring("method CheckCard")]
+        HRESULT CheckCard( 
+            [in] long SequenceNumber, 
+            [in] long Timeout, 
+            [out, retval] long* pRC );
+    };
+
+//
+//---------- IOPOSElectronicValueRW Interface: Invariant Name ----------
+//
+    [
+        object,
+        uuid(CCB97331-B81E-11D2-AB74-0040054C3719),
+        dual,
         helpstring("IOPOSElectronicValueRW Current Interface"),
         pointer_default(unique)
     ]
-    interface IOPOSElectronicValueRW : IOPOSElectronicValueRW_1_14_100
+    interface IOPOSElectronicValueRW : IOPOSElectronicValueRW_1_15
     {
     };
 
@@ -527,7 +666,7 @@ import "ocidl.idl";
 [
     uuid(CCB90330-B81E-11D2-AB74-0040054C3719),
     version(1.0),
-    helpstring("OPOS ElectronicValueRW Control 1.14.100 [Public, by CRM/MCS]")
+    helpstring("OPOS ElectronicValueRW Control 1.15.000 [Public, by CRM/MCS]")
 ]
 library OposElectronicValueRW_CCO
 {
@@ -564,12 +703,14 @@ library OposElectronicValueRW_CCO
     //*************************************************************************
     [
         uuid(CCB90332-B81E-11D2-AB74-0040054C3719),
-        helpstring("OPOS ElectronicValueRW Control 1.14.100 [Public, by CRM/MCS]")
+        helpstring("OPOS ElectronicValueRW Control 1.15.000 [Public, by CRM/MCS]")
     ]
     coclass OPOSElectronicValueRW
     {
         [default] interface IOPOSElectronicValueRW;
+        interface IOPOSElectronicValueRW_1_15;
         interface IOPOSElectronicValueRW_1_14_100;
+        interface IOPOSElectronicValueRW_1_14_100_zz; // (Old invariant interface.)
         interface IOPOSElectronicValueRW_1_14;
         interface IOPOSElectronicValueRW_1_14_zz; // (Old invariant interface.)
         interface IOPOSElectronicValueRW_1_12;

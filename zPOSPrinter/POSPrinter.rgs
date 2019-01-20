@@ -1,19 +1,19 @@
 HKCR
 {
-    OPOS.POSPrinter.1.14 = s 'OPOS POSPrinter Control 1.14.001 [Public, by CRM/MCS]'
+    OPOS.POSPrinter.1.15 = s 'OPOS POSPrinter Control 1.15.000 [Public, by CRM/MCS]'
     {
         CLSID = s '{CCB90152-B81E-11D2-AB74-0040054C3719}'
     }
-    OPOS.POSPrinter = s 'OPOS POSPrinter Control 1.14.001 [Public, by CRM/MCS]'
+    OPOS.POSPrinter = s 'OPOS POSPrinter Control 1.15.000 [Public, by CRM/MCS]'
     {
         CLSID = s '{CCB90152-B81E-11D2-AB74-0040054C3719}'
-        CurVer = s 'OPOS.POSPrinter.1.14'
+        CurVer = s 'OPOS.POSPrinter.1.15'
     }
     NoRemove CLSID
     {
-        ForceRemove {CCB90152-B81E-11D2-AB74-0040054C3719} = s 'OPOS POSPrinter Control 1.14.001 [Public, by CRM/MCS]'
+        ForceRemove {CCB90152-B81E-11D2-AB74-0040054C3719} = s 'OPOS POSPrinter Control 1.15.000 [Public, by CRM/MCS]'
         {
-            ProgID = s 'OPOS.POSPrinter.1.14'
+            ProgID = s 'OPOS.POSPrinter.1.15'
             VersionIndependentProgID = s 'OPOS.POSPrinter'
             ForceRemove 'Programmable'
             InprocServer32 = s '%MODULE%'
@@ -29,7 +29,7 @@ HKCR
             }
             'TypeLib' = s '{CCB90150-B81E-11D2-AB74-0040054C3719}'
             'Version' = s '1.0'
-            'BuildInformation' = s 'OPOS 1.14. Build 001; 2015/02/07.'
+            'BuildInformation' = s 'OPOS 1.15. Build 000; 2019/01/20.'
         }
     }
     NoRemove Interface

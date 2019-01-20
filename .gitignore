@@ -53,8 +53,8 @@
 *.userprefs
 
 # Build results
-[Dd]ebug/
-[Dd]ebugPublic/
+# [Dd]ebug/
+# [Dd]ebugPublic/
 # [Rr]elease/
 # [Rr]eleases/
 # x64/
@@ -111,7 +111,7 @@ StyleCopReport.xml
 *.pgd
 *.rsp
 *.sbr
-*.tlb
+# *.tlb
 *.tli
 *.tlh
 *.tmp
@@ -140,7 +140,7 @@ ipch/
 *.VC.VC.opendb
 
 # IDE stuff:
-Debug/
+# Debug/
 *.user
 /*.opensdf
 /*.sdf

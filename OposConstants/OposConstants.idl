@@ -6,7 +6,7 @@
 **
 {{Begin License}}
 
-Copyright 2015 Monroe Consulting Services, Inc.
+Copyright 2019 Monroe Consulting Services, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -45,7 +45,7 @@ import "ocidl.idl";
     //   1) Updates should be either corrections or supersets of previous.
     //   2) Don't want to force projects to bring in updated library.
     version(1.0),
-    helpstring("OPOS 1.14.1 Constants")
+    helpstring("OPOS 1.15 Constants")
 ]
 library OPOSCONSTANTSLib
 {

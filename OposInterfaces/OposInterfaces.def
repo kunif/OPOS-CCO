@@ -1,0 +1,13 @@
+;****************************************************************************
+;*
+;* OposInterfaces.def -- Linker parameters
+;*
+;****************************************************************************
+
+LIBRARY      "Opos_Interfaces.DLL"
+
+EXPORTS
+    DllCanUnloadNow     PRIVATE
+    DllGetClassObject   PRIVATE
+    DllRegisterServer   PRIVATE
+    DllUnregisterServer PRIVATE

@@ -14,6 +14,15 @@
 // 2015-02-07 OPOS Release 1.14.1                                CRM
 //   Add the following properties:
 //     CapMembershipCertificate, ServiceType
+// 2019-mm-dd OPOS Release 1.15                                  KF
+//   Add the following properties:
+//     CapAdditionalSecurityInformation, CapAuthorizeCompletion,
+//     CapAuthorizePreSales, CapAuthorizeRefund, CapAuthorzeVoid,
+//     CapAuthorizeVoidPreSales, CapCashDeposit, CapCenterResultCode,
+//     CapCheckCard, CapDailyLog, CapInstallments, CapPaymentDetail,
+//     CapTaxOthers, CapTransactionNumber, PaymentCondition,
+//     PaymentMedia, TransactionType, CardCompanyID, CenterResultCode,
+//     DailyLog, PaymentDetail, SlipNumber, TransactionNumber
 //
 //////////////////////////////////////////////////////////////////////
 
@@ -44,6 +53,11 @@ const LONG PIDXEvrw_TrainingModeState               =   7 + PIDX_EVRW+PIDX_NUMBE
 //      Added for Release 1.14.1:
 const LONG PIDXEvrw_ServiceType                     =   8 + PIDX_EVRW+PIDX_NUMBER;
 
+//      Added for Release 1.15:
+const LONG PIDXEvrw_PaymentCondition                =   9 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_PaymentMedia                    =  10 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_TransactionType                 =  11 + PIDX_EVRW+PIDX_NUMBER;
+
 // * Capabilities *
 
 const LONG PIDXEvrw_CapActivateService              = 501 + PIDX_EVRW+PIDX_NUMBER;
@@ -73,6 +87,22 @@ const LONG PIDXEvrw_CapTrainingMode                 = 521 + PIDX_EVRW+PIDX_NUMBE
 //      Added for Release 1.14.1:
 const LONG PIDXEvrw_CapMembershipCertificate        = 522 + PIDX_EVRW+PIDX_NUMBER;
 
+//      Added for Release 1.15:
+const LONG PIDXEvrw_CapAdditionalSecurityInformation= 523 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapAuthorizeCompletion          = 524 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapAuthorizePreSales            = 525 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapAuthorizeRefund              = 526 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapAuthorizeVoid                = 527 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapAuthorizeVoidPreSales        = 528 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapCashDeposit                  = 529 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapCenterResultCode             = 530 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapCheckCard                    = 531 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapDailyLog                     = 532 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapInstallments                 = 533 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapPaymentDetail                = 534 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapTaxOthers                    = 535 + PIDX_EVRW+PIDX_NUMBER;
+const LONG PIDXEvrw_CapTransactionNumber            = 536 + PIDX_EVRW+PIDX_NUMBER;
+
 
 //////////////////////////////////////////////////////////////////////
 // String Property Index Values.
@@ -92,6 +122,14 @@ const LONG PIDXEvrw_ReaderWriterServiceList         =   9 + PIDX_EVRW+PIDX_STRIN
 const LONG PIDXEvrw_TransactionLog                  =  10 + PIDX_EVRW+PIDX_STRING;
 const LONG PIDXEvrw_VoucherID                       =  11 + PIDX_EVRW+PIDX_STRING;
 const LONG PIDXEvrw_VoucherIDList                   =  12 + PIDX_EVRW+PIDX_STRING;
+
+//      Added for Release 1.15:
+const LONG PIDXEvrw_CardCompanyID                   =  13 + PIDX_EVRW+PIDX_STRING;
+const LONG PIDXEvrw_CenterResultCode                =  14 + PIDX_EVRW+PIDX_STRING;
+const LONG PIDXEvrw_DailyLog                        =  15 + PIDX_EVRW+PIDX_STRING;
+const LONG PIDXEvrw_PaymentDetail                   =  16 + PIDX_EVRW+PIDX_STRING;
+const LONG PIDXEvrw_SlipNumber                      =  17 + PIDX_EVRW+PIDX_STRING;
+const LONG PIDXEvrw_TransactionNumber               =  18 + PIDX_EVRW+PIDX_STRING;
 
 
 #endif          // !defined(OPOSEVRW_HI)

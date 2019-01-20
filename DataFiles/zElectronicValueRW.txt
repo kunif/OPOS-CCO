@@ -12,6 +12,7 @@
 !!               These are listed below as 1.15, so that Builder will
 !!                 generate a new interface for it.
 !!                 Then manual changes will be applied.
+!!  2019/mm/dd 1.15.000: Add properties, methods for 1.15.          K. Fukuchi
 !!
 !!***************************************************************************
 
@@ -62,7 +63,7 @@ UUIDEvents      =UUID*
 
 ! OPOS Version Number: On recommendation from OPOS-J, calling EVRW 1.14.100 instead of 1.14.001,
 !   due to incompatible changes from 1.14.000.
-BuildVersion    =100
+!   BuildVersion    =100
 
 ! For each version up to the @Version@, list the properties and methods.
 !   If method:
@@ -142,36 +143,56 @@ BuildVersion    =100
   R  1.12  75 Balance(CURRENCY)
   R  1.12  76 BalanceOfPoint(CURRENCY)
   R  1.12  77 CapActivateService(BOOL)
+  R  1.16 118 CapAdditionalSecurityInformation(BOOL)
   R  1.12  78 CapAddValue(BOOL)
+  R  1.16 119 CapAuthorizeCompletion(BOOL)
+  R  1.16 120 CapAuthorizePreSales(BOOL)
+  R  1.16 121 CapAuthorizeRefund(BOOL)
+  R  1.16 122 CapAuthorizeVoid(BOOL)
+  R  1.16 123 CapAuthorizeVoidPreSales(BOOL)
   R  1.12  79 CapCancelValue(BOOL)
   R  1.12  80 CapCardSensor(LONG)
+  R  1.16 124 CapCashDeposit(BOOL)
+  R  1.16 125 CapCenterResultCode(BOOL)
+  R  1.16 126 CapCheckCard(BOOL)
+  R  1.16 127 CapDailyLog(LONG)
   R  1.12  81 CapDetectionControl(LONG)
   R  1.12  82 CapElectronicMoney(BOOL)
   R  1.12  83 CapEnumerateCardServices(BOOL)
   R  1.12  84 CapIndirectTransactionLog(BOOL)
+  R  1.16 128 CapInstallments(BOOL)
   R  1.12  85 CapLockTerminal(BOOL)
   R  1.12  86 CapLogStatus(BOOL)
   R  1.12  87 CapMediumID(BOOL)
 !    1.14.100 == Added next after initial 1.14 release.
   R  1.15 116 CapMembershipCertificate(BOOL)
+  R  1.16 129 CapPaymentDetail(BOOL)
   R  1.14 112 CapPINDevice(BOOL)
   R  1.12  88 CapPoint(BOOL)
   R  1.12  89 CapSubtractValue(BOOL)
+  R  1.16 130 CapTaxOthers(BOOL)
   R  1.14 113 CapTrainingMode(BOOL)
   R  1.12  90 CapTransaction(BOOL)
   R  1.12  91 CapTransactionLog(BOOL)
+  R  1.16 131 CapTransactionNumber(BOOL)
   R  1.12  92 CapUnlockTerminal(BOOL)
   R  1.12  93 CapUpdateKey(BOOL)
   R  1.12  94 CapVoucher(BOOL)
   R  1.12  95 CapWriteValue(BOOL)
+  R  1.16 132 CardCompanyID(BSTR)
   R  1.12  96 CardServiceList(BSTR)
+  R  1.16 133 CenterResultCode(BSTR)
   RW 1.12  97 CurrentService(BSTR)
+  RW 1.16 134 DailyLog(BSTR)
   RW 1.12  98 DetectionControl(BOOL)
   R  1.12  99 DetectionStatus(LONG)
   R  1.12 100 ExpirationDate(BSTR)
   R  1.12 101 LastUsedDate(BSTR)
   R  1.12 102 LogStatus(LONG)
   RW 1.12 103 MediumID(BSTR)
+  R  1.16 135 PaymentCondition(LONG)
+  R  1.16 136 PaymentDetail(BSTR)
+  RW 1.16 137 PaymentMedia(LONG)
   RW 1.14 114 PINEntry(LONG)
   RW 1.12 104 Point(CURRENCY)
   R  1.12 105 ReaderWriterServiceList(BSTR)
@@ -180,11 +201,15 @@ BuildVersion    =100
   R  1.15 117 ServiceType(LONG)
   R  1.12 107 SettledAmount(CURRENCY)
   R  1.12 108 SettledPoint(CURRENCY)
+  R  1.16 138 SlipNumber(BSTR)
   RW 1.14 115 TrainingModeState(LONG)
   R  1.12 109 TransactionLog(BSTR)
+  R  1.16 139 TransactionNumber(BSTR)
+  R  1.16 210 TransactionType(LONG)
   RW 1.12 110 VoucherID(BSTR)
   RW 1.12 111 VoucherIDList(BSTR)
 !> Specific Methods
+ M   1.16 170 AccessDailyLog(LONG SequenceNumber, LONG Type, LONG Timeout)
 !    1.14.100 == Added next after initial 1.14 release.
  M   1.15 161 AccessData(LONG DataType, [in, out] LONG* pData, [in, out] BSTR* pObj)
  M   1.12 140 AccessLog(LONG SequenceNumber, LONG Type, LONG Timeout)
@@ -192,10 +217,18 @@ BuildVersion    =100
  M   1.15 162 ActivateEVService([in, out] LONG* pData, [in, out] BSTR* pObj)
  M   1.12 141 ActivateService([in, out] LONG* pData, [in, out] BSTR* pObj)
  M   1.12 142 AddValue(LONG SequenceNumber, LONG Timeout)
+ M   1.16 171 AuthorizeCompletion(LONG SequenceNumber, CURRENCY Amount, CURRENCY TaxOthers, LONG Timeout)
+ M   1.16 172 AuthorizePreSales(LONG SequenceNumber, CURRENCY Amount, CURRENCY TaxOthers, LONG Timeout)
+ M   1.16 173 AuthorizeRefund(LONG SequenceNumber, CURRENCY Amount, CURRENCY TaxOthers, LONG Timeout)
+ M   1.16 174 AuthorizeSales(LONG SequenceNumber, CURRENCY Amount, CURRENCY TaxOthers, LONG Timeout)
+ M   1.16 175 AuthorizeVoid(LONG SequenceNumber, CURRENCY Amount, CURRENCY TaxOthers, LONG Timeout)
+ M   1.16 176 AuthorizeVoidPreSales(LONG SequenceNumber, CURRENCY Amount, CURRENCY TaxOthers, LONG Timeout)
  M   1.12 143 BeginDetection(LONG Type, LONG Timeout)
  M   1.12 144 BeginRemoval(LONG Timeout)
  M   1.12 145 CancelValue(LONG SequenceNumber, LONG Timeout)
  M   1.12 146 CaptureCard()
+ M   1.16 177 CashDeposit(LONG SequenceNumber, CURRENCY Amount, LONG Timeout)
+ M   1.16 178 CheckCard(LONG SequenceNumber, LONG Timeout)
 !    1.14.100 == Added next after initial 1.14 release.
  M   1.15 163 CheckServiceRegistrationToMedium(LONG SequenceNumber, LONG Timeout)
  M   1.14 157 ClearParameterInformation()

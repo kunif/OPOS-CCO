@@ -11,14 +11,15 @@
 **               Add more parameter and error checking.
 **  2008/08/30 More interface updates.
 **  2013/09/29 Update license section.
-**  2015/02/07 Update license section.
-**  2015/02/07 Version 1.14.001.
+**  2019/01/20 Update year annotation of license.
+**  2019/01/20 Version 1.15.000.
+**             Changed include guard from #ifndef __XXXX_H__ to #pragma once.
 **
 *****************************************************************************
 **
 {{Begin License}}
 
-Copyright 2015 Monroe Consulting Services, Inc.
+Copyright 2019 Monroe Consulting Services, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -35,9 +36,7 @@ limitations under the License.
 {{End License}}
 */
 
-#ifndef __CHECKSCANNERIMPL_H__
-#define __CHECKSCANNERIMPL_H__
-
+#pragma once
 
 /////////////////////////////////////////////////////////////////////////////
 // Debug build tracing macros.
@@ -451,8 +450,8 @@ public:
 // Release 1.12
 // Release 1.13
 // Release 1.14
+// Release 1.15
 };
 
-#endif //__CHECKSCANNERIMPL_H__
 
 // End CheckScannerImpl.h

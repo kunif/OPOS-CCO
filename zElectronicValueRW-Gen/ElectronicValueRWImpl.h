@@ -13,12 +13,15 @@
 **  2013/09/29 Update license section.
 **  2015/02/07 Update license section.
 **  2015/02/07 Version 1.15.100.
+**  2019/01/20 Update year annotation of license.
+**  2019/01/20 Version 1.16.000.
+**             Changed include guard from #ifndef __XXXX_H__ to #pragma once.
 **
 *****************************************************************************
 **
 {{Begin License}}
 
-Copyright 2015 Monroe Consulting Services, Inc.
+Copyright 2019 Monroe Consulting Services, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -35,9 +38,7 @@ limitations under the License.
 {{End License}}
 */
 
-#ifndef __ELECTRONICVALUERWIMPL_H__
-#define __ELECTRONICVALUERWIMPL_H__
-
+#pragma once
 
 /////////////////////////////////////////////////////////////////////////////
 // Debug build tracing macros.
@@ -104,7 +105,7 @@ limitations under the License.
 // Data.
 /////////////////////////////////////////////////////////////////////////////
 
-#define SO_DISP_COUNT 57
+#define SO_DISP_COUNT 66
 // Hidden window class and window name.
 extern TCHAR g_WindowName[];
 // Control Object description.
@@ -156,6 +157,7 @@ protected:
     // Service Object's version numbers. Set during Open.
     long _nSOMajor;                     // Service Object major version.
     long _nSOMinor;                     // Service Object minor version.
+		//+CRMMod+ _nSOMinor value of 15 = SO is >= 1.14.100
 
     // Special-case Control Object maintained result code. Use for:
     //  - Open result code.
@@ -244,6 +246,8 @@ BEGIN_COM_MAP(COPOSElectronicValueRW)
     //   Map each COM interface to the current interface implementation.
     COM_INTERFACE_ENTRY_IID(IID_IOPOSElectronicValueRW, IOPOSElectronicValueRW)
     COM_INTERFACE_ENTRY_IID(IID_IOPOSElectronicValueRW_1_15, IOPOSElectronicValueRW)
+    COM_INTERFACE_ENTRY_IID(IID_IOPOSElectronicValueRW_1_14_100, IOPOSElectronicValueRW)
+    COM_INTERFACE_ENTRY_IID(IID_IOPOSElectronicValueRW_1_14_100_zz, IOPOSElectronicValueRW)
     COM_INTERFACE_ENTRY_IID(IID_IOPOSElectronicValueRW_1_14, IOPOSElectronicValueRW)
     COM_INTERFACE_ENTRY_IID(IID_IOPOSElectronicValueRW_1_14_zz, IOPOSElectronicValueRW)
     COM_INTERFACE_ENTRY_IID(IID_IOPOSElectronicValueRW_1_12, IOPOSElectronicValueRW)
@@ -506,7 +510,7 @@ public:
         /*[in]*/ BSTR Name, 
         /*[in]*/ BSTR Value, 
         /*[out, retval]*/ long* pRC );
-// Release 1.15
+// Release 1.14.100
     STDMETHOD(get_CapMembershipCertificate)( /*[out, retval]*/ VARIANT_BOOL* pCapMembershipCertificate );
     STDMETHOD(get_ServiceType)( /*[out, retval]*/ LONG* pServiceType );
     STDMETHOD(AccessData)( 
@@ -547,8 +551,82 @@ public:
         /*[in, out]*/ LONG* pData, 
         /*[in, out]*/ BSTR* pObj, 
         /*[out, retval]*/ long* pRC );
+// Release 1.15
+    STDMETHOD(get_CapAdditionalSecurityInformation)( /*[out, retval]*/ VARIANT_BOOL* pCapAdditionalSecurityInformation );
+    STDMETHOD(get_CapAuthorizeCompletion)( /*[out, retval]*/ VARIANT_BOOL* pCapAuthorizeCompletion );
+    STDMETHOD(get_CapAuthorizePreSales)( /*[out, retval]*/ VARIANT_BOOL* pCapAuthorizePreSales );
+    STDMETHOD(get_CapAuthorizeRefund)( /*[out, retval]*/ VARIANT_BOOL* pCapAuthorizeRefund );
+    STDMETHOD(get_CapAuthorizeVoid)( /*[out, retval]*/ VARIANT_BOOL* pCapAuthorizeVoid );
+    STDMETHOD(get_CapAuthorizeVoidPreSales)( /*[out, retval]*/ VARIANT_BOOL* pCapAuthorizeVoidPreSales );
+    STDMETHOD(get_CapCashDeposit)( /*[out, retval]*/ VARIANT_BOOL* pCapCashDeposit );
+    STDMETHOD(get_CapCenterResultCode)( /*[out, retval]*/ VARIANT_BOOL* pCapCenterResultCode );
+    STDMETHOD(get_CapCheckCard)( /*[out, retval]*/ VARIANT_BOOL* pCapCheckCard );
+    STDMETHOD(get_CapDailyLog)( /*[out, retval]*/ LONG* pCapDailyLog );
+    STDMETHOD(get_CapInstallments)( /*[out, retval]*/ VARIANT_BOOL* pCapInstallments );
+    STDMETHOD(get_CapPaymentDetail)( /*[out, retval]*/ VARIANT_BOOL* pCapPaymentDetail );
+    STDMETHOD(get_CapTaxOthers)( /*[out, retval]*/ VARIANT_BOOL* pCapTaxOthers );
+    STDMETHOD(get_CapTransactionNumber)( /*[out, retval]*/ VARIANT_BOOL* pCapTransactionNumber );
+    STDMETHOD(get_CardCompanyID)( /*[out, retval]*/ BSTR* pCardCompanyID );
+    STDMETHOD(get_CenterResultCode)( /*[out, retval]*/ BSTR* pCenterResultCode );
+    STDMETHOD(get_DailyLog)( /*[out, retval]*/ BSTR* pDailyLog );
+    STDMETHOD(get_PaymentCondition)( /*[out, retval]*/ long* pPaymentCondition );
+    STDMETHOD(get_PaymentDetail)( /*[out, retval]*/ BSTR* pPaymentDetail );
+    STDMETHOD(get_SlipNumber)( /*[out, retval]*/ BSTR* pSlipNumber );
+    STDMETHOD(get_PaymentMedia)( /*[out, retval]*/ LONG* pPaymentMedia );
+    STDMETHOD(put_PaymentMedia)( /*[in]*/ LONG PaymentMedia );
+    STDMETHOD(get_TransactionNumber)( /*[out, retval]*/ BSTR* pTransactionNumber );
+    STDMETHOD(get_TransactionType)( /*[out, retval]*/ LONG* pTransactionType );
+    STDMETHOD(AccessDailyLog)( 
+        /*[in]*/ LONG SequenceNumber, 
+        /*[in]*/ LONG Type, 
+        /*[in]*/ LONG Timeout, 
+        /*[out, retval]*/ long* pRC );
+    STDMETHOD(AuthorizeCompletion)( 
+        /*[in]*/ LONG SequenceNumber, 
+        /*[in]*/ CURRENCY Amount, 
+        /*[in]*/ CURRENCY TaxOthers, 
+        /*[in]*/ LONG Timeout, 
+        /*[out, retval]*/ long* pRC );
+    STDMETHOD(AuthorizePreSales)( 
+        /*[in]*/ LONG SequenceNumber, 
+        /*[in]*/ CURRENCY Amount, 
+        /*[in]*/ CURRENCY TaxOthers, 
+        /*[in]*/ LONG Timeout, 
+        /*[out, retval]*/ long* pRC );
+    STDMETHOD(AuthorizeRefund)( 
+        /*[in]*/ LONG SequenceNumber, 
+        /*[in]*/ CURRENCY Amount, 
+        /*[in]*/ CURRENCY TaxOthers, 
+        /*[in]*/ LONG Timeout, 
+        /*[out, retval]*/ long* pRC );
+    STDMETHOD(AuthorizeSales)( 
+        /*[in]*/ LONG SequenceNumber, 
+        /*[in]*/ CURRENCY Amount, 
+        /*[in]*/ CURRENCY TaxOthers, 
+        /*[in]*/ LONG Timeout, 
+        /*[out, retval]*/ long* pRC );
+    STDMETHOD(AuthorizeVoid)( 
+        /*[in]*/ LONG SequenceNumber, 
+        /*[in]*/ CURRENCY Amount, 
+        /*[in]*/ CURRENCY TaxOthers, 
+        /*[in]*/ LONG Timeout, 
+        /*[out, retval]*/ long* pRC );
+    STDMETHOD(AuthorizeVoidPreSales)( 
+        /*[in]*/ LONG SequenceNumber, 
+        /*[in]*/ CURRENCY Amount, 
+        /*[in]*/ CURRENCY TaxOthers, 
+        /*[in]*/ LONG Timeout, 
+        /*[out, retval]*/ long* pRC );
+    STDMETHOD(CashDeposit)( 
+        /*[in]*/ LONG SequenceNumber, 
+        /*[in]*/ CURRENCY Amount, 
+        /*[in]*/ LONG Timeout, 
+        /*[out, retval]*/ long* pRC );
+    STDMETHOD(CheckCard)( 
+        /*[in]*/ LONG SequenceNumber, 
+        /*[in]*/ LONG Timeout, 
+        /*[out, retval]*/ long* pRC );
 };
 
-#endif //__ELECTRONICVALUERWIMPL_H__
 
 // End ElectronicValueRWImpl.h

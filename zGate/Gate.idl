@@ -8,14 +8,14 @@
 **  2008/01/15 Enhance for independent interfaces.
 **  2008/08/30 More interface updates.
 **  2013/09/29 Update license section.
-**  2015/02/07 Update license section.
-**  2015/02/07 Version 1.14.001.
+**  2019/01/20 Update year annotation of license.
+**  2019/01/20 Version 1.15.000.
 **
 *****************************************************************************
 **
 {{Begin License}}
 
-Copyright 2015 Monroe Consulting Services, Inc.
+Copyright 2019 Monroe Consulting Services, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -176,6 +176,7 @@ import "ocidl.idl";
             [out, retval] long* pRC );
     // Release 1.13
     // Release 1.14
+    // Release 1.15
     };
 
 //
@@ -200,7 +201,7 @@ import "ocidl.idl";
 [
     uuid(CCB90340-B81E-11D2-AB74-0040054C3719),
     version(1.0),
-    helpstring("OPOS Gate Control 1.14.001 [Public, by CRM/MCS]")
+    helpstring("OPOS Gate Control 1.15.000 [Public, by CRM/MCS]")
 ]
 library OposGate_CCO
 {
@@ -229,7 +230,7 @@ library OposGate_CCO
     //*************************************************************************
     [
         uuid(CCB90342-B81E-11D2-AB74-0040054C3719),
-        helpstring("OPOS Gate Control 1.14.001 [Public, by CRM/MCS]")
+        helpstring("OPOS Gate Control 1.15.000 [Public, by CRM/MCS]")
     ]
     coclass OPOSGate
     {

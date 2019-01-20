@@ -1,19 +1,19 @@
 HKCR
 {
-    OPOS.ToneIndicator.1.14 = s 'OPOS ToneIndicator Control 1.14.001 [Public, by CRM/MCS]'
+    OPOS.ToneIndicator.1.15 = s 'OPOS ToneIndicator Control 1.15.000 [Public, by CRM/MCS]'
     {
         CLSID = s '{CCB90202-B81E-11D2-AB74-0040054C3719}'
     }
-    OPOS.ToneIndicator = s 'OPOS ToneIndicator Control 1.14.001 [Public, by CRM/MCS]'
+    OPOS.ToneIndicator = s 'OPOS ToneIndicator Control 1.15.000 [Public, by CRM/MCS]'
     {
         CLSID = s '{CCB90202-B81E-11D2-AB74-0040054C3719}'
-        CurVer = s 'OPOS.ToneIndicator.1.14'
+        CurVer = s 'OPOS.ToneIndicator.1.15'
     }
     NoRemove CLSID
     {
-        ForceRemove {CCB90202-B81E-11D2-AB74-0040054C3719} = s 'OPOS ToneIndicator Control 1.14.001 [Public, by CRM/MCS]'
+        ForceRemove {CCB90202-B81E-11D2-AB74-0040054C3719} = s 'OPOS ToneIndicator Control 1.15.000 [Public, by CRM/MCS]'
         {
-            ProgID = s 'OPOS.ToneIndicator.1.14'
+            ProgID = s 'OPOS.ToneIndicator.1.15'
             VersionIndependentProgID = s 'OPOS.ToneIndicator'
             ForceRemove 'Programmable'
             InprocServer32 = s '%MODULE%'
@@ -29,7 +29,7 @@ HKCR
             }
             'TypeLib' = s '{CCB90200-B81E-11D2-AB74-0040054C3719}'
             'Version' = s '1.0'
-            'BuildInformation' = s 'OPOS 1.14. Build 001; 2015/02/07.'
+            'BuildInformation' = s 'OPOS 1.15. Build 000; 2019/01/20.'
         }
     }
     NoRemove Interface

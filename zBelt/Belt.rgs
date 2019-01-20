@@ -1,19 +1,19 @@
 HKCR
 {
-    OPOS.Belt.1.14 = s 'OPOS Belt Control 1.14.001 [Public, by CRM/MCS]'
+    OPOS.Belt.1.15 = s 'OPOS Belt Control 1.15.000 [Public, by CRM/MCS]'
     {
         CLSID = s '{CCB90322-B81E-11D2-AB74-0040054C3719}'
     }
-    OPOS.Belt = s 'OPOS Belt Control 1.14.001 [Public, by CRM/MCS]'
+    OPOS.Belt = s 'OPOS Belt Control 1.15.000 [Public, by CRM/MCS]'
     {
         CLSID = s '{CCB90322-B81E-11D2-AB74-0040054C3719}'
-        CurVer = s 'OPOS.Belt.1.14'
+        CurVer = s 'OPOS.Belt.1.15'
     }
     NoRemove CLSID
     {
-        ForceRemove {CCB90322-B81E-11D2-AB74-0040054C3719} = s 'OPOS Belt Control 1.14.001 [Public, by CRM/MCS]'
+        ForceRemove {CCB90322-B81E-11D2-AB74-0040054C3719} = s 'OPOS Belt Control 1.15.000 [Public, by CRM/MCS]'
         {
-            ProgID = s 'OPOS.Belt.1.14'
+            ProgID = s 'OPOS.Belt.1.15'
             VersionIndependentProgID = s 'OPOS.Belt'
             ForceRemove 'Programmable'
             InprocServer32 = s '%MODULE%'
@@ -29,7 +29,7 @@ HKCR
             }
             'TypeLib' = s '{CCB90320-B81E-11D2-AB74-0040054C3719}'
             'Version' = s '1.0'
-            'BuildInformation' = s 'OPOS 1.14. Build 001; 2015/02/07.'
+            'BuildInformation' = s 'OPOS 1.15. Build 000; 2019/01/20.'
         }
     }
 }

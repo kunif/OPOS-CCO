@@ -1,19 +1,19 @@
 HKCR
 {
-    OPOS.BillAcceptor.1.14 = s 'OPOS BillAcceptor Control 1.14.001 [Public, by CRM/MCS]'
+    OPOS.BillAcceptor.1.15 = s 'OPOS BillAcceptor Control 1.15.000 [Public, by CRM/MCS]'
     {
         CLSID = s '{CCB90282-B81E-11D2-AB74-0040054C3719}'
     }
-    OPOS.BillAcceptor = s 'OPOS BillAcceptor Control 1.14.001 [Public, by CRM/MCS]'
+    OPOS.BillAcceptor = s 'OPOS BillAcceptor Control 1.15.000 [Public, by CRM/MCS]'
     {
         CLSID = s '{CCB90282-B81E-11D2-AB74-0040054C3719}'
-        CurVer = s 'OPOS.BillAcceptor.1.14'
+        CurVer = s 'OPOS.BillAcceptor.1.15'
     }
     NoRemove CLSID
     {
-        ForceRemove {CCB90282-B81E-11D2-AB74-0040054C3719} = s 'OPOS BillAcceptor Control 1.14.001 [Public, by CRM/MCS]'
+        ForceRemove {CCB90282-B81E-11D2-AB74-0040054C3719} = s 'OPOS BillAcceptor Control 1.15.000 [Public, by CRM/MCS]'
         {
-            ProgID = s 'OPOS.BillAcceptor.1.14'
+            ProgID = s 'OPOS.BillAcceptor.1.15'
             VersionIndependentProgID = s 'OPOS.BillAcceptor'
             ForceRemove 'Programmable'
             InprocServer32 = s '%MODULE%'
@@ -29,7 +29,7 @@ HKCR
             }
             'TypeLib' = s '{CCB90280-B81E-11D2-AB74-0040054C3719}'
             'Version' = s '1.0'
-            'BuildInformation' = s 'OPOS 1.14. Build 001; 2015/02/07.'
+            'BuildInformation' = s 'OPOS 1.15. Build 000; 2019/01/20.'
         }
     }
 }

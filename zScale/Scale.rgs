@@ -1,19 +1,19 @@
 HKCR
 {
-    OPOS.Scale.1.14 = s 'OPOS Scale Control 1.14.001 [Public, by CRM/MCS]'
+    OPOS.Scale.1.15 = s 'OPOS Scale Control 1.15.000 [Public, by CRM/MCS]'
     {
         CLSID = s '{CCB90172-B81E-11D2-AB74-0040054C3719}'
     }
-    OPOS.Scale = s 'OPOS Scale Control 1.14.001 [Public, by CRM/MCS]'
+    OPOS.Scale = s 'OPOS Scale Control 1.15.000 [Public, by CRM/MCS]'
     {
         CLSID = s '{CCB90172-B81E-11D2-AB74-0040054C3719}'
-        CurVer = s 'OPOS.Scale.1.14'
+        CurVer = s 'OPOS.Scale.1.15'
     }
     NoRemove CLSID
     {
-        ForceRemove {CCB90172-B81E-11D2-AB74-0040054C3719} = s 'OPOS Scale Control 1.14.001 [Public, by CRM/MCS]'
+        ForceRemove {CCB90172-B81E-11D2-AB74-0040054C3719} = s 'OPOS Scale Control 1.15.000 [Public, by CRM/MCS]'
         {
-            ProgID = s 'OPOS.Scale.1.14'
+            ProgID = s 'OPOS.Scale.1.15'
             VersionIndependentProgID = s 'OPOS.Scale'
             ForceRemove 'Programmable'
             InprocServer32 = s '%MODULE%'
@@ -29,7 +29,7 @@ HKCR
             }
             'TypeLib' = s '{CCB90170-B81E-11D2-AB74-0040054C3719}'
             'Version' = s '1.0'
-            'BuildInformation' = s 'OPOS 1.14. Build 001; 2015/02/07.'
+            'BuildInformation' = s 'OPOS 1.15. Build 000; 2019/01/20.'
         }
     }
     NoRemove Interface

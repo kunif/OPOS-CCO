@@ -1,0 +1,91 @@
+/****************************************************************************
+**
+** OposInterfaces.idl : DEF source for Opos_Interfaces.dll
+**
+*****************************************************************************
+**
+{{Begin License}}
+
+Copyright 2019 Kunio Fukuchi
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+{{End License}}
+*/
+
+
+// This file will be processed by the MDEF tool to
+// produce the type library (Opos_Interfaces.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+///////////////////////////////////////////////////////////////////////////////
+//// Library
+////   Note that no coclasses are defined.
+////   This DLL exists solely to provide interfaces.
+///////////////////////////////////////////////////////////////////////////////
+
+[
+    uuid(CCBE9150-B81E-11D2-AB74-0040054C3719),
+    //        ^^^
+    // As the constants were updated, I was originally planning to increment these digits:
+    //   150 = OPOS Release 1.5 Patch 0.
+    // But decided to leave at original value, since
+    //   1) Updates should be either corrections or supersets of previous.
+    //   2) Don't want to force projects to bring in updated library.
+    version(1.0),
+    helpstring("OPOS 1.15 Interfaces")
+]
+library OPOSINTERFACESLib
+{
+    importlib("stdole32.tlb");
+    importlib("stdole2.tlb");
+
+    #include "IFC\OposSoIdlBelt.h"
+    #include "IFC\OposSoIdlBillAcceptor.h"
+    #include "IFC\OposSoIdlBillDispenser.h"
+    #include "IFC\OposSoIdlBiometrics.h"
+    #include "IFC\OposSoIdlBumpBar.h"
+    #include "IFC\OposSoIdlCashChanger.h"
+    #include "IFC\OposSoIdlCashDrawer.h"
+    #include "IFC\OposSoIdlCAT.h"
+    #include "IFC\OposSoIdlCheckScanner.h"
+    #include "IFC\OposSoIdlCoinAcceptor.h"
+    #include "IFC\OposSoIdlCoinDispenser.h"
+    #include "IFC\OposSoIdlElectronicJournal.h"
+    #include "IFC\OposSoIdlElectronicValueRW.h"
+    #include "IFC\OposSoIdlFiscalPrinter.h"
+    #include "IFC\OposSoIdlGate.h"
+    #include "IFC\OposSoIdlImageScanner.h"
+    #include "IFC\OposSoIdlItemDispenser.h"
+    #include "IFC\OposSoIdlKeylock.h"
+    #include "IFC\OposSoIdlLights.h"
+    #include "IFC\OposSoIdlLineDisplay.h"
+    #include "IFC\OposSoIdlMICR.h"
+    #include "IFC\OposSoIdlMotionSensor.h"
+    #include "IFC\OposSoIdlMSR.h"
+    #include "IFC\OposSoIdlPINPad.h"
+    #include "IFC\OposSoIdlPointCardRW.h"
+    #include "IFC\OposSoIdlPOSKeyboard.h"
+    #include "IFC\OposSoIdlPOSPower.h"
+    #include "IFC\OposSoIdlPOSPrinter.h"
+    #include "IFC\OposSoIdlRemoteOrderDisplay.h"
+    #include "IFC\OposSoIdlRFIDScanner.h"
+    #include "IFC\OposSoIdlScale.h"
+    #include "IFC\OposSoIdlScanner.h"
+    #include "IFC\OposSoIdlSigCap.h"
+    #include "IFC\OposSoIdlSmartCardRW.h"
+    #include "IFC\OposSoIdlToneIndicator.h"
+    #include "IFC\OposSoIdlTotals.h"
+};

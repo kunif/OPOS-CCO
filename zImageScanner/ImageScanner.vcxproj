@@ -22,7 +22,7 @@
     <ProjectGuid>{FD7A0310-EA00-4142-A3CC-095B1351109C}</ProjectGuid>
     <RootNamespace>ImageScanner</RootNamespace>
     <Keyword>AtlProj</Keyword>
-    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -106,7 +106,7 @@
       <MkTypLibCompatible>false</MkTypLibCompatible>
       <TargetEnvironment>Win32</TargetEnvironment>
       <GenerateStublessProxies>true</GenerateStublessProxies>
-      <TypeLibraryName>$(IntDir)ImageScanner.tlb</TypeLibraryName>
+      <TypeLibraryName>$(SolutionDir)OCX\$(Platform)\$(Configuration)\$(TargetName).tlb</TypeLibraryName>
       <HeaderFileName>ImageScanner.h</HeaderFileName>
       <DllDataFileName />
       <InterfaceIdentifierFileName>ImageScanner_i.c</InterfaceIdentifierFileName>
@@ -116,7 +116,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>.;..\Common;..\Common\Opos;..\Common\ATL;..;..\RCSTrace;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_FILETRACE;WIN32;_WINDOWS;_DEBUG;_USRDLL;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <ExceptionHandling />
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -124,12 +124,13 @@
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <PrecompiledHeader />
       <WarningLevel>Level4</WarningLevel>
-      <DebugInformationFormat />
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AssemblerOutput>All</AssemblerOutput>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <Culture>0x0409</Culture>
-      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(IntDir);$(SolutionDir)OCX\$(Platform)\$(Configuration);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
       <RegisterOutput>false</RegisterOutput>
@@ -151,7 +152,7 @@
       <MkTypLibCompatible>false</MkTypLibCompatible>
       <TargetEnvironment>X64</TargetEnvironment>
       <GenerateStublessProxies>true</GenerateStublessProxies>
-      <TypeLibraryName>$(IntDir)ImageScanner.tlb</TypeLibraryName>
+      <TypeLibraryName>$(SolutionDir)OCX\$(Platform)\$(Configuration)\$(TargetName).tlb</TypeLibraryName>
       <HeaderFileName>ImageScanner.h</HeaderFileName>
       <DllDataFileName>
       </DllDataFileName>
@@ -162,7 +163,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>.;..\Common;..\Common\Opos;..\Common\ATL;..;..\RCSTrace;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_FILETRACE;WIN32;_WINDOWS;_DEBUG;_USRDLL;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <ExceptionHandling>
       </ExceptionHandling>
@@ -172,13 +173,13 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AssemblerOutput>All</AssemblerOutput>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <Culture>0x0409</Culture>
-      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(IntDir);$(SolutionDir)OCX\$(Platform)\$(Configuration);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
       <RegisterOutput>false</RegisterOutput>
@@ -201,7 +202,7 @@
       <MkTypLibCompatible>false</MkTypLibCompatible>
       <TargetEnvironment>Win32</TargetEnvironment>
       <GenerateStublessProxies>true</GenerateStublessProxies>
-      <TypeLibraryName>$(IntDir)ImageScanner.tlb</TypeLibraryName>
+      <TypeLibraryName>$(SolutionDir)OCX\$(Platform)\$(Configuration)\$(TargetName).tlb</TypeLibraryName>
       <HeaderFileName>ImageScanner.h</HeaderFileName>
       <DllDataFileName />
       <InterfaceIdentifierFileName>ImageScanner_i.c</InterfaceIdentifierFileName>
@@ -220,12 +221,13 @@
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <PrecompiledHeader />
       <WarningLevel>Level4</WarningLevel>
-      <DebugInformationFormat />
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AssemblerOutput>All</AssemblerOutput>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <Culture>0x0409</Culture>
-      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(IntDir);$(SolutionDir)OCX\$(Platform)\$(Configuration);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
       <RegisterOutput>false</RegisterOutput>
@@ -249,7 +251,7 @@
       <MkTypLibCompatible>false</MkTypLibCompatible>
       <TargetEnvironment>X64</TargetEnvironment>
       <GenerateStublessProxies>true</GenerateStublessProxies>
-      <TypeLibraryName>$(IntDir)ImageScanner.tlb</TypeLibraryName>
+      <TypeLibraryName>$(SolutionDir)OCX\$(Platform)\$(Configuration)\$(TargetName).tlb</TypeLibraryName>
       <HeaderFileName>ImageScanner.h</HeaderFileName>
       <DllDataFileName>
       </DllDataFileName>
@@ -271,13 +273,13 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AssemblerOutput>All</AssemblerOutput>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <Culture>0x0409</Culture>
-      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(IntDir);$(SolutionDir)OCX\$(Platform)\$(Configuration);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
       <RegisterOutput>false</RegisterOutput>
@@ -300,9 +302,9 @@
     <ClCompile Include="..\Common\Assert.cpp" />
     <ClCompile Include="..\Common\CWString.cpp" />
     <ClCompile Include="..\Common\OposVariant.cpp" />
+    <ClCompile Include="..\Common\StdAfx.cpp" />
     <ClCompile Include="ImageScanner.cpp" />
     <ClCompile Include="ImageScannerImpl.cpp" />
-    <ClCompile Include="StdAfx.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ImageScanner.def" />
@@ -315,6 +317,7 @@
     <ClInclude Include="..\Common\Assert.h" />
     <ClInclude Include="..\Common\CWString.h" />
     <ClInclude Include="..\Common\OposVariant.h" />
+    <ClInclude Include="..\Common\StdAfx.h" />
     <ClInclude Include="dlldatax.h" />
     <ClInclude Include="ImageScanner.h" />
     <ClInclude Include="ImageScannerCP.h" />
@@ -322,7 +325,6 @@
     <ClInclude Include="ImageScannerEvent.h" />
     <ClInclude Include="ImageScannerImpl.h" />
     <ClInclude Include="Resource.h" />
-    <ClInclude Include="StdAfx.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ImageScanner.rc" />

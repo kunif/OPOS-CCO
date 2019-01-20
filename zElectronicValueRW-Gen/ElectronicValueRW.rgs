@@ -1,19 +1,19 @@
 HKCR
 {
-    OPOS.ElectronicValueRW.1.15 = s 'OPOS ElectronicValueRW Control 1.15.100 [Public, by CRM/MCS]'
+    OPOS.ElectronicValueRW.1.16 = s 'OPOS ElectronicValueRW Control 1.16.000 [Public, by CRM/MCS]'
     {
         CLSID = s '{CCB90332-B81E-11D2-AB74-0040054C3719}'
     }
-    OPOS.ElectronicValueRW = s 'OPOS ElectronicValueRW Control 1.15.100 [Public, by CRM/MCS]'
+    OPOS.ElectronicValueRW = s 'OPOS ElectronicValueRW Control 1.16.000 [Public, by CRM/MCS]'
     {
         CLSID = s '{CCB90332-B81E-11D2-AB74-0040054C3719}'
-        CurVer = s 'OPOS.ElectronicValueRW.1.15'
+        CurVer = s 'OPOS.ElectronicValueRW.1.16'
     }
     NoRemove CLSID
     {
-        ForceRemove {CCB90332-B81E-11D2-AB74-0040054C3719} = s 'OPOS ElectronicValueRW Control 1.15.100 [Public, by CRM/MCS]'
+        ForceRemove {CCB90332-B81E-11D2-AB74-0040054C3719} = s 'OPOS ElectronicValueRW Control 1.16.000 [Public, by CRM/MCS]'
         {
-            ProgID = s 'OPOS.ElectronicValueRW.1.15'
+            ProgID = s 'OPOS.ElectronicValueRW.1.16'
             VersionIndependentProgID = s 'OPOS.ElectronicValueRW'
             ForceRemove 'Programmable'
             InprocServer32 = s '%MODULE%'
@@ -29,7 +29,7 @@ HKCR
             }
             'TypeLib' = s '{CCB90330-B81E-11D2-AB74-0040054C3719}'
             'Version' = s '1.0'
-            'BuildInformation' = s 'OPOS 1.15. Build 100; 2015/02/07.'
+            'BuildInformation' = s 'OPOS 1.16. Build 000; 2019/01/20.'
         }
     }
 }

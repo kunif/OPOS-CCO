@@ -1,0 +1,92 @@
+/****************************************************************************
+**
+** OposInternals.idl : DEF source for Opos_Internals.dll
+**
+*****************************************************************************
+**
+{{Begin License}}
+
+Copyright 2019 Kunio Fukuchi
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+{{End License}}
+*/
+
+
+// This file will be processed by the MDEF tool to
+// produce the type library (Opos_Internals.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+///////////////////////////////////////////////////////////////////////////////
+//// Library
+////   Note that no interfaces or coclasses are defined.
+////   This DLL exists solely to provide constant enumerations.
+///////////////////////////////////////////////////////////////////////////////
+
+[
+    uuid(CCBD9150-B81E-11D2-AB74-0040054C3719),
+    //        ^^^
+    // As the constants were updated, I was originally planning to increment these digits:
+    //   150 = OPOS Release 1.5 Patch 0.
+    // But decided to leave at original value, since
+    //   1) Updates should be either corrections or supersets of previous.
+    //   2) Don't want to force projects to bring in updated library.
+    version(1.0),
+    helpstring("OPOS 1.15 Internals")
+]
+library OPOSINTERNALSLib
+{
+    importlib("stdole32.tlb");
+    importlib("stdole2.tlb");
+
+    #include "OposInter.h"
+    #include "DEF\OposInterBelt.h"
+    #include "DEF\OposInterBillAcceptor.h"
+    #include "DEF\OposInterBillDispenser.h"
+    #include "DEF\OposInterBiometrics.h"
+    #include "DEF\OposInterBumpBar.h"
+    #include "DEF\OposInterCashChanger.h"
+    #include "DEF\OposInterCashDrawer.h"
+    #include "DEF\OposInterCAT.h"
+    #include "DEF\OposInterCheckScanner.h"
+    #include "DEF\OposInterCoinAcceptor.h"
+    #include "DEF\OposInterCoinDispenser.h"
+    #include "DEF\OposInterElectronicJournal.h"
+    #include "DEF\OposInterElectronicValueRW.h"
+    #include "DEF\OposInterFiscalPrinter.h"
+    #include "DEF\OposInterGate.h"
+    #include "DEF\OposInterImageScanner.h"
+    #include "DEF\OposInterItemDispenser.h"
+    #include "DEF\OposInterKeylock.h"
+    #include "DEF\OposInterLights.h"
+    #include "DEF\OposInterLineDisplay.h"
+    #include "DEF\OposInterMICR.h"
+    #include "DEF\OposInterMotionSensor.h"
+    #include "DEF\OposInterMSR.h"
+    #include "DEF\OposInterPINPad.h"
+    #include "DEF\OposInterPointCardRW.h"
+    #include "DEF\OposInterPOSKeyboard.h"
+    #include "DEF\OposInterPOSPower.h"
+    #include "DEF\OposInterPOSPrinter.h"
+    #include "DEF\OposInterRemoteOrderDisplay.h"
+    #include "DEF\OposInterRFIDScanner.h"
+    #include "DEF\OposInterScale.h"
+    #include "DEF\OposInterScanner.h"
+    #include "DEF\OposInterSigCap.h"
+    #include "DEF\OposInterSmartCardRW.h"
+    #include "DEF\OposInterToneIndicator.h"
+    #include "DEF\OposInterTotals.h"
+};

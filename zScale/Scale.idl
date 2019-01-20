@@ -8,14 +8,14 @@
 **  2008/01/15 Enhance for independent interfaces.
 **  2008/08/30 More interface updates.
 **  2013/09/29 Update license section.
-**  2015/02/07 Update license section.
-**  2015/02/07 Version 1.14.001.
+**  2019/01/20 Update year annotation of license.
+**  2019/01/20 Version 1.15.000.
 **
 *****************************************************************************
 **
 {{Begin License}}
 
-Copyright 2015 Monroe Consulting Services, Inc.
+Copyright 2019 Monroe Consulting Services, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -392,6 +392,7 @@ import "ocidl.idl";
             [in] long WeightNumerator, 
             [in] long WeightDenominator, 
             [out, retval] long* pRC );
+    // Release 1.15
     };
 
 //
@@ -416,7 +417,7 @@ import "ocidl.idl";
 [
     uuid(CCB90170-B81E-11D2-AB74-0040054C3719),
     version(1.0),
-    helpstring("OPOS Scale Control 1.14.001 [Public, by CRM/MCS]")
+    helpstring("OPOS Scale Control 1.15.000 [Public, by CRM/MCS]")
 ]
 library OposScale_CCO
 {
@@ -449,7 +450,7 @@ library OposScale_CCO
     //*************************************************************************
     [
         uuid(CCB90172-B81E-11D2-AB74-0040054C3719),
-        helpstring("OPOS Scale Control 1.14.001 [Public, by CRM/MCS]")
+        helpstring("OPOS Scale Control 1.15.000 [Public, by CRM/MCS]")
     ]
     coclass OPOSScale
     {

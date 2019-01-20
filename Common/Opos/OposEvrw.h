@@ -17,6 +17,14 @@
 //   Added AccessData's DataType constants.
 //   Additional RetrieveResultInformation's Value constants.
 //   Additional TransitionEvent's EventNumber constants.
+// 2019-01-20 OPOS Release 1.15                                  KF
+//   Added CapDailyLog and AccessDailyLog constants.
+//   Added PaymentCondition constants.
+//   Added PaymentMedia constants.
+//   Added TransactionType constants.
+//   Additional RetrieveResultInformation's Value constants.
+//   Additional ServiceType's Value constants.
+//   Additional TransitionEvent's EventNumber constants.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -55,12 +63,69 @@ const LONG EVRW_DS_CAPTURED             = 4;
 
 
 /////////////////////////////////////////////////////////////////////
+// "CapDailyLog" Property and "AccessDailyLog" Type Parameter Constants
+// (added in 1.15)
+/////////////////////////////////////////////////////////////////////
+
+const LONG EVRW_DL_NONE                 = 0;
+const LONG EVRW_DL_REPORTING            = 1;
+const LONG EVRW_DL_SETTLEMENT           = 2;
+const LONG EVRW_DL_REPORTING_SETTLEMENT = 3;
+
+
+/////////////////////////////////////////////////////////////////////
 // "LogStatus" Property Constants
 /////////////////////////////////////////////////////////////////////
 
 const LONG EVRW_LS_OK                   = 1;
 const LONG EVRW_LS_NEARFULL             = 2;
 const LONG EVRW_LS_FULL                 = 3;
+
+
+/////////////////////////////////////////////////////////////////////
+// "PaymentCondition" Property Constants (added in 1.15)
+/////////////////////////////////////////////////////////////////////
+
+const LONG EVRW_PAYMENT_LUMP                =  10;
+const LONG EVRW_PAYMENT_BONUS_1             =  21;
+const LONG EVRW_PAYMENT_BONUS_2             =  22;
+const LONG EVRW_PAYMENT_BONUS_3             =  23;
+const LONG EVRW_PAYMENT_BONUS_4             =  24;
+const LONG EVRW_PAYMENT_BONUS_5             =  25;
+const LONG EVRW_PAYMENT_INSTALLMENT_1       =  61;
+const LONG EVRW_PAYMENT_INSTALLMENT_2       =  62;
+const LONG EVRW_PAYMENT_INSTALLMENT_3       =  63;
+const LONG EVRW_PAYMENT_BONUS_COMBINATION_1 =  31;
+const LONG EVRW_PAYMENT_BONUS_COMBINATION_2 =  32;
+const LONG EVRW_PAYMENT_BONUS_COMBINATION_3 =  33;
+const LONG EVRW_PAYMENT_BONUS_COMBINATION_4 =  34;
+const LONG EVRW_PAYMENT_REVOLVING           =  80;
+const LONG EVRW_PAYMENT_DEBIT               = 110;
+const LONG EVRW_PAYMENT_ELECTRONIC_MONEY    = 111;
+
+
+/////////////////////////////////////////////////////////////////////
+// "PaymentMedia" Property Constants (added in 1.15)
+/////////////////////////////////////////////////////////////////////
+
+const LONG EVRW_MEDIA_UNSPECIFIED           = 0;
+const LONG EVRW_MEDIA_CREDIT                = 1;
+const LONG EVRW_MEDIA_DEBIT                 = 2;
+const LONG EVRW_MEDIA_ELECTRONIC_MONEY      = 3;
+
+
+/////////////////////////////////////////////////////////////////////
+// "TransactionType" Property Constants (added in 1.15)
+/////////////////////////////////////////////////////////////////////
+
+const LONG EVRW_TRANSACTION_SALES           = 10;
+const LONG EVRW_TRANSACTION_VOID            = 20;
+const LONG EVRW_TRANSACTION_REFUND          = 21;
+const LONG EVRW_TRANSACTION_VOIDPRESALES    = 29;
+const LONG EVRW_TRANSACTION_COMPLETION      = 30;
+const LONG EVRW_TRANSACTION_PRESALES        = 40;
+const LONG EVRW_TRANSACTION_CHECKCARD       = 41;
+const LONG EVRW_TRANSACTION_CASHDEPOSIT     = 50;
 
 
 /////////////////////////////////////////////////////////////////////
@@ -178,6 +243,8 @@ const LONG EVRW_TAG_TT_READ             = 6;
 const LONG EVRW_TAG_TT_RETURN           = 7;
 const LONG EVRW_TAG_TT_SUBTRACT         = 8;
 const LONG EVRW_TAG_TT_WRITE            = 9;
+const LONG EVRW_TAG_TT_COMPLETION       = 10; // (added in 1.15)
+const LONG EVRW_TAG_TT_PRE_SALES        = 11; // (added in 1.15)
 
 
 /////////////////////////////////////////////////////////////////////
@@ -228,6 +295,11 @@ const LONG EVRW_TE_NOTIFY_CENTER_CHECK_COMPLETE      = 20;
 const LONG EVRW_TE_CONFIRM_PIN_ENTRY_BY_OUTER_PINPAD = 21;
 const LONG EVRW_TE_NOTIFY_PROGRESS_1_TO_100          = 22; // (added in 1.14.1)
 const LONG EVRW_TE_CONFIRM_DEVICE_DATA               = 23; // (added in 1.14.1)
+const LONG EVRW_TE_CONFIRM_SEARCH_TABLE              = 24; // (added in 1.15)
+const LONG EVRW_TE_CONFIRM_PAYMENT_CONDITION         = 25; // (added in 1.15)
+const LONG EVRW_TE_CONFIRM_AUTHORIZE                 = 26; // (added in 1.15)
+const LONG EVRW_TE_NOTIFY_CHECK_CARD                 = 27; // (added in 1.15)
+const LONG EVRW_TE_NOTIFY_SELECT_PAYMENT_CONDITION   = 28; // (added in 1.15)
 
 
 /////////////////////////////////////////////////////////////////////

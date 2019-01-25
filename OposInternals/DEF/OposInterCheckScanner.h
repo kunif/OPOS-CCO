@@ -36,8 +36,8 @@ enum
     PIDXChk_CapAutoContrast      = 22512,
     PIDXChk_CapContrast          = 22513,
 
-    PIDXChk_FileID               = 122001,
-    PIDXChk_ImageData            = 122002,
-    PIDXChk_ImageTagData         = 122003,
-    PIDXChk_QualityList          = 122004
+    PIDXChk_FileID               = 1022001,
+    PIDXChk_ImageData            = 1022002,
+    PIDXChk_ImageTagData         = 1022003,
+    PIDXChk_QualityList          = 1022004
 } OPOSCheckScannerInternals;

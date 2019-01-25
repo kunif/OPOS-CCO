@@ -33,15 +33,15 @@ enum
     PIDXCat_CapLogStatus         = 19517,
     PIDXCat_CapUnlockTerminal    = 19518,
 
-    PIDXCat_AccountNumber        = 119001,
-    PIDXCat_AdditionalSecurityInformation = 119002,
-    PIDXCat_ApprovalCode         = 119003,
-    PIDXCat_CardCompanyID        = 119004,
-    PIDXCat_CenterResultCode     = 119005,
-    PIDXCat_DailyLog             = 119006,
-    PIDXCat_PaymentCondition     = 119007,
-    PIDXCat_PaymentDetail        = 119008,
-    PIDXCat_SequenceNumber       = 119009,
-    PIDXCat_SlipNumber           = 119010,
-    PIDXCat_TransactionNumber    = 119011
+    PIDXCat_AccountNumber        = 1019001,
+    PIDXCat_AdditionalSecurityInformation = 1019002,
+    PIDXCat_ApprovalCode         = 1019003,
+    PIDXCat_CardCompanyID        = 1019004,
+    PIDXCat_CenterResultCode     = 1019005,
+    PIDXCat_DailyLog             = 1019006,
+    PIDXCat_PaymentCondition     = 1019007,
+    PIDXCat_PaymentDetail        = 1019008,
+    PIDXCat_SequenceNumber       = 1019009,
+    PIDXCat_SlipNumber           = 1019010,
+    PIDXCat_TransactionNumber    = 1019011
 } OPOSCATInternals;

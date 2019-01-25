@@ -20,8 +20,8 @@ enum
     PIDXBdsp_CapJamSensor        = 28503,
     PIDXBdsp_CapNearFullSensor   = 28504,
 
-    PIDXBdsp_CurrencyCashList    = 128001,
-    PIDXBdsp_CurrencyCode        = 128002,
-    PIDXBdsp_CurrencyCodeList    = 128003,
-    PIDXBdsp_ExitCashList        = 128004
+    PIDXBdsp_CurrencyCashList    = 1028001,
+    PIDXBdsp_CurrencyCode        = 1028002,
+    PIDXBdsp_CurrencyCodeList    = 1028003,
+    PIDXBdsp_ExitCashList        = 1028004
 } OPOSBillDispenserInternals;

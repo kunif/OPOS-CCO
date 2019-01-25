@@ -113,11 +113,11 @@ enum
 
     PIDXFptr_ErrorString         = 16001,
     PIDXFptr_PredefinedPaymentLines
-                                 = 116002,
-    PIDXFptr_ReservedWord        = 116003,
-    PIDXFptr_AdditionalHeader    = 116004,
-    PIDXFptr_AdditionalTrailer   = 116005,
-    PIDXFptr_ChangeDue           = 116006,
-    PIDXFptr_PostLine            = 116007,
-    PIDXFptr_PreLine             = 116008
+                                 = 1016002,
+    PIDXFptr_ReservedWord        = 1016003,
+    PIDXFptr_AdditionalHeader    = 1016004,
+    PIDXFptr_AdditionalTrailer   = 1016005,
+    PIDXFptr_ChangeDue           = 1016006,
+    PIDXFptr_PostLine            = 1016007,
+    PIDXFptr_PreLine             = 1016008
 } OPOSFiscalPrinterInternals;

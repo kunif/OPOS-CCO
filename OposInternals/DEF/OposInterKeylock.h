@@ -13,5 +13,5 @@ enum
 
     PIDXLock_CapKeylockType      =  4501,
 
-    PIDXLock_ElectronicKeyValue  = 104001
+    PIDXLock_ElectronicKeyValue  = 1004001
 } OPOSKeylockInternals;

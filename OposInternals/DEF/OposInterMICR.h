@@ -13,11 +13,11 @@ enum
 
     PIDXMicr_CapValidationDevice =  6501,
 
-    PIDXMicr_AccountNumber       = 106001,
-    PIDXMicr_Amount              = 106002,
-    PIDXMicr_BankNumber          = 106003,
-    PIDXMicr_EPC                 = 106004,
-    PIDXMicr_RawData             = 106005,
-    PIDXMicr_SerialNumber        = 106006,
-    PIDXMicr_TransitNumber       = 106007
+    PIDXMicr_AccountNumber       = 1006001,
+    PIDXMicr_Amount              = 1006002,
+    PIDXMicr_BankNumber          = 1006003,
+    PIDXMicr_EPC                 = 1006004,
+    PIDXMicr_RawData             = 1006005,
+    PIDXMicr_SerialNumber        = 1006006,
+    PIDXMicr_TransitNumber       = 1006007
 } OPOSMICRInternals;

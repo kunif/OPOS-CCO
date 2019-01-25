@@ -11,6 +11,6 @@ enum
     PIDXScan_DecodeData         = 10001,
     PIDXScan_ScanDataType       = 10002,
 
-    PIDXScan_ScanData           = 110001,
-    PIDXScan_ScanDataLabel      = 110002
+    PIDXScan_ScanData           = 1010001,
+    PIDXScan_ScanDataLabel      = 1010002
 } OPOSScannerInternals;

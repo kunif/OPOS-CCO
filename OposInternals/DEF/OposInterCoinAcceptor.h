@@ -20,8 +20,8 @@ enum
     PIDXCacc_CapPauseDeposit     = 29505,
     PIDXCacc_CapRealTimeData     = 29506,
 
-    PIDXCacc_CurrencyCode        = 129001,
-    PIDXCacc_DepositCashList     = 129002,
-    PIDXCacc_DepositCodeList     = 129003,
-    PIDXCacc_DepositCounts       = 129004
+    PIDXCacc_CurrencyCode        = 1029001,
+    PIDXCacc_DepositCashList     = 1029002,
+    PIDXCacc_DepositCodeList     = 1029003,
+    PIDXCacc_DepositCounts       = 1029004
 } OPOSCoinAcceptorInternals;

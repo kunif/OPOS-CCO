@@ -21,6 +21,6 @@ enum
     PIDXRfid_CapReadTimer                    = 36505,
     PIDXRfid_CapWriteTag                     = 36506,
 
-    PIDXRfid_CurrentTagID                    = 136001,
-    PIDXRfid_CurrentTagUserData              = 136002
+    PIDXRfid_CurrentTagID                    = 1036001,
+    PIDXRfid_CurrentTagUserData              = 1036002
 } OPOSRFIDScannerInternals;

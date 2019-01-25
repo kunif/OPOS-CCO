@@ -34,11 +34,11 @@ enum
     PIDXChan_CapJamSensor        = 13510,
     PIDXChan_CapRealTimeData     = 13511,
 
-    PIDXChan_CurrencyCashList    = 113001,
-    PIDXChan_CurrencyCode        = 113002,
-    PIDXChan_CurrencyCodeList    = 113003,
-    PIDXChan_ExitCashList        = 113004,
-    PIDXChan_DepositCashList     = 113005,
-    PIDXChan_DepositCodeList     = 113006,
-    PIDXChan_DepositCounts       = 113007
+    PIDXChan_CurrencyCashList    = 1013001,
+    PIDXChan_CurrencyCode        = 1013002,
+    PIDXChan_CurrencyCodeList    = 1013003,
+    PIDXChan_ExitCashList        = 1013004,
+    PIDXChan_DepositCashList     = 1013005,
+    PIDXChan_DepositCodeList     = 1013006,
+    PIDXChan_DepositCounts       = 1013007
 } OPOSCashChangerInternals;

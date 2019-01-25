@@ -18,6 +18,6 @@ enum
     PIDXSig_CapUserTerminated    = 11502,
     PIDXSig_CapRealTimeData      = 11503,
 
-    PIDXSig_RawData              = 111001,
-    PIDXSig_PointArray           = 111002
+    PIDXSig_RawData              = 1011001,
+    PIDXSig_PointArray           = 1011002
 } OPOSSigCapInternals;

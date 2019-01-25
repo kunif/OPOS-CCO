@@ -32,5 +32,5 @@ enum
     PIDXEj_CapSuspendQueryContent    = 26514,
     PIDXEj_CapWaterMark              = 26515,
 
-    PIDXEj_MediumID                  = 126001
+    PIDXEj_MediumID                  = 1026001
 } OPOSElectronicJournalInternals;

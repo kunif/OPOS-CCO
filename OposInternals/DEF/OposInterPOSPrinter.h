@@ -123,16 +123,16 @@ enum
     PIDXPtr_CapRecRuledLine              =  8562,
     PIDXPtr_CapSlpRuledLine              =  8563,
 
-    PIDXPtr_CharacterSetList             = 108001,
-    PIDXPtr_JrnLineCharsList             = 108002,
-    PIDXPtr_RecLineCharsList             = 108003,
-    PIDXPtr_SlpLineCharsList             = 108004,
-    PIDXPtr_ErrorString                  = 108005,
-    PIDXPtr_FontTypefaceList             = 108006,
-    PIDXPtr_RecBarCodeRotationList       = 108007,
-    PIDXPtr_SlpBarCodeRotationList       = 108008,
-    PIDXPtr_RecBitmapRotationList        = 108009,
-    PIDXPtr_SlpBitmapRotationList        = 108010,
-    PIDXPtr_PageModeArea                 = 108011,
-    PIDXPtr_PageModePrintArea            = 108012
+    PIDXPtr_CharacterSetList             = 1008001,
+    PIDXPtr_JrnLineCharsList             = 1008002,
+    PIDXPtr_RecLineCharsList             = 1008003,
+    PIDXPtr_SlpLineCharsList             = 1008004,
+    PIDXPtr_ErrorString                  = 1008005,
+    PIDXPtr_FontTypefaceList             = 1008006,
+    PIDXPtr_RecBarCodeRotationList       = 1008007,
+    PIDXPtr_SlpBarCodeRotationList       = 1008008,
+    PIDXPtr_RecBitmapRotationList        = 1008009,
+    PIDXPtr_SlpBitmapRotationList        = 1008010,
+    PIDXPtr_PageModeArea                 = 1008011,
+    PIDXPtr_PageModePrintArea            = 1008012
 } OPOSPOSPrinterInternals;

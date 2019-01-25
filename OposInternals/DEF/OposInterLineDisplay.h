@@ -50,7 +50,7 @@ enum
     PIDXDisp_CapMapCharacterSet  =  5514,
     PIDXDisp_CapScreenMode       =  5515,
 
-    PIDXDisp_CharacterSetList    = 105001,
-    PIDXDisp_CustomGlyphList     = 105002,
-    PIDXDisp_ScreenModeList      = 105003
+    PIDXDisp_CharacterSetList    = 1005001,
+    PIDXDisp_CustomGlyphList     = 1005002,
+    PIDXDisp_ScreenModeList      = 1005003
 } OPOSLineDisplayInternals;

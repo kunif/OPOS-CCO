@@ -34,8 +34,8 @@ enum
     PIDXRod_CapTransaction       = 18504,
     PIDXRod_CapMapCharacterSet   = 18505,
 
-    PIDXRod_CharacterSetList     = 118001,
-    PIDXRod_ErrorString          = 118002,
-    PIDXRod_EventString          = 118003,
-    PIDXRod_VideoModesList       = 118004
+    PIDXRod_CharacterSetList     = 1018001,
+    PIDXRod_ErrorString          = 1018002,
+    PIDXRod_EventString          = 1018003,
+    PIDXRod_VideoModesList       = 1018004
 } OPOSRemoteOrderDisplayInternals;

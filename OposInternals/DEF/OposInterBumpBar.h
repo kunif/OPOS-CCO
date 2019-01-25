@@ -22,6 +22,6 @@ enum
 
     PIDXBb_CapTone               = 15501,
 
-    PIDXBb_ErrorString           = 115001,
-    PIDXBb_EventString           = 115002
+    PIDXBb_ErrorString           = 1015001,
+    PIDXBb_EventString           = 1015002
 } OPOSBumpBarInternals;

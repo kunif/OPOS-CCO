@@ -25,7 +25,7 @@ enum
     PIDXBio_CapSensorType            = 25506,
     PIDXBio_CapTemplateAdaptation    = 25507,
 
-    PIDXBio_AlgorithmList            = 125001,
-    PIDXBio_BIR                      = 125002,
-    PIDXBio_RawSensorData            = 125003
+    PIDXBio_AlgorithmList            = 1025001,
+    PIDXBio_BIR                      = 1025002,
+    PIDXBio_RawSensorData            = 1025003
 } OPOSBiometricsInternals;

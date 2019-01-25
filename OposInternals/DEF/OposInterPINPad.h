@@ -21,17 +21,17 @@ enum
     PIDXPpad_CapMACCalculation   = 17504,
     PIDXPpad_CapTone             = 17505,
 
-    PIDXPpad_AccountNumber       = 117001,
+    PIDXPpad_AccountNumber       = 1017001,
     PIDXPpad_AdditionalSecurityInformation
-                                 = 117002,
+                                 = 1017002,
     PIDXPpad_AvailableLanguagesList
-                                 = 117003,
-    PIDXPpad_AvailablePromptsList= 117005,
-    PIDXPpad_EncryptedPIN        = 117006,
-    PIDXPpad_MerchantID          = 117007,
-    PIDXPpad_TerminalID          = 117008,
-    PIDXPpad_Track1Data          = 117009,
-    PIDXPpad_Track2Data          = 117010,
-    PIDXPpad_Track3Data          = 117011,
-    PIDXPpad_Track4Data          = 117012
+                                 = 1017003,
+    PIDXPpad_AvailablePromptsList= 1017005,
+    PIDXPpad_EncryptedPIN        = 1017006,
+    PIDXPpad_MerchantID          = 1017007,
+    PIDXPpad_TerminalID          = 1017008,
+    PIDXPpad_Track1Data          = 1017009,
+    PIDXPpad_Track2Data          = 1017010,
+    PIDXPpad_Track3Data          = 1017011,
+    PIDXPpad_Track4Data          = 1017012
 } OPOSPINPadInternals;

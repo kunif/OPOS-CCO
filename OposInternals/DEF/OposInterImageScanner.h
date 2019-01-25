@@ -29,5 +29,5 @@ enum
     PIDXImg_CapImageQuality      = 30506,
     PIDXImg_CapVideoData         = 30507,
 
-    PIDXImg_FrameData            = 130001
+    PIDXImg_FrameData            = 1030001
 } OPOSImageScannerInternals;

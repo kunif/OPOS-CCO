@@ -20,8 +20,8 @@ enum
     PIDXBacc_CapPauseDeposit     = 27505,
     PIDXBacc_CapRealTimeData     = 27506,
 
-    PIDXBacc_CurrencyCode        = 127001,
-    PIDXBacc_DepositCashList     = 127002,
-    PIDXBacc_DepositCodeList     = 127003,
-    PIDXBacc_DepositCounts       = 127004
+    PIDXBacc_CurrencyCode        = 1027001,
+    PIDXBacc_DepositCashList     = 1027002,
+    PIDXBacc_DepositCodeList     = 1027003,
+    PIDXBacc_DepositCounts       = 1027004
 } OPOSBillAcceptorInternals;

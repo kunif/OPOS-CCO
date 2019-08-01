@@ -14,9 +14,9 @@
 #pragma once
 
 //###############################################################
-//## CRM 2008.08.30 -- Modified CComTypeInfoHolder::GetIDsOfNames -> 2018.08.28
+//## CRM 2008.08.30 -- Modified CComTypeInfoHolder::GetIDsOfNames -> 2019.mm.dd
 //##        to map Claim->ClaimDevice and Release->ReleaseDevice.
-#pragma message( ">>> Including OPOS-modified ATL files from Visual Studio Community 2017:" )
+#pragma message( ">>> Including OPOS-modified ATL files from Visual Studio Community 2019:" )
 #pragma message( ">>>   ATLCOM.H: Modified so Claim and Release recognized in Control's dispatch." )
 //###############################################################
 

@@ -1,20 +1,21 @@
-﻿# OpenPOS for OLE Common Control Objects Version 1.15 WIP 10/15/2018  
-これらは標準化策定作業中の [UnifiedPOS Version 1.15][upos115] "UPOSVer.1.15 EVRW Revision Proposal(WIP Final)_10152018.docx" に基づいた、OpenPOS for OLE(旧OLE for Retail POS:略称OPOS) Common Control Objects(共通CO) の試作版です。
+﻿# OpenPOS for OLE Common Control Objects Version 1.15 Beta2 12/2018  
+これらは標準化策定作業中の [UnifiedPOS Version 1.15][upos115] "Unified POS Retail Peripheral Architecture FTF - Beta 2  dtc/18-12-20" に基づいた、OpenPOS for OLE(旧OLE for Retail POS:略称OPOS) Common Control Objects(共通CO) の試作版です。  
 
 ## 変更内容  
-オリジナルの 1.14.001 版に対して、以下の対応を行っています。
+オリジナルの 1.14.001 版に対して、以下の対応を行っています。  
 
-仕様策定作業中の版に基づいた対応を行っています。
+仕様策定作業中の版に基づいた対応を行っています。  
 
-- ElectronicValueReader/WriterデバイスへCATデバイス機能を追加。
+- ElectronicValueReader/WriterデバイスへCATデバイス機能を追加。  
+- FiscalPrinterデバイスのCountryCode, DateTypeプロパティへ値を追加。  
 
-上記に加えて、以下の対応を行っています。
+上記に加えて、以下の対応を行っています。  
 
 
-- 開発環境を Visual Studio 2008 から Visual Studio Community 2017 に変更。  
-  - プラットフォームツールセットは Visual Studio 2017(v141)  
-  - Windows SDK バージョンは 8.1  
-  - 改造前の atlcom.h を、Visual Studio Community 2017のフォルダにあるものに変更  
+- 開発環境を Visual Studio 2008 から Visual Studio Community 2019 に変更。  
+  - プラットフォームツールセットは Visual Studio 2019(v142)  
+  - Windows SDK バージョンは 10.0  
+  - 改造前の atlcom.h を、Visual Studio Community 2019のフォルダにあるものに変更  
   - .h ファイルのインクルードガードを #ifndef \_\_XXXX\_H\_\_ から #pragma once に変更  
   - タイプライブラリの名前の頭にOPOSを付け、ビルド結果として残すように変更  
   - .map, .pdb ファイルも、ビルド結果として残すように変更  
@@ -69,5 +70,5 @@
 元のコードのすべての権利はCurtiss Monroeに帰属します。  
 最新のCommon Control Objects情報については、[official web site][opos]を確認してください。
 
-[upos115]: https://issues.omg.org/issues/lists/retail-up115-ftf?view=ALL
+[upos115]: https://www.omg.org/spec/UPOS/1.15/Beta2/PDF
 [opos]: http://monroecs.com/oposccos.htm

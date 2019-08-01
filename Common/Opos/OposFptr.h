@@ -16,6 +16,8 @@
 //   Add values for 1.11.
 // 2008-08-30 OPOS Release 1.12                                  CRM
 //   Add values for ActualCurrency and CountryCode.
+// 2019-mm-dd OPOS Release 1.15                                  KF
+//   Add values for CountryCode and DateType.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -82,6 +84,7 @@ const LONG FPTR_CC_ROMANIA                  =  0x00000100;
 const LONG FPTR_CC_CZECH_REPUBLIC           =  0x00000200; // (added in 1.11)
 const LONG FPTR_CC_UKRAINE                  =  0x00000400; // (added in 1.11)
 const LONG FPTR_CC_SWEDEN                   =  0x00000800; // (added in 1.12)
+const LONG FPTR_CC_GERMANY                  =  0x00001000; // (added in 1.15)
 const LONG FPTR_CC_OTHER                    =  0x40000000; // (added in 1.11)
 
 
@@ -95,6 +98,8 @@ const LONG FPTR_DT_RESET                    =  3;
 const LONG FPTR_DT_RTC                      =  4;
 const LONG FPTR_DT_VAT                      =  5;
 const LONG FPTR_DT_START                    =  6; // (added in 1.11)
+const LONG FPTR_DT_TICKET_START             =  7; // (added in 1.15)
+const LONG FPTR_DT_TICKET_END               =  8; // (added in 1.15)
 
 
 /////////////////////////////////////////////////////////////////////

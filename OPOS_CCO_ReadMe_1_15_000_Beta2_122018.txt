@@ -1,6 +1,6 @@
                      OPOS Common Control Objects
-                               1.15.000 (WIP10152018)
-                      Updated January 20, 2019
+                               1.15.000 (Beta2 122018)
+                      Updated August 1, 2019
 
 Contents of this file:
  * Features
@@ -15,7 +15,7 @@ NOTE: The installation package does not install any system DLLs.
     Features
 ====================================================================
 
- * All 36 control objects of OPOS Release 1.15.000 (WIP10152018) are supported.
+ * All 36 control objects of OPOS Release 1.15.000 (Beta2 122018) are supported.
     Also includes an object that declares all of the OPOS constants.
     To use these constants...
      - Visual Basic: Select the menu item Project / References, and check "OPOS
@@ -27,7 +27,7 @@ NOTE: The installation package does not install any system DLLs.
         tab of the Tools / Options menu).
  * ATL-based, using dual interfaces so that the app can access them via
     IDispatch or COM interfaces (of the form IOPOSCashDrawer, etc).
- * Built using Microsoft Visual Studio Community 2017.
+ * Built using Microsoft Visual Studio Community 2019.
  * Backward compatible with all releases of service objects. This means that
     they check for older SOs, and return the proper errors to the app if it
     accesses unsupported properties or methods.
@@ -87,12 +87,13 @@ This key's permissions must allow at least read access.
     Update History
 ====================================================================
 
-1.15.000 (WIP10152018) - January 20, 2019
+1.15.000 (Beta2 122018) - August 1, 2019
 
- * Add OPOS Release 1.15.000 (WIP10152018) API support: Additions to EVRW.
- * Convert from VS 2008 to VSC 2017.
-    - Change the Windows SDK Version to 8.1
-    - Change the underlying atlcom.h to VSC 2017 file.
+ * Add OPOS Release 1.15.000 (Beta2 122018) API support:
+    - Additions to EVRW and FiscalPrinter.
+ * Convert from VS 2008 to VSC 2019.
+    - Change the Windows SDK Version to 10.0
+    - Change the underlying atlcom.h to VSC 2019 file.
     - Change include guard from #ifndef __XXXX_H__ to #pragma once
     - Moved stdafx.h/cpp and added targetver.h to the Common folder
       and shared it.

@@ -1,17 +1,18 @@
-﻿# OpenPOS for OLE Common Control Objects Version 1.15 WIP 10/15/2018  
-This is prototype of OpenPOS for OLE(formerly OLE for Retail POS: abbreviated OPOS) Common Control Objects(Common CO) based on under standardization work [UnifiedPOS Version 1.15][upos115] "UPOSVer.1.15 EVRW Revision Proposal(WIP Final)\_10152018.docx".
+﻿# OpenPOS for OLE Common Control Objects Version 1.15 Beta2 12/2018  
+This is prototype of OpenPOS for OLE(formerly OLE for Retail POS: abbreviated OPOS) Common Control Objects(Common CO) based on under standardization work [UnifiedPOS Version 1.15][upos115] "Unified POS Retail Peripheral Architecture FTF - Beta 2  dtc/18-12-20".  
 
 ## Changes  
 The following correspondence is made to the original 1.14.001 version.  
 
 - Added CAT device function to the ElectronicValueReader/Writer device.  
+- Added CountryCode, DateType value to the FiscalPrinter device.  
 
-In addition to the above, the following measures are taken.
+In addition to the above, the following measures are taken.  
 
-- Changed development environment from Visual Studio 2008 to Visual Studio Community 2017.  
-  - Platform toolset is Visual Studio 2017 (v141).  
-  - Windows SDK version 8.1.  
-  - Change atlcom.h before remodeling to one in the folder of Visual Studio Community 2017.  
+- Changed development environment from Visual Studio 2008 to Visual Studio Community 2019.  
+  - Platform toolset is Visual Studio 2019 (v142).  
+  - Windows SDK version 10.0.  
+  - Change atlcom.h before remodeling to one in the folder of Visual Studio Community 2019.  
   - Include guard for .h files changed from #ifndef \_\_XXXX\_H\_\_ to #pragma once.  
   - Change the name of the type library to with OPOS at the beginning and leave it as a build result.  
   - .map, .pdb file also changed to leave it as a build result.  
@@ -66,5 +67,5 @@ Original version stays in the master branch.
 All credits for the original code goes to Curtiss Monroe.  
 Check the [official web site][opos] for the latest Common Control Objects information.  
 
-[upos115]: https://issues.omg.org/issues/lists/retail-up115-ftf?view=ALL
+[upos115]: https://www.omg.org/spec/UPOS/1.15/Beta2/PDF
 [opos]: http://monroecs.com/oposccos.htm

@@ -1,17 +1,17 @@
 HKCR
 {
-    OPOS.FiscalPrinter.1.15 = s 'OPOS FiscalPrinter Control 1.15.000 [Public, by CRM/MCS]'
+    OPOS.FiscalPrinter.1.15 = s 'OPOS FiscalPrinter Control 1.15.000 [Public, by CRM/MCS, and modified by KF]'
     {
         CLSID = s '{CCB90072-B81E-11D2-AB74-0040054C3719}'
     }
-    OPOS.FiscalPrinter = s 'OPOS FiscalPrinter Control 1.15.000 [Public, by CRM/MCS]'
+    OPOS.FiscalPrinter = s 'OPOS FiscalPrinter Control 1.15.000 [Public, by CRM/MCS, and modified by KF]'
     {
         CLSID = s '{CCB90072-B81E-11D2-AB74-0040054C3719}'
         CurVer = s 'OPOS.FiscalPrinter.1.15'
     }
     NoRemove CLSID
     {
-        ForceRemove {CCB90072-B81E-11D2-AB74-0040054C3719} = s 'OPOS FiscalPrinter Control 1.15.000 [Public, by CRM/MCS]'
+        ForceRemove {CCB90072-B81E-11D2-AB74-0040054C3719} = s 'OPOS FiscalPrinter Control 1.15.000 [Public, by CRM/MCS, and modified by KF]'
         {
             ProgID = s 'OPOS.FiscalPrinter.1.15'
             VersionIndependentProgID = s 'OPOS.FiscalPrinter'
@@ -29,7 +29,7 @@ HKCR
             }
             'TypeLib' = s '{CCB90070-B81E-11D2-AB74-0040054C3719}'
             'Version' = s '1.0'
-            'BuildInformation' = s 'OPOS 1.15. Build 000; 2019/01/20.'
+            'BuildInformation' = s 'OPOS 1.15. Build 000; 2019/12/10.'
         }
     }
     NoRemove Interface

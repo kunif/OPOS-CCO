@@ -17,15 +17,14 @@
 **             Correct possible buffer overflow in Open.
 **               Updates to copies and printf to remove any
 **               potential buffer overflows.
-**  2019/01/20 Update year annotation of license.
-**  2019/01/20 Version 1.15.000.
-
+**  2015/02/07 Version 1.14.001.
+**  2019/12/10 Version 1.15.000.                                    K. Fukuchi
 **
 *****************************************************************************
 **
 {{Begin License}}
 
-Copyright 2019 Monroe Consulting Services, Inc.
+Copyright 2015 Monroe Consulting Services, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -77,7 +76,7 @@ limitations under the License.
 TCHAR g_WindowName[] = _T("HW_OPOSImageScanner");
 
 // Control Object description and version.
-char g_ControlDescription[] = "OPOS ImageScanner Control 1.15.000 [Public, by CRM/MCS]" IFDEBUG(" [With Tracing]");
+char g_ControlDescription[] = "OPOS ImageScanner Control 1.15.000 [Public, by CRM/MCS, and modified by KF]" IFDEBUG(" [With Tracing]");
 LONG g_ControlVersion =
     1 * 1000000 +
     15 * 1000 +

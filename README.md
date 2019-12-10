@@ -22,7 +22,8 @@ In addition to the above, the following measures are taken.
 - Added support for Intel/AMD 64bit.  
 - Add OPOS internal constant definition as dll.  
 - Add interface definition example for OPOS ServiceObject as dll.  
-- Update annual notation of copyright statement.  
+- Add the initial of the modifier(KF) to the publisher initail(CRM/MCS).  
+- The Opos_Interfaces definition for EVRWSO is divided into two for 1.14.1 and 1.15.0.
 
 
 ## Installation  

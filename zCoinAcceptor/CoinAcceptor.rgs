@@ -1,17 +1,17 @@
 HKCR
 {
-    OPOS.CoinAcceptor.1.15 = s 'OPOS CoinAcceptor Control 1.15.000 [Public, by CRM/MCS]'
+    OPOS.CoinAcceptor.1.15 = s 'OPOS CoinAcceptor Control 1.15.000 [Public, by CRM/MCS, and modified by KF]'
     {
         CLSID = s '{CCB90302-B81E-11D2-AB74-0040054C3719}'
     }
-    OPOS.CoinAcceptor = s 'OPOS CoinAcceptor Control 1.15.000 [Public, by CRM/MCS]'
+    OPOS.CoinAcceptor = s 'OPOS CoinAcceptor Control 1.15.000 [Public, by CRM/MCS, and modified by KF]'
     {
         CLSID = s '{CCB90302-B81E-11D2-AB74-0040054C3719}'
         CurVer = s 'OPOS.CoinAcceptor.1.15'
     }
     NoRemove CLSID
     {
-        ForceRemove {CCB90302-B81E-11D2-AB74-0040054C3719} = s 'OPOS CoinAcceptor Control 1.15.000 [Public, by CRM/MCS]'
+        ForceRemove {CCB90302-B81E-11D2-AB74-0040054C3719} = s 'OPOS CoinAcceptor Control 1.15.000 [Public, by CRM/MCS, and modified by KF]'
         {
             ProgID = s 'OPOS.CoinAcceptor.1.15'
             VersionIndependentProgID = s 'OPOS.CoinAcceptor'
@@ -29,7 +29,7 @@ HKCR
             }
             'TypeLib' = s '{CCB90300-B81E-11D2-AB74-0040054C3719}'
             'Version' = s '1.0'
-            'BuildInformation' = s 'OPOS 1.15. Build 000; 2019/01/20.'
+            'BuildInformation' = s 'OPOS 1.15. Build 000; 2019/12/10.'
         }
     }
 }

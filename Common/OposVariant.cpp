@@ -16,13 +16,12 @@
 **  2015/02/07 Comments updated to better explain the
 **               OposVariant::Change* functions and the
 **               OposDispParms class.
-**  2019/01/20 Update year annotation of license.
 **
 *****************************************************************************
 **
 {{Begin License}}
 
-Copyright 2019 Monroe Consulting Services, Inc.
+Copyright 2015 Monroe Consulting Services, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

@@ -102,7 +102,7 @@ BEGIN
             VALUE "ProductName", "OPOS Interfaces for Service Object Development\0"
             VALUE "ProductVersion", "1, 15, 0, 0"
             VALUE "OLESelfRegister", "\0"
-            VALUE "LegalCopyright", "Copyright 2019 Kunio Fukuchi, See full text of license in the 'Comments' item.\0"
+            VALUE "LegalCopyright", "Copyright 2019; Kunio Fukuchi, See full text of license in the 'Comments' item.\0"
             VALUE "Comments",    "{Start}\r\n"
     "Copyright 2019 Kunio Fukuchi\r\n"
     "\r\n"

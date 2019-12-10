@@ -12,15 +12,18 @@
 **  2004/10/26 Enhance Debug tracing of DirectIOEvent.
 **  2008/01/15 Add more parameter and error checking.
 **  2013/09/29 Update license section.
-**  2019/01/20 Update year annotation of license.
-**  2019/01/20 Version 1.15.000.
+**  2015/02/07 Update license section.
+**  2015/02/07 Version 1.14.001.
+**  2019/12/10 Version 1.15.000.                                    K. Fukuchi
 **             Changed include guard from #ifndef __XXXX_H__ to #pragma once.
+**             Change long parameters and return values used in
+**             both 32bit/64bit to appropriate types
 **
 *****************************************************************************
 **
 {{Begin License}}
 
-Copyright 2019 Monroe Consulting Services, Inc.
+Copyright 2015 Monroe Consulting Services, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

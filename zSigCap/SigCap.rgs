@@ -1,17 +1,17 @@
 HKCR
 {
-    OPOS.SigCap.1.15 = s 'OPOS SigCap Control 1.15.000 [Public, by CRM/MCS]'
+    OPOS.SigCap.1.15 = s 'OPOS SigCap Control 1.15.000 [Public, by CRM/MCS, and modified by KF]'
     {
         CLSID = s '{CCB90192-B81E-11D2-AB74-0040054C3719}'
     }
-    OPOS.SigCap = s 'OPOS SigCap Control 1.15.000 [Public, by CRM/MCS]'
+    OPOS.SigCap = s 'OPOS SigCap Control 1.15.000 [Public, by CRM/MCS, and modified by KF]'
     {
         CLSID = s '{CCB90192-B81E-11D2-AB74-0040054C3719}'
         CurVer = s 'OPOS.SigCap.1.15'
     }
     NoRemove CLSID
     {
-        ForceRemove {CCB90192-B81E-11D2-AB74-0040054C3719} = s 'OPOS SigCap Control 1.15.000 [Public, by CRM/MCS]'
+        ForceRemove {CCB90192-B81E-11D2-AB74-0040054C3719} = s 'OPOS SigCap Control 1.15.000 [Public, by CRM/MCS, and modified by KF]'
         {
             ProgID = s 'OPOS.SigCap.1.15'
             VersionIndependentProgID = s 'OPOS.SigCap'
@@ -29,7 +29,7 @@ HKCR
             }
             'TypeLib' = s '{CCB90190-B81E-11D2-AB74-0040054C3719}'
             'Version' = s '1.0'
-            'BuildInformation' = s 'OPOS 1.15. Build 000; 2019/01/20.'
+            'BuildInformation' = s 'OPOS 1.15. Build 000; 2019/12/10.'
         }
     }
     NoRemove Interface

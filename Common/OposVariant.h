@@ -13,14 +13,14 @@
 **               Make destructor "Clear" based on previous actions.
 **  2015/02/07 Add OposVariantResult class, whose destructor
 **               always calls "Clear".
-**  2019/01/20 Update year annotation of license.
+**  2019/12/10                                                      K. Fukuchi
 **             Changed include guard from #ifndef __XXXX_H__ to #pragma once.
 **
 *****************************************************************************
 **
 {{Begin License}}
 
-Copyright 2019 Monroe Consulting Services, Inc.
+Copyright 2015 Monroe Consulting Services, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

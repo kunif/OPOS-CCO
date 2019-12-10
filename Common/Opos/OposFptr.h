@@ -16,7 +16,7 @@
 //   Add values for 1.11.
 // 2008-08-30 OPOS Release 1.12                                  CRM
 //   Add values for ActualCurrency and CountryCode.
-// 2019-mm-dd OPOS Release 1.15                                  KF
+// 2019-12-10 OPOS Release 1.15                                  KF
 //   Add values for CountryCode and DateType.
 //
 /////////////////////////////////////////////////////////////////////

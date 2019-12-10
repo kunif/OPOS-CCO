@@ -1,6 +1,6 @@
                      OPOS Common Control Objects
                                1.15.000 (Beta2 122018)
-                      Updated August 1, 2019
+                      Updated December 10, 2019
 
 Contents of this file:
  * Features
@@ -87,7 +87,7 @@ This key's permissions must allow at least read access.
     Update History
 ====================================================================
 
-1.15.000 (Beta2 122018) - August 1, 2019
+1.15.000 (Beta2 122018) - December 10, 2019
 
  * Add OPOS Release 1.15.000 (Beta2 122018) API support:
     - Additions to EVRW and FiscalPrinter.
@@ -105,7 +105,7 @@ This key's permissions must allow at least read access.
  * Add Intel/AMD 64bit support.
  * Add OPOS internal constants definition.
  * Add OPOS SO interfaces definition.
- * Update year annotation of license.
+ * Add the initial of the modifier(KF) to the publisher initail(CRM/MCS).
 
 1.14.001 - February 7, 2015
 
@@ -302,7 +302,7 @@ the binary Control Objects are built, in the version resource's
 "License" item, and in the binary Control Object files (following the
 marker "~~License~~"):
 
-Copyright 2019 Monroe Consulting Services, Inc.
+Copyright 2015 Monroe Consulting Services, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

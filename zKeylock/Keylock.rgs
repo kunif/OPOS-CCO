@@ -1,17 +1,17 @@
 HKCR
 {
-    OPOS.Keylock.1.15 = s 'OPOS Keylock Control 1.15.000 [Public, by CRM/MCS]'
+    OPOS.Keylock.1.15 = s 'OPOS Keylock Control 1.15.000 [Public, by CRM/MCS, and modified by KF]'
     {
         CLSID = s '{CCB90092-B81E-11D2-AB74-0040054C3719}'
     }
-    OPOS.Keylock = s 'OPOS Keylock Control 1.15.000 [Public, by CRM/MCS]'
+    OPOS.Keylock = s 'OPOS Keylock Control 1.15.000 [Public, by CRM/MCS, and modified by KF]'
     {
         CLSID = s '{CCB90092-B81E-11D2-AB74-0040054C3719}'
         CurVer = s 'OPOS.Keylock.1.15'
     }
     NoRemove CLSID
     {
-        ForceRemove {CCB90092-B81E-11D2-AB74-0040054C3719} = s 'OPOS Keylock Control 1.15.000 [Public, by CRM/MCS]'
+        ForceRemove {CCB90092-B81E-11D2-AB74-0040054C3719} = s 'OPOS Keylock Control 1.15.000 [Public, by CRM/MCS, and modified by KF]'
         {
             ProgID = s 'OPOS.Keylock.1.15'
             VersionIndependentProgID = s 'OPOS.Keylock'
@@ -29,7 +29,7 @@ HKCR
             }
             'TypeLib' = s '{CCB90090-B81E-11D2-AB74-0040054C3719}'
             'Version' = s '1.0'
-            'BuildInformation' = s 'OPOS 1.15. Build 000; 2019/01/20.'
+            'BuildInformation' = s 'OPOS 1.15. Build 000; 2019/12/10.'
         }
     }
     NoRemove Interface

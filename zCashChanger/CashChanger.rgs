@@ -1,17 +1,17 @@
 HKCR
 {
-    OPOS.CashChanger.1.15 = s 'OPOS CashChanger Control 1.15.000 [Public, by CRM/MCS]'
+    OPOS.CashChanger.1.15 = s 'OPOS CashChanger Control 1.15.000 [Public, by CRM/MCS, and modified by KF]'
     {
         CLSID = s '{CCB90032-B81E-11D2-AB74-0040054C3719}'
     }
-    OPOS.CashChanger = s 'OPOS CashChanger Control 1.15.000 [Public, by CRM/MCS]'
+    OPOS.CashChanger = s 'OPOS CashChanger Control 1.15.000 [Public, by CRM/MCS, and modified by KF]'
     {
         CLSID = s '{CCB90032-B81E-11D2-AB74-0040054C3719}'
         CurVer = s 'OPOS.CashChanger.1.15'
     }
     NoRemove CLSID
     {
-        ForceRemove {CCB90032-B81E-11D2-AB74-0040054C3719} = s 'OPOS CashChanger Control 1.15.000 [Public, by CRM/MCS]'
+        ForceRemove {CCB90032-B81E-11D2-AB74-0040054C3719} = s 'OPOS CashChanger Control 1.15.000 [Public, by CRM/MCS, and modified by KF]'
         {
             ProgID = s 'OPOS.CashChanger.1.15'
             VersionIndependentProgID = s 'OPOS.CashChanger'
@@ -29,7 +29,7 @@ HKCR
             }
             'TypeLib' = s '{CCB90030-B81E-11D2-AB74-0040054C3719}'
             'Version' = s '1.0'
-            'BuildInformation' = s 'OPOS 1.15. Build 000; 2019/01/20.'
+            'BuildInformation' = s 'OPOS 1.15. Build 000; 2019/12/10.'
         }
     }
     NoRemove Interface

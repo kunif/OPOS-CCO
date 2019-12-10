@@ -25,7 +25,8 @@
 - Intel/AMD 64bitのサポート追加  
 - OPOS内部定数定義をdll化して追加  
 - OPOS ServiceObject 用のインタフェース定義例をdll化して追加  
-- 著作権記述の年表記を更新  
+- 発行者のイニシャル(CRM/MCS)記述に変更者のイニシャル(KF)記述を追加します  
+- EVRWSO用のOpos_Interfaces定義を、1.14.1用と1.15.0用の2つに分けました  
 
 
 ## インストール  

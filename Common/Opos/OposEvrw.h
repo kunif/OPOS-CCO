@@ -17,7 +17,7 @@
 //   Added AccessData's DataType constants.
 //   Additional RetrieveResultInformation's Value constants.
 //   Additional TransitionEvent's EventNumber constants.
-// 2019-01-20 OPOS Release 1.15                                  KF
+// 2019-12-10 OPOS Release 1.15                                  KF
 //   Added CapDailyLog and AccessDailyLog constants.
 //   Added PaymentCondition constants.
 //   Added PaymentMedia constants.

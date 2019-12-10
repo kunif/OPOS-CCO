@@ -1,6 +1,8 @@
 //*
 //* assert.h - define the assert macro
 //*
+//* 2019/12/10                                                      K. Fukuchi
+//*            Changed include guard from #ifndef __XXXX_H__ to #pragma once.
 
 #pragma once
 

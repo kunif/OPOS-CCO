@@ -12,7 +12,7 @@
 !!               These are listed below as 1.15, so that Builder will
 !!                 generate a new interface for it.
 !!                 Then manual changes will be applied.
-!!  2019/12/10 1.15.000: Add properties, methods for 1.15.          K. Fukuchi
+!!  2020/06/01 1.15.000: Add properties, methods for 1.15.          K. Fukuchi
 !!
 !!***************************************************************************
 

@@ -40,7 +40,7 @@
 **              (needed for "non-const correct" code, that incorrectly omit
 **               const on their cw_char*)
 **
-**  2019/12/10 Changed from RCSALIGNED to _M_IX86 / _M_X64.         K. Fukuchi
+**  2020/06/01 Changed from RCSALIGNED to _M_IX86 / _M_X64.         K. Fukuchi
 **             Changed include guard from #ifndef __XXXX_H__ to #pragma once.
 **
 *****************************************************************************

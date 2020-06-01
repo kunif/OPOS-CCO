@@ -8,7 +8,7 @@
 **  2013/09/29 Update license section.
 **  2015/02/07 Update license section.
 **  2015/02/07 Version 1.14.001.
-**  2019/12/10 Version 1.15.000.                                    K. Fukuchi
+**  2020/06/01 Version 1.15.000.                                    K. Fukuchi
 **             Changed include guard from #ifndef __XXXX_H__ to #pragma once.
 **
 *****************************************************************************

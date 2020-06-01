@@ -13,7 +13,7 @@
 **               Make destructor "Clear" based on previous actions.
 **  2015/02/07 Add OposVariantResult class, whose destructor
 **               always calls "Clear".
-**  2019/12/10                                                      K. Fukuchi
+**  2020/06/01                                                      K. Fukuchi
 **             Changed include guard from #ifndef __XXXX_H__ to #pragma once.
 **
 *****************************************************************************

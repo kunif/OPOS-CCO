@@ -1,6 +1,6 @@
                      OPOS Common Control Objects
-                               1.15.000 (Beta2 122018)
-                      Updated December 10, 2019
+                               1.15.000 (Issue UPOS116-9)
+                      Updated June 1, 2020
 
 Contents of this file:
  * Features
@@ -15,7 +15,7 @@ NOTE: The installation package does not install any system DLLs.
     Features
 ====================================================================
 
- * All 36 control objects of OPOS Release 1.15.000 (Beta2 122018) are supported.
+ * All 36 control objects of OPOS Release 1.15.000 (Issue UPOS116-9) are supported.
     Also includes an object that declares all of the OPOS constants.
     To use these constants...
      - Visual Basic: Select the menu item Project / References, and check "OPOS
@@ -42,6 +42,7 @@ NOTE: The installation package does not install any system DLLs.
     ones. A custom generator was developed that reads a data file for each
     control to be built. To add properties or methods, the procedure is update
     the data files, regenerate, and build the resulting projects.
+ * Provides PIA(Primary Interop Assembly) created with .NET Framework 3.5 tools.
 
 ====================================================================
     Trace Details
@@ -86,6 +87,18 @@ This key's permissions must allow at least read access.
 ====================================================================
     Update History
 ====================================================================
+
+1.15.000 (Issue UPOS116-9) - June 1, 2020
+
+ * Correct for alphabetical order of DispatchID of the property added in EVRW.
+    - PaymentMedia, SlipNumber
+ * Apply OPOS Release 1.15.000 (Issue UPOS116-9) API support:
+    - Addition to EVRW ServiceType property define EVRW_ST_CAT.
+ * Add PIA(Primary Interop Assembly) support:
+    - Create using .NET Framework 3.5 tools and register to GAC.
+    - Change the MCS code signing certificates to private strong name key pair.
+      Due to this change, it is not compatible with PIA 1.14.001 or earlier.
+ * Add Install/Uninstall/ReRegister/UnRegister batch files.
 
 1.15.000 (Beta2 122018) - December 10, 2019
 

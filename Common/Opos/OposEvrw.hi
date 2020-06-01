@@ -14,7 +14,7 @@
 // 2015-02-07 OPOS Release 1.14.1                                CRM
 //   Add the following properties:
 //     CapMembershipCertificate, ServiceType
-// 2019-12-10 OPOS Release 1.15                                  KF
+// 2020-06-01 OPOS Release 1.15                                  KF
 //   Add the following properties:
 //     CapAdditionalSecurityInformation, CapAuthorizeCompletion,
 //     CapAuthorizePreSales, CapAuthorizeRefund, CapAuthorzeVoid,

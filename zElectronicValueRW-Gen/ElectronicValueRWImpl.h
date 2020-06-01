@@ -13,7 +13,7 @@
 **  2013/09/29 Update license section.
 **  2015/02/07 Update license section.
 **  2015/02/07 Version 1.15.100.
-**  2019/12/10 Version 1.16.000.                                    K. Fukuchi
+**  2020/06/01 Version 1.16.000.                                    K. Fukuchi
 **             Changed include guard from #ifndef __XXXX_H__ to #pragma once.
 **
 *****************************************************************************
@@ -570,9 +570,9 @@ public:
     STDMETHOD(get_DailyLog)( /*[out, retval]*/ BSTR* pDailyLog );
     STDMETHOD(get_PaymentCondition)( /*[out, retval]*/ long* pPaymentCondition );
     STDMETHOD(get_PaymentDetail)( /*[out, retval]*/ BSTR* pPaymentDetail );
-    STDMETHOD(get_SlipNumber)( /*[out, retval]*/ BSTR* pSlipNumber );
     STDMETHOD(get_PaymentMedia)( /*[out, retval]*/ LONG* pPaymentMedia );
     STDMETHOD(put_PaymentMedia)( /*[in]*/ LONG PaymentMedia );
+    STDMETHOD(get_SlipNumber)( /*[out, retval]*/ BSTR* pSlipNumber );
     STDMETHOD(get_TransactionNumber)( /*[out, retval]*/ BSTR* pTransactionNumber );
     STDMETHOD(get_TransactionType)( /*[out, retval]*/ LONG* pTransactionType );
     STDMETHOD(AccessDailyLog)( 

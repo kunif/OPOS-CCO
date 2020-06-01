@@ -11,7 +11,7 @@
 **  2015/02/07 Update license section.
 **  2015/02/07 Version 1.14.100.
 **  2015/02/07 Version 1.14.001.
-**  2019/12/10 Version 1.15.000.                                    K. Fukuchi
+**  2020/06/01 Version 1.15.000.                                    K. Fukuchi
 **
 *****************************************************************************
 **
@@ -573,12 +573,12 @@ import "ocidl.idl";
         HRESULT PaymentCondition( [out, retval] long* pPaymentCondition );
         [propget, id(136), helpstring("property PaymentDetail")]
         HRESULT PaymentDetail( [out, retval] BSTR* pPaymentDetail );
-        [propget, id(137), helpstring("property SlipNumber")]
-        HRESULT SlipNumber( [out, retval] BSTR* pSlipNumber );
-        [propget, id(138), helpstring("property PaymentMedia")]
+        [propget, id(137), helpstring("property PaymentMedia")]
         HRESULT PaymentMedia( [out, retval] long* pPaymentMedia );
-        [propput, id(138), helpstring("property PaymentMedia")]
+        [propput, id(137), helpstring("property PaymentMedia")]
         HRESULT PaymentMedia( [in] long PaymentMedia );
+        [propget, id(138), helpstring("property SlipNumber")]
+        HRESULT SlipNumber( [out, retval] BSTR* pSlipNumber );
         [propget, id(139), helpstring("property TransactionNumber")]
         HRESULT TransactionNumber( [out, retval] BSTR* pTransactionNumber );
         [propget, id(210), helpstring("property TransactionType")]

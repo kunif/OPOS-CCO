@@ -1,10 +1,11 @@
-﻿# OpenPOS for OLE Common Control Objects Version 1.15 Beta2 12/2018  
-This is prototype of OpenPOS for OLE(formerly OLE for Retail POS: abbreviated OPOS) Common Control Objects(Common CO) based on under standardization work [UnifiedPOS Version 1.15][upos115] "Unified POS Retail Peripheral Architecture FTF - Beta 2  dtc/18-12-20".  
+﻿# OpenPOS for OLE Common Control Objects Version 1.15 with Issue UPOS116-9  
+This is OpenPOS for OLE(formerly OLE for Retail POS: abbreviated OPOS) Common Control Objects(Common CO) based on [UnifiedPOS Version 1.15][upos115] "Unified POS Retail Peripheral Architecture Version 1.15 formal/2020-01-05".  
 
 ## Changes  
 The following correspondence is made to the original 1.14.001 version.  
 
 - Added CAT device function to the ElectronicValueReader/Writer device.  
+- Added ElectronicValueReader/Writer device ServiceType property define EVRW_ST_CAT. corresponding to [Issue UPOS116-9][UPOS1169]  
 - Added CountryCode, DateType value to the FiscalPrinter device.  
 
 In addition to the above, the following measures are taken.  
@@ -23,40 +24,44 @@ In addition to the above, the following measures are taken.
 - Add OPOS internal constant definition as dll.  
 - Add interface definition example for OPOS ServiceObject as dll.  
 - Add the initial of the modifier(KF) to the publisher initail(CRM/MCS).  
-- The Opos_Interfaces definition for EVRWSO is divided into two for 1.14.1 and 1.15.0.
+- The Opos_Interfaces definition for EVRWSO is divided into two for 1.14.1 and 1.15.0.  
+- Add Primary Interop Assembly.  
+- Add Install/Uninstall/ReRegister/UnRegister batch files.  
 
 
-## Installation  
+## Installation and others  
 Please install according to the following procedure.  
 
 
-- Create an appropriate folder (as below) for the target and copy the files.  
-  - File copy source  
-    - OPOS 32bit: \*.dll and \*.ocx in the OCX\\Win32\\Release folder  
-    - OPOS 64bit: \*.dll and \*.ocx in the OCX\\x64\\Release folder  
-  - OPOS 32bit copy destination  
-    - 64bit OS: C:\\Program Files (x86)\\OPOS\\CommonCO115 folder  
-    - 32bit OS: C:\\Program Files\\OPOS\\CommonCO115 folder  
-  - OPOS 64bit files copy destination  
-    - 64bit OS: C:\\Program Files\\OPOS\\CommonCO115 folder  
+- If there is already installed CCO(Common Control Objects), uninstall it.  
+- Extract the separately prepared installation .zip file while keeping the folder structure.  
+- If you install PIA, make sure .NET Framework 3.5 is installed.  
+- Run one of the following batch files as an administrator to install and register CCO(and PIA).  
+  - Install_CCOandPIA.bat  
+  - Install_CCOonly.bat  
 
-
-- Run RegSvr32.exe as an administrator and register the DLL as a registry.  
-  - Prior processing at 64bit OS: Run C:\\Windows\\SysWOW64\\cmd.exe as administrator.  
-  - Move to C:\\Program Files (x86)\\OPOS\\CommonCO115 folder.  
-  - Run "For %I in (\*.dll,\*.ocx) do RegSvr32 /s %I".  
-  - 32bit/64bit Both operating systems: Run C:\\Windows\\System32\\cmd.exe as administrator.  
-  - Move to C:\\Program Files\\OPOS\\CommonCO115 folder.  
-  - Run "For %I in (\*.dll,\*.ocx) do RegSvr32 /s %I".  
-  - Check displayed both execution normally and close cmd.exe.  
+Others
+- To re-register/un-register CCO (and PIA), execute the following batch file as an administrator.  
+  - ReRegisterCCO.bat  
+  - ReRegisterPIA.bat  
+  - UnRegisterCCO.bat  
+  - UnRegisterPIA.bat  
+- To uninstall CCO (and PIA) and install/uninstall PIA only, execute the following batch file as an administrator.  
+  - Uninstall_CCOandPIA.bat  
+  - Uninstall_CCOonly.bat  
+  - Install_PIAonly.bat  
+  - Uninstall_PIAonly.bat  
+- To install/uninstall/re-register/unregister the debug version of CCO, execute the following batch file as an administrator.  
+  - Install_DbgCCO.bat  
+  - Uninstall_DbgCCO.bat  
+  - DbgReRegisterCCO.bat  
+  - DbgUnRegisterCCO.bat  
 
 
 ## Known Issues  
 The following issues are known.  
 
-- It is better to be able to cooperate and synchronize with OPOS for .NET Assemblies, but I do not do anything related to it.  
-- The interface definition dll for OPOS ServiceObject may have compatibility problems if there is an interface addition in the next 1.16 version etc. It may not be included in the official version.  
-- Installer is not created.  
+- The Primary Interop Assembly is not compatible with 1.14.001 and earlier OPOS for .NET Assemblies.  
 - Since there is no way to include the definition name of OPOS device definition registry key name or device statistics item name in the DLL, only C# source is created.  
 - OPOS device definition registry exists independently in 32bit/64bit environment, and there is no way to cooperate with them or handle them  collectively.  
 
@@ -68,5 +73,6 @@ Original version stays in the master branch.
 All credits for the original code goes to Curtiss Monroe.  
 Check the [official web site][opos] for the latest Common Control Objects information.  
 
-[upos115]: https://www.omg.org/spec/UPOS/1.15/Beta2/PDF
+[UPOS1169]: https://issues.omg.org/issues/spec/UPOS/1.15#issue-45536
+[upos115]: https://www.omg.org/spec/UPOS/1.15/PDF
 [opos]: http://monroecs.com/oposccos.htm

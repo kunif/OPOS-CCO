@@ -29,7 +29,7 @@ HKCR
             }
             'TypeLib' = s '{CCB90020-B81E-11D2-AB74-0040054C3719}'
             'Version' = s '1.0'
-            'BuildInformation' = s 'OPOS 1.15. Build 000; 2019/12/10.'
+            'BuildInformation' = s 'OPOS 1.15. Build 000; 2020/06/01.'
         }
     }
     NoRemove Interface

@@ -17,7 +17,7 @@
 //   Added AccessData's DataType constants.
 //   Additional RetrieveResultInformation's Value constants.
 //   Additional TransitionEvent's EventNumber constants.
-// 2019-12-10 OPOS Release 1.15                                  KF
+// 2020-06-01 OPOS Release 1.15                                  KF
 //   Added CapDailyLog and AccessDailyLog constants.
 //   Added PaymentCondition constants.
 //   Added PaymentMedia constants.
@@ -147,6 +147,7 @@ const LONG EVRW_ST_ELECTRONIC_MONEY     = 1;
 const LONG EVRW_ST_POINT                = 2;
 const LONG EVRW_ST_VOUCHER              = 3;
 const LONG EVRW_ST_MEMBERSHIP           = 4;
+const LONG EVRW_ST_CAT                  = 5; // (added in 1.15 Issue)
 
 /////////////////////////////////////////////////////////////////////
 // "TrainingModeState" Property Constants (added in 1.14)

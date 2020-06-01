@@ -58,6 +58,7 @@ enum
     EVRW_ST_POINT                             = 2,
     EVRW_ST_VOUCHER                           = 3,
     EVRW_ST_MEMBERSHIP                        = 4,
+    EVRW_ST_CAT                               = 5,
     EVRW_TM_FALSE                             = 1,
     EVRW_TM_TRUE                              = 2,
     EVRW_TM_UNKNOWN                           = 3,

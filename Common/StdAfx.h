@@ -7,7 +7,7 @@
 **  1999/02/06 Initial version.                                     C. Monroe
 **  2001/05/18 Updated to support Windows CE.                       C. Monroe
 **  2008/01/15 Updated for building with VS2005.                    C. Monroe
-**  2019/12/10 Updated for building with VSC2019.                   K. Fukuchi
+**  2020/06/01 Updated for building with VSC2019.                   K. Fukuchi
 **
 *****************************************************************************
 */

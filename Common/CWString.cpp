@@ -2,7 +2,7 @@
 **
 ** CWString.cpp
 **
-**  2019/12/10 Changed from RCSALIGNED to _M_IX86 / _M_X64.         K. Fukuchi
+**  2020/06/01 Changed from RCSALIGNED to _M_IX86 / _M_X64.         K. Fukuchi
 **
 *****************************************************************************
 **

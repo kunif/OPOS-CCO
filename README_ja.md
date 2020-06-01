@@ -74,5 +74,5 @@
 最新のCommon Control Objects情報については、[official web site][opos]を確認してください。
 
 [UPOS1169]: https://issues.omg.org/issues/spec/UPOS/1.15#issue-45536
-[upos115]: https://www.omg.org/spec/UPOS/1.15/Beta2/PDF
+[upos115]: https://www.omg.org/spec/UPOS/1.15/PDF
 [opos]: http://monroecs.com/oposccos.htm

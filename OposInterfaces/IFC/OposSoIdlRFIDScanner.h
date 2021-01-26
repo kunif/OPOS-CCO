@@ -4,7 +4,7 @@
 
 [
     uuid(CCBE0370-B81E-11D2-AB74-0040054C3719),
-    helpstring("IOPOSRFIDScannerSO 1.15 Interface")
+    helpstring("IOPOSRFIDScannerSO 1.16 Interface")
 ]
 dispinterface IOPOSRFIDScannerSO
 {

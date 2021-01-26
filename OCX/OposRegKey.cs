@@ -66,6 +66,16 @@ internal static class OposRegKey
     internal const string OPOS_CLASSKEY_ITEM = "ItemDispenser";
     internal const string OPOS_CLASSKEY_LGT = "Lights";
     internal const string OPOS_CLASSKEY_RFID = "RFIDScanner";
+    //   Release 1.16
+    internal const string OPOS_CLASSKEY_DMON = "DeviceMonitor";
+    internal const string OPOS_CLASSKEY_GCTL = "GestureControl";
+    internal const string OPOS_CLASSKEY_GDSP = "GraphicDisplay";
+    internal const string OPOS_CLASSKEY_IRCG = "IndividualRecognition";
+    internal const string OPOS_CLASSKEY_SPLY = "SoundPlayer";
+    internal const string OPOS_CLASSKEY_SREC = "SoundRecorder";
+    internal const string OPOS_CLASSKEY_SPCH = "SpeechSynthesis";
+    internal const string OPOS_CLASSKEY_VCAP = "VideoCapture";
+    internal const string OPOS_CLASSKEY_VRCG = "VoiceRecognition";
 
     // OPOS_ROOTKEY_PROVIDER is the key under which a Service Object
     //   provider may place provider-specific information.

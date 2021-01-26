@@ -34,6 +34,7 @@ REM ----------------------------------------------------------------------------
 @ECHO Registration of PIA files
 CHDIR /D "%ProgramFiles%\OPOS\OpenPosFor.NET"
 FOR %%F IN (OpenPOS*.dll) DO .\gacutil /i %%F /f /silent
+FOR %%F IN (policy.*.dll) DO .\gacutil /i %%F /f /silent
 FOR %%F IN (OpenPOS*.dll) DO "%SystemRoot%\Microsoft.NET\Framework\v2.0.50727\RegAsm.exe" %%F /silent
 
 GOTO EOF
@@ -45,6 +46,7 @@ REM ----------------------------------------------------------------------------
 @ECHO Registration of PIA files
 CHDIR /D "%ProgramFiles(x86)%\OPOS\OpenPosFor.NET"
 FOR %%F IN (OpenPOS*.dll) DO .\gacutil /i %%F /f /silent
+FOR %%F IN (policy.*.dll) DO .\gacutil /i %%F /f /silent
 FOR %%F IN (OpenPOS*.dll) DO "%SystemRoot%\Microsoft.NET\Framework\v2.0.50727\RegAsm.exe" %%F /silent
 FOR %%F IN (OpenPOS*.dll) DO "%SystemRoot%\Microsoft.NET\Framework64\v2.0.50727\RegAsm.exe" %%F /silent
 

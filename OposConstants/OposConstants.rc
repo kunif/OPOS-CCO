@@ -2,7 +2,7 @@
 **
 ** OposConstants.rc -- Resource Script.
 **
-**  2020/06/01 Version 1.15.000.                                    K. Fukuchi
+**  2021/01/26 Version 1.16.000.                                    K. Fukuchi
 **             Changed from OposConstants to Opos_Constants
 **
 *****************************************************************************
@@ -79,8 +79,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,15,0,0
- PRODUCTVERSION 1,15,0,0
+ FILEVERSION 1,16,0,0
+ PRODUCTVERSION 1,16,0,0
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -96,14 +96,14 @@ BEGIN
         BLOCK "040904b0"
         BEGIN
             VALUE "Author", "Curtiss R. Monroe"
-            VALUE "BuildInformation", "OPOS 1.15. Build 000\0"
+            VALUE "BuildInformation", "OPOS 1.16. Build 000\0"
             VALUE "CompanyName", "Monroe Consulting Services; Dayton OH\0"
             VALUE "FileDescription", "OPOS Constants\0"
-            VALUE "FileVersion", "1, 15, 0, 0"
+            VALUE "FileVersion", "1, 16, 0, 0"
             VALUE "InternalName", "OPOSConstants"
             VALUE "OriginalFilename", "OPOSConstants.dll"
             VALUE "ProductName", "OPOS Common Controls (CRM/MCS, and modified by KF)\0"
-            VALUE "ProductVersion", "1, 15, 0, 0"
+            VALUE "ProductVersion", "1, 16, 0, 0"
             VALUE "OLESelfRegister", "\0"
             VALUE "LegalCopyright", "Copyright 2015; MCS; Dayton OH, USA. See full text of license in the 'Comments' item.\0"
             VALUE "Comments",    "{Start}\r\n"

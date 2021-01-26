@@ -1,14 +1,14 @@
  OPOSBumpBar
 
- Timestamp is 5ed45730 (Mon Jun  1 10:17:36 2020)
+ Timestamp is 600f7763 (Tue Jan 26 10:58:59 2021)
 
  Preferred load address is 10000000
 
  Start         Length     Name                   Class
  0001:00000000 00000080H .text$di                CODE
  0001:00000080 0001e403H .text$mn                CODE
- 0001:0001e483 00000036H .text$x                 CODE
- 0001:0001e4b9 00000042H .text$yd                CODE
+ 0001:0001e483 0000003aH .text$x                 CODE
+ 0001:0001e4bd 00000042H .text$yd                CODE
  0002:00000000 000002fcH .idata$5                DATA
  0002:000002fc 00000004H .00cfg                  DATA
  0002:00000300 00000004H .CRT$XCA                DATA
@@ -27,53 +27,59 @@
  0002:00000350 00000004H .CRT$XTA                DATA
  0002:00000354 0000000cH .CRT$XTZ                DATA
  0002:00000358 00000000H .gfids$y                DATA
- 0002:00000360 000072e8H .rdata                  DATA
- 0002:00007648 00000018H .rdata$T                DATA
- 0002:00007660 00000178H .rdata$r                DATA
- 0002:000077d8 0000001cH .rdata$sxdata           DATA
- 0002:000077f4 000003dcH .rdata$zzzdbg           DATA
- 0002:00007bd0 00000004H .rtc$IAA                DATA
- 0002:00007bd4 00000004H .rtc$IZZ                DATA
- 0002:00007bd8 00000004H .rtc$TAA                DATA
- 0002:00007bdc 00000004H .rtc$TZZ                DATA
- 0002:00007be0 00000004H .tls                    DATA
- 0002:00007be4 00000004H .tls$                   DATA
- 0002:00007be8 00000008H .tls$ZZZ                DATA
- 0002:00007bf0 0000062cH .xdata$x                DATA
- 0002:0000821c 00000004H ATL$__a                 DATA
- 0002:00008220 00000010H ATL$__z                 DATA
- 0002:00008230 000000a8H .edata                  DATA
- 0002:000082d8 00000078H .idata$2                DATA
- 0002:00008350 00000014H .idata$3                DATA
- 0002:00008364 000002fcH .idata$4                DATA
- 0002:00008660 00000bceH .idata$6                DATA
+ 0002:00000360 00007320H .rdata                  DATA
+ 0002:00007680 00000000H .rdata$CastGuardVftablesA DATA
+ 0002:00007680 00000000H .rdata$CastGuardVftablesC DATA
+ 0002:00007680 00000018H .rdata$T                DATA
+ 0002:00007698 00000178H .rdata$r                DATA
+ 0002:00007810 0000001cH .rdata$sxdata           DATA
+ 0002:0000782c 000003dcH .rdata$zzzdbg           DATA
+ 0002:00007c08 00000004H .rtc$IAA                DATA
+ 0002:00007c0c 00000004H .rtc$IZZ                DATA
+ 0002:00007c10 00000004H .rtc$TAA                DATA
+ 0002:00007c14 00000004H .rtc$TZZ                DATA
+ 0002:00007c18 00000004H .tls                    DATA
+ 0002:00007c1c 00000004H .tls$                   DATA
+ 0002:00007c20 00000008H .tls$ZZZ                DATA
+ 0002:00007c28 0000062cH .xdata$x                DATA
+ 0002:00008254 00000004H ATL$__a                 DATA
+ 0002:00008258 00000008H ATL$__z                 DATA
+ 0002:00008260 000000a8H .edata                  DATA
+ 0002:00008308 00000078H .idata$2                DATA
+ 0002:00008380 00000014H .idata$3                DATA
+ 0002:00008394 000002fcH .idata$4                DATA
+ 0002:00008690 00000bceH .idata$6                DATA
  0003:00000000 00000aa0H .data                   DATA
  0003:00000aa0 00000098H .data$r                 DATA
- 0003:00000b38 00000b80H .bss                    DATA
+ 0003:00000b38 00000b88H .bss                    DATA
  0004:00000000 00000220H .rsrc$01                DATA
  0004:00000220 000042f0H .rsrc$02                DATA
 
   Address         Publics by Value              Rva+Base       Lib:Object
 
- 0000:00000000       ___arm64x_redirection_metadata 00000000     <absolute>
- 0000:00000000       ___x64_code_ranges_to_entry_points 00000000     <absolute>
- 0000:00000000       ___guard_iat_count         00000000     <absolute>
  0000:00000000       ___guard_fids_count        00000000     <absolute>
- 0000:00000000       ___guard_longjmp_table     00000000     <absolute>
- 0000:00000000       ___hybrid_code_map_count   00000000     <absolute>
- 0000:00000000       ___dynamic_value_reloc_table 00000000     <absolute>
- 0000:00000000       ___guard_longjmp_count     00000000     <absolute>
- 0000:00000000       __except_list              00000000     <absolute>
- 0000:00000000       ___arm64x_native_entrypoint 00000000     <absolute>
- 0000:00000000       ___guard_fids_table        00000000     <absolute>
- 0000:00000000       ___guard_eh_cont_count     00000000     <absolute>
- 0000:00000000       ___hybrid_auxiliary_iat    00000000     <absolute>
- 0000:00000000       ___guard_iat_table         00000000     <absolute>
- 0000:00000000       ___volatile_metadata       00000000     <absolute>
- 0000:00000000       ___enclave_config          00000000     <absolute>
- 0000:00000000       ___AbsoluteZero            00000000     <absolute>
  0000:00000000       ___guard_eh_cont_table     00000000     <absolute>
+ 0000:00000000       ___guard_longjmp_table     00000000     <absolute>
+ 0000:00000000       ___volatile_metadata       00000000     <absolute>
+ 0000:00000000       ___arm64x_extra_rfe_table  00000000     <absolute>
+ 0000:00000000       ___arm64x_redirection_metadata 00000000     <absolute>
+ 0000:00000000       ___guard_iat_count         00000000     <absolute>
+ 0000:00000000       ___guard_eh_cont_count     00000000     <absolute>
+ 0000:00000000       __except_list              00000000     <absolute>
+ 0000:00000000       ___x64_code_ranges_to_entry_points_count 00000000     <absolute>
+ 0000:00000000       ___hybrid_code_map_count   00000000     <absolute>
+ 0000:00000000       ___x64_code_ranges_to_entry_points 00000000     <absolute>
+ 0000:00000000       ___guard_iat_table         00000000     <absolute>
+ 0000:00000000       ___arm64x_native_entrypoint 00000000     <absolute>
  0000:00000000       ___hybrid_code_map         00000000     <absolute>
+ 0000:00000000       ___arm64x_extra_rfe_table_size 00000000     <absolute>
+ 0000:00000000       ___guard_longjmp_count     00000000     <absolute>
+ 0000:00000000       ___arm64x_redirection_metadata_count 00000000     <absolute>
+ 0000:00000000       ___hybrid_auxiliary_iat    00000000     <absolute>
+ 0000:00000000       ___dynamic_value_reloc_table 00000000     <absolute>
+ 0000:00000000       ___AbsoluteZero            00000000     <absolute>
+ 0000:00000000       ___enclave_config          00000000     <absolute>
+ 0000:00000000       ___guard_fids_table        00000000     <absolute>
  0000:00000007       ___safe_se_handler_count   00000007     <absolute>
  0000:0000002c       __tls_array                0000002c     <absolute>
  0000:00000100       ___guard_flags             00000100     <absolute>
@@ -95,8 +101,8 @@
  0001:000003d2       ?ChangeLONG@OposVariant@@QAEXPAJAAJ@Z 100013d2 f   OposVariant.obj
  0001:00000413       ?GetLONG@OposVariant@@QAEJXZ 10001413 f   OposVariant.obj
  0001:0000042e       ?Init@CComCriticalSection@ATL@@QAEJXZ 1000142e f i OposVariant.obj
- 0001:00000456       ?RemoveAll@?$CSimpleArray@PAUHINSTANCE__@@V?$CSimpleArrayEqualHelper@PAUHINSTANCE__@@@ATL@@@ATL@@QAEXXZ 10001456 f i atls:atlbase.obj
  0001:00000456       ?RemoveAll@?$CSimpleArray@GV?$CSimpleArrayEqualHelper@G@ATL@@@ATL@@QAEXXZ 10001456 f i OposVariant.obj
+ 0001:00000456       ?RemoveAll@?$CSimpleArray@PAUHINSTANCE__@@V?$CSimpleArrayEqualHelper@PAUHINSTANCE__@@@ATL@@@ATL@@QAEXXZ 10001456 f i atls:atlbase.obj
  0001:00000473       ?SetBSTR@OposVariant@@QAEXPA_WAAJ@Z 10001473 f   OposVariant.obj
  0001:000004a7       ?SetBSTR_Copy@OposVariant@@QAEXPA_WAAJ@Z 100014a7 f   OposVariant.obj
  0001:000004f7       ?SetBSTR_InOutPtr@OposVariant@@QAE_NPAPA_WAAJ@Z 100014f7 f   OposVariant.obj
@@ -199,8 +205,8 @@
  0001:00000ab6       ?Release@?$CComContainedObject@VCOPOSBumpBar@@@ATL@@WLE@AGKXZ 10001ab6 f i BumpBar.obj
  0001:00000ac3       ?CreateInstance@CComClassFactory@ATL@@UAGJPAUIUnknown@@ABU_GUID@@PAPAX@Z 10001ac3 f i BumpBar.obj
  0001:00000b01       ?LockServer@CComClassFactory@ATL@@UAGJH@Z 10001b01 f i BumpBar.obj
- 0001:00000b20       ??_ECComClassFactory@ATL@@UAEPAXI@Z 10001b20 f i BumpBar.obj
  0001:00000b20       ??_GCComClassFactory@ATL@@UAEPAXI@Z 10001b20 f i BumpBar.obj
+ 0001:00000b20       ??_ECComClassFactory@ATL@@UAEPAXI@Z 10001b20 f i BumpBar.obj
  0001:00000b4b       ?GetWindowProc@?$CWindowImplBaseT@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@2@@ATL@@UAEP6GJPAUHWND__@@IIJ@ZXZ 10001b4b f i BumpBar.obj
  0001:00000b51       ?StartWindowProc@?$CWindowImplBaseT@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@2@@ATL@@SGJPAUHWND__@@IIJ@Z 10001b51 f i BumpBar.obj
  0001:00000ba5       ?ObjectMain@CComObjectRootBase@ATL@@SGX_N@Z 10001ba5 f i BumpBar.obj
@@ -219,38 +225,38 @@
  0001:00000cc3       ?Save@?$IPersistStreamInitImpl@VCOPOSBumpBar@@@ATL@@UAGJPAUIStream@@H@Z 10001cc3 f i BumpBar.obj
  0001:00000ce5       ?GetSizeMax@?$IPersistStreamInitImpl@VCOPOSBumpBar@@@ATL@@UAGJPAT_ULARGE_INTEGER@@@Z 10001ce5 f i BumpBar.obj
  0001:00000ec4       ?InitNew@?$IPersistStreamInitImpl@VCOPOSBumpBar@@@ATL@@UAGJXZ 10001ec4 f i BumpBar.obj
- 0001:00000ee1       ?QueryGetData@?$IDataObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJPAUtagFORMATETC@@@Z 10001ee1 f i BumpBar.obj
- 0001:00000ee1       ?GetDropTarget@?$IOleInPlaceObjectWindowlessImpl@VCOPOSBumpBar@@@ATL@@UAGJPAPAUIDropTarget@@@Z 10001ee1 f i BumpBar.obj
- 0001:00000ee1       ?SetColorScheme@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJPAUtagLOGPALETTE@@@Z 10001ee1 f i BumpBar.obj
- 0001:00000ee1       ?ContextSensitiveHelp@?$IOleInPlaceActiveObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJH@Z 10001ee1 f i BumpBar.obj
- 0001:00000ee1       ?GetControlInfo@?$IOleControlImpl@VCOPOSBumpBar@@@ATL@@UAGJPAUtagCONTROLINFO@@@Z 10001ee1 f i BumpBar.obj
- 0001:00000ee1       ?OnMnemonic@?$IOleControlImpl@VCOPOSBumpBar@@@ATL@@UAGJPAUtagMSG@@@Z 10001ee1 f i BumpBar.obj
  0001:00000ee1       ?ContextSensitiveHelp@?$IOleInPlaceObjectWindowlessImpl@VCOPOSBumpBar@@@ATL@@UAGJH@Z 10001ee1 f i BumpBar.obj
  0001:00000ee1       ?Unfreeze@?$IViewObjectExImpl@VCOPOSBumpBar@@@ATL@@UAGJK@Z 10001ee1 f i BumpBar.obj
- 0001:00000ee9       ?OnFrameWindowActivate@?$IOleInPlaceActiveObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJH@Z 10001ee9 f i BumpBar.obj
- 0001:00000ee9       ?SaveCompleted@?$IPersistStorageImpl@VCOPOSBumpBar@@@ATL@@UAGJPAUIStorage@@@Z 10001ee9 f i BumpBar.obj
+ 0001:00000ee1       ?GetDropTarget@?$IOleInPlaceObjectWindowlessImpl@VCOPOSBumpBar@@@ATL@@UAGJPAPAUIDropTarget@@@Z 10001ee1 f i BumpBar.obj
+ 0001:00000ee1       ?QueryGetData@?$IDataObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJPAUtagFORMATETC@@@Z 10001ee1 f i BumpBar.obj
+ 0001:00000ee1       ?SetColorScheme@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJPAUtagLOGPALETTE@@@Z 10001ee1 f i BumpBar.obj
+ 0001:00000ee1       ?GetControlInfo@?$IOleControlImpl@VCOPOSBumpBar@@@ATL@@UAGJPAUtagCONTROLINFO@@@Z 10001ee1 f i BumpBar.obj
+ 0001:00000ee1       ?ContextSensitiveHelp@?$IOleInPlaceActiveObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJH@Z 10001ee1 f i BumpBar.obj
+ 0001:00000ee1       ?OnMnemonic@?$IOleControlImpl@VCOPOSBumpBar@@@ATL@@UAGJPAUtagMSG@@@Z 10001ee1 f i BumpBar.obj
  0001:00000ee9       ?OnAmbientPropertyChange@?$IOleControlImpl@VCOPOSBumpBar@@@ATL@@UAGJJ@Z 10001ee9 f i BumpBar.obj
+ 0001:00000ee9       ?SaveCompleted@?$IPersistStorageImpl@VCOPOSBumpBar@@@ATL@@UAGJPAUIStorage@@@Z 10001ee9 f i BumpBar.obj
  0001:00000ee9       ?EnableModeless@?$IOleInPlaceActiveObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJH@Z 10001ee9 f i BumpBar.obj
+ 0001:00000ee9       ?OnFrameWindowActivate@?$IOleInPlaceActiveObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJH@Z 10001ee9 f i BumpBar.obj
  0001:00000eee       ?SetClientSite@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJPAUIOleClientSite@@@Z 10001eee f i BumpBar.obj
  0001:00000f0b       ?GetClientSite@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJPAPAUIOleClientSite@@@Z 10001f0b f i BumpBar.obj
  0001:00000f28       ?SetHostNames@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJPB_W0@Z 10001f28 f i BumpBar.obj
  0001:00000f2d       ?Close@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJK@Z 10001f2d f i BumpBar.obj
+ 0001:00000f4a       ?GetCanonicalFormatEtc@?$IDataObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJPAUtagFORMATETC@@0@Z 10001f4a f i BumpBar.obj
+ 0001:00000f4a       ?GetRect@?$IViewObjectExImpl@VCOPOSBumpBar@@@ATL@@UAGJKPAU_RECTL@@@Z 10001f4a f i BumpBar.obj
  0001:00000f4a       ?GetDataHere@?$IDataObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJPAUtagFORMATETC@@PAUtagSTGMEDIUM@@@Z 10001f4a f i BumpBar.obj
- 0001:00000f4a       ?SetMoniker@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJKPAUIMoniker@@@Z 10001f4a f i BumpBar.obj
- 0001:00000f4a       ?GetClipboardData@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJKPAPAUIDataObject@@@Z 10001f4a f i BumpBar.obj
  0001:00000f4a       ?QueryInterface@CRegObject@ATL@@UAGJABU_GUID@@PAPAX@Z 10001f4a f i BumpBar.obj
  0001:00000f4a       ?EnumFormatEtc@?$IDataObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJKPAPAUIEnumFORMATETC@@@Z 10001f4a f i BumpBar.obj
- 0001:00000f4a       ?GetRect@?$IViewObjectExImpl@VCOPOSBumpBar@@@ATL@@UAGJKPAU_RECTL@@@Z 10001f4a f i BumpBar.obj
- 0001:00000f4a       ?GetCanonicalFormatEtc@?$IDataObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJPAUtagFORMATETC@@0@Z 10001f4a f i BumpBar.obj
- 0001:00000f52       ?SetData@?$IDataObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJPAUtagFORMATETC@@PAUtagSTGMEDIUM@@H@Z 10001f52 f i BumpBar.obj
+ 0001:00000f4a       ?SetMoniker@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJKPAUIMoniker@@@Z 10001f4a f i BumpBar.obj
+ 0001:00000f4a       ?GetClipboardData@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJKPAPAUIDataObject@@@Z 10001f4a f i BumpBar.obj
  0001:00000f52       ?GetMoniker@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJKKPAPAUIMoniker@@@Z 10001f52 f i BumpBar.obj
  0001:00000f52       ?InitFromData@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJPAUIDataObject@@HK@Z 10001f52 f i BumpBar.obj
+ 0001:00000f52       ?SetData@?$IDataObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJPAUtagFORMATETC@@PAUtagSTGMEDIUM@@H@Z 10001f52 f i BumpBar.obj
  0001:00000f5a       ?DoVerb@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJJPAUtagMSG@@PAUIOleClientSite@@JPAUHWND__@@PBUtagRECT@@@Z 10001f5a f i BumpBar.obj
  0001:0000104e       ?EnumVerbs@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJPAPAUIEnumOLEVERB@@@Z 1000204e f i BumpBar.obj
- 0001:00001070       ?Release@CRegObject@ATL@@UAGKXZ 10002070 f i BumpBar.obj
- 0001:00001070       ?Update@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJXZ 10002070 f i BumpBar.obj
- 0001:00001070       ?IsUpToDate@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJXZ 10002070 f i BumpBar.obj
  0001:00001070       ?HandsOffStorage@?$IPersistStorageImpl@VCOPOSBumpBar@@@ATL@@UAGJXZ 10002070 f i BumpBar.obj
+ 0001:00001070       ?Release@CRegObject@ATL@@UAGKXZ 10002070 f i BumpBar.obj
+ 0001:00001070       ?IsUpToDate@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJXZ 10002070 f i BumpBar.obj
+ 0001:00001070       ?Update@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJXZ 10002070 f i BumpBar.obj
  0001:00001075       ?GetUserType@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJKPAPA_W@Z 10002075 f i BumpBar.obj
  0001:0000108d       ?SetExtent@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJKPAUtagSIZE@@@Z 1000208d f i BumpBar.obj
  0001:000010ad       ?GetExtent@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJKPAUtagSIZE@@@Z 100020ad f i BumpBar.obj
@@ -288,219 +294,219 @@
  0001:0000191d       ?QuickActivate@?$IQuickActivateImpl@VCOPOSBumpBar@@@ATL@@UAGJPAUtagQACONTAINER@@PAUtagQACONTROL@@@Z 1000291d f i BumpBar.obj
  0001:00001940       ?SetContentExtent@?$IQuickActivateImpl@VCOPOSBumpBar@@@ATL@@UAGJPAUtagSIZE@@@Z 10002940 f i BumpBar.obj
  0001:0000196c       ?GetContentExtent@?$IQuickActivateImpl@VCOPOSBumpBar@@@ATL@@UAGJPAUtagSIZE@@@Z 1000296c f i BumpBar.obj
- 0001:000019a6       ?GetData@?$IDataObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJPAUtagFORMATETC@@PAUtagSTGMEDIUM@@@Z 100029a6 f i BumpBar.obj
- 0001:000019c9       ?DAdvise@?$IDataObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJPAUtagFORMATETC@@KPAUIAdviseSink@@PAK@Z 100029c9 f i BumpBar.obj
- 0001:00001a0a       ?DUnadvise@?$IDataObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJK@Z 10002a0a f i BumpBar.obj
- 0001:00001a38       ?EnumDAdvise@?$IDataObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJPAPAUIEnumSTATDATA@@@Z 10002a38 f i BumpBar.obj
- 0001:00001a77       ?GetClassInfoW@?$IProvideClassInfo2Impl@$1?CLSID_OPOSBumpBar@@3U_GUID@@B$1?DIID__IOPOSBumpBarEvents@@3U2@B$1?LIBID_OposBumpBar_CCO@@3U2@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UAGJPAPAUITypeInfo@@@Z 10002a77 f i BumpBar.obj
- 0001:00001a8d       ?GetGUID@?$IProvideClassInfo2Impl@$1?CLSID_OPOSBumpBar@@3U_GUID@@B$1?DIID__IOPOSBumpBarEvents@@3U2@B$1?LIBID_OposBumpBar_CCO@@3U2@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UAGJKPAU_GUID@@@Z 10002a8d f i BumpBar.obj
- 0001:00001acb       ?FAccessAllowed@?$IObjectSafetyImpl@VCOPOSBumpBar@@$02@ATL@@MAEHXZ 10002acb f i BumpBar.obj
- 0001:00001acb       __get_startup_argv_mode    10002acb f i LIBCMT:argv_mode.obj
- 0001:00001acf       ?GetInterfaceSafetyOptions@?$IObjectSafetyImpl@VCOPOSBumpBar@@$02@ATL@@UAGJABU_GUID@@PAK1@Z 10002acf f i BumpBar.obj
- 0001:00001b43       ?SetInterfaceSafetyOptions@?$IObjectSafetyImpl@VCOPOSBumpBar@@$02@ATL@@UAGJABU_GUID@@KK@Z 10002b43 f i BumpBar.obj
- 0001:00001bbd       ?_LocCPQueryInterface@?$IConnectionPointImpl@VCOPOSBumpBar@@$1?DIID__IOPOSBumpBarEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJABU_GUID@@PAPAX@Z 10002bbd f i BumpBar.obj
- 0001:00001bbd       ?_LocCPQueryInterface@?$IConnectionPointImpl@VCOPOSBumpBar@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJABU_GUID@@PAPAX@Z 10002bbd f i BumpBar.obj
- 0001:00001c0a       ?GetConnectionInterface@?$IConnectionPointImpl@VCOPOSBumpBar@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAU_GUID@@@Z 10002c0a f i BumpBar.obj
- 0001:00001c2e       ?GetConnectionPointContainer@?$IConnectionPointImpl@VCOPOSBumpBar@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAPAUIConnectionPointContainer@@@Z 10002c2e f i BumpBar.obj
- 0001:00001c51       ?Advise@?$IConnectionPointImpl@VCOPOSBumpBar@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAUIUnknown@@PAK@Z 10002c51 f i BumpBar.obj
- 0001:00001c51       ?Advise@?$IConnectionPointImpl@VCOPOSBumpBar@@$1?DIID__IOPOSBumpBarEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAUIUnknown@@PAK@Z 10002c51 f i BumpBar.obj
- 0001:00001cf1       ?Unadvise@?$IConnectionPointImpl@VCOPOSBumpBar@@$1?DIID__IOPOSBumpBarEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJK@Z 10002cf1 f i BumpBar.obj
- 0001:00001cf1       ?Unadvise@?$IConnectionPointImpl@VCOPOSBumpBar@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJK@Z 10002cf1 f i BumpBar.obj
- 0001:00001d31       ?EnumConnections@?$IConnectionPointImpl@VCOPOSBumpBar@@$1?DIID__IOPOSBumpBarEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAPAUIEnumConnections@@@Z 10002d31 f i BumpBar.obj
- 0001:00001d31       ?EnumConnections@?$IConnectionPointImpl@VCOPOSBumpBar@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAPAUIEnumConnections@@@Z 10002d31 f i BumpBar.obj
- 0001:00001e2c       ?GetObjectDescription@?$CComCoClass@VCOPOSBumpBar@@$1?CLSID_OPOSBumpBar@@3U_GUID@@B@ATL@@SGPB_WXZ 10002e2c f i BumpBar.obj
- 0001:00001e2c       ?GetCategoryMap@CComObjectRootBase@ATL@@SAPBU_ATL_CATMAP_ENTRY@2@XZ 10002e2c f i BumpBar.obj
- 0001:00001e2f       ?GetConnectionInterface@?$IConnectionPointImpl@VCOPOSBumpBar@@$1?DIID__IOPOSBumpBarEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAU_GUID@@@Z 10002e2f f i BumpBar.obj
- 0001:00001e53       ?GetConnectionPointContainer@?$IConnectionPointImpl@VCOPOSBumpBar@@$1?DIID__IOPOSBumpBarEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAPAUIConnectionPointContainer@@@Z 10002e53 f i BumpBar.obj
- 0001:00001e76       ?UpdateRegistry@COPOSBumpBar@@SGJH@Z 10002e76 f i BumpBar.obj
- 0001:00001e8e       ?ProcessWindowMessage@COPOSBumpBar@@UAEHPAUHWND__@@IIJAAJK@Z 10002e8e f i BumpBar.obj
- 0001:00001ed7       ?SOData@COPOSBumpBar@@MAGJJ@Z 10002ed7 f i BumpBar.obj
- 0001:00001f10       ?SODirectIO@COPOSBumpBar@@MAGJJPAJPAPA_W@Z 10002f10 f i BumpBar.obj
- 0001:00001f59       ?SOError@COPOSBumpBar@@MAGJJJJPAJ@Z 10002f59 f i BumpBar.obj
- 0001:00001fae       ?SOOutputComplete@COPOSBumpBar@@MAGJJ@Z 10002fae f i BumpBar.obj
- 0001:00001fe7       ?SOStatusUpdate@COPOSBumpBar@@MAGJJ@Z 10002fe7 f i BumpBar.obj
- 0001:00002020       ?Lock@CAtlModule@ATL@@UAEJXZ 10003020 f i BumpBar.obj
- 0001:0000202a       ?Unlock@CAtlModule@ATL@@UAEJXZ 1000302a f i BumpBar.obj
- 0001:00002034       ?GetLockCount@CAtlModule@ATL@@UAEJXZ 10003034 f i BumpBar.obj
- 0001:00002038       ?GetGITPtr@CAtlModule@ATL@@UAEJPAPAUIGlobalInterfaceTable@@@Z 10003038 f i BumpBar.obj
- 0001:00002084       ?AddCommonRGSReplacements@?$CAtlModuleT@VCComModule@ATL@@@ATL@@UAEJPAUIRegistrarBase@@@Z 10003084 f i BumpBar.obj
- 0001:0000209e       ?UpdateRegistryFromResourceD@CComModule@ATL@@UAGJIHPAU_ATL_REGMAP_ENTRY@2@@Z 1000309e f i BumpBar.obj
- 0001:0000209e       ?UpdateRegistryFromResourceD@CComModule@ATL@@UAGJPB_WHPAU_ATL_REGMAP_ENTRY@2@@Z 1000309e f i BumpBar.obj
- 0001:000020a6       ?UpdateRegistryFromResource@CComModule@ATL@@UAGJPB_WHPAU_ATL_REGMAP_ENTRY@2@@Z 100030a6 f i BumpBar.obj
- 0001:000020af       ?UpdateRegistryFromResource@CComModule@ATL@@UAGJIHPAU_ATL_REGMAP_ENTRY@2@@Z 100030af f i BumpBar.obj
- 0001:000020b8       ??_GCComModule@ATL@@UAEPAXI@Z 100030b8 f i BumpBar.obj
- 0001:000020b8       ??_ECComModule@ATL@@UAEPAXI@Z 100030b8 f i BumpBar.obj
- 0001:000020e0       ?CreateInstance@?$CComCreator@V?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@@ATL@@SGJPAXABU_GUID@@PAPAX@Z 100030e0 f i BumpBar.obj
- 0001:00002180       ?CreateInstance@?$CComCreator2@V?$CComCreator@V?$CComObject@VCOPOSBumpBar@@@ATL@@@ATL@@V?$CComCreator@V?$CComAggObject@VCOPOSBumpBar@@@ATL@@@2@@ATL@@SGJPAXABU_GUID@@PAPAX@Z 10003180 f i BumpBar.obj
- 0001:000021a0       ?AddRef@?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UAGKXZ 100031a0 f i BumpBar.obj
- 0001:000021c7       ?Release@?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UAGKXZ 100031c7 f i BumpBar.obj
- 0001:000021fd       ?QueryInterface@?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UAGJABU_GUID@@PAPAX@Z 100031fd f i BumpBar.obj
- 0001:00002217       ??_E?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UAEPAXI@Z 10003217 f i BumpBar.obj
- 0001:00002217       ??_G?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UAEPAXI@Z 10003217 f i BumpBar.obj
- 0001:00002239       ?Next@?$CComEnumImpl@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@@ATL@@UAGJKPAPAUIConnectionPoint@@PAK@Z 10003239 f i BumpBar.obj
- 0001:00002310       ?Skip@?$CComEnumImpl@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@@ATL@@UAGJK@Z 10003310 f i BumpBar.obj
- 0001:0000233d       ?Reset@?$CComEnumImpl@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@@ATL@@UAGJXZ 1000333d f i BumpBar.obj
- 0001:0000233d       ?Reset@?$CComEnumImpl@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@@ATL@@UAGJXZ 1000333d f i BumpBar.obj
- 0001:0000234f       ?Clone@?$CComEnumImpl@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@@ATL@@UAGJPAPAUIEnumConnectionPoints@@@Z 1000334f f i BumpBar.obj
- 0001:00002430       ?AddRef@?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAGKXZ 10003430 f i BumpBar.obj
- 0001:00002430       ?AddRef@?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAGKXZ 10003430 f i BumpBar.obj
- 0001:00002441       ?Release@?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAGKXZ 10003441 f i BumpBar.obj
- 0001:00002441       ?Release@?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAGKXZ 10003441 f i BumpBar.obj
- 0001:0000247d       ?QueryInterface@?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAGJABU_GUID@@PAPAX@Z 1000347d f i BumpBar.obj
- 0001:00002497       ??_E?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAEPAXI@Z 10003497 f i BumpBar.obj
- 0001:00002497       ??_G?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAEPAXI@Z 10003497 f i BumpBar.obj
- 0001:000024b9       ?AddRef@CRegObject@ATL@@UAGKXZ 100034b9 f i BumpBar.obj
- 0001:000024bf       ?AddReplacement@CRegObject@ATL@@UAGJPB_W0@Z 100034bf f i BumpBar.obj
- 0001:000024f8       ?ClearReplacements@CRegObject@ATL@@UAGJXZ 100034f8 f i BumpBar.obj
- 0001:0000250a       ??_GCRegObject@ATL@@UAEPAXI@Z 1000350a f i BumpBar.obj
- 0001:0000250a       ??_ECRegObject@ATL@@UAEPAXI@Z 1000350a f i BumpBar.obj
- 0001:0000252c       ?AddRef@?$CComAggObject@VCOPOSBumpBar@@@ATL@@UAGKXZ 1000352c f i BumpBar.obj
- 0001:0000253d       ?Release@?$CComAggObject@VCOPOSBumpBar@@@ATL@@UAGKXZ 1000353d f i BumpBar.obj
- 0001:00002579       ?QueryInterface@?$CComAggObject@VCOPOSBumpBar@@@ATL@@UAGJABU_GUID@@PAPAX@Z 10003579 f i BumpBar.obj
- 0001:000025c8       ?AddRef@?$CComContainedObject@VCOPOSBumpBar@@@ATL@@UAGKXZ 100035c8 f i BumpBar.obj
- 0001:000025de       ?Release@?$CComContainedObject@VCOPOSBumpBar@@@ATL@@UAGKXZ 100035de f i BumpBar.obj
- 0001:000025f4       ?QueryInterface@?$CComContainedObject@VCOPOSBumpBar@@@ATL@@UAGJABU_GUID@@PAPAX@Z 100035f4 f i BumpBar.obj
- 0001:0000260f       ??_G?$CComAggObject@VCOPOSBumpBar@@@ATL@@UAEPAXI@Z 1000360f f i BumpBar.obj
- 0001:0000260f       ??_E?$CComAggObject@VCOPOSBumpBar@@@ATL@@UAEPAXI@Z 1000360f f i BumpBar.obj
- 0001:00002634       ?AddRef@?$CComObject@VCOPOSBumpBar@@@ATL@@UAGKXZ 10003634 f i BumpBar.obj
- 0001:0000264b       ?Release@?$CComObject@VCOPOSBumpBar@@@ATL@@UAGKXZ 1000364b f i BumpBar.obj
- 0001:0000268d       ?QueryInterface@?$CComObject@VCOPOSBumpBar@@@ATL@@UAGJABU_GUID@@PAPAX@Z 1000368d f i BumpBar.obj
- 0001:000026a7       ?OnDrawAdvanced@CComControlBase@ATL@@UAEJAAUATL_DRAWINFO@@@Z 100036a7 f i BumpBar.obj
- 0001:0000279a       ?Next@?$CComEnumImpl@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@@ATL@@UAGJKPAUtagCONNECTDATA@@PAK@Z 1000379a f i BumpBar.obj
- 0001:00002871       ?Skip@?$CComEnumImpl@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@@ATL@@UAGJK@Z 10003871 f i BumpBar.obj
- 0001:0000289e       ?Clone@?$CComEnumImpl@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@@ATL@@UAGJPAPAUIEnumConnections@@@Z 1000389e f i BumpBar.obj
- 0001:0000297f       ?QueryInterface@?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAGJABU_GUID@@PAPAX@Z 1000397f f i BumpBar.obj
- 0001:00002999       ??_E?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAEPAXI@Z 10003999 f i BumpBar.obj
- 0001:00002999       ??_G?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAEPAXI@Z 10003999 f i BumpBar.obj
- 0001:000029bb       ??$?4UITypeInfo2@@@?$CComPtr@UITypeInfo@@@ATL@@QAEPAUITypeInfo@@ABV?$CComPtr@UITypeInfo2@@@1@@Z 100039bb f i BumpBar.obj
- 0001:000029e8       ??$AtlAdd@K@ATL@@YAJPAKKK@Z 100039e8 f i BumpBar.obj
- 0001:00002a0b       ??$AtlAdd@_K@ATL@@YAJPA_K_K1@Z 10003a0b f i BumpBar.obj
- 0001:00002a43       ??$AtlAddThrow@K@ATL@@YAKKK@Z 10003a43 f i BumpBar.obj
- 0001:00002a69       ??$AtlModuleRegisterWndClassInfoT@VAtlModuleRegisterWndClassInfoParamW@ATL@@@ATL@@YAGPAU_ATL_BASE_MODULE70@0@PAU_ATL_WIN_MODULE70@0@PAU_ATL_WNDCLASSINFOW@0@PAP6GJPAUHWND__@@IIJ@ZVAtlModuleRegisterWndClassInfoParamW@0@@Z 10003a69 f i BumpBar.obj
- 0001:00002bb7       ??$AtlMultiply@H@ATL@@YAJPAHHH@Z 10003bb7 f i BumpBar.obj
- 0001:00002bef       ??$AtlMultiply@I@ATL@@YAJPAIII@Z 10003bef f i BumpBar.obj
- 0001:00002bef       ??$AtlMultiply@K@ATL@@YAJPAKKK@Z 10003bef f i BumpBar.obj
- 0001:00002c11       ??$AtlMultiplyThrow@I@ATL@@YAIII@Z 10003c11 f i BumpBar.obj
- 0001:00002c37       ??0?$CComAggObject@VCOPOSBumpBar@@@ATL@@QAE@PAX@Z 10003c37 f i BumpBar.obj
- 0001:00002c64       ??0?$CComContainedObject@VCOPOSBumpBar@@@ATL@@QAE@PAX@Z 10003c64 f i BumpBar.obj
- 0001:00002d1d       ??0?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@QAE@PAX@Z 10003d1d f i BumpBar.obj
- 0001:00002d4b       ??0?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@QAE@PAX@Z 10003d4b f i BumpBar.obj
- 0001:00002d79       ??0?$CComObject@VCOPOSBumpBar@@@ATL@@QAE@PAX@Z 10003d79 f i BumpBar.obj
- 0001:00002e30       ??0?$CComQIPtr@UIOleControlSite@@$1?_GUID_b196b289_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@B@ATL@@QAE@PAUIUnknown@@@Z 10003e30 f i BumpBar.obj
- 0001:00002e59       ??0CAtlModule@ATL@@QAE@XZ  10003e59 f i BumpBar.obj
- 0001:00002e9a       ??0CParseBuffer@CRegParser@ATL@@QAE@H@Z 10003e9a f i BumpBar.obj
- 0001:00002ed0       ??0_ATL_MSG@ATL@@QAE@PAUHWND__@@IIJH@Z 10003ed0 f i BumpBar.obj
- 0001:00002f08       ??1?$CComAggObject@VCOPOSBumpBar@@@ATL@@UAE@XZ 10003f08 f i BumpBar.obj
- 0001:00002f2c       ??1?$CComEnumImpl@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@@ATL@@UAE@XZ 10003f2c f i BumpBar.obj
- 0001:00002f6c       ??1?$CComEnumImpl@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@@ATL@@UAE@XZ 10003f6c f i BumpBar.obj
- 0001:00002fac       ??1?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAE@XZ 10003fac f i BumpBar.obj
- 0001:00002fcf       ??1?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAE@XZ 10003fcf f i BumpBar.obj
- 0001:00002ff2       ??1?$CComObject@VCOPOSBumpBar@@@ATL@@UAE@XZ 10003ff2 f i BumpBar.obj
- 0001:000030b0       ??1?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UAE@XZ 100040b0 f i BumpBar.obj
- 0001:000030c6       ??1?$CComObjectRootEx@VCComMultiThreadModel@ATL@@@ATL@@QAE@XZ 100040c6 f i BumpBar.obj
- 0001:000030db       ??1CRegObject@ATL@@UAE@XZ  100040db f i BumpBar.obj
- 0001:000030fb       ??4?$CComPtr@UIAdviseSink@@@ATL@@QAEPAUIAdviseSink@@PAU2@@Z 100040fb f i BumpBar.obj
- 0001:000030fb       ??4?$CComPtr@UIOleClientSite@@@ATL@@QAEPAUIOleClientSite@@PAU2@@Z 100040fb f i BumpBar.obj
- 0001:000030fb       ??4?$CComPtr@UIUnknown@@@ATL@@QAEPAUIUnknown@@PAU2@@Z 100040fb f i BumpBar.obj
- 0001:0000312f       ??_E?$CComContainedObject@VCOPOSBumpBar@@@ATL@@UAEPAXI@Z 1000412f f i BumpBar.obj
- 0001:0000312f       ??_G?$CComContainedObject@VCOPOSBumpBar@@@ATL@@UAEPAXI@Z 1000412f f i BumpBar.obj
- 0001:00003154       ??_G?$CComObject@VCOPOSBumpBar@@@ATL@@UAEPAXI@Z 10004154 f i BumpBar.obj
- 0001:00003154       ??_E?$CComObject@VCOPOSBumpBar@@@ATL@@UAEPAXI@Z 10004154 f i BumpBar.obj
- 0001:00003179       ?Add@?$CSimpleArray@GV?$CSimpleArrayEqualHelper@G@ATL@@@ATL@@QAEHABG@Z 10004179 f i BumpBar.obj
- 0001:000031fd       ?Add@?$CSimpleMap@PA_WPA_WVCExpansionVectorEqualHelper@ATL@@@ATL@@QAEHABQA_W0@Z 100041fd f i BumpBar.obj
- 0001:00003252       ?Add@CComDynamicUnkArray@ATL@@QAEKPAUIUnknown@@@Z 10004252 f i BumpBar.obj
- 0001:00003308       ?Add@CExpansionVector@ATL@@QAEHPB_W0@Z 10004308 f i BumpBar.obj
- 0001:00003411       ?AddString@CParseBuffer@CRegParser@ATL@@QAEHPB_W@Z 10004411 f i BumpBar.obj
- 0001:00003446       ?AddTermFunc@CAtlModule@ATL@@QAEJP6GXK@ZK@Z 10004446 f i BumpBar.obj
- 0001:000034a9       ?AddValue@CRegParser@ATL@@IAEJAAVCRegKey@2@PB_WPA_W@Z 100044a9 f i BumpBar.obj
- 0001:000037c3       ?Allocate@?$CAtlSafeAllocBufferManager@VCCRTAllocator@ATL@@@_ATL_SAFE_ALLOCA_IMPL@ATL@@QAEPAXK@Z 100047c3 f i BumpBar.obj
- 0001:000037f0       ?Allocate@?$CTempBuffer@E$0BAA@VCCRTAllocator@ATL@@@ATL@@QAEPAEI@Z 100047f0 f i BumpBar.obj
- 0001:0000381f       ?Allocate@?$CTempBuffer@_W$0BAA@VCCRTAllocator@ATL@@@ATL@@QAEPA_WI@Z 1000481f f i BumpBar.obj
- 0001:0000384e       ?Allocate@?$CTempBuffer@_W$0EAA@VCCRTAllocator@ATL@@@ATL@@QAEPA_WI@Z 1000484e f i BumpBar.obj
- 0001:0000387d       ?AllocateHeap@?$CTempBuffer@_W$0BAA@VCCRTAllocator@ATL@@@ATL@@AAEXI@Z 1000487d f i BumpBar.obj
- 0001:0000387d       ?AllocateHeap@?$CTempBuffer@_W$0EAA@VCCRTAllocator@ATL@@@ATL@@AAEXI@Z 1000487d f i BumpBar.obj
- 0001:0000387d       ?AllocateHeap@?$CTempBuffer@E$0BAA@VCCRTAllocator@ATL@@@ATL@@AAEXI@Z 1000487d f i BumpBar.obj
- 0001:000038a2       ?Append@CParseBuffer@CRegParser@ATL@@QAEHPB_WH@Z 100048a2 f i BumpBar.obj
- 0001:00003930       ?AtlCoTaskMemCAlloc@ATL@@YAPAXKK@Z 10004930 f i BumpBar.obj
- 0001:0000395d       ?AtlCoTaskMemRecalloc@ATL@@YAPAXPAXKK@Z 1000495d f i BumpBar.obj
- 0001:0000398d       ?AtlComModuleGetClassObject@ATL@@YGJPAU_ATL_COM_MODULE70@1@ABU_GUID@@1PAPAX@Z 1000498d f i BumpBar.obj
- 0001:00003a80       ?AtlComModuleRegisterServer@ATL@@YGJPAU_ATL_COM_MODULE70@1@HPBU_GUID@@@Z 10004a80 f i BumpBar.obj
- 0001:00003b08       ?AtlComModuleUnregisterServer@ATL@@YGJPAU_ATL_COM_MODULE70@1@HPBU_GUID@@@Z 10004b08 f i BumpBar.obj
- 0001:00003b90       ?AtlComQIPtrAssign2@ATL@@YAXPAPAUIUnknown@@PAU2@ABU_GUID@@@Z 10004b90 f i BumpBar.obj
- 0001:00003bbf       ?AtlCreateTargetDC@ATL@@YGPAUHDC__@@PAU2@PAUtagDVTARGETDEVICE@@@Z 10004bbf f i BumpBar.obj
- 0001:00003c28       ?AtlCrtErrorCheck@ATL@@YAHH@Z 10004c28 f i BumpBar.obj
- 0001:00003c63       ?AtlHiMetricToPixel@ATL@@YGXPBUtagSIZE@@PAU2@@Z 10004c63 f i BumpBar.obj
- 0001:00003cd8       ?AtlHresultFromLastError@ATL@@YAJXZ 10004cd8 f i BumpBar.obj
- 0001:00003cef       ?AtlHresultFromWin32@ATL@@YAJK@Z 10004cef f i BumpBar.obj
- 0001:00003d04       ?AtlInternalOleLoadFromStream@ATL@@YAJPAUIStream@@ABU_GUID@@PAPAXTClassesAllowedInStream@1@K@Z 10004d04 f i BumpBar.obj
- 0001:00003e22       ?AtlInternalQueryInterface@ATL@@YGJPAXPBU_ATL_INTMAP_ENTRY@1@ABU_GUID@@PAPAX@Z 10004e22 f i BumpBar.obj
- 0001:00003ec5       ?AtlLoadTypeLib@ATL@@YGJPAUHINSTANCE__@@PB_WPAPA_WPAPAUITypeLib@@@Z 10004ec5 f i BumpBar.obj
- 0001:000040a3       ?AtlRegisterClassCategoriesHelper@ATL@@YGJABU_GUID@@PBU_ATL_CATMAP_ENTRY@1@H@Z 100050a3 f i BumpBar.obj
- 0001:0000439f       ?AtlRegisterTypeLib@ATL@@YGJPAUHINSTANCE__@@PB_W@Z 1000539f f i BumpBar.obj
- 0001:00004527       ?AtlThrowImpl@ATL@@YGXJ@Z  10005527 f i BumpBar.obj
- 0001:00004545       ?AtlUnRegisterTypeLib@ATL@@YGJPAUHINSTANCE__@@PB_W@Z 10005545 f i BumpBar.obj
- 0001:000045f0       ?AtlWinModuleAddCreateWndData@ATL@@YGXPAU_ATL_WIN_MODULE70@1@PAU_AtlCreateWndData@1@PAX@Z 100055f0 f i BumpBar.obj
- 0001:00004644       ?AtlWinModuleExtractCreateWndData@ATL@@YGPAXPAU_ATL_WIN_MODULE70@1@@Z 10005644 f i BumpBar.obj
- 0001:000046a7       ?AtlWinModuleRegisterClassExW@ATL@@YGGPAU_ATL_WIN_MODULE70@1@PBUtagWNDCLASSEXW@@@Z 100056a7 f i BumpBar.obj
- 0001:000046e6       ?CanForceRemoveKey@CRegParser@ATL@@IAEHPB_W@Z 100056e6 f i BumpBar.obj
- 0001:00004715       ?ChToByte@CRegParser@ATL@@KAE_W@Z 10005715 f i BumpBar.obj
- 0001:00004748       ?Cleanup@CComTypeInfoHolder@ATL@@SGXK@Z 10005748 f i BumpBar.obj
- 0001:0000477b       ?ClearReplacements@CExpansionVector@ATL@@QAEJXZ 1000577b f i BumpBar.obj
- 0001:000047b8       ?Close@CRegKey@ATL@@QAEJXZ 100057b8 f i BumpBar.obj
- 0001:000047d2       ?CreateInstance@?$CComCreator@V?$CComAggObject@VCOPOSBumpBar@@@ATL@@@ATL@@SGJPAXABU_GUID@@PAPAX@Z 100057d2 f i BumpBar.obj
- 0001:00004847       ?CreateInstance@?$CComCreator@V?$CComObject@VCOPOSBumpBar@@@ATL@@@ATL@@SGJPAXABU_GUID@@PAPAX@Z 10005847 f i BumpBar.obj
- 0001:000048c7       ?CreateInstance@?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@SGJPAPAV12@@Z 100058c7 f i BumpBar.obj
- 0001:00004911       ?CreateInstance@?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@SGJPAPAV12@@Z 10005911 f i BumpBar.obj
- 0001:0000495b       ?DefaultReflectionHandler@?$CWindowImplRoot@VCWindow@ATL@@@ATL@@SAHPAUHWND__@@IIJAAJ@Z 1000595b f i BumpBar.obj
- 0001:000049ce       ?DeleteSubKey@CRegKey@ATL@@QAEJPB_W@Z 100059ce f i BumpBar.obj
- 0001:00004a47       ?DoEvent@COPOSBumpBar@@IAEXIIJ@Z 10005a47 f i BumpBar.obj
- 0001:00004ac7       ?DoVerbHide@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@QAEJPBUtagRECT@@PAUHWND__@@@Z 10005ac7 f i BumpBar.obj
- 0001:00004afd       ?DoVerbInPlaceActivate@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@QAEJPBUtagRECT@@PAUHWND__@@@Z 10005afd f i BumpBar.obj
- 0001:00004b30       ?DoVerbPrimary@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@QAEJPBUtagRECT@@PAUHWND__@@@Z 10005b30 f i BumpBar.obj
- 0001:00004bbc       ?DoVerbProperties@CComControlBase@ATL@@QAEJPBUtagRECT@@PAUHWND__@@@Z 10005bbc f i BumpBar.obj
- 0001:00004d3b       ?DoVerbUIActivate@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@QAEJPBUtagRECT@@PAUHWND__@@@Z 10005d3b f i BumpBar.obj
- 0001:00004d78       ?DoesVerbActivate@CComControlBase@ATL@@QAEHJ@Z 10005d78 f i BumpBar.obj
- 0001:00004d99       ?DoesVerbUIActivate@CComControlBase@ATL@@QAEHJ@Z 10005d99 f i BumpBar.obj
- 0001:00004dce       ?EndOfVar@CRegParser@ATL@@IAEHXZ 10005dce f i BumpBar.obj
- 0001:00004dee       ?EscapeSingleQuote@CAtlModule@ATL@@SAXPA_WIPB_W@Z 10005dee f i BumpBar.obj
- 0001:00004e3d       ?FindKey@?$CSimpleMap@PA_WPA_WVCExpansionVectorEqualHelper@ATL@@@ATL@@QBEHABQA_W@Z 10005e3d f i BumpBar.obj
- 0001:00004e74       ?FireTheEvent@?$CProxy_IOPOSEvents@VCOPOSBumpBar@@@@IAEXPAVOposVariant@@IAAJPB_WJ@Z 10005e74 f i BumpBar.obj
- 0001:00004f06       ?FireViewChange@CComControlBase@ATL@@QAEJXZ 10005f06 f i BumpBar.obj
- 0001:00004f4f       ?Fire_DataEvent@?$CProxy_IOPOSEvents@VCOPOSBumpBar@@@@QAEXJ@Z 10005f4f f i BumpBar.obj
- 0001:00004fe5       ?Fire_DirectIOEvent@?$CProxy_IOPOSEvents@VCOPOSBumpBar@@@@QAEXJPAJPAPA_W@Z 10005fe5 f i BumpBar.obj
- 0001:000050d1       ?Fire_ErrorEvent@?$CProxy_IOPOSEvents@VCOPOSBumpBar@@@@QAEXJJJPAJ@Z 100060d1 f i BumpBar.obj
- 0001:000051c2       ?Fire_OutputCompleteEvent@?$CProxy_IOPOSEvents@VCOPOSBumpBar@@@@QAEXJ@Z 100061c2 f i BumpBar.obj
- 0001:00005258       ?Fire_StatusUpdateEvent@?$CProxy_IOPOSEvents@VCOPOSBumpBar@@@@QAEXJ@Z 10006258 f i BumpBar.obj
- 0001:000052ee       ?FreeHeap@?$CTempBuffer@E$0BAA@VCCRTAllocator@ATL@@@ATL@@AAEXXZ 100062ee f i BumpBar.obj
- 0001:000052ee       ?FreeHeap@?$CTempBuffer@_W$0BAA@VCCRTAllocator@ATL@@@ATL@@AAEXXZ 100062ee f i BumpBar.obj
- 0001:000052ee       ?FreeHeap@?$CTempBuffer@_W$0EAA@VCCRTAllocator@ATL@@@ATL@@AAEXXZ 100062ee f i BumpBar.obj
- 0001:000052f7       ?GetAmbientLocaleID@CComControlBase@ATL@@QAEJAAK@Z 100062f7 f i BumpBar.obj
- 0001:00005353       ?GetAmbientUserMode@CComControlBase@ATL@@QAEJAAH@Z 10006353 f i BumpBar.obj
- 0001:000053c3       ?GetAt@CComDynamicUnkArray@ATL@@QAEPAUIUnknown@@H@Z 100063c3 f i BumpBar.obj
- 0001:000053df       ?GetClassObject@CComModule@ATL@@QAEJABU_GUID@@0PAPAX@Z 100063df f i BumpBar.obj
- 0001:00005481       ?GetConnMap@COPOSBumpBar@@SAPBU_ATL_CONNMAP_ENTRY@ATL@@PAH@Z 10006481 f i BumpBar.obj
- 0001:000054f1       ?GetCookie@CComDynamicUnkArray@ATL@@QAGKPAPAUIUnknown@@@Z 100064f1 f i BumpBar.obj
- 0001:00005529       ?GetIDsOfNames@CComTypeInfoHolder@ATL@@QAEJABU_GUID@@PAPA_WIKPAJ@Z 10006529 f i BumpBar.obj
- 0001:00005650       ?GetKeyAt@?$CSimpleMap@PA_WPA_WVCExpansionVectorEqualHelper@ATL@@@ATL@@QBEAAPA_WH@Z 10006650 f i BumpBar.obj
- 0001:00005675       ?GetPagesHelper@?$ISpecifyPropertyPagesImpl@VCOPOSBumpBar@@@ATL@@IAEJPAUtagCAUUID@@PBUATL_PROPMAP_ENTRY@2@@Z 10006675 f i BumpBar.obj
- 0001:0000579c       ?GetProperty@?$CComPtr@UIDispatch@@@ATL@@SAJPAUIDispatch@@JPAUtagVARIANT@@@Z 1000679c f i BumpBar.obj
- 0001:000057eb       ?GetSizeMax@CComVariant@ATL@@QBEJPAT_ULARGE_INTEGER@@@Z 100067eb f i BumpBar.obj
- 0001:000059ad       ?GetTI@CComTypeInfoHolder@ATL@@QAEJK@Z 100069ad f i BumpBar.obj
- 0001:00005b8c       ?GetTI@CComTypeInfoHolder@ATL@@QAEJKPAPAUITypeInfo@@@Z 10006b8c f i BumpBar.obj
- 0001:00005bce       ?GetUnknown@CComDynamicUnkArray@ATL@@QAGPAUIUnknown@@K@Z 10006bce f i BumpBar.obj
- 0001:00005bef       ?GetValueAt@?$CSimpleMap@PA_WPA_WVCExpansionVectorEqualHelper@ATL@@@ATL@@QBEAAPA_WH@Z 10006bef f i BumpBar.obj
- 0001:00005c15       ?GetZoomInfo@CComControlBase@ATL@@QAEXAAUATL_DRAWINFO@@@Z 10006c15 f i BumpBar.obj
- 0001:00005ca8       ?HKeyFromString@CRegParser@ATL@@KAPAUHKEY__@@PA_W@Z 10006ca8 f i BumpBar.obj
- 0001:00005cd6       ?HasSubKeys@CRegParser@ATL@@IAEHPAUHKEY__@@@Z 10006cd6 f i BumpBar.obj
- 0001:00005d0b       ?IDataObject_GetData@CComControlBase@ATL@@QAEJPAUtagFORMATETC@@PAUtagSTGMEDIUM@@@Z 10006d0b f i BumpBar.obj
- 0001:00005eb1       ?IOleInPlaceObject_InPlaceDeactivate@CComControlBase@ATL@@QAEJXZ 10006eb1 f i BumpBar.obj
- 0001:00005f38       ?IOleInPlaceObject_SetObjectRects@CComControlBase@ATL@@QAEJPBUtagRECT@@0@Z 10006f38 f i BumpBar.obj
- 0001:00006005       ?IOleInPlaceObject_UIDeactivate@CComControlBase@ATL@@QAEJXZ 10007005 f i BumpBar.obj
- 0001:000060c7       ?IOleObject_Advise@CComControlBase@ATL@@QAEJPAUIAdviseSink@@PAK@Z 100070c7 f i BumpBar.obj
- 0001:000060f1       ?IOleObject_Close@CComControlBase@ATL@@QAEJK@Z 100070f1 f i BumpBar.obj
- 0001:000061d5       ?IOleObject_GetClientSite@CComControlBase@ATL@@QAEJPAPAUIOleClientSite@@@Z 100071d5 f i BumpBar.obj
- 0001:000061fe       ?IOleObject_SetClientSite@CComControlBase@ATL@@QAEJPAUIOleClientSite@@@Z 100071fe f i BumpBar.obj
- 0001:0000623d       ?IOleObject_SetExtent@CComControlBase@ATL@@QAEJKPAUtagSIZE@@@Z 1000723d f i BumpBar.obj
+ 0001:000019a8       ?GetData@?$IDataObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJPAUtagFORMATETC@@PAUtagSTGMEDIUM@@@Z 100029a8 f i BumpBar.obj
+ 0001:000019cb       ?DAdvise@?$IDataObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJPAUtagFORMATETC@@KPAUIAdviseSink@@PAK@Z 100029cb f i BumpBar.obj
+ 0001:00001a0c       ?DUnadvise@?$IDataObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJK@Z 10002a0c f i BumpBar.obj
+ 0001:00001a3a       ?EnumDAdvise@?$IDataObjectImpl@VCOPOSBumpBar@@@ATL@@UAGJPAPAUIEnumSTATDATA@@@Z 10002a3a f i BumpBar.obj
+ 0001:00001a79       ?GetClassInfoW@?$IProvideClassInfo2Impl@$1?CLSID_OPOSBumpBar@@3U_GUID@@B$1?DIID__IOPOSBumpBarEvents@@3U2@B$1?LIBID_OposBumpBar_CCO@@3U2@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UAGJPAPAUITypeInfo@@@Z 10002a79 f i BumpBar.obj
+ 0001:00001a8f       ?GetGUID@?$IProvideClassInfo2Impl@$1?CLSID_OPOSBumpBar@@3U_GUID@@B$1?DIID__IOPOSBumpBarEvents@@3U2@B$1?LIBID_OposBumpBar_CCO@@3U2@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UAGJKPAU_GUID@@@Z 10002a8f f i BumpBar.obj
+ 0001:00001acd       __get_startup_argv_mode    10002acd f i LIBCMT:argv_mode.obj
+ 0001:00001acd       ?FAccessAllowed@?$IObjectSafetyImpl@VCOPOSBumpBar@@$02@ATL@@MAEHXZ 10002acd f i BumpBar.obj
+ 0001:00001ad1       ?GetInterfaceSafetyOptions@?$IObjectSafetyImpl@VCOPOSBumpBar@@$02@ATL@@UAGJABU_GUID@@PAK1@Z 10002ad1 f i BumpBar.obj
+ 0001:00001b45       ?SetInterfaceSafetyOptions@?$IObjectSafetyImpl@VCOPOSBumpBar@@$02@ATL@@UAGJABU_GUID@@KK@Z 10002b45 f i BumpBar.obj
+ 0001:00001bbf       ?_LocCPQueryInterface@?$IConnectionPointImpl@VCOPOSBumpBar@@$1?DIID__IOPOSBumpBarEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJABU_GUID@@PAPAX@Z 10002bbf f i BumpBar.obj
+ 0001:00001bbf       ?_LocCPQueryInterface@?$IConnectionPointImpl@VCOPOSBumpBar@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJABU_GUID@@PAPAX@Z 10002bbf f i BumpBar.obj
+ 0001:00001c0c       ?GetConnectionInterface@?$IConnectionPointImpl@VCOPOSBumpBar@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAU_GUID@@@Z 10002c0c f i BumpBar.obj
+ 0001:00001c30       ?GetConnectionPointContainer@?$IConnectionPointImpl@VCOPOSBumpBar@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAPAUIConnectionPointContainer@@@Z 10002c30 f i BumpBar.obj
+ 0001:00001c53       ?Advise@?$IConnectionPointImpl@VCOPOSBumpBar@@$1?DIID__IOPOSBumpBarEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAUIUnknown@@PAK@Z 10002c53 f i BumpBar.obj
+ 0001:00001c53       ?Advise@?$IConnectionPointImpl@VCOPOSBumpBar@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAUIUnknown@@PAK@Z 10002c53 f i BumpBar.obj
+ 0001:00001cf3       ?Unadvise@?$IConnectionPointImpl@VCOPOSBumpBar@@$1?DIID__IOPOSBumpBarEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJK@Z 10002cf3 f i BumpBar.obj
+ 0001:00001cf3       ?Unadvise@?$IConnectionPointImpl@VCOPOSBumpBar@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJK@Z 10002cf3 f i BumpBar.obj
+ 0001:00001d33       ?EnumConnections@?$IConnectionPointImpl@VCOPOSBumpBar@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAPAUIEnumConnections@@@Z 10002d33 f i BumpBar.obj
+ 0001:00001d33       ?EnumConnections@?$IConnectionPointImpl@VCOPOSBumpBar@@$1?DIID__IOPOSBumpBarEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAPAUIEnumConnections@@@Z 10002d33 f i BumpBar.obj
+ 0001:00001e2e       ?GetObjectDescription@?$CComCoClass@VCOPOSBumpBar@@$1?CLSID_OPOSBumpBar@@3U_GUID@@B@ATL@@SGPB_WXZ 10002e2e f i BumpBar.obj
+ 0001:00001e2e       ?GetCategoryMap@CComObjectRootBase@ATL@@SAPBU_ATL_CATMAP_ENTRY@2@XZ 10002e2e f i BumpBar.obj
+ 0001:00001e31       ?GetConnectionInterface@?$IConnectionPointImpl@VCOPOSBumpBar@@$1?DIID__IOPOSBumpBarEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAU_GUID@@@Z 10002e31 f i BumpBar.obj
+ 0001:00001e55       ?GetConnectionPointContainer@?$IConnectionPointImpl@VCOPOSBumpBar@@$1?DIID__IOPOSBumpBarEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAPAUIConnectionPointContainer@@@Z 10002e55 f i BumpBar.obj
+ 0001:00001e78       ?UpdateRegistry@COPOSBumpBar@@SGJH@Z 10002e78 f i BumpBar.obj
+ 0001:00001e90       ?Lock@CAtlModule@ATL@@UAEJXZ 10002e90 f i BumpBar.obj
+ 0001:00001e9a       ?Unlock@CAtlModule@ATL@@UAEJXZ 10002e9a f i BumpBar.obj
+ 0001:00001ea4       ?GetLockCount@CAtlModule@ATL@@UAEJXZ 10002ea4 f i BumpBar.obj
+ 0001:00001ea8       ?ProcessWindowMessage@COPOSBumpBar@@UAEHPAUHWND__@@IIJAAJK@Z 10002ea8 f i BumpBar.obj
+ 0001:00001ef1       ?GetGITPtr@CAtlModule@ATL@@UAEJPAPAUIGlobalInterfaceTable@@@Z 10002ef1 f i BumpBar.obj
+ 0001:00001f3d       ?SOData@COPOSBumpBar@@MAGJJ@Z 10002f3d f i BumpBar.obj
+ 0001:00001f76       ?SODirectIO@COPOSBumpBar@@MAGJJPAJPAPA_W@Z 10002f76 f i BumpBar.obj
+ 0001:00001fbf       ?SOError@COPOSBumpBar@@MAGJJJJPAJ@Z 10002fbf f i BumpBar.obj
+ 0001:00002014       ?SOOutputComplete@COPOSBumpBar@@MAGJJ@Z 10003014 f i BumpBar.obj
+ 0001:0000204d       ?SOStatusUpdate@COPOSBumpBar@@MAGJJ@Z 1000304d f i BumpBar.obj
+ 0001:00002086       ?AddCommonRGSReplacements@?$CAtlModuleT@VCComModule@ATL@@@ATL@@UAEJPAUIRegistrarBase@@@Z 10003086 f i BumpBar.obj
+ 0001:000020a0       ?UpdateRegistryFromResourceD@CComModule@ATL@@UAGJIHPAU_ATL_REGMAP_ENTRY@2@@Z 100030a0 f i BumpBar.obj
+ 0001:000020a0       ?UpdateRegistryFromResourceD@CComModule@ATL@@UAGJPB_WHPAU_ATL_REGMAP_ENTRY@2@@Z 100030a0 f i BumpBar.obj
+ 0001:000020a8       ?UpdateRegistryFromResource@CComModule@ATL@@UAGJPB_WHPAU_ATL_REGMAP_ENTRY@2@@Z 100030a8 f i BumpBar.obj
+ 0001:000020b1       ?UpdateRegistryFromResource@CComModule@ATL@@UAGJIHPAU_ATL_REGMAP_ENTRY@2@@Z 100030b1 f i BumpBar.obj
+ 0001:000020ba       ??_ECComModule@ATL@@UAEPAXI@Z 100030ba f i BumpBar.obj
+ 0001:000020ba       ??_GCComModule@ATL@@UAEPAXI@Z 100030ba f i BumpBar.obj
+ 0001:000020e2       ?CreateInstance@?$CComCreator@V?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@@ATL@@SGJPAXABU_GUID@@PAPAX@Z 100030e2 f i BumpBar.obj
+ 0001:00002182       ?CreateInstance@?$CComCreator2@V?$CComCreator@V?$CComObject@VCOPOSBumpBar@@@ATL@@@ATL@@V?$CComCreator@V?$CComAggObject@VCOPOSBumpBar@@@ATL@@@2@@ATL@@SGJPAXABU_GUID@@PAPAX@Z 10003182 f i BumpBar.obj
+ 0001:000021a2       ?AddRef@?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UAGKXZ 100031a2 f i BumpBar.obj
+ 0001:000021c9       ?Release@?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UAGKXZ 100031c9 f i BumpBar.obj
+ 0001:000021ff       ?QueryInterface@?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UAGJABU_GUID@@PAPAX@Z 100031ff f i BumpBar.obj
+ 0001:00002219       ??_G?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UAEPAXI@Z 10003219 f i BumpBar.obj
+ 0001:00002219       ??_E?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UAEPAXI@Z 10003219 f i BumpBar.obj
+ 0001:0000223b       ?Next@?$CComEnumImpl@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@@ATL@@UAGJKPAPAUIConnectionPoint@@PAK@Z 1000323b f i BumpBar.obj
+ 0001:00002312       ?Skip@?$CComEnumImpl@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@@ATL@@UAGJK@Z 10003312 f i BumpBar.obj
+ 0001:0000233f       ?Reset@?$CComEnumImpl@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@@ATL@@UAGJXZ 1000333f f i BumpBar.obj
+ 0001:0000233f       ?Reset@?$CComEnumImpl@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@@ATL@@UAGJXZ 1000333f f i BumpBar.obj
+ 0001:00002351       ?Clone@?$CComEnumImpl@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@@ATL@@UAGJPAPAUIEnumConnectionPoints@@@Z 10003351 f i BumpBar.obj
+ 0001:00002432       ?AddRef@?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAGKXZ 10003432 f i BumpBar.obj
+ 0001:00002432       ?AddRef@?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAGKXZ 10003432 f i BumpBar.obj
+ 0001:00002443       ?Release@?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAGKXZ 10003443 f i BumpBar.obj
+ 0001:00002443       ?Release@?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAGKXZ 10003443 f i BumpBar.obj
+ 0001:0000247f       ?QueryInterface@?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAGJABU_GUID@@PAPAX@Z 1000347f f i BumpBar.obj
+ 0001:00002499       ??_E?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAEPAXI@Z 10003499 f i BumpBar.obj
+ 0001:00002499       ??_G?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAEPAXI@Z 10003499 f i BumpBar.obj
+ 0001:000024bb       ?AddRef@CRegObject@ATL@@UAGKXZ 100034bb f i BumpBar.obj
+ 0001:000024c1       ?AddReplacement@CRegObject@ATL@@UAGJPB_W0@Z 100034c1 f i BumpBar.obj
+ 0001:000024fa       ?ClearReplacements@CRegObject@ATL@@UAGJXZ 100034fa f i BumpBar.obj
+ 0001:0000250c       ??_GCRegObject@ATL@@UAEPAXI@Z 1000350c f i BumpBar.obj
+ 0001:0000250c       ??_ECRegObject@ATL@@UAEPAXI@Z 1000350c f i BumpBar.obj
+ 0001:0000252e       ?AddRef@?$CComAggObject@VCOPOSBumpBar@@@ATL@@UAGKXZ 1000352e f i BumpBar.obj
+ 0001:0000253f       ?Release@?$CComAggObject@VCOPOSBumpBar@@@ATL@@UAGKXZ 1000353f f i BumpBar.obj
+ 0001:0000257b       ?QueryInterface@?$CComAggObject@VCOPOSBumpBar@@@ATL@@UAGJABU_GUID@@PAPAX@Z 1000357b f i BumpBar.obj
+ 0001:000025ca       ?AddRef@?$CComContainedObject@VCOPOSBumpBar@@@ATL@@UAGKXZ 100035ca f i BumpBar.obj
+ 0001:000025e0       ?Release@?$CComContainedObject@VCOPOSBumpBar@@@ATL@@UAGKXZ 100035e0 f i BumpBar.obj
+ 0001:000025f6       ?QueryInterface@?$CComContainedObject@VCOPOSBumpBar@@@ATL@@UAGJABU_GUID@@PAPAX@Z 100035f6 f i BumpBar.obj
+ 0001:00002611       ??_G?$CComAggObject@VCOPOSBumpBar@@@ATL@@UAEPAXI@Z 10003611 f i BumpBar.obj
+ 0001:00002611       ??_E?$CComAggObject@VCOPOSBumpBar@@@ATL@@UAEPAXI@Z 10003611 f i BumpBar.obj
+ 0001:00002636       ?AddRef@?$CComObject@VCOPOSBumpBar@@@ATL@@UAGKXZ 10003636 f i BumpBar.obj
+ 0001:0000264d       ?Release@?$CComObject@VCOPOSBumpBar@@@ATL@@UAGKXZ 1000364d f i BumpBar.obj
+ 0001:0000268f       ?QueryInterface@?$CComObject@VCOPOSBumpBar@@@ATL@@UAGJABU_GUID@@PAPAX@Z 1000368f f i BumpBar.obj
+ 0001:000026a9       ?OnDrawAdvanced@CComControlBase@ATL@@UAEJAAUATL_DRAWINFO@@@Z 100036a9 f i BumpBar.obj
+ 0001:0000279c       ?Next@?$CComEnumImpl@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@@ATL@@UAGJKPAUtagCONNECTDATA@@PAK@Z 1000379c f i BumpBar.obj
+ 0001:00002873       ?Skip@?$CComEnumImpl@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@@ATL@@UAGJK@Z 10003873 f i BumpBar.obj
+ 0001:000028a0       ?Clone@?$CComEnumImpl@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@@ATL@@UAGJPAPAUIEnumConnections@@@Z 100038a0 f i BumpBar.obj
+ 0001:00002981       ?QueryInterface@?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAGJABU_GUID@@PAPAX@Z 10003981 f i BumpBar.obj
+ 0001:0000299b       ??_E?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAEPAXI@Z 1000399b f i BumpBar.obj
+ 0001:0000299b       ??_G?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAEPAXI@Z 1000399b f i BumpBar.obj
+ 0001:000029bd       ??$?4UITypeInfo2@@@?$CComPtr@UITypeInfo@@@ATL@@QAEPAUITypeInfo@@ABV?$CComPtr@UITypeInfo2@@@1@@Z 100039bd f i BumpBar.obj
+ 0001:000029ea       ??$AtlAdd@K@ATL@@YAJPAKKK@Z 100039ea f i BumpBar.obj
+ 0001:00002a0d       ??$AtlAdd@_K@ATL@@YAJPA_K_K1@Z 10003a0d f i BumpBar.obj
+ 0001:00002a45       ??$AtlAddThrow@K@ATL@@YAKKK@Z 10003a45 f i BumpBar.obj
+ 0001:00002a6b       ??$AtlModuleRegisterWndClassInfoT@VAtlModuleRegisterWndClassInfoParamW@ATL@@@ATL@@YAGPAU_ATL_BASE_MODULE70@0@PAU_ATL_WIN_MODULE70@0@PAU_ATL_WNDCLASSINFOW@0@PAP6GJPAUHWND__@@IIJ@ZVAtlModuleRegisterWndClassInfoParamW@0@@Z 10003a6b f i BumpBar.obj
+ 0001:00002bb9       ??$AtlMultiply@H@ATL@@YAJPAHHH@Z 10003bb9 f i BumpBar.obj
+ 0001:00002bf1       ??$AtlMultiply@I@ATL@@YAJPAIII@Z 10003bf1 f i BumpBar.obj
+ 0001:00002bf1       ??$AtlMultiply@K@ATL@@YAJPAKKK@Z 10003bf1 f i BumpBar.obj
+ 0001:00002c13       ??$AtlMultiplyThrow@I@ATL@@YAIII@Z 10003c13 f i BumpBar.obj
+ 0001:00002c39       ??0?$CComAggObject@VCOPOSBumpBar@@@ATL@@QAE@PAX@Z 10003c39 f i BumpBar.obj
+ 0001:00002c66       ??0?$CComContainedObject@VCOPOSBumpBar@@@ATL@@QAE@PAX@Z 10003c66 f i BumpBar.obj
+ 0001:00002d1f       ??0?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@QAE@PAX@Z 10003d1f f i BumpBar.obj
+ 0001:00002d4d       ??0?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@QAE@PAX@Z 10003d4d f i BumpBar.obj
+ 0001:00002d7b       ??0?$CComObject@VCOPOSBumpBar@@@ATL@@QAE@PAX@Z 10003d7b f i BumpBar.obj
+ 0001:00002e32       ??0?$CComQIPtr@UIOleControlSite@@$1?_GUID_b196b289_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@B@ATL@@QAE@PAUIUnknown@@@Z 10003e32 f i BumpBar.obj
+ 0001:00002e5b       ??0CAtlModule@ATL@@QAE@XZ  10003e5b f i BumpBar.obj
+ 0001:00002e9c       ??0CParseBuffer@CRegParser@ATL@@QAE@H@Z 10003e9c f i BumpBar.obj
+ 0001:00002ed2       ??0_ATL_MSG@ATL@@QAE@PAUHWND__@@IIJH@Z 10003ed2 f i BumpBar.obj
+ 0001:00002f0a       ??1?$CComAggObject@VCOPOSBumpBar@@@ATL@@UAE@XZ 10003f0a f i BumpBar.obj
+ 0001:00002f2e       ??1?$CComEnumImpl@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@@ATL@@UAE@XZ 10003f2e f i BumpBar.obj
+ 0001:00002f6e       ??1?$CComEnumImpl@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@@ATL@@UAE@XZ 10003f6e f i BumpBar.obj
+ 0001:00002fae       ??1?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAE@XZ 10003fae f i BumpBar.obj
+ 0001:00002fd1       ??1?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAE@XZ 10003fd1 f i BumpBar.obj
+ 0001:00002ff4       ??1?$CComObject@VCOPOSBumpBar@@@ATL@@UAE@XZ 10003ff4 f i BumpBar.obj
+ 0001:000030b2       ??1?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UAE@XZ 100040b2 f i BumpBar.obj
+ 0001:000030c8       ??1?$CComObjectRootEx@VCComMultiThreadModel@ATL@@@ATL@@QAE@XZ 100040c8 f i BumpBar.obj
+ 0001:000030dd       ??1CRegObject@ATL@@UAE@XZ  100040dd f i BumpBar.obj
+ 0001:000030fd       ??4?$CComPtr@UIOleClientSite@@@ATL@@QAEPAUIOleClientSite@@PAU2@@Z 100040fd f i BumpBar.obj
+ 0001:000030fd       ??4?$CComPtr@UIUnknown@@@ATL@@QAEPAUIUnknown@@PAU2@@Z 100040fd f i BumpBar.obj
+ 0001:000030fd       ??4?$CComPtr@UIAdviseSink@@@ATL@@QAEPAUIAdviseSink@@PAU2@@Z 100040fd f i BumpBar.obj
+ 0001:00003131       ??_G?$CComContainedObject@VCOPOSBumpBar@@@ATL@@UAEPAXI@Z 10004131 f i BumpBar.obj
+ 0001:00003131       ??_E?$CComContainedObject@VCOPOSBumpBar@@@ATL@@UAEPAXI@Z 10004131 f i BumpBar.obj
+ 0001:00003156       ??_E?$CComObject@VCOPOSBumpBar@@@ATL@@UAEPAXI@Z 10004156 f i BumpBar.obj
+ 0001:00003156       ??_G?$CComObject@VCOPOSBumpBar@@@ATL@@UAEPAXI@Z 10004156 f i BumpBar.obj
+ 0001:0000317b       ?Add@?$CSimpleArray@GV?$CSimpleArrayEqualHelper@G@ATL@@@ATL@@QAEHABG@Z 1000417b f i BumpBar.obj
+ 0001:000031ff       ?Add@?$CSimpleMap@PA_WPA_WVCExpansionVectorEqualHelper@ATL@@@ATL@@QAEHABQA_W0@Z 100041ff f i BumpBar.obj
+ 0001:00003254       ?Add@CComDynamicUnkArray@ATL@@QAEKPAUIUnknown@@@Z 10004254 f i BumpBar.obj
+ 0001:0000330a       ?Add@CExpansionVector@ATL@@QAEHPB_W0@Z 1000430a f i BumpBar.obj
+ 0001:00003413       ?AddString@CParseBuffer@CRegParser@ATL@@QAEHPB_W@Z 10004413 f i BumpBar.obj
+ 0001:00003448       ?AddTermFunc@CAtlModule@ATL@@QAEJP6GXK@ZK@Z 10004448 f i BumpBar.obj
+ 0001:000034ab       ?AddValue@CRegParser@ATL@@IAEJAAVCRegKey@2@PB_WPA_W@Z 100044ab f i BumpBar.obj
+ 0001:000037c5       ?Allocate@?$CAtlSafeAllocBufferManager@VCCRTAllocator@ATL@@@_ATL_SAFE_ALLOCA_IMPL@ATL@@QAEPAXK@Z 100047c5 f i BumpBar.obj
+ 0001:000037f2       ?Allocate@?$CTempBuffer@E$0BAA@VCCRTAllocator@ATL@@@ATL@@QAEPAEI@Z 100047f2 f i BumpBar.obj
+ 0001:00003821       ?Allocate@?$CTempBuffer@_W$0BAA@VCCRTAllocator@ATL@@@ATL@@QAEPA_WI@Z 10004821 f i BumpBar.obj
+ 0001:00003850       ?Allocate@?$CTempBuffer@_W$0EAA@VCCRTAllocator@ATL@@@ATL@@QAEPA_WI@Z 10004850 f i BumpBar.obj
+ 0001:0000387f       ?AllocateHeap@?$CTempBuffer@E$0BAA@VCCRTAllocator@ATL@@@ATL@@AAEXI@Z 1000487f f i BumpBar.obj
+ 0001:0000387f       ?AllocateHeap@?$CTempBuffer@_W$0BAA@VCCRTAllocator@ATL@@@ATL@@AAEXI@Z 1000487f f i BumpBar.obj
+ 0001:0000387f       ?AllocateHeap@?$CTempBuffer@_W$0EAA@VCCRTAllocator@ATL@@@ATL@@AAEXI@Z 1000487f f i BumpBar.obj
+ 0001:000038a4       ?Append@CParseBuffer@CRegParser@ATL@@QAEHPB_WH@Z 100048a4 f i BumpBar.obj
+ 0001:00003932       ?AtlCoTaskMemCAlloc@ATL@@YAPAXKK@Z 10004932 f i BumpBar.obj
+ 0001:0000395f       ?AtlCoTaskMemRecalloc@ATL@@YAPAXPAXKK@Z 1000495f f i BumpBar.obj
+ 0001:0000398f       ?AtlComModuleGetClassObject@ATL@@YGJPAU_ATL_COM_MODULE70@1@ABU_GUID@@1PAPAX@Z 1000498f f i BumpBar.obj
+ 0001:00003a82       ?AtlComModuleRegisterServer@ATL@@YGJPAU_ATL_COM_MODULE70@1@HPBU_GUID@@@Z 10004a82 f i BumpBar.obj
+ 0001:00003b0a       ?AtlComModuleUnregisterServer@ATL@@YGJPAU_ATL_COM_MODULE70@1@HPBU_GUID@@@Z 10004b0a f i BumpBar.obj
+ 0001:00003b92       ?AtlComQIPtrAssign2@ATL@@YAXPAPAUIUnknown@@PAU2@ABU_GUID@@@Z 10004b92 f i BumpBar.obj
+ 0001:00003bc1       ?AtlCreateTargetDC@ATL@@YGPAUHDC__@@PAU2@PAUtagDVTARGETDEVICE@@@Z 10004bc1 f i BumpBar.obj
+ 0001:00003c2a       ?AtlCrtErrorCheck@ATL@@YAHH@Z 10004c2a f i BumpBar.obj
+ 0001:00003c65       ?AtlHiMetricToPixel@ATL@@YGXPBUtagSIZE@@PAU2@@Z 10004c65 f i BumpBar.obj
+ 0001:00003cda       ?AtlHresultFromLastError@ATL@@YAJXZ 10004cda f i BumpBar.obj
+ 0001:00003cf1       ?AtlHresultFromWin32@ATL@@YAJK@Z 10004cf1 f i BumpBar.obj
+ 0001:00003d06       ?AtlInternalOleLoadFromStream@ATL@@YAJPAUIStream@@ABU_GUID@@PAPAXTClassesAllowedInStream@1@K@Z 10004d06 f i BumpBar.obj
+ 0001:00003e24       ?AtlInternalQueryInterface@ATL@@YGJPAXPBU_ATL_INTMAP_ENTRY@1@ABU_GUID@@PAPAX@Z 10004e24 f i BumpBar.obj
+ 0001:00003ec7       ?AtlLoadTypeLib@ATL@@YGJPAUHINSTANCE__@@PB_WPAPA_WPAPAUITypeLib@@@Z 10004ec7 f i BumpBar.obj
+ 0001:000040a5       ?AtlRegisterClassCategoriesHelper@ATL@@YGJABU_GUID@@PBU_ATL_CATMAP_ENTRY@1@H@Z 100050a5 f i BumpBar.obj
+ 0001:000043a1       ?AtlRegisterTypeLib@ATL@@YGJPAUHINSTANCE__@@PB_W@Z 100053a1 f i BumpBar.obj
+ 0001:00004529       ?AtlThrowImpl@ATL@@YGXJ@Z  10005529 f i BumpBar.obj
+ 0001:00004547       ?AtlUnRegisterTypeLib@ATL@@YGJPAUHINSTANCE__@@PB_W@Z 10005547 f i BumpBar.obj
+ 0001:000045f2       ?AtlWinModuleAddCreateWndData@ATL@@YGXPAU_ATL_WIN_MODULE70@1@PAU_AtlCreateWndData@1@PAX@Z 100055f2 f i BumpBar.obj
+ 0001:00004646       ?AtlWinModuleExtractCreateWndData@ATL@@YGPAXPAU_ATL_WIN_MODULE70@1@@Z 10005646 f i BumpBar.obj
+ 0001:000046a9       ?AtlWinModuleRegisterClassExW@ATL@@YGGPAU_ATL_WIN_MODULE70@1@PBUtagWNDCLASSEXW@@@Z 100056a9 f i BumpBar.obj
+ 0001:000046e8       ?CanForceRemoveKey@CRegParser@ATL@@IAEHPB_W@Z 100056e8 f i BumpBar.obj
+ 0001:00004717       ?ChToByte@CRegParser@ATL@@KAE_W@Z 10005717 f i BumpBar.obj
+ 0001:0000474a       ?Cleanup@CComTypeInfoHolder@ATL@@SGXK@Z 1000574a f i BumpBar.obj
+ 0001:0000477d       ?ClearReplacements@CExpansionVector@ATL@@QAEJXZ 1000577d f i BumpBar.obj
+ 0001:000047ba       ?Close@CRegKey@ATL@@QAEJXZ 100057ba f i BumpBar.obj
+ 0001:000047d4       ?CreateInstance@?$CComCreator@V?$CComAggObject@VCOPOSBumpBar@@@ATL@@@ATL@@SGJPAXABU_GUID@@PAPAX@Z 100057d4 f i BumpBar.obj
+ 0001:00004849       ?CreateInstance@?$CComCreator@V?$CComObject@VCOPOSBumpBar@@@ATL@@@ATL@@SGJPAXABU_GUID@@PAPAX@Z 10005849 f i BumpBar.obj
+ 0001:000048c9       ?CreateInstance@?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@SGJPAPAV12@@Z 100058c9 f i BumpBar.obj
+ 0001:00004913       ?CreateInstance@?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@SGJPAPAV12@@Z 10005913 f i BumpBar.obj
+ 0001:0000495d       ?DefaultReflectionHandler@?$CWindowImplRoot@VCWindow@ATL@@@ATL@@SAHPAUHWND__@@IIJAAJ@Z 1000595d f i BumpBar.obj
+ 0001:000049d0       ?DeleteSubKey@CRegKey@ATL@@QAEJPB_W@Z 100059d0 f i BumpBar.obj
+ 0001:00004a49       ?DoEvent@COPOSBumpBar@@IAEXIIJ@Z 10005a49 f i BumpBar.obj
+ 0001:00004ac9       ?DoVerbHide@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@QAEJPBUtagRECT@@PAUHWND__@@@Z 10005ac9 f i BumpBar.obj
+ 0001:00004aff       ?DoVerbInPlaceActivate@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@QAEJPBUtagRECT@@PAUHWND__@@@Z 10005aff f i BumpBar.obj
+ 0001:00004b32       ?DoVerbPrimary@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@QAEJPBUtagRECT@@PAUHWND__@@@Z 10005b32 f i BumpBar.obj
+ 0001:00004bbe       ?DoVerbProperties@CComControlBase@ATL@@QAEJPBUtagRECT@@PAUHWND__@@@Z 10005bbe f i BumpBar.obj
+ 0001:00004d3d       ?DoVerbUIActivate@?$IOleObjectImpl@VCOPOSBumpBar@@@ATL@@QAEJPBUtagRECT@@PAUHWND__@@@Z 10005d3d f i BumpBar.obj
+ 0001:00004d7a       ?DoesVerbActivate@CComControlBase@ATL@@QAEHJ@Z 10005d7a f i BumpBar.obj
+ 0001:00004d9b       ?DoesVerbUIActivate@CComControlBase@ATL@@QAEHJ@Z 10005d9b f i BumpBar.obj
+ 0001:00004dd0       ?EndOfVar@CRegParser@ATL@@IAEHXZ 10005dd0 f i BumpBar.obj
+ 0001:00004df0       ?EscapeSingleQuote@CAtlModule@ATL@@SAXPA_WIPB_W@Z 10005df0 f i BumpBar.obj
+ 0001:00004e3f       ?FindKey@?$CSimpleMap@PA_WPA_WVCExpansionVectorEqualHelper@ATL@@@ATL@@QBEHABQA_W@Z 10005e3f f i BumpBar.obj
+ 0001:00004e76       ?FireTheEvent@?$CProxy_IOPOSEvents@VCOPOSBumpBar@@@@IAEXPAVOposVariant@@IAAJPB_WJ@Z 10005e76 f i BumpBar.obj
+ 0001:00004f08       ?FireViewChange@CComControlBase@ATL@@QAEJXZ 10005f08 f i BumpBar.obj
+ 0001:00004f51       ?Fire_DataEvent@?$CProxy_IOPOSEvents@VCOPOSBumpBar@@@@QAEXJ@Z 10005f51 f i BumpBar.obj
+ 0001:00004fe7       ?Fire_DirectIOEvent@?$CProxy_IOPOSEvents@VCOPOSBumpBar@@@@QAEXJPAJPAPA_W@Z 10005fe7 f i BumpBar.obj
+ 0001:000050d3       ?Fire_ErrorEvent@?$CProxy_IOPOSEvents@VCOPOSBumpBar@@@@QAEXJJJPAJ@Z 100060d3 f i BumpBar.obj
+ 0001:000051c4       ?Fire_OutputCompleteEvent@?$CProxy_IOPOSEvents@VCOPOSBumpBar@@@@QAEXJ@Z 100061c4 f i BumpBar.obj
+ 0001:0000525a       ?Fire_StatusUpdateEvent@?$CProxy_IOPOSEvents@VCOPOSBumpBar@@@@QAEXJ@Z 1000625a f i BumpBar.obj
+ 0001:000052f0       ?FreeHeap@?$CTempBuffer@_W$0EAA@VCCRTAllocator@ATL@@@ATL@@AAEXXZ 100062f0 f i BumpBar.obj
+ 0001:000052f0       ?FreeHeap@?$CTempBuffer@E$0BAA@VCCRTAllocator@ATL@@@ATL@@AAEXXZ 100062f0 f i BumpBar.obj
+ 0001:000052f0       ?FreeHeap@?$CTempBuffer@_W$0BAA@VCCRTAllocator@ATL@@@ATL@@AAEXXZ 100062f0 f i BumpBar.obj
+ 0001:000052f9       ?GetAmbientLocaleID@CComControlBase@ATL@@QAEJAAK@Z 100062f9 f i BumpBar.obj
+ 0001:00005355       ?GetAmbientUserMode@CComControlBase@ATL@@QAEJAAH@Z 10006355 f i BumpBar.obj
+ 0001:000053c5       ?GetAt@CComDynamicUnkArray@ATL@@QAEPAUIUnknown@@H@Z 100063c5 f i BumpBar.obj
+ 0001:000053e1       ?GetClassObject@CComModule@ATL@@QAEJABU_GUID@@0PAPAX@Z 100063e1 f i BumpBar.obj
+ 0001:00005483       ?GetConnMap@COPOSBumpBar@@SAPBU_ATL_CONNMAP_ENTRY@ATL@@PAH@Z 10006483 f i BumpBar.obj
+ 0001:000054f3       ?GetCookie@CComDynamicUnkArray@ATL@@QAGKPAPAUIUnknown@@@Z 100064f3 f i BumpBar.obj
+ 0001:0000552b       ?GetIDsOfNames@CComTypeInfoHolder@ATL@@QAEJABU_GUID@@PAPA_WIKPAJ@Z 1000652b f i BumpBar.obj
+ 0001:00005652       ?GetKeyAt@?$CSimpleMap@PA_WPA_WVCExpansionVectorEqualHelper@ATL@@@ATL@@QBEAAPA_WH@Z 10006652 f i BumpBar.obj
+ 0001:00005677       ?GetPagesHelper@?$ISpecifyPropertyPagesImpl@VCOPOSBumpBar@@@ATL@@IAEJPAUtagCAUUID@@PBUATL_PROPMAP_ENTRY@2@@Z 10006677 f i BumpBar.obj
+ 0001:0000579e       ?GetProperty@?$CComPtr@UIDispatch@@@ATL@@SAJPAUIDispatch@@JPAUtagVARIANT@@@Z 1000679e f i BumpBar.obj
+ 0001:000057ed       ?GetSizeMax@CComVariant@ATL@@QBEJPAT_ULARGE_INTEGER@@@Z 100067ed f i BumpBar.obj
+ 0001:000059af       ?GetTI@CComTypeInfoHolder@ATL@@QAEJK@Z 100069af f i BumpBar.obj
+ 0001:00005b8e       ?GetTI@CComTypeInfoHolder@ATL@@QAEJKPAPAUITypeInfo@@@Z 10006b8e f i BumpBar.obj
+ 0001:00005bd0       ?GetUnknown@CComDynamicUnkArray@ATL@@QAGPAUIUnknown@@K@Z 10006bd0 f i BumpBar.obj
+ 0001:00005bf1       ?GetValueAt@?$CSimpleMap@PA_WPA_WVCExpansionVectorEqualHelper@ATL@@@ATL@@QBEAAPA_WH@Z 10006bf1 f i BumpBar.obj
+ 0001:00005c17       ?GetZoomInfo@CComControlBase@ATL@@QAEXAAUATL_DRAWINFO@@@Z 10006c17 f i BumpBar.obj
+ 0001:00005caa       ?HKeyFromString@CRegParser@ATL@@KAPAUHKEY__@@PA_W@Z 10006caa f i BumpBar.obj
+ 0001:00005cd8       ?HasSubKeys@CRegParser@ATL@@IAEHPAUHKEY__@@@Z 10006cd8 f i BumpBar.obj
+ 0001:00005d0d       ?IDataObject_GetData@CComControlBase@ATL@@QAEJPAUtagFORMATETC@@PAUtagSTGMEDIUM@@@Z 10006d0d f i BumpBar.obj
+ 0001:00005eb3       ?IOleInPlaceObject_InPlaceDeactivate@CComControlBase@ATL@@QAEJXZ 10006eb3 f i BumpBar.obj
+ 0001:00005f3a       ?IOleInPlaceObject_SetObjectRects@CComControlBase@ATL@@QAEJPBUtagRECT@@0@Z 10006f3a f i BumpBar.obj
+ 0001:00006007       ?IOleInPlaceObject_UIDeactivate@CComControlBase@ATL@@QAEJXZ 10007007 f i BumpBar.obj
+ 0001:000060c9       ?IOleObject_Advise@CComControlBase@ATL@@QAEJPAUIAdviseSink@@PAK@Z 100070c9 f i BumpBar.obj
+ 0001:000060f3       ?IOleObject_Close@CComControlBase@ATL@@QAEJK@Z 100070f3 f i BumpBar.obj
+ 0001:000061d7       ?IOleObject_GetClientSite@CComControlBase@ATL@@QAEJPAPAUIOleClientSite@@@Z 100071d7 f i BumpBar.obj
+ 0001:00006200       ?IOleObject_SetClientSite@CComControlBase@ATL@@QAEJPAUIOleClientSite@@@Z 10007200 f i BumpBar.obj
+ 0001:0000623f       ?IOleObject_SetExtent@CComControlBase@ATL@@QAEJKPAUtagSIZE@@@Z 1000723f f i BumpBar.obj
  0001:000062f1       ?IPSI_GetIPersistStreamInit@?$IPersistStorageImpl@VCOPOSBumpBar@@@ATL@@AAEPAUIPersistStreamInit@@XZ 100072f1 f i BumpBar.obj
  0001:00006399       ?IPersistStreamInit_Load@?$IPersistStreamInitImpl@VCOPOSBumpBar@@@ATL@@QAEJPAUIStream@@PBUATL_PROPMAP_ENTRY@2@@Z 10007399 f i BumpBar.obj
  0001:0000660e       ?IPersistStreamInit_Save@?$IPersistStreamInitImpl@VCOPOSBumpBar@@@ATL@@QAEJPAUIStream@@HPBUATL_PROPMAP_ENTRY@2@@Z 1000760e f i BumpBar.obj
@@ -582,126 +588,126 @@
  0001:000096b8       ??0?$CComControl@VCOPOSBumpBar@@V?$CWindowImpl@VCOPOSBumpBar@@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@3@@ATL@@@ATL@@QAE@XZ 1000a6b8 f i BumpBarImpl.obj
  0001:000096df       ??0?$CProxy_IOPOSEvents@VCOPOSBumpBar@@@@QAE@XZ 1000a6df f i BumpBarImpl.obj
  0001:00009702       ??0CComControlBase@ATL@@QAE@AAPAUHWND__@@@Z 1000a702 f i BumpBarImpl.obj
- 0001:0000974c       ??0COPOSBumpBar@@QAE@XZ    1000a74c f   BumpBarImpl.obj
- 0001:00009782       ??1?$CComControl@VCOPOSBumpBar@@V?$CWindowImpl@VCOPOSBumpBar@@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@3@@ATL@@@ATL@@UAE@XZ 1000a782 f i BumpBarImpl.obj
- 0001:0000979b       ??1?$IConnectionPointImpl@VCOPOSBumpBar@@$1?DIID__IOPOSBumpBarEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@QAE@XZ 1000a79b f i BumpBarImpl.obj
- 0001:0000979b       ??1?$IConnectionPointImpl@VCOPOSBumpBar@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@QAE@XZ 1000a79b f i BumpBarImpl.obj
- 0001:000097d8       ??1CComControlBase@ATL@@UAE@XZ 1000a7d8 f i BumpBarImpl.obj
- 0001:0000983b       ??1COPOSBumpBar@@UAE@XZ    1000a83b f   BumpBarImpl.obj
- 0001:00009883       ?BumpBarSound@COPOSBumpBar@@UAGJJJJJJPAJ@Z 1000a883 f   BumpBarImpl.obj
- 0001:0000992f       ?CheckHealth@COPOSBumpBar@@UAGJJPAJ@Z 1000a92f f   BumpBarImpl.obj
- 0001:0000997e       ?ClaimDevice@COPOSBumpBar@@UAGJJPAJ@Z 1000a97e f   BumpBarImpl.obj
- 0001:000099f3       ?ClearInput@COPOSBumpBar@@UAGJPAJ@Z 1000a9f3 f   BumpBarImpl.obj
- 0001:00009a0e       ?ClearOutput@COPOSBumpBar@@UAGJPAJ@Z 1000aa0e f   BumpBarImpl.obj
- 0001:00009a29       ?Close@COPOSBumpBar@@UAGJPAJ@Z 1000aa29 f   BumpBarImpl.obj
- 0001:00009a97       ?CompareFirmwareVersion@COPOSBumpBar@@UAGJPA_WPAJ1@Z 1000aa97 f   BumpBarImpl.obj
- 0001:00009b17       ?DirectIO@COPOSBumpBar@@UAGJJPAJPAPA_W0@Z 1000ab17 f   BumpBarImpl.obj
- 0001:00009bc5       ?DoInvoke@COPOSBumpBar@@IAEJJPAVOposVariant@@IHPAJ_N@Z 1000abc5 f   BumpBarImpl.obj
- 0001:00009ca1       ?EventClose@COPOSBumpBar@@IAEXXZ 1000aca1 f i BumpBarImpl.obj
- 0001:00009cd4       ?EventInit@COPOSBumpBar@@IAEJXZ 1000acd4 f i BumpBarImpl.obj
- 0001:00009da0       ?EventUninit@COPOSBumpBar@@IAEXXZ 1000ada0 f i BumpBarImpl.obj
- 0001:00009df2       ?EventWindowProc@COPOSBumpBar@@IAGJIIJ@Z 1000adf2 f i BumpBarImpl.obj
- 0001:00009ef0       ?FinalConstruct@COPOSBumpBar@@QAEJXZ 1000aef0 f   BumpBarImpl.obj
- 0001:00009f29       ?FireEventCleanup@COPOSBumpBar@@IAEXXZ 1000af29 f i BumpBarImpl.obj
- 0001:00009f3f       ?FireEventSetup@COPOSBumpBar@@IAE_NXZ 1000af3f f i BumpBarImpl.obj
- 0001:00009f73       ?FreezeEvents@COPOSBumpBar@@MAGJH@Z 1000af73 f   BumpBarImpl.obj
- 0001:00009fd3       ?GetOposProp@COPOSBumpBar@@IAEJJPAFJ@Z 1000afd3 f   BumpBarImpl.obj
- 0001:00009ff6       ?GetOposProp@COPOSBumpBar@@IAEJJPAJJ@Z 1000aff6 f   BumpBarImpl.obj
- 0001:0000a0c5       ?GetOposProp@COPOSBumpBar@@IAEJJPAPA_WJ@Z 1000b0c5 f   BumpBarImpl.obj
- 0001:0000a1a1       ?OnDraw@COPOSBumpBar@@MAEJAAUATL_DRAWINFO@@@Z 1000b1a1 f   BumpBarImpl.obj
- 0001:0000a241       ?Open@COPOSBumpBar@@UAGJPA_WPAJ@Z 1000b241 f   BumpBarImpl.obj
- 0001:0000aa87       ?ReleaseDevice@COPOSBumpBar@@UAGJPAJ@Z 1000ba87 f   BumpBarImpl.obj
- 0001:0000aad6       ?ResetStatistics@COPOSBumpBar@@UAGJPA_WPAJ@Z 1000bad6 f   BumpBarImpl.obj
- 0001:0000ab2d       ?RetrieveStatistics@COPOSBumpBar@@UAGJPAPA_WPAJ@Z 1000bb2d f   BumpBarImpl.obj
- 0001:0000ab84       ?SOProcessID@COPOSBumpBar@@UAGJPAJ@Z 1000bb84 f   BumpBarImpl.obj
- 0001:0000ab98       ?SetCOFreezeEvents@COPOSBumpBar@@IAEXF@Z 1000bb98 f   BumpBarImpl.obj
- 0001:0000ac38       ?SetKeyTranslation@COPOSBumpBar@@UAGJJJJPAJ@Z 1000bc38 f   BumpBarImpl.obj
- 0001:0000acce       ?SetOposProp@COPOSBumpBar@@IAEJJJJ@Z 1000bcce f   BumpBarImpl.obj
- 0001:0000adc5       ?UpdateFirmware@COPOSBumpBar@@UAGJPA_WPAJ@Z 1000bdc5 f   BumpBarImpl.obj
- 0001:0000ae1c       ?UpdateStatistics@COPOSBumpBar@@UAGJPA_WPAJ@Z 1000be1c f   BumpBarImpl.obj
- 0001:0000ae73       ?get_AsyncMode@COPOSBumpBar@@UAGJPAF@Z 1000be73 f   BumpBarImpl.obj
- 0001:0000ae8c       ?get_AutoToneDuration@COPOSBumpBar@@UAGJPAJ@Z 1000be8c f   BumpBarImpl.obj
- 0001:0000aea5       ?get_AutoToneFrequency@COPOSBumpBar@@UAGJPAJ@Z 1000bea5 f   BumpBarImpl.obj
- 0001:0000aebe       ?get_BinaryConversion@COPOSBumpBar@@UAGJPAJ@Z 1000bebe f   BumpBarImpl.obj
- 0001:0000aed4       ?get_BumpBarDataCount@COPOSBumpBar@@UAGJPAJ@Z 1000bed4 f   BumpBarImpl.obj
- 0001:0000aeed       ?get_CapCompareFirmwareVersion@COPOSBumpBar@@UAGJPAF@Z 1000beed f   BumpBarImpl.obj
- 0001:0000af06       ?get_CapPowerReporting@COPOSBumpBar@@UAGJPAJ@Z 1000bf06 f   BumpBarImpl.obj
- 0001:0000af1f       ?get_CapStatisticsReporting@COPOSBumpBar@@UAGJPAF@Z 1000bf1f f   BumpBarImpl.obj
- 0001:0000af38       ?get_CapTone@COPOSBumpBar@@UAGJPAF@Z 1000bf38 f   BumpBarImpl.obj
- 0001:0000af51       ?get_CapUpdateFirmware@COPOSBumpBar@@UAGJPAF@Z 1000bf51 f   BumpBarImpl.obj
- 0001:0000af6a       ?get_CapUpdateStatistics@COPOSBumpBar@@UAGJPAF@Z 1000bf6a f   BumpBarImpl.obj
- 0001:0000af83       ?get_CheckHealthText@COPOSBumpBar@@UAGJPAPA_W@Z 1000bf83 f   BumpBarImpl.obj
- 0001:0000af9c       ?get_Claimed@COPOSBumpBar@@UAGJPAF@Z 1000bf9c f   BumpBarImpl.obj
- 0001:0000afb2       ?get_ControlObjectDescription@COPOSBumpBar@@UAGJPAPA_W@Z 1000bfb2 f   BumpBarImpl.obj
- 0001:0000b000       ?get_ControlObjectVersion@COPOSBumpBar@@UAGJPAJ@Z 1000c000 f   BumpBarImpl.obj
- 0001:0000b013       ?get_CurrentUnitID@COPOSBumpBar@@UAGJPAJ@Z 1000c013 f   BumpBarImpl.obj
- 0001:0000b02c       ?get_DataCount@COPOSBumpBar@@UAGJPAJ@Z 1000c02c f   BumpBarImpl.obj
- 0001:0000b042       ?get_DataEventEnabled@COPOSBumpBar@@UAGJPAF@Z 1000c042 f   BumpBarImpl.obj
- 0001:0000b058       ?get_DeviceDescription@COPOSBumpBar@@UAGJPAPA_W@Z 1000c058 f   BumpBarImpl.obj
- 0001:0000b071       ?get_DeviceEnabled@COPOSBumpBar@@UAGJPAF@Z 1000c071 f   BumpBarImpl.obj
- 0001:0000b087       ?get_DeviceName@COPOSBumpBar@@UAGJPAPA_W@Z 1000c087 f   BumpBarImpl.obj
- 0001:0000b0a0       ?get_ErrorString@COPOSBumpBar@@UAGJPAPA_W@Z 1000c0a0 f   BumpBarImpl.obj
- 0001:0000b0b9       ?get_ErrorUnits@COPOSBumpBar@@UAGJPAJ@Z 1000c0b9 f   BumpBarImpl.obj
- 0001:0000b0d2       ?get_EventString@COPOSBumpBar@@UAGJPAPA_W@Z 1000c0d2 f   BumpBarImpl.obj
- 0001:0000b0eb       ?get_EventUnitID@COPOSBumpBar@@UAGJPAJ@Z 1000c0eb f   BumpBarImpl.obj
- 0001:0000b104       ?get_EventUnits@COPOSBumpBar@@UAGJPAJ@Z 1000c104 f   BumpBarImpl.obj
- 0001:0000b11d       ?get_FreezeEvents@COPOSBumpBar@@UAGJPAF@Z 1000c11d f   BumpBarImpl.obj
- 0001:0000b133       ?get_Keys@COPOSBumpBar@@UAGJPAJ@Z 1000c133 f   BumpBarImpl.obj
- 0001:0000b14c       ?get_OpenResult@COPOSBumpBar@@UAGJPAJ@Z 1000c14c f   BumpBarImpl.obj
- 0001:0000b163       ?get_OutputID@COPOSBumpBar@@UAGJPAJ@Z 1000c163 f   BumpBarImpl.obj
- 0001:0000b179       ?get_PowerNotify@COPOSBumpBar@@UAGJPAJ@Z 1000c179 f   BumpBarImpl.obj
- 0001:0000b18f       ?get_PowerState@COPOSBumpBar@@UAGJPAJ@Z 1000c18f f   BumpBarImpl.obj
- 0001:0000b1a5       ?get_ResultCode@COPOSBumpBar@@UAGJPAJ@Z 1000c1a5 f   BumpBarImpl.obj
- 0001:0000b1e3       ?get_ResultCodeExtended@COPOSBumpBar@@UAGJPAJ@Z 1000c1e3 f   BumpBarImpl.obj
- 0001:0000b1f9       ?get_ServiceObjectDescription@COPOSBumpBar@@UAGJPAPA_W@Z 1000c1f9 f   BumpBarImpl.obj
- 0001:0000b212       ?get_ServiceObjectVersion@COPOSBumpBar@@UAGJPAJ@Z 1000c212 f   BumpBarImpl.obj
- 0001:0000b228       ?get_State@COPOSBumpBar@@UAGJPAJ@Z 1000c228 f   BumpBarImpl.obj
- 0001:0000b254       ?get_Timeout@COPOSBumpBar@@UAGJPAJ@Z 1000c254 f   BumpBarImpl.obj
- 0001:0000b26d       ?get_UnitsOnline@COPOSBumpBar@@UAGJPAJ@Z 1000c26d f   BumpBarImpl.obj
- 0001:0000b286       ?put_AsyncMode@COPOSBumpBar@@UAGJF@Z 1000c286 f   BumpBarImpl.obj
- 0001:0000b2a6       ?put_AutoToneDuration@COPOSBumpBar@@UAGJJ@Z 1000c2a6 f   BumpBarImpl.obj
- 0001:0000b2bf       ?put_AutoToneFrequency@COPOSBumpBar@@UAGJJ@Z 1000c2bf f   BumpBarImpl.obj
- 0001:0000b2d8       ?put_BinaryConversion@COPOSBumpBar@@UAGJJ@Z 1000c2d8 f   BumpBarImpl.obj
- 0001:0000b2ee       ?put_CurrentUnitID@COPOSBumpBar@@UAGJJ@Z 1000c2ee f   BumpBarImpl.obj
- 0001:0000b307       ?put_DataEventEnabled@COPOSBumpBar@@UAGJF@Z 1000c307 f   BumpBarImpl.obj
- 0001:0000b324       ?put_DeviceEnabled@COPOSBumpBar@@UAGJF@Z 1000c324 f   BumpBarImpl.obj
- 0001:0000b341       ?put_FreezeEvents@COPOSBumpBar@@UAGJF@Z 1000c341 f   BumpBarImpl.obj
- 0001:0000b38d       ?put_PowerNotify@COPOSBumpBar@@UAGJJ@Z 1000c38d f   BumpBarImpl.obj
- 0001:0000b3a3       ?put_Timeout@COPOSBumpBar@@UAGJJ@Z 1000c3a3 f   BumpBarImpl.obj
- 0001:0000b3bc       ?s_EventWindowProc@COPOSBumpBar@@KGJPAUHWND__@@IIJ@Z 1000c3bc f i BumpBarImpl.obj
- 0001:0000b40e       ??_U@YAPAXI@Z              1000c40e f   LIBCMT:new_array.obj
- 0001:0000b417       ??3@YAXPAXI@Z              1000c417 f   LIBCMT:delete_scalar_size.obj
- 0001:0000b425       ??_V@YAXPAX@Z              1000c425 f   LIBCMT:delete_array.obj
- 0001:0000b42a       ??_V@YAXPAXI@Z             1000c42a f   LIBCMT:delete_array_size.obj
- 0001:0000b47c       ___scrt_acquire_startup_lock 1000c47c f   LIBCMT:utility.obj
- 0001:0000b4ae       ___scrt_dllmain_after_initialize_c 1000c4ae f   LIBCMT:utility.obj
- 0001:0000b4d9       ___scrt_dllmain_before_initialize_c 1000c4d9 f   LIBCMT:utility.obj
- 0001:0000b4e7       ___scrt_dllmain_crt_thread_attach 1000c4e7 f   LIBCMT:utility.obj
- 0001:0000b506       ___scrt_dllmain_crt_thread_detach 1000c506 f   LIBCMT:utility.obj
- 0001:0000b513       ___scrt_dllmain_exception_filter 1000c513 f   LIBCMT:utility.obj
- 0001:0000b547       ___scrt_dllmain_uninitialize_c 1000c547 f   LIBCMT:utility.obj
- 0001:0000b56a       ___scrt_dllmain_uninitialize_critical 1000c56a f   LIBCMT:utility.obj
- 0001:0000b577       ___scrt_initialize_crt     1000c577 f   LIBCMT:utility.obj
- 0001:0000b5b0       ___scrt_initialize_onexit_tables 1000c5b0 f   LIBCMT:utility.obj
- 0001:0000b637       ___scrt_is_nonwritable_in_current_image 1000c637 f   LIBCMT:utility.obj
- 0001:0000b6cb       ___scrt_release_startup_lock 1000c6cb f   LIBCMT:utility.obj
- 0001:0000b6e8       ___scrt_uninitialize_crt   1000c6e8 f   LIBCMT:utility.obj
- 0001:0000b710       __onexit                   1000c710 f   LIBCMT:utility.obj
- 0001:0000b73d       _atexit                    1000c73d f   LIBCMT:utility.obj
- 0001:0000b752       ??3@YAXPAX@Z               1000c752 f   LIBCMT:delete_scalar.obj
- 0001:0000b81c       __Init_thread_footer       1000c81c f   LIBCMT:thread_safe_statics.obj
- 0001:0000b866       __Init_thread_header       1000c866 f   LIBCMT:thread_safe_statics.obj
- 0001:0000b8b8       __Init_thread_notify       1000c8b8 f   LIBCMT:thread_safe_statics.obj
- 0001:0000b8ee       __Init_thread_wait         1000c8ee f   LIBCMT:thread_safe_statics.obj
- 0001:0000b93c       ___raise_securityfailure   1000c93c f   LIBCMT:gs_report.obj
- 0001:0000b964       ___report_gsfailure        1000c964 f   LIBCMT:gs_report.obj
- 0001:0000ba5d       ___report_rangecheckfailure 1000ca5d f   LIBCMT:gs_report.obj
- 0001:0000ba69       ___report_securityfailure  1000ca69 f   LIBCMT:gs_report.obj
- 0001:0000bb37       ??2@YAPAXIABUnothrow_t@std@@@Z 1000cb37 f   LIBCMT:new_scalar_nothrow.obj
- 0001:0000bb87       ??_U@YAPAXIABUnothrow_t@std@@@Z 1000cb87 f   LIBCMT:new_array_nothrow.obj
- 0001:0000bb90       @__security_check_cookie@4 1000cb90 f   LIBCMT:secchk.obj
+ 0001:00009752       ??0COPOSBumpBar@@QAE@XZ    1000a752 f   BumpBarImpl.obj
+ 0001:00009788       ??1?$CComControl@VCOPOSBumpBar@@V?$CWindowImpl@VCOPOSBumpBar@@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@3@@ATL@@@ATL@@UAE@XZ 1000a788 f i BumpBarImpl.obj
+ 0001:000097a1       ??1?$IConnectionPointImpl@VCOPOSBumpBar@@$1?DIID__IOPOSBumpBarEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@QAE@XZ 1000a7a1 f i BumpBarImpl.obj
+ 0001:000097a1       ??1?$IConnectionPointImpl@VCOPOSBumpBar@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@QAE@XZ 1000a7a1 f i BumpBarImpl.obj
+ 0001:000097de       ??1CComControlBase@ATL@@UAE@XZ 1000a7de f i BumpBarImpl.obj
+ 0001:00009841       ??1COPOSBumpBar@@UAE@XZ    1000a841 f   BumpBarImpl.obj
+ 0001:00009889       ?BumpBarSound@COPOSBumpBar@@UAGJJJJJJPAJ@Z 1000a889 f   BumpBarImpl.obj
+ 0001:00009935       ?CheckHealth@COPOSBumpBar@@UAGJJPAJ@Z 1000a935 f   BumpBarImpl.obj
+ 0001:00009984       ?ClaimDevice@COPOSBumpBar@@UAGJJPAJ@Z 1000a984 f   BumpBarImpl.obj
+ 0001:000099f9       ?ClearInput@COPOSBumpBar@@UAGJPAJ@Z 1000a9f9 f   BumpBarImpl.obj
+ 0001:00009a14       ?ClearOutput@COPOSBumpBar@@UAGJPAJ@Z 1000aa14 f   BumpBarImpl.obj
+ 0001:00009a2f       ?Close@COPOSBumpBar@@UAGJPAJ@Z 1000aa2f f   BumpBarImpl.obj
+ 0001:00009a9d       ?CompareFirmwareVersion@COPOSBumpBar@@UAGJPA_WPAJ1@Z 1000aa9d f   BumpBarImpl.obj
+ 0001:00009b1d       ?DirectIO@COPOSBumpBar@@UAGJJPAJPAPA_W0@Z 1000ab1d f   BumpBarImpl.obj
+ 0001:00009bcb       ?DoInvoke@COPOSBumpBar@@IAEJJPAVOposVariant@@IHPAJ_N@Z 1000abcb f   BumpBarImpl.obj
+ 0001:00009ca7       ?EventClose@COPOSBumpBar@@IAEXXZ 1000aca7 f i BumpBarImpl.obj
+ 0001:00009cda       ?EventInit@COPOSBumpBar@@IAEJXZ 1000acda f i BumpBarImpl.obj
+ 0001:00009da6       ?EventUninit@COPOSBumpBar@@IAEXXZ 1000ada6 f i BumpBarImpl.obj
+ 0001:00009df8       ?EventWindowProc@COPOSBumpBar@@IAGJIIJ@Z 1000adf8 f i BumpBarImpl.obj
+ 0001:00009ef6       ?FinalConstruct@COPOSBumpBar@@QAEJXZ 1000aef6 f   BumpBarImpl.obj
+ 0001:00009f2f       ?FireEventCleanup@COPOSBumpBar@@IAEXXZ 1000af2f f i BumpBarImpl.obj
+ 0001:00009f45       ?FireEventSetup@COPOSBumpBar@@IAE_NXZ 1000af45 f i BumpBarImpl.obj
+ 0001:00009f79       ?FreezeEvents@COPOSBumpBar@@MAGJH@Z 1000af79 f   BumpBarImpl.obj
+ 0001:00009fd9       ?GetOposProp@COPOSBumpBar@@IAEJJPAFJ@Z 1000afd9 f   BumpBarImpl.obj
+ 0001:00009ffc       ?GetOposProp@COPOSBumpBar@@IAEJJPAJJ@Z 1000affc f   BumpBarImpl.obj
+ 0001:0000a0cb       ?GetOposProp@COPOSBumpBar@@IAEJJPAPA_WJ@Z 1000b0cb f   BumpBarImpl.obj
+ 0001:0000a1a7       ?OnDraw@COPOSBumpBar@@MAEJAAUATL_DRAWINFO@@@Z 1000b1a7 f   BumpBarImpl.obj
+ 0001:0000a247       ?Open@COPOSBumpBar@@UAGJPA_WPAJ@Z 1000b247 f   BumpBarImpl.obj
+ 0001:0000aa8d       ?ReleaseDevice@COPOSBumpBar@@UAGJPAJ@Z 1000ba8d f   BumpBarImpl.obj
+ 0001:0000aadc       ?ResetStatistics@COPOSBumpBar@@UAGJPA_WPAJ@Z 1000badc f   BumpBarImpl.obj
+ 0001:0000ab33       ?RetrieveStatistics@COPOSBumpBar@@UAGJPAPA_WPAJ@Z 1000bb33 f   BumpBarImpl.obj
+ 0001:0000ab8a       ?SOProcessID@COPOSBumpBar@@UAGJPAJ@Z 1000bb8a f   BumpBarImpl.obj
+ 0001:0000ab9e       ?SetCOFreezeEvents@COPOSBumpBar@@IAEXF@Z 1000bb9e f   BumpBarImpl.obj
+ 0001:0000ac3e       ?SetKeyTranslation@COPOSBumpBar@@UAGJJJJPAJ@Z 1000bc3e f   BumpBarImpl.obj
+ 0001:0000acd4       ?SetOposProp@COPOSBumpBar@@IAEJJJJ@Z 1000bcd4 f   BumpBarImpl.obj
+ 0001:0000adcb       ?UpdateFirmware@COPOSBumpBar@@UAGJPA_WPAJ@Z 1000bdcb f   BumpBarImpl.obj
+ 0001:0000ae22       ?UpdateStatistics@COPOSBumpBar@@UAGJPA_WPAJ@Z 1000be22 f   BumpBarImpl.obj
+ 0001:0000ae79       ?get_AsyncMode@COPOSBumpBar@@UAGJPAF@Z 1000be79 f   BumpBarImpl.obj
+ 0001:0000ae92       ?get_AutoToneDuration@COPOSBumpBar@@UAGJPAJ@Z 1000be92 f   BumpBarImpl.obj
+ 0001:0000aeab       ?get_AutoToneFrequency@COPOSBumpBar@@UAGJPAJ@Z 1000beab f   BumpBarImpl.obj
+ 0001:0000aec4       ?get_BinaryConversion@COPOSBumpBar@@UAGJPAJ@Z 1000bec4 f   BumpBarImpl.obj
+ 0001:0000aeda       ?get_BumpBarDataCount@COPOSBumpBar@@UAGJPAJ@Z 1000beda f   BumpBarImpl.obj
+ 0001:0000aef3       ?get_CapCompareFirmwareVersion@COPOSBumpBar@@UAGJPAF@Z 1000bef3 f   BumpBarImpl.obj
+ 0001:0000af0c       ?get_CapPowerReporting@COPOSBumpBar@@UAGJPAJ@Z 1000bf0c f   BumpBarImpl.obj
+ 0001:0000af25       ?get_CapStatisticsReporting@COPOSBumpBar@@UAGJPAF@Z 1000bf25 f   BumpBarImpl.obj
+ 0001:0000af3e       ?get_CapTone@COPOSBumpBar@@UAGJPAF@Z 1000bf3e f   BumpBarImpl.obj
+ 0001:0000af57       ?get_CapUpdateFirmware@COPOSBumpBar@@UAGJPAF@Z 1000bf57 f   BumpBarImpl.obj
+ 0001:0000af70       ?get_CapUpdateStatistics@COPOSBumpBar@@UAGJPAF@Z 1000bf70 f   BumpBarImpl.obj
+ 0001:0000af89       ?get_CheckHealthText@COPOSBumpBar@@UAGJPAPA_W@Z 1000bf89 f   BumpBarImpl.obj
+ 0001:0000afa2       ?get_Claimed@COPOSBumpBar@@UAGJPAF@Z 1000bfa2 f   BumpBarImpl.obj
+ 0001:0000afb8       ?get_ControlObjectDescription@COPOSBumpBar@@UAGJPAPA_W@Z 1000bfb8 f   BumpBarImpl.obj
+ 0001:0000b006       ?get_ControlObjectVersion@COPOSBumpBar@@UAGJPAJ@Z 1000c006 f   BumpBarImpl.obj
+ 0001:0000b019       ?get_CurrentUnitID@COPOSBumpBar@@UAGJPAJ@Z 1000c019 f   BumpBarImpl.obj
+ 0001:0000b032       ?get_DataCount@COPOSBumpBar@@UAGJPAJ@Z 1000c032 f   BumpBarImpl.obj
+ 0001:0000b048       ?get_DataEventEnabled@COPOSBumpBar@@UAGJPAF@Z 1000c048 f   BumpBarImpl.obj
+ 0001:0000b05e       ?get_DeviceDescription@COPOSBumpBar@@UAGJPAPA_W@Z 1000c05e f   BumpBarImpl.obj
+ 0001:0000b077       ?get_DeviceEnabled@COPOSBumpBar@@UAGJPAF@Z 1000c077 f   BumpBarImpl.obj
+ 0001:0000b08d       ?get_DeviceName@COPOSBumpBar@@UAGJPAPA_W@Z 1000c08d f   BumpBarImpl.obj
+ 0001:0000b0a6       ?get_ErrorString@COPOSBumpBar@@UAGJPAPA_W@Z 1000c0a6 f   BumpBarImpl.obj
+ 0001:0000b0bf       ?get_ErrorUnits@COPOSBumpBar@@UAGJPAJ@Z 1000c0bf f   BumpBarImpl.obj
+ 0001:0000b0d8       ?get_EventString@COPOSBumpBar@@UAGJPAPA_W@Z 1000c0d8 f   BumpBarImpl.obj
+ 0001:0000b0f1       ?get_EventUnitID@COPOSBumpBar@@UAGJPAJ@Z 1000c0f1 f   BumpBarImpl.obj
+ 0001:0000b10a       ?get_EventUnits@COPOSBumpBar@@UAGJPAJ@Z 1000c10a f   BumpBarImpl.obj
+ 0001:0000b123       ?get_FreezeEvents@COPOSBumpBar@@UAGJPAF@Z 1000c123 f   BumpBarImpl.obj
+ 0001:0000b139       ?get_Keys@COPOSBumpBar@@UAGJPAJ@Z 1000c139 f   BumpBarImpl.obj
+ 0001:0000b152       ?get_OpenResult@COPOSBumpBar@@UAGJPAJ@Z 1000c152 f   BumpBarImpl.obj
+ 0001:0000b169       ?get_OutputID@COPOSBumpBar@@UAGJPAJ@Z 1000c169 f   BumpBarImpl.obj
+ 0001:0000b17f       ?get_PowerNotify@COPOSBumpBar@@UAGJPAJ@Z 1000c17f f   BumpBarImpl.obj
+ 0001:0000b195       ?get_PowerState@COPOSBumpBar@@UAGJPAJ@Z 1000c195 f   BumpBarImpl.obj
+ 0001:0000b1ab       ?get_ResultCode@COPOSBumpBar@@UAGJPAJ@Z 1000c1ab f   BumpBarImpl.obj
+ 0001:0000b1e9       ?get_ResultCodeExtended@COPOSBumpBar@@UAGJPAJ@Z 1000c1e9 f   BumpBarImpl.obj
+ 0001:0000b1ff       ?get_ServiceObjectDescription@COPOSBumpBar@@UAGJPAPA_W@Z 1000c1ff f   BumpBarImpl.obj
+ 0001:0000b218       ?get_ServiceObjectVersion@COPOSBumpBar@@UAGJPAJ@Z 1000c218 f   BumpBarImpl.obj
+ 0001:0000b22e       ?get_State@COPOSBumpBar@@UAGJPAJ@Z 1000c22e f   BumpBarImpl.obj
+ 0001:0000b25a       ?get_Timeout@COPOSBumpBar@@UAGJPAJ@Z 1000c25a f   BumpBarImpl.obj
+ 0001:0000b273       ?get_UnitsOnline@COPOSBumpBar@@UAGJPAJ@Z 1000c273 f   BumpBarImpl.obj
+ 0001:0000b28c       ?put_AsyncMode@COPOSBumpBar@@UAGJF@Z 1000c28c f   BumpBarImpl.obj
+ 0001:0000b2ac       ?put_AutoToneDuration@COPOSBumpBar@@UAGJJ@Z 1000c2ac f   BumpBarImpl.obj
+ 0001:0000b2c5       ?put_AutoToneFrequency@COPOSBumpBar@@UAGJJ@Z 1000c2c5 f   BumpBarImpl.obj
+ 0001:0000b2de       ?put_BinaryConversion@COPOSBumpBar@@UAGJJ@Z 1000c2de f   BumpBarImpl.obj
+ 0001:0000b2f4       ?put_CurrentUnitID@COPOSBumpBar@@UAGJJ@Z 1000c2f4 f   BumpBarImpl.obj
+ 0001:0000b30d       ?put_DataEventEnabled@COPOSBumpBar@@UAGJF@Z 1000c30d f   BumpBarImpl.obj
+ 0001:0000b32a       ?put_DeviceEnabled@COPOSBumpBar@@UAGJF@Z 1000c32a f   BumpBarImpl.obj
+ 0001:0000b347       ?put_FreezeEvents@COPOSBumpBar@@UAGJF@Z 1000c347 f   BumpBarImpl.obj
+ 0001:0000b393       ?put_PowerNotify@COPOSBumpBar@@UAGJJ@Z 1000c393 f   BumpBarImpl.obj
+ 0001:0000b3a9       ?put_Timeout@COPOSBumpBar@@UAGJJ@Z 1000c3a9 f   BumpBarImpl.obj
+ 0001:0000b3c2       ?s_EventWindowProc@COPOSBumpBar@@KGJPAUHWND__@@IIJ@Z 1000c3c2 f i BumpBarImpl.obj
+ 0001:0000b414       ??_U@YAPAXI@Z              1000c414 f   LIBCMT:new_array.obj
+ 0001:0000b41d       ??3@YAXPAXI@Z              1000c41d f   LIBCMT:delete_scalar_size.obj
+ 0001:0000b42b       ??_V@YAXPAX@Z              1000c42b f   LIBCMT:delete_array.obj
+ 0001:0000b430       ??_V@YAXPAXI@Z             1000c430 f   LIBCMT:delete_array_size.obj
+ 0001:0000b482       ___scrt_acquire_startup_lock 1000c482 f   LIBCMT:utility.obj
+ 0001:0000b4b4       ___scrt_dllmain_after_initialize_c 1000c4b4 f   LIBCMT:utility.obj
+ 0001:0000b4df       ___scrt_dllmain_before_initialize_c 1000c4df f   LIBCMT:utility.obj
+ 0001:0000b4ed       ___scrt_dllmain_crt_thread_attach 1000c4ed f   LIBCMT:utility.obj
+ 0001:0000b50c       ___scrt_dllmain_crt_thread_detach 1000c50c f   LIBCMT:utility.obj
+ 0001:0000b519       ___scrt_dllmain_exception_filter 1000c519 f   LIBCMT:utility.obj
+ 0001:0000b54d       ___scrt_dllmain_uninitialize_c 1000c54d f   LIBCMT:utility.obj
+ 0001:0000b570       ___scrt_dllmain_uninitialize_critical 1000c570 f   LIBCMT:utility.obj
+ 0001:0000b57d       ___scrt_initialize_crt     1000c57d f   LIBCMT:utility.obj
+ 0001:0000b5b6       ___scrt_initialize_onexit_tables 1000c5b6 f   LIBCMT:utility.obj
+ 0001:0000b63d       ___scrt_is_nonwritable_in_current_image 1000c63d f   LIBCMT:utility.obj
+ 0001:0000b6d1       ___scrt_release_startup_lock 1000c6d1 f   LIBCMT:utility.obj
+ 0001:0000b6ee       ___scrt_uninitialize_crt   1000c6ee f   LIBCMT:utility.obj
+ 0001:0000b716       __onexit                   1000c716 f   LIBCMT:utility.obj
+ 0001:0000b743       _atexit                    1000c743 f   LIBCMT:utility.obj
+ 0001:0000b758       ??3@YAXPAX@Z               1000c758 f   LIBCMT:delete_scalar.obj
+ 0001:0000b822       __Init_thread_footer       1000c822 f   LIBCMT:thread_safe_statics.obj
+ 0001:0000b86c       __Init_thread_header       1000c86c f   LIBCMT:thread_safe_statics.obj
+ 0001:0000b8be       __Init_thread_notify       1000c8be f   LIBCMT:thread_safe_statics.obj
+ 0001:0000b8f4       __Init_thread_wait         1000c8f4 f   LIBCMT:thread_safe_statics.obj
+ 0001:0000b942       ___raise_securityfailure   1000c942 f   LIBCMT:gs_report.obj
+ 0001:0000b96a       ___report_gsfailure        1000c96a f   LIBCMT:gs_report.obj
+ 0001:0000ba63       ___report_rangecheckfailure 1000ca63 f   LIBCMT:gs_report.obj
+ 0001:0000ba6f       ___report_securityfailure  1000ca6f f   LIBCMT:gs_report.obj
+ 0001:0000bb3d       ??2@YAPAXIABUnothrow_t@std@@@Z 1000cb3d f   LIBCMT:new_scalar_nothrow.obj
+ 0001:0000bb92       ??_U@YAPAXIABUnothrow_t@std@@@Z 1000cb92 f   LIBCMT:new_array_nothrow.obj
+ 0001:0000bb9b       @__security_check_cookie@4 1000cb9b f   LIBCMT:secchk.obj
  0001:0000bbb0       __SEH_prolog4_GS           1000cbb0 f   LIBCMT:sehprolg4gs.obj
- 0001:0000bbf9       __SEH_epilog4_GS           1000cbf9 f   LIBCMT:sehprolg4gs.obj
+ 0001:0000bbf7       __SEH_epilog4_GS           1000cbf7 f   LIBCMT:sehprolg4gs.obj
  0001:0000bc10       __alloca_probe_16          1000cc10 f   LIBCMT:alloca16.obj
  0001:0000bc26       __alloca_probe_8           1000cc26     LIBCMT:alloca16.obj
  0001:0000bc40       __alloca_probe             1000cc40 f   LIBCMT:chkstk.obj
@@ -713,50 +719,50 @@
  0001:0000c1dc       ___scrt_fastfail           1000d1dc f   LIBCMT:utility_desktop.obj
  0001:0000c2f6       __crt_debugger_hook        1000d2f6 f   LIBCMT:utility_desktop.obj
  0001:0000c300       __SEH_prolog4              1000d300 f   LIBCMT:sehprolg4.obj
- 0001:0000c346       __SEH_epilog4              1000d346 f   LIBCMT:sehprolg4.obj
- 0001:0000c35b       @_guard_check_icall_nop@4  1000d35b f i LIBCMT:guard_support.obj
- 0001:0000c3a9       ___security_init_cookie    1000d3a9 f   LIBCMT:gs_support.obj
- 0001:0000c3f4       ?__scrt_initialize_type_info@@YAXXZ 1000d3f4 f   LIBCMT:tncleanup.obj
- 0001:0000c400       ?__scrt_uninitialize_type_info@@YAXXZ 1000d400 f   LIBCMT:tncleanup.obj
- 0001:0000c40c       ___local_stdio_scanf_options 1000d40c f i LIBCMT:default_local_stdio_options.obj
- 0001:0000c412       ___scrt_initialize_default_local_stdio_options 1000d412 f   LIBCMT:default_local_stdio_options.obj
- 0001:0000c42f       ___scrt_get_dyn_tls_init_callback 1000d42f f   LIBCMT:dyn_tls_init.obj
- 0001:0000c435       __RTC_Initialize           1000d435 f   LIBCMT:initsect.obj
- 0001:0000c461       __RTC_Terminate            1000d461 f   LIBCMT:initsect.obj
- 0001:0000c48d       ??0bad_alloc@std@@QAE@ABV01@@Z 1000d48d f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c4a8       ??0bad_alloc@std@@QAE@XZ   1000d4a8 f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c4c0       ??0bad_array_new_length@std@@QAE@ABV01@@Z 1000d4c0 f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c4db       ??0bad_array_new_length@std@@QAE@XZ 1000d4db f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c4f3       ??0exception@std@@QAE@ABV01@@Z 1000d4f3 f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c51f       ??1bad_alloc@std@@UAE@XZ   1000d51f f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c51f       ??1bad_exception@std@@UAE@XZ 1000d51f f i libvcruntime:frame.obj
- 0001:0000c51f       ??1bad_array_new_length@std@@UAE@XZ 1000d51f f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c530       ??_Gbad_exception@std@@UAEPAXI@Z 1000d530 f i libvcruntime:frame.obj
- 0001:0000c530       ??_Ebad_exception@std@@UAEPAXI@Z 1000d530 f i libvcruntime:frame.obj
- 0001:0000c530       ??_Gbad_alloc@std@@UAEPAXI@Z 1000d530 f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c530       ??_Eexception@std@@UAEPAXI@Z 1000d530 f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c530       ??_Ebad_alloc@std@@UAEPAXI@Z 1000d530 f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c530       ??_Ebad_array_new_length@std@@UAEPAXI@Z 1000d530 f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c530       ??_Gexception@std@@UAEPAXI@Z 1000d530 f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c530       ??_Gbad_array_new_length@std@@UAEPAXI@Z 1000d530 f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c55d       ?__scrt_throw_std_bad_alloc@@YAXXZ 1000d55d f   LIBCMT:throw_bad_alloc.obj
- 0001:0000c57a       ?__scrt_throw_std_bad_array_new_length@@YAXXZ 1000d57a f   LIBCMT:throw_bad_alloc.obj
- 0001:0000c597       ?what@exception@std@@UBEPBDXZ 1000d597 f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c5a4       ??_Etype_info@@UAEPAXI@Z   1000d5a4 f i LIBCMT:std_type_info_static.obj
- 0001:0000c5a4       ??_Gtype_info@@UAEPAXI@Z   1000d5a4 f i LIBCMT:std_type_info_static.obj
- 0001:0000c5c7       ??0CAtlBaseModule@ATL@@QAE@XZ 1000d5c7 f   atls:atlbase.obj
- 0001:0000c61a       ??0_ATL_BASE_MODULE70@ATL@@QAE@XZ 1000d61a f i atls:atlbase.obj
- 0001:0000c63d       ??1CAtlBaseModule@ATL@@QAE@XZ 1000d63d f   atls:atlbase.obj
- 0001:0000c72a       ?Init@_stdcallthunk@ATL@@QAEHKPAX@Z 1000d72a f i atls:atlthunk.obj
- 0001:0000c75f       ?__AllocStdCallThunk_cmn@@YAPAXXZ 1000d75f f   atls:atlthunk.obj
- 0001:0000c825       ?__FreeStdCallThunk_cmn@@YAXPAX@Z 1000d825 f   atls:atlthunk.obj
- 0001:0000c8c0       _AtlThunk_AllocateData@0   1000d8c0 f   atls:atlthunk.obj
- 0001:0000c925       _AtlThunk_DataToCode@4     1000d925 f   atls:atlthunk.obj
- 0001:0000c96c       _AtlThunk_FreeData@4       1000d96c f   atls:atlthunk.obj
- 0001:0000c9c2       _AtlThunk_InitData@12      1000d9c2 f   atls:atlthunk.obj
- 0001:0000ca11       __get_purecall_handler     1000da11 f   libvcruntime:purevirt.obj
- 0001:0000ca17       __purecall                 1000da17 f   libvcruntime:purevirt.obj
- 0001:0000ca33       _wcsstr                    1000da33 f   libvcruntime:wcsstr.obj
+ 0001:0000c344       __SEH_epilog4              1000d344 f   LIBCMT:sehprolg4.obj
+ 0001:0000c358       @_guard_check_icall_nop@4  1000d358 f i LIBCMT:guard_support.obj
+ 0001:0000c3a8       ___security_init_cookie    1000d3a8 f   LIBCMT:gs_support.obj
+ 0001:0000c3f3       ?__scrt_initialize_type_info@@YAXXZ 1000d3f3 f   LIBCMT:tncleanup.obj
+ 0001:0000c3ff       ?__scrt_uninitialize_type_info@@YAXXZ 1000d3ff f   LIBCMT:tncleanup.obj
+ 0001:0000c40b       ___local_stdio_scanf_options 1000d40b f i LIBCMT:default_local_stdio_options.obj
+ 0001:0000c411       ___scrt_initialize_default_local_stdio_options 1000d411 f   LIBCMT:default_local_stdio_options.obj
+ 0001:0000c42e       ___scrt_get_dyn_tls_init_callback 1000d42e f   LIBCMT:dyn_tls_init.obj
+ 0001:0000c434       __RTC_Initialize           1000d434 f   LIBCMT:initsect.obj
+ 0001:0000c460       __RTC_Terminate            1000d460 f   LIBCMT:initsect.obj
+ 0001:0000c48c       ??0bad_alloc@std@@QAE@ABV01@@Z 1000d48c f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c4a7       ??0bad_alloc@std@@QAE@XZ   1000d4a7 f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c4bf       ??0bad_array_new_length@std@@QAE@ABV01@@Z 1000d4bf f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c4da       ??0bad_array_new_length@std@@QAE@XZ 1000d4da f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c4f2       ??0exception@std@@QAE@ABV01@@Z 1000d4f2 f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c51e       ??1bad_alloc@std@@UAE@XZ   1000d51e f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c51e       ??1bad_exception@std@@UAE@XZ 1000d51e f i libvcruntime:frame.obj
+ 0001:0000c51e       ??1bad_array_new_length@std@@UAE@XZ 1000d51e f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c52f       ??_Gexception@std@@UAEPAXI@Z 1000d52f f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c52f       ??_Ebad_exception@std@@UAEPAXI@Z 1000d52f f i libvcruntime:frame.obj
+ 0001:0000c52f       ??_Eexception@std@@UAEPAXI@Z 1000d52f f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c52f       ??_Gbad_alloc@std@@UAEPAXI@Z 1000d52f f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c52f       ??_Gbad_exception@std@@UAEPAXI@Z 1000d52f f i libvcruntime:frame.obj
+ 0001:0000c52f       ??_Gbad_array_new_length@std@@UAEPAXI@Z 1000d52f f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c52f       ??_Ebad_array_new_length@std@@UAEPAXI@Z 1000d52f f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c52f       ??_Ebad_alloc@std@@UAEPAXI@Z 1000d52f f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c55c       ?__scrt_throw_std_bad_alloc@@YAXXZ 1000d55c f   LIBCMT:throw_bad_alloc.obj
+ 0001:0000c579       ?__scrt_throw_std_bad_array_new_length@@YAXXZ 1000d579 f   LIBCMT:throw_bad_alloc.obj
+ 0001:0000c596       ?what@exception@std@@UBEPBDXZ 1000d596 f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c5a3       ??_Gtype_info@@UAEPAXI@Z   1000d5a3 f i LIBCMT:std_type_info_static.obj
+ 0001:0000c5a3       ??_Etype_info@@UAEPAXI@Z   1000d5a3 f i LIBCMT:std_type_info_static.obj
+ 0001:0000c5c6       ??0CAtlBaseModule@ATL@@QAE@XZ 1000d5c6 f   atls:atlbase.obj
+ 0001:0000c619       ??0_ATL_BASE_MODULE70@ATL@@QAE@XZ 1000d619 f i atls:atlbase.obj
+ 0001:0000c63c       ??1CAtlBaseModule@ATL@@QAE@XZ 1000d63c f   atls:atlbase.obj
+ 0001:0000c729       ?Init@_stdcallthunk@ATL@@QAEHKPAX@Z 1000d729 f i atls:atlthunk.obj
+ 0001:0000c75e       ?__AllocStdCallThunk_cmn@@YAPAXXZ 1000d75e f   atls:atlthunk.obj
+ 0001:0000c824       ?__FreeStdCallThunk_cmn@@YAXPAX@Z 1000d824 f   atls:atlthunk.obj
+ 0001:0000c8bf       _AtlThunk_AllocateData@0   1000d8bf f   atls:atlthunk.obj
+ 0001:0000c924       _AtlThunk_DataToCode@4     1000d924 f   atls:atlthunk.obj
+ 0001:0000c96b       _AtlThunk_FreeData@4       1000d96b f   atls:atlthunk.obj
+ 0001:0000c9c1       _AtlThunk_InitData@12      1000d9c1 f   atls:atlthunk.obj
+ 0001:0000ca10       __get_purecall_handler     1000da10 f   libvcruntime:purevirt.obj
+ 0001:0000ca16       __purecall                 1000da16 f   libvcruntime:purevirt.obj
+ 0001:0000ca32       _wcsstr                    1000da32 f   libvcruntime:wcsstr.obj
  0001:0000cce0       __except_handler4          1000dce0 f   libvcruntime:chandler4.obj
  0001:0000ce3e       _memcmp                    1000de3e f   libvcruntime:memcmp.obj
  0001:0000dd50       _memcpy                    1000ed50 f   libvcruntime:memcpy.obj
@@ -788,31 +794,31 @@
  0001:0000eaad       __CxxThrowException@8      1000faad f   libvcruntime:throw.obj
  0001:0000eb20       _memmove                   1000fb20 f   libvcruntime:memmove.obj
  0001:0000f0a0       __local_unwind4            100100a0 f   libvcruntime:exsup4.obj
- 0001:0000f178       __seh_longjmp_unwind4@4    10010178 f   libvcruntime:exsup4.obj
- 0001:0000f1a0       @_EH4_CallFilterFunc@8     100101a0 f   libvcruntime:exsup4.obj
- 0001:0000f1b8       @_EH4_TransferToHandler@8  100101b8 f   libvcruntime:exsup4.obj
- 0001:0000f1d4       @_EH4_GlobalUnwind2@8      100101d4 f   libvcruntime:exsup4.obj
- 0001:0000f1f0       @_EH4_LocalUnwind@16       100101f0 f   libvcruntime:exsup4.obj
- 0001:0000f207       ___except_validate_context_record 10010207 f   libvcruntime:jbcxrval.obj
- 0001:0000f237       ___except_validate_jump_buffer 10010237 f   libvcruntime:jbcxrval.obj
- 0001:0000f264       ___vcrt_freefls@4          10010264 f   libvcruntime:per_thread_data.obj
- 0001:0000f280       ___vcrt_freeptd            10010280 f   libvcruntime:per_thread_data.obj
- 0001:0000f2b6       ___vcrt_getptd             100102b6 f   libvcruntime:per_thread_data.obj
- 0001:0000f2c4       ___vcrt_getptd_noexit      100102c4 f   libvcruntime:per_thread_data.obj
- 0001:0000f356       ___vcrt_initialize_ptd     10010356 f   libvcruntime:per_thread_data.obj
- 0001:0000f389       ___vcrt_uninitialize_ptd   10010389 f   libvcruntime:per_thread_data.obj
- 0001:0000f3a4       ___vcrt_initialize_locks   100103a4 f   libvcruntime:locks.obj
- 0001:0000f3e0       ___vcrt_uninitialize_locks 100103e0 f   libvcruntime:locks.obj
- 0001:0000fb52       ??$TypeMatchHelper@V__FrameHandler3@@@@YAHPBU_s_HandlerType@@PBU_s_CatchableType@@PBU_s_ThrowInfo@@@Z 10010b52 f i libvcruntime:frame.obj
- 0001:0000fbe0       ??$__InternalCxxFrameHandler@V__FrameHandler3@@@@YA?AW4_EXCEPTION_DISPOSITION@@PAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@H1E@Z 10010be0 f i libvcruntime:frame.obj
- 0001:0000fce2       ??0bad_exception@std@@QAE@ABV01@@Z 10010ce2 f i libvcruntime:frame.obj
- 0001:0000fcfd       ??0bad_exception@std@@QAE@XZ 10010cfd f i libvcruntime:frame.obj
- 0001:0000fd15       ??8type_info@@QBE_NABV0@@Z 10010d15 f i libvcruntime:frame.obj
- 0001:0000ff7c       ?FrameUnwindToEmptyState@__FrameHandler3@@SAXPAUEHRegistrationNode@@PAXPBU_s_FuncInfo@@@Z 10010f7c f   libvcruntime:frame.obj
- 0001:0000ff94       ?FrameUnwindToState@__FrameHandler3@@SAXPAUEHRegistrationNode@@PAXPBU_s_FuncInfo@@H@Z 10010f94 f   libvcruntime:frame.obj
- 0001:00010116       ?_CallMemberFunction1@@YGXQAX00@Z 10011116 f i libvcruntime:frame.obj
- 0001:00010126       ?_CallMemberFunction2@@YGXQAX00H@Z 10011126 f i libvcruntime:frame.obj
- 0001:00010139       ?getESTypes@__FrameHandler3@@SAPBU_s_ESTypeList@@PBU_s_FuncInfo@@@Z 10011139 f i libvcruntime:frame.obj
+ 0001:0000f174       __seh_longjmp_unwind4@4    10010174 f   libvcruntime:exsup4.obj
+ 0001:0000f19c       @_EH4_CallFilterFunc@8     1001019c f   libvcruntime:exsup4.obj
+ 0001:0000f1b4       @_EH4_TransferToHandler@8  100101b4 f   libvcruntime:exsup4.obj
+ 0001:0000f1d0       @_EH4_GlobalUnwind2@8      100101d0 f   libvcruntime:exsup4.obj
+ 0001:0000f1ec       @_EH4_LocalUnwind@16       100101ec f   libvcruntime:exsup4.obj
+ 0001:0000f203       ___except_validate_context_record 10010203 f   libvcruntime:jbcxrval.obj
+ 0001:0000f233       ___except_validate_jump_buffer 10010233 f   libvcruntime:jbcxrval.obj
+ 0001:0000f260       ___vcrt_freefls@4          10010260 f   libvcruntime:per_thread_data.obj
+ 0001:0000f27c       ___vcrt_freeptd            1001027c f   libvcruntime:per_thread_data.obj
+ 0001:0000f2b2       ___vcrt_getptd             100102b2 f   libvcruntime:per_thread_data.obj
+ 0001:0000f2c0       ___vcrt_getptd_noexit      100102c0 f   libvcruntime:per_thread_data.obj
+ 0001:0000f352       ___vcrt_initialize_ptd     10010352 f   libvcruntime:per_thread_data.obj
+ 0001:0000f385       ___vcrt_uninitialize_ptd   10010385 f   libvcruntime:per_thread_data.obj
+ 0001:0000f3a0       ___vcrt_initialize_locks   100103a0 f   libvcruntime:locks.obj
+ 0001:0000f3dc       ___vcrt_uninitialize_locks 100103dc f   libvcruntime:locks.obj
+ 0001:0000fb4e       ??$TypeMatchHelper@V__FrameHandler3@@@@YAHPBU_s_HandlerType@@PBU_s_CatchableType@@PBU_s_ThrowInfo@@@Z 10010b4e f i libvcruntime:frame.obj
+ 0001:0000fbdc       ??$__InternalCxxFrameHandler@V__FrameHandler3@@@@YA?AW4_EXCEPTION_DISPOSITION@@PAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@H1E@Z 10010bdc f i libvcruntime:frame.obj
+ 0001:0000fcde       ??0bad_exception@std@@QAE@ABV01@@Z 10010cde f i libvcruntime:frame.obj
+ 0001:0000fcf9       ??0bad_exception@std@@QAE@XZ 10010cf9 f i libvcruntime:frame.obj
+ 0001:0000fd11       ??8type_info@@QBE_NABV0@@Z 10010d11 f i libvcruntime:frame.obj
+ 0001:0000ff7d       ?FrameUnwindToEmptyState@__FrameHandler3@@SAXPAUEHRegistrationNode@@PAXPBU_s_FuncInfo@@@Z 10010f7d f   libvcruntime:frame.obj
+ 0001:0000ff95       ?FrameUnwindToState@__FrameHandler3@@SAXPAUEHRegistrationNode@@PAXPBU_s_FuncInfo@@H@Z 10010f95 f   libvcruntime:frame.obj
+ 0001:00010117       ?_CallMemberFunction1@@YGXQAX00@Z 10011117 f i libvcruntime:frame.obj
+ 0001:00010127       ?_CallMemberFunction2@@YGXQAX00H@Z 10011127 f i libvcruntime:frame.obj
+ 0001:0001013a       ?getESTypes@__FrameHandler3@@SAPBU_s_ESTypeList@@PBU_s_FuncInfo@@@Z 1001113a f i libvcruntime:frame.obj
  0001:00010150       __CallSettingFrame@12      10011150 f   libvcruntime:lowhelpr.obj
  0001:00010177       __NLG_Return               10011177     libvcruntime:lowhelpr.obj
  0001:000101a0       __global_unwind2           100111a0 f   libvcruntime:exsup.obj
@@ -886,8 +892,8 @@
  0001:00011d2b       ?type_case_p@?$output_processor@_WV?$string_output_adapter@_W@__crt_stdio_output@@V?$format_validation_base@_WV?$string_output_adapter@_W@__crt_stdio_output@@@2@@__crt_stdio_output@@AAE_NXZ 10012d2b f i libucrt:output.obj
  0001:00011d43       ?type_case_s@?$output_processor@_WV?$string_output_adapter@_W@__crt_stdio_output@@V?$format_validation_base@_WV?$string_output_adapter@_W@__crt_stdio_output@@@2@@__crt_stdio_output@@AAE_NXZ 10012d43 f i libucrt:output.obj
  0001:00011db6       ?type_case_s_compute_narrow_string_length@?$output_processor@_WV?$string_output_adapter@_W@__crt_stdio_output@@V?$format_validation_base@_WV?$string_output_adapter@_W@__crt_stdio_output@@@2@@__crt_stdio_output@@ABEHH_W@Z 10012db6 f i libucrt:output.obj
- 0001:00011dfd       ?validate@?$string_output_adapter@_W@__crt_stdio_output@@QBE_NXZ 10012dfd f i libucrt:output.obj
  0001:00011dfd       ?validate@?$c_string_character_source@_W@__crt_strtox@@QBE_NXZ 10012dfd f i libucrt:atox.obj
+ 0001:00011dfd       ?validate@?$string_output_adapter@_W@__crt_stdio_output@@QBE_NXZ 10012dfd f i libucrt:output.obj
  0001:00011e18       ?validate_and_update_state_at_end_of_format_string@?$format_validation_base@_WV?$string_output_adapter@_W@__crt_stdio_output@@@__crt_stdio_output@@IBE_NXZ 10012e18 f i libucrt:output.obj
  0001:00011e3a       ?write_character@?$string_output_adapter@_W@__crt_stdio_output@@QBE_N_WQAH@Z 10012e3a f i libucrt:output.obj
  0001:00011e7f       ?write_stored_string_tchar@?$output_processor@_WV?$string_output_adapter@_W@__crt_stdio_output@@V?$format_validation_base@_WV?$string_output_adapter@_W@__crt_stdio_output@@@2@@__crt_stdio_output@@AAE_N_W@Z 10012e7f f i libucrt:output.obj
@@ -902,13 +908,13 @@
  0001:000123e5       __is_c_termination_complete 100133e5 f   libucrt:exit.obj
  0001:00012696       ___acrt_allocate_buffer_for_argv 10013696 f   libucrt:argv_parsing.obj
  0001:000126e5       __configure_narrow_argv    100136e5 f   libucrt:argv_parsing.obj
- 0001:00012842       ??$uninitialize@A6AXAAPAPAD@Z@?$dual_state_global@PAPAD@__crt_state_management@@QAEXA6AXAAPAPAD@Z@Z 10013842 f i libucrt:environment_initialization.obj
  0001:00012842       ??$uninitialize@A6AXAAPAPA_W@Z@?$dual_state_global@PAPA_W@__crt_state_management@@QAEXA6AXAAPAPA_W@Z@Z 10013842 f i libucrt:environment_initialization.obj
+ 0001:00012842       ??$uninitialize@A6AXAAPAPAD@Z@?$dual_state_global@PAPAD@__crt_state_management@@QAEXA6AXAAPAPAD@Z@Z 10013842 f i libucrt:environment_initialization.obj
  0001:000128a1       ___dcrt_uninitialize_environments_nolock 100138a1 f   libucrt:environment_initialization.obj
  0001:000128d8       __initialize_narrow_environment 100138d8 f   libucrt:environment_initialization.obj
  0001:00012993       ??$__crt_fast_encode_pointer@PAP6AXXZ@@YAPAP6AXXZQAP6AXXZ@Z 10013993 f i libucrt:onexit.obj
- 0001:00012993       ??$__crt_fast_encode_pointer@PAX@@YAPAXQAX@Z 10013993 f i libucrt:initialization.obj
  0001:00012993       ??$__crt_fast_encode_pointer@P6AHXZ@@YAP6AHXZQ6AHXZ@Z 10013993 f i libucrt:onexit.obj
+ 0001:00012993       ??$__crt_fast_encode_pointer@PAX@@YAPAXQAX@Z 10013993 f i libucrt:initialization.obj
  0001:00012bb5       __crt_atexit               10013bb5 f   libucrt:onexit.obj
  0001:00012bcb       __execute_onexit_table     10013bcb f   libucrt:onexit.obj
  0001:00012bf8       __initialize_onexit_table  10013bf8 f   libucrt:onexit.obj
@@ -1163,8 +1169,8 @@
  0001:0001dec0       __allshl                   1001eec0 f   LIBCMT:llshl.obj
  0001:0001dee0       __aullshr                  1001eee0 f   LIBCMT:ullshr.obj
  0001:0001df00       __ftol2_sse_excpt          1001ef00     LIBCMT:ftol2.obj
- 0001:0001df00       __ftol2_sse                1001ef00     LIBCMT:ftol2.obj
  0001:0001df00       __ftoi2                    1001ef00 f   LIBCMT:ftol2.obj
+ 0001:0001df00       __ftol2_sse                1001ef00     LIBCMT:ftol2.obj
  0001:0001df80       __ftoui2                   1001ef80 f   LIBCMT:ftol2.obj
  0001:0001e030       __ftol2                    1001f030 f   LIBCMT:ftol2.obj
  0001:0001e0e0       __ftoul2                   1001f0e0 f   LIBCMT:ftol2.obj
@@ -1400,8 +1406,8 @@
  0002:00000438       _LIBID_OposBumpBar_CCO     10020438     BumpBar.obj
  0002:00000448       _DIID__IOPOSBumpBarEvents  10020448     BumpBar.obj
  0002:00000458       _CLSID_OPOSBumpBar         10020458     BumpBar.obj
- 0002:00000468       __GUID_00000114_0000_0000_c000_000000000046 10020468     BumpBar.obj
- 0002:00000478       ??_C@_1BK@BIGILECK@?$AAA?$AAd?$AAv?$AAa?$AAp?$AAi?$AA3?$AA2?$AA?4?$AAd?$AAl?$AAl@ 10020478     BumpBar.obj
+ 0002:00000468       ??_C@_1BK@BIGILECK@?$AAA?$AAd?$AAv?$AAa?$AAp?$AAi?$AA3?$AA2?$AA?4?$AAd?$AAl?$AAl@ 10020468     BumpBar.obj
+ 0002:00000484       __GUID_00000114_0000_0000_c000_000000000046 10020484     BumpBar.obj
  0002:00000494       ??_C@_0BI@MNCFCPFK@RegCreateKeyTransactedW@ 10020494     BumpBar.obj
  0002:000004ac       __GUID_b196b287_bab4_101a_b69c_00aa00341d07 100204ac     BumpBar.obj
  0002:000004bc       __GUID_b196b285_bab4_101a_b69c_00aa00341d07 100204bc     BumpBar.obj
@@ -1422,8 +1428,8 @@
  0002:0000073c       __GUID_00000119_0000_0000_c000_000000000046 1002073c     BumpBar.obj
  0002:0000074c       __GUID_b196b289_bab4_101a_b69c_00aa00341d07 1002074c     BumpBar.obj
  0002:0000075c       __GUID_00000000_0000_0000_c000_000000000046 1002075c     BumpBar.obj
- 0002:0000076c       ??_7?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@6B@ 1002076c     BumpBar.obj
- 0002:00000784       __GUID_00020400_0000_0000_c000_000000000046 10020784     BumpBar.obj
+ 0002:0000076c       __GUID_00020400_0000_0000_c000_000000000046 1002076c     BumpBar.obj
+ 0002:0000077c       ??_7?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@6B@ 1002077c     BumpBar.obj
  0002:00000794       ??_C@_1CE@PGFMOFKI@?$AAS?$AAt?$AAa?$AAt?$AAu?$AAs?$AAU?$AAp?$AAd?$AAa?$AAt?$AAe?$AAE?$AAv?$AAe@ 10020794     BumpBar.obj
  0002:000007b8       ??_C@_1CI@HLBJDONE@?$AAO?$AAu?$AAt?$AAp?$AAu?$AAt?$AAC?$AAo?$AAm?$AAp?$AAl?$AAe?$AAt?$AAe?$AAE@ 100207b8     BumpBar.obj
  0002:000007e0       ??_C@_1BG@LODEBHDD@?$AAE?$AAr?$AAr?$AAo?$AAr?$AAE?$AAv?$AAe?$AAn?$AAt@ 100207e0     BumpBar.obj
@@ -1466,9 +1472,9 @@
  0002:00000b28       ??_C@_1CM@KHNNAOIC@?$AAH?$AAK?$AAE?$AAY?$AA_?$AAP?$AAE?$AAR?$AAF?$AAO?$AAR?$AAM?$AAA?$AAN?$AAC@ 10020b28     BumpBar.obj
  0002:00000b54       ??_C@_1BM@HAGMMHIA@?$AAH?$AAK?$AAE?$AAY?$AA_?$AAD?$AAY?$AAN?$AA_?$AAD?$AAA?$AAT?$AAA@ 10020b54     BumpBar.obj
  0002:00000b70       ??_C@_1CI@BBJOACGG@?$AAH?$AAK?$AAE?$AAY?$AA_?$AAC?$AAU?$AAR?$AAR?$AAE?$AAN?$AAT?$AA_?$AAC?$AAO@ 10020b70     BumpBar.obj
- 0002:00000b98       __GUID_00000112_0000_0000_c000_000000000046 10020b98     BumpBar.obj
- 0002:00000ba8       __GUID_00000109_0000_0000_c000_000000000046 10020ba8     BumpBar.obj
- 0002:00000bb8       __GUID_7fd52380_4e07_101b_ae2d_08002b2ec713 10020bb8     BumpBar.obj
+ 0002:00000b98       __GUID_00000109_0000_0000_c000_000000000046 10020b98     BumpBar.obj
+ 0002:00000ba8       __GUID_7fd52380_4e07_101b_ae2d_08002b2ec713 10020ba8     BumpBar.obj
+ 0002:00000bb8       __GUID_00000112_0000_0000_c000_000000000046 10020bb8     BumpBar.obj
  0002:00000bc8       __GUID_3af24292_0c96_11ce_a0cf_00aa00600ab8 10020bc8     BumpBar.obj
  0002:00000bd8       __GUID_00000127_0000_0000_c000_000000000046 10020bd8     BumpBar.obj
  0002:00000be8       __GUID_0000010d_0000_0000_c000_000000000046 10020be8     BumpBar.obj
@@ -1576,8 +1582,8 @@
  0002:00001850       ??_C@_0BJ@JEBJOJFJ@SleepConditionVariableCS@ 10021850     LIBCMT:thread_safe_statics.obj
  0002:0000186c       ??_C@_0BJ@PGPPEPCC@WakeAllConditionVariable@ 1002186c     LIBCMT:thread_safe_statics.obj
  0002:00001885       ?nothrow@std@@3Unothrow_t@1@B 10021885     LIBCMT:std_nothrow.obj
- 0002:00001890       __pRawDllMain              10021890     LIBCMT:dll_dllmain.obj
  0002:00001890       __pDefaultRawDllMain       10021890     LIBCMT:dll_dllmain.obj
+ 0002:00001890       __pRawDllMain              10021890     LIBCMT:dll_dllmain.obj
  0002:00001898       ??_7exception@std@@6B@     10021898     LIBCMT:throw_bad_alloc.obj
  0002:000018a0       ??_C@_0BC@EOODALEL@Unknown?5exception@ 100218a0     LIBCMT:throw_bad_alloc.obj
  0002:000018b8       ??_7bad_alloc@std@@6B@     100218b8     LIBCMT:throw_bad_alloc.obj
@@ -2281,54 +2287,54 @@
  0002:00007518       __d_max                    10027518     libucrt:util.obj
  0002:00007520       __d_mzero                  10027520     libucrt:util.obj
  0002:00007590       __load_config_used         10027590     LIBCMT:loadcfg.obj
- 0002:00007648       __tls_used                 10027648     LIBCMT:tlssup.obj
- 0002:00007660       ??_R4exception@std@@6B@    10027660     LIBCMT:throw_bad_alloc.obj
- 0002:00007674       ??_R3exception@std@@8      10027674     LIBCMT:throw_bad_alloc.obj
- 0002:00007684       ??_R2exception@std@@8      10027684     LIBCMT:throw_bad_alloc.obj
- 0002:0000768c       ??_R1A@?0A@EA@exception@std@@8 1002768c     LIBCMT:throw_bad_alloc.obj
- 0002:000076a8       ??_R4bad_alloc@std@@6B@    100276a8     LIBCMT:throw_bad_alloc.obj
- 0002:000076bc       ??_R3bad_alloc@std@@8      100276bc     LIBCMT:throw_bad_alloc.obj
- 0002:000076cc       ??_R2bad_alloc@std@@8      100276cc     LIBCMT:throw_bad_alloc.obj
- 0002:000076d8       ??_R1A@?0A@EA@bad_alloc@std@@8 100276d8     LIBCMT:throw_bad_alloc.obj
- 0002:000076f4       ??_R4bad_array_new_length@std@@6B@ 100276f4     LIBCMT:throw_bad_alloc.obj
- 0002:00007708       ??_R3bad_array_new_length@std@@8 10027708     LIBCMT:throw_bad_alloc.obj
- 0002:00007718       ??_R2bad_array_new_length@std@@8 10027718     LIBCMT:throw_bad_alloc.obj
- 0002:00007728       ??_R1A@?0A@EA@bad_array_new_length@std@@8 10027728     LIBCMT:throw_bad_alloc.obj
- 0002:00007744       ??_R4type_info@@6B@        10027744     LIBCMT:std_type_info_static.obj
- 0002:00007758       ??_R3type_info@@8          10027758     LIBCMT:std_type_info_static.obj
- 0002:00007768       ??_R2type_info@@8          10027768     LIBCMT:std_type_info_static.obj
- 0002:00007770       ??_R1A@?0A@EA@type_info@@8 10027770     LIBCMT:std_type_info_static.obj
- 0002:0000778c       ??_R4bad_exception@std@@6B@ 1002778c     libvcruntime:frame.obj
- 0002:000077a0       ??_R3bad_exception@std@@8  100277a0     libvcruntime:frame.obj
- 0002:000077b0       ??_R2bad_exception@std@@8  100277b0     libvcruntime:frame.obj
- 0002:000077bc       ??_R1A@?0A@EA@bad_exception@std@@8 100277bc     libvcruntime:frame.obj
- 0002:000077d8       ___safe_se_handler_table   100277d8     <linker-defined>
- 0002:00007bd0       ___rtc_iaa                 10027bd0     LIBCMT:initsect.obj
- 0002:00007bd4       ___rtc_izz                 10027bd4     LIBCMT:initsect.obj
- 0002:00007bd8       ___rtc_taa                 10027bd8     LIBCMT:initsect.obj
- 0002:00007bdc       ___rtc_tzz                 10027bdc     LIBCMT:initsect.obj
- 0002:00007be0       __tls_start                10027be0     LIBCMT:tlssup.obj
- 0002:00007be4       __Init_thread_epoch        10027be4     LIBCMT:thread_safe_statics.obj
- 0002:00007be8       __tls_end                  10027be8     LIBCMT:tlssup.obj
- 0002:00007cec       __TI2?AVbad_alloc@std@@    10027cec     LIBCMT:throw_bad_alloc.obj
- 0002:00007cfc       __CTA2?AVbad_alloc@std@@   10027cfc     LIBCMT:throw_bad_alloc.obj
- 0002:00007d08       __CT??_R0?AVbad_alloc@std@@@8??0bad_alloc@std@@QAE@ABV01@@Z12 10027d08     LIBCMT:throw_bad_alloc.obj
- 0002:00007d24       __CT??_R0?AVexception@std@@@8??0exception@std@@QAE@ABV01@@Z12 10027d24     LIBCMT:throw_bad_alloc.obj
- 0002:00007d40       __TI3?AVbad_array_new_length@std@@ 10027d40     LIBCMT:throw_bad_alloc.obj
- 0002:00007d50       __CTA3?AVbad_array_new_length@std@@ 10027d50     LIBCMT:throw_bad_alloc.obj
- 0002:00007d60       __CT??_R0?AVbad_array_new_length@std@@@8??0bad_array_new_length@std@@QAE@ABV01@@Z12 10027d60     LIBCMT:throw_bad_alloc.obj
- 0002:00007e84       __TI2?AVbad_exception@std@@ 10027e84     libvcruntime:frame.obj
- 0002:00007e94       __CTA2?AVbad_exception@std@@ 10027e94     libvcruntime:frame.obj
- 0002:00007ea0       __CT??_R0?AVbad_exception@std@@@8??0bad_exception@std@@QAE@ABV01@@Z12 10027ea0     libvcruntime:frame.obj
- 0002:0000821c       ___pobjMapEntryFirst       1002821c     OposVariant.obj
- 0002:00008220       ___pobjMapEntryLast        10028220     OposVariant.obj
- 0002:000082d8       __IMPORT_DESCRIPTOR_KERNEL32 100282d8     kernel32:KERNEL32.dll
- 0002:000082ec       __IMPORT_DESCRIPTOR_USER32 100282ec     user32:USER32.dll
- 0002:00008300       __IMPORT_DESCRIPTOR_GDI32  10028300     gdi32:GDI32.dll
- 0002:00008314       __IMPORT_DESCRIPTOR_ADVAPI32 10028314     advapi32:ADVAPI32.dll
- 0002:00008328       __IMPORT_DESCRIPTOR_ole32  10028328     ole32:ole32.dll
- 0002:0000833c       __IMPORT_DESCRIPTOR_OLEAUT32 1002833c     oleaut32:OLEAUT32.dll
- 0002:00008350       __NULL_IMPORT_DESCRIPTOR   10028350     kernel32:KERNEL32.dll
+ 0002:00007680       __tls_used                 10027680     LIBCMT:tlssup.obj
+ 0002:00007698       ??_R4exception@std@@6B@    10027698     LIBCMT:throw_bad_alloc.obj
+ 0002:000076ac       ??_R3exception@std@@8      100276ac     LIBCMT:throw_bad_alloc.obj
+ 0002:000076bc       ??_R2exception@std@@8      100276bc     LIBCMT:throw_bad_alloc.obj
+ 0002:000076c4       ??_R1A@?0A@EA@exception@std@@8 100276c4     LIBCMT:throw_bad_alloc.obj
+ 0002:000076e0       ??_R4bad_alloc@std@@6B@    100276e0     LIBCMT:throw_bad_alloc.obj
+ 0002:000076f4       ??_R3bad_alloc@std@@8      100276f4     LIBCMT:throw_bad_alloc.obj
+ 0002:00007704       ??_R2bad_alloc@std@@8      10027704     LIBCMT:throw_bad_alloc.obj
+ 0002:00007710       ??_R1A@?0A@EA@bad_alloc@std@@8 10027710     LIBCMT:throw_bad_alloc.obj
+ 0002:0000772c       ??_R4bad_array_new_length@std@@6B@ 1002772c     LIBCMT:throw_bad_alloc.obj
+ 0002:00007740       ??_R3bad_array_new_length@std@@8 10027740     LIBCMT:throw_bad_alloc.obj
+ 0002:00007750       ??_R2bad_array_new_length@std@@8 10027750     LIBCMT:throw_bad_alloc.obj
+ 0002:00007760       ??_R1A@?0A@EA@bad_array_new_length@std@@8 10027760     LIBCMT:throw_bad_alloc.obj
+ 0002:0000777c       ??_R4type_info@@6B@        1002777c     LIBCMT:std_type_info_static.obj
+ 0002:00007790       ??_R3type_info@@8          10027790     LIBCMT:std_type_info_static.obj
+ 0002:000077a0       ??_R2type_info@@8          100277a0     LIBCMT:std_type_info_static.obj
+ 0002:000077a8       ??_R1A@?0A@EA@type_info@@8 100277a8     LIBCMT:std_type_info_static.obj
+ 0002:000077c4       ??_R4bad_exception@std@@6B@ 100277c4     libvcruntime:frame.obj
+ 0002:000077d8       ??_R3bad_exception@std@@8  100277d8     libvcruntime:frame.obj
+ 0002:000077e8       ??_R2bad_exception@std@@8  100277e8     libvcruntime:frame.obj
+ 0002:000077f4       ??_R1A@?0A@EA@bad_exception@std@@8 100277f4     libvcruntime:frame.obj
+ 0002:00007810       ___safe_se_handler_table   10027810     <linker-defined>
+ 0002:00007c08       ___rtc_iaa                 10027c08     LIBCMT:initsect.obj
+ 0002:00007c0c       ___rtc_izz                 10027c0c     LIBCMT:initsect.obj
+ 0002:00007c10       ___rtc_taa                 10027c10     LIBCMT:initsect.obj
+ 0002:00007c14       ___rtc_tzz                 10027c14     LIBCMT:initsect.obj
+ 0002:00007c18       __tls_start                10027c18     LIBCMT:tlssup.obj
+ 0002:00007c1c       __Init_thread_epoch        10027c1c     LIBCMT:thread_safe_statics.obj
+ 0002:00007c20       __tls_end                  10027c20     LIBCMT:tlssup.obj
+ 0002:00007d24       __TI2?AVbad_alloc@std@@    10027d24     LIBCMT:throw_bad_alloc.obj
+ 0002:00007d34       __CTA2?AVbad_alloc@std@@   10027d34     LIBCMT:throw_bad_alloc.obj
+ 0002:00007d40       __CT??_R0?AVbad_alloc@std@@@8??0bad_alloc@std@@QAE@ABV01@@Z12 10027d40     LIBCMT:throw_bad_alloc.obj
+ 0002:00007d5c       __CT??_R0?AVexception@std@@@8??0exception@std@@QAE@ABV01@@Z12 10027d5c     LIBCMT:throw_bad_alloc.obj
+ 0002:00007d78       __TI3?AVbad_array_new_length@std@@ 10027d78     LIBCMT:throw_bad_alloc.obj
+ 0002:00007d88       __CTA3?AVbad_array_new_length@std@@ 10027d88     LIBCMT:throw_bad_alloc.obj
+ 0002:00007d98       __CT??_R0?AVbad_array_new_length@std@@@8??0bad_array_new_length@std@@QAE@ABV01@@Z12 10027d98     LIBCMT:throw_bad_alloc.obj
+ 0002:00007ebc       __TI2?AVbad_exception@std@@ 10027ebc     libvcruntime:frame.obj
+ 0002:00007ecc       __CTA2?AVbad_exception@std@@ 10027ecc     libvcruntime:frame.obj
+ 0002:00007ed8       __CT??_R0?AVbad_exception@std@@@8??0bad_exception@std@@QAE@ABV01@@Z12 10027ed8     libvcruntime:frame.obj
+ 0002:00008254       ___pobjMapEntryFirst       10028254     OposVariant.obj
+ 0002:00008258       ___pobjMapEntryLast        10028258     OposVariant.obj
+ 0002:00008308       __IMPORT_DESCRIPTOR_KERNEL32 10028308     kernel32:KERNEL32.dll
+ 0002:0000831c       __IMPORT_DESCRIPTOR_USER32 1002831c     user32:USER32.dll
+ 0002:00008330       __IMPORT_DESCRIPTOR_GDI32  10028330     gdi32:GDI32.dll
+ 0002:00008344       __IMPORT_DESCRIPTOR_ADVAPI32 10028344     advapi32:ADVAPI32.dll
+ 0002:00008358       __IMPORT_DESCRIPTOR_ole32  10028358     ole32:ole32.dll
+ 0002:0000836c       __IMPORT_DESCRIPTOR_OLEAUT32 1002836c     oleaut32:OLEAUT32.dll
+ 0002:00008380       __NULL_IMPORT_DESCRIPTOR   10028380     kernel32:KERNEL32.dll
  0003:00000000       ?s_Claim@?7??GetIDsOfNames@CComTypeInfoHolder@ATL@@QAEJABU_GUID@@PAPA_WIKPAJ@Z@4PA_WA 1002a000     BumpBar.obj
  0003:00000018       ?s_Release@?7??GetIDsOfNames@CComTypeInfoHolder@ATL@@QAEJABU_GUID@@PAPA_WIKPAJ@Z@4PA_WA 1002a018     BumpBar.obj
  0003:00000034       ?_tih@?$IDispatchImpl@UIOPOSBumpBar@@$1?IID_IOPOSBumpBar@@3U_GUID@@B$1?LIBID_OposBumpBar_CCO@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@1VCComTypeInfoHolder@2@A 1002a034     BumpBar.obj
@@ -2386,56 +2392,57 @@
  0003:00000f84       ___isa_available           1002af84     LIBCMT:cpu_disp.obj
  0003:00000f88       ___favor                   1002af88     LIBCMT:cpu_disp.obj
  0003:00000f8c       ___scrt_debugger_hook_flag 1002af8c     LIBCMT:utility_desktop.obj
- 0003:00000f90       ?__type_info_root_node@@3U__type_info_node@@A 1002af90     LIBCMT:tncleanup.obj
- 0003:00000f98       ?_OptionsStorage@?1??__local_stdio_scanf_options@@9@4_KA 1002af98     LIBCMT:default_local_stdio_options.obj
- 0003:00000fa0       ?_AtlBaseModule@ATL@@3VCAtlBaseModule@1@A 1002afa0     atls:atlbase.obj
- 0003:00000fd8       ?__AtlThunkPool@@3PAT_SLIST_HEADER@@A 1002afd8     atls:atlthunk.obj
- 0003:00000ff0       ___@@_PchSym_@00@UztvmgUPdlipUEUhUrmgvinvwrzgvUexgllohUzgohOmzgrevkilqPBACIAJCBDBUlyqiUcIGUhgwzucOlyq@4B2008FD98C1DD4 1002aff0     atls:stdafx.obj
- 0003:00000ff4       ?__WinRTOutOfMemoryExceptionCallback@@3P6GPAXXZA 1002aff4     libvcruntime:ehhelpers.obj
- 0003:00000ff8       ___pPurecall               1002aff8     libvcruntime:purevirt_data.obj
- 0003:00001040       ?pArgList@UnDecorator@@0PAVReplicator@@A 1002b040     libvcruntime:undname.obj
- 0003:00001044       ?pZNameList@UnDecorator@@0PAVReplicator@@A 1002b044     libvcruntime:undname.obj
- 0003:00001048       ?pTemplateArgList@UnDecorator@@0PAVReplicator@@A 1002b048     libvcruntime:undname.obj
- 0003:0000104c       ?gName@UnDecorator@@0PBDB  1002b04c     libvcruntime:undname.obj
- 0003:00001050       ?name@UnDecorator@@0PBDB   1002b050     libvcruntime:undname.obj
- 0003:00001054       ?disableFlags@UnDecorator@@0KA 1002b054     libvcruntime:undname.obj
- 0003:00001058       ?fExplicitTemplateParams@UnDecorator@@0_NA 1002b058     libvcruntime:undname.obj
- 0003:00001059       ?fGetTemplateArgumentList@UnDecorator@@0_NA 1002b059     libvcruntime:undname.obj
- 0003:0000105c       ?m_pGetParameter@UnDecorator@@0P6APADJ@ZA 1002b05c     libvcruntime:undname.obj
- 0003:00001060       ?m_CHPENameOffset@UnDecorator@@0KA 1002b060     libvcruntime:undname.obj
- 0003:00001064       ?m_recursionLevel@UnDecorator@@0KA 1002b064     libvcruntime:undname.obj
- 0003:000010a8       ?c_exit_complete@?1???R<lambda_6e4b09c48022b2350581041d5f6b0c4c>@@QBE@XZ@4_NA 1002b0a8     libucrt:exit.obj
- 0003:000011b8       __environ_table            1002b1b8     libucrt:environment_initialization.obj
- 0003:000011bc       __wenviron_table           1002b1bc     libucrt:environment_initialization.obj
- 0003:000011c0       ___dcrt_initial_wide_environment 1002b1c0     libucrt:environment_initialization.obj
- 0003:000011c4       ___dcrt_initial_narrow_environment 1002b1c4     libucrt:environment_initialization.obj
- 0003:000011c8       ___acrt_atexit_table       1002b1c8     libucrt:onexit.obj
- 0003:000011d4       ___acrt_at_quick_exit_table 1002b1d4     libucrt:onexit.obj
- 0003:000012c8       __nstream                  1002b2c8     libucrt:_file.obj
- 0003:000012cc       ___piob                    1002b2cc     libucrt:_file.obj
- 0003:000012d4       ___acrt_stdout_buffer      1002b2d4     libucrt:_sftbuf.obj
- 0003:000012d8       ___acrt_stderr_buffer      1002b2d8     libucrt:_sftbuf.obj
- 0003:000012dc       ___acrt_locale_changed_data 1002b2dc     libucrt:wsetlocale.obj
- 0003:000012e0       ___acrt_current_locale_data 1002b2e0     libucrt:nlsdata.obj
- 0003:000012e8       ___pioinfo                 1002b2e8     libucrt:ioinit.obj
- 0003:000014e8       __nhandle                  1002b4e8     libucrt:ioinit.obj
- 0003:00001644       __mbctype                  1002b644     libucrt:mbctype.obj
- 0003:00001648       __mbcasemap                1002b648     libucrt:mbctype.obj
- 0003:0000164c       ___acrt_current_multibyte_data 1002b64c     libucrt:mbctype.obj
- 0003:00001658       __pgmptr                   1002b658     libucrt:argv_data.obj
- 0003:0000165c       ___argc                    1002b65c     libucrt:argv_data.obj
- 0003:00001660       ___argv                    1002b660     libucrt:argv_data.obj
- 0003:00001664       ___wargv                   1002b664     libucrt:argv_data.obj
- 0003:00001668       __acmdln                   1002b668     libucrt:argv_data.obj
- 0003:0000166c       __wcmdln                   1002b66c     libucrt:argv_data.obj
- 0003:00001670       ___acrt_heap               1002b670     libucrt:heap_handle.obj
- 0003:0000168c       ___acrt_lconv_static_null  1002b68c     libucrt:localeconv.obj
- 0003:00001690       ___acrt_lconv_static_W_null 1002b690     libucrt:localeconv.obj
- 0003:000016a0       ___fastflag                1002b6a0     libucrt:fp_flags.obj
- 0003:000016a8       ___dyn_tls_init_callback   1002b6a8     <common>
- 0003:000016ac       ___scrt_ucrt_dll_is_in_use 1002b6ac     <common>
- 0003:000016b0       __pmatherr                 1002b6b0     <common>
- 0003:000016b4       ___use_sse2_mathfcns       1002b6b4     <common>
+ 0003:00000f90       ___castguard_check_failure_os_handled_fptr 1002af90     LIBCMT:guard_support.obj
+ 0003:00000f98       ?__type_info_root_node@@3U__type_info_node@@A 1002af98     LIBCMT:tncleanup.obj
+ 0003:00000fa0       ?_OptionsStorage@?1??__local_stdio_scanf_options@@9@4_KA 1002afa0     LIBCMT:default_local_stdio_options.obj
+ 0003:00000fa8       ?_AtlBaseModule@ATL@@3VCAtlBaseModule@1@A 1002afa8     atls:atlbase.obj
+ 0003:00000fe0       ?__AtlThunkPool@@3PAT_SLIST_HEADER@@A 1002afe0     atls:atlthunk.obj
+ 0003:00000ff8       ___@@_PchSym_@00@UztvmgUPdlipUFHUhUrmgvinvwrzgvUexgllohUzgohOmzgrevkilqPBACIAJCBDBUlyqiUcIGUhgwzucOlyq@4B2008FD98C1DD4 1002aff8     atls:stdafx.obj
+ 0003:00000ffc       ?__WinRTOutOfMemoryExceptionCallback@@3P6GPAXXZA 1002affc     libvcruntime:ehhelpers.obj
+ 0003:00001000       ___pPurecall               1002b000     libvcruntime:purevirt_data.obj
+ 0003:00001048       ?pArgList@UnDecorator@@0PAVReplicator@@A 1002b048     libvcruntime:undname.obj
+ 0003:0000104c       ?pZNameList@UnDecorator@@0PAVReplicator@@A 1002b04c     libvcruntime:undname.obj
+ 0003:00001050       ?pTemplateArgList@UnDecorator@@0PAVReplicator@@A 1002b050     libvcruntime:undname.obj
+ 0003:00001054       ?gName@UnDecorator@@0PBDB  1002b054     libvcruntime:undname.obj
+ 0003:00001058       ?name@UnDecorator@@0PBDB   1002b058     libvcruntime:undname.obj
+ 0003:0000105c       ?disableFlags@UnDecorator@@0KA 1002b05c     libvcruntime:undname.obj
+ 0003:00001060       ?fExplicitTemplateParams@UnDecorator@@0_NA 1002b060     libvcruntime:undname.obj
+ 0003:00001061       ?fGetTemplateArgumentList@UnDecorator@@0_NA 1002b061     libvcruntime:undname.obj
+ 0003:00001064       ?m_pGetParameter@UnDecorator@@0P6APADJ@ZA 1002b064     libvcruntime:undname.obj
+ 0003:00001068       ?m_CHPENameOffset@UnDecorator@@0KA 1002b068     libvcruntime:undname.obj
+ 0003:0000106c       ?m_recursionLevel@UnDecorator@@0KA 1002b06c     libvcruntime:undname.obj
+ 0003:000010b0       ?c_exit_complete@?1???R<lambda_6e4b09c48022b2350581041d5f6b0c4c>@@QBE@XZ@4_NA 1002b0b0     libucrt:exit.obj
+ 0003:000011c0       __environ_table            1002b1c0     libucrt:environment_initialization.obj
+ 0003:000011c4       __wenviron_table           1002b1c4     libucrt:environment_initialization.obj
+ 0003:000011c8       ___dcrt_initial_wide_environment 1002b1c8     libucrt:environment_initialization.obj
+ 0003:000011cc       ___dcrt_initial_narrow_environment 1002b1cc     libucrt:environment_initialization.obj
+ 0003:000011d0       ___acrt_atexit_table       1002b1d0     libucrt:onexit.obj
+ 0003:000011dc       ___acrt_at_quick_exit_table 1002b1dc     libucrt:onexit.obj
+ 0003:000012d0       __nstream                  1002b2d0     libucrt:_file.obj
+ 0003:000012d4       ___piob                    1002b2d4     libucrt:_file.obj
+ 0003:000012dc       ___acrt_stdout_buffer      1002b2dc     libucrt:_sftbuf.obj
+ 0003:000012e0       ___acrt_stderr_buffer      1002b2e0     libucrt:_sftbuf.obj
+ 0003:000012e4       ___acrt_locale_changed_data 1002b2e4     libucrt:wsetlocale.obj
+ 0003:000012e8       ___acrt_current_locale_data 1002b2e8     libucrt:nlsdata.obj
+ 0003:000012f0       ___pioinfo                 1002b2f0     libucrt:ioinit.obj
+ 0003:000014f0       __nhandle                  1002b4f0     libucrt:ioinit.obj
+ 0003:0000164c       __mbctype                  1002b64c     libucrt:mbctype.obj
+ 0003:00001650       __mbcasemap                1002b650     libucrt:mbctype.obj
+ 0003:00001654       ___acrt_current_multibyte_data 1002b654     libucrt:mbctype.obj
+ 0003:00001660       __pgmptr                   1002b660     libucrt:argv_data.obj
+ 0003:00001664       ___argc                    1002b664     libucrt:argv_data.obj
+ 0003:00001668       ___argv                    1002b668     libucrt:argv_data.obj
+ 0003:0000166c       ___wargv                   1002b66c     libucrt:argv_data.obj
+ 0003:00001670       __acmdln                   1002b670     libucrt:argv_data.obj
+ 0003:00001674       __wcmdln                   1002b674     libucrt:argv_data.obj
+ 0003:00001678       ___acrt_heap               1002b678     libucrt:heap_handle.obj
+ 0003:00001694       ___acrt_lconv_static_null  1002b694     libucrt:localeconv.obj
+ 0003:00001698       ___acrt_lconv_static_W_null 1002b698     libucrt:localeconv.obj
+ 0003:000016a8       ___fastflag                1002b6a8     libucrt:fp_flags.obj
+ 0003:000016b0       ___dyn_tls_init_callback   1002b6b0     <common>
+ 0003:000016b4       ___scrt_ucrt_dll_is_in_use 1002b6b4     <common>
+ 0003:000016b8       __pmatherr                 1002b6b8     <common>
+ 0003:000016bc       ___use_sse2_mathfcns       1002b6bc     <common>
 
  entry point at        0001:0000bfad
 
@@ -2647,18 +2654,18 @@
  0001:0000003a       ??__E_Module@@YAXXZ        1000103a f   BumpBar.obj
  0001:00000064       ??__E_AtlBaseModule@ATL@@YAXXZ 10001064 f   atls:atlbase.obj
  0001:0000102e       $LN24                      1000202e     BumpBar.obj
- 0001:0000597f       $LN48                      1000697f     BumpBar.obj
- 0001:00005997       $LN47                      10006997     BumpBar.obj
+ 0001:00005981       $LN48                      10006981     BumpBar.obj
+ 0001:00005999       $LN47                      10006999     BumpBar.obj
  0001:00007b44       $LN38                      10008b44     BumpBar.obj
  0001:00007b5c       $LN37                      10008b5c     BumpBar.obj
  0001:0000924c       $LN76                      1000a24c     BumpBar.obj
  0001:00009264       $LN75                      1000a264     BumpBar.obj
  0001:0000961d       _memcpy_s                  1000a61d f   BumpBar.obj
- 0001:0000b438       ?find_pe_section@@YAPAU_IMAGE_SECTION_HEADER@@QAEI@Z 1000c438 f   LIBCMT:utility.obj
- 0001:0000b757       ?__scrt_initialize_thread_safe_statics@@YAHXZ 1000c757 f   LIBCMT:thread_safe_statics.obj
- 0001:0000b77e       ?__scrt_initialize_thread_safe_statics_platform_specific@@YAXXZ 1000c77e f   LIBCMT:thread_safe_statics.obj
- 0001:0000b800       ?__scrt_uninitialize_thread_safe_statics@@YAXXZ 1000c800 f   LIBCMT:thread_safe_statics.obj
- 0001:0000bb6f       __catch$??2@YAPAXIABUnothrow_t@std@@@Z$0 1000cb6f f   LIBCMT:new_scalar_nothrow.obj
+ 0001:0000b43e       ?find_pe_section@@YAPAU_IMAGE_SECTION_HEADER@@QAEI@Z 1000c43e f   LIBCMT:utility.obj
+ 0001:0000b75d       ?__scrt_initialize_thread_safe_statics@@YAHXZ 1000c75d f   LIBCMT:thread_safe_statics.obj
+ 0001:0000b784       ?__scrt_initialize_thread_safe_statics_platform_specific@@YAXXZ 1000c784 f   LIBCMT:thread_safe_statics.obj
+ 0001:0000b806       ?__scrt_uninitialize_thread_safe_statics@@YAXXZ 1000c806 f   LIBCMT:thread_safe_statics.obj
+ 0001:0000bb75       __catch$??2@YAPAXIABUnothrow_t@std@@@Z$0 1000cb75 f   LIBCMT:new_scalar_nothrow.obj
  0001:0000bbb0       $$000000                   1000cbb0     LIBCMT:sehprolg4gs.obj
  0001:0000bc10       $$000000                   1000cc10     LIBCMT:alloca16.obj
  0001:0000bc40       $$000000                   1000cc40     LIBCMT:chkstk.obj
@@ -2668,13 +2675,13 @@
  0001:0000be77       ?dllmain_dispatch@@YAHQAUHINSTANCE__@@KQAX@Z 1000ce77 f   LIBCMT:dll_dllmain.obj
  0001:0000bf82       ?dllmain_raw@@YGHQAUHINSTANCE__@@KQAX@Z 1000cf82 f   LIBCMT:dll_dllmain.obj
  0001:0000c300       $$000000                   1000d300     LIBCMT:sehprolg4.obj
- 0001:0000c35c       ___get_entropy             1000d35c f   LIBCMT:gs_support.obj
- 0001:0000c653       ??$GetProcAddressAll@P6GP6GJPAUHWND__@@IIJ@ZPAUAtlThunkData_t@@@Z@@YAP6GP6GJPAUHWND__@@IIJ@ZPAUAtlThunkData_t@@@ZPAP6GP6GJ0IIJ@Z1@Z@Z 1000d653 f   atls:atlthunk.obj
- 0001:0000c653       ??$GetProcAddressAll@P6GPAUAtlThunkData_t@@XZ@@YAP6GPAUAtlThunkData_t@@XZPAP6GPAU0@XZ@Z 1000d653 f   atls:atlthunk.obj
- 0001:0000c653       ??$GetProcAddressAll@P6GXPAUAtlThunkData_t@@@Z@@YAP6GXPAUAtlThunkData_t@@@ZPAP6GX0@Z@Z 1000d653 f   atls:atlthunk.obj
- 0001:0000c653       ??$GetProcAddressAll@P6GXPAUAtlThunkData_t@@PAXI@Z@@YAP6GXPAUAtlThunkData_t@@PAXI@ZPAP6GX01I@Z@Z 1000d653 f   atls:atlthunk.obj
- 0001:0000c703       ?GetProcAddressSingle@@YA_NPAUHINSTANCE__@@PBDPAPAX@Z 1000d703 f   atls:atlthunk.obj
- 0001:0000c855       ?__InitializeThunkPool@@YAHXZ 1000d855 f   atls:atlthunk.obj
+ 0001:0000c35b       ___get_entropy             1000d35b f   LIBCMT:gs_support.obj
+ 0001:0000c652       ??$GetProcAddressAll@P6GP6GJPAUHWND__@@IIJ@ZPAUAtlThunkData_t@@@Z@@YAP6GP6GJPAUHWND__@@IIJ@ZPAUAtlThunkData_t@@@ZPAP6GP6GJ0IIJ@Z1@Z@Z 1000d652 f   atls:atlthunk.obj
+ 0001:0000c652       ??$GetProcAddressAll@P6GPAUAtlThunkData_t@@XZ@@YAP6GPAUAtlThunkData_t@@XZPAP6GPAU0@XZ@Z 1000d652 f   atls:atlthunk.obj
+ 0001:0000c652       ??$GetProcAddressAll@P6GXPAUAtlThunkData_t@@@Z@@YAP6GXPAUAtlThunkData_t@@@ZPAP6GX0@Z@Z 1000d652 f   atls:atlthunk.obj
+ 0001:0000c652       ??$GetProcAddressAll@P6GXPAUAtlThunkData_t@@PAXI@Z@@YAP6GXPAUAtlThunkData_t@@PAXI@ZPAP6GX01I@Z@Z 1000d652 f   atls:atlthunk.obj
+ 0001:0000c702       ?GetProcAddressSingle@@YA_NPAUHINSTANCE__@@PBDPAPAX@Z 1000d702 f   atls:atlthunk.obj
+ 0001:0000c854       ?__InitializeThunkPool@@YAHXZ 1000d854 f   atls:atlthunk.obj
  0001:0000cca0       _ValidateLocalCookies      1000dca0 f   libvcruntime:chandler4.obj
  0001:0000dcca       $LN1250                    1000ecca     libvcruntime:memcmp.obj
  0001:0000dd50       $$000000                   1000ed50     libvcruntime:memcpy.obj
@@ -2686,22 +2693,22 @@
  0001:0000ed84       TrailingUpVec              1000fd84     libvcruntime:memmove.obj
  0001:0000ee30       TrailingDownVec            1000fe30     libvcruntime:memmove.obj
  0001:0000f0a0       $$000000                   100100a0     libvcruntime:exsup4.obj
- 0001:0000f130       __unwind_handler4          10010130 f   libvcruntime:exsup4.obj
- 0001:0000f40f       ??$BuildCatchObjectHelperInternal@V__FrameHandler3@@@@YAHPAUEHExceptionRecord@@PAXPBU_s_HandlerType@@PBU_s_CatchableType@@@Z 1001040f f   libvcruntime:frame.obj
- 0001:0000f54d       ??$BuildCatchObjectInternal@V__FrameHandler3@@@@YAXPAUEHExceptionRecord@@PAXPBU_s_HandlerType@@PBU_s_CatchableType@@@Z 1001054d f   libvcruntime:frame.obj
- 0001:0000f5e6       ??$CatchIt@V__FrameHandler3@@@@YAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@PBU_s_HandlerType@@PBU_s_CatchableType@@PBU_s_TryBlockMapEntry@@H1EE@Z 100105e6 f   libvcruntime:frame.obj
- 0001:0000f666       ??$FindHandler@V__FrameHandler3@@@@YAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@EH1@Z 10010666 f   libvcruntime:frame.obj
- 0001:0000fa1c       ??$FindHandlerForForeignException@V__FrameHandler3@@@@YAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@HH1@Z 10010a1c f   libvcruntime:frame.obj
- 0001:0000fd34       ?CallCatchBlock@@YAPAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PBU_s_FuncInfo@@PAXHK@Z 10010d34 f   libvcruntime:frame.obj
- 0001:0000fef8       ?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z 10010ef8 f   libvcruntime:frame.obj
- 0001:0000ff18       __catch$?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z$0 10010f18 f   libvcruntime:frame.obj
- 0001:0000ff32       ?ExFilterRethrow@@YAHPAU_EXCEPTION_POINTERS@@@Z 10010f32 f   libvcruntime:frame.obj
- 0001:0001007c       ?IsInExceptionSpec@@YAEPAUEHExceptionRecord@@PBU_s_ESTypeList@@@Z 1001107c f   libvcruntime:frame.obj
+ 0001:0000f12d       __unwind_handler4          1001012d f   libvcruntime:exsup4.obj
+ 0001:0000f40b       ??$BuildCatchObjectHelperInternal@V__FrameHandler3@@@@YAHPAUEHExceptionRecord@@PAXPBU_s_HandlerType@@PBU_s_CatchableType@@@Z 1001040b f   libvcruntime:frame.obj
+ 0001:0000f549       ??$BuildCatchObjectInternal@V__FrameHandler3@@@@YAXPAUEHExceptionRecord@@PAXPBU_s_HandlerType@@PBU_s_CatchableType@@@Z 10010549 f   libvcruntime:frame.obj
+ 0001:0000f5e2       ??$CatchIt@V__FrameHandler3@@@@YAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@PBU_s_HandlerType@@PBU_s_CatchableType@@PBU_s_TryBlockMapEntry@@H1EE@Z 100105e2 f   libvcruntime:frame.obj
+ 0001:0000f662       ??$FindHandler@V__FrameHandler3@@@@YAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@EH1@Z 10010662 f   libvcruntime:frame.obj
+ 0001:0000fa18       ??$FindHandlerForForeignException@V__FrameHandler3@@@@YAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@HH1@Z 10010a18 f   libvcruntime:frame.obj
+ 0001:0000fd30       ?CallCatchBlock@@YAPAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PBU_s_FuncInfo@@PAXHK@Z 10010d30 f   libvcruntime:frame.obj
+ 0001:0000fef4       ?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z 10010ef4 f   libvcruntime:frame.obj
+ 0001:0000ff14       __catch$?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z$0 10010f14 f   libvcruntime:frame.obj
+ 0001:0000ff33       ?ExFilterRethrow@@YAHPAU_EXCEPTION_POINTERS@@@Z 10010f33 f   libvcruntime:frame.obj
+ 0001:0001007d       ?IsInExceptionSpec@@YAEPAUEHExceptionRecord@@PBU_s_ESTypeList@@@Z 1001107d f   libvcruntime:frame.obj
  0001:00010150       $$000000                   10011150     libvcruntime:lowhelpr.obj
  0001:000101a0       $$000000                   100111a0     libvcruntime:exsup.obj
  0001:000101c1       __unwind_handler           100111c1 f   libvcruntime:exsup.obj
- 0001:000102de       ?try_get_first_available_module@@YAPAUHINSTANCE__@@QBW4module_id@?A0x9d0f8d90@@0@Z 100112de f   libvcruntime:winapi_downlevel.obj
- 0001:00010378       ?try_get_function@@YAPAXW4function_id@?A0x9d0f8d90@@QBDQBW4module_id@2@2@Z 10011378 f   libvcruntime:winapi_downlevel.obj
+ 0001:000102de       ?try_get_first_available_module@@YAPAUHINSTANCE__@@QBW4module_id@?A0xb97aeec8@@0@Z 100112de f   libvcruntime:winapi_downlevel.obj
+ 0001:00010378       ?try_get_function@@YAPAXW4function_id@?A0xb97aeec8@@QBDQBW4module_id@2@2@Z 10011378 f   libvcruntime:winapi_downlevel.obj
  0001:00010a02       ??$common_tcsncpy_s@_W@@YAHQA_WIQB_WI@Z 10011a02 f   libucrt:wcsncpy_s.obj
  0001:00010ad8       ??$common_vsprintf@Vformat_validation_base@__crt_stdio_output@@_W@@YAH_KQA_WIQB_WQAU__crt_locale_pointers@@QAD@Z 10011ad8 f   libucrt:output.obj
  0001:00010c5f       ??$common_vsprintf_s@_W@@YAH_KQA_WIQB_WQAU__crt_locale_pointers@@QAD@Z 10011c5f f   libucrt:output.obj
@@ -2836,11 +2843,11 @@
  0001:0001e1a0       $$000000                   1001f1a0     libvcruntime:strrchr.obj
  0001:0001e2e0       $$000000                   1001f2e0     libvcruntime:strchr.obj
  0001:0001e483       __ehhandler$??2@YAPAXIABUnothrow_t@std@@@Z 1001f483 f   LIBCMT:new_scalar_nothrow.obj
- 0001:0001e49e       __ehhandler$?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z 1001f49e f   libvcruntime:frame.obj
- 0001:0001e4b9       ??__F_AtlComModule@ATL@@YAXXZ 1001f4b9 f   OposVariant.obj
- 0001:0001e4c3       ??__F_AtlWinModule@ATL@@YAXXZ 1001f4c3 f   OposVariant.obj
- 0001:0001e4dd       ??__F_Module@@YAXXZ        1001f4dd f   BumpBar.obj
- 0001:0001e4f1       ??__F_AtlBaseModule@ATL@@YAXXZ 1001f4f1 f   atls:atlbase.obj
+ 0001:0001e4a0       __ehhandler$?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z 1001f4a0 f   libvcruntime:frame.obj
+ 0001:0001e4bd       ??__F_AtlComModule@ATL@@YAXXZ 1001f4bd f   OposVariant.obj
+ 0001:0001e4c7       ??__F_AtlWinModule@ATL@@YAXXZ 1001f4c7 f   OposVariant.obj
+ 0001:0001e4e1       ??__F_Module@@YAXXZ        1001f4e1 f   BumpBar.obj
+ 0001:0001e4f5       ??__F_AtlBaseModule@ATL@@YAXXZ 1001f4f5 f   atls:atlbase.obj
  0002:00000304       ?_AtlBaseModule$initializer$@ATL@@3P6AXXZA 10020304     atls:atlbase.obj
  0002:00000308       ?_AtlComModule$initializer$@ATL@@3P6AXXZA 10020308     OposVariant.obj
  0002:0000030c       ?_AtlWinModule$initializer$@ATL@@3P6AXXZA 1002030c     OposVariant.obj
@@ -2853,12 +2860,12 @@
  0002:00001d30       ?rttiTable@@3QBUStringLiteral@@B 10021d30     libvcruntime:undname.obj
  0002:00001d58       ?IndirectionName@@3QBUStringLiteral@@B 10021d58     libvcruntime:undname.obj
  0002:00001d88       ?PrefixName@@3QBUStringLiteral@@B 10021d88     libvcruntime:undname.obj
- 0002:000023b8       ?module_names@?A0x9d0f8d90@@3QBQB_WB 100223b8     libvcruntime:winapi_downlevel.obj
- 0002:00002460       ?candidate_modules@?1??try_get_FlsAlloc@@YAP6GKP6GXPAX@Z@ZXZ@4QBW4module_id@?A0x9d0f8d90@@B 10022460     libvcruntime:winapi_downlevel.obj
- 0002:00002474       ?candidate_modules@?1??try_get_FlsFree@@YAP6GHK@ZXZ@4QBW4module_id@?A0x9d0f8d90@@B 10022474     libvcruntime:winapi_downlevel.obj
- 0002:00002484       ?candidate_modules@?1??try_get_FlsGetValue@@YAP6GPAXK@ZXZ@4QBW4module_id@?A0x9d0f8d90@@B 10022484     libvcruntime:winapi_downlevel.obj
- 0002:00002498       ?candidate_modules@?1??try_get_FlsSetValue@@YAP6GHKPAX@ZXZ@4QBW4module_id@?A0x9d0f8d90@@B 10022498     libvcruntime:winapi_downlevel.obj
- 0002:000024ac       ?candidate_modules@?1??try_get_InitializeCriticalSectionEx@@YAP6GHPAU_RTL_CRITICAL_SECTION@@KK@ZXZ@4QBW4module_id@?A0x9d0f8d90@@B 100224ac     libvcruntime:winapi_downlevel.obj
+ 0002:000023b8       ?module_names@?A0xb97aeec8@@3QBQB_WB 100223b8     libvcruntime:winapi_downlevel.obj
+ 0002:00002460       ?candidate_modules@?1??try_get_FlsAlloc@@YAP6GKP6GXPAX@Z@ZXZ@4QBW4module_id@?A0xb97aeec8@@B 10022460     libvcruntime:winapi_downlevel.obj
+ 0002:00002474       ?candidate_modules@?1??try_get_FlsFree@@YAP6GHK@ZXZ@4QBW4module_id@?A0xb97aeec8@@B 10022474     libvcruntime:winapi_downlevel.obj
+ 0002:00002484       ?candidate_modules@?1??try_get_FlsGetValue@@YAP6GPAXK@ZXZ@4QBW4module_id@?A0xb97aeec8@@B 10022484     libvcruntime:winapi_downlevel.obj
+ 0002:00002498       ?candidate_modules@?1??try_get_FlsSetValue@@YAP6GHKPAX@ZXZ@4QBW4module_id@?A0xb97aeec8@@B 10022498     libvcruntime:winapi_downlevel.obj
+ 0002:000024ac       ?candidate_modules@?1??try_get_InitializeCriticalSectionEx@@YAP6GHPAU_RTL_CRITICAL_SECTION@@KK@ZXZ@4QBW4module_id@?A0xb97aeec8@@B 100224ac     libvcruntime:winapi_downlevel.obj
  0002:000024d0       ?errtable@@3QBUerrentry@?A0x31fdb9ec@@B 100224d0     libucrt:errno.obj
  0002:00002b18       ___acrt_initializers       10022b18     libucrt:initialization.obj
  0002:00002b98       ?module_names@?A0x391cf84c@@3QBQB_WB 10022b98     libucrt:winapi_thunks.obj
@@ -2913,66 +2920,66 @@
  0002:00007530       two32                      10027530     LIBCMT:ftol2.obj
  0002:00007534       two63                      10027534     LIBCMT:ftol2.obj
  0002:00007538       _NaN                       10027538     LIBCMT:ftol2.obj
- 0002:00007bf0       __sehtable$?_AtlVerifyStackAvailable@_ATL_SAFE_ALLOCA_IMPL@ATL@@YA_NK@Z 10027bf0     BumpBar.obj
- 0002:00007c10       __sehtable$___scrt_is_nonwritable_in_current_image 10027c10     LIBCMT:utility.obj
- 0002:00007c2c       __catchsym$??2@YAPAXIABUnothrow_t@std@@@Z$2 10027c2c     LIBCMT:new_scalar_nothrow.obj
- 0002:00007c3c       __unwindtable$??2@YAPAXIABUnothrow_t@std@@@Z 10027c3c     LIBCMT:new_scalar_nothrow.obj
- 0002:00007c4c       __tryblocktable$??2@YAPAXIABUnothrow_t@std@@@Z 10027c4c     LIBCMT:new_scalar_nothrow.obj
- 0002:00007c60       __ehfuncinfo$??2@YAPAXIABUnothrow_t@std@@@Z 10027c60     LIBCMT:new_scalar_nothrow.obj
- 0002:00007c88       __sehtable$?dllmain_crt_process_attach@@YAHQAUHINSTANCE__@@QAX@Z 10027c88     LIBCMT:dll_dllmain.obj
- 0002:00007ca8       __sehtable$?dllmain_crt_process_detach@@YAH_N@Z 10027ca8     LIBCMT:dll_dllmain.obj
- 0002:00007cd0       __sehtable$?dllmain_dispatch@@YAHQAUHINSTANCE__@@KQAX@Z 10027cd0     LIBCMT:dll_dllmain.obj
- 0002:00007d80       __sehtable$___DestructExceptionObject 10027d80     libvcruntime:ehhelpers.obj
- 0002:00007da0       __sehtable$?FrameUnwindToState@__FrameHandler3@@SAXPAUEHRegistrationNode@@PAXPBU_s_FuncInfo@@H@Z 10027da0     libvcruntime:frame.obj
- 0002:00007dc8       __sehtable$?CallCatchBlock@@YAPAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PBU_s_FuncInfo@@PAXHK@Z 10027dc8     libvcruntime:frame.obj
- 0002:00007df0       __catchsym$?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z$2 10027df0     libvcruntime:frame.obj
- 0002:00007e00       __unwindtable$?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z 10027e00     libvcruntime:frame.obj
- 0002:00007e10       __tryblocktable$?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z 10027e10     libvcruntime:frame.obj
- 0002:00007e24       __ehfuncinfo$?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z 10027e24     libvcruntime:frame.obj
- 0002:00007e48       __sehtable$??$BuildCatchObjectHelperInternal@V__FrameHandler3@@@@YAHPAUEHExceptionRecord@@PAXPBU_s_HandlerType@@PBU_s_CatchableType@@@Z 10027e48     libvcruntime:frame.obj
- 0002:00007e68       __sehtable$??$BuildCatchObjectInternal@V__FrameHandler3@@@@YAXPAUEHExceptionRecord@@PAXPBU_s_HandlerType@@PBU_s_CatchableType@@@Z 10027e68     libvcruntime:frame.obj
- 0002:00007ec0       __sehtable$??R<lambda_6e4b09c48022b2350581041d5f6b0c4c>@@QBE@XZ 10027ec0     libucrt:exit.obj
- 0002:00007ee0       __sehtable$??$?RV<lambda_03b1d95aef87969028cfba75ccab2455>@@AAV<lambda_6e4b09c48022b2350581041d5f6b0c4c>@@V<lambda_22bdf7517842c4b3e53723af5aa32b9e>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_03b1d95aef87969028cfba75ccab2455>@@AAV<lambda_6e4b09c48022b2350581041d5f6b0c4c>@@$$QAV<lambda_22bdf7517842c4b3e53723af5aa32b9e>@@@Z 10027ee0     libucrt:exit.obj
- 0002:00007f00       __sehtable$??$?RV<lambda_8e746cf0007f6ed984d6f78af1fec997>@@AAV<lambda_22ebabd17bc4fa466a2aca6d8deb888d>@@V<lambda_18ed0c0b38a6dc0daf1e7ac6d6adf05e>@@@?$__crt_seh_guarded_call@H@@QAEH$$QAV<lambda_8e746cf0007f6ed984d6f78af1fec997>@@AAV<lambda_22ebabd17bc4fa466a2aca6d8deb888d>@@$$QAV<lambda_18ed0c0b38a6dc0daf1e7ac6d6adf05e>@@@Z 10027f00     libucrt:onexit.obj
- 0002:00007f20       __sehtable$??$?RV<lambda_69a2805e680e0e292e8ba93315fe43a8>@@AAV<lambda_f03950bc5685219e0bcd2087efbe011e>@@V<lambda_03fcd07e894ec930e3f35da366ca99d6>@@@?$__crt_seh_guarded_call@H@@QAEH$$QAV<lambda_69a2805e680e0e292e8ba93315fe43a8>@@AAV<lambda_f03950bc5685219e0bcd2087efbe011e>@@$$QAV<lambda_03fcd07e894ec930e3f35da366ca99d6>@@@Z 10027f20     libucrt:onexit.obj
- 0002:00007f40       __sehtable$__query_new_handler 10027f40     libucrt:new_handler.obj
- 0002:00007f60       __sehtable$_terminate      10027f60     libucrt:terminate.obj
- 0002:00007f80       __sehtable$??$?RV<lambda_15ade71b0218206bbe3333a0c9b79046>@@AAV<lambda_da44e0f8b0f19ba52fefafb335991732>@@V<lambda_207f2d024fc103971653565357d6cd41>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_15ade71b0218206bbe3333a0c9b79046>@@AAV<lambda_da44e0f8b0f19ba52fefafb335991732>@@$$QAV<lambda_207f2d024fc103971653565357d6cd41>@@@Z 10027f80     libucrt:per_thread_data.obj
- 0002:00007fa0       __sehtable$??$?RV<lambda_a7e850c220f1c8d1e6efeecdedd162c6>@@AAV<lambda_46720907175c18b6c9d2717bc0d2d362>@@V<lambda_9048902d66e8d99359bc9897bbb930a8>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_a7e850c220f1c8d1e6efeecdedd162c6>@@AAV<lambda_46720907175c18b6c9d2717bc0d2d362>@@$$QAV<lambda_9048902d66e8d99359bc9897bbb930a8>@@@Z 10027fa0     libucrt:per_thread_data.obj
- 0002:00007fc0       __sehtable$??$?RV<lambda_38edbb1296d33220d7e4dd0ed76b244a>@@AAV<lambda_5ce1d447e08cb34b2473517608e21441>@@V<lambda_fb385d3da700c9147fc39e65dd577a8c>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_38edbb1296d33220d7e4dd0ed76b244a>@@AAV<lambda_5ce1d447e08cb34b2473517608e21441>@@$$QAV<lambda_fb385d3da700c9147fc39e65dd577a8c>@@@Z 10027fc0     libucrt:per_thread_data.obj
- 0002:00007fe0       __sehtable$??$?RV<lambda_6affb1475c98b40b75cdec977db92e3c>@@AAV<lambda_b8d4b9c228a6ecc3f80208dbb4b4a104>@@V<lambda_608742c3c92a14382c1684fc64f96c88>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_6affb1475c98b40b75cdec977db92e3c>@@AAV<lambda_b8d4b9c228a6ecc3f80208dbb4b4a104>@@$$QAV<lambda_608742c3c92a14382c1684fc64f96c88>@@@Z 10027fe0     libucrt:per_thread_data.obj
- 0002:00008000       __sehtable$??$?RV<lambda_e5124f882df8998aaf41531e079ba474>@@AAV<lambda_3e16ef9562a7dcce91392c22ab16ea36>@@V<lambda_e25ca0880e6ef98be67edffd8c599615>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_e5124f882df8998aaf41531e079ba474>@@AAV<lambda_3e16ef9562a7dcce91392c22ab16ea36>@@$$QAV<lambda_e25ca0880e6ef98be67edffd8c599615>@@@Z 10028000     libucrt:wsetlocale.obj
- 0002:00008020       __sehtable$___acrt_initialize_lowio 10028020     libucrt:ioinit.obj
- 0002:00008040       __sehtable$?update_thread_multibyte_data_internal@@YAPAU__crt_multibyte_data@@QAU__acrt_ptd@@QAPAU1@@Z 10028040     libucrt:mbctype.obj
- 0002:00008060       __sehtable$??$?RV<lambda_ceb1ee4838e85a9d631eb091e2fbe199>@@AAV<lambda_ae742caa10f662c28703da3d2ea5e57e>@@V<lambda_cd08b5d6af4937fe54fc07d0c9bf6b37>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_ceb1ee4838e85a9d631eb091e2fbe199>@@AAV<lambda_ae742caa10f662c28703da3d2ea5e57e>@@$$QAV<lambda_cd08b5d6af4937fe54fc07d0c9bf6b37>@@@Z 10028060     libucrt:mbctype.obj
- 0002:00008080       __sehtable$_raise          10028080     libucrt:signal.obj
- 0002:000080a0       __sehtable$??$?RV<lambda_cbab9ec6f41b0180b23cc171c22676b0>@@AAV<lambda_44731a7d0e6d81c3e6aa82d741081786>@@V<lambda_4b292cb8dd18144e164572427af410ab>@@@?$__crt_seh_guarded_call@P6AXH@Z@@QAEP6AXH@Z$$QAV<lambda_cbab9ec6f41b0180b23cc171c22676b0>@@AAV<lambda_44731a7d0e6d81c3e6aa82d741081786>@@$$QAV<lambda_4b292cb8dd18144e164572427af410ab>@@@Z 100280a0     libucrt:signal.obj
- 0002:000080c0       __sehtable$??$?RV<lambda_2866be3712abc81a800a822484c830d8>@@AAV<lambda_39ca0ed439415581b5b15c265174cece>@@V<lambda_2b24c74d71094a6cd0cb82e44167d71b>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_2866be3712abc81a800a822484c830d8>@@AAV<lambda_39ca0ed439415581b5b15c265174cece>@@$$QAV<lambda_2b24c74d71094a6cd0cb82e44167d71b>@@@Z 100280c0     libucrt:fflush.obj
- 0002:000080e0       __sehtable$??$?RV<lambda_2cc53f568c5a2bb6f192f930a45d44ea>@@AAV<lambda_ab61a845afdef5b7c387490eaf3616ee>@@V<lambda_c2ffc0b7726aa6be21d5f0026187e748>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_2cc53f568c5a2bb6f192f930a45d44ea>@@AAV<lambda_ab61a845afdef5b7c387490eaf3616ee>@@$$QAV<lambda_c2ffc0b7726aa6be21d5f0026187e748>@@@Z 100280e0     libucrt:fflush.obj
- 0002:00008100       __sehtable$___acrt_update_thread_locale_data 10028100     libucrt:locale_refcounting.obj
- 0002:00008120       __sehtable$__fcloseall     10028120     libucrt:closeall.obj
- 0002:00008140       __sehtable$___acrt_lowio_ensure_fh_exists 10028140     libucrt:osfinfo.obj
- 0002:00008160       __sehtable$??$?RV<lambda_9e9de3de5fa147e2223d7db92bc10aa6>@@AAV<lambda_38ce7e780aa69e748d6df282ebc68efe>@@V<lambda_8ca6da459f0f6780f1cff60fdc3d00e5>@@@?$__crt_seh_guarded_call@H@@QAEH$$QAV<lambda_9e9de3de5fa147e2223d7db92bc10aa6>@@AAV<lambda_38ce7e780aa69e748d6df282ebc68efe>@@$$QAV<lambda_8ca6da459f0f6780f1cff60fdc3d00e5>@@@Z 10028160     libucrt:commit.obj
- 0002:00008180       __sehtable$__write         10028180     libucrt:write.obj
- 0002:000081a0       __sehtable$_fclose         100281a0     libucrt:fclose.obj
- 0002:000081c0       __sehtable$??$?RV<lambda_218ce3db14220d0be481dae8ef3383b6>@@AAV<lambda_628dfdc04ba53c8bfc02c9951375f3f5>@@V<lambda_57dc472bd5c9d5f3b2cbca59b8a843ae>@@@?$__crt_seh_guarded_call@H@@QAEH$$QAV<lambda_218ce3db14220d0be481dae8ef3383b6>@@AAV<lambda_628dfdc04ba53c8bfc02c9951375f3f5>@@$$QAV<lambda_57dc472bd5c9d5f3b2cbca59b8a843ae>@@@Z 100281c0     libucrt:close.obj
- 0002:000081e0       __sehtable$___set_fpsr_sse2 100281e0     libucrt:fpctrl.obj
- 0002:00008200       __sehtable$__IsNonwritableInCurrentImage 10028200     LIBCMT:pesect.obj
- 0002:00008230       .edata                     10028230     OPOSBumpBar.exp
- 0002:00008258       rgpv                       10028258     OPOSBumpBar.exp
- 0002:00008268       rgszName                   10028268     OPOSBumpBar.exp
- 0002:00008278       rgwOrd                     10028278     OPOSBumpBar.exp
- 0002:00008280       szName                     10028280     OPOSBumpBar.exp
- 0002:00008290       $N00001                    10028290     OPOSBumpBar.exp
- 0002:000082a0       $N00002                    100282a0     OPOSBumpBar.exp
- 0002:000082b2       $N00003                    100282b2     OPOSBumpBar.exp
- 0002:000082c4       $N00004                    100282c4     OPOSBumpBar.exp
- 0002:000088d2       .idata$6                   100288d2     kernel32:KERNEL32.dll
- 0002:00008ae6       .idata$6                   10028ae6     user32:USER32.dll
- 0002:00008c1a       .idata$6                   10028c1a     gdi32:GDI32.dll
- 0002:00008cc0       .idata$6                   10028cc0     advapi32:ADVAPI32.dll
- 0002:00008ddc       .idata$6                   10028ddc     ole32:ole32.dll
- 0002:00008de6       .idata$6                   10028de6     oleaut32:OLEAUT32.dll
+ 0002:00007c28       __sehtable$?_AtlVerifyStackAvailable@_ATL_SAFE_ALLOCA_IMPL@ATL@@YA_NK@Z 10027c28     BumpBar.obj
+ 0002:00007c48       __sehtable$___scrt_is_nonwritable_in_current_image 10027c48     LIBCMT:utility.obj
+ 0002:00007c64       __catchsym$??2@YAPAXIABUnothrow_t@std@@@Z$2 10027c64     LIBCMT:new_scalar_nothrow.obj
+ 0002:00007c74       __unwindtable$??2@YAPAXIABUnothrow_t@std@@@Z 10027c74     LIBCMT:new_scalar_nothrow.obj
+ 0002:00007c84       __tryblocktable$??2@YAPAXIABUnothrow_t@std@@@Z 10027c84     LIBCMT:new_scalar_nothrow.obj
+ 0002:00007c98       __ehfuncinfo$??2@YAPAXIABUnothrow_t@std@@@Z 10027c98     LIBCMT:new_scalar_nothrow.obj
+ 0002:00007cc0       __sehtable$?dllmain_crt_process_attach@@YAHQAUHINSTANCE__@@QAX@Z 10027cc0     LIBCMT:dll_dllmain.obj
+ 0002:00007ce0       __sehtable$?dllmain_crt_process_detach@@YAH_N@Z 10027ce0     LIBCMT:dll_dllmain.obj
+ 0002:00007d08       __sehtable$?dllmain_dispatch@@YAHQAUHINSTANCE__@@KQAX@Z 10027d08     LIBCMT:dll_dllmain.obj
+ 0002:00007db8       __sehtable$___DestructExceptionObject 10027db8     libvcruntime:ehhelpers.obj
+ 0002:00007dd8       __sehtable$?FrameUnwindToState@__FrameHandler3@@SAXPAUEHRegistrationNode@@PAXPBU_s_FuncInfo@@H@Z 10027dd8     libvcruntime:frame.obj
+ 0002:00007e00       __sehtable$?CallCatchBlock@@YAPAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PBU_s_FuncInfo@@PAXHK@Z 10027e00     libvcruntime:frame.obj
+ 0002:00007e28       __catchsym$?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z$2 10027e28     libvcruntime:frame.obj
+ 0002:00007e38       __unwindtable$?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z 10027e38     libvcruntime:frame.obj
+ 0002:00007e48       __tryblocktable$?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z 10027e48     libvcruntime:frame.obj
+ 0002:00007e5c       __ehfuncinfo$?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z 10027e5c     libvcruntime:frame.obj
+ 0002:00007e80       __sehtable$??$BuildCatchObjectHelperInternal@V__FrameHandler3@@@@YAHPAUEHExceptionRecord@@PAXPBU_s_HandlerType@@PBU_s_CatchableType@@@Z 10027e80     libvcruntime:frame.obj
+ 0002:00007ea0       __sehtable$??$BuildCatchObjectInternal@V__FrameHandler3@@@@YAXPAUEHExceptionRecord@@PAXPBU_s_HandlerType@@PBU_s_CatchableType@@@Z 10027ea0     libvcruntime:frame.obj
+ 0002:00007ef8       __sehtable$??R<lambda_6e4b09c48022b2350581041d5f6b0c4c>@@QBE@XZ 10027ef8     libucrt:exit.obj
+ 0002:00007f18       __sehtable$??$?RV<lambda_03b1d95aef87969028cfba75ccab2455>@@AAV<lambda_6e4b09c48022b2350581041d5f6b0c4c>@@V<lambda_22bdf7517842c4b3e53723af5aa32b9e>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_03b1d95aef87969028cfba75ccab2455>@@AAV<lambda_6e4b09c48022b2350581041d5f6b0c4c>@@$$QAV<lambda_22bdf7517842c4b3e53723af5aa32b9e>@@@Z 10027f18     libucrt:exit.obj
+ 0002:00007f38       __sehtable$??$?RV<lambda_8e746cf0007f6ed984d6f78af1fec997>@@AAV<lambda_22ebabd17bc4fa466a2aca6d8deb888d>@@V<lambda_18ed0c0b38a6dc0daf1e7ac6d6adf05e>@@@?$__crt_seh_guarded_call@H@@QAEH$$QAV<lambda_8e746cf0007f6ed984d6f78af1fec997>@@AAV<lambda_22ebabd17bc4fa466a2aca6d8deb888d>@@$$QAV<lambda_18ed0c0b38a6dc0daf1e7ac6d6adf05e>@@@Z 10027f38     libucrt:onexit.obj
+ 0002:00007f58       __sehtable$??$?RV<lambda_69a2805e680e0e292e8ba93315fe43a8>@@AAV<lambda_f03950bc5685219e0bcd2087efbe011e>@@V<lambda_03fcd07e894ec930e3f35da366ca99d6>@@@?$__crt_seh_guarded_call@H@@QAEH$$QAV<lambda_69a2805e680e0e292e8ba93315fe43a8>@@AAV<lambda_f03950bc5685219e0bcd2087efbe011e>@@$$QAV<lambda_03fcd07e894ec930e3f35da366ca99d6>@@@Z 10027f58     libucrt:onexit.obj
+ 0002:00007f78       __sehtable$__query_new_handler 10027f78     libucrt:new_handler.obj
+ 0002:00007f98       __sehtable$_terminate      10027f98     libucrt:terminate.obj
+ 0002:00007fb8       __sehtable$??$?RV<lambda_15ade71b0218206bbe3333a0c9b79046>@@AAV<lambda_da44e0f8b0f19ba52fefafb335991732>@@V<lambda_207f2d024fc103971653565357d6cd41>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_15ade71b0218206bbe3333a0c9b79046>@@AAV<lambda_da44e0f8b0f19ba52fefafb335991732>@@$$QAV<lambda_207f2d024fc103971653565357d6cd41>@@@Z 10027fb8     libucrt:per_thread_data.obj
+ 0002:00007fd8       __sehtable$??$?RV<lambda_a7e850c220f1c8d1e6efeecdedd162c6>@@AAV<lambda_46720907175c18b6c9d2717bc0d2d362>@@V<lambda_9048902d66e8d99359bc9897bbb930a8>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_a7e850c220f1c8d1e6efeecdedd162c6>@@AAV<lambda_46720907175c18b6c9d2717bc0d2d362>@@$$QAV<lambda_9048902d66e8d99359bc9897bbb930a8>@@@Z 10027fd8     libucrt:per_thread_data.obj
+ 0002:00007ff8       __sehtable$??$?RV<lambda_38edbb1296d33220d7e4dd0ed76b244a>@@AAV<lambda_5ce1d447e08cb34b2473517608e21441>@@V<lambda_fb385d3da700c9147fc39e65dd577a8c>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_38edbb1296d33220d7e4dd0ed76b244a>@@AAV<lambda_5ce1d447e08cb34b2473517608e21441>@@$$QAV<lambda_fb385d3da700c9147fc39e65dd577a8c>@@@Z 10027ff8     libucrt:per_thread_data.obj
+ 0002:00008018       __sehtable$??$?RV<lambda_6affb1475c98b40b75cdec977db92e3c>@@AAV<lambda_b8d4b9c228a6ecc3f80208dbb4b4a104>@@V<lambda_608742c3c92a14382c1684fc64f96c88>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_6affb1475c98b40b75cdec977db92e3c>@@AAV<lambda_b8d4b9c228a6ecc3f80208dbb4b4a104>@@$$QAV<lambda_608742c3c92a14382c1684fc64f96c88>@@@Z 10028018     libucrt:per_thread_data.obj
+ 0002:00008038       __sehtable$??$?RV<lambda_e5124f882df8998aaf41531e079ba474>@@AAV<lambda_3e16ef9562a7dcce91392c22ab16ea36>@@V<lambda_e25ca0880e6ef98be67edffd8c599615>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_e5124f882df8998aaf41531e079ba474>@@AAV<lambda_3e16ef9562a7dcce91392c22ab16ea36>@@$$QAV<lambda_e25ca0880e6ef98be67edffd8c599615>@@@Z 10028038     libucrt:wsetlocale.obj
+ 0002:00008058       __sehtable$___acrt_initialize_lowio 10028058     libucrt:ioinit.obj
+ 0002:00008078       __sehtable$?update_thread_multibyte_data_internal@@YAPAU__crt_multibyte_data@@QAU__acrt_ptd@@QAPAU1@@Z 10028078     libucrt:mbctype.obj
+ 0002:00008098       __sehtable$??$?RV<lambda_ceb1ee4838e85a9d631eb091e2fbe199>@@AAV<lambda_ae742caa10f662c28703da3d2ea5e57e>@@V<lambda_cd08b5d6af4937fe54fc07d0c9bf6b37>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_ceb1ee4838e85a9d631eb091e2fbe199>@@AAV<lambda_ae742caa10f662c28703da3d2ea5e57e>@@$$QAV<lambda_cd08b5d6af4937fe54fc07d0c9bf6b37>@@@Z 10028098     libucrt:mbctype.obj
+ 0002:000080b8       __sehtable$_raise          100280b8     libucrt:signal.obj
+ 0002:000080d8       __sehtable$??$?RV<lambda_cbab9ec6f41b0180b23cc171c22676b0>@@AAV<lambda_44731a7d0e6d81c3e6aa82d741081786>@@V<lambda_4b292cb8dd18144e164572427af410ab>@@@?$__crt_seh_guarded_call@P6AXH@Z@@QAEP6AXH@Z$$QAV<lambda_cbab9ec6f41b0180b23cc171c22676b0>@@AAV<lambda_44731a7d0e6d81c3e6aa82d741081786>@@$$QAV<lambda_4b292cb8dd18144e164572427af410ab>@@@Z 100280d8     libucrt:signal.obj
+ 0002:000080f8       __sehtable$??$?RV<lambda_2866be3712abc81a800a822484c830d8>@@AAV<lambda_39ca0ed439415581b5b15c265174cece>@@V<lambda_2b24c74d71094a6cd0cb82e44167d71b>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_2866be3712abc81a800a822484c830d8>@@AAV<lambda_39ca0ed439415581b5b15c265174cece>@@$$QAV<lambda_2b24c74d71094a6cd0cb82e44167d71b>@@@Z 100280f8     libucrt:fflush.obj
+ 0002:00008118       __sehtable$??$?RV<lambda_2cc53f568c5a2bb6f192f930a45d44ea>@@AAV<lambda_ab61a845afdef5b7c387490eaf3616ee>@@V<lambda_c2ffc0b7726aa6be21d5f0026187e748>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_2cc53f568c5a2bb6f192f930a45d44ea>@@AAV<lambda_ab61a845afdef5b7c387490eaf3616ee>@@$$QAV<lambda_c2ffc0b7726aa6be21d5f0026187e748>@@@Z 10028118     libucrt:fflush.obj
+ 0002:00008138       __sehtable$___acrt_update_thread_locale_data 10028138     libucrt:locale_refcounting.obj
+ 0002:00008158       __sehtable$__fcloseall     10028158     libucrt:closeall.obj
+ 0002:00008178       __sehtable$___acrt_lowio_ensure_fh_exists 10028178     libucrt:osfinfo.obj
+ 0002:00008198       __sehtable$??$?RV<lambda_9e9de3de5fa147e2223d7db92bc10aa6>@@AAV<lambda_38ce7e780aa69e748d6df282ebc68efe>@@V<lambda_8ca6da459f0f6780f1cff60fdc3d00e5>@@@?$__crt_seh_guarded_call@H@@QAEH$$QAV<lambda_9e9de3de5fa147e2223d7db92bc10aa6>@@AAV<lambda_38ce7e780aa69e748d6df282ebc68efe>@@$$QAV<lambda_8ca6da459f0f6780f1cff60fdc3d00e5>@@@Z 10028198     libucrt:commit.obj
+ 0002:000081b8       __sehtable$__write         100281b8     libucrt:write.obj
+ 0002:000081d8       __sehtable$_fclose         100281d8     libucrt:fclose.obj
+ 0002:000081f8       __sehtable$??$?RV<lambda_218ce3db14220d0be481dae8ef3383b6>@@AAV<lambda_628dfdc04ba53c8bfc02c9951375f3f5>@@V<lambda_57dc472bd5c9d5f3b2cbca59b8a843ae>@@@?$__crt_seh_guarded_call@H@@QAEH$$QAV<lambda_218ce3db14220d0be481dae8ef3383b6>@@AAV<lambda_628dfdc04ba53c8bfc02c9951375f3f5>@@$$QAV<lambda_57dc472bd5c9d5f3b2cbca59b8a843ae>@@@Z 100281f8     libucrt:close.obj
+ 0002:00008218       __sehtable$___set_fpsr_sse2 10028218     libucrt:fpctrl.obj
+ 0002:00008238       __sehtable$__IsNonwritableInCurrentImage 10028238     LIBCMT:pesect.obj
+ 0002:00008260       .edata                     10028260     OPOSBumpBar.exp
+ 0002:00008288       rgpv                       10028288     OPOSBumpBar.exp
+ 0002:00008298       rgszName                   10028298     OPOSBumpBar.exp
+ 0002:000082a8       rgwOrd                     100282a8     OPOSBumpBar.exp
+ 0002:000082b0       szName                     100282b0     OPOSBumpBar.exp
+ 0002:000082c0       $N00001                    100282c0     OPOSBumpBar.exp
+ 0002:000082d0       $N00002                    100282d0     OPOSBumpBar.exp
+ 0002:000082e2       $N00003                    100282e2     OPOSBumpBar.exp
+ 0002:000082f4       $N00004                    100282f4     OPOSBumpBar.exp
+ 0002:00008902       .idata$6                   10028902     kernel32:KERNEL32.dll
+ 0002:00008b16       .idata$6                   10028b16     user32:USER32.dll
+ 0002:00008c4a       .idata$6                   10028c4a     gdi32:GDI32.dll
+ 0002:00008cf0       .idata$6                   10028cf0     advapi32:ADVAPI32.dll
+ 0002:00008e0c       .idata$6                   10028e0c     ole32:ole32.dll
+ 0002:00008e16       .idata$6                   10028e16     oleaut32:OLEAUT32.dll
  0003:00000110       ?ObjectMap@@3PAU_ATL_OBJMAP_ENTRY30@ATL@@A 1002a110     BumpBar.obj
  0003:000001c4       ?s_RequiredMethodsPerRelease@@3PAHA 1002a1c4     BumpBarImpl.obj
  0003:000001e0       ?s_SOMethodNames@@3PAPADA  1002a1e0     BumpBarImpl.obj
@@ -2998,39 +3005,39 @@
  0003:00000c60       _GS_ExceptionRecord        1002ac60     LIBCMT:gs_report.obj
  0003:00000cb0       _GS_ContextRecord          1002acb0     LIBCMT:gs_report.obj
  0003:00000f80       ?__proc_attached@@3HA      1002af80     LIBCMT:dll_dllmain.obj
- 0003:00000fdc       ?AllocateData@@3P6GPAUAtlThunkData_t@@XZA 1002afdc     atls:atlthunk.obj
- 0003:00000fe0       ?InitData@@3P6GXPAUAtlThunkData_t@@PAXI@ZA 1002afe0     atls:atlthunk.obj
- 0003:00000fe4       ?DataToCode@@3P6GP6GJPAUHWND__@@IIJ@ZPAUAtlThunkData_t@@@ZA 1002afe4     atls:atlthunk.obj
- 0003:00000fe8       ?FreeData@@3P6GXPAUAtlThunkData_t@@@ZA 1002afe8     atls:atlthunk.obj
- 0003:00000fec       ?Initialized@@3_NA         1002afec     atls:atlthunk.obj
- 0003:00000ffc       ?__vcrt_startup_thread_ptd@@3U__vcrt_ptd@@A 1002affc     libvcruntime:per_thread_data.obj
- 0003:00001024       ___vcrt_lock_table         1002b024     libvcruntime:locks.obj
- 0003:0000103c       ___vcrt_locks_initialized  1002b03c     libvcruntime:locks.obj
- 0003:00001068       ?heap@@3V_HeapManager@@A   1002b068     libvcruntime:undname.obj
- 0003:0000107c       ?module_handles@@3PAPAUHINSTANCE__@@A 1002b07c     libvcruntime:winapi_downlevel.obj
- 0003:00001088       ?function_pointers@@3PAPAXA 1002b088     libvcruntime:winapi_downlevel.obj
- 0003:0000109c       ?__acrt_invalid_parameter_handler@@3V?$dual_state_global@P6AXPB_W00II@Z@__crt_state_management@@A 1002b09c     libucrt:invalid_parameter.obj
- 0003:000010a0       ?c_termination_complete@@3JA 1002b0a0     libucrt:exit.obj
- 0003:000010a4       ?thread_local_exit_callback_func@@3P6GXPAXK0@ZA 1002b0a4     libucrt:exit.obj
- 0003:000010b0       ?program_name@?1???$common_configure_argv@D@@YAHW4_crt_argv_mode@@@Z@4PADA 1002b0b0     libucrt:argv_parsing.obj
- 0003:000011e0       ?__acrt_new_handler@@3V?$dual_state_global@P6AHI@Z@__crt_state_management@@A 1002b1e0     libucrt:new_handler.obj
- 0003:000011e8       ?module_handles@@3PAPAUHINSTANCE__@@A 1002b1e8     libucrt:winapi_thunks.obj
- 0003:00001238       ?encoded_function_pointers@@3PAPAXA 1002b238     libucrt:winapi_thunks.obj
- 0003:000012c0       ?internal_state@?1??_mbtowc_l@@9@4U_Mbstatet@@A 1002b2c0     libucrt:mbtowc.obj
- 0003:000012d0       ?enable_percent_n@@3IA     1002b2d0     libucrt:printf_count_output.obj
- 0003:000014f0       ?__acrt_lock_table@@3PAU_RTL_CRITICAL_SECTION@@A 1002b4f0     libucrt:locks.obj
- 0003:00001640       ?__acrt_locks_initialized@@3IA 1002b640     libucrt:locks.obj
- 0003:00001650       ?fSystemSet@@3HA           1002b650     libucrt:mbctype.obj
- 0003:00001654       ?initialized@?1??__acrt_initialize_multibyte@@9@4_NA 1002b654     libucrt:mbctype.obj
- 0003:00001674       ?ctrlc_action@@3V?$dual_state_global@P6AXH@Z@__crt_state_management@@A 1002b674     libucrt:signal.obj
- 0003:00001678       ?ctrlbreak_action@@3V?$dual_state_global@P6AXH@Z@__crt_state_management@@A 1002b678     libucrt:signal.obj
- 0003:0000167c       ?abort_action@@3V?$dual_state_global@P6AXH@Z@__crt_state_management@@A 1002b67c     libucrt:signal.obj
- 0003:00001680       ?term_action@@3V?$dual_state_global@P6AXH@Z@__crt_state_management@@A 1002b680     libucrt:signal.obj
- 0003:00001684       ?user_matherr@@3V?$dual_state_global@P6AHPAU_exception@@@Z@__crt_state_management@@A 1002b684     libucrt:matherr.obj
- 0003:00001688       ?__acrt_global_new_mode@@3V?$dual_state_global@J@__crt_state_management@@A 1002b688     libucrt:new_mode.obj
- 0003:00001694       ?internal_pst@?1??__mbrtoc32_utf8@__crt_mbstring@@YAIPA_UPBDIPAU_Mbstatet@@@Z@4U3@A 1002b694     libucrt:mbrtoc32.obj
- 0003:0000169c       ?__acrt_app_type@@3W4_crt_app_type@@A 1002b69c     libucrt:report_runtime_error.obj
- 0003:000016a4       __pmatherr_set             1002b6a4     libucrt:libm_error.obj
+ 0003:00000fe4       ?AllocateData@@3P6GPAUAtlThunkData_t@@XZA 1002afe4     atls:atlthunk.obj
+ 0003:00000fe8       ?InitData@@3P6GXPAUAtlThunkData_t@@PAXI@ZA 1002afe8     atls:atlthunk.obj
+ 0003:00000fec       ?DataToCode@@3P6GP6GJPAUHWND__@@IIJ@ZPAUAtlThunkData_t@@@ZA 1002afec     atls:atlthunk.obj
+ 0003:00000ff0       ?FreeData@@3P6GXPAUAtlThunkData_t@@@ZA 1002aff0     atls:atlthunk.obj
+ 0003:00000ff4       ?Initialized@@3_NA         1002aff4     atls:atlthunk.obj
+ 0003:00001004       ?__vcrt_startup_thread_ptd@@3U__vcrt_ptd@@A 1002b004     libvcruntime:per_thread_data.obj
+ 0003:0000102c       ___vcrt_lock_table         1002b02c     libvcruntime:locks.obj
+ 0003:00001044       ___vcrt_locks_initialized  1002b044     libvcruntime:locks.obj
+ 0003:00001070       ?heap@@3V_HeapManager@@A   1002b070     libvcruntime:undname.obj
+ 0003:00001084       ?module_handles@@3PAPAUHINSTANCE__@@A 1002b084     libvcruntime:winapi_downlevel.obj
+ 0003:00001090       ?function_pointers@@3PAPAXA 1002b090     libvcruntime:winapi_downlevel.obj
+ 0003:000010a4       ?__acrt_invalid_parameter_handler@@3V?$dual_state_global@P6AXPB_W00II@Z@__crt_state_management@@A 1002b0a4     libucrt:invalid_parameter.obj
+ 0003:000010a8       ?c_termination_complete@@3JA 1002b0a8     libucrt:exit.obj
+ 0003:000010ac       ?thread_local_exit_callback_func@@3P6GXPAXK0@ZA 1002b0ac     libucrt:exit.obj
+ 0003:000010b8       ?program_name@?1???$common_configure_argv@D@@YAHW4_crt_argv_mode@@@Z@4PADA 1002b0b8     libucrt:argv_parsing.obj
+ 0003:000011e8       ?__acrt_new_handler@@3V?$dual_state_global@P6AHI@Z@__crt_state_management@@A 1002b1e8     libucrt:new_handler.obj
+ 0003:000011f0       ?module_handles@@3PAPAUHINSTANCE__@@A 1002b1f0     libucrt:winapi_thunks.obj
+ 0003:00001240       ?encoded_function_pointers@@3PAPAXA 1002b240     libucrt:winapi_thunks.obj
+ 0003:000012c8       ?internal_state@?1??_mbtowc_l@@9@4U_Mbstatet@@A 1002b2c8     libucrt:mbtowc.obj
+ 0003:000012d8       ?enable_percent_n@@3IA     1002b2d8     libucrt:printf_count_output.obj
+ 0003:000014f8       ?__acrt_lock_table@@3PAU_RTL_CRITICAL_SECTION@@A 1002b4f8     libucrt:locks.obj
+ 0003:00001648       ?__acrt_locks_initialized@@3IA 1002b648     libucrt:locks.obj
+ 0003:00001658       ?fSystemSet@@3HA           1002b658     libucrt:mbctype.obj
+ 0003:0000165c       ?initialized@?1??__acrt_initialize_multibyte@@9@4_NA 1002b65c     libucrt:mbctype.obj
+ 0003:0000167c       ?ctrlc_action@@3V?$dual_state_global@P6AXH@Z@__crt_state_management@@A 1002b67c     libucrt:signal.obj
+ 0003:00001680       ?ctrlbreak_action@@3V?$dual_state_global@P6AXH@Z@__crt_state_management@@A 1002b680     libucrt:signal.obj
+ 0003:00001684       ?abort_action@@3V?$dual_state_global@P6AXH@Z@__crt_state_management@@A 1002b684     libucrt:signal.obj
+ 0003:00001688       ?term_action@@3V?$dual_state_global@P6AXH@Z@__crt_state_management@@A 1002b688     libucrt:signal.obj
+ 0003:0000168c       ?user_matherr@@3V?$dual_state_global@P6AHPAU_exception@@@Z@__crt_state_management@@A 1002b68c     libucrt:matherr.obj
+ 0003:00001690       ?__acrt_global_new_mode@@3V?$dual_state_global@J@__crt_state_management@@A 1002b690     libucrt:new_mode.obj
+ 0003:0000169c       ?internal_pst@?1??__mbrtoc32_utf8@__crt_mbstring@@YAIPA_UPBDIPAU_Mbstatet@@@Z@4U3@A 1002b69c     libucrt:mbrtoc32.obj
+ 0003:000016a4       ?__acrt_app_type@@3W4_crt_app_type@@A 1002b6a4     libucrt:report_runtime_error.obj
+ 0003:000016ac       __pmatherr_set             1002b6ac     libucrt:libm_error.obj
  0004:00000220       $R000000                   1002c220     BumpBar.res
  0004:00000ba8       $R000988                   1002cba8     BumpBar.res
  0004:00000c90       $R000A70                   1002cc90     BumpBar.res

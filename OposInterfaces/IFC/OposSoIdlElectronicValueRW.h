@@ -77,7 +77,7 @@ dispinterface IOPOSElectronicValueRWSO
 
 [
     uuid(CCBE0331-B81E-11D2-AB74-0040054C3719),
-    helpstring("IOPOSElectronicValueRWSO 1.15 Interface")
+    helpstring("IOPOSElectronicValueRWSO 1.16 Interface")
 ]
 dispinterface IOPOSElectronicValueRWSO_1_15
 {

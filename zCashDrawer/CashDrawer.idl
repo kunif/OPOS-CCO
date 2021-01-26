@@ -10,7 +10,7 @@
 **  2013/09/29 Update license section.
 **  2015/02/07 Update license section.
 **  2015/02/07 Version 1.14.001.
-**  2020/06/01 Version 1.15.000.                                    K. Fukuchi
+**  2021/01/26 Version 1.16.000.                                    K. Fukuchi
 **
 *****************************************************************************
 **
@@ -253,7 +253,7 @@ import "ocidl.idl";
 [
     uuid(CCB90040-B81E-11D2-AB74-0040054C3719),
     version(1.0),
-    helpstring("OPOS CashDrawer Control 1.15.000 [Public, by CRM/MCS, and modified by KF]")
+    helpstring("OPOS CashDrawer Control 1.16.000 [Public, by CRM/MCS, and modified by KF]")
 ]
 library OposCashDrawer_CCO
 {
@@ -282,7 +282,7 @@ library OposCashDrawer_CCO
     //*************************************************************************
     [
         uuid(CCB90042-B81E-11D2-AB74-0040054C3719),
-        helpstring("OPOS CashDrawer Control 1.15.000 [Public, by CRM/MCS, and modified by KF]")
+        helpstring("OPOS CashDrawer Control 1.16.000 [Public, by CRM/MCS, and modified by KF]")
     ]
     coclass OPOSCashDrawer
     {

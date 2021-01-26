@@ -1,0 +1,17 @@
+;****************************************************************************
+;*
+;* SoundPlayer.def -- Linker parameters
+;*
+;*     Date                   Modification                          Author
+;* -----------|----------------------------------------------------|----------
+;*  2021/01/26 Initial Version from similar sources.                K. Fukuchi
+;*
+;****************************************************************************
+
+LIBRARY      "OPOSSoundPlayer.OCX"
+
+EXPORTS
+    DllCanUnloadNow      PRIVATE
+    DllGetClassObject    PRIVATE
+    DllRegisterServer    PRIVATE
+    DllUnregisterServer  PRIVATE

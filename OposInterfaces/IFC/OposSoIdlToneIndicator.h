@@ -4,7 +4,7 @@
 
 [
     uuid(CCBE0200-B81E-11D2-AB74-0040054C3719),
-    helpstring("IOPOSToneIndicatorSO 1.15 Interface")
+    helpstring("IOPOSToneIndicatorSO 1.16 Interface")
 ]
 dispinterface IOPOSToneIndicatorSO
 {

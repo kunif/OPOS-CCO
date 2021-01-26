@@ -1,19 +1,19 @@
 HKCR
 {
-    OPOS.PINPad.1.15 = s 'OPOS PINPad Control 1.15.000 [Public, by CRM/MCS, and modified by KF]'
+    OPOS.PINPad.1.16 = s 'OPOS PINPad Control 1.16.000 [Public, by CRM/MCS, and modified by KF]'
     {
         CLSID = s '{CCB90132-B81E-11D2-AB74-0040054C3719}'
     }
-    OPOS.PINPad = s 'OPOS PINPad Control 1.15.000 [Public, by CRM/MCS, and modified by KF]'
+    OPOS.PINPad = s 'OPOS PINPad Control 1.16.000 [Public, by CRM/MCS, and modified by KF]'
     {
         CLSID = s '{CCB90132-B81E-11D2-AB74-0040054C3719}'
-        CurVer = s 'OPOS.PINPad.1.15'
+        CurVer = s 'OPOS.PINPad.1.16'
     }
     NoRemove CLSID
     {
-        ForceRemove {CCB90132-B81E-11D2-AB74-0040054C3719} = s 'OPOS PINPad Control 1.15.000 [Public, by CRM/MCS, and modified by KF]'
+        ForceRemove {CCB90132-B81E-11D2-AB74-0040054C3719} = s 'OPOS PINPad Control 1.16.000 [Public, by CRM/MCS, and modified by KF]'
         {
-            ProgID = s 'OPOS.PINPad.1.15'
+            ProgID = s 'OPOS.PINPad.1.16'
             VersionIndependentProgID = s 'OPOS.PINPad'
             ForceRemove 'Programmable'
             InprocServer32 = s '%MODULE%'
@@ -29,7 +29,7 @@ HKCR
             }
             'TypeLib' = s '{CCB90130-B81E-11D2-AB74-0040054C3719}'
             'Version' = s '1.0'
-            'BuildInformation' = s 'OPOS 1.15. Build 000; 2020/06/01.'
+            'BuildInformation' = s 'OPOS 1.16. Build 000; 2021/01/26.'
         }
     }
     NoRemove Interface

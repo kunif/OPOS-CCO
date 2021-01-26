@@ -4,7 +4,7 @@
 
 [
     uuid(CCBE0130-B81E-11D2-AB74-0040054C3719),
-    helpstring("IOPOSPINPadSO 1.15 Interface")
+    helpstring("IOPOSPINPadSO 1.16 Interface")
 ]
 dispinterface IOPOSPINPadSO
 {

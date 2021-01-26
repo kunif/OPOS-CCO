@@ -4,7 +4,7 @@
 
 [
     uuid(CCBE0070-B81E-11D2-AB74-0040054C3719),
-    helpstring("IOPOSFiscalPrinterSO 1.15 Interface")
+    helpstring("IOPOSFiscalPrinterSO 1.16 Interface")
 ]
 dispinterface IOPOSFiscalPrinterSO
 {

@@ -1,0 +1,56 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposGctl.hi
+//
+//   Gesture Control header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 2021-01-26 OPOS Release 1.16                                  KF
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSGCTL_HI)
+#define      OPOSGCTL_HI
+
+
+#include "Opos.hi"
+#include "OposGctl.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXGctl_PoseCreationMode                =   1 + PIDX_GCTL+PIDX_NUMBER;
+const LONG PIDXGctl_Storage                         =   2 + PIDX_GCTL+PIDX_NUMBER;
+
+// * Capabilities *
+
+const LONG PIDXGctl_CapMotion                       = 501 + PIDX_GCTL+PIDX_NUMBER;
+const LONG PIDXGctl_CapMotionCreation               = 502 + PIDX_GCTL+PIDX_NUMBER;
+const LONG PIDXGctl_CapPose                         = 503 + PIDX_GCTL+PIDX_NUMBER;
+const LONG PIDXGctl_CapPoseCreation                 = 504 + PIDX_GCTL+PIDX_NUMBER;
+const LONG PIDXGctl_CapStorage                      = 505 + PIDX_GCTL+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXGctl_AutoMode                        =   1 + PIDX_GCTL+PIDX_STRING;
+const LONG PIDXGctl_AutoModeList                    =   2 + PIDX_GCTL+PIDX_STRING;
+const LONG PIDXGctl_JointList                       =   3 + PIDX_GCTL+PIDX_STRING;
+const LONG PIDXGctl_MotionList                      =   4 + PIDX_GCTL+PIDX_STRING;
+const LONG PIDXGctl_PoseList                        =   5 + PIDX_GCTL+PIDX_STRING;
+
+// * Capabilities *
+
+const LONG PIDXGctl_CapAssociatedHardTotalsDevice   = 501 + PIDX_GCTL+PIDX_STRING;
+
+
+#endif          // !defined(OPOSGCTL_HI)

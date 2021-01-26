@@ -4,7 +4,7 @@
 
 [
     uuid(CCBE0160-B81E-11D2-AB74-0040054C3719),
-    helpstring("IOPOSRemoteOrderDisplaySO 1.15 Interface")
+    helpstring("IOPOSRemoteOrderDisplaySO 1.16 Interface")
 ]
 dispinterface IOPOSRemoteOrderDisplaySO
 {

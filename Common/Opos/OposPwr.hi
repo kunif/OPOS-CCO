@@ -15,6 +15,15 @@
 //     CapVariableBatteryCriticallyLowThreshold,
 //     CapVariableBatteryLowThreshold, PowerSource
 //   Remove validation functions.
+// 2021-01-26 OPOS Release 1.16                                  KF
+//   Add the following properties:
+//     CapBatteryCapacityRemainingInSeconds,
+//     CapVariableBatteryCriticallyLowThresholdInSeconds,
+//     CapVariableBatteryLowThresholdInSeconds,
+//     BatteryCapacityRemainingInSeconds,
+//     BatteryCriticallyLowThresholdInSeconds,
+//     BatteryLowThresholdInSeconds,
+//     CapChargeTime, ChargeTime
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -44,6 +53,13 @@ const LONG PIDXPwr_BatteryCriticallyLowThreshold    =   7 + PIDX_PWR+PIDX_NUMBER
 const LONG PIDXPwr_BatteryLowThreshold              =   8 + PIDX_PWR+PIDX_NUMBER;
 const LONG PIDXPwr_PowerSource                      =   9 + PIDX_PWR+PIDX_NUMBER;
 
+//      Added for Release 1.16:
+const LONG PIDXPwr_BatteryCapacityRemainingInSeconds=  10 + PIDX_PWR+PIDX_NUMBER;
+const LONG PIDXPwr_BatteryCriticallyLowThresholdInSeconds
+                                                    =  11 + PIDX_PWR+PIDX_NUMBER;
+const LONG PIDXPwr_BatteryLowThresholdInSeconds     =  12 + PIDX_PWR+PIDX_NUMBER;
+const LONG PIDXPwr_ChargeTime                       =  13 + PIDX_PWR+PIDX_NUMBER;
+
 
 // * Capabilities *
 
@@ -60,6 +76,13 @@ const LONG PIDXPwr_CapStandbyPOS                            = 508 + PIDX_PWR+PID
 const LONG PIDXPwr_CapSuspendPOS                            = 509 + PIDX_PWR+PIDX_NUMBER;
 const LONG PIDXPwr_CapVariableBatteryCriticallyLowThreshold = 510 + PIDX_PWR+PIDX_NUMBER;
 const LONG PIDXPwr_CapVariableBatteryLowThreshold           = 511 + PIDX_PWR+PIDX_NUMBER;
+
+//      Added for Release 1.16:
+const LONG PIDXPwr_CapBatteryCapacityRemainingInSeconds     = 512 + PIDX_PWR+PIDX_NUMBER;
+const LONG PIDXPwr_CapChargeTime                            = 513 + PIDX_PWR+PIDX_NUMBER;
+const LONG PIDXPwr_CapVariableBatteryCriticallyLowThresholdInSeconds
+                                                            = 514 + PIDX_PWR+PIDX_NUMBER;
+const LONG PIDXPwr_CapVariableBatteryLowThresholdInSeconds  = 515 + PIDX_PWR+PIDX_NUMBER;
 
 
 //////////////////////////////////////////////////////////////////////

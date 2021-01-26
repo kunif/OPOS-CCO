@@ -8,6 +8,7 @@
 !!  2004/03/22 1.8.000: Add properties and methods for 1.8.
 !!  2005/04/29 1.9.000: Add properties and methods for 1.9.
 !!  2006/03/15 1.10.000: Add properties and methods for 1.10.
+!!  2021/01/26 1.16.000: Add properties, methods for 1.16.          K. Fukuchi
 !!
 !!***************************************************************************
 
@@ -139,6 +140,15 @@ UUIDEvents      =UUID*
   R  1.5  57 QuickChargeMode(BOOL)
   R  1.5  58 QuickChargeTime(LONG)
   R  1.5  59 UPSChargeState(LONG)
+!     Added in Release 1.16
+  R  1.16 90 BatteryCapacityRemainingInSeconds(LONG)
+  RW 1.16 91 BatteryCriticallyLowThresholdInSeconds(LONG)
+  RW 1.16 92 BatteryLowThresholdInSeconds(LONG)
+  R  1.16 93 CapBatteryCapacityRemainingInSeconds(BOOL)
+  R  1.16 94 CapChargeTime(BOOL)
+  R  1.16 95 CapVariableBatteryCriticallyLowThresholdInSeconds(BOOL)
+  R  1.16 96 CapVariableBatteryLowThresholdInSeconds(BOOL)
+  R  1.16 97 ChargeTime(LONG)
 !
 !> Specific Methods
  M   1.9  71 RestartPOS()

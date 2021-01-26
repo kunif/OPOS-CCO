@@ -7,6 +7,9 @@
 // Modification history
 // -------------------------------------------------------------------
 // 2008-08-30 OPOS Release 1.12                                  CRM
+// 2021-01-26 OPOS Release 1.16                                  KF
+//   Add the following properties:
+//     CapPattern
 //
 //////////////////////////////////////////////////////////////////////
 
@@ -31,6 +34,9 @@ const LONG PIDXLgt_MaxLights                        =   1 + PIDX_LGT+PIDX_NUMBER
 const LONG PIDXLgt_CapAlarm                         = 501 + PIDX_LGT+PIDX_NUMBER;
 const LONG PIDXLgt_CapBlink                         = 502 + PIDX_LGT+PIDX_NUMBER;
 const LONG PIDXLgt_CapColor                         = 503 + PIDX_LGT+PIDX_NUMBER;
+
+//      Added for Release 1.16:
+const LONG PIDXLgt_CapPattern                       = 504 + PIDX_LGT+PIDX_NUMBER;
 
 
 //////////////////////////////////////////////////////////////////////

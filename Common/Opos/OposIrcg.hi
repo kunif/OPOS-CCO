@@ -1,0 +1,45 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposIrcg.hi
+//
+//   Individual Recognition header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 2021-01-26 OPOS Release 1.16                                  KF
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSIRCG_HI)
+#define      OPOSIRCG_HI
+
+
+#include "Opos.hi"
+#include "OposIrcg.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+// * Capabilities *
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXIrcg_IndividualIDs                   =   1 + PIDX_IRCG+PIDX_STRING;
+const LONG PIDXIrcg_IndividualRecognitionFilter     =   2 + PIDX_IRCG+PIDX_STRING;
+const LONG PIDXIrcg_IndividualRecognitionInformation=   3 + PIDX_IRCG+PIDX_STRING;
+
+// * Capabilities *
+
+const LONG PIDXIrcg_CapIndividualList               = 501 + PIDX_IRCG+PIDX_STRING;
+
+
+#endif          // !defined(OPOSIRCG_HI)

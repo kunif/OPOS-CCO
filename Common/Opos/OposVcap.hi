@@ -1,0 +1,98 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposVcap.hi
+//
+//   Video Capture header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 2021-01-26 OPOS Release 1.16                                  KF
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSVCAP_HI)
+#define      OPOSVCAP_HI
+
+
+#include "Opos.hi"
+#include "OposVcap.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXVcap_AutoExposure                  =   1 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_AutoFocus                     =   2 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_AutoGain                      =   3 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_AutoWhiteBalance              =   4 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_Brightness                    =   5 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_Contrast                      =   6 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_Exposure                      =   7 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_Gain                          =   8 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_HorizontalFlip                =   9 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_Hue                           =  10 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_PhotoFrameRate                =  11 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_PhotoMaxFrameRate             =  12 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_RemainingRecordingTimeInSec   =  13 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_Saturation                    =  14 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_Storage                       =  15 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_VerticalFlip                  =  16 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_VideoCaptureMode              =  17 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_VideoFrameRate                =  18 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_VideoMaxFrameRate             =  19 + PIDX_VCAP+PIDX_NUMBER;
+
+// * Capabilities *
+
+const LONG PIDXVcap_CapAutoExposure               = 501 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_CapAutoFocus                  = 502 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_CapAutoGain                   = 503 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_CapAutoWhiteBalance           = 504 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_CapBrightness                 = 505 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_CapContrast                   = 506 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_CapExposure                   = 507 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_CapGain                       = 508 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_CapHorizontalFlip             = 509 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_CapHue                        = 510 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_CapPhoto                      = 511 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_CapPhotoColorSpace            = 512 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_CapPhotoFrameRate             = 513 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_CapPhotoResolution            = 514 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_CapPhotoType                  = 515 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_CapSaturation                 = 516 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_CapStorage                    = 517 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_CapVerticalFlip               = 518 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_CapVideo                      = 519 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_CapVideoColorSpace            = 520 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_CapVideoFrameRate             = 521 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_CapVideoResolution            = 522 + PIDX_VCAP+PIDX_NUMBER;
+const LONG PIDXVcap_CapVideoType                  = 523 + PIDX_VCAP+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXVcap_PhotoColorSpace               =   1 + PIDX_VCAP+PIDX_STRING;
+const LONG PIDXVcap_PhotoColorSpaceList           =   2 + PIDX_VCAP+PIDX_STRING;
+const LONG PIDXVcap_PhotoResolution               =   3 + PIDX_VCAP+PIDX_STRING;
+const LONG PIDXVcap_PhotoResolutionList           =   4 + PIDX_VCAP+PIDX_STRING;
+const LONG PIDXVcap_PhotoType                     =   5 + PIDX_VCAP+PIDX_STRING;
+const LONG PIDXVcap_PhotoTypeList                 =   6 + PIDX_VCAP+PIDX_STRING;
+const LONG PIDXVcap_VideoColorSpace               =   7 + PIDX_VCAP+PIDX_STRING;
+const LONG PIDXVcap_VideoColorSpaceList           =   8 + PIDX_VCAP+PIDX_STRING;
+const LONG PIDXVcap_VideoResolution               =   9 + PIDX_VCAP+PIDX_STRING;
+const LONG PIDXVcap_VideoResolutionList           =  10 + PIDX_VCAP+PIDX_STRING;
+const LONG PIDXVcap_VideoType                     =  11 + PIDX_VCAP+PIDX_STRING;
+const LONG PIDXVcap_VideoTypeList                 =  12 + PIDX_VCAP+PIDX_STRING;
+
+// * Capabilities *
+
+const LONG PIDXVcap_CapAssociatedHardTotalsDevice = 501 + PIDX_VCAP+PIDX_STRING;
+
+
+#endif          // !defined(OPOSVCAP_HI)

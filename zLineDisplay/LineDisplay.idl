@@ -10,7 +10,7 @@
 **  2013/09/29 Update license section.
 **  2015/02/07 Update license section.
 **  2015/02/07 Version 1.14.001.
-**  2020/06/01 Version 1.15.000.                                    K. Fukuchi
+**  2021/01/26 Version 1.16.000.                                    K. Fukuchi
 **
 *****************************************************************************
 **
@@ -436,7 +436,7 @@ import "ocidl.idl";
 [
     uuid(CCB90100-B81E-11D2-AB74-0040054C3719),
     version(1.0),
-    helpstring("OPOS LineDisplay Control 1.15.000 [Public, by CRM/MCS, and modified by KF]")
+    helpstring("OPOS LineDisplay Control 1.16.000 [Public, by CRM/MCS, and modified by KF]")
 ]
 library OposLineDisplay_CCO
 {
@@ -465,7 +465,7 @@ library OposLineDisplay_CCO
     //*************************************************************************
     [
         uuid(CCB90102-B81E-11D2-AB74-0040054C3719),
-        helpstring("OPOS LineDisplay Control 1.15.000 [Public, by CRM/MCS, and modified by KF]")
+        helpstring("OPOS LineDisplay Control 1.16.000 [Public, by CRM/MCS, and modified by KF]")
     ]
     coclass OPOSLineDisplay
     {

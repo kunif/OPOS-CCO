@@ -4,7 +4,7 @@
 
 [
     uuid(CCBE0210-B81E-11D2-AB74-0040054C3719),
-    helpstring("IOPOSPointCardRWSO 1.15 Interface")
+    helpstring("IOPOSPointCardRWSO 1.16 Interface")
 ]
 dispinterface IOPOSPointCardRWSO
 {

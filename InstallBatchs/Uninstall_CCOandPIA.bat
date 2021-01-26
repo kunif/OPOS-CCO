@@ -36,6 +36,7 @@ IF NOT EXIST "%ProgramFiles%\OPOS\OpenPosFor.NET" GOTO w32SOCommon
 @ECHO Unregistration of PIA files
 CHDIR /D "%ProgramFiles%\OPOS\OpenPosFor.NET"
 FOR %%F IN (OpenPOS*.dll) DO "%SystemRoot%\Microsoft.NET\Framework\v2.0.50727\RegAsm.exe" %%F /unregister /silent
+FOR %%F IN (policy.*.dll) DO .\gacutil /u %%~nF /silent
 FOR %%F IN (OpenPOS*.dll) DO .\gacutil /u %%~nF /silent
 
 :w32SOCommon
@@ -77,6 +78,7 @@ IF NOT EXIST "%ProgramFiles(x86)%\OPOS\OpenPosFor.NET" GOTO x86SOCommon
 CHDIR /D "%ProgramFiles(x86)%\OPOS\OpenPosFor.NET"
 FOR %%F IN (OpenPOS*.dll) DO "%SystemRoot%\Microsoft.NET\Framework64\v2.0.50727\RegAsm.exe" %%F /unregister /silent
 FOR %%F IN (OpenPOS*.dll) DO "%SystemRoot%\Microsoft.NET\Framework\v2.0.50727\RegAsm.exe" %%F /unregister /silent
+FOR %%F IN (policy.*.dll) DO .\gacutil /u %%~nF /silent
 FOR %%F IN (OpenPOS*.dll) DO .\gacutil /u %%~nF /silent
 
 :x86SOCommon

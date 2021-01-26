@@ -5,6 +5,7 @@
 !!     Date                   Modification                          Author
 !! -----------|----------------------------------------------------|----------
 !!  2008/01/15 1.12.000: Initial version.                           C. Monroe
+!!  2021/01/26 1.16.000: Add properties, methods for 1.16.          K. Fukuchi
 !!
 !!***************************************************************************
 
@@ -126,8 +127,14 @@ UUIDEvents      =UUID*
   R  1.12  71 CapBlink(BOOL)
   R  1.12  72 CapColor(LONG)
   R  1.12  73 MaxLights(LONG)
+!     Added in Release 1.16
+  R  1.16  74 CapPattern(LONG)
 !> Specific Methods
  M   1.12  90 SwitchOff(LONG LightNumber)
  M   1.12  91 SwitchOn(LONG LightNumber, LONG BlinkOnCycle, LONG BlinkOffCycle, LONG Color, LONG Alarm)
+!     Added in Release 1.16
+ M   1.16  92 SwitchOffPattern()
+ M   1.16  93 SwitchOnMultiple(BSTR LightNumbers, LONG BlinkOnCycle, LONG BlinkOffCycle, LONG Color, LONG Alarm)
+ M   1.16  94 SwitchOnPattern(LONG Pattern, LONG Alarm)
 
 !!End

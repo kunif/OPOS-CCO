@@ -6,7 +6,7 @@
 **
 {{Begin License}}
 
-Copyright 2019 Kunio Fukuchi
+Copyright 2021 Kunio Fukuchi
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -45,7 +45,7 @@ import "ocidl.idl";
     //   1) Updates should be either corrections or supersets of previous.
     //   2) Don't want to force projects to bring in updated library.
     version(1.0),
-    helpstring("OPOS 1.15 Interfaces")
+    helpstring("OPOS 1.16 Interfaces")
 ]
 library OPOSINTERFACESLib
 {
@@ -63,11 +63,15 @@ library OPOSINTERFACESLib
     #include "IFC\OposSoIdlCheckScanner.h"
     #include "IFC\OposSoIdlCoinAcceptor.h"
     #include "IFC\OposSoIdlCoinDispenser.h"
+    #include "IFC\OposSoIdlDeviceMonitor.h"                     // Added in 1.16
     #include "IFC\OposSoIdlElectronicJournal.h"
     #include "IFC\OposSoIdlElectronicValueRW.h"
     #include "IFC\OposSoIdlFiscalPrinter.h"
     #include "IFC\OposSoIdlGate.h"
+    #include "IFC\OposSoIdlGestureControl.h"                    // Added in 1.16
+    #include "IFC\OposSoIdlGraphicDisplay.h"                    // Added in 1.16
     #include "IFC\OposSoIdlImageScanner.h"
+    #include "IFC\OposSoIdlIndividualRecognition.h"             // Added in 1.16
     #include "IFC\OposSoIdlItemDispenser.h"
     #include "IFC\OposSoIdlKeylock.h"
     #include "IFC\OposSoIdlLights.h"
@@ -86,6 +90,11 @@ library OPOSINTERFACESLib
     #include "IFC\OposSoIdlScanner.h"
     #include "IFC\OposSoIdlSigCap.h"
     #include "IFC\OposSoIdlSmartCardRW.h"
+    #include "IFC\OposSoIdlSoundPlayer.h"                       // Added in 1.16
+    #include "IFC\OposSoIdlSoundRecorder.h"                     // Added in 1.16
+    #include "IFC\OposSoIdlSpeechSynthesis.h"                   // Added in 1.16
     #include "IFC\OposSoIdlToneIndicator.h"
     #include "IFC\OposSoIdlTotals.h"
+    #include "IFC\OposSoIdlVideoCapture.h"                      // Added in 1.16
+    #include "IFC\OposSoIdlVoiceRecognition.h"                  // Added in 1.16
 };

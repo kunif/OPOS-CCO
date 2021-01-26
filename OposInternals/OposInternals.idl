@@ -6,7 +6,7 @@
 **
 {{Begin License}}
 
-Copyright 2019 Kunio Fukuchi
+Copyright 2021 Kunio Fukuchi
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -45,7 +45,7 @@ import "ocidl.idl";
     //   1) Updates should be either corrections or supersets of previous.
     //   2) Don't want to force projects to bring in updated library.
     version(1.0),
-    helpstring("OPOS 1.15 Internals")
+    helpstring("OPOS 1.16 Internals")
 ]
 library OPOSINTERNALSLib
 {
@@ -64,11 +64,15 @@ library OPOSINTERNALSLib
     #include "DEF\OposInterCheckScanner.h"
     #include "DEF\OposInterCoinAcceptor.h"
     #include "DEF\OposInterCoinDispenser.h"
+    #include "DEF\OposInterDeviceMonitor.h"                     // Added in 1.16
     #include "DEF\OposInterElectronicJournal.h"
     #include "DEF\OposInterElectronicValueRW.h"
     #include "DEF\OposInterFiscalPrinter.h"
     #include "DEF\OposInterGate.h"
+    #include "DEF\OposInterGestureControl.h"                    // Added in 1.16
+    #include "DEF\OposInterGraphicDisplay.h"                    // Added in 1.16
     #include "DEF\OposInterImageScanner.h"
+    #include "DEF\OposInterIndividualRecognition.h"             // Added in 1.16
     #include "DEF\OposInterItemDispenser.h"
     #include "DEF\OposInterKeylock.h"
     #include "DEF\OposInterLights.h"
@@ -87,6 +91,11 @@ library OPOSINTERNALSLib
     #include "DEF\OposInterScanner.h"
     #include "DEF\OposInterSigCap.h"
     #include "DEF\OposInterSmartCardRW.h"
+    #include "DEF\OposInterSoundPlayer.h"                       // Added in 1.16
+    #include "DEF\OposInterSoundRecorder.h"                     // Added in 1.16
+    #include "DEF\OposInterSpeechSynthesis.h"                   // Added in 1.16
     #include "DEF\OposInterToneIndicator.h"
     #include "DEF\OposInterTotals.h"
+    #include "DEF\OposInterVideoCapture.h"                      // Added in 1.16
+    #include "DEF\OposInterVoiceRecognition.h"                  // Added in 1.16
 };

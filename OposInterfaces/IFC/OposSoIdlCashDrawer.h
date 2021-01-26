@@ -4,7 +4,7 @@
 
 [
     uuid(CCBE0040-B81E-11D2-AB74-0040054C3719),
-    helpstring("IOPOSCashDrawerSO 1.15 Interface")
+    helpstring("IOPOSCashDrawerSO 1.16 Interface")
 ]
 dispinterface IOPOSCashDrawerSO
 {

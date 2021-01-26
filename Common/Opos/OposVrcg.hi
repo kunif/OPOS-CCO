@@ -1,0 +1,47 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposVrcg.hi
+//
+//   Vrcg Recognition header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 2021-01-26 OPOS Release 1.16                                  KF
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSVRCG_HI)
+#define      OPOSVRCG_HI
+
+
+#include "Opos.hi"
+#include "OposVrcg.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXVrcg_HearingResult                 =   1 + PIDX_VRCG+PIDX_NUMBER;
+const LONG PIDXVrcg_HearingStatus                 =   2 + PIDX_VRCG+PIDX_NUMBER;
+
+// * Capabilities *
+
+const LONG PIDXVrcg_CapLanguage                   = 501 + PIDX_VRCG+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXVrcg_HearingDataPattern            =   1 + PIDX_VRCG+PIDX_STRING;
+const LONG PIDXVrcg_HearingDataWord               =   2 + PIDX_VRCG+PIDX_STRING;
+const LONG PIDXVrcg_HearingDataWordList           =   3 + PIDX_VRCG+PIDX_STRING;
+const LONG PIDXVrcg_LanguageList                  =   4 + PIDX_VRCG+PIDX_STRING;
+
+
+#endif          // !defined(OPOSVRCG_HI)

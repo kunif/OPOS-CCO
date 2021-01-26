@@ -1,14 +1,14 @@
  OPOSToneIndicator
 
- Timestamp is 5ed45a19 (Mon Jun  1 10:30:01 2020)
+ Timestamp is 600f7ade (Tue Jan 26 11:13:50 2021)
 
  Preferred load address is 10000000
 
  Start         Length     Name                   Class
  0001:00000000 00000080H .text$di                CODE
  0001:00000080 0001e233H .text$mn                CODE
- 0001:0001e2b3 00000036H .text$x                 CODE
- 0001:0001e2e9 00000042H .text$yd                CODE
+ 0001:0001e2b3 0000003aH .text$x                 CODE
+ 0001:0001e2ed 00000042H .text$yd                CODE
  0002:00000000 000002fcH .idata$5                DATA
  0002:000002fc 00000004H .00cfg                  DATA
  0002:00000300 00000004H .CRT$XCA                DATA
@@ -27,53 +27,59 @@
  0002:00000350 00000004H .CRT$XTA                DATA
  0002:00000354 0000000cH .CRT$XTZ                DATA
  0002:00000358 00000000H .gfids$y                DATA
- 0002:00000360 00007308H .rdata                  DATA
- 0002:00007668 00000018H .rdata$T                DATA
- 0002:00007680 00000178H .rdata$r                DATA
- 0002:000077f8 0000001cH .rdata$sxdata           DATA
- 0002:00007814 000003e0H .rdata$zzzdbg           DATA
- 0002:00007bf4 00000004H .rtc$IAA                DATA
- 0002:00007bf8 00000004H .rtc$IZZ                DATA
- 0002:00007bfc 00000004H .rtc$TAA                DATA
- 0002:00007c00 00000004H .rtc$TZZ                DATA
- 0002:00007c04 00000004H .tls                    DATA
- 0002:00007c08 00000004H .tls$                   DATA
- 0002:00007c0c 00000004H .tls$ZZZ                DATA
- 0002:00007c10 0000062cH .xdata$x                DATA
- 0002:0000823c 00000004H ATL$__a                 DATA
- 0002:00008240 00000010H ATL$__z                 DATA
- 0002:00008250 000000b0H .edata                  DATA
- 0002:00008300 00000078H .idata$2                DATA
- 0002:00008378 00000014H .idata$3                DATA
- 0002:0000838c 000002fcH .idata$4                DATA
- 0002:00008688 00000bceH .idata$6                DATA
+ 0002:00000360 00007320H .rdata                  DATA
+ 0002:00007680 00000000H .rdata$CastGuardVftablesA DATA
+ 0002:00007680 00000000H .rdata$CastGuardVftablesC DATA
+ 0002:00007680 00000018H .rdata$T                DATA
+ 0002:00007698 00000178H .rdata$r                DATA
+ 0002:00007810 0000001cH .rdata$sxdata           DATA
+ 0002:0000782c 000003e0H .rdata$zzzdbg           DATA
+ 0002:00007c0c 00000004H .rtc$IAA                DATA
+ 0002:00007c10 00000004H .rtc$IZZ                DATA
+ 0002:00007c14 00000004H .rtc$TAA                DATA
+ 0002:00007c18 00000004H .rtc$TZZ                DATA
+ 0002:00007c1c 00000004H .tls                    DATA
+ 0002:00007c20 00000004H .tls$                   DATA
+ 0002:00007c24 00000004H .tls$ZZZ                DATA
+ 0002:00007c28 0000062cH .xdata$x                DATA
+ 0002:00008254 00000004H ATL$__a                 DATA
+ 0002:00008258 00000008H ATL$__z                 DATA
+ 0002:00008260 000000b0H .edata                  DATA
+ 0002:00008310 00000078H .idata$2                DATA
+ 0002:00008388 00000014H .idata$3                DATA
+ 0002:0000839c 000002fcH .idata$4                DATA
+ 0002:00008698 00000bceH .idata$6                DATA
  0003:00000000 00000ad0H .data                   DATA
  0003:00000ad0 00000098H .data$r                 DATA
- 0003:00000b68 00000b80H .bss                    DATA
+ 0003:00000b68 00000b88H .bss                    DATA
  0004:00000000 00000220H .rsrc$01                DATA
  0004:00000220 00004358H .rsrc$02                DATA
 
   Address         Publics by Value              Rva+Base       Lib:Object
 
  0000:00000000       ___guard_fids_count        00000000     <absolute>
- 0000:00000000       ___guard_eh_cont_count     00000000     <absolute>
- 0000:00000000       ___guard_iat_count         00000000     <absolute>
- 0000:00000000       ___x64_code_ranges_to_entry_points 00000000     <absolute>
  0000:00000000       ___guard_longjmp_table     00000000     <absolute>
- 0000:00000000       ___hybrid_code_map_count   00000000     <absolute>
- 0000:00000000       ___dynamic_value_reloc_table 00000000     <absolute>
- 0000:00000000       ___guard_longjmp_count     00000000     <absolute>
- 0000:00000000       __except_list              00000000     <absolute>
- 0000:00000000       ___arm64x_native_entrypoint 00000000     <absolute>
- 0000:00000000       ___guard_fids_table        00000000     <absolute>
- 0000:00000000       ___arm64x_redirection_metadata 00000000     <absolute>
- 0000:00000000       ___hybrid_auxiliary_iat    00000000     <absolute>
- 0000:00000000       ___guard_iat_table         00000000     <absolute>
- 0000:00000000       ___volatile_metadata       00000000     <absolute>
- 0000:00000000       ___enclave_config          00000000     <absolute>
- 0000:00000000       ___AbsoluteZero            00000000     <absolute>
  0000:00000000       ___guard_eh_cont_table     00000000     <absolute>
+ 0000:00000000       ___volatile_metadata       00000000     <absolute>
+ 0000:00000000       ___arm64x_extra_rfe_table  00000000     <absolute>
+ 0000:00000000       ___arm64x_redirection_metadata 00000000     <absolute>
+ 0000:00000000       ___guard_iat_count         00000000     <absolute>
+ 0000:00000000       ___guard_eh_cont_count     00000000     <absolute>
+ 0000:00000000       __except_list              00000000     <absolute>
+ 0000:00000000       ___x64_code_ranges_to_entry_points_count 00000000     <absolute>
+ 0000:00000000       ___hybrid_code_map_count   00000000     <absolute>
+ 0000:00000000       ___x64_code_ranges_to_entry_points 00000000     <absolute>
+ 0000:00000000       ___guard_iat_table         00000000     <absolute>
+ 0000:00000000       ___arm64x_native_entrypoint 00000000     <absolute>
  0000:00000000       ___hybrid_code_map         00000000     <absolute>
+ 0000:00000000       ___arm64x_extra_rfe_table_size 00000000     <absolute>
+ 0000:00000000       ___guard_longjmp_count     00000000     <absolute>
+ 0000:00000000       ___arm64x_redirection_metadata_count 00000000     <absolute>
+ 0000:00000000       ___hybrid_auxiliary_iat    00000000     <absolute>
+ 0000:00000000       ___dynamic_value_reloc_table 00000000     <absolute>
+ 0000:00000000       ___AbsoluteZero            00000000     <absolute>
+ 0000:00000000       ___enclave_config          00000000     <absolute>
+ 0000:00000000       ___guard_fids_table        00000000     <absolute>
  0000:00000007       ___safe_se_handler_count   00000007     <absolute>
  0000:0000002c       __tls_array                0000002c     <absolute>
  0000:00000100       ___guard_flags             00000100     <absolute>
@@ -95,8 +101,8 @@
  0001:000003d2       ?ChangeLONG@OposVariant@@QAEXPAJAAJ@Z 100013d2 f   OposVariant.obj
  0001:00000413       ?GetLONG@OposVariant@@QAEJXZ 10001413 f   OposVariant.obj
  0001:0000042e       ?Init@CComCriticalSection@ATL@@QAEJXZ 1000142e f i OposVariant.obj
- 0001:00000456       ?RemoveAll@?$CSimpleArray@PAUHINSTANCE__@@V?$CSimpleArrayEqualHelper@PAUHINSTANCE__@@@ATL@@@ATL@@QAEXXZ 10001456 f i atls:atlbase.obj
  0001:00000456       ?RemoveAll@?$CSimpleArray@GV?$CSimpleArrayEqualHelper@G@ATL@@@ATL@@QAEXXZ 10001456 f i OposVariant.obj
+ 0001:00000456       ?RemoveAll@?$CSimpleArray@PAUHINSTANCE__@@V?$CSimpleArrayEqualHelper@PAUHINSTANCE__@@@ATL@@@ATL@@QAEXXZ 10001456 f i atls:atlbase.obj
  0001:00000473       ?SetBSTR@OposVariant@@QAEXPA_WAAJ@Z 10001473 f   OposVariant.obj
  0001:000004a7       ?SetBSTR_Copy@OposVariant@@QAEXPA_WAAJ@Z 100014a7 f   OposVariant.obj
  0001:000004f7       ?SetBSTR_InOutPtr@OposVariant@@QAE_NPAPA_WAAJ@Z 100014f7 f   OposVariant.obj
@@ -199,59 +205,59 @@
  0001:00000ab6       ?Release@?$CComContainedObject@VCOPOSToneIndicator@@@ATL@@WLE@AGKXZ 10001ab6 f i ToneIndicator.obj
  0001:00000ac3       ?CreateInstance@CComClassFactory@ATL@@UAGJPAUIUnknown@@ABU_GUID@@PAPAX@Z 10001ac3 f i ToneIndicator.obj
  0001:00000b01       ?LockServer@CComClassFactory@ATL@@UAGJH@Z 10001b01 f i ToneIndicator.obj
- 0001:00000b20       ??_GCComClassFactory@ATL@@UAEPAXI@Z 10001b20 f i ToneIndicator.obj
  0001:00000b20       ??_ECComClassFactory@ATL@@UAEPAXI@Z 10001b20 f i ToneIndicator.obj
+ 0001:00000b20       ??_GCComClassFactory@ATL@@UAEPAXI@Z 10001b20 f i ToneIndicator.obj
  0001:00000b4b       ?GetWindowProc@?$CWindowImplBaseT@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@2@@ATL@@UAEP6GJPAUHWND__@@IIJ@ZXZ 10001b4b f i ToneIndicator.obj
  0001:00000b51       ?StartWindowProc@?$CWindowImplBaseT@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@2@@ATL@@SGJPAUHWND__@@IIJ@Z 10001b51 f i ToneIndicator.obj
- 0001:00000ba5       ?OnFinalMessage@?$CWindowImplBaseT@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@2@@ATL@@UAEXPAUHWND__@@@Z 10001ba5 f i ToneIndicator.obj
  0001:00000ba5       ?ObjectMain@CComObjectRootBase@ATL@@SGX_N@Z 10001ba5 f i ToneIndicator.obj
+ 0001:00000ba5       ?OnFinalMessage@?$CWindowImplBaseT@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@2@@ATL@@UAEXPAUHWND__@@@Z 10001ba5 f i ToneIndicator.obj
  0001:00000ba8       ?GetTypeInfoCount@?$IDispatchImpl@UIOPOSToneIndicator@@$1?IID_IOPOSToneIndicator@@3U_GUID@@B$1?LIBID_OposToneIndicator_CCO@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UAGJPAI@Z 10001ba8 f i ToneIndicator.obj
  0001:00000bc5       ?GetTypeInfo@?$IDispatchImpl@UIOPOSToneIndicator@@$1?IID_IOPOSToneIndicator@@3U_GUID@@B$1?LIBID_OposToneIndicator_CCO@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UAGJIKPAPAUITypeInfo@@@Z 10001bc5 f i ToneIndicator.obj
  0001:00000be9       ?GetIDsOfNames@?$IDispatchImpl@UIOPOSToneIndicator@@$1?IID_IOPOSToneIndicator@@3U_GUID@@B$1?LIBID_OposToneIndicator_CCO@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UAGJABU_GUID@@PAPA_WIKPAJ@Z 10001be9 f i ToneIndicator.obj
  0001:00000c09       ?Invoke@?$IDispatchImpl@UIOPOSToneIndicator@@$1?IID_IOPOSToneIndicator@@3U_GUID@@B$1?LIBID_OposToneIndicator_CCO@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UAGJJABU_GUID@@KGPAUtagDISPPARAMS@@PAUtagVARIANT@@PAUtagEXCEPINFO@@PAI@Z 10001c09 f i ToneIndicator.obj
  0001:00000c17       ?CreateControlWindow@?$CComControl@VCOPOSToneIndicator@@V?$CWindowImpl@VCOPOSToneIndicator@@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@3@@ATL@@@ATL@@UAEPAUHWND__@@PAU3@AAUtagRECT@@@Z 10001c17 f i ToneIndicator.obj
  0001:00000c46       ?ControlQueryInterface@?$CComControl@VCOPOSToneIndicator@@V?$CWindowImpl@VCOPOSToneIndicator@@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@3@@ATL@@@ATL@@UAEJABU_GUID@@PAPAX@Z 10001c46 f i ToneIndicator.obj
+ 0001:00000c61       ?GetUserClassID@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAU_GUID@@@Z 10001c61 f i ToneIndicator.obj
  0001:00000c61       ?GetClassID@?$IPersistStreamInitImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAU_GUID@@@Z 10001c61 f i ToneIndicator.obj
  0001:00000c61       ?GetClassID@?$IPersistStorageImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAU_GUID@@@Z 10001c61 f i ToneIndicator.obj
- 0001:00000c61       ?GetUserClassID@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAU_GUID@@@Z 10001c61 f i ToneIndicator.obj
  0001:00000c85       ?IsDirty@?$IPersistStreamInitImpl@VCOPOSToneIndicator@@@ATL@@UAGJXZ 10001c85 f i ToneIndicator.obj
  0001:00000ca4       ?Load@?$IPersistStreamInitImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAUIStream@@@Z 10001ca4 f i ToneIndicator.obj
  0001:00000cc3       ?Save@?$IPersistStreamInitImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAUIStream@@H@Z 10001cc3 f i ToneIndicator.obj
  0001:00000ce5       ?GetSizeMax@?$IPersistStreamInitImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAT_ULARGE_INTEGER@@@Z 10001ce5 f i ToneIndicator.obj
  0001:00000ec4       ?InitNew@?$IPersistStreamInitImpl@VCOPOSToneIndicator@@@ATL@@UAGJXZ 10001ec4 f i ToneIndicator.obj
- 0001:00000ee1       ?ContextSensitiveHelp@?$IOleInPlaceObjectWindowlessImpl@VCOPOSToneIndicator@@@ATL@@UAGJH@Z 10001ee1 f i ToneIndicator.obj
- 0001:00000ee1       ?SetColorScheme@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAUtagLOGPALETTE@@@Z 10001ee1 f i ToneIndicator.obj
- 0001:00000ee1       ?OnMnemonic@?$IOleControlImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAUtagMSG@@@Z 10001ee1 f i ToneIndicator.obj
- 0001:00000ee1       ?Unfreeze@?$IViewObjectExImpl@VCOPOSToneIndicator@@@ATL@@UAGJK@Z 10001ee1 f i ToneIndicator.obj
- 0001:00000ee1       ?GetControlInfo@?$IOleControlImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAUtagCONTROLINFO@@@Z 10001ee1 f i ToneIndicator.obj
- 0001:00000ee1       ?GetDropTarget@?$IOleInPlaceObjectWindowlessImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAPAUIDropTarget@@@Z 10001ee1 f i ToneIndicator.obj
- 0001:00000ee1       ?ContextSensitiveHelp@?$IOleInPlaceActiveObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJH@Z 10001ee1 f i ToneIndicator.obj
  0001:00000ee1       ?QueryGetData@?$IDataObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAUtagFORMATETC@@@Z 10001ee1 f i ToneIndicator.obj
+ 0001:00000ee1       ?GetDropTarget@?$IOleInPlaceObjectWindowlessImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAPAUIDropTarget@@@Z 10001ee1 f i ToneIndicator.obj
+ 0001:00000ee1       ?GetControlInfo@?$IOleControlImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAUtagCONTROLINFO@@@Z 10001ee1 f i ToneIndicator.obj
  0001:00000ee1       ?SODataDummy@COPOSToneIndicator@@MAGJJ@Z 10001ee1 f i ToneIndicator.obj
- 0001:00000ee9       ?OnFrameWindowActivate@?$IOleInPlaceActiveObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJH@Z 10001ee9 f i ToneIndicator.obj
- 0001:00000ee9       ?OnAmbientPropertyChange@?$IOleControlImpl@VCOPOSToneIndicator@@@ATL@@UAGJJ@Z 10001ee9 f i ToneIndicator.obj
+ 0001:00000ee1       ?SetColorScheme@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAUtagLOGPALETTE@@@Z 10001ee1 f i ToneIndicator.obj
+ 0001:00000ee1       ?ContextSensitiveHelp@?$IOleInPlaceActiveObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJH@Z 10001ee1 f i ToneIndicator.obj
+ 0001:00000ee1       ?Unfreeze@?$IViewObjectExImpl@VCOPOSToneIndicator@@@ATL@@UAGJK@Z 10001ee1 f i ToneIndicator.obj
+ 0001:00000ee1       ?ContextSensitiveHelp@?$IOleInPlaceObjectWindowlessImpl@VCOPOSToneIndicator@@@ATL@@UAGJH@Z 10001ee1 f i ToneIndicator.obj
+ 0001:00000ee1       ?OnMnemonic@?$IOleControlImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAUtagMSG@@@Z 10001ee1 f i ToneIndicator.obj
  0001:00000ee9       ?EnableModeless@?$IOleInPlaceActiveObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJH@Z 10001ee9 f i ToneIndicator.obj
+ 0001:00000ee9       ?OnAmbientPropertyChange@?$IOleControlImpl@VCOPOSToneIndicator@@@ATL@@UAGJJ@Z 10001ee9 f i ToneIndicator.obj
+ 0001:00000ee9       ?OnFrameWindowActivate@?$IOleInPlaceActiveObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJH@Z 10001ee9 f i ToneIndicator.obj
  0001:00000ee9       ?SaveCompleted@?$IPersistStorageImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAUIStorage@@@Z 10001ee9 f i ToneIndicator.obj
  0001:00000eee       ?SetClientSite@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAUIOleClientSite@@@Z 10001eee f i ToneIndicator.obj
  0001:00000f0b       ?GetClientSite@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAPAUIOleClientSite@@@Z 10001f0b f i ToneIndicator.obj
  0001:00000f28       ?SetHostNames@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJPB_W0@Z 10001f28 f i ToneIndicator.obj
  0001:00000f2d       ?Close@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJK@Z 10001f2d f i ToneIndicator.obj
- 0001:00000f4a       ?QueryInterface@CRegObject@ATL@@UAGJABU_GUID@@PAPAX@Z 10001f4a f i ToneIndicator.obj
  0001:00000f4a       ?GetClipboardData@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJKPAPAUIDataObject@@@Z 10001f4a f i ToneIndicator.obj
- 0001:00000f4a       ?GetCanonicalFormatEtc@?$IDataObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAUtagFORMATETC@@0@Z 10001f4a f i ToneIndicator.obj
- 0001:00000f4a       ?EnumFormatEtc@?$IDataObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJKPAPAUIEnumFORMATETC@@@Z 10001f4a f i ToneIndicator.obj
- 0001:00000f4a       ?SetMoniker@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJKPAUIMoniker@@@Z 10001f4a f i ToneIndicator.obj
- 0001:00000f4a       ?GetDataHere@?$IDataObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAUtagFORMATETC@@PAUtagSTGMEDIUM@@@Z 10001f4a f i ToneIndicator.obj
  0001:00000f4a       ?GetRect@?$IViewObjectExImpl@VCOPOSToneIndicator@@@ATL@@UAGJKPAU_RECTL@@@Z 10001f4a f i ToneIndicator.obj
- 0001:00000f52       ?GetMoniker@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJKKPAPAUIMoniker@@@Z 10001f52 f i ToneIndicator.obj
+ 0001:00000f4a       ?QueryInterface@CRegObject@ATL@@UAGJABU_GUID@@PAPAX@Z 10001f4a f i ToneIndicator.obj
+ 0001:00000f4a       ?GetDataHere@?$IDataObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAUtagFORMATETC@@PAUtagSTGMEDIUM@@@Z 10001f4a f i ToneIndicator.obj
+ 0001:00000f4a       ?SetMoniker@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJKPAUIMoniker@@@Z 10001f4a f i ToneIndicator.obj
+ 0001:00000f4a       ?EnumFormatEtc@?$IDataObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJKPAPAUIEnumFORMATETC@@@Z 10001f4a f i ToneIndicator.obj
+ 0001:00000f4a       ?GetCanonicalFormatEtc@?$IDataObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAUtagFORMATETC@@0@Z 10001f4a f i ToneIndicator.obj
  0001:00000f52       ?InitFromData@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAUIDataObject@@HK@Z 10001f52 f i ToneIndicator.obj
  0001:00000f52       ?SetData@?$IDataObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAUtagFORMATETC@@PAUtagSTGMEDIUM@@H@Z 10001f52 f i ToneIndicator.obj
+ 0001:00000f52       ?GetMoniker@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJKKPAPAUIMoniker@@@Z 10001f52 f i ToneIndicator.obj
  0001:00000f5a       ?DoVerb@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJJPAUtagMSG@@PAUIOleClientSite@@JPAUHWND__@@PBUtagRECT@@@Z 10001f5a f i ToneIndicator.obj
  0001:0000104e       ?EnumVerbs@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAPAUIEnumOLEVERB@@@Z 1000204e f i ToneIndicator.obj
- 0001:00001070       ?IsUpToDate@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJXZ 10002070 f i ToneIndicator.obj
- 0001:00001070       ?Release@CRegObject@ATL@@UAGKXZ 10002070 f i ToneIndicator.obj
  0001:00001070       ?Update@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJXZ 10002070 f i ToneIndicator.obj
+ 0001:00001070       ?Release@CRegObject@ATL@@UAGKXZ 10002070 f i ToneIndicator.obj
  0001:00001070       ?HandsOffStorage@?$IPersistStorageImpl@VCOPOSToneIndicator@@@ATL@@UAGJXZ 10002070 f i ToneIndicator.obj
+ 0001:00001070       ?IsUpToDate@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJXZ 10002070 f i ToneIndicator.obj
  0001:00001075       ?GetUserType@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJKPAPA_W@Z 10002075 f i ToneIndicator.obj
  0001:0000108d       ?SetExtent@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJKPAUtagSIZE@@@Z 1000208d f i ToneIndicator.obj
  0001:000010ad       ?GetExtent@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJKPAUtagSIZE@@@Z 100020ad f i ToneIndicator.obj
@@ -289,217 +295,217 @@
  0001:0000191d       ?QuickActivate@?$IQuickActivateImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAUtagQACONTAINER@@PAUtagQACONTROL@@@Z 1000291d f i ToneIndicator.obj
  0001:00001940       ?SetContentExtent@?$IQuickActivateImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAUtagSIZE@@@Z 10002940 f i ToneIndicator.obj
  0001:0000196c       ?GetContentExtent@?$IQuickActivateImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAUtagSIZE@@@Z 1000296c f i ToneIndicator.obj
- 0001:000019a6       ?GetData@?$IDataObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAUtagFORMATETC@@PAUtagSTGMEDIUM@@@Z 100029a6 f i ToneIndicator.obj
- 0001:000019c9       ?DAdvise@?$IDataObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAUtagFORMATETC@@KPAUIAdviseSink@@PAK@Z 100029c9 f i ToneIndicator.obj
- 0001:00001a0a       ?DUnadvise@?$IDataObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJK@Z 10002a0a f i ToneIndicator.obj
- 0001:00001a38       ?EnumDAdvise@?$IDataObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAPAUIEnumSTATDATA@@@Z 10002a38 f i ToneIndicator.obj
- 0001:00001a77       ?GetClassInfoW@?$IProvideClassInfo2Impl@$1?CLSID_OPOSToneIndicator@@3U_GUID@@B$1?DIID__IOPOSToneIndicatorEvents@@3U2@B$1?LIBID_OposToneIndicator_CCO@@3U2@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UAGJPAPAUITypeInfo@@@Z 10002a77 f i ToneIndicator.obj
- 0001:00001a8d       ?GetGUID@?$IProvideClassInfo2Impl@$1?CLSID_OPOSToneIndicator@@3U_GUID@@B$1?DIID__IOPOSToneIndicatorEvents@@3U2@B$1?LIBID_OposToneIndicator_CCO@@3U2@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UAGJKPAU_GUID@@@Z 10002a8d f i ToneIndicator.obj
- 0001:00001acb       __get_startup_argv_mode    10002acb f i LIBCMT:argv_mode.obj
- 0001:00001acb       ?FAccessAllowed@?$IObjectSafetyImpl@VCOPOSToneIndicator@@$02@ATL@@MAEHXZ 10002acb f i ToneIndicator.obj
- 0001:00001acf       ?GetInterfaceSafetyOptions@?$IObjectSafetyImpl@VCOPOSToneIndicator@@$02@ATL@@UAGJABU_GUID@@PAK1@Z 10002acf f i ToneIndicator.obj
- 0001:00001b43       ?SetInterfaceSafetyOptions@?$IObjectSafetyImpl@VCOPOSToneIndicator@@$02@ATL@@UAGJABU_GUID@@KK@Z 10002b43 f i ToneIndicator.obj
- 0001:00001bbd       ?_LocCPQueryInterface@?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJABU_GUID@@PAPAX@Z 10002bbd f i ToneIndicator.obj
- 0001:00001bbd       ?_LocCPQueryInterface@?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?DIID__IOPOSToneIndicatorEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJABU_GUID@@PAPAX@Z 10002bbd f i ToneIndicator.obj
- 0001:00001c0a       ?GetConnectionInterface@?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAU_GUID@@@Z 10002c0a f i ToneIndicator.obj
- 0001:00001c2e       ?GetConnectionPointContainer@?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAPAUIConnectionPointContainer@@@Z 10002c2e f i ToneIndicator.obj
- 0001:00001c51       ?Advise@?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?DIID__IOPOSToneIndicatorEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAUIUnknown@@PAK@Z 10002c51 f i ToneIndicator.obj
- 0001:00001c51       ?Advise@?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAUIUnknown@@PAK@Z 10002c51 f i ToneIndicator.obj
- 0001:00001cf1       ?Unadvise@?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?DIID__IOPOSToneIndicatorEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJK@Z 10002cf1 f i ToneIndicator.obj
- 0001:00001cf1       ?Unadvise@?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJK@Z 10002cf1 f i ToneIndicator.obj
- 0001:00001d31       ?EnumConnections@?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAPAUIEnumConnections@@@Z 10002d31 f i ToneIndicator.obj
- 0001:00001d31       ?EnumConnections@?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?DIID__IOPOSToneIndicatorEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAPAUIEnumConnections@@@Z 10002d31 f i ToneIndicator.obj
- 0001:00001e2c       ?GetObjectDescription@?$CComCoClass@VCOPOSToneIndicator@@$1?CLSID_OPOSToneIndicator@@3U_GUID@@B@ATL@@SGPB_WXZ 10002e2c f i ToneIndicator.obj
- 0001:00001e2c       ?GetCategoryMap@CComObjectRootBase@ATL@@SAPBU_ATL_CATMAP_ENTRY@2@XZ 10002e2c f i ToneIndicator.obj
- 0001:00001e2f       ?GetConnectionInterface@?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?DIID__IOPOSToneIndicatorEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAU_GUID@@@Z 10002e2f f i ToneIndicator.obj
- 0001:00001e53       ?GetConnectionPointContainer@?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?DIID__IOPOSToneIndicatorEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAPAUIConnectionPointContainer@@@Z 10002e53 f i ToneIndicator.obj
- 0001:00001e76       ?UpdateRegistry@COPOSToneIndicator@@SGJH@Z 10002e76 f i ToneIndicator.obj
- 0001:00001e8e       ?ProcessWindowMessage@COPOSToneIndicator@@UAEHPAUHWND__@@IIJAAJK@Z 10002e8e f i ToneIndicator.obj
- 0001:00001ed7       ?SODirectIO@COPOSToneIndicator@@MAGJJPAJPAPA_W@Z 10002ed7 f i ToneIndicator.obj
- 0001:00001f20       ?SOError@COPOSToneIndicator@@MAGJJJJPAJ@Z 10002f20 f i ToneIndicator.obj
- 0001:00001f75       ?SOOutputComplete@COPOSToneIndicator@@MAGJJ@Z 10002f75 f i ToneIndicator.obj
- 0001:00001fae       ?SOStatusUpdate@COPOSToneIndicator@@MAGJJ@Z 10002fae f i ToneIndicator.obj
- 0001:00001fe7       ?Lock@CAtlModule@ATL@@UAEJXZ 10002fe7 f i ToneIndicator.obj
- 0001:00001ff1       ?Unlock@CAtlModule@ATL@@UAEJXZ 10002ff1 f i ToneIndicator.obj
- 0001:00001ffb       ?GetLockCount@CAtlModule@ATL@@UAEJXZ 10002ffb f i ToneIndicator.obj
- 0001:00001fff       ?GetGITPtr@CAtlModule@ATL@@UAEJPAPAUIGlobalInterfaceTable@@@Z 10002fff f i ToneIndicator.obj
- 0001:0000204b       ?AddCommonRGSReplacements@?$CAtlModuleT@VCComModule@ATL@@@ATL@@UAEJPAUIRegistrarBase@@@Z 1000304b f i ToneIndicator.obj
- 0001:00002065       ?UpdateRegistryFromResourceD@CComModule@ATL@@UAGJPB_WHPAU_ATL_REGMAP_ENTRY@2@@Z 10003065 f i ToneIndicator.obj
- 0001:00002065       ?UpdateRegistryFromResourceD@CComModule@ATL@@UAGJIHPAU_ATL_REGMAP_ENTRY@2@@Z 10003065 f i ToneIndicator.obj
- 0001:0000206d       ?UpdateRegistryFromResource@CComModule@ATL@@UAGJPB_WHPAU_ATL_REGMAP_ENTRY@2@@Z 1000306d f i ToneIndicator.obj
- 0001:00002076       ?UpdateRegistryFromResource@CComModule@ATL@@UAGJIHPAU_ATL_REGMAP_ENTRY@2@@Z 10003076 f i ToneIndicator.obj
- 0001:0000207f       ??_ECComModule@ATL@@UAEPAXI@Z 1000307f f i ToneIndicator.obj
- 0001:0000207f       ??_GCComModule@ATL@@UAEPAXI@Z 1000307f f i ToneIndicator.obj
- 0001:000020a7       ?CreateInstance@?$CComCreator@V?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@@ATL@@SGJPAXABU_GUID@@PAPAX@Z 100030a7 f i ToneIndicator.obj
- 0001:00002147       ?CreateInstance@?$CComCreator2@V?$CComCreator@V?$CComObject@VCOPOSToneIndicator@@@ATL@@@ATL@@V?$CComCreator@V?$CComAggObject@VCOPOSToneIndicator@@@ATL@@@2@@ATL@@SGJPAXABU_GUID@@PAPAX@Z 10003147 f i ToneIndicator.obj
- 0001:00002167       ?AddRef@?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UAGKXZ 10003167 f i ToneIndicator.obj
- 0001:0000218e       ?Release@?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UAGKXZ 1000318e f i ToneIndicator.obj
- 0001:000021c4       ?QueryInterface@?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UAGJABU_GUID@@PAPAX@Z 100031c4 f i ToneIndicator.obj
- 0001:000021de       ??_G?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UAEPAXI@Z 100031de f i ToneIndicator.obj
- 0001:000021de       ??_E?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UAEPAXI@Z 100031de f i ToneIndicator.obj
- 0001:00002200       ?Next@?$CComEnumImpl@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@@ATL@@UAGJKPAPAUIConnectionPoint@@PAK@Z 10003200 f i ToneIndicator.obj
- 0001:000022d7       ?Skip@?$CComEnumImpl@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@@ATL@@UAGJK@Z 100032d7 f i ToneIndicator.obj
- 0001:00002304       ?Reset@?$CComEnumImpl@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@@ATL@@UAGJXZ 10003304 f i ToneIndicator.obj
- 0001:00002304       ?Reset@?$CComEnumImpl@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@@ATL@@UAGJXZ 10003304 f i ToneIndicator.obj
- 0001:00002316       ?Clone@?$CComEnumImpl@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@@ATL@@UAGJPAPAUIEnumConnectionPoints@@@Z 10003316 f i ToneIndicator.obj
- 0001:000023f7       ?AddRef@?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAGKXZ 100033f7 f i ToneIndicator.obj
- 0001:000023f7       ?AddRef@?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAGKXZ 100033f7 f i ToneIndicator.obj
- 0001:00002408       ?Release@?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAGKXZ 10003408 f i ToneIndicator.obj
- 0001:00002408       ?Release@?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAGKXZ 10003408 f i ToneIndicator.obj
- 0001:00002444       ?QueryInterface@?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAGJABU_GUID@@PAPAX@Z 10003444 f i ToneIndicator.obj
- 0001:0000245e       ??_G?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAEPAXI@Z 1000345e f i ToneIndicator.obj
- 0001:0000245e       ??_E?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAEPAXI@Z 1000345e f i ToneIndicator.obj
- 0001:00002480       ?AddRef@CRegObject@ATL@@UAGKXZ 10003480 f i ToneIndicator.obj
- 0001:00002486       ?AddReplacement@CRegObject@ATL@@UAGJPB_W0@Z 10003486 f i ToneIndicator.obj
- 0001:000024bf       ?ClearReplacements@CRegObject@ATL@@UAGJXZ 100034bf f i ToneIndicator.obj
- 0001:000024d1       ??_GCRegObject@ATL@@UAEPAXI@Z 100034d1 f i ToneIndicator.obj
- 0001:000024d1       ??_ECRegObject@ATL@@UAEPAXI@Z 100034d1 f i ToneIndicator.obj
- 0001:000024f3       ?AddRef@?$CComAggObject@VCOPOSToneIndicator@@@ATL@@UAGKXZ 100034f3 f i ToneIndicator.obj
- 0001:00002504       ?Release@?$CComAggObject@VCOPOSToneIndicator@@@ATL@@UAGKXZ 10003504 f i ToneIndicator.obj
- 0001:00002540       ?QueryInterface@?$CComAggObject@VCOPOSToneIndicator@@@ATL@@UAGJABU_GUID@@PAPAX@Z 10003540 f i ToneIndicator.obj
- 0001:0000258f       ?AddRef@?$CComContainedObject@VCOPOSToneIndicator@@@ATL@@UAGKXZ 1000358f f i ToneIndicator.obj
- 0001:000025a5       ?Release@?$CComContainedObject@VCOPOSToneIndicator@@@ATL@@UAGKXZ 100035a5 f i ToneIndicator.obj
- 0001:000025bb       ?QueryInterface@?$CComContainedObject@VCOPOSToneIndicator@@@ATL@@UAGJABU_GUID@@PAPAX@Z 100035bb f i ToneIndicator.obj
- 0001:000025d6       ??_E?$CComAggObject@VCOPOSToneIndicator@@@ATL@@UAEPAXI@Z 100035d6 f i ToneIndicator.obj
- 0001:000025d6       ??_G?$CComAggObject@VCOPOSToneIndicator@@@ATL@@UAEPAXI@Z 100035d6 f i ToneIndicator.obj
- 0001:000025fb       ?AddRef@?$CComObject@VCOPOSToneIndicator@@@ATL@@UAGKXZ 100035fb f i ToneIndicator.obj
- 0001:00002612       ?Release@?$CComObject@VCOPOSToneIndicator@@@ATL@@UAGKXZ 10003612 f i ToneIndicator.obj
- 0001:00002654       ?QueryInterface@?$CComObject@VCOPOSToneIndicator@@@ATL@@UAGJABU_GUID@@PAPAX@Z 10003654 f i ToneIndicator.obj
- 0001:0000266e       ?OnDrawAdvanced@CComControlBase@ATL@@UAEJAAUATL_DRAWINFO@@@Z 1000366e f i ToneIndicator.obj
- 0001:00002761       ?Next@?$CComEnumImpl@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@@ATL@@UAGJKPAUtagCONNECTDATA@@PAK@Z 10003761 f i ToneIndicator.obj
- 0001:00002838       ?Skip@?$CComEnumImpl@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@@ATL@@UAGJK@Z 10003838 f i ToneIndicator.obj
- 0001:00002865       ?Clone@?$CComEnumImpl@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@@ATL@@UAGJPAPAUIEnumConnections@@@Z 10003865 f i ToneIndicator.obj
- 0001:00002946       ?QueryInterface@?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAGJABU_GUID@@PAPAX@Z 10003946 f i ToneIndicator.obj
- 0001:00002960       ??_E?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAEPAXI@Z 10003960 f i ToneIndicator.obj
- 0001:00002960       ??_G?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAEPAXI@Z 10003960 f i ToneIndicator.obj
- 0001:00002982       ??$?4UITypeInfo2@@@?$CComPtr@UITypeInfo@@@ATL@@QAEPAUITypeInfo@@ABV?$CComPtr@UITypeInfo2@@@1@@Z 10003982 f i ToneIndicator.obj
- 0001:000029af       ??$AtlAdd@K@ATL@@YAJPAKKK@Z 100039af f i ToneIndicator.obj
- 0001:000029d2       ??$AtlAdd@_K@ATL@@YAJPA_K_K1@Z 100039d2 f i ToneIndicator.obj
- 0001:00002a0a       ??$AtlAddThrow@K@ATL@@YAKKK@Z 10003a0a f i ToneIndicator.obj
- 0001:00002a30       ??$AtlModuleRegisterWndClassInfoT@VAtlModuleRegisterWndClassInfoParamW@ATL@@@ATL@@YAGPAU_ATL_BASE_MODULE70@0@PAU_ATL_WIN_MODULE70@0@PAU_ATL_WNDCLASSINFOW@0@PAP6GJPAUHWND__@@IIJ@ZVAtlModuleRegisterWndClassInfoParamW@0@@Z 10003a30 f i ToneIndicator.obj
- 0001:00002b7e       ??$AtlMultiply@H@ATL@@YAJPAHHH@Z 10003b7e f i ToneIndicator.obj
- 0001:00002bb6       ??$AtlMultiply@K@ATL@@YAJPAKKK@Z 10003bb6 f i ToneIndicator.obj
- 0001:00002bb6       ??$AtlMultiply@I@ATL@@YAJPAIII@Z 10003bb6 f i ToneIndicator.obj
- 0001:00002bd8       ??$AtlMultiplyThrow@I@ATL@@YAIII@Z 10003bd8 f i ToneIndicator.obj
- 0001:00002bfe       ??0?$CComAggObject@VCOPOSToneIndicator@@@ATL@@QAE@PAX@Z 10003bfe f i ToneIndicator.obj
- 0001:00002c2b       ??0?$CComContainedObject@VCOPOSToneIndicator@@@ATL@@QAE@PAX@Z 10003c2b f i ToneIndicator.obj
- 0001:00002ce4       ??0?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@QAE@PAX@Z 10003ce4 f i ToneIndicator.obj
- 0001:00002d12       ??0?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@QAE@PAX@Z 10003d12 f i ToneIndicator.obj
- 0001:00002d40       ??0?$CComObject@VCOPOSToneIndicator@@@ATL@@QAE@PAX@Z 10003d40 f i ToneIndicator.obj
- 0001:00002df7       ??0?$CComQIPtr@UIOleControlSite@@$1?_GUID_b196b289_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@B@ATL@@QAE@PAUIUnknown@@@Z 10003df7 f i ToneIndicator.obj
- 0001:00002e20       ??0CAtlModule@ATL@@QAE@XZ  10003e20 f i ToneIndicator.obj
- 0001:00002e61       ??0CParseBuffer@CRegParser@ATL@@QAE@H@Z 10003e61 f i ToneIndicator.obj
- 0001:00002e97       ??0_ATL_MSG@ATL@@QAE@PAUHWND__@@IIJH@Z 10003e97 f i ToneIndicator.obj
- 0001:00002ecf       ??1?$CComAggObject@VCOPOSToneIndicator@@@ATL@@UAE@XZ 10003ecf f i ToneIndicator.obj
- 0001:00002ef3       ??1?$CComEnumImpl@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@@ATL@@UAE@XZ 10003ef3 f i ToneIndicator.obj
- 0001:00002f33       ??1?$CComEnumImpl@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@@ATL@@UAE@XZ 10003f33 f i ToneIndicator.obj
- 0001:00002f73       ??1?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAE@XZ 10003f73 f i ToneIndicator.obj
- 0001:00002f96       ??1?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAE@XZ 10003f96 f i ToneIndicator.obj
- 0001:00002fb9       ??1?$CComObject@VCOPOSToneIndicator@@@ATL@@UAE@XZ 10003fb9 f i ToneIndicator.obj
- 0001:00003077       ??1?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UAE@XZ 10004077 f i ToneIndicator.obj
- 0001:0000308d       ??1?$CComObjectRootEx@VCComMultiThreadModel@ATL@@@ATL@@QAE@XZ 1000408d f i ToneIndicator.obj
- 0001:000030a2       ??1CRegObject@ATL@@UAE@XZ  100040a2 f i ToneIndicator.obj
- 0001:000030c2       ??4?$CComPtr@UIUnknown@@@ATL@@QAEPAUIUnknown@@PAU2@@Z 100040c2 f i ToneIndicator.obj
- 0001:000030c2       ??4?$CComPtr@UIAdviseSink@@@ATL@@QAEPAUIAdviseSink@@PAU2@@Z 100040c2 f i ToneIndicator.obj
- 0001:000030c2       ??4?$CComPtr@UIOleClientSite@@@ATL@@QAEPAUIOleClientSite@@PAU2@@Z 100040c2 f i ToneIndicator.obj
- 0001:000030f6       ??_G?$CComContainedObject@VCOPOSToneIndicator@@@ATL@@UAEPAXI@Z 100040f6 f i ToneIndicator.obj
- 0001:000030f6       ??_E?$CComContainedObject@VCOPOSToneIndicator@@@ATL@@UAEPAXI@Z 100040f6 f i ToneIndicator.obj
- 0001:0000311b       ??_E?$CComObject@VCOPOSToneIndicator@@@ATL@@UAEPAXI@Z 1000411b f i ToneIndicator.obj
- 0001:0000311b       ??_G?$CComObject@VCOPOSToneIndicator@@@ATL@@UAEPAXI@Z 1000411b f i ToneIndicator.obj
- 0001:00003140       ?Add@?$CSimpleArray@GV?$CSimpleArrayEqualHelper@G@ATL@@@ATL@@QAEHABG@Z 10004140 f i ToneIndicator.obj
- 0001:000031c4       ?Add@?$CSimpleMap@PA_WPA_WVCExpansionVectorEqualHelper@ATL@@@ATL@@QAEHABQA_W0@Z 100041c4 f i ToneIndicator.obj
- 0001:00003219       ?Add@CComDynamicUnkArray@ATL@@QAEKPAUIUnknown@@@Z 10004219 f i ToneIndicator.obj
- 0001:000032cf       ?Add@CExpansionVector@ATL@@QAEHPB_W0@Z 100042cf f i ToneIndicator.obj
- 0001:000033d8       ?AddString@CParseBuffer@CRegParser@ATL@@QAEHPB_W@Z 100043d8 f i ToneIndicator.obj
- 0001:0000340d       ?AddTermFunc@CAtlModule@ATL@@QAEJP6GXK@ZK@Z 1000440d f i ToneIndicator.obj
- 0001:00003470       ?AddValue@CRegParser@ATL@@IAEJAAVCRegKey@2@PB_WPA_W@Z 10004470 f i ToneIndicator.obj
- 0001:0000378a       ?Allocate@?$CAtlSafeAllocBufferManager@VCCRTAllocator@ATL@@@_ATL_SAFE_ALLOCA_IMPL@ATL@@QAEPAXK@Z 1000478a f i ToneIndicator.obj
- 0001:000037b7       ?Allocate@?$CTempBuffer@E$0BAA@VCCRTAllocator@ATL@@@ATL@@QAEPAEI@Z 100047b7 f i ToneIndicator.obj
- 0001:000037e6       ?Allocate@?$CTempBuffer@_W$0BAA@VCCRTAllocator@ATL@@@ATL@@QAEPA_WI@Z 100047e6 f i ToneIndicator.obj
- 0001:00003815       ?Allocate@?$CTempBuffer@_W$0EAA@VCCRTAllocator@ATL@@@ATL@@QAEPA_WI@Z 10004815 f i ToneIndicator.obj
- 0001:00003844       ?AllocateHeap@?$CTempBuffer@_W$0BAA@VCCRTAllocator@ATL@@@ATL@@AAEXI@Z 10004844 f i ToneIndicator.obj
- 0001:00003844       ?AllocateHeap@?$CTempBuffer@_W$0EAA@VCCRTAllocator@ATL@@@ATL@@AAEXI@Z 10004844 f i ToneIndicator.obj
- 0001:00003844       ?AllocateHeap@?$CTempBuffer@E$0BAA@VCCRTAllocator@ATL@@@ATL@@AAEXI@Z 10004844 f i ToneIndicator.obj
- 0001:00003869       ?Append@CParseBuffer@CRegParser@ATL@@QAEHPB_WH@Z 10004869 f i ToneIndicator.obj
- 0001:000038f7       ?AtlCoTaskMemCAlloc@ATL@@YAPAXKK@Z 100048f7 f i ToneIndicator.obj
- 0001:00003924       ?AtlCoTaskMemRecalloc@ATL@@YAPAXPAXKK@Z 10004924 f i ToneIndicator.obj
- 0001:00003954       ?AtlComModuleGetClassObject@ATL@@YGJPAU_ATL_COM_MODULE70@1@ABU_GUID@@1PAPAX@Z 10004954 f i ToneIndicator.obj
- 0001:00003a47       ?AtlComModuleRegisterServer@ATL@@YGJPAU_ATL_COM_MODULE70@1@HPBU_GUID@@@Z 10004a47 f i ToneIndicator.obj
- 0001:00003acf       ?AtlComModuleUnregisterServer@ATL@@YGJPAU_ATL_COM_MODULE70@1@HPBU_GUID@@@Z 10004acf f i ToneIndicator.obj
- 0001:00003b57       ?AtlComQIPtrAssign2@ATL@@YAXPAPAUIUnknown@@PAU2@ABU_GUID@@@Z 10004b57 f i ToneIndicator.obj
- 0001:00003b86       ?AtlCreateTargetDC@ATL@@YGPAUHDC__@@PAU2@PAUtagDVTARGETDEVICE@@@Z 10004b86 f i ToneIndicator.obj
- 0001:00003bef       ?AtlCrtErrorCheck@ATL@@YAHH@Z 10004bef f i ToneIndicator.obj
- 0001:00003c2a       ?AtlHiMetricToPixel@ATL@@YGXPBUtagSIZE@@PAU2@@Z 10004c2a f i ToneIndicator.obj
- 0001:00003c9f       ?AtlHresultFromLastError@ATL@@YAJXZ 10004c9f f i ToneIndicator.obj
- 0001:00003cb6       ?AtlHresultFromWin32@ATL@@YAJK@Z 10004cb6 f i ToneIndicator.obj
- 0001:00003ccb       ?AtlInternalOleLoadFromStream@ATL@@YAJPAUIStream@@ABU_GUID@@PAPAXTClassesAllowedInStream@1@K@Z 10004ccb f i ToneIndicator.obj
- 0001:00003de9       ?AtlInternalQueryInterface@ATL@@YGJPAXPBU_ATL_INTMAP_ENTRY@1@ABU_GUID@@PAPAX@Z 10004de9 f i ToneIndicator.obj
- 0001:00003e8c       ?AtlLoadTypeLib@ATL@@YGJPAUHINSTANCE__@@PB_WPAPA_WPAPAUITypeLib@@@Z 10004e8c f i ToneIndicator.obj
- 0001:0000406a       ?AtlRegisterClassCategoriesHelper@ATL@@YGJABU_GUID@@PBU_ATL_CATMAP_ENTRY@1@H@Z 1000506a f i ToneIndicator.obj
- 0001:00004366       ?AtlRegisterTypeLib@ATL@@YGJPAUHINSTANCE__@@PB_W@Z 10005366 f i ToneIndicator.obj
- 0001:000044ee       ?AtlThrowImpl@ATL@@YGXJ@Z  100054ee f i ToneIndicator.obj
- 0001:0000450c       ?AtlUnRegisterTypeLib@ATL@@YGJPAUHINSTANCE__@@PB_W@Z 1000550c f i ToneIndicator.obj
- 0001:000045b7       ?AtlWinModuleAddCreateWndData@ATL@@YGXPAU_ATL_WIN_MODULE70@1@PAU_AtlCreateWndData@1@PAX@Z 100055b7 f i ToneIndicator.obj
- 0001:0000460b       ?AtlWinModuleExtractCreateWndData@ATL@@YGPAXPAU_ATL_WIN_MODULE70@1@@Z 1000560b f i ToneIndicator.obj
- 0001:0000466e       ?AtlWinModuleRegisterClassExW@ATL@@YGGPAU_ATL_WIN_MODULE70@1@PBUtagWNDCLASSEXW@@@Z 1000566e f i ToneIndicator.obj
- 0001:000046ad       ?CanForceRemoveKey@CRegParser@ATL@@IAEHPB_W@Z 100056ad f i ToneIndicator.obj
- 0001:000046dc       ?ChToByte@CRegParser@ATL@@KAE_W@Z 100056dc f i ToneIndicator.obj
- 0001:0000470f       ?Cleanup@CComTypeInfoHolder@ATL@@SGXK@Z 1000570f f i ToneIndicator.obj
- 0001:00004742       ?ClearReplacements@CExpansionVector@ATL@@QAEJXZ 10005742 f i ToneIndicator.obj
- 0001:0000477f       ?Close@CRegKey@ATL@@QAEJXZ 1000577f f i ToneIndicator.obj
- 0001:00004799       ?CreateInstance@?$CComCreator@V?$CComAggObject@VCOPOSToneIndicator@@@ATL@@@ATL@@SGJPAXABU_GUID@@PAPAX@Z 10005799 f i ToneIndicator.obj
- 0001:0000480e       ?CreateInstance@?$CComCreator@V?$CComObject@VCOPOSToneIndicator@@@ATL@@@ATL@@SGJPAXABU_GUID@@PAPAX@Z 1000580e f i ToneIndicator.obj
- 0001:0000488e       ?CreateInstance@?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@SGJPAPAV12@@Z 1000588e f i ToneIndicator.obj
- 0001:000048d8       ?CreateInstance@?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@SGJPAPAV12@@Z 100058d8 f i ToneIndicator.obj
- 0001:00004922       ?DefaultReflectionHandler@?$CWindowImplRoot@VCWindow@ATL@@@ATL@@SAHPAUHWND__@@IIJAAJ@Z 10005922 f i ToneIndicator.obj
- 0001:00004995       ?DeleteSubKey@CRegKey@ATL@@QAEJPB_W@Z 10005995 f i ToneIndicator.obj
- 0001:00004a0e       ?DoEvent@COPOSToneIndicator@@IAEXIIJ@Z 10005a0e f i ToneIndicator.obj
- 0001:00004a8e       ?DoVerbHide@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@QAEJPBUtagRECT@@PAUHWND__@@@Z 10005a8e f i ToneIndicator.obj
- 0001:00004ac4       ?DoVerbInPlaceActivate@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@QAEJPBUtagRECT@@PAUHWND__@@@Z 10005ac4 f i ToneIndicator.obj
- 0001:00004af7       ?DoVerbPrimary@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@QAEJPBUtagRECT@@PAUHWND__@@@Z 10005af7 f i ToneIndicator.obj
- 0001:00004b83       ?DoVerbProperties@CComControlBase@ATL@@QAEJPBUtagRECT@@PAUHWND__@@@Z 10005b83 f i ToneIndicator.obj
- 0001:00004d02       ?DoVerbUIActivate@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@QAEJPBUtagRECT@@PAUHWND__@@@Z 10005d02 f i ToneIndicator.obj
- 0001:00004d3f       ?DoesVerbActivate@CComControlBase@ATL@@QAEHJ@Z 10005d3f f i ToneIndicator.obj
- 0001:00004d60       ?DoesVerbUIActivate@CComControlBase@ATL@@QAEHJ@Z 10005d60 f i ToneIndicator.obj
- 0001:00004d95       ?EndOfVar@CRegParser@ATL@@IAEHXZ 10005d95 f i ToneIndicator.obj
- 0001:00004db5       ?EscapeSingleQuote@CAtlModule@ATL@@SAXPA_WIPB_W@Z 10005db5 f i ToneIndicator.obj
- 0001:00004e04       ?FindKey@?$CSimpleMap@PA_WPA_WVCExpansionVectorEqualHelper@ATL@@@ATL@@QBEHABQA_W@Z 10005e04 f i ToneIndicator.obj
- 0001:00004e3b       ?FireTheEvent@?$CProxy_IOPOSEvents@VCOPOSToneIndicator@@@@IAEXPAVOposVariant@@IAAJPB_WJ@Z 10005e3b f i ToneIndicator.obj
- 0001:00004ecd       ?FireViewChange@CComControlBase@ATL@@QAEJXZ 10005ecd f i ToneIndicator.obj
- 0001:00004f16       ?Fire_DirectIOEvent@?$CProxy_IOPOSEvents@VCOPOSToneIndicator@@@@QAEXJPAJPAPA_W@Z 10005f16 f i ToneIndicator.obj
- 0001:00005002       ?Fire_ErrorEvent@?$CProxy_IOPOSEvents@VCOPOSToneIndicator@@@@QAEXJJJPAJ@Z 10006002 f i ToneIndicator.obj
- 0001:000050f3       ?Fire_OutputCompleteEvent@?$CProxy_IOPOSEvents@VCOPOSToneIndicator@@@@QAEXJ@Z 100060f3 f i ToneIndicator.obj
- 0001:00005189       ?Fire_StatusUpdateEvent@?$CProxy_IOPOSEvents@VCOPOSToneIndicator@@@@QAEXJ@Z 10006189 f i ToneIndicator.obj
- 0001:0000521f       ?FreeHeap@?$CTempBuffer@_W$0BAA@VCCRTAllocator@ATL@@@ATL@@AAEXXZ 1000621f f i ToneIndicator.obj
- 0001:0000521f       ?FreeHeap@?$CTempBuffer@_W$0EAA@VCCRTAllocator@ATL@@@ATL@@AAEXXZ 1000621f f i ToneIndicator.obj
- 0001:0000521f       ?FreeHeap@?$CTempBuffer@E$0BAA@VCCRTAllocator@ATL@@@ATL@@AAEXXZ 1000621f f i ToneIndicator.obj
- 0001:00005228       ?GetAmbientLocaleID@CComControlBase@ATL@@QAEJAAK@Z 10006228 f i ToneIndicator.obj
- 0001:00005284       ?GetAmbientUserMode@CComControlBase@ATL@@QAEJAAH@Z 10006284 f i ToneIndicator.obj
- 0001:000052f4       ?GetAt@CComDynamicUnkArray@ATL@@QAEPAUIUnknown@@H@Z 100062f4 f i ToneIndicator.obj
- 0001:00005310       ?GetClassObject@CComModule@ATL@@QAEJABU_GUID@@0PAPAX@Z 10006310 f i ToneIndicator.obj
- 0001:000053b2       ?GetConnMap@COPOSToneIndicator@@SAPBU_ATL_CONNMAP_ENTRY@ATL@@PAH@Z 100063b2 f i ToneIndicator.obj
- 0001:00005422       ?GetCookie@CComDynamicUnkArray@ATL@@QAGKPAPAUIUnknown@@@Z 10006422 f i ToneIndicator.obj
- 0001:0000545a       ?GetIDsOfNames@CComTypeInfoHolder@ATL@@QAEJABU_GUID@@PAPA_WIKPAJ@Z 1000645a f i ToneIndicator.obj
- 0001:00005581       ?GetKeyAt@?$CSimpleMap@PA_WPA_WVCExpansionVectorEqualHelper@ATL@@@ATL@@QBEAAPA_WH@Z 10006581 f i ToneIndicator.obj
- 0001:000055a6       ?GetPagesHelper@?$ISpecifyPropertyPagesImpl@VCOPOSToneIndicator@@@ATL@@IAEJPAUtagCAUUID@@PBUATL_PROPMAP_ENTRY@2@@Z 100065a6 f i ToneIndicator.obj
- 0001:000056cd       ?GetProperty@?$CComPtr@UIDispatch@@@ATL@@SAJPAUIDispatch@@JPAUtagVARIANT@@@Z 100066cd f i ToneIndicator.obj
- 0001:0000571c       ?GetSizeMax@CComVariant@ATL@@QBEJPAT_ULARGE_INTEGER@@@Z 1000671c f i ToneIndicator.obj
- 0001:000058de       ?GetTI@CComTypeInfoHolder@ATL@@QAEJK@Z 100068de f i ToneIndicator.obj
- 0001:00005abd       ?GetTI@CComTypeInfoHolder@ATL@@QAEJKPAPAUITypeInfo@@@Z 10006abd f i ToneIndicator.obj
- 0001:00005aff       ?GetUnknown@CComDynamicUnkArray@ATL@@QAGPAUIUnknown@@K@Z 10006aff f i ToneIndicator.obj
- 0001:00005b20       ?GetValueAt@?$CSimpleMap@PA_WPA_WVCExpansionVectorEqualHelper@ATL@@@ATL@@QBEAAPA_WH@Z 10006b20 f i ToneIndicator.obj
- 0001:00005b46       ?GetZoomInfo@CComControlBase@ATL@@QAEXAAUATL_DRAWINFO@@@Z 10006b46 f i ToneIndicator.obj
- 0001:00005bd9       ?HKeyFromString@CRegParser@ATL@@KAPAUHKEY__@@PA_W@Z 10006bd9 f i ToneIndicator.obj
- 0001:00005c07       ?HasSubKeys@CRegParser@ATL@@IAEHPAUHKEY__@@@Z 10006c07 f i ToneIndicator.obj
- 0001:00005c3c       ?IDataObject_GetData@CComControlBase@ATL@@QAEJPAUtagFORMATETC@@PAUtagSTGMEDIUM@@@Z 10006c3c f i ToneIndicator.obj
- 0001:00005de2       ?IOleInPlaceObject_InPlaceDeactivate@CComControlBase@ATL@@QAEJXZ 10006de2 f i ToneIndicator.obj
- 0001:00005e69       ?IOleInPlaceObject_SetObjectRects@CComControlBase@ATL@@QAEJPBUtagRECT@@0@Z 10006e69 f i ToneIndicator.obj
- 0001:00005f36       ?IOleInPlaceObject_UIDeactivate@CComControlBase@ATL@@QAEJXZ 10006f36 f i ToneIndicator.obj
- 0001:00005ff8       ?IOleObject_Advise@CComControlBase@ATL@@QAEJPAUIAdviseSink@@PAK@Z 10006ff8 f i ToneIndicator.obj
- 0001:00006022       ?IOleObject_Close@CComControlBase@ATL@@QAEJK@Z 10007022 f i ToneIndicator.obj
- 0001:00006106       ?IOleObject_GetClientSite@CComControlBase@ATL@@QAEJPAPAUIOleClientSite@@@Z 10007106 f i ToneIndicator.obj
- 0001:0000612f       ?IOleObject_SetClientSite@CComControlBase@ATL@@QAEJPAUIOleClientSite@@@Z 1000712f f i ToneIndicator.obj
- 0001:0000616e       ?IOleObject_SetExtent@CComControlBase@ATL@@QAEJKPAUtagSIZE@@@Z 1000716e f i ToneIndicator.obj
+ 0001:000019a8       ?GetData@?$IDataObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAUtagFORMATETC@@PAUtagSTGMEDIUM@@@Z 100029a8 f i ToneIndicator.obj
+ 0001:000019cb       ?DAdvise@?$IDataObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAUtagFORMATETC@@KPAUIAdviseSink@@PAK@Z 100029cb f i ToneIndicator.obj
+ 0001:00001a0c       ?DUnadvise@?$IDataObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJK@Z 10002a0c f i ToneIndicator.obj
+ 0001:00001a3a       ?EnumDAdvise@?$IDataObjectImpl@VCOPOSToneIndicator@@@ATL@@UAGJPAPAUIEnumSTATDATA@@@Z 10002a3a f i ToneIndicator.obj
+ 0001:00001a79       ?GetClassInfoW@?$IProvideClassInfo2Impl@$1?CLSID_OPOSToneIndicator@@3U_GUID@@B$1?DIID__IOPOSToneIndicatorEvents@@3U2@B$1?LIBID_OposToneIndicator_CCO@@3U2@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UAGJPAPAUITypeInfo@@@Z 10002a79 f i ToneIndicator.obj
+ 0001:00001a8f       ?GetGUID@?$IProvideClassInfo2Impl@$1?CLSID_OPOSToneIndicator@@3U_GUID@@B$1?DIID__IOPOSToneIndicatorEvents@@3U2@B$1?LIBID_OposToneIndicator_CCO@@3U2@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UAGJKPAU_GUID@@@Z 10002a8f f i ToneIndicator.obj
+ 0001:00001acd       __get_startup_argv_mode    10002acd f i LIBCMT:argv_mode.obj
+ 0001:00001acd       ?FAccessAllowed@?$IObjectSafetyImpl@VCOPOSToneIndicator@@$02@ATL@@MAEHXZ 10002acd f i ToneIndicator.obj
+ 0001:00001ad1       ?GetInterfaceSafetyOptions@?$IObjectSafetyImpl@VCOPOSToneIndicator@@$02@ATL@@UAGJABU_GUID@@PAK1@Z 10002ad1 f i ToneIndicator.obj
+ 0001:00001b45       ?SetInterfaceSafetyOptions@?$IObjectSafetyImpl@VCOPOSToneIndicator@@$02@ATL@@UAGJABU_GUID@@KK@Z 10002b45 f i ToneIndicator.obj
+ 0001:00001bbf       ?_LocCPQueryInterface@?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?DIID__IOPOSToneIndicatorEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJABU_GUID@@PAPAX@Z 10002bbf f i ToneIndicator.obj
+ 0001:00001bbf       ?_LocCPQueryInterface@?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJABU_GUID@@PAPAX@Z 10002bbf f i ToneIndicator.obj
+ 0001:00001c0c       ?GetConnectionInterface@?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAU_GUID@@@Z 10002c0c f i ToneIndicator.obj
+ 0001:00001c30       ?GetConnectionPointContainer@?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAPAUIConnectionPointContainer@@@Z 10002c30 f i ToneIndicator.obj
+ 0001:00001c53       ?Advise@?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAUIUnknown@@PAK@Z 10002c53 f i ToneIndicator.obj
+ 0001:00001c53       ?Advise@?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?DIID__IOPOSToneIndicatorEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAUIUnknown@@PAK@Z 10002c53 f i ToneIndicator.obj
+ 0001:00001cf3       ?Unadvise@?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?DIID__IOPOSToneIndicatorEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJK@Z 10002cf3 f i ToneIndicator.obj
+ 0001:00001cf3       ?Unadvise@?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJK@Z 10002cf3 f i ToneIndicator.obj
+ 0001:00001d33       ?EnumConnections@?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?DIID__IOPOSToneIndicatorEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAPAUIEnumConnections@@@Z 10002d33 f i ToneIndicator.obj
+ 0001:00001d33       ?EnumConnections@?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAPAUIEnumConnections@@@Z 10002d33 f i ToneIndicator.obj
+ 0001:00001e2e       ?GetObjectDescription@?$CComCoClass@VCOPOSToneIndicator@@$1?CLSID_OPOSToneIndicator@@3U_GUID@@B@ATL@@SGPB_WXZ 10002e2e f i ToneIndicator.obj
+ 0001:00001e2e       ?GetCategoryMap@CComObjectRootBase@ATL@@SAPBU_ATL_CATMAP_ENTRY@2@XZ 10002e2e f i ToneIndicator.obj
+ 0001:00001e31       ?GetConnectionInterface@?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?DIID__IOPOSToneIndicatorEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAU_GUID@@@Z 10002e31 f i ToneIndicator.obj
+ 0001:00001e55       ?GetConnectionPointContainer@?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?DIID__IOPOSToneIndicatorEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UAGJPAPAUIConnectionPointContainer@@@Z 10002e55 f i ToneIndicator.obj
+ 0001:00001e78       ?UpdateRegistry@COPOSToneIndicator@@SGJH@Z 10002e78 f i ToneIndicator.obj
+ 0001:00001e90       ?Lock@CAtlModule@ATL@@UAEJXZ 10002e90 f i ToneIndicator.obj
+ 0001:00001e9a       ?Unlock@CAtlModule@ATL@@UAEJXZ 10002e9a f i ToneIndicator.obj
+ 0001:00001ea4       ?GetLockCount@CAtlModule@ATL@@UAEJXZ 10002ea4 f i ToneIndicator.obj
+ 0001:00001ea8       ?GetGITPtr@CAtlModule@ATL@@UAEJPAPAUIGlobalInterfaceTable@@@Z 10002ea8 f i ToneIndicator.obj
+ 0001:00001ef4       ?ProcessWindowMessage@COPOSToneIndicator@@UAEHPAUHWND__@@IIJAAJK@Z 10002ef4 f i ToneIndicator.obj
+ 0001:00001f3d       ?SODirectIO@COPOSToneIndicator@@MAGJJPAJPAPA_W@Z 10002f3d f i ToneIndicator.obj
+ 0001:00001f86       ?SOError@COPOSToneIndicator@@MAGJJJJPAJ@Z 10002f86 f i ToneIndicator.obj
+ 0001:00001fdb       ?SOOutputComplete@COPOSToneIndicator@@MAGJJ@Z 10002fdb f i ToneIndicator.obj
+ 0001:00002014       ?SOStatusUpdate@COPOSToneIndicator@@MAGJJ@Z 10003014 f i ToneIndicator.obj
+ 0001:0000204d       ?AddCommonRGSReplacements@?$CAtlModuleT@VCComModule@ATL@@@ATL@@UAEJPAUIRegistrarBase@@@Z 1000304d f i ToneIndicator.obj
+ 0001:00002067       ?UpdateRegistryFromResourceD@CComModule@ATL@@UAGJPB_WHPAU_ATL_REGMAP_ENTRY@2@@Z 10003067 f i ToneIndicator.obj
+ 0001:00002067       ?UpdateRegistryFromResourceD@CComModule@ATL@@UAGJIHPAU_ATL_REGMAP_ENTRY@2@@Z 10003067 f i ToneIndicator.obj
+ 0001:0000206f       ?UpdateRegistryFromResource@CComModule@ATL@@UAGJPB_WHPAU_ATL_REGMAP_ENTRY@2@@Z 1000306f f i ToneIndicator.obj
+ 0001:00002078       ?UpdateRegistryFromResource@CComModule@ATL@@UAGJIHPAU_ATL_REGMAP_ENTRY@2@@Z 10003078 f i ToneIndicator.obj
+ 0001:00002081       ??_ECComModule@ATL@@UAEPAXI@Z 10003081 f i ToneIndicator.obj
+ 0001:00002081       ??_GCComModule@ATL@@UAEPAXI@Z 10003081 f i ToneIndicator.obj
+ 0001:000020a9       ?CreateInstance@?$CComCreator@V?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@@ATL@@SGJPAXABU_GUID@@PAPAX@Z 100030a9 f i ToneIndicator.obj
+ 0001:00002149       ?CreateInstance@?$CComCreator2@V?$CComCreator@V?$CComObject@VCOPOSToneIndicator@@@ATL@@@ATL@@V?$CComCreator@V?$CComAggObject@VCOPOSToneIndicator@@@ATL@@@2@@ATL@@SGJPAXABU_GUID@@PAPAX@Z 10003149 f i ToneIndicator.obj
+ 0001:00002169       ?AddRef@?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UAGKXZ 10003169 f i ToneIndicator.obj
+ 0001:00002190       ?Release@?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UAGKXZ 10003190 f i ToneIndicator.obj
+ 0001:000021c6       ?QueryInterface@?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UAGJABU_GUID@@PAPAX@Z 100031c6 f i ToneIndicator.obj
+ 0001:000021e0       ??_E?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UAEPAXI@Z 100031e0 f i ToneIndicator.obj
+ 0001:000021e0       ??_G?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UAEPAXI@Z 100031e0 f i ToneIndicator.obj
+ 0001:00002202       ?Next@?$CComEnumImpl@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@@ATL@@UAGJKPAPAUIConnectionPoint@@PAK@Z 10003202 f i ToneIndicator.obj
+ 0001:000022d9       ?Skip@?$CComEnumImpl@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@@ATL@@UAGJK@Z 100032d9 f i ToneIndicator.obj
+ 0001:00002306       ?Reset@?$CComEnumImpl@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@@ATL@@UAGJXZ 10003306 f i ToneIndicator.obj
+ 0001:00002306       ?Reset@?$CComEnumImpl@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@@ATL@@UAGJXZ 10003306 f i ToneIndicator.obj
+ 0001:00002318       ?Clone@?$CComEnumImpl@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@@ATL@@UAGJPAPAUIEnumConnectionPoints@@@Z 10003318 f i ToneIndicator.obj
+ 0001:000023f9       ?AddRef@?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAGKXZ 100033f9 f i ToneIndicator.obj
+ 0001:000023f9       ?AddRef@?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAGKXZ 100033f9 f i ToneIndicator.obj
+ 0001:0000240a       ?Release@?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAGKXZ 1000340a f i ToneIndicator.obj
+ 0001:0000240a       ?Release@?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAGKXZ 1000340a f i ToneIndicator.obj
+ 0001:00002446       ?QueryInterface@?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAGJABU_GUID@@PAPAX@Z 10003446 f i ToneIndicator.obj
+ 0001:00002460       ??_E?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAEPAXI@Z 10003460 f i ToneIndicator.obj
+ 0001:00002460       ??_G?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAEPAXI@Z 10003460 f i ToneIndicator.obj
+ 0001:00002482       ?AddRef@CRegObject@ATL@@UAGKXZ 10003482 f i ToneIndicator.obj
+ 0001:00002488       ?AddReplacement@CRegObject@ATL@@UAGJPB_W0@Z 10003488 f i ToneIndicator.obj
+ 0001:000024c1       ?ClearReplacements@CRegObject@ATL@@UAGJXZ 100034c1 f i ToneIndicator.obj
+ 0001:000024d3       ??_ECRegObject@ATL@@UAEPAXI@Z 100034d3 f i ToneIndicator.obj
+ 0001:000024d3       ??_GCRegObject@ATL@@UAEPAXI@Z 100034d3 f i ToneIndicator.obj
+ 0001:000024f5       ?AddRef@?$CComAggObject@VCOPOSToneIndicator@@@ATL@@UAGKXZ 100034f5 f i ToneIndicator.obj
+ 0001:00002506       ?Release@?$CComAggObject@VCOPOSToneIndicator@@@ATL@@UAGKXZ 10003506 f i ToneIndicator.obj
+ 0001:00002542       ?QueryInterface@?$CComAggObject@VCOPOSToneIndicator@@@ATL@@UAGJABU_GUID@@PAPAX@Z 10003542 f i ToneIndicator.obj
+ 0001:00002591       ?AddRef@?$CComContainedObject@VCOPOSToneIndicator@@@ATL@@UAGKXZ 10003591 f i ToneIndicator.obj
+ 0001:000025a7       ?Release@?$CComContainedObject@VCOPOSToneIndicator@@@ATL@@UAGKXZ 100035a7 f i ToneIndicator.obj
+ 0001:000025bd       ?QueryInterface@?$CComContainedObject@VCOPOSToneIndicator@@@ATL@@UAGJABU_GUID@@PAPAX@Z 100035bd f i ToneIndicator.obj
+ 0001:000025d8       ??_E?$CComAggObject@VCOPOSToneIndicator@@@ATL@@UAEPAXI@Z 100035d8 f i ToneIndicator.obj
+ 0001:000025d8       ??_G?$CComAggObject@VCOPOSToneIndicator@@@ATL@@UAEPAXI@Z 100035d8 f i ToneIndicator.obj
+ 0001:000025fd       ?AddRef@?$CComObject@VCOPOSToneIndicator@@@ATL@@UAGKXZ 100035fd f i ToneIndicator.obj
+ 0001:00002614       ?Release@?$CComObject@VCOPOSToneIndicator@@@ATL@@UAGKXZ 10003614 f i ToneIndicator.obj
+ 0001:00002656       ?QueryInterface@?$CComObject@VCOPOSToneIndicator@@@ATL@@UAGJABU_GUID@@PAPAX@Z 10003656 f i ToneIndicator.obj
+ 0001:00002670       ?OnDrawAdvanced@CComControlBase@ATL@@UAEJAAUATL_DRAWINFO@@@Z 10003670 f i ToneIndicator.obj
+ 0001:00002763       ?Next@?$CComEnumImpl@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@@ATL@@UAGJKPAUtagCONNECTDATA@@PAK@Z 10003763 f i ToneIndicator.obj
+ 0001:0000283a       ?Skip@?$CComEnumImpl@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@@ATL@@UAGJK@Z 1000383a f i ToneIndicator.obj
+ 0001:00002867       ?Clone@?$CComEnumImpl@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@@ATL@@UAGJPAPAUIEnumConnections@@@Z 10003867 f i ToneIndicator.obj
+ 0001:00002948       ?QueryInterface@?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAGJABU_GUID@@PAPAX@Z 10003948 f i ToneIndicator.obj
+ 0001:00002962       ??_G?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAEPAXI@Z 10003962 f i ToneIndicator.obj
+ 0001:00002962       ??_E?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAEPAXI@Z 10003962 f i ToneIndicator.obj
+ 0001:00002984       ??$?4UITypeInfo2@@@?$CComPtr@UITypeInfo@@@ATL@@QAEPAUITypeInfo@@ABV?$CComPtr@UITypeInfo2@@@1@@Z 10003984 f i ToneIndicator.obj
+ 0001:000029b1       ??$AtlAdd@K@ATL@@YAJPAKKK@Z 100039b1 f i ToneIndicator.obj
+ 0001:000029d4       ??$AtlAdd@_K@ATL@@YAJPA_K_K1@Z 100039d4 f i ToneIndicator.obj
+ 0001:00002a0c       ??$AtlAddThrow@K@ATL@@YAKKK@Z 10003a0c f i ToneIndicator.obj
+ 0001:00002a32       ??$AtlModuleRegisterWndClassInfoT@VAtlModuleRegisterWndClassInfoParamW@ATL@@@ATL@@YAGPAU_ATL_BASE_MODULE70@0@PAU_ATL_WIN_MODULE70@0@PAU_ATL_WNDCLASSINFOW@0@PAP6GJPAUHWND__@@IIJ@ZVAtlModuleRegisterWndClassInfoParamW@0@@Z 10003a32 f i ToneIndicator.obj
+ 0001:00002b80       ??$AtlMultiply@H@ATL@@YAJPAHHH@Z 10003b80 f i ToneIndicator.obj
+ 0001:00002bb8       ??$AtlMultiply@K@ATL@@YAJPAKKK@Z 10003bb8 f i ToneIndicator.obj
+ 0001:00002bb8       ??$AtlMultiply@I@ATL@@YAJPAIII@Z 10003bb8 f i ToneIndicator.obj
+ 0001:00002bda       ??$AtlMultiplyThrow@I@ATL@@YAIII@Z 10003bda f i ToneIndicator.obj
+ 0001:00002c00       ??0?$CComAggObject@VCOPOSToneIndicator@@@ATL@@QAE@PAX@Z 10003c00 f i ToneIndicator.obj
+ 0001:00002c2d       ??0?$CComContainedObject@VCOPOSToneIndicator@@@ATL@@QAE@PAX@Z 10003c2d f i ToneIndicator.obj
+ 0001:00002ce6       ??0?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@QAE@PAX@Z 10003ce6 f i ToneIndicator.obj
+ 0001:00002d14       ??0?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@QAE@PAX@Z 10003d14 f i ToneIndicator.obj
+ 0001:00002d42       ??0?$CComObject@VCOPOSToneIndicator@@@ATL@@QAE@PAX@Z 10003d42 f i ToneIndicator.obj
+ 0001:00002df9       ??0?$CComQIPtr@UIOleControlSite@@$1?_GUID_b196b289_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@B@ATL@@QAE@PAUIUnknown@@@Z 10003df9 f i ToneIndicator.obj
+ 0001:00002e22       ??0CAtlModule@ATL@@QAE@XZ  10003e22 f i ToneIndicator.obj
+ 0001:00002e63       ??0CParseBuffer@CRegParser@ATL@@QAE@H@Z 10003e63 f i ToneIndicator.obj
+ 0001:00002e99       ??0_ATL_MSG@ATL@@QAE@PAUHWND__@@IIJH@Z 10003e99 f i ToneIndicator.obj
+ 0001:00002ed1       ??1?$CComAggObject@VCOPOSToneIndicator@@@ATL@@UAE@XZ 10003ed1 f i ToneIndicator.obj
+ 0001:00002ef5       ??1?$CComEnumImpl@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@@ATL@@UAE@XZ 10003ef5 f i ToneIndicator.obj
+ 0001:00002f35       ??1?$CComEnumImpl@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@@ATL@@UAE@XZ 10003f35 f i ToneIndicator.obj
+ 0001:00002f75       ??1?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAE@XZ 10003f75 f i ToneIndicator.obj
+ 0001:00002f98       ??1?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UAE@XZ 10003f98 f i ToneIndicator.obj
+ 0001:00002fbb       ??1?$CComObject@VCOPOSToneIndicator@@@ATL@@UAE@XZ 10003fbb f i ToneIndicator.obj
+ 0001:00003079       ??1?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UAE@XZ 10004079 f i ToneIndicator.obj
+ 0001:0000308f       ??1?$CComObjectRootEx@VCComMultiThreadModel@ATL@@@ATL@@QAE@XZ 1000408f f i ToneIndicator.obj
+ 0001:000030a4       ??1CRegObject@ATL@@UAE@XZ  100040a4 f i ToneIndicator.obj
+ 0001:000030c4       ??4?$CComPtr@UIOleClientSite@@@ATL@@QAEPAUIOleClientSite@@PAU2@@Z 100040c4 f i ToneIndicator.obj
+ 0001:000030c4       ??4?$CComPtr@UIAdviseSink@@@ATL@@QAEPAUIAdviseSink@@PAU2@@Z 100040c4 f i ToneIndicator.obj
+ 0001:000030c4       ??4?$CComPtr@UIUnknown@@@ATL@@QAEPAUIUnknown@@PAU2@@Z 100040c4 f i ToneIndicator.obj
+ 0001:000030f8       ??_E?$CComContainedObject@VCOPOSToneIndicator@@@ATL@@UAEPAXI@Z 100040f8 f i ToneIndicator.obj
+ 0001:000030f8       ??_G?$CComContainedObject@VCOPOSToneIndicator@@@ATL@@UAEPAXI@Z 100040f8 f i ToneIndicator.obj
+ 0001:0000311d       ??_G?$CComObject@VCOPOSToneIndicator@@@ATL@@UAEPAXI@Z 1000411d f i ToneIndicator.obj
+ 0001:0000311d       ??_E?$CComObject@VCOPOSToneIndicator@@@ATL@@UAEPAXI@Z 1000411d f i ToneIndicator.obj
+ 0001:00003142       ?Add@?$CSimpleArray@GV?$CSimpleArrayEqualHelper@G@ATL@@@ATL@@QAEHABG@Z 10004142 f i ToneIndicator.obj
+ 0001:000031c6       ?Add@?$CSimpleMap@PA_WPA_WVCExpansionVectorEqualHelper@ATL@@@ATL@@QAEHABQA_W0@Z 100041c6 f i ToneIndicator.obj
+ 0001:0000321b       ?Add@CComDynamicUnkArray@ATL@@QAEKPAUIUnknown@@@Z 1000421b f i ToneIndicator.obj
+ 0001:000032d1       ?Add@CExpansionVector@ATL@@QAEHPB_W0@Z 100042d1 f i ToneIndicator.obj
+ 0001:000033da       ?AddString@CParseBuffer@CRegParser@ATL@@QAEHPB_W@Z 100043da f i ToneIndicator.obj
+ 0001:0000340f       ?AddTermFunc@CAtlModule@ATL@@QAEJP6GXK@ZK@Z 1000440f f i ToneIndicator.obj
+ 0001:00003472       ?AddValue@CRegParser@ATL@@IAEJAAVCRegKey@2@PB_WPA_W@Z 10004472 f i ToneIndicator.obj
+ 0001:0000378c       ?Allocate@?$CAtlSafeAllocBufferManager@VCCRTAllocator@ATL@@@_ATL_SAFE_ALLOCA_IMPL@ATL@@QAEPAXK@Z 1000478c f i ToneIndicator.obj
+ 0001:000037b9       ?Allocate@?$CTempBuffer@E$0BAA@VCCRTAllocator@ATL@@@ATL@@QAEPAEI@Z 100047b9 f i ToneIndicator.obj
+ 0001:000037e8       ?Allocate@?$CTempBuffer@_W$0BAA@VCCRTAllocator@ATL@@@ATL@@QAEPA_WI@Z 100047e8 f i ToneIndicator.obj
+ 0001:00003817       ?Allocate@?$CTempBuffer@_W$0EAA@VCCRTAllocator@ATL@@@ATL@@QAEPA_WI@Z 10004817 f i ToneIndicator.obj
+ 0001:00003846       ?AllocateHeap@?$CTempBuffer@E$0BAA@VCCRTAllocator@ATL@@@ATL@@AAEXI@Z 10004846 f i ToneIndicator.obj
+ 0001:00003846       ?AllocateHeap@?$CTempBuffer@_W$0EAA@VCCRTAllocator@ATL@@@ATL@@AAEXI@Z 10004846 f i ToneIndicator.obj
+ 0001:00003846       ?AllocateHeap@?$CTempBuffer@_W$0BAA@VCCRTAllocator@ATL@@@ATL@@AAEXI@Z 10004846 f i ToneIndicator.obj
+ 0001:0000386b       ?Append@CParseBuffer@CRegParser@ATL@@QAEHPB_WH@Z 1000486b f i ToneIndicator.obj
+ 0001:000038f9       ?AtlCoTaskMemCAlloc@ATL@@YAPAXKK@Z 100048f9 f i ToneIndicator.obj
+ 0001:00003926       ?AtlCoTaskMemRecalloc@ATL@@YAPAXPAXKK@Z 10004926 f i ToneIndicator.obj
+ 0001:00003956       ?AtlComModuleGetClassObject@ATL@@YGJPAU_ATL_COM_MODULE70@1@ABU_GUID@@1PAPAX@Z 10004956 f i ToneIndicator.obj
+ 0001:00003a49       ?AtlComModuleRegisterServer@ATL@@YGJPAU_ATL_COM_MODULE70@1@HPBU_GUID@@@Z 10004a49 f i ToneIndicator.obj
+ 0001:00003ad1       ?AtlComModuleUnregisterServer@ATL@@YGJPAU_ATL_COM_MODULE70@1@HPBU_GUID@@@Z 10004ad1 f i ToneIndicator.obj
+ 0001:00003b59       ?AtlComQIPtrAssign2@ATL@@YAXPAPAUIUnknown@@PAU2@ABU_GUID@@@Z 10004b59 f i ToneIndicator.obj
+ 0001:00003b88       ?AtlCreateTargetDC@ATL@@YGPAUHDC__@@PAU2@PAUtagDVTARGETDEVICE@@@Z 10004b88 f i ToneIndicator.obj
+ 0001:00003bf1       ?AtlCrtErrorCheck@ATL@@YAHH@Z 10004bf1 f i ToneIndicator.obj
+ 0001:00003c2c       ?AtlHiMetricToPixel@ATL@@YGXPBUtagSIZE@@PAU2@@Z 10004c2c f i ToneIndicator.obj
+ 0001:00003ca1       ?AtlHresultFromLastError@ATL@@YAJXZ 10004ca1 f i ToneIndicator.obj
+ 0001:00003cb8       ?AtlHresultFromWin32@ATL@@YAJK@Z 10004cb8 f i ToneIndicator.obj
+ 0001:00003ccd       ?AtlInternalOleLoadFromStream@ATL@@YAJPAUIStream@@ABU_GUID@@PAPAXTClassesAllowedInStream@1@K@Z 10004ccd f i ToneIndicator.obj
+ 0001:00003deb       ?AtlInternalQueryInterface@ATL@@YGJPAXPBU_ATL_INTMAP_ENTRY@1@ABU_GUID@@PAPAX@Z 10004deb f i ToneIndicator.obj
+ 0001:00003e8e       ?AtlLoadTypeLib@ATL@@YGJPAUHINSTANCE__@@PB_WPAPA_WPAPAUITypeLib@@@Z 10004e8e f i ToneIndicator.obj
+ 0001:0000406c       ?AtlRegisterClassCategoriesHelper@ATL@@YGJABU_GUID@@PBU_ATL_CATMAP_ENTRY@1@H@Z 1000506c f i ToneIndicator.obj
+ 0001:00004368       ?AtlRegisterTypeLib@ATL@@YGJPAUHINSTANCE__@@PB_W@Z 10005368 f i ToneIndicator.obj
+ 0001:000044f0       ?AtlThrowImpl@ATL@@YGXJ@Z  100054f0 f i ToneIndicator.obj
+ 0001:0000450e       ?AtlUnRegisterTypeLib@ATL@@YGJPAUHINSTANCE__@@PB_W@Z 1000550e f i ToneIndicator.obj
+ 0001:000045b9       ?AtlWinModuleAddCreateWndData@ATL@@YGXPAU_ATL_WIN_MODULE70@1@PAU_AtlCreateWndData@1@PAX@Z 100055b9 f i ToneIndicator.obj
+ 0001:0000460d       ?AtlWinModuleExtractCreateWndData@ATL@@YGPAXPAU_ATL_WIN_MODULE70@1@@Z 1000560d f i ToneIndicator.obj
+ 0001:00004670       ?AtlWinModuleRegisterClassExW@ATL@@YGGPAU_ATL_WIN_MODULE70@1@PBUtagWNDCLASSEXW@@@Z 10005670 f i ToneIndicator.obj
+ 0001:000046af       ?CanForceRemoveKey@CRegParser@ATL@@IAEHPB_W@Z 100056af f i ToneIndicator.obj
+ 0001:000046de       ?ChToByte@CRegParser@ATL@@KAE_W@Z 100056de f i ToneIndicator.obj
+ 0001:00004711       ?Cleanup@CComTypeInfoHolder@ATL@@SGXK@Z 10005711 f i ToneIndicator.obj
+ 0001:00004744       ?ClearReplacements@CExpansionVector@ATL@@QAEJXZ 10005744 f i ToneIndicator.obj
+ 0001:00004781       ?Close@CRegKey@ATL@@QAEJXZ 10005781 f i ToneIndicator.obj
+ 0001:0000479b       ?CreateInstance@?$CComCreator@V?$CComAggObject@VCOPOSToneIndicator@@@ATL@@@ATL@@SGJPAXABU_GUID@@PAPAX@Z 1000579b f i ToneIndicator.obj
+ 0001:00004810       ?CreateInstance@?$CComCreator@V?$CComObject@VCOPOSToneIndicator@@@ATL@@@ATL@@SGJPAXABU_GUID@@PAPAX@Z 10005810 f i ToneIndicator.obj
+ 0001:00004890       ?CreateInstance@?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@SGJPAPAV12@@Z 10005890 f i ToneIndicator.obj
+ 0001:000048da       ?CreateInstance@?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@SGJPAPAV12@@Z 100058da f i ToneIndicator.obj
+ 0001:00004924       ?DefaultReflectionHandler@?$CWindowImplRoot@VCWindow@ATL@@@ATL@@SAHPAUHWND__@@IIJAAJ@Z 10005924 f i ToneIndicator.obj
+ 0001:00004997       ?DeleteSubKey@CRegKey@ATL@@QAEJPB_W@Z 10005997 f i ToneIndicator.obj
+ 0001:00004a10       ?DoEvent@COPOSToneIndicator@@IAEXIIJ@Z 10005a10 f i ToneIndicator.obj
+ 0001:00004a90       ?DoVerbHide@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@QAEJPBUtagRECT@@PAUHWND__@@@Z 10005a90 f i ToneIndicator.obj
+ 0001:00004ac6       ?DoVerbInPlaceActivate@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@QAEJPBUtagRECT@@PAUHWND__@@@Z 10005ac6 f i ToneIndicator.obj
+ 0001:00004af9       ?DoVerbPrimary@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@QAEJPBUtagRECT@@PAUHWND__@@@Z 10005af9 f i ToneIndicator.obj
+ 0001:00004b85       ?DoVerbProperties@CComControlBase@ATL@@QAEJPBUtagRECT@@PAUHWND__@@@Z 10005b85 f i ToneIndicator.obj
+ 0001:00004d04       ?DoVerbUIActivate@?$IOleObjectImpl@VCOPOSToneIndicator@@@ATL@@QAEJPBUtagRECT@@PAUHWND__@@@Z 10005d04 f i ToneIndicator.obj
+ 0001:00004d41       ?DoesVerbActivate@CComControlBase@ATL@@QAEHJ@Z 10005d41 f i ToneIndicator.obj
+ 0001:00004d62       ?DoesVerbUIActivate@CComControlBase@ATL@@QAEHJ@Z 10005d62 f i ToneIndicator.obj
+ 0001:00004d97       ?EndOfVar@CRegParser@ATL@@IAEHXZ 10005d97 f i ToneIndicator.obj
+ 0001:00004db7       ?EscapeSingleQuote@CAtlModule@ATL@@SAXPA_WIPB_W@Z 10005db7 f i ToneIndicator.obj
+ 0001:00004e06       ?FindKey@?$CSimpleMap@PA_WPA_WVCExpansionVectorEqualHelper@ATL@@@ATL@@QBEHABQA_W@Z 10005e06 f i ToneIndicator.obj
+ 0001:00004e3d       ?FireTheEvent@?$CProxy_IOPOSEvents@VCOPOSToneIndicator@@@@IAEXPAVOposVariant@@IAAJPB_WJ@Z 10005e3d f i ToneIndicator.obj
+ 0001:00004ecf       ?FireViewChange@CComControlBase@ATL@@QAEJXZ 10005ecf f i ToneIndicator.obj
+ 0001:00004f18       ?Fire_DirectIOEvent@?$CProxy_IOPOSEvents@VCOPOSToneIndicator@@@@QAEXJPAJPAPA_W@Z 10005f18 f i ToneIndicator.obj
+ 0001:00005004       ?Fire_ErrorEvent@?$CProxy_IOPOSEvents@VCOPOSToneIndicator@@@@QAEXJJJPAJ@Z 10006004 f i ToneIndicator.obj
+ 0001:000050f5       ?Fire_OutputCompleteEvent@?$CProxy_IOPOSEvents@VCOPOSToneIndicator@@@@QAEXJ@Z 100060f5 f i ToneIndicator.obj
+ 0001:0000518b       ?Fire_StatusUpdateEvent@?$CProxy_IOPOSEvents@VCOPOSToneIndicator@@@@QAEXJ@Z 1000618b f i ToneIndicator.obj
+ 0001:00005221       ?FreeHeap@?$CTempBuffer@_W$0BAA@VCCRTAllocator@ATL@@@ATL@@AAEXXZ 10006221 f i ToneIndicator.obj
+ 0001:00005221       ?FreeHeap@?$CTempBuffer@_W$0EAA@VCCRTAllocator@ATL@@@ATL@@AAEXXZ 10006221 f i ToneIndicator.obj
+ 0001:00005221       ?FreeHeap@?$CTempBuffer@E$0BAA@VCCRTAllocator@ATL@@@ATL@@AAEXXZ 10006221 f i ToneIndicator.obj
+ 0001:0000522a       ?GetAmbientLocaleID@CComControlBase@ATL@@QAEJAAK@Z 1000622a f i ToneIndicator.obj
+ 0001:00005286       ?GetAmbientUserMode@CComControlBase@ATL@@QAEJAAH@Z 10006286 f i ToneIndicator.obj
+ 0001:000052f6       ?GetAt@CComDynamicUnkArray@ATL@@QAEPAUIUnknown@@H@Z 100062f6 f i ToneIndicator.obj
+ 0001:00005312       ?GetClassObject@CComModule@ATL@@QAEJABU_GUID@@0PAPAX@Z 10006312 f i ToneIndicator.obj
+ 0001:000053b4       ?GetConnMap@COPOSToneIndicator@@SAPBU_ATL_CONNMAP_ENTRY@ATL@@PAH@Z 100063b4 f i ToneIndicator.obj
+ 0001:00005424       ?GetCookie@CComDynamicUnkArray@ATL@@QAGKPAPAUIUnknown@@@Z 10006424 f i ToneIndicator.obj
+ 0001:0000545c       ?GetIDsOfNames@CComTypeInfoHolder@ATL@@QAEJABU_GUID@@PAPA_WIKPAJ@Z 1000645c f i ToneIndicator.obj
+ 0001:00005583       ?GetKeyAt@?$CSimpleMap@PA_WPA_WVCExpansionVectorEqualHelper@ATL@@@ATL@@QBEAAPA_WH@Z 10006583 f i ToneIndicator.obj
+ 0001:000055a8       ?GetPagesHelper@?$ISpecifyPropertyPagesImpl@VCOPOSToneIndicator@@@ATL@@IAEJPAUtagCAUUID@@PBUATL_PROPMAP_ENTRY@2@@Z 100065a8 f i ToneIndicator.obj
+ 0001:000056cf       ?GetProperty@?$CComPtr@UIDispatch@@@ATL@@SAJPAUIDispatch@@JPAUtagVARIANT@@@Z 100066cf f i ToneIndicator.obj
+ 0001:0000571e       ?GetSizeMax@CComVariant@ATL@@QBEJPAT_ULARGE_INTEGER@@@Z 1000671e f i ToneIndicator.obj
+ 0001:000058e0       ?GetTI@CComTypeInfoHolder@ATL@@QAEJK@Z 100068e0 f i ToneIndicator.obj
+ 0001:00005abf       ?GetTI@CComTypeInfoHolder@ATL@@QAEJKPAPAUITypeInfo@@@Z 10006abf f i ToneIndicator.obj
+ 0001:00005b01       ?GetUnknown@CComDynamicUnkArray@ATL@@QAGPAUIUnknown@@K@Z 10006b01 f i ToneIndicator.obj
+ 0001:00005b22       ?GetValueAt@?$CSimpleMap@PA_WPA_WVCExpansionVectorEqualHelper@ATL@@@ATL@@QBEAAPA_WH@Z 10006b22 f i ToneIndicator.obj
+ 0001:00005b48       ?GetZoomInfo@CComControlBase@ATL@@QAEXAAUATL_DRAWINFO@@@Z 10006b48 f i ToneIndicator.obj
+ 0001:00005bdb       ?HKeyFromString@CRegParser@ATL@@KAPAUHKEY__@@PA_W@Z 10006bdb f i ToneIndicator.obj
+ 0001:00005c09       ?HasSubKeys@CRegParser@ATL@@IAEHPAUHKEY__@@@Z 10006c09 f i ToneIndicator.obj
+ 0001:00005c3e       ?IDataObject_GetData@CComControlBase@ATL@@QAEJPAUtagFORMATETC@@PAUtagSTGMEDIUM@@@Z 10006c3e f i ToneIndicator.obj
+ 0001:00005de4       ?IOleInPlaceObject_InPlaceDeactivate@CComControlBase@ATL@@QAEJXZ 10006de4 f i ToneIndicator.obj
+ 0001:00005e6b       ?IOleInPlaceObject_SetObjectRects@CComControlBase@ATL@@QAEJPBUtagRECT@@0@Z 10006e6b f i ToneIndicator.obj
+ 0001:00005f38       ?IOleInPlaceObject_UIDeactivate@CComControlBase@ATL@@QAEJXZ 10006f38 f i ToneIndicator.obj
+ 0001:00005ffa       ?IOleObject_Advise@CComControlBase@ATL@@QAEJPAUIAdviseSink@@PAK@Z 10006ffa f i ToneIndicator.obj
+ 0001:00006024       ?IOleObject_Close@CComControlBase@ATL@@QAEJK@Z 10007024 f i ToneIndicator.obj
+ 0001:00006108       ?IOleObject_GetClientSite@CComControlBase@ATL@@QAEJPAPAUIOleClientSite@@@Z 10007108 f i ToneIndicator.obj
+ 0001:00006131       ?IOleObject_SetClientSite@CComControlBase@ATL@@QAEJPAUIOleClientSite@@@Z 10007131 f i ToneIndicator.obj
+ 0001:00006170       ?IOleObject_SetExtent@CComControlBase@ATL@@QAEJKPAUtagSIZE@@@Z 10007170 f i ToneIndicator.obj
  0001:00006222       ?IPSI_GetIPersistStreamInit@?$IPersistStorageImpl@VCOPOSToneIndicator@@@ATL@@AAEPAUIPersistStreamInit@@XZ 10007222 f i ToneIndicator.obj
  0001:000062ca       ?IPersistStreamInit_Load@?$IPersistStreamInitImpl@VCOPOSToneIndicator@@@ATL@@QAEJPAUIStream@@PBUATL_PROPMAP_ENTRY@2@@Z 100072ca f i ToneIndicator.obj
  0001:0000653f       ?IPersistStreamInit_Save@?$IPersistStreamInitImpl@VCOPOSToneIndicator@@@ATL@@QAEJPAUIStream@@HPBUATL_PROPMAP_ENTRY@2@@Z 1000753f f i ToneIndicator.obj
@@ -513,8 +519,8 @@
  0001:00006ed0       ?InlineIsEqualUnknown@ATL@@YGHABU_GUID@@@Z 10007ed0 f i ToneIndicator.obj
  0001:00006ef8       ?InternalSetAtIndex@?$CSimpleMap@PA_WPA_WVCExpansionVectorEqualHelper@ATL@@@ATL@@QAEXHABQA_W0@Z 10007ef8 f i ToneIndicator.obj
  0001:00006f22       ?Invoke@CComTypeInfoHolder@ATL@@QAEJPAUIDispatch@@JABU_GUID@@KGPAUtagDISPPARAMS@@PAUtagVARIANT@@PAUtagEXCEPINFO@@PAI@Z 10007f22 f i ToneIndicator.obj
- 0001:00006f65       ?IsEqualObject@?$CComPtrBase@UIOleClientSite@@@ATL@@QAE_NPAUIUnknown@@@Z 10007f65 f i ToneIndicator.obj
  0001:00006f65       ?IsEqualObject@?$CComPtrBase@UITypeInfo@@@ATL@@QAE_NPAUIUnknown@@@Z 10007f65 f i ToneIndicator.obj
+ 0001:00006f65       ?IsEqualObject@?$CComPtrBase@UIOleClientSite@@@ATL@@QAE_NPAUIUnknown@@@Z 10007f65 f i ToneIndicator.obj
  0001:00006fd2       ?IsSpace@CRegParser@ATL@@IAEH_W@Z 10007fd2 f i ToneIndicator.obj
  0001:00006ffc       ?LoadNameCache@CComTypeInfoHolder@ATL@@QAEJPAUITypeInfo@@@Z 10007ffc f i ToneIndicator.obj
  0001:00007131       ?Lookup@?$CSimpleMap@PA_WPA_WVCExpansionVectorEqualHelper@ATL@@@ATL@@QBEPA_WABQA_W@Z 10008131 f i ToneIndicator.obj
@@ -581,130 +587,130 @@
  0001:000095e9       ??0?$CComControl@VCOPOSToneIndicator@@V?$CWindowImpl@VCOPOSToneIndicator@@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@3@@ATL@@@ATL@@QAE@XZ 1000a5e9 f i ToneIndicatorImpl.obj
  0001:00009610       ??0?$CProxy_IOPOSEvents@VCOPOSToneIndicator@@@@QAE@XZ 1000a610 f i ToneIndicatorImpl.obj
  0001:00009630       ??0CComControlBase@ATL@@QAE@AAPAUHWND__@@@Z 1000a630 f i ToneIndicatorImpl.obj
- 0001:0000967a       ??0COPOSToneIndicator@@QAE@XZ 1000a67a f   ToneIndicatorImpl.obj
- 0001:000096b0       ??1?$CComControl@VCOPOSToneIndicator@@V?$CWindowImpl@VCOPOSToneIndicator@@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@3@@ATL@@@ATL@@UAE@XZ 1000a6b0 f i ToneIndicatorImpl.obj
- 0001:000096c9       ??1?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?DIID__IOPOSToneIndicatorEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@QAE@XZ 1000a6c9 f i ToneIndicatorImpl.obj
- 0001:000096c9       ??1?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@QAE@XZ 1000a6c9 f i ToneIndicatorImpl.obj
- 0001:00009706       ??1CComControlBase@ATL@@UAE@XZ 1000a706 f i ToneIndicatorImpl.obj
- 0001:00009769       ??1COPOSToneIndicator@@UAE@XZ 1000a769 f   ToneIndicatorImpl.obj
- 0001:000097b1       ?CheckHealth@COPOSToneIndicator@@UAGJJPAJ@Z 1000a7b1 f   ToneIndicatorImpl.obj
- 0001:00009800       ?ClaimDevice@COPOSToneIndicator@@UAGJJPAJ@Z 1000a800 f   ToneIndicatorImpl.obj
- 0001:0000986e       ?ClearOutput@COPOSToneIndicator@@UAGJPAJ@Z 1000a86e f   ToneIndicatorImpl.obj
- 0001:00009889       ?Close@COPOSToneIndicator@@UAGJPAJ@Z 1000a889 f   ToneIndicatorImpl.obj
- 0001:000098f7       ?CompareFirmwareVersion@COPOSToneIndicator@@UAGJPA_WPAJ1@Z 1000a8f7 f   ToneIndicatorImpl.obj
- 0001:00009977       ?DirectIO@COPOSToneIndicator@@UAGJJPAJPAPA_W0@Z 1000a977 f   ToneIndicatorImpl.obj
- 0001:00009a25       ?DoInvoke@COPOSToneIndicator@@IAEJJPAVOposVariant@@IHPAJ_N@Z 1000aa25 f   ToneIndicatorImpl.obj
- 0001:00009b01       ?EventClose@COPOSToneIndicator@@IAEXXZ 1000ab01 f i ToneIndicatorImpl.obj
- 0001:00009b34       ?EventInit@COPOSToneIndicator@@IAEJXZ 1000ab34 f i ToneIndicatorImpl.obj
- 0001:00009c00       ?EventUninit@COPOSToneIndicator@@IAEXXZ 1000ac00 f i ToneIndicatorImpl.obj
- 0001:00009c52       ?EventWindowProc@COPOSToneIndicator@@IAGJIIJ@Z 1000ac52 f i ToneIndicatorImpl.obj
- 0001:00009d25       ?FinalConstruct@COPOSToneIndicator@@QAEJXZ 1000ad25 f   ToneIndicatorImpl.obj
- 0001:00009d5e       ?FireEventCleanup@COPOSToneIndicator@@IAEXXZ 1000ad5e f i ToneIndicatorImpl.obj
- 0001:00009d74       ?FireEventSetup@COPOSToneIndicator@@IAE_NXZ 1000ad74 f i ToneIndicatorImpl.obj
- 0001:00009da8       ?FreezeEvents@COPOSToneIndicator@@MAGJH@Z 1000ada8 f   ToneIndicatorImpl.obj
- 0001:00009e08       ?GetOposProp@COPOSToneIndicator@@IAEJJPAFJ@Z 1000ae08 f   ToneIndicatorImpl.obj
- 0001:00009e2b       ?GetOposProp@COPOSToneIndicator@@IAEJJPAJJ@Z 1000ae2b f   ToneIndicatorImpl.obj
- 0001:00009efa       ?GetOposProp@COPOSToneIndicator@@IAEJJPAPA_WJ@Z 1000aefa f   ToneIndicatorImpl.obj
- 0001:00009fd6       ?OnDraw@COPOSToneIndicator@@MAEJAAUATL_DRAWINFO@@@Z 1000afd6 f   ToneIndicatorImpl.obj
- 0001:0000a076       ?Open@COPOSToneIndicator@@UAGJPA_WPAJ@Z 1000b076 f   ToneIndicatorImpl.obj
- 0001:0000a8bd       ?ReleaseDevice@COPOSToneIndicator@@UAGJPAJ@Z 1000b8bd f   ToneIndicatorImpl.obj
- 0001:0000a8f4       ?ResetStatistics@COPOSToneIndicator@@UAGJPA_WPAJ@Z 1000b8f4 f   ToneIndicatorImpl.obj
- 0001:0000a94b       ?RetrieveStatistics@COPOSToneIndicator@@UAGJPAPA_WPAJ@Z 1000b94b f   ToneIndicatorImpl.obj
- 0001:0000a9a2       ?SOProcessID@COPOSToneIndicator@@UAGJPAJ@Z 1000b9a2 f   ToneIndicatorImpl.obj
- 0001:0000a9b6       ?SetCOFreezeEvents@COPOSToneIndicator@@IAEXF@Z 1000b9b6 f   ToneIndicatorImpl.obj
- 0001:0000aa56       ?SetOposProp@COPOSToneIndicator@@IAEJJJJ@Z 1000ba56 f   ToneIndicatorImpl.obj
- 0001:0000ab4d       ?Sound@COPOSToneIndicator@@UAGJJJPAJ@Z 1000bb4d f   ToneIndicatorImpl.obj
- 0001:0000abc1       ?SoundImmediate@COPOSToneIndicator@@UAGJPAJ@Z 1000bbc1 f   ToneIndicatorImpl.obj
- 0001:0000abdc       ?UpdateFirmware@COPOSToneIndicator@@UAGJPA_WPAJ@Z 1000bbdc f   ToneIndicatorImpl.obj
- 0001:0000ac33       ?UpdateStatistics@COPOSToneIndicator@@UAGJPA_WPAJ@Z 1000bc33 f   ToneIndicatorImpl.obj
- 0001:0000ac8a       ?get_AsyncMode@COPOSToneIndicator@@UAGJPAF@Z 1000bc8a f   ToneIndicatorImpl.obj
- 0001:0000aca3       ?get_BinaryConversion@COPOSToneIndicator@@UAGJPAJ@Z 1000bca3 f   ToneIndicatorImpl.obj
- 0001:0000acb9       ?get_CapCompareFirmwareVersion@COPOSToneIndicator@@UAGJPAF@Z 1000bcb9 f   ToneIndicatorImpl.obj
- 0001:0000acd2       ?get_CapMelody@COPOSToneIndicator@@UAGJPAJ@Z 1000bcd2 f   ToneIndicatorImpl.obj
- 0001:0000aceb       ?get_CapPitch@COPOSToneIndicator@@UAGJPAF@Z 1000bceb f   ToneIndicatorImpl.obj
- 0001:0000ad04       ?get_CapPowerReporting@COPOSToneIndicator@@UAGJPAJ@Z 1000bd04 f   ToneIndicatorImpl.obj
- 0001:0000ad1d       ?get_CapStatisticsReporting@COPOSToneIndicator@@UAGJPAF@Z 1000bd1d f   ToneIndicatorImpl.obj
- 0001:0000ad36       ?get_CapUpdateFirmware@COPOSToneIndicator@@UAGJPAF@Z 1000bd36 f   ToneIndicatorImpl.obj
- 0001:0000ad4f       ?get_CapUpdateStatistics@COPOSToneIndicator@@UAGJPAF@Z 1000bd4f f   ToneIndicatorImpl.obj
- 0001:0000ad68       ?get_CapVolume@COPOSToneIndicator@@UAGJPAF@Z 1000bd68 f   ToneIndicatorImpl.obj
- 0001:0000ad81       ?get_CheckHealthText@COPOSToneIndicator@@UAGJPAPA_W@Z 1000bd81 f   ToneIndicatorImpl.obj
- 0001:0000ad9a       ?get_Claimed@COPOSToneIndicator@@UAGJPAF@Z 1000bd9a f   ToneIndicatorImpl.obj
- 0001:0000adb0       ?get_ControlObjectDescription@COPOSToneIndicator@@UAGJPAPA_W@Z 1000bdb0 f   ToneIndicatorImpl.obj
- 0001:0000adfe       ?get_ControlObjectVersion@COPOSToneIndicator@@UAGJPAJ@Z 1000bdfe f   ToneIndicatorImpl.obj
- 0001:0000ae11       ?get_DeviceDescription@COPOSToneIndicator@@UAGJPAPA_W@Z 1000be11 f   ToneIndicatorImpl.obj
- 0001:0000ae2a       ?get_DeviceEnabled@COPOSToneIndicator@@UAGJPAF@Z 1000be2a f   ToneIndicatorImpl.obj
- 0001:0000ae40       ?get_DeviceName@COPOSToneIndicator@@UAGJPAPA_W@Z 1000be40 f   ToneIndicatorImpl.obj
- 0001:0000ae59       ?get_FreezeEvents@COPOSToneIndicator@@UAGJPAF@Z 1000be59 f   ToneIndicatorImpl.obj
- 0001:0000ae6f       ?get_InterToneWait@COPOSToneIndicator@@UAGJPAJ@Z 1000be6f f   ToneIndicatorImpl.obj
- 0001:0000ae88       ?get_MelodyType@COPOSToneIndicator@@UAGJPAJ@Z 1000be88 f   ToneIndicatorImpl.obj
- 0001:0000aea1       ?get_MelodyVolume@COPOSToneIndicator@@UAGJPAJ@Z 1000bea1 f   ToneIndicatorImpl.obj
- 0001:0000aeba       ?get_OpenResult@COPOSToneIndicator@@UAGJPAJ@Z 1000beba f   ToneIndicatorImpl.obj
- 0001:0000aed1       ?get_OutputID@COPOSToneIndicator@@UAGJPAJ@Z 1000bed1 f   ToneIndicatorImpl.obj
- 0001:0000aee7       ?get_PowerNotify@COPOSToneIndicator@@UAGJPAJ@Z 1000bee7 f   ToneIndicatorImpl.obj
- 0001:0000aefd       ?get_PowerState@COPOSToneIndicator@@UAGJPAJ@Z 1000befd f   ToneIndicatorImpl.obj
- 0001:0000af13       ?get_ResultCode@COPOSToneIndicator@@UAGJPAJ@Z 1000bf13 f   ToneIndicatorImpl.obj
- 0001:0000af51       ?get_ResultCodeExtended@COPOSToneIndicator@@UAGJPAJ@Z 1000bf51 f   ToneIndicatorImpl.obj
- 0001:0000af67       ?get_ServiceObjectDescription@COPOSToneIndicator@@UAGJPAPA_W@Z 1000bf67 f   ToneIndicatorImpl.obj
- 0001:0000af80       ?get_ServiceObjectVersion@COPOSToneIndicator@@UAGJPAJ@Z 1000bf80 f   ToneIndicatorImpl.obj
- 0001:0000af96       ?get_State@COPOSToneIndicator@@UAGJPAJ@Z 1000bf96 f   ToneIndicatorImpl.obj
- 0001:0000afc2       ?get_Tone1Duration@COPOSToneIndicator@@UAGJPAJ@Z 1000bfc2 f   ToneIndicatorImpl.obj
- 0001:0000afdb       ?get_Tone1Pitch@COPOSToneIndicator@@UAGJPAJ@Z 1000bfdb f   ToneIndicatorImpl.obj
- 0001:0000aff4       ?get_Tone1Volume@COPOSToneIndicator@@UAGJPAJ@Z 1000bff4 f   ToneIndicatorImpl.obj
- 0001:0000b00d       ?get_Tone2Duration@COPOSToneIndicator@@UAGJPAJ@Z 1000c00d f   ToneIndicatorImpl.obj
- 0001:0000b026       ?get_Tone2Pitch@COPOSToneIndicator@@UAGJPAJ@Z 1000c026 f   ToneIndicatorImpl.obj
- 0001:0000b03f       ?get_Tone2Volume@COPOSToneIndicator@@UAGJPAJ@Z 1000c03f f   ToneIndicatorImpl.obj
- 0001:0000b058       ?put_AsyncMode@COPOSToneIndicator@@UAGJF@Z 1000c058 f   ToneIndicatorImpl.obj
- 0001:0000b078       ?put_BinaryConversion@COPOSToneIndicator@@UAGJJ@Z 1000c078 f   ToneIndicatorImpl.obj
- 0001:0000b08e       ?put_DeviceEnabled@COPOSToneIndicator@@UAGJF@Z 1000c08e f   ToneIndicatorImpl.obj
- 0001:0000b0ab       ?put_FreezeEvents@COPOSToneIndicator@@UAGJF@Z 1000c0ab f   ToneIndicatorImpl.obj
- 0001:0000b0f7       ?put_InterToneWait@COPOSToneIndicator@@UAGJJ@Z 1000c0f7 f   ToneIndicatorImpl.obj
- 0001:0000b110       ?put_MelodyType@COPOSToneIndicator@@UAGJJ@Z 1000c110 f   ToneIndicatorImpl.obj
- 0001:0000b129       ?put_MelodyVolume@COPOSToneIndicator@@UAGJJ@Z 1000c129 f   ToneIndicatorImpl.obj
- 0001:0000b142       ?put_PowerNotify@COPOSToneIndicator@@UAGJJ@Z 1000c142 f   ToneIndicatorImpl.obj
- 0001:0000b158       ?put_Tone1Duration@COPOSToneIndicator@@UAGJJ@Z 1000c158 f   ToneIndicatorImpl.obj
- 0001:0000b171       ?put_Tone1Pitch@COPOSToneIndicator@@UAGJJ@Z 1000c171 f   ToneIndicatorImpl.obj
- 0001:0000b18a       ?put_Tone1Volume@COPOSToneIndicator@@UAGJJ@Z 1000c18a f   ToneIndicatorImpl.obj
- 0001:0000b1a3       ?put_Tone2Duration@COPOSToneIndicator@@UAGJJ@Z 1000c1a3 f   ToneIndicatorImpl.obj
- 0001:0000b1bc       ?put_Tone2Pitch@COPOSToneIndicator@@UAGJJ@Z 1000c1bc f   ToneIndicatorImpl.obj
- 0001:0000b1d5       ?put_Tone2Volume@COPOSToneIndicator@@UAGJJ@Z 1000c1d5 f   ToneIndicatorImpl.obj
- 0001:0000b1ee       ?s_EventWindowProc@COPOSToneIndicator@@KGJPAUHWND__@@IIJ@Z 1000c1ee f i ToneIndicatorImpl.obj
- 0001:0000b240       ??_U@YAPAXI@Z              1000c240 f   LIBCMT:new_array.obj
- 0001:0000b249       ??3@YAXPAXI@Z              1000c249 f   LIBCMT:delete_scalar_size.obj
- 0001:0000b257       ??_V@YAXPAX@Z              1000c257 f   LIBCMT:delete_array.obj
- 0001:0000b25c       ??_V@YAXPAXI@Z             1000c25c f   LIBCMT:delete_array_size.obj
- 0001:0000b2ae       ___scrt_acquire_startup_lock 1000c2ae f   LIBCMT:utility.obj
- 0001:0000b2e0       ___scrt_dllmain_after_initialize_c 1000c2e0 f   LIBCMT:utility.obj
- 0001:0000b30b       ___scrt_dllmain_before_initialize_c 1000c30b f   LIBCMT:utility.obj
- 0001:0000b319       ___scrt_dllmain_crt_thread_attach 1000c319 f   LIBCMT:utility.obj
- 0001:0000b338       ___scrt_dllmain_crt_thread_detach 1000c338 f   LIBCMT:utility.obj
- 0001:0000b345       ___scrt_dllmain_exception_filter 1000c345 f   LIBCMT:utility.obj
- 0001:0000b379       ___scrt_dllmain_uninitialize_c 1000c379 f   LIBCMT:utility.obj
- 0001:0000b39c       ___scrt_dllmain_uninitialize_critical 1000c39c f   LIBCMT:utility.obj
- 0001:0000b3a9       ___scrt_initialize_crt     1000c3a9 f   LIBCMT:utility.obj
- 0001:0000b3e2       ___scrt_initialize_onexit_tables 1000c3e2 f   LIBCMT:utility.obj
- 0001:0000b469       ___scrt_is_nonwritable_in_current_image 1000c469 f   LIBCMT:utility.obj
- 0001:0000b4fd       ___scrt_release_startup_lock 1000c4fd f   LIBCMT:utility.obj
- 0001:0000b51a       ___scrt_uninitialize_crt   1000c51a f   LIBCMT:utility.obj
- 0001:0000b542       __onexit                   1000c542 f   LIBCMT:utility.obj
- 0001:0000b56f       _atexit                    1000c56f f   LIBCMT:utility.obj
- 0001:0000b584       ??3@YAXPAX@Z               1000c584 f   LIBCMT:delete_scalar.obj
- 0001:0000b64e       __Init_thread_footer       1000c64e f   LIBCMT:thread_safe_statics.obj
- 0001:0000b698       __Init_thread_header       1000c698 f   LIBCMT:thread_safe_statics.obj
- 0001:0000b6ea       __Init_thread_notify       1000c6ea f   LIBCMT:thread_safe_statics.obj
- 0001:0000b720       __Init_thread_wait         1000c720 f   LIBCMT:thread_safe_statics.obj
- 0001:0000b76e       ___raise_securityfailure   1000c76e f   LIBCMT:gs_report.obj
- 0001:0000b796       ___report_gsfailure        1000c796 f   LIBCMT:gs_report.obj
- 0001:0000b88f       ___report_rangecheckfailure 1000c88f f   LIBCMT:gs_report.obj
- 0001:0000b89b       ___report_securityfailure  1000c89b f   LIBCMT:gs_report.obj
- 0001:0000b969       ??2@YAPAXIABUnothrow_t@std@@@Z 1000c969 f   LIBCMT:new_scalar_nothrow.obj
- 0001:0000b9b9       ??_U@YAPAXIABUnothrow_t@std@@@Z 1000c9b9 f   LIBCMT:new_array_nothrow.obj
- 0001:0000b9c2       @__security_check_cookie@4 1000c9c2 f   LIBCMT:secchk.obj
+ 0001:00009680       ??0COPOSToneIndicator@@QAE@XZ 1000a680 f   ToneIndicatorImpl.obj
+ 0001:000096b6       ??1?$CComControl@VCOPOSToneIndicator@@V?$CWindowImpl@VCOPOSToneIndicator@@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@3@@ATL@@@ATL@@UAE@XZ 1000a6b6 f i ToneIndicatorImpl.obj
+ 0001:000096cf       ??1?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@QAE@XZ 1000a6cf f i ToneIndicatorImpl.obj
+ 0001:000096cf       ??1?$IConnectionPointImpl@VCOPOSToneIndicator@@$1?DIID__IOPOSToneIndicatorEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@QAE@XZ 1000a6cf f i ToneIndicatorImpl.obj
+ 0001:0000970c       ??1CComControlBase@ATL@@UAE@XZ 1000a70c f i ToneIndicatorImpl.obj
+ 0001:0000976f       ??1COPOSToneIndicator@@UAE@XZ 1000a76f f   ToneIndicatorImpl.obj
+ 0001:000097b7       ?CheckHealth@COPOSToneIndicator@@UAGJJPAJ@Z 1000a7b7 f   ToneIndicatorImpl.obj
+ 0001:00009806       ?ClaimDevice@COPOSToneIndicator@@UAGJJPAJ@Z 1000a806 f   ToneIndicatorImpl.obj
+ 0001:00009874       ?ClearOutput@COPOSToneIndicator@@UAGJPAJ@Z 1000a874 f   ToneIndicatorImpl.obj
+ 0001:0000988f       ?Close@COPOSToneIndicator@@UAGJPAJ@Z 1000a88f f   ToneIndicatorImpl.obj
+ 0001:000098fd       ?CompareFirmwareVersion@COPOSToneIndicator@@UAGJPA_WPAJ1@Z 1000a8fd f   ToneIndicatorImpl.obj
+ 0001:0000997d       ?DirectIO@COPOSToneIndicator@@UAGJJPAJPAPA_W0@Z 1000a97d f   ToneIndicatorImpl.obj
+ 0001:00009a2b       ?DoInvoke@COPOSToneIndicator@@IAEJJPAVOposVariant@@IHPAJ_N@Z 1000aa2b f   ToneIndicatorImpl.obj
+ 0001:00009b07       ?EventClose@COPOSToneIndicator@@IAEXXZ 1000ab07 f i ToneIndicatorImpl.obj
+ 0001:00009b3a       ?EventInit@COPOSToneIndicator@@IAEJXZ 1000ab3a f i ToneIndicatorImpl.obj
+ 0001:00009c06       ?EventUninit@COPOSToneIndicator@@IAEXXZ 1000ac06 f i ToneIndicatorImpl.obj
+ 0001:00009c58       ?EventWindowProc@COPOSToneIndicator@@IAGJIIJ@Z 1000ac58 f i ToneIndicatorImpl.obj
+ 0001:00009d2b       ?FinalConstruct@COPOSToneIndicator@@QAEJXZ 1000ad2b f   ToneIndicatorImpl.obj
+ 0001:00009d64       ?FireEventCleanup@COPOSToneIndicator@@IAEXXZ 1000ad64 f i ToneIndicatorImpl.obj
+ 0001:00009d7a       ?FireEventSetup@COPOSToneIndicator@@IAE_NXZ 1000ad7a f i ToneIndicatorImpl.obj
+ 0001:00009dae       ?FreezeEvents@COPOSToneIndicator@@MAGJH@Z 1000adae f   ToneIndicatorImpl.obj
+ 0001:00009e0e       ?GetOposProp@COPOSToneIndicator@@IAEJJPAFJ@Z 1000ae0e f   ToneIndicatorImpl.obj
+ 0001:00009e31       ?GetOposProp@COPOSToneIndicator@@IAEJJPAJJ@Z 1000ae31 f   ToneIndicatorImpl.obj
+ 0001:00009f00       ?GetOposProp@COPOSToneIndicator@@IAEJJPAPA_WJ@Z 1000af00 f   ToneIndicatorImpl.obj
+ 0001:00009fdc       ?OnDraw@COPOSToneIndicator@@MAEJAAUATL_DRAWINFO@@@Z 1000afdc f   ToneIndicatorImpl.obj
+ 0001:0000a07c       ?Open@COPOSToneIndicator@@UAGJPA_WPAJ@Z 1000b07c f   ToneIndicatorImpl.obj
+ 0001:0000a8c3       ?ReleaseDevice@COPOSToneIndicator@@UAGJPAJ@Z 1000b8c3 f   ToneIndicatorImpl.obj
+ 0001:0000a8fa       ?ResetStatistics@COPOSToneIndicator@@UAGJPA_WPAJ@Z 1000b8fa f   ToneIndicatorImpl.obj
+ 0001:0000a951       ?RetrieveStatistics@COPOSToneIndicator@@UAGJPAPA_WPAJ@Z 1000b951 f   ToneIndicatorImpl.obj
+ 0001:0000a9a8       ?SOProcessID@COPOSToneIndicator@@UAGJPAJ@Z 1000b9a8 f   ToneIndicatorImpl.obj
+ 0001:0000a9bc       ?SetCOFreezeEvents@COPOSToneIndicator@@IAEXF@Z 1000b9bc f   ToneIndicatorImpl.obj
+ 0001:0000aa5c       ?SetOposProp@COPOSToneIndicator@@IAEJJJJ@Z 1000ba5c f   ToneIndicatorImpl.obj
+ 0001:0000ab53       ?Sound@COPOSToneIndicator@@UAGJJJPAJ@Z 1000bb53 f   ToneIndicatorImpl.obj
+ 0001:0000abc7       ?SoundImmediate@COPOSToneIndicator@@UAGJPAJ@Z 1000bbc7 f   ToneIndicatorImpl.obj
+ 0001:0000abe2       ?UpdateFirmware@COPOSToneIndicator@@UAGJPA_WPAJ@Z 1000bbe2 f   ToneIndicatorImpl.obj
+ 0001:0000ac39       ?UpdateStatistics@COPOSToneIndicator@@UAGJPA_WPAJ@Z 1000bc39 f   ToneIndicatorImpl.obj
+ 0001:0000ac90       ?get_AsyncMode@COPOSToneIndicator@@UAGJPAF@Z 1000bc90 f   ToneIndicatorImpl.obj
+ 0001:0000aca9       ?get_BinaryConversion@COPOSToneIndicator@@UAGJPAJ@Z 1000bca9 f   ToneIndicatorImpl.obj
+ 0001:0000acbf       ?get_CapCompareFirmwareVersion@COPOSToneIndicator@@UAGJPAF@Z 1000bcbf f   ToneIndicatorImpl.obj
+ 0001:0000acd8       ?get_CapMelody@COPOSToneIndicator@@UAGJPAJ@Z 1000bcd8 f   ToneIndicatorImpl.obj
+ 0001:0000acf1       ?get_CapPitch@COPOSToneIndicator@@UAGJPAF@Z 1000bcf1 f   ToneIndicatorImpl.obj
+ 0001:0000ad0a       ?get_CapPowerReporting@COPOSToneIndicator@@UAGJPAJ@Z 1000bd0a f   ToneIndicatorImpl.obj
+ 0001:0000ad23       ?get_CapStatisticsReporting@COPOSToneIndicator@@UAGJPAF@Z 1000bd23 f   ToneIndicatorImpl.obj
+ 0001:0000ad3c       ?get_CapUpdateFirmware@COPOSToneIndicator@@UAGJPAF@Z 1000bd3c f   ToneIndicatorImpl.obj
+ 0001:0000ad55       ?get_CapUpdateStatistics@COPOSToneIndicator@@UAGJPAF@Z 1000bd55 f   ToneIndicatorImpl.obj
+ 0001:0000ad6e       ?get_CapVolume@COPOSToneIndicator@@UAGJPAF@Z 1000bd6e f   ToneIndicatorImpl.obj
+ 0001:0000ad87       ?get_CheckHealthText@COPOSToneIndicator@@UAGJPAPA_W@Z 1000bd87 f   ToneIndicatorImpl.obj
+ 0001:0000ada0       ?get_Claimed@COPOSToneIndicator@@UAGJPAF@Z 1000bda0 f   ToneIndicatorImpl.obj
+ 0001:0000adb6       ?get_ControlObjectDescription@COPOSToneIndicator@@UAGJPAPA_W@Z 1000bdb6 f   ToneIndicatorImpl.obj
+ 0001:0000ae04       ?get_ControlObjectVersion@COPOSToneIndicator@@UAGJPAJ@Z 1000be04 f   ToneIndicatorImpl.obj
+ 0001:0000ae17       ?get_DeviceDescription@COPOSToneIndicator@@UAGJPAPA_W@Z 1000be17 f   ToneIndicatorImpl.obj
+ 0001:0000ae30       ?get_DeviceEnabled@COPOSToneIndicator@@UAGJPAF@Z 1000be30 f   ToneIndicatorImpl.obj
+ 0001:0000ae46       ?get_DeviceName@COPOSToneIndicator@@UAGJPAPA_W@Z 1000be46 f   ToneIndicatorImpl.obj
+ 0001:0000ae5f       ?get_FreezeEvents@COPOSToneIndicator@@UAGJPAF@Z 1000be5f f   ToneIndicatorImpl.obj
+ 0001:0000ae75       ?get_InterToneWait@COPOSToneIndicator@@UAGJPAJ@Z 1000be75 f   ToneIndicatorImpl.obj
+ 0001:0000ae8e       ?get_MelodyType@COPOSToneIndicator@@UAGJPAJ@Z 1000be8e f   ToneIndicatorImpl.obj
+ 0001:0000aea7       ?get_MelodyVolume@COPOSToneIndicator@@UAGJPAJ@Z 1000bea7 f   ToneIndicatorImpl.obj
+ 0001:0000aec0       ?get_OpenResult@COPOSToneIndicator@@UAGJPAJ@Z 1000bec0 f   ToneIndicatorImpl.obj
+ 0001:0000aed7       ?get_OutputID@COPOSToneIndicator@@UAGJPAJ@Z 1000bed7 f   ToneIndicatorImpl.obj
+ 0001:0000aeed       ?get_PowerNotify@COPOSToneIndicator@@UAGJPAJ@Z 1000beed f   ToneIndicatorImpl.obj
+ 0001:0000af03       ?get_PowerState@COPOSToneIndicator@@UAGJPAJ@Z 1000bf03 f   ToneIndicatorImpl.obj
+ 0001:0000af19       ?get_ResultCode@COPOSToneIndicator@@UAGJPAJ@Z 1000bf19 f   ToneIndicatorImpl.obj
+ 0001:0000af57       ?get_ResultCodeExtended@COPOSToneIndicator@@UAGJPAJ@Z 1000bf57 f   ToneIndicatorImpl.obj
+ 0001:0000af6d       ?get_ServiceObjectDescription@COPOSToneIndicator@@UAGJPAPA_W@Z 1000bf6d f   ToneIndicatorImpl.obj
+ 0001:0000af86       ?get_ServiceObjectVersion@COPOSToneIndicator@@UAGJPAJ@Z 1000bf86 f   ToneIndicatorImpl.obj
+ 0001:0000af9c       ?get_State@COPOSToneIndicator@@UAGJPAJ@Z 1000bf9c f   ToneIndicatorImpl.obj
+ 0001:0000afc8       ?get_Tone1Duration@COPOSToneIndicator@@UAGJPAJ@Z 1000bfc8 f   ToneIndicatorImpl.obj
+ 0001:0000afe1       ?get_Tone1Pitch@COPOSToneIndicator@@UAGJPAJ@Z 1000bfe1 f   ToneIndicatorImpl.obj
+ 0001:0000affa       ?get_Tone1Volume@COPOSToneIndicator@@UAGJPAJ@Z 1000bffa f   ToneIndicatorImpl.obj
+ 0001:0000b013       ?get_Tone2Duration@COPOSToneIndicator@@UAGJPAJ@Z 1000c013 f   ToneIndicatorImpl.obj
+ 0001:0000b02c       ?get_Tone2Pitch@COPOSToneIndicator@@UAGJPAJ@Z 1000c02c f   ToneIndicatorImpl.obj
+ 0001:0000b045       ?get_Tone2Volume@COPOSToneIndicator@@UAGJPAJ@Z 1000c045 f   ToneIndicatorImpl.obj
+ 0001:0000b05e       ?put_AsyncMode@COPOSToneIndicator@@UAGJF@Z 1000c05e f   ToneIndicatorImpl.obj
+ 0001:0000b07e       ?put_BinaryConversion@COPOSToneIndicator@@UAGJJ@Z 1000c07e f   ToneIndicatorImpl.obj
+ 0001:0000b094       ?put_DeviceEnabled@COPOSToneIndicator@@UAGJF@Z 1000c094 f   ToneIndicatorImpl.obj
+ 0001:0000b0b1       ?put_FreezeEvents@COPOSToneIndicator@@UAGJF@Z 1000c0b1 f   ToneIndicatorImpl.obj
+ 0001:0000b0fd       ?put_InterToneWait@COPOSToneIndicator@@UAGJJ@Z 1000c0fd f   ToneIndicatorImpl.obj
+ 0001:0000b116       ?put_MelodyType@COPOSToneIndicator@@UAGJJ@Z 1000c116 f   ToneIndicatorImpl.obj
+ 0001:0000b12f       ?put_MelodyVolume@COPOSToneIndicator@@UAGJJ@Z 1000c12f f   ToneIndicatorImpl.obj
+ 0001:0000b148       ?put_PowerNotify@COPOSToneIndicator@@UAGJJ@Z 1000c148 f   ToneIndicatorImpl.obj
+ 0001:0000b15e       ?put_Tone1Duration@COPOSToneIndicator@@UAGJJ@Z 1000c15e f   ToneIndicatorImpl.obj
+ 0001:0000b177       ?put_Tone1Pitch@COPOSToneIndicator@@UAGJJ@Z 1000c177 f   ToneIndicatorImpl.obj
+ 0001:0000b190       ?put_Tone1Volume@COPOSToneIndicator@@UAGJJ@Z 1000c190 f   ToneIndicatorImpl.obj
+ 0001:0000b1a9       ?put_Tone2Duration@COPOSToneIndicator@@UAGJJ@Z 1000c1a9 f   ToneIndicatorImpl.obj
+ 0001:0000b1c2       ?put_Tone2Pitch@COPOSToneIndicator@@UAGJJ@Z 1000c1c2 f   ToneIndicatorImpl.obj
+ 0001:0000b1db       ?put_Tone2Volume@COPOSToneIndicator@@UAGJJ@Z 1000c1db f   ToneIndicatorImpl.obj
+ 0001:0000b1f4       ?s_EventWindowProc@COPOSToneIndicator@@KGJPAUHWND__@@IIJ@Z 1000c1f4 f i ToneIndicatorImpl.obj
+ 0001:0000b246       ??_U@YAPAXI@Z              1000c246 f   LIBCMT:new_array.obj
+ 0001:0000b24f       ??3@YAXPAXI@Z              1000c24f f   LIBCMT:delete_scalar_size.obj
+ 0001:0000b25d       ??_V@YAXPAX@Z              1000c25d f   LIBCMT:delete_array.obj
+ 0001:0000b262       ??_V@YAXPAXI@Z             1000c262 f   LIBCMT:delete_array_size.obj
+ 0001:0000b2b4       ___scrt_acquire_startup_lock 1000c2b4 f   LIBCMT:utility.obj
+ 0001:0000b2e6       ___scrt_dllmain_after_initialize_c 1000c2e6 f   LIBCMT:utility.obj
+ 0001:0000b311       ___scrt_dllmain_before_initialize_c 1000c311 f   LIBCMT:utility.obj
+ 0001:0000b31f       ___scrt_dllmain_crt_thread_attach 1000c31f f   LIBCMT:utility.obj
+ 0001:0000b33e       ___scrt_dllmain_crt_thread_detach 1000c33e f   LIBCMT:utility.obj
+ 0001:0000b34b       ___scrt_dllmain_exception_filter 1000c34b f   LIBCMT:utility.obj
+ 0001:0000b37f       ___scrt_dllmain_uninitialize_c 1000c37f f   LIBCMT:utility.obj
+ 0001:0000b3a2       ___scrt_dllmain_uninitialize_critical 1000c3a2 f   LIBCMT:utility.obj
+ 0001:0000b3af       ___scrt_initialize_crt     1000c3af f   LIBCMT:utility.obj
+ 0001:0000b3e8       ___scrt_initialize_onexit_tables 1000c3e8 f   LIBCMT:utility.obj
+ 0001:0000b46f       ___scrt_is_nonwritable_in_current_image 1000c46f f   LIBCMT:utility.obj
+ 0001:0000b503       ___scrt_release_startup_lock 1000c503 f   LIBCMT:utility.obj
+ 0001:0000b520       ___scrt_uninitialize_crt   1000c520 f   LIBCMT:utility.obj
+ 0001:0000b548       __onexit                   1000c548 f   LIBCMT:utility.obj
+ 0001:0000b575       _atexit                    1000c575 f   LIBCMT:utility.obj
+ 0001:0000b58a       ??3@YAXPAX@Z               1000c58a f   LIBCMT:delete_scalar.obj
+ 0001:0000b654       __Init_thread_footer       1000c654 f   LIBCMT:thread_safe_statics.obj
+ 0001:0000b69e       __Init_thread_header       1000c69e f   LIBCMT:thread_safe_statics.obj
+ 0001:0000b6f0       __Init_thread_notify       1000c6f0 f   LIBCMT:thread_safe_statics.obj
+ 0001:0000b726       __Init_thread_wait         1000c726 f   LIBCMT:thread_safe_statics.obj
+ 0001:0000b774       ___raise_securityfailure   1000c774 f   LIBCMT:gs_report.obj
+ 0001:0000b79c       ___report_gsfailure        1000c79c f   LIBCMT:gs_report.obj
+ 0001:0000b895       ___report_rangecheckfailure 1000c895 f   LIBCMT:gs_report.obj
+ 0001:0000b8a1       ___report_securityfailure  1000c8a1 f   LIBCMT:gs_report.obj
+ 0001:0000b96f       ??2@YAPAXIABUnothrow_t@std@@@Z 1000c96f f   LIBCMT:new_scalar_nothrow.obj
+ 0001:0000b9c4       ??_U@YAPAXIABUnothrow_t@std@@@Z 1000c9c4 f   LIBCMT:new_array_nothrow.obj
+ 0001:0000b9cd       @__security_check_cookie@4 1000c9cd f   LIBCMT:secchk.obj
  0001:0000b9e0       __SEH_prolog4_GS           1000c9e0 f   LIBCMT:sehprolg4gs.obj
- 0001:0000ba29       __SEH_epilog4_GS           1000ca29 f   LIBCMT:sehprolg4gs.obj
+ 0001:0000ba27       __SEH_epilog4_GS           1000ca27 f   LIBCMT:sehprolg4gs.obj
  0001:0000ba40       __alloca_probe_16          1000ca40 f   LIBCMT:alloca16.obj
  0001:0000ba56       __alloca_probe_8           1000ca56     LIBCMT:alloca16.obj
- 0001:0000ba70       __alloca_probe             1000ca70 f   LIBCMT:chkstk.obj
  0001:0000ba70       __chkstk                   1000ca70 f   LIBCMT:chkstk.obj
+ 0001:0000ba70       __alloca_probe             1000ca70 f   LIBCMT:chkstk.obj
  0001:0000bddd       __DllMainCRTStartup@12     1000cddd f   LIBCMT:dll_dllmain.obj
  0001:0000be00       ??2@YAPAXI@Z               1000ce00 f   LIBCMT:new_scalar.obj
  0001:0000be30       ___isa_available_init      1000ce30 f   LIBCMT:cpu_disp.obj
@@ -712,50 +718,50 @@
  0001:0000c00c       ___scrt_fastfail           1000d00c f   LIBCMT:utility_desktop.obj
  0001:0000c126       __crt_debugger_hook        1000d126 f   LIBCMT:utility_desktop.obj
  0001:0000c130       __SEH_prolog4              1000d130 f   LIBCMT:sehprolg4.obj
- 0001:0000c176       __SEH_epilog4              1000d176 f   LIBCMT:sehprolg4.obj
- 0001:0000c18b       @_guard_check_icall_nop@4  1000d18b f i LIBCMT:guard_support.obj
- 0001:0000c1d9       ___security_init_cookie    1000d1d9 f   LIBCMT:gs_support.obj
- 0001:0000c224       ?__scrt_initialize_type_info@@YAXXZ 1000d224 f   LIBCMT:tncleanup.obj
- 0001:0000c230       ?__scrt_uninitialize_type_info@@YAXXZ 1000d230 f   LIBCMT:tncleanup.obj
- 0001:0000c23c       ___local_stdio_scanf_options 1000d23c f i LIBCMT:default_local_stdio_options.obj
- 0001:0000c242       ___scrt_initialize_default_local_stdio_options 1000d242 f   LIBCMT:default_local_stdio_options.obj
- 0001:0000c25f       ___scrt_get_dyn_tls_init_callback 1000d25f f   LIBCMT:dyn_tls_init.obj
- 0001:0000c265       __RTC_Initialize           1000d265 f   LIBCMT:initsect.obj
- 0001:0000c291       __RTC_Terminate            1000d291 f   LIBCMT:initsect.obj
- 0001:0000c2bd       ??0bad_alloc@std@@QAE@ABV01@@Z 1000d2bd f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c2d8       ??0bad_alloc@std@@QAE@XZ   1000d2d8 f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c2f0       ??0bad_array_new_length@std@@QAE@ABV01@@Z 1000d2f0 f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c30b       ??0bad_array_new_length@std@@QAE@XZ 1000d30b f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c323       ??0exception@std@@QAE@ABV01@@Z 1000d323 f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c34f       ??1bad_alloc@std@@UAE@XZ   1000d34f f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c34f       ??1bad_exception@std@@UAE@XZ 1000d34f f i libvcruntime:frame.obj
- 0001:0000c34f       ??1bad_array_new_length@std@@UAE@XZ 1000d34f f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c360       ??_Ebad_alloc@std@@UAEPAXI@Z 1000d360 f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c360       ??_Ebad_exception@std@@UAEPAXI@Z 1000d360 f i libvcruntime:frame.obj
- 0001:0000c360       ??_Gexception@std@@UAEPAXI@Z 1000d360 f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c360       ??_Ebad_array_new_length@std@@UAEPAXI@Z 1000d360 f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c360       ??_Gbad_exception@std@@UAEPAXI@Z 1000d360 f i libvcruntime:frame.obj
- 0001:0000c360       ??_Gbad_array_new_length@std@@UAEPAXI@Z 1000d360 f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c360       ??_Eexception@std@@UAEPAXI@Z 1000d360 f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c360       ??_Gbad_alloc@std@@UAEPAXI@Z 1000d360 f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c38d       ?__scrt_throw_std_bad_alloc@@YAXXZ 1000d38d f   LIBCMT:throw_bad_alloc.obj
- 0001:0000c3aa       ?__scrt_throw_std_bad_array_new_length@@YAXXZ 1000d3aa f   LIBCMT:throw_bad_alloc.obj
- 0001:0000c3c7       ?what@exception@std@@UBEPBDXZ 1000d3c7 f i LIBCMT:throw_bad_alloc.obj
- 0001:0000c3d4       ??_Etype_info@@UAEPAXI@Z   1000d3d4 f i LIBCMT:std_type_info_static.obj
- 0001:0000c3d4       ??_Gtype_info@@UAEPAXI@Z   1000d3d4 f i LIBCMT:std_type_info_static.obj
- 0001:0000c3f7       ??0CAtlBaseModule@ATL@@QAE@XZ 1000d3f7 f   atls:atlbase.obj
- 0001:0000c44a       ??0_ATL_BASE_MODULE70@ATL@@QAE@XZ 1000d44a f i atls:atlbase.obj
- 0001:0000c46d       ??1CAtlBaseModule@ATL@@QAE@XZ 1000d46d f   atls:atlbase.obj
- 0001:0000c55a       ?Init@_stdcallthunk@ATL@@QAEHKPAX@Z 1000d55a f i atls:atlthunk.obj
- 0001:0000c58f       ?__AllocStdCallThunk_cmn@@YAPAXXZ 1000d58f f   atls:atlthunk.obj
- 0001:0000c655       ?__FreeStdCallThunk_cmn@@YAXPAX@Z 1000d655 f   atls:atlthunk.obj
- 0001:0000c6f0       _AtlThunk_AllocateData@0   1000d6f0 f   atls:atlthunk.obj
- 0001:0000c755       _AtlThunk_DataToCode@4     1000d755 f   atls:atlthunk.obj
- 0001:0000c79c       _AtlThunk_FreeData@4       1000d79c f   atls:atlthunk.obj
- 0001:0000c7f2       _AtlThunk_InitData@12      1000d7f2 f   atls:atlthunk.obj
- 0001:0000c841       __get_purecall_handler     1000d841 f   libvcruntime:purevirt.obj
- 0001:0000c847       __purecall                 1000d847 f   libvcruntime:purevirt.obj
- 0001:0000c863       _wcsstr                    1000d863 f   libvcruntime:wcsstr.obj
+ 0001:0000c174       __SEH_epilog4              1000d174 f   LIBCMT:sehprolg4.obj
+ 0001:0000c188       @_guard_check_icall_nop@4  1000d188 f i LIBCMT:guard_support.obj
+ 0001:0000c1d8       ___security_init_cookie    1000d1d8 f   LIBCMT:gs_support.obj
+ 0001:0000c223       ?__scrt_initialize_type_info@@YAXXZ 1000d223 f   LIBCMT:tncleanup.obj
+ 0001:0000c22f       ?__scrt_uninitialize_type_info@@YAXXZ 1000d22f f   LIBCMT:tncleanup.obj
+ 0001:0000c23b       ___local_stdio_scanf_options 1000d23b f i LIBCMT:default_local_stdio_options.obj
+ 0001:0000c241       ___scrt_initialize_default_local_stdio_options 1000d241 f   LIBCMT:default_local_stdio_options.obj
+ 0001:0000c25e       ___scrt_get_dyn_tls_init_callback 1000d25e f   LIBCMT:dyn_tls_init.obj
+ 0001:0000c264       __RTC_Initialize           1000d264 f   LIBCMT:initsect.obj
+ 0001:0000c290       __RTC_Terminate            1000d290 f   LIBCMT:initsect.obj
+ 0001:0000c2bc       ??0bad_alloc@std@@QAE@ABV01@@Z 1000d2bc f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c2d7       ??0bad_alloc@std@@QAE@XZ   1000d2d7 f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c2ef       ??0bad_array_new_length@std@@QAE@ABV01@@Z 1000d2ef f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c30a       ??0bad_array_new_length@std@@QAE@XZ 1000d30a f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c322       ??0exception@std@@QAE@ABV01@@Z 1000d322 f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c34e       ??1bad_exception@std@@UAE@XZ 1000d34e f i libvcruntime:frame.obj
+ 0001:0000c34e       ??1bad_alloc@std@@UAE@XZ   1000d34e f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c34e       ??1bad_array_new_length@std@@UAE@XZ 1000d34e f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c35f       ??_Gbad_alloc@std@@UAEPAXI@Z 1000d35f f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c35f       ??_Gbad_array_new_length@std@@UAEPAXI@Z 1000d35f f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c35f       ??_Gbad_exception@std@@UAEPAXI@Z 1000d35f f i libvcruntime:frame.obj
+ 0001:0000c35f       ??_Ebad_alloc@std@@UAEPAXI@Z 1000d35f f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c35f       ??_Ebad_exception@std@@UAEPAXI@Z 1000d35f f i libvcruntime:frame.obj
+ 0001:0000c35f       ??_Gexception@std@@UAEPAXI@Z 1000d35f f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c35f       ??_Eexception@std@@UAEPAXI@Z 1000d35f f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c35f       ??_Ebad_array_new_length@std@@UAEPAXI@Z 1000d35f f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c38c       ?__scrt_throw_std_bad_alloc@@YAXXZ 1000d38c f   LIBCMT:throw_bad_alloc.obj
+ 0001:0000c3a9       ?__scrt_throw_std_bad_array_new_length@@YAXXZ 1000d3a9 f   LIBCMT:throw_bad_alloc.obj
+ 0001:0000c3c6       ?what@exception@std@@UBEPBDXZ 1000d3c6 f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000c3d3       ??_Gtype_info@@UAEPAXI@Z   1000d3d3 f i LIBCMT:std_type_info_static.obj
+ 0001:0000c3d3       ??_Etype_info@@UAEPAXI@Z   1000d3d3 f i LIBCMT:std_type_info_static.obj
+ 0001:0000c3f6       ??0CAtlBaseModule@ATL@@QAE@XZ 1000d3f6 f   atls:atlbase.obj
+ 0001:0000c449       ??0_ATL_BASE_MODULE70@ATL@@QAE@XZ 1000d449 f i atls:atlbase.obj
+ 0001:0000c46c       ??1CAtlBaseModule@ATL@@QAE@XZ 1000d46c f   atls:atlbase.obj
+ 0001:0000c559       ?Init@_stdcallthunk@ATL@@QAEHKPAX@Z 1000d559 f i atls:atlthunk.obj
+ 0001:0000c58e       ?__AllocStdCallThunk_cmn@@YAPAXXZ 1000d58e f   atls:atlthunk.obj
+ 0001:0000c654       ?__FreeStdCallThunk_cmn@@YAXPAX@Z 1000d654 f   atls:atlthunk.obj
+ 0001:0000c6ef       _AtlThunk_AllocateData@0   1000d6ef f   atls:atlthunk.obj
+ 0001:0000c754       _AtlThunk_DataToCode@4     1000d754 f   atls:atlthunk.obj
+ 0001:0000c79b       _AtlThunk_FreeData@4       1000d79b f   atls:atlthunk.obj
+ 0001:0000c7f1       _AtlThunk_InitData@12      1000d7f1 f   atls:atlthunk.obj
+ 0001:0000c840       __get_purecall_handler     1000d840 f   libvcruntime:purevirt.obj
+ 0001:0000c846       __purecall                 1000d846 f   libvcruntime:purevirt.obj
+ 0001:0000c862       _wcsstr                    1000d862 f   libvcruntime:wcsstr.obj
  0001:0000cb10       __except_handler4          1000db10 f   libvcruntime:chandler4.obj
  0001:0000cc6e       _memcmp                    1000dc6e f   libvcruntime:memcmp.obj
  0001:0000db80       _memcpy                    1000eb80 f   libvcruntime:memcpy.obj
@@ -787,31 +793,31 @@
  0001:0000e8dd       __CxxThrowException@8      1000f8dd f   libvcruntime:throw.obj
  0001:0000e950       _memmove                   1000f950 f   libvcruntime:memmove.obj
  0001:0000eed0       __local_unwind4            1000fed0 f   libvcruntime:exsup4.obj
- 0001:0000efa8       __seh_longjmp_unwind4@4    1000ffa8 f   libvcruntime:exsup4.obj
- 0001:0000efd0       @_EH4_CallFilterFunc@8     1000ffd0 f   libvcruntime:exsup4.obj
- 0001:0000efe8       @_EH4_TransferToHandler@8  1000ffe8 f   libvcruntime:exsup4.obj
- 0001:0000f004       @_EH4_GlobalUnwind2@8      10010004 f   libvcruntime:exsup4.obj
- 0001:0000f020       @_EH4_LocalUnwind@16       10010020 f   libvcruntime:exsup4.obj
- 0001:0000f037       ___except_validate_context_record 10010037 f   libvcruntime:jbcxrval.obj
- 0001:0000f067       ___except_validate_jump_buffer 10010067 f   libvcruntime:jbcxrval.obj
- 0001:0000f094       ___vcrt_freefls@4          10010094 f   libvcruntime:per_thread_data.obj
- 0001:0000f0b0       ___vcrt_freeptd            100100b0 f   libvcruntime:per_thread_data.obj
- 0001:0000f0e6       ___vcrt_getptd             100100e6 f   libvcruntime:per_thread_data.obj
- 0001:0000f0f4       ___vcrt_getptd_noexit      100100f4 f   libvcruntime:per_thread_data.obj
- 0001:0000f186       ___vcrt_initialize_ptd     10010186 f   libvcruntime:per_thread_data.obj
- 0001:0000f1b9       ___vcrt_uninitialize_ptd   100101b9 f   libvcruntime:per_thread_data.obj
- 0001:0000f1d4       ___vcrt_initialize_locks   100101d4 f   libvcruntime:locks.obj
- 0001:0000f210       ___vcrt_uninitialize_locks 10010210 f   libvcruntime:locks.obj
- 0001:0000f982       ??$TypeMatchHelper@V__FrameHandler3@@@@YAHPBU_s_HandlerType@@PBU_s_CatchableType@@PBU_s_ThrowInfo@@@Z 10010982 f i libvcruntime:frame.obj
- 0001:0000fa10       ??$__InternalCxxFrameHandler@V__FrameHandler3@@@@YA?AW4_EXCEPTION_DISPOSITION@@PAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@H1E@Z 10010a10 f i libvcruntime:frame.obj
- 0001:0000fb12       ??0bad_exception@std@@QAE@ABV01@@Z 10010b12 f i libvcruntime:frame.obj
- 0001:0000fb2d       ??0bad_exception@std@@QAE@XZ 10010b2d f i libvcruntime:frame.obj
- 0001:0000fb45       ??8type_info@@QBE_NABV0@@Z 10010b45 f i libvcruntime:frame.obj
- 0001:0000fdac       ?FrameUnwindToEmptyState@__FrameHandler3@@SAXPAUEHRegistrationNode@@PAXPBU_s_FuncInfo@@@Z 10010dac f   libvcruntime:frame.obj
- 0001:0000fdc4       ?FrameUnwindToState@__FrameHandler3@@SAXPAUEHRegistrationNode@@PAXPBU_s_FuncInfo@@H@Z 10010dc4 f   libvcruntime:frame.obj
- 0001:0000ff46       ?_CallMemberFunction1@@YGXQAX00@Z 10010f46 f i libvcruntime:frame.obj
- 0001:0000ff56       ?_CallMemberFunction2@@YGXQAX00H@Z 10010f56 f i libvcruntime:frame.obj
- 0001:0000ff69       ?getESTypes@__FrameHandler3@@SAPBU_s_ESTypeList@@PBU_s_FuncInfo@@@Z 10010f69 f i libvcruntime:frame.obj
+ 0001:0000efa4       __seh_longjmp_unwind4@4    1000ffa4 f   libvcruntime:exsup4.obj
+ 0001:0000efcc       @_EH4_CallFilterFunc@8     1000ffcc f   libvcruntime:exsup4.obj
+ 0001:0000efe4       @_EH4_TransferToHandler@8  1000ffe4 f   libvcruntime:exsup4.obj
+ 0001:0000f000       @_EH4_GlobalUnwind2@8      10010000 f   libvcruntime:exsup4.obj
+ 0001:0000f01c       @_EH4_LocalUnwind@16       1001001c f   libvcruntime:exsup4.obj
+ 0001:0000f033       ___except_validate_context_record 10010033 f   libvcruntime:jbcxrval.obj
+ 0001:0000f063       ___except_validate_jump_buffer 10010063 f   libvcruntime:jbcxrval.obj
+ 0001:0000f090       ___vcrt_freefls@4          10010090 f   libvcruntime:per_thread_data.obj
+ 0001:0000f0ac       ___vcrt_freeptd            100100ac f   libvcruntime:per_thread_data.obj
+ 0001:0000f0e2       ___vcrt_getptd             100100e2 f   libvcruntime:per_thread_data.obj
+ 0001:0000f0f0       ___vcrt_getptd_noexit      100100f0 f   libvcruntime:per_thread_data.obj
+ 0001:0000f182       ___vcrt_initialize_ptd     10010182 f   libvcruntime:per_thread_data.obj
+ 0001:0000f1b5       ___vcrt_uninitialize_ptd   100101b5 f   libvcruntime:per_thread_data.obj
+ 0001:0000f1d0       ___vcrt_initialize_locks   100101d0 f   libvcruntime:locks.obj
+ 0001:0000f20c       ___vcrt_uninitialize_locks 1001020c f   libvcruntime:locks.obj
+ 0001:0000f97e       ??$TypeMatchHelper@V__FrameHandler3@@@@YAHPBU_s_HandlerType@@PBU_s_CatchableType@@PBU_s_ThrowInfo@@@Z 1001097e f i libvcruntime:frame.obj
+ 0001:0000fa0c       ??$__InternalCxxFrameHandler@V__FrameHandler3@@@@YA?AW4_EXCEPTION_DISPOSITION@@PAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@H1E@Z 10010a0c f i libvcruntime:frame.obj
+ 0001:0000fb0e       ??0bad_exception@std@@QAE@ABV01@@Z 10010b0e f i libvcruntime:frame.obj
+ 0001:0000fb29       ??0bad_exception@std@@QAE@XZ 10010b29 f i libvcruntime:frame.obj
+ 0001:0000fb41       ??8type_info@@QBE_NABV0@@Z 10010b41 f i libvcruntime:frame.obj
+ 0001:0000fdad       ?FrameUnwindToEmptyState@__FrameHandler3@@SAXPAUEHRegistrationNode@@PAXPBU_s_FuncInfo@@@Z 10010dad f   libvcruntime:frame.obj
+ 0001:0000fdc5       ?FrameUnwindToState@__FrameHandler3@@SAXPAUEHRegistrationNode@@PAXPBU_s_FuncInfo@@H@Z 10010dc5 f   libvcruntime:frame.obj
+ 0001:0000ff47       ?_CallMemberFunction1@@YGXQAX00@Z 10010f47 f i libvcruntime:frame.obj
+ 0001:0000ff57       ?_CallMemberFunction2@@YGXQAX00H@Z 10010f57 f i libvcruntime:frame.obj
+ 0001:0000ff6a       ?getESTypes@__FrameHandler3@@SAPBU_s_ESTypeList@@PBU_s_FuncInfo@@@Z 10010f6a f i libvcruntime:frame.obj
  0001:0000ff80       __CallSettingFrame@12      10010f80 f   libvcruntime:lowhelpr.obj
  0001:0000ffa7       __NLG_Return               10010fa7     libvcruntime:lowhelpr.obj
  0001:0000ffd0       __global_unwind2           10010fd0 f   libvcruntime:exsup.obj
@@ -906,8 +912,8 @@
  0001:000126d1       ___dcrt_uninitialize_environments_nolock 100136d1 f   libucrt:environment_initialization.obj
  0001:00012708       __initialize_narrow_environment 10013708 f   libucrt:environment_initialization.obj
  0001:000127c3       ??$__crt_fast_encode_pointer@P6AHXZ@@YAP6AHXZQ6AHXZ@Z 100137c3 f i libucrt:onexit.obj
- 0001:000127c3       ??$__crt_fast_encode_pointer@PAX@@YAPAXQAX@Z 100137c3 f i libucrt:initialization.obj
  0001:000127c3       ??$__crt_fast_encode_pointer@PAP6AXXZ@@YAPAP6AXXZQAP6AXXZ@Z 100137c3 f i libucrt:onexit.obj
+ 0001:000127c3       ??$__crt_fast_encode_pointer@PAX@@YAPAXQAX@Z 100137c3 f i libucrt:initialization.obj
  0001:000129e5       __crt_atexit               100139e5 f   libucrt:onexit.obj
  0001:000129fb       __execute_onexit_table     100139fb f   libucrt:onexit.obj
  0001:00012a28       __initialize_onexit_table  10013a28 f   libucrt:onexit.obj
@@ -980,8 +986,8 @@
  0001:00015403       ___acrt_get_process_end_policy 10016403 f   libucrt:win_policies.obj
  0001:000155cd       ??$__acrt_mbs_to_wcs_cp@U__crt_win32_buffer_internal_dynamic_resizing@@@@YAHQBDAAV?$__crt_win32_buffer@_WU__crt_win32_buffer_internal_dynamic_resizing@@@@I@Z 100165cd f i libucrt:argv_wildcards.obj
  0001:00015ae1       ?__acrt_get_utf8_acp_compatibility_codepage@@YAIXZ 10016ae1 f i libucrt:argv_wildcards.obj
- 0001:00015b20       ?_deallocate@?$__crt_win32_buffer@DU__crt_win32_buffer_internal_dynamic_resizing@@@@AAEXXZ 10016b20 f i libucrt:argv_wildcards.obj
  0001:00015b20       ?_deallocate@?$__crt_win32_buffer@_WU__crt_win32_buffer_internal_dynamic_resizing@@@@AAEXXZ 10016b20 f i libucrt:argv_wildcards.obj
+ 0001:00015b20       ?_deallocate@?$__crt_win32_buffer@DU__crt_win32_buffer_internal_dynamic_resizing@@@@AAEXXZ 10016b20 f i libucrt:argv_wildcards.obj
  0001:00015b3a       ?allocate@?$__crt_win32_buffer@DU__crt_win32_buffer_internal_dynamic_resizing@@@@QAEHI@Z 10016b3a f i libucrt:argv_wildcards.obj
  0001:00015b76       ?allocate@?$__crt_win32_buffer@_WU__crt_win32_buffer_internal_dynamic_resizing@@@@QAEHI@Z 10016b76 f i libucrt:argv_wildcards.obj
  0001:00015bb5       ?allocate@__crt_win32_buffer_internal_dynamic_resizing@@SAHQAPAXIABV__crt_win32_buffer_empty_debug_info@@@Z 10016bb5 f i libucrt:argv_wildcards.obj
@@ -1161,17 +1167,17 @@
  0001:0001dc10       __alldvrm                  1001ec10 f   LIBCMT:lldvrm.obj
  0001:0001dcf0       __allshl                   1001ecf0 f   LIBCMT:llshl.obj
  0001:0001dd10       __aullshr                  1001ed10 f   LIBCMT:ullshr.obj
- 0001:0001dd30       __ftoi2                    1001ed30 f   LIBCMT:ftol2.obj
  0001:0001dd30       __ftol2_sse_excpt          1001ed30     LIBCMT:ftol2.obj
  0001:0001dd30       __ftol2_sse                1001ed30     LIBCMT:ftol2.obj
+ 0001:0001dd30       __ftoi2                    1001ed30 f   LIBCMT:ftol2.obj
  0001:0001ddb0       __ftoui2                   1001edb0 f   LIBCMT:ftol2.obj
  0001:0001de60       __ftol2                    1001ee60 f   LIBCMT:ftol2.obj
  0001:0001df10       __ftoul2                   1001ef10 f   LIBCMT:ftol2.obj
  0001:0001dfd0       _strrchr                   1001efd0 f   libvcruntime:strrchr.obj
  0001:0001e110       _strchr                    1001f110 f   libvcruntime:strchr.obj
  0001:0001e17e       ___from_strstr_to_strchr   1001f17e     libvcruntime:strchr.obj
- 0001:0001e23b       __filter_x86_sse2_floating_point_exception_default 1001f23b f   LIBCMT:x86_exception_filter.obj
  0001:0001e23b       __filter_x86_sse2_floating_point_exception 1001f23b f   LIBCMT:x86_exception_filter.obj
+ 0001:0001e23b       __filter_x86_sse2_floating_point_exception_default 1001f23b f   LIBCMT:x86_exception_filter.obj
  0002:00000000       __imp__RegQueryValueExW@24 10020000     advapi32:ADVAPI32.dll
  0002:00000004       __imp__RegSetValueExW@24   10020004     advapi32:ADVAPI32.dll
  0002:00000008       __imp__RegQueryInfoKeyW@48 10020008     advapi32:ADVAPI32.dll
@@ -1401,8 +1407,8 @@
  0002:00000458       _LIBID_OposToneIndicator_CCO 10020458     ToneIndicator.obj
  0002:00000468       _DIID__IOPOSToneIndicatorEvents 10020468     ToneIndicator.obj
  0002:00000478       _CLSID_OPOSToneIndicator   10020478     ToneIndicator.obj
- 0002:00000488       __GUID_00000114_0000_0000_c000_000000000046 10020488     ToneIndicator.obj
- 0002:00000498       ??_C@_1BK@BIGILECK@?$AAA?$AAd?$AAv?$AAa?$AAp?$AAi?$AA3?$AA2?$AA?4?$AAd?$AAl?$AAl@ 10020498     ToneIndicator.obj
+ 0002:00000488       ??_C@_1BK@BIGILECK@?$AAA?$AAd?$AAv?$AAa?$AAp?$AAi?$AA3?$AA2?$AA?4?$AAd?$AAl?$AAl@ 10020488     ToneIndicator.obj
+ 0002:000004a4       __GUID_00000114_0000_0000_c000_000000000046 100204a4     ToneIndicator.obj
  0002:000004b4       ??_C@_0BI@MNCFCPFK@RegCreateKeyTransactedW@ 100204b4     ToneIndicator.obj
  0002:000004cc       __GUID_b196b287_bab4_101a_b69c_00aa00341d07 100204cc     ToneIndicator.obj
  0002:000004dc       __GUID_b196b285_bab4_101a_b69c_00aa00341d07 100204dc     ToneIndicator.obj
@@ -1423,8 +1429,8 @@
  0002:00000774       __GUID_00000119_0000_0000_c000_000000000046 10020774     ToneIndicator.obj
  0002:00000784       __GUID_b196b289_bab4_101a_b69c_00aa00341d07 10020784     ToneIndicator.obj
  0002:00000794       __GUID_00000000_0000_0000_c000_000000000046 10020794     ToneIndicator.obj
- 0002:000007a4       ??_7?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@6B@ 100207a4     ToneIndicator.obj
- 0002:000007bc       __GUID_00020400_0000_0000_c000_000000000046 100207bc     ToneIndicator.obj
+ 0002:000007a4       __GUID_00020400_0000_0000_c000_000000000046 100207a4     ToneIndicator.obj
+ 0002:000007b4       ??_7?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@6B@ 100207b4     ToneIndicator.obj
  0002:000007cc       ??_C@_1CE@PGFMOFKI@?$AAS?$AAt?$AAa?$AAt?$AAu?$AAs?$AAU?$AAp?$AAd?$AAa?$AAt?$AAe?$AAE?$AAv?$AAe@ 100207cc     ToneIndicator.obj
  0002:000007f0       ??_C@_1CI@HLBJDONE@?$AAO?$AAu?$AAt?$AAp?$AAu?$AAt?$AAC?$AAo?$AAm?$AAp?$AAl?$AAe?$AAt?$AAe?$AAE@ 100207f0     ToneIndicator.obj
  0002:00000818       __GUID_00000117_0000_0000_c000_000000000046 10020818     ToneIndicator.obj
@@ -1466,9 +1472,9 @@
  0002:00000b50       ??_C@_1CM@KHNNAOIC@?$AAH?$AAK?$AAE?$AAY?$AA_?$AAP?$AAE?$AAR?$AAF?$AAO?$AAR?$AAM?$AAA?$AAN?$AAC@ 10020b50     ToneIndicator.obj
  0002:00000b7c       ??_C@_1BM@HAGMMHIA@?$AAH?$AAK?$AAE?$AAY?$AA_?$AAD?$AAY?$AAN?$AA_?$AAD?$AAA?$AAT?$AAA@ 10020b7c     ToneIndicator.obj
  0002:00000b98       ??_C@_1CI@BBJOACGG@?$AAH?$AAK?$AAE?$AAY?$AA_?$AAC?$AAU?$AAR?$AAR?$AAE?$AAN?$AAT?$AA_?$AAC?$AAO@ 10020b98     ToneIndicator.obj
- 0002:00000bc0       __GUID_00000112_0000_0000_c000_000000000046 10020bc0     ToneIndicator.obj
- 0002:00000bd0       __GUID_00000109_0000_0000_c000_000000000046 10020bd0     ToneIndicator.obj
- 0002:00000be0       __GUID_7fd52380_4e07_101b_ae2d_08002b2ec713 10020be0     ToneIndicator.obj
+ 0002:00000bc0       __GUID_00000109_0000_0000_c000_000000000046 10020bc0     ToneIndicator.obj
+ 0002:00000bd0       __GUID_7fd52380_4e07_101b_ae2d_08002b2ec713 10020bd0     ToneIndicator.obj
+ 0002:00000be0       __GUID_00000112_0000_0000_c000_000000000046 10020be0     ToneIndicator.obj
  0002:00000bf0       __GUID_3af24292_0c96_11ce_a0cf_00aa00600ab8 10020bf0     ToneIndicator.obj
  0002:00000c00       __GUID_00000127_0000_0000_c000_000000000046 10020c00     ToneIndicator.obj
  0002:00000c10       __GUID_0000010d_0000_0000_c000_000000000046 10020c10     ToneIndicator.obj
@@ -2280,54 +2286,54 @@
  0002:00007538       __d_max                    10027538     libucrt:util.obj
  0002:00007540       __d_mzero                  10027540     libucrt:util.obj
  0002:000075b0       __load_config_used         100275b0     LIBCMT:loadcfg.obj
- 0002:00007668       __tls_used                 10027668     LIBCMT:tlssup.obj
- 0002:00007680       ??_R4exception@std@@6B@    10027680     LIBCMT:throw_bad_alloc.obj
- 0002:00007694       ??_R3exception@std@@8      10027694     LIBCMT:throw_bad_alloc.obj
- 0002:000076a4       ??_R2exception@std@@8      100276a4     LIBCMT:throw_bad_alloc.obj
- 0002:000076ac       ??_R1A@?0A@EA@exception@std@@8 100276ac     LIBCMT:throw_bad_alloc.obj
- 0002:000076c8       ??_R4bad_alloc@std@@6B@    100276c8     LIBCMT:throw_bad_alloc.obj
- 0002:000076dc       ??_R3bad_alloc@std@@8      100276dc     LIBCMT:throw_bad_alloc.obj
- 0002:000076ec       ??_R2bad_alloc@std@@8      100276ec     LIBCMT:throw_bad_alloc.obj
- 0002:000076f8       ??_R1A@?0A@EA@bad_alloc@std@@8 100276f8     LIBCMT:throw_bad_alloc.obj
- 0002:00007714       ??_R4bad_array_new_length@std@@6B@ 10027714     LIBCMT:throw_bad_alloc.obj
- 0002:00007728       ??_R3bad_array_new_length@std@@8 10027728     LIBCMT:throw_bad_alloc.obj
- 0002:00007738       ??_R2bad_array_new_length@std@@8 10027738     LIBCMT:throw_bad_alloc.obj
- 0002:00007748       ??_R1A@?0A@EA@bad_array_new_length@std@@8 10027748     LIBCMT:throw_bad_alloc.obj
- 0002:00007764       ??_R4type_info@@6B@        10027764     LIBCMT:std_type_info_static.obj
- 0002:00007778       ??_R3type_info@@8          10027778     LIBCMT:std_type_info_static.obj
- 0002:00007788       ??_R2type_info@@8          10027788     LIBCMT:std_type_info_static.obj
- 0002:00007790       ??_R1A@?0A@EA@type_info@@8 10027790     LIBCMT:std_type_info_static.obj
- 0002:000077ac       ??_R4bad_exception@std@@6B@ 100277ac     libvcruntime:frame.obj
- 0002:000077c0       ??_R3bad_exception@std@@8  100277c0     libvcruntime:frame.obj
- 0002:000077d0       ??_R2bad_exception@std@@8  100277d0     libvcruntime:frame.obj
- 0002:000077dc       ??_R1A@?0A@EA@bad_exception@std@@8 100277dc     libvcruntime:frame.obj
- 0002:000077f8       ___safe_se_handler_table   100277f8     <linker-defined>
- 0002:00007bf4       ___rtc_iaa                 10027bf4     LIBCMT:initsect.obj
- 0002:00007bf8       ___rtc_izz                 10027bf8     LIBCMT:initsect.obj
- 0002:00007bfc       ___rtc_taa                 10027bfc     LIBCMT:initsect.obj
- 0002:00007c00       ___rtc_tzz                 10027c00     LIBCMT:initsect.obj
- 0002:00007c04       __tls_start                10027c04     LIBCMT:tlssup.obj
- 0002:00007c08       __Init_thread_epoch        10027c08     LIBCMT:thread_safe_statics.obj
- 0002:00007c0c       __tls_end                  10027c0c     LIBCMT:tlssup.obj
- 0002:00007d0c       __TI2?AVbad_alloc@std@@    10027d0c     LIBCMT:throw_bad_alloc.obj
- 0002:00007d1c       __CTA2?AVbad_alloc@std@@   10027d1c     LIBCMT:throw_bad_alloc.obj
- 0002:00007d28       __CT??_R0?AVbad_alloc@std@@@8??0bad_alloc@std@@QAE@ABV01@@Z12 10027d28     LIBCMT:throw_bad_alloc.obj
- 0002:00007d44       __CT??_R0?AVexception@std@@@8??0exception@std@@QAE@ABV01@@Z12 10027d44     LIBCMT:throw_bad_alloc.obj
- 0002:00007d60       __TI3?AVbad_array_new_length@std@@ 10027d60     LIBCMT:throw_bad_alloc.obj
- 0002:00007d70       __CTA3?AVbad_array_new_length@std@@ 10027d70     LIBCMT:throw_bad_alloc.obj
- 0002:00007d80       __CT??_R0?AVbad_array_new_length@std@@@8??0bad_array_new_length@std@@QAE@ABV01@@Z12 10027d80     LIBCMT:throw_bad_alloc.obj
- 0002:00007ea4       __TI2?AVbad_exception@std@@ 10027ea4     libvcruntime:frame.obj
- 0002:00007eb4       __CTA2?AVbad_exception@std@@ 10027eb4     libvcruntime:frame.obj
- 0002:00007ec0       __CT??_R0?AVbad_exception@std@@@8??0bad_exception@std@@QAE@ABV01@@Z12 10027ec0     libvcruntime:frame.obj
- 0002:0000823c       ___pobjMapEntryFirst       1002823c     OposVariant.obj
- 0002:00008240       ___pobjMapEntryLast        10028240     OposVariant.obj
- 0002:00008300       __IMPORT_DESCRIPTOR_KERNEL32 10028300     kernel32:KERNEL32.dll
- 0002:00008314       __IMPORT_DESCRIPTOR_USER32 10028314     user32:USER32.dll
- 0002:00008328       __IMPORT_DESCRIPTOR_GDI32  10028328     gdi32:GDI32.dll
- 0002:0000833c       __IMPORT_DESCRIPTOR_ADVAPI32 1002833c     advapi32:ADVAPI32.dll
- 0002:00008350       __IMPORT_DESCRIPTOR_ole32  10028350     ole32:ole32.dll
- 0002:00008364       __IMPORT_DESCRIPTOR_OLEAUT32 10028364     oleaut32:OLEAUT32.dll
- 0002:00008378       __NULL_IMPORT_DESCRIPTOR   10028378     kernel32:KERNEL32.dll
+ 0002:00007680       __tls_used                 10027680     LIBCMT:tlssup.obj
+ 0002:00007698       ??_R4exception@std@@6B@    10027698     LIBCMT:throw_bad_alloc.obj
+ 0002:000076ac       ??_R3exception@std@@8      100276ac     LIBCMT:throw_bad_alloc.obj
+ 0002:000076bc       ??_R2exception@std@@8      100276bc     LIBCMT:throw_bad_alloc.obj
+ 0002:000076c4       ??_R1A@?0A@EA@exception@std@@8 100276c4     LIBCMT:throw_bad_alloc.obj
+ 0002:000076e0       ??_R4bad_alloc@std@@6B@    100276e0     LIBCMT:throw_bad_alloc.obj
+ 0002:000076f4       ??_R3bad_alloc@std@@8      100276f4     LIBCMT:throw_bad_alloc.obj
+ 0002:00007704       ??_R2bad_alloc@std@@8      10027704     LIBCMT:throw_bad_alloc.obj
+ 0002:00007710       ??_R1A@?0A@EA@bad_alloc@std@@8 10027710     LIBCMT:throw_bad_alloc.obj
+ 0002:0000772c       ??_R4bad_array_new_length@std@@6B@ 1002772c     LIBCMT:throw_bad_alloc.obj
+ 0002:00007740       ??_R3bad_array_new_length@std@@8 10027740     LIBCMT:throw_bad_alloc.obj
+ 0002:00007750       ??_R2bad_array_new_length@std@@8 10027750     LIBCMT:throw_bad_alloc.obj
+ 0002:00007760       ??_R1A@?0A@EA@bad_array_new_length@std@@8 10027760     LIBCMT:throw_bad_alloc.obj
+ 0002:0000777c       ??_R4type_info@@6B@        1002777c     LIBCMT:std_type_info_static.obj
+ 0002:00007790       ??_R3type_info@@8          10027790     LIBCMT:std_type_info_static.obj
+ 0002:000077a0       ??_R2type_info@@8          100277a0     LIBCMT:std_type_info_static.obj
+ 0002:000077a8       ??_R1A@?0A@EA@type_info@@8 100277a8     LIBCMT:std_type_info_static.obj
+ 0002:000077c4       ??_R4bad_exception@std@@6B@ 100277c4     libvcruntime:frame.obj
+ 0002:000077d8       ??_R3bad_exception@std@@8  100277d8     libvcruntime:frame.obj
+ 0002:000077e8       ??_R2bad_exception@std@@8  100277e8     libvcruntime:frame.obj
+ 0002:000077f4       ??_R1A@?0A@EA@bad_exception@std@@8 100277f4     libvcruntime:frame.obj
+ 0002:00007810       ___safe_se_handler_table   10027810     <linker-defined>
+ 0002:00007c0c       ___rtc_iaa                 10027c0c     LIBCMT:initsect.obj
+ 0002:00007c10       ___rtc_izz                 10027c10     LIBCMT:initsect.obj
+ 0002:00007c14       ___rtc_taa                 10027c14     LIBCMT:initsect.obj
+ 0002:00007c18       ___rtc_tzz                 10027c18     LIBCMT:initsect.obj
+ 0002:00007c1c       __tls_start                10027c1c     LIBCMT:tlssup.obj
+ 0002:00007c20       __Init_thread_epoch        10027c20     LIBCMT:thread_safe_statics.obj
+ 0002:00007c24       __tls_end                  10027c24     LIBCMT:tlssup.obj
+ 0002:00007d24       __TI2?AVbad_alloc@std@@    10027d24     LIBCMT:throw_bad_alloc.obj
+ 0002:00007d34       __CTA2?AVbad_alloc@std@@   10027d34     LIBCMT:throw_bad_alloc.obj
+ 0002:00007d40       __CT??_R0?AVbad_alloc@std@@@8??0bad_alloc@std@@QAE@ABV01@@Z12 10027d40     LIBCMT:throw_bad_alloc.obj
+ 0002:00007d5c       __CT??_R0?AVexception@std@@@8??0exception@std@@QAE@ABV01@@Z12 10027d5c     LIBCMT:throw_bad_alloc.obj
+ 0002:00007d78       __TI3?AVbad_array_new_length@std@@ 10027d78     LIBCMT:throw_bad_alloc.obj
+ 0002:00007d88       __CTA3?AVbad_array_new_length@std@@ 10027d88     LIBCMT:throw_bad_alloc.obj
+ 0002:00007d98       __CT??_R0?AVbad_array_new_length@std@@@8??0bad_array_new_length@std@@QAE@ABV01@@Z12 10027d98     LIBCMT:throw_bad_alloc.obj
+ 0002:00007ebc       __TI2?AVbad_exception@std@@ 10027ebc     libvcruntime:frame.obj
+ 0002:00007ecc       __CTA2?AVbad_exception@std@@ 10027ecc     libvcruntime:frame.obj
+ 0002:00007ed8       __CT??_R0?AVbad_exception@std@@@8??0bad_exception@std@@QAE@ABV01@@Z12 10027ed8     libvcruntime:frame.obj
+ 0002:00008254       ___pobjMapEntryFirst       10028254     OposVariant.obj
+ 0002:00008258       ___pobjMapEntryLast        10028258     OposVariant.obj
+ 0002:00008310       __IMPORT_DESCRIPTOR_KERNEL32 10028310     kernel32:KERNEL32.dll
+ 0002:00008324       __IMPORT_DESCRIPTOR_USER32 10028324     user32:USER32.dll
+ 0002:00008338       __IMPORT_DESCRIPTOR_GDI32  10028338     gdi32:GDI32.dll
+ 0002:0000834c       __IMPORT_DESCRIPTOR_ADVAPI32 1002834c     advapi32:ADVAPI32.dll
+ 0002:00008360       __IMPORT_DESCRIPTOR_ole32  10028360     ole32:ole32.dll
+ 0002:00008374       __IMPORT_DESCRIPTOR_OLEAUT32 10028374     oleaut32:OLEAUT32.dll
+ 0002:00008388       __NULL_IMPORT_DESCRIPTOR   10028388     kernel32:KERNEL32.dll
  0003:00000000       ?s_Claim@?7??GetIDsOfNames@CComTypeInfoHolder@ATL@@QAEJABU_GUID@@PAPA_WIKPAJ@Z@4PA_WA 1002a000     ToneIndicator.obj
  0003:00000018       ?s_Release@?7??GetIDsOfNames@CComTypeInfoHolder@ATL@@QAEJABU_GUID@@PAPA_WIKPAJ@Z@4PA_WA 1002a018     ToneIndicator.obj
  0003:00000034       ?_tih@?$IDispatchImpl@UIOPOSToneIndicator@@$1?IID_IOPOSToneIndicator@@3U_GUID@@B$1?LIBID_OposToneIndicator_CCO@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@1VCComTypeInfoHolder@2@A 1002a034     ToneIndicator.obj
@@ -2385,56 +2391,57 @@
  0003:00000fb4       ___isa_available           1002afb4     LIBCMT:cpu_disp.obj
  0003:00000fb8       ___favor                   1002afb8     LIBCMT:cpu_disp.obj
  0003:00000fbc       ___scrt_debugger_hook_flag 1002afbc     LIBCMT:utility_desktop.obj
- 0003:00000fc0       ?__type_info_root_node@@3U__type_info_node@@A 1002afc0     LIBCMT:tncleanup.obj
- 0003:00000fc8       ?_OptionsStorage@?1??__local_stdio_scanf_options@@9@4_KA 1002afc8     LIBCMT:default_local_stdio_options.obj
- 0003:00000fd0       ?_AtlBaseModule@ATL@@3VCAtlBaseModule@1@A 1002afd0     atls:atlbase.obj
- 0003:00001008       ?__AtlThunkPool@@3PAT_SLIST_HEADER@@A 1002b008     atls:atlthunk.obj
- 0003:00001020       ___@@_PchSym_@00@UztvmgUPdlipUEUhUrmgvinvwrzgvUexgllohUzgohOmzgrevkilqPBACIAJCBDBUlyqiUcIGUhgwzucOlyq@4B2008FD98C1DD4 1002b020     atls:stdafx.obj
- 0003:00001024       ?__WinRTOutOfMemoryExceptionCallback@@3P6GPAXXZA 1002b024     libvcruntime:ehhelpers.obj
- 0003:00001028       ___pPurecall               1002b028     libvcruntime:purevirt_data.obj
- 0003:00001070       ?pArgList@UnDecorator@@0PAVReplicator@@A 1002b070     libvcruntime:undname.obj
- 0003:00001074       ?pZNameList@UnDecorator@@0PAVReplicator@@A 1002b074     libvcruntime:undname.obj
- 0003:00001078       ?pTemplateArgList@UnDecorator@@0PAVReplicator@@A 1002b078     libvcruntime:undname.obj
- 0003:0000107c       ?gName@UnDecorator@@0PBDB  1002b07c     libvcruntime:undname.obj
- 0003:00001080       ?name@UnDecorator@@0PBDB   1002b080     libvcruntime:undname.obj
- 0003:00001084       ?disableFlags@UnDecorator@@0KA 1002b084     libvcruntime:undname.obj
- 0003:00001088       ?fExplicitTemplateParams@UnDecorator@@0_NA 1002b088     libvcruntime:undname.obj
- 0003:00001089       ?fGetTemplateArgumentList@UnDecorator@@0_NA 1002b089     libvcruntime:undname.obj
- 0003:0000108c       ?m_pGetParameter@UnDecorator@@0P6APADJ@ZA 1002b08c     libvcruntime:undname.obj
- 0003:00001090       ?m_CHPENameOffset@UnDecorator@@0KA 1002b090     libvcruntime:undname.obj
- 0003:00001094       ?m_recursionLevel@UnDecorator@@0KA 1002b094     libvcruntime:undname.obj
- 0003:000010d8       ?c_exit_complete@?1???R<lambda_6e4b09c48022b2350581041d5f6b0c4c>@@QBE@XZ@4_NA 1002b0d8     libucrt:exit.obj
- 0003:000011e8       __environ_table            1002b1e8     libucrt:environment_initialization.obj
- 0003:000011ec       __wenviron_table           1002b1ec     libucrt:environment_initialization.obj
- 0003:000011f0       ___dcrt_initial_wide_environment 1002b1f0     libucrt:environment_initialization.obj
- 0003:000011f4       ___dcrt_initial_narrow_environment 1002b1f4     libucrt:environment_initialization.obj
- 0003:000011f8       ___acrt_atexit_table       1002b1f8     libucrt:onexit.obj
- 0003:00001204       ___acrt_at_quick_exit_table 1002b204     libucrt:onexit.obj
- 0003:000012f8       __nstream                  1002b2f8     libucrt:_file.obj
- 0003:000012fc       ___piob                    1002b2fc     libucrt:_file.obj
- 0003:00001304       ___acrt_stdout_buffer      1002b304     libucrt:_sftbuf.obj
- 0003:00001308       ___acrt_stderr_buffer      1002b308     libucrt:_sftbuf.obj
- 0003:0000130c       ___acrt_locale_changed_data 1002b30c     libucrt:wsetlocale.obj
- 0003:00001310       ___acrt_current_locale_data 1002b310     libucrt:nlsdata.obj
- 0003:00001318       ___pioinfo                 1002b318     libucrt:ioinit.obj
- 0003:00001518       __nhandle                  1002b518     libucrt:ioinit.obj
- 0003:00001674       __mbctype                  1002b674     libucrt:mbctype.obj
- 0003:00001678       __mbcasemap                1002b678     libucrt:mbctype.obj
- 0003:0000167c       ___acrt_current_multibyte_data 1002b67c     libucrt:mbctype.obj
- 0003:00001688       __pgmptr                   1002b688     libucrt:argv_data.obj
- 0003:0000168c       ___argc                    1002b68c     libucrt:argv_data.obj
- 0003:00001690       ___argv                    1002b690     libucrt:argv_data.obj
- 0003:00001694       ___wargv                   1002b694     libucrt:argv_data.obj
- 0003:00001698       __acmdln                   1002b698     libucrt:argv_data.obj
- 0003:0000169c       __wcmdln                   1002b69c     libucrt:argv_data.obj
- 0003:000016a0       ___acrt_heap               1002b6a0     libucrt:heap_handle.obj
- 0003:000016bc       ___acrt_lconv_static_null  1002b6bc     libucrt:localeconv.obj
- 0003:000016c0       ___acrt_lconv_static_W_null 1002b6c0     libucrt:localeconv.obj
- 0003:000016d0       ___fastflag                1002b6d0     libucrt:fp_flags.obj
- 0003:000016d8       ___dyn_tls_init_callback   1002b6d8     <common>
- 0003:000016dc       ___scrt_ucrt_dll_is_in_use 1002b6dc     <common>
- 0003:000016e0       __pmatherr                 1002b6e0     <common>
- 0003:000016e4       ___use_sse2_mathfcns       1002b6e4     <common>
+ 0003:00000fc0       ___castguard_check_failure_os_handled_fptr 1002afc0     LIBCMT:guard_support.obj
+ 0003:00000fc8       ?__type_info_root_node@@3U__type_info_node@@A 1002afc8     LIBCMT:tncleanup.obj
+ 0003:00000fd0       ?_OptionsStorage@?1??__local_stdio_scanf_options@@9@4_KA 1002afd0     LIBCMT:default_local_stdio_options.obj
+ 0003:00000fd8       ?_AtlBaseModule@ATL@@3VCAtlBaseModule@1@A 1002afd8     atls:atlbase.obj
+ 0003:00001010       ?__AtlThunkPool@@3PAT_SLIST_HEADER@@A 1002b010     atls:atlthunk.obj
+ 0003:00001028       ___@@_PchSym_@00@UztvmgUPdlipUFHUhUrmgvinvwrzgvUexgllohUzgohOmzgrevkilqPBACIAJCBDBUlyqiUcIGUhgwzucOlyq@4B2008FD98C1DD4 1002b028     atls:stdafx.obj
+ 0003:0000102c       ?__WinRTOutOfMemoryExceptionCallback@@3P6GPAXXZA 1002b02c     libvcruntime:ehhelpers.obj
+ 0003:00001030       ___pPurecall               1002b030     libvcruntime:purevirt_data.obj
+ 0003:00001078       ?pArgList@UnDecorator@@0PAVReplicator@@A 1002b078     libvcruntime:undname.obj
+ 0003:0000107c       ?pZNameList@UnDecorator@@0PAVReplicator@@A 1002b07c     libvcruntime:undname.obj
+ 0003:00001080       ?pTemplateArgList@UnDecorator@@0PAVReplicator@@A 1002b080     libvcruntime:undname.obj
+ 0003:00001084       ?gName@UnDecorator@@0PBDB  1002b084     libvcruntime:undname.obj
+ 0003:00001088       ?name@UnDecorator@@0PBDB   1002b088     libvcruntime:undname.obj
+ 0003:0000108c       ?disableFlags@UnDecorator@@0KA 1002b08c     libvcruntime:undname.obj
+ 0003:00001090       ?fExplicitTemplateParams@UnDecorator@@0_NA 1002b090     libvcruntime:undname.obj
+ 0003:00001091       ?fGetTemplateArgumentList@UnDecorator@@0_NA 1002b091     libvcruntime:undname.obj
+ 0003:00001094       ?m_pGetParameter@UnDecorator@@0P6APADJ@ZA 1002b094     libvcruntime:undname.obj
+ 0003:00001098       ?m_CHPENameOffset@UnDecorator@@0KA 1002b098     libvcruntime:undname.obj
+ 0003:0000109c       ?m_recursionLevel@UnDecorator@@0KA 1002b09c     libvcruntime:undname.obj
+ 0003:000010e0       ?c_exit_complete@?1???R<lambda_6e4b09c48022b2350581041d5f6b0c4c>@@QBE@XZ@4_NA 1002b0e0     libucrt:exit.obj
+ 0003:000011f0       __environ_table            1002b1f0     libucrt:environment_initialization.obj
+ 0003:000011f4       __wenviron_table           1002b1f4     libucrt:environment_initialization.obj
+ 0003:000011f8       ___dcrt_initial_wide_environment 1002b1f8     libucrt:environment_initialization.obj
+ 0003:000011fc       ___dcrt_initial_narrow_environment 1002b1fc     libucrt:environment_initialization.obj
+ 0003:00001200       ___acrt_atexit_table       1002b200     libucrt:onexit.obj
+ 0003:0000120c       ___acrt_at_quick_exit_table 1002b20c     libucrt:onexit.obj
+ 0003:00001300       __nstream                  1002b300     libucrt:_file.obj
+ 0003:00001304       ___piob                    1002b304     libucrt:_file.obj
+ 0003:0000130c       ___acrt_stdout_buffer      1002b30c     libucrt:_sftbuf.obj
+ 0003:00001310       ___acrt_stderr_buffer      1002b310     libucrt:_sftbuf.obj
+ 0003:00001314       ___acrt_locale_changed_data 1002b314     libucrt:wsetlocale.obj
+ 0003:00001318       ___acrt_current_locale_data 1002b318     libucrt:nlsdata.obj
+ 0003:00001320       ___pioinfo                 1002b320     libucrt:ioinit.obj
+ 0003:00001520       __nhandle                  1002b520     libucrt:ioinit.obj
+ 0003:0000167c       __mbctype                  1002b67c     libucrt:mbctype.obj
+ 0003:00001680       __mbcasemap                1002b680     libucrt:mbctype.obj
+ 0003:00001684       ___acrt_current_multibyte_data 1002b684     libucrt:mbctype.obj
+ 0003:00001690       __pgmptr                   1002b690     libucrt:argv_data.obj
+ 0003:00001694       ___argc                    1002b694     libucrt:argv_data.obj
+ 0003:00001698       ___argv                    1002b698     libucrt:argv_data.obj
+ 0003:0000169c       ___wargv                   1002b69c     libucrt:argv_data.obj
+ 0003:000016a0       __acmdln                   1002b6a0     libucrt:argv_data.obj
+ 0003:000016a4       __wcmdln                   1002b6a4     libucrt:argv_data.obj
+ 0003:000016a8       ___acrt_heap               1002b6a8     libucrt:heap_handle.obj
+ 0003:000016c4       ___acrt_lconv_static_null  1002b6c4     libucrt:localeconv.obj
+ 0003:000016c8       ___acrt_lconv_static_W_null 1002b6c8     libucrt:localeconv.obj
+ 0003:000016d8       ___fastflag                1002b6d8     libucrt:fp_flags.obj
+ 0003:000016e0       ___dyn_tls_init_callback   1002b6e0     <common>
+ 0003:000016e4       ___scrt_ucrt_dll_is_in_use 1002b6e4     <common>
+ 0003:000016e8       __pmatherr                 1002b6e8     <common>
+ 0003:000016ec       ___use_sse2_mathfcns       1002b6ec     <common>
 
  entry point at        0001:0000bddd
 
@@ -2646,18 +2653,18 @@
  0001:0000003a       ??__E_Module@@YAXXZ        1000103a f   ToneIndicator.obj
  0001:00000064       ??__E_AtlBaseModule@ATL@@YAXXZ 10001064 f   atls:atlbase.obj
  0001:0000102e       $LN24                      1000202e     ToneIndicator.obj
- 0001:000058b0       $LN48                      100068b0     ToneIndicator.obj
- 0001:000058c8       $LN47                      100068c8     ToneIndicator.obj
+ 0001:000058b2       $LN48                      100068b2     ToneIndicator.obj
+ 0001:000058ca       $LN47                      100068ca     ToneIndicator.obj
  0001:00007a75       $LN38                      10008a75     ToneIndicator.obj
  0001:00007a8d       $LN37                      10008a8d     ToneIndicator.obj
  0001:0000917d       $LN76                      1000a17d     ToneIndicator.obj
  0001:00009195       $LN75                      1000a195     ToneIndicator.obj
  0001:0000954e       _memcpy_s                  1000a54e f   ToneIndicator.obj
- 0001:0000b26a       ?find_pe_section@@YAPAU_IMAGE_SECTION_HEADER@@QAEI@Z 1000c26a f   LIBCMT:utility.obj
- 0001:0000b589       ?__scrt_initialize_thread_safe_statics@@YAHXZ 1000c589 f   LIBCMT:thread_safe_statics.obj
- 0001:0000b5b0       ?__scrt_initialize_thread_safe_statics_platform_specific@@YAXXZ 1000c5b0 f   LIBCMT:thread_safe_statics.obj
- 0001:0000b632       ?__scrt_uninitialize_thread_safe_statics@@YAXXZ 1000c632 f   LIBCMT:thread_safe_statics.obj
- 0001:0000b9a1       __catch$??2@YAPAXIABUnothrow_t@std@@@Z$0 1000c9a1 f   LIBCMT:new_scalar_nothrow.obj
+ 0001:0000b270       ?find_pe_section@@YAPAU_IMAGE_SECTION_HEADER@@QAEI@Z 1000c270 f   LIBCMT:utility.obj
+ 0001:0000b58f       ?__scrt_initialize_thread_safe_statics@@YAHXZ 1000c58f f   LIBCMT:thread_safe_statics.obj
+ 0001:0000b5b6       ?__scrt_initialize_thread_safe_statics_platform_specific@@YAXXZ 1000c5b6 f   LIBCMT:thread_safe_statics.obj
+ 0001:0000b638       ?__scrt_uninitialize_thread_safe_statics@@YAXXZ 1000c638 f   LIBCMT:thread_safe_statics.obj
+ 0001:0000b9a7       __catch$??2@YAPAXIABUnothrow_t@std@@@Z$0 1000c9a7 f   LIBCMT:new_scalar_nothrow.obj
  0001:0000b9e0       $$000000                   1000c9e0     LIBCMT:sehprolg4gs.obj
  0001:0000ba40       $$000000                   1000ca40     LIBCMT:alloca16.obj
  0001:0000ba70       $$000000                   1000ca70     LIBCMT:chkstk.obj
@@ -2667,13 +2674,13 @@
  0001:0000bca7       ?dllmain_dispatch@@YAHQAUHINSTANCE__@@KQAX@Z 1000cca7 f   LIBCMT:dll_dllmain.obj
  0001:0000bdb2       ?dllmain_raw@@YGHQAUHINSTANCE__@@KQAX@Z 1000cdb2 f   LIBCMT:dll_dllmain.obj
  0001:0000c130       $$000000                   1000d130     LIBCMT:sehprolg4.obj
- 0001:0000c18c       ___get_entropy             1000d18c f   LIBCMT:gs_support.obj
- 0001:0000c483       ??$GetProcAddressAll@P6GP6GJPAUHWND__@@IIJ@ZPAUAtlThunkData_t@@@Z@@YAP6GP6GJPAUHWND__@@IIJ@ZPAUAtlThunkData_t@@@ZPAP6GP6GJ0IIJ@Z1@Z@Z 1000d483 f   atls:atlthunk.obj
- 0001:0000c483       ??$GetProcAddressAll@P6GPAUAtlThunkData_t@@XZ@@YAP6GPAUAtlThunkData_t@@XZPAP6GPAU0@XZ@Z 1000d483 f   atls:atlthunk.obj
- 0001:0000c483       ??$GetProcAddressAll@P6GXPAUAtlThunkData_t@@@Z@@YAP6GXPAUAtlThunkData_t@@@ZPAP6GX0@Z@Z 1000d483 f   atls:atlthunk.obj
- 0001:0000c483       ??$GetProcAddressAll@P6GXPAUAtlThunkData_t@@PAXI@Z@@YAP6GXPAUAtlThunkData_t@@PAXI@ZPAP6GX01I@Z@Z 1000d483 f   atls:atlthunk.obj
- 0001:0000c533       ?GetProcAddressSingle@@YA_NPAUHINSTANCE__@@PBDPAPAX@Z 1000d533 f   atls:atlthunk.obj
- 0001:0000c685       ?__InitializeThunkPool@@YAHXZ 1000d685 f   atls:atlthunk.obj
+ 0001:0000c18b       ___get_entropy             1000d18b f   LIBCMT:gs_support.obj
+ 0001:0000c482       ??$GetProcAddressAll@P6GP6GJPAUHWND__@@IIJ@ZPAUAtlThunkData_t@@@Z@@YAP6GP6GJPAUHWND__@@IIJ@ZPAUAtlThunkData_t@@@ZPAP6GP6GJ0IIJ@Z1@Z@Z 1000d482 f   atls:atlthunk.obj
+ 0001:0000c482       ??$GetProcAddressAll@P6GPAUAtlThunkData_t@@XZ@@YAP6GPAUAtlThunkData_t@@XZPAP6GPAU0@XZ@Z 1000d482 f   atls:atlthunk.obj
+ 0001:0000c482       ??$GetProcAddressAll@P6GXPAUAtlThunkData_t@@@Z@@YAP6GXPAUAtlThunkData_t@@@ZPAP6GX0@Z@Z 1000d482 f   atls:atlthunk.obj
+ 0001:0000c482       ??$GetProcAddressAll@P6GXPAUAtlThunkData_t@@PAXI@Z@@YAP6GXPAUAtlThunkData_t@@PAXI@ZPAP6GX01I@Z@Z 1000d482 f   atls:atlthunk.obj
+ 0001:0000c532       ?GetProcAddressSingle@@YA_NPAUHINSTANCE__@@PBDPAPAX@Z 1000d532 f   atls:atlthunk.obj
+ 0001:0000c684       ?__InitializeThunkPool@@YAHXZ 1000d684 f   atls:atlthunk.obj
  0001:0000cad0       _ValidateLocalCookies      1000dad0 f   libvcruntime:chandler4.obj
  0001:0000dafa       $LN1250                    1000eafa     libvcruntime:memcmp.obj
  0001:0000db80       $$000000                   1000eb80     libvcruntime:memcpy.obj
@@ -2685,22 +2692,22 @@
  0001:0000ebb4       TrailingUpVec              1000fbb4     libvcruntime:memmove.obj
  0001:0000ec60       TrailingDownVec            1000fc60     libvcruntime:memmove.obj
  0001:0000eed0       $$000000                   1000fed0     libvcruntime:exsup4.obj
- 0001:0000ef60       __unwind_handler4          1000ff60 f   libvcruntime:exsup4.obj
- 0001:0000f23f       ??$BuildCatchObjectHelperInternal@V__FrameHandler3@@@@YAHPAUEHExceptionRecord@@PAXPBU_s_HandlerType@@PBU_s_CatchableType@@@Z 1001023f f   libvcruntime:frame.obj
- 0001:0000f37d       ??$BuildCatchObjectInternal@V__FrameHandler3@@@@YAXPAUEHExceptionRecord@@PAXPBU_s_HandlerType@@PBU_s_CatchableType@@@Z 1001037d f   libvcruntime:frame.obj
- 0001:0000f416       ??$CatchIt@V__FrameHandler3@@@@YAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@PBU_s_HandlerType@@PBU_s_CatchableType@@PBU_s_TryBlockMapEntry@@H1EE@Z 10010416 f   libvcruntime:frame.obj
- 0001:0000f496       ??$FindHandler@V__FrameHandler3@@@@YAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@EH1@Z 10010496 f   libvcruntime:frame.obj
- 0001:0000f84c       ??$FindHandlerForForeignException@V__FrameHandler3@@@@YAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@HH1@Z 1001084c f   libvcruntime:frame.obj
- 0001:0000fb64       ?CallCatchBlock@@YAPAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PBU_s_FuncInfo@@PAXHK@Z 10010b64 f   libvcruntime:frame.obj
- 0001:0000fd28       ?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z 10010d28 f   libvcruntime:frame.obj
- 0001:0000fd48       __catch$?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z$0 10010d48 f   libvcruntime:frame.obj
- 0001:0000fd62       ?ExFilterRethrow@@YAHPAU_EXCEPTION_POINTERS@@@Z 10010d62 f   libvcruntime:frame.obj
- 0001:0000feac       ?IsInExceptionSpec@@YAEPAUEHExceptionRecord@@PBU_s_ESTypeList@@@Z 10010eac f   libvcruntime:frame.obj
+ 0001:0000ef5d       __unwind_handler4          1000ff5d f   libvcruntime:exsup4.obj
+ 0001:0000f23b       ??$BuildCatchObjectHelperInternal@V__FrameHandler3@@@@YAHPAUEHExceptionRecord@@PAXPBU_s_HandlerType@@PBU_s_CatchableType@@@Z 1001023b f   libvcruntime:frame.obj
+ 0001:0000f379       ??$BuildCatchObjectInternal@V__FrameHandler3@@@@YAXPAUEHExceptionRecord@@PAXPBU_s_HandlerType@@PBU_s_CatchableType@@@Z 10010379 f   libvcruntime:frame.obj
+ 0001:0000f412       ??$CatchIt@V__FrameHandler3@@@@YAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@PBU_s_HandlerType@@PBU_s_CatchableType@@PBU_s_TryBlockMapEntry@@H1EE@Z 10010412 f   libvcruntime:frame.obj
+ 0001:0000f492       ??$FindHandler@V__FrameHandler3@@@@YAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@EH1@Z 10010492 f   libvcruntime:frame.obj
+ 0001:0000f848       ??$FindHandlerForForeignException@V__FrameHandler3@@@@YAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@HH1@Z 10010848 f   libvcruntime:frame.obj
+ 0001:0000fb60       ?CallCatchBlock@@YAPAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PBU_s_FuncInfo@@PAXHK@Z 10010b60 f   libvcruntime:frame.obj
+ 0001:0000fd24       ?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z 10010d24 f   libvcruntime:frame.obj
+ 0001:0000fd44       __catch$?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z$0 10010d44 f   libvcruntime:frame.obj
+ 0001:0000fd63       ?ExFilterRethrow@@YAHPAU_EXCEPTION_POINTERS@@@Z 10010d63 f   libvcruntime:frame.obj
+ 0001:0000fead       ?IsInExceptionSpec@@YAEPAUEHExceptionRecord@@PBU_s_ESTypeList@@@Z 10010ead f   libvcruntime:frame.obj
  0001:0000ff80       $$000000                   10010f80     libvcruntime:lowhelpr.obj
  0001:0000ffd0       $$000000                   10010fd0     libvcruntime:exsup.obj
  0001:0000fff1       __unwind_handler           10010ff1 f   libvcruntime:exsup.obj
- 0001:0001010e       ?try_get_first_available_module@@YAPAUHINSTANCE__@@QBW4module_id@?A0x9d0f8d90@@0@Z 1001110e f   libvcruntime:winapi_downlevel.obj
- 0001:000101a8       ?try_get_function@@YAPAXW4function_id@?A0x9d0f8d90@@QBDQBW4module_id@2@2@Z 100111a8 f   libvcruntime:winapi_downlevel.obj
+ 0001:0001010e       ?try_get_first_available_module@@YAPAUHINSTANCE__@@QBW4module_id@?A0xb97aeec8@@0@Z 1001110e f   libvcruntime:winapi_downlevel.obj
+ 0001:000101a8       ?try_get_function@@YAPAXW4function_id@?A0xb97aeec8@@QBDQBW4module_id@2@2@Z 100111a8 f   libvcruntime:winapi_downlevel.obj
  0001:00010832       ??$common_tcsncpy_s@_W@@YAHQA_WIQB_WI@Z 10011832 f   libucrt:wcsncpy_s.obj
  0001:00010908       ??$common_vsprintf@Vformat_validation_base@__crt_stdio_output@@_W@@YAH_KQA_WIQB_WQAU__crt_locale_pointers@@QAD@Z 10011908 f   libucrt:output.obj
  0001:00010a8f       ??$common_vsprintf_s@_W@@YAH_KQA_WIQB_WQAU__crt_locale_pointers@@QAD@Z 10011a8f f   libucrt:output.obj
@@ -2835,11 +2842,11 @@
  0001:0001dfd0       $$000000                   1001efd0     libvcruntime:strrchr.obj
  0001:0001e110       $$000000                   1001f110     libvcruntime:strchr.obj
  0001:0001e2b3       __ehhandler$??2@YAPAXIABUnothrow_t@std@@@Z 1001f2b3 f   LIBCMT:new_scalar_nothrow.obj
- 0001:0001e2ce       __ehhandler$?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z 1001f2ce f   libvcruntime:frame.obj
- 0001:0001e2e9       ??__F_AtlComModule@ATL@@YAXXZ 1001f2e9 f   OposVariant.obj
- 0001:0001e2f3       ??__F_AtlWinModule@ATL@@YAXXZ 1001f2f3 f   OposVariant.obj
- 0001:0001e30d       ??__F_Module@@YAXXZ        1001f30d f   ToneIndicator.obj
- 0001:0001e321       ??__F_AtlBaseModule@ATL@@YAXXZ 1001f321 f   atls:atlbase.obj
+ 0001:0001e2d0       __ehhandler$?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z 1001f2d0 f   libvcruntime:frame.obj
+ 0001:0001e2ed       ??__F_AtlComModule@ATL@@YAXXZ 1001f2ed f   OposVariant.obj
+ 0001:0001e2f7       ??__F_AtlWinModule@ATL@@YAXXZ 1001f2f7 f   OposVariant.obj
+ 0001:0001e311       ??__F_Module@@YAXXZ        1001f311 f   ToneIndicator.obj
+ 0001:0001e325       ??__F_AtlBaseModule@ATL@@YAXXZ 1001f325 f   atls:atlbase.obj
  0002:00000304       ?_AtlBaseModule$initializer$@ATL@@3P6AXXZA 10020304     atls:atlbase.obj
  0002:00000308       ?_AtlComModule$initializer$@ATL@@3P6AXXZA 10020308     OposVariant.obj
  0002:0000030c       ?_AtlWinModule$initializer$@ATL@@3P6AXXZA 1002030c     OposVariant.obj
@@ -2852,12 +2859,12 @@
  0002:00001d50       ?rttiTable@@3QBUStringLiteral@@B 10021d50     libvcruntime:undname.obj
  0002:00001d78       ?IndirectionName@@3QBUStringLiteral@@B 10021d78     libvcruntime:undname.obj
  0002:00001da8       ?PrefixName@@3QBUStringLiteral@@B 10021da8     libvcruntime:undname.obj
- 0002:000023d8       ?module_names@?A0x9d0f8d90@@3QBQB_WB 100223d8     libvcruntime:winapi_downlevel.obj
- 0002:00002480       ?candidate_modules@?1??try_get_FlsAlloc@@YAP6GKP6GXPAX@Z@ZXZ@4QBW4module_id@?A0x9d0f8d90@@B 10022480     libvcruntime:winapi_downlevel.obj
- 0002:00002494       ?candidate_modules@?1??try_get_FlsFree@@YAP6GHK@ZXZ@4QBW4module_id@?A0x9d0f8d90@@B 10022494     libvcruntime:winapi_downlevel.obj
- 0002:000024a4       ?candidate_modules@?1??try_get_FlsGetValue@@YAP6GPAXK@ZXZ@4QBW4module_id@?A0x9d0f8d90@@B 100224a4     libvcruntime:winapi_downlevel.obj
- 0002:000024b8       ?candidate_modules@?1??try_get_FlsSetValue@@YAP6GHKPAX@ZXZ@4QBW4module_id@?A0x9d0f8d90@@B 100224b8     libvcruntime:winapi_downlevel.obj
- 0002:000024cc       ?candidate_modules@?1??try_get_InitializeCriticalSectionEx@@YAP6GHPAU_RTL_CRITICAL_SECTION@@KK@ZXZ@4QBW4module_id@?A0x9d0f8d90@@B 100224cc     libvcruntime:winapi_downlevel.obj
+ 0002:000023d8       ?module_names@?A0xb97aeec8@@3QBQB_WB 100223d8     libvcruntime:winapi_downlevel.obj
+ 0002:00002480       ?candidate_modules@?1??try_get_FlsAlloc@@YAP6GKP6GXPAX@Z@ZXZ@4QBW4module_id@?A0xb97aeec8@@B 10022480     libvcruntime:winapi_downlevel.obj
+ 0002:00002494       ?candidate_modules@?1??try_get_FlsFree@@YAP6GHK@ZXZ@4QBW4module_id@?A0xb97aeec8@@B 10022494     libvcruntime:winapi_downlevel.obj
+ 0002:000024a4       ?candidate_modules@?1??try_get_FlsGetValue@@YAP6GPAXK@ZXZ@4QBW4module_id@?A0xb97aeec8@@B 100224a4     libvcruntime:winapi_downlevel.obj
+ 0002:000024b8       ?candidate_modules@?1??try_get_FlsSetValue@@YAP6GHKPAX@ZXZ@4QBW4module_id@?A0xb97aeec8@@B 100224b8     libvcruntime:winapi_downlevel.obj
+ 0002:000024cc       ?candidate_modules@?1??try_get_InitializeCriticalSectionEx@@YAP6GHPAU_RTL_CRITICAL_SECTION@@KK@ZXZ@4QBW4module_id@?A0xb97aeec8@@B 100224cc     libvcruntime:winapi_downlevel.obj
  0002:000024f0       ?errtable@@3QBUerrentry@?A0x31fdb9ec@@B 100224f0     libucrt:errno.obj
  0002:00002b38       ___acrt_initializers       10022b38     libucrt:initialization.obj
  0002:00002bb8       ?module_names@?A0x391cf84c@@3QBQB_WB 10022bb8     libucrt:winapi_thunks.obj
@@ -2912,66 +2919,66 @@
  0002:00007550       two32                      10027550     LIBCMT:ftol2.obj
  0002:00007554       two63                      10027554     LIBCMT:ftol2.obj
  0002:00007558       _NaN                       10027558     LIBCMT:ftol2.obj
- 0002:00007c10       __sehtable$?_AtlVerifyStackAvailable@_ATL_SAFE_ALLOCA_IMPL@ATL@@YA_NK@Z 10027c10     ToneIndicator.obj
- 0002:00007c30       __sehtable$___scrt_is_nonwritable_in_current_image 10027c30     LIBCMT:utility.obj
- 0002:00007c4c       __catchsym$??2@YAPAXIABUnothrow_t@std@@@Z$2 10027c4c     LIBCMT:new_scalar_nothrow.obj
- 0002:00007c5c       __unwindtable$??2@YAPAXIABUnothrow_t@std@@@Z 10027c5c     LIBCMT:new_scalar_nothrow.obj
- 0002:00007c6c       __tryblocktable$??2@YAPAXIABUnothrow_t@std@@@Z 10027c6c     LIBCMT:new_scalar_nothrow.obj
- 0002:00007c80       __ehfuncinfo$??2@YAPAXIABUnothrow_t@std@@@Z 10027c80     LIBCMT:new_scalar_nothrow.obj
- 0002:00007ca8       __sehtable$?dllmain_crt_process_attach@@YAHQAUHINSTANCE__@@QAX@Z 10027ca8     LIBCMT:dll_dllmain.obj
- 0002:00007cc8       __sehtable$?dllmain_crt_process_detach@@YAH_N@Z 10027cc8     LIBCMT:dll_dllmain.obj
- 0002:00007cf0       __sehtable$?dllmain_dispatch@@YAHQAUHINSTANCE__@@KQAX@Z 10027cf0     LIBCMT:dll_dllmain.obj
- 0002:00007da0       __sehtable$___DestructExceptionObject 10027da0     libvcruntime:ehhelpers.obj
- 0002:00007dc0       __sehtable$?FrameUnwindToState@__FrameHandler3@@SAXPAUEHRegistrationNode@@PAXPBU_s_FuncInfo@@H@Z 10027dc0     libvcruntime:frame.obj
- 0002:00007de8       __sehtable$?CallCatchBlock@@YAPAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PBU_s_FuncInfo@@PAXHK@Z 10027de8     libvcruntime:frame.obj
- 0002:00007e10       __catchsym$?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z$2 10027e10     libvcruntime:frame.obj
- 0002:00007e20       __unwindtable$?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z 10027e20     libvcruntime:frame.obj
- 0002:00007e30       __tryblocktable$?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z 10027e30     libvcruntime:frame.obj
- 0002:00007e44       __ehfuncinfo$?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z 10027e44     libvcruntime:frame.obj
- 0002:00007e68       __sehtable$??$BuildCatchObjectHelperInternal@V__FrameHandler3@@@@YAHPAUEHExceptionRecord@@PAXPBU_s_HandlerType@@PBU_s_CatchableType@@@Z 10027e68     libvcruntime:frame.obj
- 0002:00007e88       __sehtable$??$BuildCatchObjectInternal@V__FrameHandler3@@@@YAXPAUEHExceptionRecord@@PAXPBU_s_HandlerType@@PBU_s_CatchableType@@@Z 10027e88     libvcruntime:frame.obj
- 0002:00007ee0       __sehtable$??R<lambda_6e4b09c48022b2350581041d5f6b0c4c>@@QBE@XZ 10027ee0     libucrt:exit.obj
- 0002:00007f00       __sehtable$??$?RV<lambda_03b1d95aef87969028cfba75ccab2455>@@AAV<lambda_6e4b09c48022b2350581041d5f6b0c4c>@@V<lambda_22bdf7517842c4b3e53723af5aa32b9e>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_03b1d95aef87969028cfba75ccab2455>@@AAV<lambda_6e4b09c48022b2350581041d5f6b0c4c>@@$$QAV<lambda_22bdf7517842c4b3e53723af5aa32b9e>@@@Z 10027f00     libucrt:exit.obj
- 0002:00007f20       __sehtable$??$?RV<lambda_8e746cf0007f6ed984d6f78af1fec997>@@AAV<lambda_22ebabd17bc4fa466a2aca6d8deb888d>@@V<lambda_18ed0c0b38a6dc0daf1e7ac6d6adf05e>@@@?$__crt_seh_guarded_call@H@@QAEH$$QAV<lambda_8e746cf0007f6ed984d6f78af1fec997>@@AAV<lambda_22ebabd17bc4fa466a2aca6d8deb888d>@@$$QAV<lambda_18ed0c0b38a6dc0daf1e7ac6d6adf05e>@@@Z 10027f20     libucrt:onexit.obj
- 0002:00007f40       __sehtable$??$?RV<lambda_69a2805e680e0e292e8ba93315fe43a8>@@AAV<lambda_f03950bc5685219e0bcd2087efbe011e>@@V<lambda_03fcd07e894ec930e3f35da366ca99d6>@@@?$__crt_seh_guarded_call@H@@QAEH$$QAV<lambda_69a2805e680e0e292e8ba93315fe43a8>@@AAV<lambda_f03950bc5685219e0bcd2087efbe011e>@@$$QAV<lambda_03fcd07e894ec930e3f35da366ca99d6>@@@Z 10027f40     libucrt:onexit.obj
- 0002:00007f60       __sehtable$__query_new_handler 10027f60     libucrt:new_handler.obj
- 0002:00007f80       __sehtable$_terminate      10027f80     libucrt:terminate.obj
- 0002:00007fa0       __sehtable$??$?RV<lambda_15ade71b0218206bbe3333a0c9b79046>@@AAV<lambda_da44e0f8b0f19ba52fefafb335991732>@@V<lambda_207f2d024fc103971653565357d6cd41>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_15ade71b0218206bbe3333a0c9b79046>@@AAV<lambda_da44e0f8b0f19ba52fefafb335991732>@@$$QAV<lambda_207f2d024fc103971653565357d6cd41>@@@Z 10027fa0     libucrt:per_thread_data.obj
- 0002:00007fc0       __sehtable$??$?RV<lambda_a7e850c220f1c8d1e6efeecdedd162c6>@@AAV<lambda_46720907175c18b6c9d2717bc0d2d362>@@V<lambda_9048902d66e8d99359bc9897bbb930a8>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_a7e850c220f1c8d1e6efeecdedd162c6>@@AAV<lambda_46720907175c18b6c9d2717bc0d2d362>@@$$QAV<lambda_9048902d66e8d99359bc9897bbb930a8>@@@Z 10027fc0     libucrt:per_thread_data.obj
- 0002:00007fe0       __sehtable$??$?RV<lambda_38edbb1296d33220d7e4dd0ed76b244a>@@AAV<lambda_5ce1d447e08cb34b2473517608e21441>@@V<lambda_fb385d3da700c9147fc39e65dd577a8c>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_38edbb1296d33220d7e4dd0ed76b244a>@@AAV<lambda_5ce1d447e08cb34b2473517608e21441>@@$$QAV<lambda_fb385d3da700c9147fc39e65dd577a8c>@@@Z 10027fe0     libucrt:per_thread_data.obj
- 0002:00008000       __sehtable$??$?RV<lambda_6affb1475c98b40b75cdec977db92e3c>@@AAV<lambda_b8d4b9c228a6ecc3f80208dbb4b4a104>@@V<lambda_608742c3c92a14382c1684fc64f96c88>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_6affb1475c98b40b75cdec977db92e3c>@@AAV<lambda_b8d4b9c228a6ecc3f80208dbb4b4a104>@@$$QAV<lambda_608742c3c92a14382c1684fc64f96c88>@@@Z 10028000     libucrt:per_thread_data.obj
- 0002:00008020       __sehtable$??$?RV<lambda_e5124f882df8998aaf41531e079ba474>@@AAV<lambda_3e16ef9562a7dcce91392c22ab16ea36>@@V<lambda_e25ca0880e6ef98be67edffd8c599615>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_e5124f882df8998aaf41531e079ba474>@@AAV<lambda_3e16ef9562a7dcce91392c22ab16ea36>@@$$QAV<lambda_e25ca0880e6ef98be67edffd8c599615>@@@Z 10028020     libucrt:wsetlocale.obj
- 0002:00008040       __sehtable$___acrt_initialize_lowio 10028040     libucrt:ioinit.obj
- 0002:00008060       __sehtable$?update_thread_multibyte_data_internal@@YAPAU__crt_multibyte_data@@QAU__acrt_ptd@@QAPAU1@@Z 10028060     libucrt:mbctype.obj
- 0002:00008080       __sehtable$??$?RV<lambda_ceb1ee4838e85a9d631eb091e2fbe199>@@AAV<lambda_ae742caa10f662c28703da3d2ea5e57e>@@V<lambda_cd08b5d6af4937fe54fc07d0c9bf6b37>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_ceb1ee4838e85a9d631eb091e2fbe199>@@AAV<lambda_ae742caa10f662c28703da3d2ea5e57e>@@$$QAV<lambda_cd08b5d6af4937fe54fc07d0c9bf6b37>@@@Z 10028080     libucrt:mbctype.obj
- 0002:000080a0       __sehtable$_raise          100280a0     libucrt:signal.obj
- 0002:000080c0       __sehtable$??$?RV<lambda_cbab9ec6f41b0180b23cc171c22676b0>@@AAV<lambda_44731a7d0e6d81c3e6aa82d741081786>@@V<lambda_4b292cb8dd18144e164572427af410ab>@@@?$__crt_seh_guarded_call@P6AXH@Z@@QAEP6AXH@Z$$QAV<lambda_cbab9ec6f41b0180b23cc171c22676b0>@@AAV<lambda_44731a7d0e6d81c3e6aa82d741081786>@@$$QAV<lambda_4b292cb8dd18144e164572427af410ab>@@@Z 100280c0     libucrt:signal.obj
- 0002:000080e0       __sehtable$??$?RV<lambda_2866be3712abc81a800a822484c830d8>@@AAV<lambda_39ca0ed439415581b5b15c265174cece>@@V<lambda_2b24c74d71094a6cd0cb82e44167d71b>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_2866be3712abc81a800a822484c830d8>@@AAV<lambda_39ca0ed439415581b5b15c265174cece>@@$$QAV<lambda_2b24c74d71094a6cd0cb82e44167d71b>@@@Z 100280e0     libucrt:fflush.obj
- 0002:00008100       __sehtable$??$?RV<lambda_2cc53f568c5a2bb6f192f930a45d44ea>@@AAV<lambda_ab61a845afdef5b7c387490eaf3616ee>@@V<lambda_c2ffc0b7726aa6be21d5f0026187e748>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_2cc53f568c5a2bb6f192f930a45d44ea>@@AAV<lambda_ab61a845afdef5b7c387490eaf3616ee>@@$$QAV<lambda_c2ffc0b7726aa6be21d5f0026187e748>@@@Z 10028100     libucrt:fflush.obj
- 0002:00008120       __sehtable$___acrt_update_thread_locale_data 10028120     libucrt:locale_refcounting.obj
- 0002:00008140       __sehtable$__fcloseall     10028140     libucrt:closeall.obj
- 0002:00008160       __sehtable$___acrt_lowio_ensure_fh_exists 10028160     libucrt:osfinfo.obj
- 0002:00008180       __sehtable$??$?RV<lambda_9e9de3de5fa147e2223d7db92bc10aa6>@@AAV<lambda_38ce7e780aa69e748d6df282ebc68efe>@@V<lambda_8ca6da459f0f6780f1cff60fdc3d00e5>@@@?$__crt_seh_guarded_call@H@@QAEH$$QAV<lambda_9e9de3de5fa147e2223d7db92bc10aa6>@@AAV<lambda_38ce7e780aa69e748d6df282ebc68efe>@@$$QAV<lambda_8ca6da459f0f6780f1cff60fdc3d00e5>@@@Z 10028180     libucrt:commit.obj
- 0002:000081a0       __sehtable$__write         100281a0     libucrt:write.obj
- 0002:000081c0       __sehtable$_fclose         100281c0     libucrt:fclose.obj
- 0002:000081e0       __sehtable$??$?RV<lambda_218ce3db14220d0be481dae8ef3383b6>@@AAV<lambda_628dfdc04ba53c8bfc02c9951375f3f5>@@V<lambda_57dc472bd5c9d5f3b2cbca59b8a843ae>@@@?$__crt_seh_guarded_call@H@@QAEH$$QAV<lambda_218ce3db14220d0be481dae8ef3383b6>@@AAV<lambda_628dfdc04ba53c8bfc02c9951375f3f5>@@$$QAV<lambda_57dc472bd5c9d5f3b2cbca59b8a843ae>@@@Z 100281e0     libucrt:close.obj
- 0002:00008200       __sehtable$___set_fpsr_sse2 10028200     libucrt:fpctrl.obj
- 0002:00008220       __sehtable$__IsNonwritableInCurrentImage 10028220     LIBCMT:pesect.obj
- 0002:00008250       .edata                     10028250     OPOSToneIndicator.exp
- 0002:00008278       rgpv                       10028278     OPOSToneIndicator.exp
- 0002:00008288       rgszName                   10028288     OPOSToneIndicator.exp
- 0002:00008298       rgwOrd                     10028298     OPOSToneIndicator.exp
- 0002:000082a0       szName                     100282a0     OPOSToneIndicator.exp
- 0002:000082b6       $N00001                    100282b6     OPOSToneIndicator.exp
- 0002:000082c6       $N00002                    100282c6     OPOSToneIndicator.exp
- 0002:000082d8       $N00003                    100282d8     OPOSToneIndicator.exp
- 0002:000082ea       $N00004                    100282ea     OPOSToneIndicator.exp
- 0002:000088fa       .idata$6                   100288fa     kernel32:KERNEL32.dll
- 0002:00008b0e       .idata$6                   10028b0e     user32:USER32.dll
- 0002:00008c42       .idata$6                   10028c42     gdi32:GDI32.dll
- 0002:00008ce8       .idata$6                   10028ce8     advapi32:ADVAPI32.dll
- 0002:00008e04       .idata$6                   10028e04     ole32:ole32.dll
- 0002:00008e0e       .idata$6                   10028e0e     oleaut32:OLEAUT32.dll
+ 0002:00007c28       __sehtable$?_AtlVerifyStackAvailable@_ATL_SAFE_ALLOCA_IMPL@ATL@@YA_NK@Z 10027c28     ToneIndicator.obj
+ 0002:00007c48       __sehtable$___scrt_is_nonwritable_in_current_image 10027c48     LIBCMT:utility.obj
+ 0002:00007c64       __catchsym$??2@YAPAXIABUnothrow_t@std@@@Z$2 10027c64     LIBCMT:new_scalar_nothrow.obj
+ 0002:00007c74       __unwindtable$??2@YAPAXIABUnothrow_t@std@@@Z 10027c74     LIBCMT:new_scalar_nothrow.obj
+ 0002:00007c84       __tryblocktable$??2@YAPAXIABUnothrow_t@std@@@Z 10027c84     LIBCMT:new_scalar_nothrow.obj
+ 0002:00007c98       __ehfuncinfo$??2@YAPAXIABUnothrow_t@std@@@Z 10027c98     LIBCMT:new_scalar_nothrow.obj
+ 0002:00007cc0       __sehtable$?dllmain_crt_process_attach@@YAHQAUHINSTANCE__@@QAX@Z 10027cc0     LIBCMT:dll_dllmain.obj
+ 0002:00007ce0       __sehtable$?dllmain_crt_process_detach@@YAH_N@Z 10027ce0     LIBCMT:dll_dllmain.obj
+ 0002:00007d08       __sehtable$?dllmain_dispatch@@YAHQAUHINSTANCE__@@KQAX@Z 10027d08     LIBCMT:dll_dllmain.obj
+ 0002:00007db8       __sehtable$___DestructExceptionObject 10027db8     libvcruntime:ehhelpers.obj
+ 0002:00007dd8       __sehtable$?FrameUnwindToState@__FrameHandler3@@SAXPAUEHRegistrationNode@@PAXPBU_s_FuncInfo@@H@Z 10027dd8     libvcruntime:frame.obj
+ 0002:00007e00       __sehtable$?CallCatchBlock@@YAPAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PBU_s_FuncInfo@@PAXHK@Z 10027e00     libvcruntime:frame.obj
+ 0002:00007e28       __catchsym$?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z$2 10027e28     libvcruntime:frame.obj
+ 0002:00007e38       __unwindtable$?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z 10027e38     libvcruntime:frame.obj
+ 0002:00007e48       __tryblocktable$?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z 10027e48     libvcruntime:frame.obj
+ 0002:00007e5c       __ehfuncinfo$?CallUnexpected@@YAXPBU_s_ESTypeList@@@Z 10027e5c     libvcruntime:frame.obj
+ 0002:00007e80       __sehtable$??$BuildCatchObjectHelperInternal@V__FrameHandler3@@@@YAHPAUEHExceptionRecord@@PAXPBU_s_HandlerType@@PBU_s_CatchableType@@@Z 10027e80     libvcruntime:frame.obj
+ 0002:00007ea0       __sehtable$??$BuildCatchObjectInternal@V__FrameHandler3@@@@YAXPAUEHExceptionRecord@@PAXPBU_s_HandlerType@@PBU_s_CatchableType@@@Z 10027ea0     libvcruntime:frame.obj
+ 0002:00007ef8       __sehtable$??R<lambda_6e4b09c48022b2350581041d5f6b0c4c>@@QBE@XZ 10027ef8     libucrt:exit.obj
+ 0002:00007f18       __sehtable$??$?RV<lambda_03b1d95aef87969028cfba75ccab2455>@@AAV<lambda_6e4b09c48022b2350581041d5f6b0c4c>@@V<lambda_22bdf7517842c4b3e53723af5aa32b9e>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_03b1d95aef87969028cfba75ccab2455>@@AAV<lambda_6e4b09c48022b2350581041d5f6b0c4c>@@$$QAV<lambda_22bdf7517842c4b3e53723af5aa32b9e>@@@Z 10027f18     libucrt:exit.obj
+ 0002:00007f38       __sehtable$??$?RV<lambda_8e746cf0007f6ed984d6f78af1fec997>@@AAV<lambda_22ebabd17bc4fa466a2aca6d8deb888d>@@V<lambda_18ed0c0b38a6dc0daf1e7ac6d6adf05e>@@@?$__crt_seh_guarded_call@H@@QAEH$$QAV<lambda_8e746cf0007f6ed984d6f78af1fec997>@@AAV<lambda_22ebabd17bc4fa466a2aca6d8deb888d>@@$$QAV<lambda_18ed0c0b38a6dc0daf1e7ac6d6adf05e>@@@Z 10027f38     libucrt:onexit.obj
+ 0002:00007f58       __sehtable$??$?RV<lambda_69a2805e680e0e292e8ba93315fe43a8>@@AAV<lambda_f03950bc5685219e0bcd2087efbe011e>@@V<lambda_03fcd07e894ec930e3f35da366ca99d6>@@@?$__crt_seh_guarded_call@H@@QAEH$$QAV<lambda_69a2805e680e0e292e8ba93315fe43a8>@@AAV<lambda_f03950bc5685219e0bcd2087efbe011e>@@$$QAV<lambda_03fcd07e894ec930e3f35da366ca99d6>@@@Z 10027f58     libucrt:onexit.obj
+ 0002:00007f78       __sehtable$__query_new_handler 10027f78     libucrt:new_handler.obj
+ 0002:00007f98       __sehtable$_terminate      10027f98     libucrt:terminate.obj
+ 0002:00007fb8       __sehtable$??$?RV<lambda_15ade71b0218206bbe3333a0c9b79046>@@AAV<lambda_da44e0f8b0f19ba52fefafb335991732>@@V<lambda_207f2d024fc103971653565357d6cd41>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_15ade71b0218206bbe3333a0c9b79046>@@AAV<lambda_da44e0f8b0f19ba52fefafb335991732>@@$$QAV<lambda_207f2d024fc103971653565357d6cd41>@@@Z 10027fb8     libucrt:per_thread_data.obj
+ 0002:00007fd8       __sehtable$??$?RV<lambda_a7e850c220f1c8d1e6efeecdedd162c6>@@AAV<lambda_46720907175c18b6c9d2717bc0d2d362>@@V<lambda_9048902d66e8d99359bc9897bbb930a8>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_a7e850c220f1c8d1e6efeecdedd162c6>@@AAV<lambda_46720907175c18b6c9d2717bc0d2d362>@@$$QAV<lambda_9048902d66e8d99359bc9897bbb930a8>@@@Z 10027fd8     libucrt:per_thread_data.obj
+ 0002:00007ff8       __sehtable$??$?RV<lambda_38edbb1296d33220d7e4dd0ed76b244a>@@AAV<lambda_5ce1d447e08cb34b2473517608e21441>@@V<lambda_fb385d3da700c9147fc39e65dd577a8c>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_38edbb1296d33220d7e4dd0ed76b244a>@@AAV<lambda_5ce1d447e08cb34b2473517608e21441>@@$$QAV<lambda_fb385d3da700c9147fc39e65dd577a8c>@@@Z 10027ff8     libucrt:per_thread_data.obj
+ 0002:00008018       __sehtable$??$?RV<lambda_6affb1475c98b40b75cdec977db92e3c>@@AAV<lambda_b8d4b9c228a6ecc3f80208dbb4b4a104>@@V<lambda_608742c3c92a14382c1684fc64f96c88>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_6affb1475c98b40b75cdec977db92e3c>@@AAV<lambda_b8d4b9c228a6ecc3f80208dbb4b4a104>@@$$QAV<lambda_608742c3c92a14382c1684fc64f96c88>@@@Z 10028018     libucrt:per_thread_data.obj
+ 0002:00008038       __sehtable$??$?RV<lambda_e5124f882df8998aaf41531e079ba474>@@AAV<lambda_3e16ef9562a7dcce91392c22ab16ea36>@@V<lambda_e25ca0880e6ef98be67edffd8c599615>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_e5124f882df8998aaf41531e079ba474>@@AAV<lambda_3e16ef9562a7dcce91392c22ab16ea36>@@$$QAV<lambda_e25ca0880e6ef98be67edffd8c599615>@@@Z 10028038     libucrt:wsetlocale.obj
+ 0002:00008058       __sehtable$___acrt_initialize_lowio 10028058     libucrt:ioinit.obj
+ 0002:00008078       __sehtable$?update_thread_multibyte_data_internal@@YAPAU__crt_multibyte_data@@QAU__acrt_ptd@@QAPAU1@@Z 10028078     libucrt:mbctype.obj
+ 0002:00008098       __sehtable$??$?RV<lambda_ceb1ee4838e85a9d631eb091e2fbe199>@@AAV<lambda_ae742caa10f662c28703da3d2ea5e57e>@@V<lambda_cd08b5d6af4937fe54fc07d0c9bf6b37>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_ceb1ee4838e85a9d631eb091e2fbe199>@@AAV<lambda_ae742caa10f662c28703da3d2ea5e57e>@@$$QAV<lambda_cd08b5d6af4937fe54fc07d0c9bf6b37>@@@Z 10028098     libucrt:mbctype.obj
+ 0002:000080b8       __sehtable$_raise          100280b8     libucrt:signal.obj
+ 0002:000080d8       __sehtable$??$?RV<lambda_cbab9ec6f41b0180b23cc171c22676b0>@@AAV<lambda_44731a7d0e6d81c3e6aa82d741081786>@@V<lambda_4b292cb8dd18144e164572427af410ab>@@@?$__crt_seh_guarded_call@P6AXH@Z@@QAEP6AXH@Z$$QAV<lambda_cbab9ec6f41b0180b23cc171c22676b0>@@AAV<lambda_44731a7d0e6d81c3e6aa82d741081786>@@$$QAV<lambda_4b292cb8dd18144e164572427af410ab>@@@Z 100280d8     libucrt:signal.obj
+ 0002:000080f8       __sehtable$??$?RV<lambda_2866be3712abc81a800a822484c830d8>@@AAV<lambda_39ca0ed439415581b5b15c265174cece>@@V<lambda_2b24c74d71094a6cd0cb82e44167d71b>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_2866be3712abc81a800a822484c830d8>@@AAV<lambda_39ca0ed439415581b5b15c265174cece>@@$$QAV<lambda_2b24c74d71094a6cd0cb82e44167d71b>@@@Z 100280f8     libucrt:fflush.obj
+ 0002:00008118       __sehtable$??$?RV<lambda_2cc53f568c5a2bb6f192f930a45d44ea>@@AAV<lambda_ab61a845afdef5b7c387490eaf3616ee>@@V<lambda_c2ffc0b7726aa6be21d5f0026187e748>@@@?$__crt_seh_guarded_call@X@@QAEX$$QAV<lambda_2cc53f568c5a2bb6f192f930a45d44ea>@@AAV<lambda_ab61a845afdef5b7c387490eaf3616ee>@@$$QAV<lambda_c2ffc0b7726aa6be21d5f0026187e748>@@@Z 10028118     libucrt:fflush.obj
+ 0002:00008138       __sehtable$___acrt_update_thread_locale_data 10028138     libucrt:locale_refcounting.obj
+ 0002:00008158       __sehtable$__fcloseall     10028158     libucrt:closeall.obj
+ 0002:00008178       __sehtable$___acrt_lowio_ensure_fh_exists 10028178     libucrt:osfinfo.obj
+ 0002:00008198       __sehtable$??$?RV<lambda_9e9de3de5fa147e2223d7db92bc10aa6>@@AAV<lambda_38ce7e780aa69e748d6df282ebc68efe>@@V<lambda_8ca6da459f0f6780f1cff60fdc3d00e5>@@@?$__crt_seh_guarded_call@H@@QAEH$$QAV<lambda_9e9de3de5fa147e2223d7db92bc10aa6>@@AAV<lambda_38ce7e780aa69e748d6df282ebc68efe>@@$$QAV<lambda_8ca6da459f0f6780f1cff60fdc3d00e5>@@@Z 10028198     libucrt:commit.obj
+ 0002:000081b8       __sehtable$__write         100281b8     libucrt:write.obj
+ 0002:000081d8       __sehtable$_fclose         100281d8     libucrt:fclose.obj
+ 0002:000081f8       __sehtable$??$?RV<lambda_218ce3db14220d0be481dae8ef3383b6>@@AAV<lambda_628dfdc04ba53c8bfc02c9951375f3f5>@@V<lambda_57dc472bd5c9d5f3b2cbca59b8a843ae>@@@?$__crt_seh_guarded_call@H@@QAEH$$QAV<lambda_218ce3db14220d0be481dae8ef3383b6>@@AAV<lambda_628dfdc04ba53c8bfc02c9951375f3f5>@@$$QAV<lambda_57dc472bd5c9d5f3b2cbca59b8a843ae>@@@Z 100281f8     libucrt:close.obj
+ 0002:00008218       __sehtable$___set_fpsr_sse2 10028218     libucrt:fpctrl.obj
+ 0002:00008238       __sehtable$__IsNonwritableInCurrentImage 10028238     LIBCMT:pesect.obj
+ 0002:00008260       .edata                     10028260     OPOSToneIndicator.exp
+ 0002:00008288       rgpv                       10028288     OPOSToneIndicator.exp
+ 0002:00008298       rgszName                   10028298     OPOSToneIndicator.exp
+ 0002:000082a8       rgwOrd                     100282a8     OPOSToneIndicator.exp
+ 0002:000082b0       szName                     100282b0     OPOSToneIndicator.exp
+ 0002:000082c6       $N00001                    100282c6     OPOSToneIndicator.exp
+ 0002:000082d6       $N00002                    100282d6     OPOSToneIndicator.exp
+ 0002:000082e8       $N00003                    100282e8     OPOSToneIndicator.exp
+ 0002:000082fa       $N00004                    100282fa     OPOSToneIndicator.exp
+ 0002:0000890a       .idata$6                   1002890a     kernel32:KERNEL32.dll
+ 0002:00008b1e       .idata$6                   10028b1e     user32:USER32.dll
+ 0002:00008c52       .idata$6                   10028c52     gdi32:GDI32.dll
+ 0002:00008cf8       .idata$6                   10028cf8     advapi32:ADVAPI32.dll
+ 0002:00008e14       .idata$6                   10028e14     ole32:ole32.dll
+ 0002:00008e1e       .idata$6                   10028e1e     oleaut32:OLEAUT32.dll
  0003:00000110       ?ObjectMap@@3PAU_ATL_OBJMAP_ENTRY30@ATL@@A 1002a110     ToneIndicator.obj
  0003:000001e0       ?s_SOMethodNames@@3PAPADA  1002a1e0     ToneIndicatorImpl.obj
  0003:00000230       ?s_RequiredMethodsPerRelease@@3PAHA 1002a230     ToneIndicatorImpl.obj
@@ -2997,39 +3004,39 @@
  0003:00000c90       _GS_ExceptionRecord        1002ac90     LIBCMT:gs_report.obj
  0003:00000ce0       _GS_ContextRecord          1002ace0     LIBCMT:gs_report.obj
  0003:00000fb0       ?__proc_attached@@3HA      1002afb0     LIBCMT:dll_dllmain.obj
- 0003:0000100c       ?AllocateData@@3P6GPAUAtlThunkData_t@@XZA 1002b00c     atls:atlthunk.obj
- 0003:00001010       ?InitData@@3P6GXPAUAtlThunkData_t@@PAXI@ZA 1002b010     atls:atlthunk.obj
- 0003:00001014       ?DataToCode@@3P6GP6GJPAUHWND__@@IIJ@ZPAUAtlThunkData_t@@@ZA 1002b014     atls:atlthunk.obj
- 0003:00001018       ?FreeData@@3P6GXPAUAtlThunkData_t@@@ZA 1002b018     atls:atlthunk.obj
- 0003:0000101c       ?Initialized@@3_NA         1002b01c     atls:atlthunk.obj
- 0003:0000102c       ?__vcrt_startup_thread_ptd@@3U__vcrt_ptd@@A 1002b02c     libvcruntime:per_thread_data.obj
- 0003:00001054       ___vcrt_lock_table         1002b054     libvcruntime:locks.obj
- 0003:0000106c       ___vcrt_locks_initialized  1002b06c     libvcruntime:locks.obj
- 0003:00001098       ?heap@@3V_HeapManager@@A   1002b098     libvcruntime:undname.obj
- 0003:000010ac       ?module_handles@@3PAPAUHINSTANCE__@@A 1002b0ac     libvcruntime:winapi_downlevel.obj
- 0003:000010b8       ?function_pointers@@3PAPAXA 1002b0b8     libvcruntime:winapi_downlevel.obj
- 0003:000010cc       ?__acrt_invalid_parameter_handler@@3V?$dual_state_global@P6AXPB_W00II@Z@__crt_state_management@@A 1002b0cc     libucrt:invalid_parameter.obj
- 0003:000010d0       ?c_termination_complete@@3JA 1002b0d0     libucrt:exit.obj
- 0003:000010d4       ?thread_local_exit_callback_func@@3P6GXPAXK0@ZA 1002b0d4     libucrt:exit.obj
- 0003:000010e0       ?program_name@?1???$common_configure_argv@D@@YAHW4_crt_argv_mode@@@Z@4PADA 1002b0e0     libucrt:argv_parsing.obj
- 0003:00001210       ?__acrt_new_handler@@3V?$dual_state_global@P6AHI@Z@__crt_state_management@@A 1002b210     libucrt:new_handler.obj
- 0003:00001218       ?module_handles@@3PAPAUHINSTANCE__@@A 1002b218     libucrt:winapi_thunks.obj
- 0003:00001268       ?encoded_function_pointers@@3PAPAXA 1002b268     libucrt:winapi_thunks.obj
- 0003:000012f0       ?internal_state@?1??_mbtowc_l@@9@4U_Mbstatet@@A 1002b2f0     libucrt:mbtowc.obj
- 0003:00001300       ?enable_percent_n@@3IA     1002b300     libucrt:printf_count_output.obj
- 0003:00001520       ?__acrt_lock_table@@3PAU_RTL_CRITICAL_SECTION@@A 1002b520     libucrt:locks.obj
- 0003:00001670       ?__acrt_locks_initialized@@3IA 1002b670     libucrt:locks.obj
- 0003:00001680       ?fSystemSet@@3HA           1002b680     libucrt:mbctype.obj
- 0003:00001684       ?initialized@?1??__acrt_initialize_multibyte@@9@4_NA 1002b684     libucrt:mbctype.obj
- 0003:000016a4       ?ctrlc_action@@3V?$dual_state_global@P6AXH@Z@__crt_state_management@@A 1002b6a4     libucrt:signal.obj
- 0003:000016a8       ?ctrlbreak_action@@3V?$dual_state_global@P6AXH@Z@__crt_state_management@@A 1002b6a8     libucrt:signal.obj
- 0003:000016ac       ?abort_action@@3V?$dual_state_global@P6AXH@Z@__crt_state_management@@A 1002b6ac     libucrt:signal.obj
- 0003:000016b0       ?term_action@@3V?$dual_state_global@P6AXH@Z@__crt_state_management@@A 1002b6b0     libucrt:signal.obj
- 0003:000016b4       ?user_matherr@@3V?$dual_state_global@P6AHPAU_exception@@@Z@__crt_state_management@@A 1002b6b4     libucrt:matherr.obj
- 0003:000016b8       ?__acrt_global_new_mode@@3V?$dual_state_global@J@__crt_state_management@@A 1002b6b8     libucrt:new_mode.obj
- 0003:000016c4       ?internal_pst@?1??__mbrtoc32_utf8@__crt_mbstring@@YAIPA_UPBDIPAU_Mbstatet@@@Z@4U3@A 1002b6c4     libucrt:mbrtoc32.obj
- 0003:000016cc       ?__acrt_app_type@@3W4_crt_app_type@@A 1002b6cc     libucrt:report_runtime_error.obj
- 0003:000016d4       __pmatherr_set             1002b6d4     libucrt:libm_error.obj
+ 0003:00001014       ?AllocateData@@3P6GPAUAtlThunkData_t@@XZA 1002b014     atls:atlthunk.obj
+ 0003:00001018       ?InitData@@3P6GXPAUAtlThunkData_t@@PAXI@ZA 1002b018     atls:atlthunk.obj
+ 0003:0000101c       ?DataToCode@@3P6GP6GJPAUHWND__@@IIJ@ZPAUAtlThunkData_t@@@ZA 1002b01c     atls:atlthunk.obj
+ 0003:00001020       ?FreeData@@3P6GXPAUAtlThunkData_t@@@ZA 1002b020     atls:atlthunk.obj
+ 0003:00001024       ?Initialized@@3_NA         1002b024     atls:atlthunk.obj
+ 0003:00001034       ?__vcrt_startup_thread_ptd@@3U__vcrt_ptd@@A 1002b034     libvcruntime:per_thread_data.obj
+ 0003:0000105c       ___vcrt_lock_table         1002b05c     libvcruntime:locks.obj
+ 0003:00001074       ___vcrt_locks_initialized  1002b074     libvcruntime:locks.obj
+ 0003:000010a0       ?heap@@3V_HeapManager@@A   1002b0a0     libvcruntime:undname.obj
+ 0003:000010b4       ?module_handles@@3PAPAUHINSTANCE__@@A 1002b0b4     libvcruntime:winapi_downlevel.obj
+ 0003:000010c0       ?function_pointers@@3PAPAXA 1002b0c0     libvcruntime:winapi_downlevel.obj
+ 0003:000010d4       ?__acrt_invalid_parameter_handler@@3V?$dual_state_global@P6AXPB_W00II@Z@__crt_state_management@@A 1002b0d4     libucrt:invalid_parameter.obj
+ 0003:000010d8       ?c_termination_complete@@3JA 1002b0d8     libucrt:exit.obj
+ 0003:000010dc       ?thread_local_exit_callback_func@@3P6GXPAXK0@ZA 1002b0dc     libucrt:exit.obj
+ 0003:000010e8       ?program_name@?1???$common_configure_argv@D@@YAHW4_crt_argv_mode@@@Z@4PADA 1002b0e8     libucrt:argv_parsing.obj
+ 0003:00001218       ?__acrt_new_handler@@3V?$dual_state_global@P6AHI@Z@__crt_state_management@@A 1002b218     libucrt:new_handler.obj
+ 0003:00001220       ?module_handles@@3PAPAUHINSTANCE__@@A 1002b220     libucrt:winapi_thunks.obj
+ 0003:00001270       ?encoded_function_pointers@@3PAPAXA 1002b270     libucrt:winapi_thunks.obj
+ 0003:000012f8       ?internal_state@?1??_mbtowc_l@@9@4U_Mbstatet@@A 1002b2f8     libucrt:mbtowc.obj
+ 0003:00001308       ?enable_percent_n@@3IA     1002b308     libucrt:printf_count_output.obj
+ 0003:00001528       ?__acrt_lock_table@@3PAU_RTL_CRITICAL_SECTION@@A 1002b528     libucrt:locks.obj
+ 0003:00001678       ?__acrt_locks_initialized@@3IA 1002b678     libucrt:locks.obj
+ 0003:00001688       ?fSystemSet@@3HA           1002b688     libucrt:mbctype.obj
+ 0003:0000168c       ?initialized@?1??__acrt_initialize_multibyte@@9@4_NA 1002b68c     libucrt:mbctype.obj
+ 0003:000016ac       ?ctrlc_action@@3V?$dual_state_global@P6AXH@Z@__crt_state_management@@A 1002b6ac     libucrt:signal.obj
+ 0003:000016b0       ?ctrlbreak_action@@3V?$dual_state_global@P6AXH@Z@__crt_state_management@@A 1002b6b0     libucrt:signal.obj
+ 0003:000016b4       ?abort_action@@3V?$dual_state_global@P6AXH@Z@__crt_state_management@@A 1002b6b4     libucrt:signal.obj
+ 0003:000016b8       ?term_action@@3V?$dual_state_global@P6AXH@Z@__crt_state_management@@A 1002b6b8     libucrt:signal.obj
+ 0003:000016bc       ?user_matherr@@3V?$dual_state_global@P6AHPAU_exception@@@Z@__crt_state_management@@A 1002b6bc     libucrt:matherr.obj
+ 0003:000016c0       ?__acrt_global_new_mode@@3V?$dual_state_global@J@__crt_state_management@@A 1002b6c0     libucrt:new_mode.obj
+ 0003:000016cc       ?internal_pst@?1??__mbrtoc32_utf8@__crt_mbstring@@YAIPA_UPBDIPAU_Mbstatet@@@Z@4U3@A 1002b6cc     libucrt:mbrtoc32.obj
+ 0003:000016d4       ?__acrt_app_type@@3W4_crt_app_type@@A 1002b6d4     libucrt:report_runtime_error.obj
+ 0003:000016dc       __pmatherr_set             1002b6dc     libucrt:libm_error.obj
  0004:00000220       $R000000                   1002c220     ToneIndicator.res
  0004:00000bc8       $R0009A8                   1002cbc8     ToneIndicator.res
  0004:00000cb0       $R000A90                   1002ccb0     ToneIndicator.res

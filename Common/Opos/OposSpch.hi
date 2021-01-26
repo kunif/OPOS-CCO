@@ -1,0 +1,53 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposSpch.hi
+//
+//   Speech Synthesis header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 2021-01-26 OPOS Release 1.16                                  KF
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSSPCH_HI)
+#define      OPOSSPCH_HI
+
+
+#include "Opos.hi"
+#include "OposSpch.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXSpch_Pitch                           =   1 + PIDX_SPCH+PIDX_NUMBER;
+const LONG PIDXSpch_Speed                           =   2 + PIDX_SPCH+PIDX_NUMBER;
+const LONG PIDXSpch_Volume                          =   3 + PIDX_SPCH+PIDX_NUMBER;
+
+// * Capabilities *
+
+const LONG PIDXSpch_CapLanguage                     = 501 + PIDX_SPCH+PIDX_NUMBER;
+const LONG PIDXSpch_CapPitch                        = 502 + PIDX_SPCH+PIDX_NUMBER;
+const LONG PIDXSpch_CapSpeed                        = 503 + PIDX_SPCH+PIDX_NUMBER;
+const LONG PIDXSpch_CapVoice                        = 504 + PIDX_SPCH+PIDX_NUMBER;
+const LONG PIDXSpch_CapVolume                       = 505 + PIDX_SPCH+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXSpch_Language                        =   1 + PIDX_SPCH+PIDX_STRING;
+const LONG PIDXSpch_LanguageList                    =   2 + PIDX_SPCH+PIDX_STRING;
+const LONG PIDXSpch_OutputIDList                    =   3 + PIDX_SPCH+PIDX_STRING;
+const LONG PIDXSpch_Voice                           =   4 + PIDX_SPCH+PIDX_STRING;
+const LONG PIDXSpch_VoiceList                       =   5 + PIDX_SPCH+PIDX_STRING;
+
+
+#endif          // !defined(OPOSSPCH_HI)

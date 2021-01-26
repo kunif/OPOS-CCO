@@ -45,7 +45,7 @@ import "ocidl.idl";
     //   1) Updates should be either corrections or supersets of previous.
     //   2) Don't want to force projects to bring in updated library.
     version(1.0),
-    helpstring("OPOS 1.15 Constants")
+    helpstring("OPOS 1.16 Constants")
 ]
 library OPOSCONSTANTSLib
 {
@@ -64,11 +64,15 @@ library OPOSCONSTANTSLib
     #include "IDL\OposConstCheckScanner.h"                      // Added in 1.7
     #include "IDL\OposConstCoinAcceptor.h"                      // Added in 1.11
     #include "IDL\OposConstCoinDispenser.h"
+    #include "IDL\OposConstDeviceMonitor.h"                     // Added in 1.16
     #include "IDL\OposConstElectronicJournal.h"                 // Added in 1.10
     #include "IDL\OposConstElectronicValueRW.h"                 // Added in 1.12
     #include "IDL\OposConstFiscalPrinter.h"
     #include "IDL\OposConstGate.h"                              // Added in 1.12
+    #include "IDL\OposConstGestureControl.h"                    // Added in 1.16
+    #include "IDL\OposConstGraphicDisplay.h"                    // Added in 1.16
     #include "IDL\OposConstImageScanner.h"                      // Added in 1.11
+    #include "IDL\OposConstIndividualRecognition.h"             // Added in 1.16
     #include "IDL\OposConstItemDispenser.h"                     // Added in 1.12
     #include "IDL\OposConstKeylock.h"
     #include "IDL\OposConstLights.h"                            // Added in 1.12
@@ -87,6 +91,11 @@ library OPOSCONSTANTSLib
     #include "IDL\OposConstScanner.h"
     #include "IDL\OposConstSigCap.h"
     #include "IDL\OposConstSmartCardRW.h"                       // Added in 1.8
+    #include "IDL\OposConstSoundPlayer.h"                       // Added in 1.16
+    #include "IDL\OposConstSoundRecorder.h"                     // Added in 1.16
+    #include "IDL\OposConstSpeechSynthesis.h"                   // Added in 1.16
     #include "IDL\OposConstToneIndicator.h"
     #include "IDL\OposConstTotals.h"
+    #include "IDL\OposConstVideoCapture.h"                      // Added in 1.16
+    #include "IDL\OposConstVoiceRecognition.h"                  // Added in 1.16
 };

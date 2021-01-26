@@ -12,5 +12,6 @@ enum
 
     PIDXLgt_CapAlarm                         = 35501,
     PIDXLgt_CapBlink                         = 35502,
-    PIDXLgt_CapColor                         = 35503
+    PIDXLgt_CapColor                         = 35503,
+    PIDXLgt_CapPattern                       = 35504
 } OPOSLightsInternals;

@@ -4,7 +4,7 @@
 
 [
     uuid(CCBE0350-B81E-11D2-AB74-0040054C3719),
-    helpstring("IOPOSItemDispenserSO 1.15 Interface")
+    helpstring("IOPOSItemDispenserSO 1.16 Interface")
 ]
 dispinterface IOPOSItemDispenserSO
 {

@@ -4,7 +4,7 @@
 
 [
     uuid(CCBE0310-B81E-11D2-AB74-0040054C3719),
-    helpstring("IOPOSImageScannerSO 1.15 Interface")
+    helpstring("IOPOSImageScannerSO 1.16 Interface")
 ]
 dispinterface IOPOSImageScannerSO
 {

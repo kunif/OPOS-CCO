@@ -4,7 +4,7 @@
 
 [
     uuid(CCBE0190-B81E-11D2-AB74-0040054C3719),
-    helpstring("IOPOSSignatureCaptureSO 1.15 Interface")
+    helpstring("IOPOSSignatureCaptureSO 1.16 Interface")
 ]
 dispinterface IOPOSSignatureCaptureSO
 {

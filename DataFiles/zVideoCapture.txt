@@ -1,0 +1,183 @@
+!!***************************************************************************
+!!
+!! Video Capture Opos Control Object Data File
+!!
+!!     Date                   Modification                          Author
+!! -----------|----------------------------------------------------|----------
+!!  2021/01/26 1.16.000: Initial version.                           K. Fukuchi
+!!
+!!***************************************************************************
+
+! Names: Device, Uppercase Device
+DeviceName      =VideoCapture
+DeviceUpper     =VIDEOCAPTURE
+
+! Short device designation used by OPOS.
+!   Include file is Opos@DeviceShortName@.hi
+!   Property index prefix is PIDX@DeviceShortName@.
+DeviceShortName =Vcap
+! Short upper case device designation used by OPOS.
+!   Device registry key is OPOS_CLASSKEY_@DeviceShortUpper@
+DeviceShortUpper=VCAP
+
+! If Claim and Release are not supported, comment out the next line.
+!   (The macro values are not important. We only check for defined or not defined.)
+ClaimRelease    =
+
+! If sharable device, comment out the next line.
+!   (The macro value is not important. We only check for defined or not defined.)
+Exclusive       =
+
+! Supported events. Comment out the unsupported ones.
+!   (The macro values are not important. We only check for defined or not defined.)
+!!EventData       =
+EventDirectIO   =
+EventError      =
+!!EventOutput     =
+EventStatus     =
+
+! If SAFEARRAYs are used, then uncomment the following line to enable debug trace logic.
+!!SafeArray       =
+
+! UUIDs. UUIDLibrary is required to be the full GUID.
+!   The others can be specified in full, or a "*" indicates that the bytes 3-4
+!   (hexadecimal chars 5-8) of the UUIDLibrary should be incremented to
+!   form their GUIDs.
+UUIDControl     =0450
+UUIDLibrary     =UUID:@UUIDPre@@UUIDControl@-@UUIDPost@
+UUIDInterface   =UUID*
+UUIDCoclass     =UUID*
+UUIDEvents      =UUID*
+
+! For each version up to the @Version@, list the properties and methods.
+!   If method:
+!     M  = Method.
+!     Release = 1.x
+!     Number = Dispatch ID.
+!     Details = IDL formatted method and parameters, with assumed ", [out] LONG* pRC )" at end.
+!       If usage omitted, assume [in].
+!       Parameter types restricted to BOOL, LONG, CURRENCY, and BSTR.
+!   If parameter:
+!     First char = C for Common (or S for Specific [optional]).
+!     Next one or two chars = R for Readable or W for Writable.
+!     Release = 1.x
+!     Number = Dispatch ID.
+!     Details = Property name followed by type in parentheses.
+!       Type restricted to BOOL, LONG, CURRENCY, and BSTR.
+!     Property Index name without prefix (optional)
+
+:MethodsProperties
+!> Added Property
+ CR  1.16 49 OpenResult(LONG)
+!> Common Properties
+!CRW 1.16 10 AutoDisable(BOOL)
+ CRW 1.16 11 BinaryConversion(LONG)
+ CR  1.16 12 CapPowerReporting(LONG)
+ CR  1.16 13 CheckHealthText(BSTR)
+ CR  1.16 14 Claimed(BOOL)
+!CR  1.16 15 DataCount(LONG)
+!CRW 1.16 16 DataEventEnabled(BOOL)
+ CRW 1.16 17 DeviceEnabled(BOOL)
+ CRW 1.16 18 FreezeEvents(BOOL)
+!CR  1.16 19 OutputID(LONG)
+ CRW 1.16 20 PowerNotify(LONG)
+ CR  1.16 21 PowerState(LONG)
+ CR  1.16 22 ResultCode(LONG)
+ CR  1.16 23 ResultCodeExtended(LONG)
+ CR  1.16 24 State(LONG)
+!
+ CR  1.16 25 ControlObjectDescription(BSTR)
+ CR  1.16 26 ControlObjectVersion(LONG)
+ CR  1.16 27 ServiceObjectDescription(BSTR)
+ CR  1.16 28 ServiceObjectVersion(LONG)
+ CR  1.16 29 DeviceDescription(BSTR)
+ CR  1.16 30 DeviceName(BSTR)
+!     Added in Release 1.8
+ CR  1.16 39 CapStatisticsReporting(BOOL)
+ CR  1.16 40 CapUpdateStatistics(BOOL)
+!     Added in Release 1.9
+ CR  1.16 44 CapCompareFirmwareVersion(BOOL)
+ CR  1.16 45 CapUpdateFirmware(BOOL)
+!
+!> Common Methods
+ M   1.16 31 CheckHealth(LONG Level)
+ M   1.16 32 Claim(LONG Timeout)
+ M   1.16 33 ClearInput()
+!M   1.16 34 ClearOutput()
+ M   1.16 35 Close()
+ M   1.16 36 DirectIO(LONG Command, [in, out] LONG* pData, [in, out] BSTR* pString)
+ M   1.16 37 Open(BSTR DeviceName)
+ M   1.16 38 Release()
+!     Added in Release 1.8
+ M   1.16 41 ResetStatistics(BSTR StatisticsBuffer)
+ M   1.16 42 RetrieveStatistics([in, out] BSTR* pStatisticsBuffer)
+ M   1.16 43 UpdateStatistics(BSTR StatisticsBuffer)
+!     Added in Release 1.9
+ M   1.16 46 CompareFirmwareVersion(BSTR FirmwareFileName, [out] LONG* pResult)
+ M   1.16 47 UpdateFirmware(BSTR FirmwareFileName)
+!     Added in Release 1.10
+!M   1.16 48 ClearInputProperties()
+!
+!> Specific Properties
+  RW 1.16  60 AutoExposure(BOOL)
+  RW 1.16  61 AutoFocus(BOOL)
+  RW 1.16  62 AutoGain(BOOL)
+  RW 1.16  63 AutoWhiteBalance(BOOL)
+  RW 1.16  64 Brightness(LONG)
+  R  1.16  65 CapAssociatedHardTotalsDevice(BSTR)
+  R  1.16  66 CapAutoExposure(BOOL)
+  R  1.16  67 CapAutoFocus(BOOL)
+  R  1.16  68 CapAutoGain(BOOL)
+  R  1.16  69 CapAutoWhiteBalance(BOOL)
+  R  1.16  70 CapBrightness(BOOL)
+  R  1.16  71 CapContrast(BOOL)
+  R  1.16  72 CapExposure(BOOL)
+  R  1.16  73 CapGain(BOOL)
+  R  1.16  74 CapHorizontalFlip(BOOL)
+  R  1.16  75 CapHue(BOOL)
+  R  1.16  76 CapPhoto(BOOL)
+  R  1.16  77 CapPhotoColorSpace(BOOL)
+  R  1.16  78 CapPhotoFrameRate(BOOL)
+  R  1.16  79 CapPhotoResolution(BOOL)
+  R  1.16  80 CapPhotoType(BOOL)
+  R  1.16  81 CapSaturation(BOOL)
+  R  1.16  82 CapStorage(LONG)
+  R  1.16  83 CapVerticalFlip(BOOL)
+  R  1.16  84 CapVideo(BOOL)
+  R  1.16  85 CapVideoColorSpace(BOOL)
+  R  1.16  86 CapVideoFrameRate(BOOL)
+  R  1.16  87 CapVideoResolution(BOOL)
+  R  1.16  88 CapVideoType(BOOL)
+  RW 1.16  89 Contrast(LONG)
+  RW 1.16  90 Exposure(LONG)
+  RW 1.16  91 Gain(LONG)
+  RW 1.16  92 HorizontalFlip(BOOL)
+  RW 1.16  93 Hue(LONG)
+  RW 1.16  94 PhotoColorSpace(BSTR)
+  R  1.16  95 PhotoColorSpaceList(BSTR)
+  RW 1.16  96 PhotoFrameRate(LONG)
+  R  1.16  97 PhotoMaxFrameRate(LONG)
+  RW 1.16  98 PhotoResolution(BSTR)
+  R  1.16  99 PhotoResolutionList(BSTR)
+  RW 1.16 100 PhotoType(BSTR)
+  R  1.16 101 PhotoTypeList(BSTR)
+  R  1.16 102 RemainingRecordingTimeInSec(LONG)
+  RW 1.16 103 Saturation(LONG)
+  RW 1.16 104 Storage(LONG)
+  RW 1.16 105 VerticalFlip(BOOL)
+  RW 1.16 106 VideoCaptureMode(LONG)
+  RW 1.16 107 VideoColorSpace(BSTR)
+  R  1.16 108 VideoColorSpaceList(BSTR)
+  RW 1.16 109 VideoFrameRate(LONG)
+  R  1.16 110 VideoMaxFrameRate(LONG)
+  RW 1.16 111 VideoResolution(BSTR)
+  R  1.16 112 VideoResolutionList(BSTR)
+  RW 1.16 113 VideoType(BSTR)
+  R  1.16 114 VideoTypeList(BSTR)
+!
+!> Specific Methods
+ M   1.16 140 StartVideo(BSTR FileName, BOOL OverWrite, LONG RecordingTime)
+ M   1.16 141 StopVideo()
+ M   1.16 142 TakePhoto(BSTR FileName, BOOL OverWrite, LONG Timeout)
+
+!!End

@@ -235,7 +235,7 @@
       <ProgramDatabaseFile>$(SolutionDir)OCX\$(Platform)\$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
     </Link>
     <PostBuildEvent>
-      <Command>"$(SDK35ToolsPath)tlbimp" "$(TargetDir)$(TargetName).tlb" /sysarray /primary /keyfile:"$(TargetDir)..\..\keypare.snk" /namespace:OpenPOS.Devices /machine:Agnostic /asmversion:1.15.0.0 /out:"$(TargetDir)OpenPOS.Devices.$(TargetName).dll 
+      <Command>"$(SDK35ToolsPath)tlbimp" "$(TargetDir)$(TargetName).tlb" /sysarray /primary /keyfile:"$(TargetDir)..\..\keypare.snk" /namespace:OpenPOS.Devices /machine:Agnostic /asmversion:1.16.0.0 /out:"$(TargetDir)OpenPOS.Devices.$(TargetName).dll 
  </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>

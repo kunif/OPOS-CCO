@@ -10,7 +10,7 @@
 **  2013/09/29 Update license section.
 **  2015/02/07 Update license section.
 **  2015/02/07 Version 1.14.001.
-**  2020/06/01 Version 1.15.000.                                    K. Fukuchi
+**  2021/01/26 Version 1.16.000.                                    K. Fukuchi
 **
 *****************************************************************************
 **
@@ -278,7 +278,7 @@ import "ocidl.idl";
 [
     uuid(CCB90180-B81E-11D2-AB74-0040054C3719),
     version(1.0),
-    helpstring("OPOS Scanner Control 1.15.000 [Public, by CRM/MCS, and modified by KF]")
+    helpstring("OPOS Scanner Control 1.16.000 [Public, by CRM/MCS, and modified by KF]")
 ]
 library OposScanner_CCO
 {
@@ -311,7 +311,7 @@ library OposScanner_CCO
     //*************************************************************************
     [
         uuid(CCB90182-B81E-11D2-AB74-0040054C3719),
-        helpstring("OPOS Scanner Control 1.15.000 [Public, by CRM/MCS, and modified by KF]")
+        helpstring("OPOS Scanner Control 1.16.000 [Public, by CRM/MCS, and modified by KF]")
     ]
     coclass OPOSScanner
     {

@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2003
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "_OposConstants", "OposConstants\OposConstants.vcxproj", "{11CE0C54-2634-472D-868B-85B0BA54B8C5}"
 EndProject
@@ -79,6 +79,24 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "_OposInternals", "OposInternals\OposInternals.vcxproj", "{C9D7FF94-2A27-472E-9640-51698D3EF26D}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "_OposInterfaces", "OposInterfaces\OposInterfaces.vcxproj", "{FC21C078-D0FD-4B55-B9CA-BEA3497F1EBA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DeviceMonitor", "zDeviceMonitor\DeviceMonitor.vcxproj", "{FD7A0380-EA00-4142-A3CC-095B1351109C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GestureControl", "zGestureControl\GestureControl.vcxproj", "{FD7A0390-EA00-4142-A3CC-095B1351109C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GraphicDisplay", "zGraphicDisplay\GraphicDisplay.vcxproj", "{FD7A0400-EA00-4142-A3CC-095B1351109C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IndividualRecognition", "zIndividualRecognition\IndividualRecognition.vcxproj", "{FD7A0410-EA00-4142-A3CC-095B1351109C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SoundPlayer", "zSoundPlayer\SoundPlayer.vcxproj", "{FD7A0430-EA00-4142-A3CC-095B1351109C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SoundRecorder", "zSoundRecorder\SoundRecorder.vcxproj", "{FD7A0440-EA00-4142-A3CC-095B1351109C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpeechSynthesis", "zSpeechSynthesis\SpeechSynthesis.vcxproj", "{FD7A0450-EA00-4142-A3CC-095B1351109C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VideoCapture", "zVideoCapture\VideoCapture.vcxproj", "{FD7A0460-EA00-4142-A3CC-095B1351109C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VoiceRecognition", "zVoiceRecognition\VoiceRecognition.vcxproj", "{FD7A0470-EA00-4142-A3CC-095B1351109C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -400,6 +418,78 @@ Global
 		{FC21C078-D0FD-4B55-B9CA-BEA3497F1EBA}.Release|Win32.Build.0 = Release|Win32
 		{FC21C078-D0FD-4B55-B9CA-BEA3497F1EBA}.Release|x64.ActiveCfg = Release|x64
 		{FC21C078-D0FD-4B55-B9CA-BEA3497F1EBA}.Release|x64.Build.0 = Release|x64
+		{FD7A0380-EA00-4142-A3CC-095B1351109C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FD7A0380-EA00-4142-A3CC-095B1351109C}.Debug|Win32.Build.0 = Debug|Win32
+		{FD7A0380-EA00-4142-A3CC-095B1351109C}.Debug|x64.ActiveCfg = Debug|x64
+		{FD7A0380-EA00-4142-A3CC-095B1351109C}.Debug|x64.Build.0 = Debug|x64
+		{FD7A0380-EA00-4142-A3CC-095B1351109C}.Release|Win32.ActiveCfg = Release|Win32
+		{FD7A0380-EA00-4142-A3CC-095B1351109C}.Release|Win32.Build.0 = Release|Win32
+		{FD7A0380-EA00-4142-A3CC-095B1351109C}.Release|x64.ActiveCfg = Release|x64
+		{FD7A0380-EA00-4142-A3CC-095B1351109C}.Release|x64.Build.0 = Release|x64
+		{FD7A0390-EA00-4142-A3CC-095B1351109C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FD7A0390-EA00-4142-A3CC-095B1351109C}.Debug|Win32.Build.0 = Debug|Win32
+		{FD7A0390-EA00-4142-A3CC-095B1351109C}.Debug|x64.ActiveCfg = Debug|x64
+		{FD7A0390-EA00-4142-A3CC-095B1351109C}.Debug|x64.Build.0 = Debug|x64
+		{FD7A0390-EA00-4142-A3CC-095B1351109C}.Release|Win32.ActiveCfg = Release|Win32
+		{FD7A0390-EA00-4142-A3CC-095B1351109C}.Release|Win32.Build.0 = Release|Win32
+		{FD7A0390-EA00-4142-A3CC-095B1351109C}.Release|x64.ActiveCfg = Release|x64
+		{FD7A0390-EA00-4142-A3CC-095B1351109C}.Release|x64.Build.0 = Release|x64
+		{FD7A0400-EA00-4142-A3CC-095B1351109C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FD7A0400-EA00-4142-A3CC-095B1351109C}.Debug|Win32.Build.0 = Debug|Win32
+		{FD7A0400-EA00-4142-A3CC-095B1351109C}.Debug|x64.ActiveCfg = Debug|x64
+		{FD7A0400-EA00-4142-A3CC-095B1351109C}.Debug|x64.Build.0 = Debug|x64
+		{FD7A0400-EA00-4142-A3CC-095B1351109C}.Release|Win32.ActiveCfg = Release|Win32
+		{FD7A0400-EA00-4142-A3CC-095B1351109C}.Release|Win32.Build.0 = Release|Win32
+		{FD7A0400-EA00-4142-A3CC-095B1351109C}.Release|x64.ActiveCfg = Release|x64
+		{FD7A0400-EA00-4142-A3CC-095B1351109C}.Release|x64.Build.0 = Release|x64
+		{FD7A0410-EA00-4142-A3CC-095B1351109C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FD7A0410-EA00-4142-A3CC-095B1351109C}.Debug|Win32.Build.0 = Debug|Win32
+		{FD7A0410-EA00-4142-A3CC-095B1351109C}.Debug|x64.ActiveCfg = Debug|x64
+		{FD7A0410-EA00-4142-A3CC-095B1351109C}.Debug|x64.Build.0 = Debug|x64
+		{FD7A0410-EA00-4142-A3CC-095B1351109C}.Release|Win32.ActiveCfg = Release|Win32
+		{FD7A0410-EA00-4142-A3CC-095B1351109C}.Release|Win32.Build.0 = Release|Win32
+		{FD7A0410-EA00-4142-A3CC-095B1351109C}.Release|x64.ActiveCfg = Release|x64
+		{FD7A0410-EA00-4142-A3CC-095B1351109C}.Release|x64.Build.0 = Release|x64
+		{FD7A0430-EA00-4142-A3CC-095B1351109C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FD7A0430-EA00-4142-A3CC-095B1351109C}.Debug|Win32.Build.0 = Debug|Win32
+		{FD7A0430-EA00-4142-A3CC-095B1351109C}.Debug|x64.ActiveCfg = Debug|x64
+		{FD7A0430-EA00-4142-A3CC-095B1351109C}.Debug|x64.Build.0 = Debug|x64
+		{FD7A0430-EA00-4142-A3CC-095B1351109C}.Release|Win32.ActiveCfg = Release|Win32
+		{FD7A0430-EA00-4142-A3CC-095B1351109C}.Release|Win32.Build.0 = Release|Win32
+		{FD7A0430-EA00-4142-A3CC-095B1351109C}.Release|x64.ActiveCfg = Release|x64
+		{FD7A0430-EA00-4142-A3CC-095B1351109C}.Release|x64.Build.0 = Release|x64
+		{FD7A0440-EA00-4142-A3CC-095B1351109C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FD7A0440-EA00-4142-A3CC-095B1351109C}.Debug|Win32.Build.0 = Debug|Win32
+		{FD7A0440-EA00-4142-A3CC-095B1351109C}.Debug|x64.ActiveCfg = Debug|x64
+		{FD7A0440-EA00-4142-A3CC-095B1351109C}.Debug|x64.Build.0 = Debug|x64
+		{FD7A0440-EA00-4142-A3CC-095B1351109C}.Release|Win32.ActiveCfg = Release|Win32
+		{FD7A0440-EA00-4142-A3CC-095B1351109C}.Release|Win32.Build.0 = Release|Win32
+		{FD7A0440-EA00-4142-A3CC-095B1351109C}.Release|x64.ActiveCfg = Release|x64
+		{FD7A0440-EA00-4142-A3CC-095B1351109C}.Release|x64.Build.0 = Release|x64
+		{FD7A0450-EA00-4142-A3CC-095B1351109C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FD7A0450-EA00-4142-A3CC-095B1351109C}.Debug|Win32.Build.0 = Debug|Win32
+		{FD7A0450-EA00-4142-A3CC-095B1351109C}.Debug|x64.ActiveCfg = Debug|x64
+		{FD7A0450-EA00-4142-A3CC-095B1351109C}.Debug|x64.Build.0 = Debug|x64
+		{FD7A0450-EA00-4142-A3CC-095B1351109C}.Release|Win32.ActiveCfg = Release|Win32
+		{FD7A0450-EA00-4142-A3CC-095B1351109C}.Release|Win32.Build.0 = Release|Win32
+		{FD7A0450-EA00-4142-A3CC-095B1351109C}.Release|x64.ActiveCfg = Release|x64
+		{FD7A0450-EA00-4142-A3CC-095B1351109C}.Release|x64.Build.0 = Release|x64
+		{FD7A0460-EA00-4142-A3CC-095B1351109C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FD7A0460-EA00-4142-A3CC-095B1351109C}.Debug|Win32.Build.0 = Debug|Win32
+		{FD7A0460-EA00-4142-A3CC-095B1351109C}.Debug|x64.ActiveCfg = Debug|x64
+		{FD7A0460-EA00-4142-A3CC-095B1351109C}.Debug|x64.Build.0 = Debug|x64
+		{FD7A0460-EA00-4142-A3CC-095B1351109C}.Release|Win32.ActiveCfg = Release|Win32
+		{FD7A0460-EA00-4142-A3CC-095B1351109C}.Release|Win32.Build.0 = Release|Win32
+		{FD7A0460-EA00-4142-A3CC-095B1351109C}.Release|x64.ActiveCfg = Release|x64
+		{FD7A0460-EA00-4142-A3CC-095B1351109C}.Release|x64.Build.0 = Release|x64
+		{FD7A0470-EA00-4142-A3CC-095B1351109C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FD7A0470-EA00-4142-A3CC-095B1351109C}.Debug|Win32.Build.0 = Debug|Win32
+		{FD7A0470-EA00-4142-A3CC-095B1351109C}.Debug|x64.ActiveCfg = Debug|x64
+		{FD7A0470-EA00-4142-A3CC-095B1351109C}.Debug|x64.Build.0 = Debug|x64
+		{FD7A0470-EA00-4142-A3CC-095B1351109C}.Release|Win32.ActiveCfg = Release|Win32
+		{FD7A0470-EA00-4142-A3CC-095B1351109C}.Release|Win32.Build.0 = Release|Win32
+		{FD7A0470-EA00-4142-A3CC-095B1351109C}.Release|x64.ActiveCfg = Release|x64
+		{FD7A0470-EA00-4142-A3CC-095B1351109C}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

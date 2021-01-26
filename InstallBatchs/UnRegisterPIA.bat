@@ -34,6 +34,7 @@ REM Windows 32bit version
 @ECHO Unregistration of PIA files
 CHDIR /D "%ProgramFiles%\OPOS\OpenPosFor.NET"
 FOR %%F IN (OpenPOS*.dll) DO "%SystemRoot%\Microsoft.NET\Framework\v2.0.50727\RegAsm.exe" %%F /unregister /silent
+FOR %%F IN (policy.*.dll) DO .\gacutil /u %%~nF /silent
 FOR %%F IN (OpenPOS*.dll) DO .\gacutil /u %%~nF /silent
 
 GOTO EOF
@@ -46,6 +47,7 @@ REM Windows 64bit version
 CHDIR /D "%ProgramFiles(x86)%\OPOS\OpenPosFor.NET"
 FOR %%F IN (OpenPOS*.dll) DO "%SystemRoot%\Microsoft.NET\Framework64\v2.0.50727\RegAsm.exe" %%F /unregister /silent
 FOR %%F IN (OpenPOS*.dll) DO "%SystemRoot%\Microsoft.NET\Framework\v2.0.50727\RegAsm.exe" %%F /unregister /silent
+FOR %%F IN (policy.*.dll) DO .\gacutil /u %%~nF /silent
 FOR %%F IN (OpenPOS*.dll) DO .\gacutil /u %%~nF /silent
 
 :EOF

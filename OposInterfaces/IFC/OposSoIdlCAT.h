@@ -4,7 +4,7 @@
 
 [
     uuid(CCBE0050-B81E-11D2-AB74-0040054C3719),
-    helpstring("IOPOSCATSO 1.15 Interface")
+    helpstring("IOPOSCATSO 1.16 Interface")
 ]
 dispinterface IOPOSCATSO
 {

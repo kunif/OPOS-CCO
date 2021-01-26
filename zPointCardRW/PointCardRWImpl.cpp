@@ -18,7 +18,7 @@
 **               Updates to copies and printf to remove any
 **               potential buffer overflows.
 **  2015/02/07 Version 1.14.001.
-**  2020/06/01 Version 1.15.000.                                    K. Fukuchi
+**  2021/01/26 Version 1.16.000.                                    K. Fukuchi
 **
 *****************************************************************************
 **
@@ -76,10 +76,10 @@ limitations under the License.
 TCHAR g_WindowName[] = _T("HW_OPOSPointCardRW");
 
 // Control Object description and version.
-char g_ControlDescription[] = "OPOS PointCardRW Control 1.15.000 [Public, by CRM/MCS, and modified by KF]" IFDEBUG(" [With Tracing]");
+char g_ControlDescription[] = "OPOS PointCardRW Control 1.16.000 [Public, by CRM/MCS, and modified by KF]" IFDEBUG(" [With Tracing]");
 LONG g_ControlVersion =
     1 * 1000000 +
-    15 * 1000 +
+    16 * 1000 +
     000;
 
 // Count of instances within this process.

@@ -1,0 +1,41 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposDmon.hi
+//
+//   Device Monitor header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 2021-01-26 OPOS Release 1.16                                  KF
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSDMON_HI)
+#define      OPOSDMON_HI
+
+
+#include "Opos.hi"
+#include "OposDmon.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+// * Capabilities *
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXDmon_DeviceData                      =   1 + PIDX_DMON+PIDX_STRING;
+const LONG PIDXDmon_DeviceList                      =   2 + PIDX_DMON+PIDX_STRING;
+const LONG PIDXDmon_MonitoringDeviceList            =   3 + PIDX_DMON+PIDX_STRING;
+
+
+#endif          // !defined(OPOSDMON_HI)

@@ -4,7 +4,7 @@
 
 [
     uuid(CCBE0320-B81E-11D2-AB74-0040054C3719),
-    helpstring("IOPOSBeltSO 1.15 Interface")
+    helpstring("IOPOSBeltSO 1.16 Interface")
 ]
 dispinterface IOPOSBeltSO
 {

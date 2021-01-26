@@ -8,7 +8,7 @@
 **  2013/10/03 Update license section and some version settings.
 **  2015/02/07 Update license section.
 **  2015/02/07 Version 1.14.001.
-**  2020/06/01 Version 1.15.000.                                    K. Fukuchi
+**  2021/01/26 Version 1.16.000.                                    K. Fukuchi
 **             Added "OPOS" prefix to type library file name.
 **
 *****************************************************************************
@@ -84,8 +84,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,15,000,0
- PRODUCTVERSION 1,15,000,0
+ FILEVERSION 1,16,000,0
+ PRODUCTVERSION 1,16,000,0
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -101,18 +101,18 @@ BEGIN
         BLOCK "040904B0"
         BEGIN
             VALUE "Author", "Curtiss R. Monroe\0"
-            VALUE "BuildInformation", "OPOS 1.15. Build 000; 2020/06/01.\0"
+            VALUE "BuildInformation", "OPOS 1.16. Build 000; 2021/01/26.\0"
             VALUE "CompanyName", "Monroe Consulting Services; Dayton OH\0"
 #if !defined(_DEBUG)
             VALUE "FileDescription", "OPOS ToneIndicator Control\0"
 #else
             VALUE "FileDescription", "OPOS ToneIndicator Control (Debug)\0"
 #endif
-            VALUE "FileVersion", "1.15.000.0\0"
+            VALUE "FileVersion", "1.16.000.0\0"
             VALUE "InternalName", "OPOSToneIndicator\0"
             VALUE "OriginalFilename", "OPOSToneIndicator.OCX\0"
             VALUE "ProductName", "OPOS Common Controls (CRM/MCS, and modified by KF)\0"
-            VALUE "ProductVersion", "1.15.000.0\0"
+            VALUE "ProductVersion", "1.16.000.0\0"
             VALUE "OLESelfRegister", "\0"
             VALUE "LegalCopyright", "Copyright 2015; MCS; Dayton OH, USA. See full text of license in the 'Comments' item.\0"
             VALUE "Comments",    "{Start}\r\n"

@@ -39,6 +39,10 @@
 // 2008-08-30 OPOS Release 1.12                                  CRM
 //   Add Belt, ElectronicValueRW, Gate, ItemDispenser,
 //   Lights, RFIDScanner
+// 2021-01-26 OPOS Release 1.16                                  KF
+//   Add DeviceMonitor, GestureControl, GraphicDisplay,
+//   IndividualRecognition, SoundPlayer, SoundRecorder,
+//   SpeechSysnthesis, VideoCapture, VoiceRecognition
 //
 //////////////////////////////////////////////////////////////////////
 
@@ -107,6 +111,16 @@
 #define OPOS_CLASSKEY_ITEM    "ItemDispenser"
 #define OPOS_CLASSKEY_LGT     "Lights"
 #define OPOS_CLASSKEY_RFID    "RFIDScanner"
+//   Release 1.16
+#define OPOS_CLASSKEY_DMON    "DeviceMonitor"
+#define OPOS_CLASSKEY_GCTL    "GestureControl"
+#define OPOS_CLASSKEY_GDSP    "GraphicDisplay"
+#define OPOS_CLASSKEY_IRCG    "IndividualRecognition"
+#define OPOS_CLASSKEY_SPLY    "SoundPlayer"
+#define OPOS_CLASSKEY_SREC    "SoundRecorder"
+#define OPOS_CLASSKEY_SPCH    "SpeechSynthesis"
+#define OPOS_CLASSKEY_VCAP    "VideoCapture"
+#define OPOS_CLASSKEY_VRCG    "VoiceRecognition"
 
 // OPOS_ROOTKEY_PROVIDER is the key under which a Service Object
 //   provider may place provider-specific information.
@@ -248,6 +262,16 @@ const LONG PIDX_GATE    = 33000;  // Gate.
 const LONG PIDX_ITEM    = 34000;  // Item Dispenser.
 const LONG PIDX_LGT     = 35000;  // Lights.
 const LONG PIDX_RFID    = 36000;  // RFID Scanner.
+//   Release 1.16
+const LONG PIDX_DMON    = 37000;  // DeviceMonitor.
+const LONG PIDX_GCTL    = 38000;  // GestureControl.
+const LONG PIDX_GDSP    = 39000;  // GraphicDisplay.
+const LONG PIDX_IRCG    = 40000;  // IndividualRecognition.
+const LONG PIDX_SPLY    = 41000;  // SoundPlayer.
+const LONG PIDX_SREC    = 42000;  // SoundRecorder.
+const LONG PIDX_SPCH    = 43000;  // SpeechSynthesis.
+const LONG PIDX_VCAP    = 44000;  // VideoCapture.
+const LONG PIDX_VRCG    = 45000;  // VoiceRecognition.
 
 
 #endif                  // !defined(OPOS_HI)

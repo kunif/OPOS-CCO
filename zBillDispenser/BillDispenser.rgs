@@ -1,19 +1,19 @@
 HKCR
 {
-    OPOS.BillDispenser.1.15 = s 'OPOS BillDispenser Control 1.15.000 [Public, by CRM/MCS, and modified by KF]'
+    OPOS.BillDispenser.1.16 = s 'OPOS BillDispenser Control 1.16.000 [Public, by CRM/MCS, and modified by KF]'
     {
         CLSID = s '{CCB90292-B81E-11D2-AB74-0040054C3719}'
     }
-    OPOS.BillDispenser = s 'OPOS BillDispenser Control 1.15.000 [Public, by CRM/MCS, and modified by KF]'
+    OPOS.BillDispenser = s 'OPOS BillDispenser Control 1.16.000 [Public, by CRM/MCS, and modified by KF]'
     {
         CLSID = s '{CCB90292-B81E-11D2-AB74-0040054C3719}'
-        CurVer = s 'OPOS.BillDispenser.1.15'
+        CurVer = s 'OPOS.BillDispenser.1.16'
     }
     NoRemove CLSID
     {
-        ForceRemove {CCB90292-B81E-11D2-AB74-0040054C3719} = s 'OPOS BillDispenser Control 1.15.000 [Public, by CRM/MCS, and modified by KF]'
+        ForceRemove {CCB90292-B81E-11D2-AB74-0040054C3719} = s 'OPOS BillDispenser Control 1.16.000 [Public, by CRM/MCS, and modified by KF]'
         {
-            ProgID = s 'OPOS.BillDispenser.1.15'
+            ProgID = s 'OPOS.BillDispenser.1.16'
             VersionIndependentProgID = s 'OPOS.BillDispenser'
             ForceRemove 'Programmable'
             InprocServer32 = s '%MODULE%'
@@ -29,7 +29,7 @@ HKCR
             }
             'TypeLib' = s '{CCB90290-B81E-11D2-AB74-0040054C3719}'
             'Version' = s '1.0'
-            'BuildInformation' = s 'OPOS 1.15. Build 000; 2020/06/01.'
+            'BuildInformation' = s 'OPOS 1.16. Build 000; 2021/01/26.'
         }
     }
 }

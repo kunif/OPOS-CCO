@@ -1,0 +1,61 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposGdsp.hi
+//
+//   Graphic Display header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 2021-01-26 OPOS Release 1.16                                  KF
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSGDSP_HI)
+#define      OPOSGDSP_HI
+
+
+#include "Opos.hi"
+#include "OposGdsp.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXGdsp_Brightness                      =   1 + PIDX_GDSP+PIDX_NUMBER;
+const LONG PIDXGdsp_DisplayMode                     =   2 + PIDX_GDSP+PIDX_NUMBER;
+const LONG PIDXGdsp_LoadStatus                      =   3 + PIDX_GDSP+PIDX_NUMBER;
+const LONG PIDXGdsp_Storage                         =   4 + PIDX_GDSP+PIDX_NUMBER;
+const LONG PIDXGdsp_Volume                          =   5 + PIDX_GDSP+PIDX_NUMBER;
+
+// * Capabilities *
+
+const LONG PIDXGdsp_CapBrightness                   = 501 + PIDX_GDSP+PIDX_NUMBER;
+const LONG PIDXGdsp_CapImageType                    = 502 + PIDX_GDSP+PIDX_NUMBER;
+const LONG PIDXGdsp_CapStorage                      = 503 + PIDX_GDSP+PIDX_NUMBER;
+const LONG PIDXGdsp_CapURLBack                      = 504 + PIDX_GDSP+PIDX_NUMBER;
+const LONG PIDXGdsp_CapURLForward                   = 505 + PIDX_GDSP+PIDX_NUMBER;
+const LONG PIDXGdsp_CapVideoType                    = 506 + PIDX_GDSP+PIDX_NUMBER;
+const LONG PIDXGdsp_CapVolume                       = 507 + PIDX_GDSP+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXGdsp_ImageType                       =   1 + PIDX_GDSP+PIDX_STRING;
+const LONG PIDXGdsp_ImageTypeList                   =   2 + PIDX_GDSP+PIDX_STRING;
+const LONG PIDXGdsp_URL                             =   3 + PIDX_GDSP+PIDX_STRING;
+const LONG PIDXGdsp_VideoType                       =   4 + PIDX_GDSP+PIDX_STRING;
+const LONG PIDXGdsp_VideoTypeList                   =   5 + PIDX_GDSP+PIDX_STRING;
+
+// * Capabilities *
+
+const LONG PIDXGdsp_CapAssociatedHardTotalsDevice   = 501 + PIDX_GDSP+PIDX_STRING;
+
+
+#endif          // !defined(OPOSGDSP_HI)

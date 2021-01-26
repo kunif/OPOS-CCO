@@ -4,7 +4,7 @@
 
 [
     uuid(CCBE0240-B81E-11D2-AB74-0040054C3719),
-    helpstring("IOPOSMotionSensorSO 1.15 Interface")
+    helpstring("IOPOSMotionSensorSO 1.16 Interface")
 ]
 dispinterface IOPOSMotionSensorSO
 {

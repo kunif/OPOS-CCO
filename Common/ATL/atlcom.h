@@ -14,7 +14,7 @@
 #pragma once
 
 //###############################################################
-//## CRM 2008.08.30 -- Modified CComTypeInfoHolder::GetIDsOfNames -> 2020/06/01  K. Fukuchi
+//## CRM 2008.08.30 -- Modified CComTypeInfoHolder::GetIDsOfNames -> 2021/01/26  K. Fukuchi
 //##        to map Claim->ClaimDevice and Release->ReleaseDevice.
 #pragma message( ">>> Including OPOS-modified ATL files from Visual Studio Community 2019:" )
 #pragma message( ">>>   ATLCOM.H: Modified so Claim and Release recognized in Control's dispatch." )
@@ -2399,7 +2399,7 @@ struct AtlVerifyInheritance
 
 #if defined(_M_IX86)
 #define OBJECT_ENTRY_PRAGMA(class) __pragma(comment(linker, "/include:___pobjMap_" #class));
-#elif defined(_M_X64) || defined(_M_ARM) || defined(_M_ARM64)
+#elif defined(_M_X64) || defined(_M_ARM) || defined(_M_ARM64) || defined(_M_ARM64EC)
 #define OBJECT_ENTRY_PRAGMA(class) __pragma(comment(linker, "/include:__pobjMap_" #class));
 #else
 #error Unknown Platform. define OBJECT_ENTRY_PRAGMA
@@ -4530,7 +4530,7 @@ ATLAPI AtlGetObjectSourceInterface(
 
 #ifdef _ATL_USE_WINAPI_FAMILY_DESKTOP_APP
 
-#if defined(_M_IX86) || defined(_M_X64) || defined(_M_ARM) || defined(_M_ARM64)
+#if defined(_M_IX86) || defined(_M_X64) || defined(_M_ARM) || defined(_M_ARM64) || defined(_M_ARM64EC)
 
 extern "C"
 {

@@ -1,0 +1,59 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposSrec.hi
+//
+//   Sound Recorder header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 2021-01-26 OPOS Release 1.16                                  KF
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSSREC_HI)
+#define      OPOSSREC_HI
+
+
+#include "Opos.hi"
+#include "OposSrec.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXSrec_RecordingLevel                  =   1 + PIDX_SREC+PIDX_NUMBER;
+const LONG PIDXSrec_RemainingRecordingTimeInSec     =   2 + PIDX_SREC+PIDX_NUMBER;
+const LONG PIDXSrec_Storage                         =   3 + PIDX_SREC+PIDX_NUMBER;
+
+// * Capabilities *
+
+const LONG PIDXSrec_CapChannel                      = 501 + PIDX_SREC+PIDX_NUMBER;
+const LONG PIDXSrec_CapRecordingLevel               = 502 + PIDX_SREC+PIDX_NUMBER;
+const LONG PIDXSrec_CapSamplingRate                 = 503 + PIDX_SREC+PIDX_NUMBER;
+const LONG PIDXSrec_CapSoundType                    = 504 + PIDX_SREC+PIDX_NUMBER;
+const LONG PIDXSrec_CapStorage                      = 505 + PIDX_SREC+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXSrec_Channel                         =   1 + PIDX_SREC+PIDX_STRING;
+const LONG PIDXSrec_ChannelList                     =   2 + PIDX_SREC+PIDX_STRING;
+const LONG PIDXSrec_SamplingRate                    =   3 + PIDX_SREC+PIDX_STRING;
+const LONG PIDXSrec_SamplingRateList                =   4 + PIDX_SREC+PIDX_STRING;
+const LONG PIDXSrec_SoundData                       =   5 + PIDX_SREC+PIDX_STRING;
+const LONG PIDXSrec_SoundType                       =   6 + PIDX_SREC+PIDX_STRING;
+const LONG PIDXSrec_SoundTypeList                   =   7 + PIDX_SREC+PIDX_STRING;
+
+// * Capabilities *
+
+const LONG PIDXSrec_CapAssociatedHardTotalsDevice   = 501 + PIDX_SREC+PIDX_STRING;
+
+
+#endif          // !defined(OPOSSREC_HI)

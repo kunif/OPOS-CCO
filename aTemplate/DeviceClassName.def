@@ -1,0 +1,17 @@
+;****************************************************************************
+;*
+;* DeviceClassName.def -- Linker parameters
+;*
+;*     Date                   Modification                          Author
+;* -----------|----------------------------------------------------|----------
+;*  yyyy/mm/dd Initial Version from similar sources.                K. Fukuchi
+;*
+;****************************************************************************
+
+LIBRARY      "OPOSDeviceClassName.OCX"
+
+EXPORTS
+    DllCanUnloadNow      PRIVATE
+    DllGetClassObject    PRIVATE
+    DllRegisterServer    PRIVATE
+    DllUnregisterServer  PRIVATE

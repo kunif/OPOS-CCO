@@ -14,7 +14,7 @@
 **  2015/02/07 Update license section.
 **             Correct default TransitionEvent dispatch ID to 6.
 **  2015/02/07 Version 1.15.100.
-**  2020/06/01 Version 1.16.000.                                    K. Fukuchi
+**  2021/01/26 Version 1.17.000.                                    K. Fukuchi
 **             Changed include guard from #ifndef __XXXX_H__ to #pragma once.
 **
 *****************************************************************************

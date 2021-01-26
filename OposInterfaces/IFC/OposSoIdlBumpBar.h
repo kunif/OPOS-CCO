@@ -4,7 +4,7 @@
 
 [
     uuid(CCBE0020-B81E-11D2-AB74-0040054C3719),
-    helpstring("IOPOSBumpBarSO 1.15 Interface")
+    helpstring("IOPOSBumpBarSO 1.16 Interface")
 ]
 dispinterface IOPOSBumpBarSO
 {

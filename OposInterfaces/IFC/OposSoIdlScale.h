@@ -4,7 +4,7 @@
 
 [
     uuid(CCBE0170-B81E-11D2-AB74-0040054C3719),
-    helpstring("IOPOSScaleSO 1.15 Interface")
+    helpstring("IOPOSScaleSO 1.16 Interface")
 ]
 dispinterface IOPOSScaleSO
 {

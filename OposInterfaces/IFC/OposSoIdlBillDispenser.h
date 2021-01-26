@@ -4,7 +4,7 @@
 
 [
     uuid(CCBE0290-B81E-11D2-AB74-0040054C3719),
-    helpstring("IOPOSBillDispenserSO 1.15 Interface")
+    helpstring("IOPOSBillDispenserSO 1.16 Interface")
 ]
 dispinterface IOPOSBillDispenserSO
 {

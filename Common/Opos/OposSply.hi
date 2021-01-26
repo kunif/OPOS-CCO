@@ -1,0 +1,52 @@
+//////////////////////////////////////////////////////////////////////
+//
+// OposSply.hi
+//
+//   Sound Player header file for OPOS Controls and Service Objects.
+//
+// Modification history
+// -------------------------------------------------------------------
+// 2021-01-26 OPOS Release 1.16                                  KF
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(OPOSSPLY_HI)
+#define      OPOSSPLY_HI
+
+
+#include "Opos.hi"
+#include "OposSply.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Numeric Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXSply_Storage                         =   1 + PIDX_SPLY+PIDX_NUMBER;
+const LONG PIDXSply_Volume                          =   2 + PIDX_SPLY+PIDX_NUMBER;
+
+// * Capabilities *
+
+const LONG PIDXSply_CapMultiPlay                    = 501 + PIDX_SPLY+PIDX_NUMBER;
+const LONG PIDXSply_CapStorage                      = 502 + PIDX_SPLY+PIDX_NUMBER;
+const LONG PIDXSply_CapVolume                       = 503 + PIDX_SPLY+PIDX_NUMBER;
+
+
+//////////////////////////////////////////////////////////////////////
+// String Property Index Values.
+//////////////////////////////////////////////////////////////////////
+
+// * Properties *
+
+const LONG PIDXSply_DeviceSoundList                 =   1 + PIDX_SPLY+PIDX_STRING;
+const LONG PIDXSply_OutputIDList                    =   2 + PIDX_SPLY+PIDX_STRING;
+
+// * Capabilities *
+
+const LONG PIDXSply_CapAssociatedHardTotalsDevice   = 501 + PIDX_SPLY+PIDX_STRING;
+const LONG PIDXSply_CapSoundTypeList                = 502 + PIDX_SPLY+PIDX_STRING;
+
+
+#endif          // !defined(OPOSSPLY_HI)

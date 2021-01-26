@@ -1,0 +1,35 @@
+HKCR
+{
+    OPOS.SoundPlayer.1.16 = s 'OPOS SoundPlayer Control 1.16.000 [Public, by KF]'
+    {
+        CLSID = s '{CCB90422-B81E-11D2-AB74-0040054C3719}'
+    }
+    OPOS.SoundPlayer = s 'OPOS SoundPlayer Control 1.16.000 [Public, by KF]'
+    {
+        CLSID = s '{CCB90422-B81E-11D2-AB74-0040054C3719}'
+        CurVer = s 'OPOS.SoundPlayer.1.16'
+    }
+    NoRemove CLSID
+    {
+        ForceRemove {CCB90422-B81E-11D2-AB74-0040054C3719} = s 'OPOS SoundPlayer Control 1.16.000 [Public, by KF]'
+        {
+            ProgID = s 'OPOS.SoundPlayer.1.16'
+            VersionIndependentProgID = s 'OPOS.SoundPlayer'
+            ForceRemove 'Programmable'
+            InprocServer32 = s '%MODULE%'
+            {
+                val ThreadingModel = s 'Apartment'
+            }
+            ForceRemove 'Control'
+            ForceRemove 'Insertable'
+            ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 101'
+            'MiscStatus' = s '0'
+            {
+                '1' = s '132497'
+            }
+            'TypeLib' = s '{CCB90420-B81E-11D2-AB74-0040054C3719}'
+            'Version' = s '1.0'
+            'BuildInformation' = s 'OPOS 1.16. Build 000; 2021/01/26.'
+        }
+    }
+}

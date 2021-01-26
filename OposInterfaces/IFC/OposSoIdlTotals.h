@@ -4,7 +4,7 @@
 
 [
     uuid(CCBE0080-B81E-11D2-AB74-0040054C3719),
-    helpstring("IOPOSHardTotalsSO 1.15 Interface")
+    helpstring("IOPOSHardTotalsSO 1.16 Interface")
 ]
 dispinterface IOPOSHardTotalsSO
 {

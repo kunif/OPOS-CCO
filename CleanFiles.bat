@@ -9,11 +9,15 @@ call CleanFiles2.bat CAT
 call CleanFiles2.bat CheckScanner
 call CleanFiles2.bat CoinAcceptor
 call CleanFiles2.bat CoinDispenser
+call CleanFiles2.bat DeviceMonitor
 call CleanFiles2.bat ElectronicJournal
 call CleanFiles2.bat ElectronicValueRW
 call CleanFiles2.bat FiscalPrinter
 call CleanFiles2.bat Gate
+call CleanFiles2.bat GestureControl
+call CleanFiles2.bat GraphicDisplay
 call CleanFiles2.bat ImageScanner
+call CleanFiles2.bat IndividualRecognition
 call CleanFiles2.bat ItemDispenser
 call CleanFiles2.bat Keylock
 call CleanFiles2.bat Lights
@@ -32,8 +36,13 @@ call CleanFiles2.bat Scale
 call CleanFiles2.bat Scanner
 call CleanFiles2.bat SigCap
 call CleanFiles2.bat SmartCardRW
+call CleanFiles2.bat SoundPlayer
+call CleanFiles2.bat SoundRecorder
+call CleanFiles2.bat SpeechSynthesis
 call CleanFiles2.bat ToneIndicator
 call CleanFiles2.bat Totals
+call CleanFiles2.bat VideoCapture
+call CleanFiles2.bat VoiceRecognition
 
 if not exist OCX\* goto :NoOCX
 cd ocx

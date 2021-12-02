@@ -15,7 +15,7 @@ enum
     VCAP_VCMODE_VIDEO                         = 2,
     VCAP_SUE_START_PHOTO                      = 11,
     VCAP_SUE_END_PHOTO                        = 12,
-    VCAP_SUE_START_VIDEO_RECORDING            = 21,
-    VCAP_SUE_STOP_VIDEO_RECORDING             = 22,
+    VCAP_SUE_START_VIDEO                      = 21,
+    VCAP_SUE_STOP_VIDEO                       = 22,
     OPOS_EVCAP_NOROOM                         = 201
 } OPOSVideoCaptureConstants;

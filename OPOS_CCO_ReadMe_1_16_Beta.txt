@@ -1,6 +1,6 @@
                      OPOS Common Control Objects
-                               1.16.000 (Alpha)
-                      Updated January 26, 2021
+                               1.16.000 (Beta)
+                      Updated December 2, 2021
 
 Contents of this file:
  * Features
@@ -15,7 +15,7 @@ NOTE: The installation package does not install any system DLLs.
     Features
 ====================================================================
 
- * All 45 control objects of OPOS Release 1.16.000 (Alpha) are supported.
+ * All 45 control objects of OPOS Release 1.16.000 (Beta) are supported.
     Also includes an object that declares all of the OPOS constants.
     To use these constants...
      - Visual Basic: Select the menu item Project / References, and check "OPOS
@@ -27,7 +27,7 @@ NOTE: The installation package does not install any system DLLs.
         tab of the Tools / Options menu).
  * ATL-based, using dual interfaces so that the app can access them via
     IDispatch or COM interfaces (of the form IOPOSCashDrawer, etc).
- * Built using Microsoft Visual Studio Community 2019.
+ * Built using Microsoft Visual Studio Community 2022.
  * Backward compatible with all releases of service objects. This means that
     they check for older SOs, and return the proper errors to the app if it
     accesses unsupported properties or methods.
@@ -87,6 +87,14 @@ This key's permissions must allow at least read access.
 ====================================================================
     Update History
 ====================================================================
+
+1.16.000 (Beta) - December 2, 2021
+
+ * Apply OPOS Release 1.16.000 (Beta) API support:
+    - Change VideoCapture StatusUpdateEvent define names.
+ * Convert from VSC 2019 to VSC 2022.
+    - Change the underlying atlcom.h to VSC 2022 file.
+ * Adjust date information of include files and timestamp of all files
 
 1.16.000 (Alpha) - January 26, 2021
 

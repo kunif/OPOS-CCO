@@ -15,7 +15,7 @@
 //     CapVariableBatteryCriticallyLowThreshold,
 //     CapVariableBatteryLowThreshold, PowerSource
 //   Remove validation functions.
-// 2021-01-26 OPOS Release 1.16                                  KF
+// 2021-12-02 OPOS Release 1.16                                  KF
 //   Add the following properties:
 //     CapBatteryCapacityRemainingInSeconds,
 //     CapVariableBatteryCriticallyLowThresholdInSeconds,

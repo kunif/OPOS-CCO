@@ -14,9 +14,9 @@
 #pragma once
 
 //###############################################################
-//## CRM 2008.08.30 -- Modified CComTypeInfoHolder::GetIDsOfNames -> 2021/01/26  K. Fukuchi
+//## CRM 2008.08.30 -- Modified CComTypeInfoHolder::GetIDsOfNames -> 2021/12/02  K. Fukuchi
 //##        to map Claim->ClaimDevice and Release->ReleaseDevice.
-#pragma message( ">>> Including OPOS-modified ATL files from Visual Studio Community 2019:" )
+#pragma message( ">>> Including OPOS-modified ATL files from Visual Studio Community 2022:" )
 #pragma message( ">>>   ATLCOM.H: Modified so Claim and Release recognized in Control's dispatch." )
 //###############################################################
 
@@ -77,8 +77,8 @@ namespace ATL
 #endif
 
 #define _ATL_DEBUG_ADDREF_RELEASE_IMPL(className)\
-	virtual ULONG STDMETHODCALLTYPE AddRef(void) = 0;\
-	virtual ULONG STDMETHODCALLTYPE Release(void) = 0;
+	virtual ULONG STDMETHODCALLTYPE AddRef(void) ATL_IUNKNOWN_NOEXCEPT = 0;\
+	virtual ULONG STDMETHODCALLTYPE Release(void) ATL_IUNKNOWN_NOEXCEPT = 0;
 
 
 #ifdef _ATL_USE_WINAPI_FAMILY_DESKTOP_APP
@@ -2925,11 +2925,11 @@ public:
 	}
 	//If InternalAddRef or InternalRelease is undefined then your class
 	//doesn't derive from CComObjectRoot
-	STDMETHOD_(ULONG, AddRef)()
+	STDMETHOD_(ULONG, AddRef)() ATL_IUNKNOWN_NOEXCEPT
 	{
 		return this->InternalAddRef();
 	}
-	STDMETHOD_(ULONG, Release)()
+	STDMETHOD_(ULONG, Release)() ATL_IUNKNOWN_NOEXCEPT
 	{
 		ULONG l = this->InternalRelease();
 		if (l == 0)
@@ -3312,7 +3312,7 @@ public:
 	}
 	template <class Q>
 	HRESULT STDMETHODCALLTYPE QueryInterface(
-		_COM_Outptr_ Q** pp)
+		_COM_Outptr_ Q** pp) ATL_IUNKNOWN_NOEXCEPT
 	{
 		return QueryInterface(__uuidof(Q), (void**)pp);
 	}
@@ -3380,11 +3380,11 @@ public:
 		_pAtlModule->Unlock();
 	}
 
-	STDMETHOD_(ULONG, AddRef)()
+	STDMETHOD_(ULONG, AddRef)() ATL_IUNKNOWN_NOEXCEPT
 	{
 		return this->InternalAddRef();
 	}
-	STDMETHOD_(ULONG, Release)()
+	STDMETHOD_(ULONG, Release)() ATL_IUNKNOWN_NOEXCEPT
 	{
 		ULONG l = this->InternalRelease();
 		if (l == 0)
@@ -3396,7 +3396,7 @@ public:
 	}
 	STDMETHOD(QueryInterface)(
 		_In_ REFIID iid,
-		_COM_Outptr_ void** ppvObject)
+		_COM_Outptr_ void** ppvObject) ATL_IUNKNOWN_NOEXCEPT
 	{
 		ATLASSERT(ppvObject != NULL);
 		if (ppvObject == NULL)
@@ -3417,7 +3417,7 @@ public:
 		return hRes;
 	}
 	template <class Q>
-	HRESULT STDMETHODCALLTYPE QueryInterface(_COM_Outptr_ Q** pp)
+	HRESULT STDMETHODCALLTYPE QueryInterface(_COM_Outptr_ Q** pp) ATL_IUNKNOWN_NOEXCEPT
 	{
 		return QueryInterface(__uuidof(Q), (void**)pp);
 	}
@@ -3510,11 +3510,11 @@ public:
 		_pAtlModule->Unlock();
 	}
 
-	STDMETHOD_(ULONG, AddRef)()
+	STDMETHOD_(ULONG, AddRef)() ATL_IUNKNOWN_NOEXCEPT
 	{
 		return this->InternalAddRef();
 	}
-	STDMETHOD_(ULONG, Release)()
+	STDMETHOD_(ULONG, Release)() ATL_IUNKNOWN_NOEXCEPT
 	{
 		ULONG l = this->InternalRelease();
 		if (l == 0)
@@ -3526,7 +3526,7 @@ public:
 	}
 	STDMETHOD(QueryInterface)(
 		REFIID iid,
-		_COM_Outptr_ void** ppvObject)
+		_COM_Outptr_ void** ppvObject) ATL_IUNKNOWN_NOEXCEPT
 	{
 #ifndef _ATL_OLEDB_CONFORMANCE_TESTS
 		ATLASSERT(ppvObject != NULL);
@@ -3549,7 +3549,7 @@ public:
 		return hRes;
 	}
 	template <class Q>
-	HRESULT STDMETHODCALLTYPE QueryInterface(_COM_Outptr_ Q** pp)
+	HRESULT STDMETHODCALLTYPE QueryInterface(_COM_Outptr_ Q** pp) ATL_IUNKNOWN_NOEXCEPT
 	{
 		return QueryInterface(__uuidof(Q), (void**)pp);
 	}
@@ -3679,11 +3679,11 @@ public:
 #endif
 	}
 
-	STDMETHOD_(ULONG, AddRef)()
+	STDMETHOD_(ULONG, AddRef)() ATL_IUNKNOWN_NOEXCEPT
 	{
 		return this->InternalAddRef();
 	}
-	STDMETHOD_(ULONG, Release)()
+	STDMETHOD_(ULONG, Release)() ATL_IUNKNOWN_NOEXCEPT
 	{
 		ULONG l = this->InternalRelease();
 		if (l == 0)
@@ -3692,7 +3692,7 @@ public:
 	}
 	STDMETHOD(QueryInterface)(
 		_In_ REFIID iid,
-		_COM_Outptr_ void** ppvObject)
+		_COM_Outptr_ void** ppvObject) ATL_IUNKNOWN_NOEXCEPT
 	{
 		ATLASSERT(ppvObject != NULL);
 		if (ppvObject == NULL)
@@ -4599,9 +4599,9 @@ public:
 	//this method needs a different name than QueryInterface
 	STDMETHOD(_LocDEQueryInterface)(
 		_In_ REFIID riid,
-		_COM_Outptr_ void** ppvObject) = 0;
-	virtual ULONG STDMETHODCALLTYPE AddRef(void) = 0;
-	virtual ULONG STDMETHODCALLTYPE Release(void) = 0;
+		_COM_Outptr_ void** ppvObject) ATL_IUNKNOWN_NOEXCEPT = 0;
+	virtual ULONG STDMETHODCALLTYPE AddRef(void) ATL_IUNKNOWN_NOEXCEPT = 0;
+	virtual ULONG STDMETHODCALLTYPE Release(void) ATL_IUNKNOWN_NOEXCEPT = 0;
 
 	GUID m_libid; // used for dynamic case
 	IID m_iid; // used for dynamic case
@@ -4654,7 +4654,7 @@ class ATL_NO_VTABLE IDispEventSimpleImpl :
 public:
 	STDMETHOD(_LocDEQueryInterface)(
 		_In_ REFIID riid,
-		_COM_Outptr_ void** ppvObject)
+		_COM_Outptr_ void** ppvObject) ATL_IUNKNOWN_NOEXCEPT
 	{
 		ATLASSERT(ppvObject != NULL);
 		if (ppvObject == NULL)
@@ -4681,11 +4681,11 @@ public:
 	}
 
 	// These are here only to support use in non-COM objects
-	virtual ULONG STDMETHODCALLTYPE AddRef()
+	virtual ULONG STDMETHODCALLTYPE AddRef() ATL_IUNKNOWN_NOEXCEPT
 	{
 		return 1;
 	}
-	virtual ULONG STDMETHODCALLTYPE Release()
+	virtual ULONG STDMETHODCALLTYPE Release() ATL_IUNKNOWN_NOEXCEPT
 	{
 		return 1;
 	}
@@ -6288,9 +6288,9 @@ public:
 	//this method needs a different name than QueryInterface
 	STDMETHOD(_LocCPQueryInterface)(
 		_In_ REFIID riid,
-		_COM_Outptr_ void** ppvObject) = 0;
-	virtual ULONG STDMETHODCALLTYPE AddRef(void) = 0;
-	virtual ULONG STDMETHODCALLTYPE Release(void) = 0;
+		_COM_Outptr_ void** ppvObject) ATL_IUNKNOWN_NOEXCEPT = 0;
+	virtual ULONG STDMETHODCALLTYPE AddRef(void) ATL_IUNKNOWN_NOEXCEPT = 0;
+	virtual ULONG STDMETHODCALLTYPE Release(void) ATL_IUNKNOWN_NOEXCEPT = 0;
 };
 
 template <class T, const IID* piid, class CDV = CComDynamicUnkArray >

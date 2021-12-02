@@ -4,7 +4,7 @@
 **
 **     Date                   Modification                          Author
 ** -----------|----------------------------------------------------|----------
-**  2021/01/26 Initial Version from similar sources.                K. Fukuchi
+**  2021/12/02 Initial Version from similar sources.                K. Fukuchi
 **
 *****************************************************************************
 **
@@ -96,7 +96,7 @@ BEGIN
         BLOCK "040904B0"
         BEGIN
             VALUE "Author", "Kunio Fukuchi\0"
-            VALUE "BuildInformation", "OPOS 1.16. Build 000; 2021/01/26.\0"
+            VALUE "BuildInformation", "OPOS 1.16. Build 000; 2021/12/02.\0"
             VALUE "CompanyName", "Kunio Fukuchi; Fukaya Saitama Japan\0"
 #if !defined(_DEBUG)
             VALUE "FileDescription", "OPOS GestureControl Control\0"

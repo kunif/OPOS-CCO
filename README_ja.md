@@ -16,6 +16,11 @@
   - VideoCapture  
   - VoiceRecognition  
 - 共通CO 1.15.000 版用に作成した.NETアプリケーション向けにPublisher Policyファイルを追加。  
+- 開発環境を Visual Studio Community 2019 から Visual Studio Community 2022 に変更。  
+  - プラットフォームツールセットは Visual Studio 2022(v143)  
+  - Windows SDK バージョンは 10.0  
+  - 改造前の atlcom.h を、Visual Studio Community 2022のフォルダにあるものに変更  
+- LightsとPOSPowerのSO用Opos_Interfaces定義を、1.15.0用と1.16.0用の2つに分けました  
 
 
 ## インストールその他  

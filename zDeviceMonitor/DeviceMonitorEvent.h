@@ -7,7 +7,7 @@
 **
 **     Date                   Modification                          Author
 ** -----------|----------------------------------------------------|----------
-**  2021/01/26 Initial Version from similar sources.                K. Fukuchi
+**  2021/12/02 Initial Version from similar sources.                K. Fukuchi
 **             Changed include guard from #ifndef __XXXX_H__ to #pragma once.
 **
 *****************************************************************************

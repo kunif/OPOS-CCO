@@ -6,7 +6,7 @@
 //
 // Modification history
 // ------------------------------------------------------------------
-// 2021-01-26 OPOS Release 1.16                                  KF
+// 2021-12-02 OPOS Release 1.16                                  KF
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -45,8 +45,8 @@ const LONG VCAP_VCMODE_VIDEO        = 2;
 const LONG VCAP_SUE_START_PHOTO            = 11;
 const LONG VCAP_SUE_END_PHOTO              = 12;
 
-const LONG VCAP_SUE_START_VIDEO_RECORDING  = 21;
-const LONG VCAP_SUE_STOP_VIDEO_RECORDING   = 22;
+const LONG VCAP_SUE_START_VIDEO            = 21;
+const LONG VCAP_SUE_STOP_VIDEO             = 22;
 
 
 /////////////////////////////////////////////////////////////////////

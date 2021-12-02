@@ -16,7 +16,11 @@ The following correspondence is made to the 1.15.000 version.
   - VideoCapture  
   - VoiceRecognition  
 - Added Publisher Policy file for .NET applications created for Common CO 1.15.000.  
-
+- Changed development environment from Visual Studio Community 2019 to Visual Studio Community 2022.  
+  - Platform toolset is Visual Studio 2022 (v143).  
+  - Windows SDK version 10.0.  
+  - Change atlcom.h before remodeling to one in the folder of Visual Studio Community 2022.  
+- The Opos_Interfaces definitions for SO for Lights and POSPower have been split into two, 1.15.0 and 1.16.0.  
 
 ## Installation and others  
 Please install according to the following procedure.  

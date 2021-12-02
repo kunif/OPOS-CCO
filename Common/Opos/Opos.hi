@@ -39,7 +39,7 @@
 // 2008-08-30 OPOS Release 1.12                                  CRM
 //   Add Belt, ElectronicValueRW, Gate, ItemDispenser,
 //   Lights, RFIDScanner
-// 2021-01-26 OPOS Release 1.16                                  KF
+// 2021-12-02 OPOS Release 1.16                                  KF
 //   Add DeviceMonitor, GestureControl, GraphicDisplay,
 //   IndividualRecognition, SoundPlayer, SoundRecorder,
 //   SpeechSysnthesis, VideoCapture, VoiceRecognition

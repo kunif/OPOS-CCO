@@ -2,7 +2,7 @@
 ;*
 ;* OposConstants.def -- Linker parameters
 ;*
-;*  2021/01/26 Version 1.16.000.                                    K. Fukuchi
+;*  2021/12/02 Version 1.16.000.                                    K. Fukuchi
 ;*             Changed from OposConstants.DLL to Opos_Constants.DLL
 ;*
 ;****************************************************************************

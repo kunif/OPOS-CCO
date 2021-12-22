@@ -1,11 +1,11 @@
 //*************************************************************************
-//** OPOS VrcgRecognition Internals
+//** OPOS VoiceRecognition Internals
 //
-//   VrcgRecognition header file for OPOS Controls and Service Objects.
+//   VoiceRecognition header file for OPOS Controls and Service Objects.
 //
 //*************************************************************************
 
-typedef [helpstring("OPOS VrcgRecognition Internals")]
+typedef [helpstring("OPOS VoiceRecognition Internals")]
 enum
 {
     PIDXVrcg_HearingResult        = 45001,
@@ -17,4 +17,4 @@ enum
     PIDXVrcg_HearingDataWord      = 1045002,
     PIDXVrcg_HearingDataWordList  = 1045003,
     PIDXVrcg_LanguageList         = 1045004
-} OPOSVrcgRecognitionInternals;
+} OPOSVoiceRecognitionInternals;

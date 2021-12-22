@@ -1,6 +1,6 @@
                      OPOS Common Control Objects
-                               1.16.000 (Beta)
-                      Updated December 2, 2021
+                               1.16.000 (Beta2)
+                      Updated December 22, 2021
 
 Contents of this file:
  * Features
@@ -87,6 +87,10 @@ This key's permissions must allow at least read access.
 ====================================================================
     Update History
 ====================================================================
+
+1.16.000 (Beta2) - December 22, 2021
+
+ * Correct typo, VoiceRecognition source code for Opos_Internals.dll.
 
 1.16.000 (Beta) - December 2, 2021
 

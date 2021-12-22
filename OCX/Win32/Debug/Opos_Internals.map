@@ -1,6 +1,6 @@
  Opos_Internals
 
- Timestamp is 61a75bf2 (Wed Dec  1 20:26:42 2021)
+ Timestamp is 61c2a03a (Wed Dec 22 12:49:14 2021)
 
  Preferred load address is 10000000
 
@@ -51,7 +51,7 @@
  0003:00000980 000000b8H .data$rs                DATA
  0003:00000a38 00003544H .bss                    DATA
  0004:00000000 00000140H .rsrc$01                DATA
- 0004:00000140 000166f8H .rsrc$02                DATA
+ 0004:00000140 00016700H .rsrc$02                DATA
 
   Address         Publics by Value              Rva+Base       Lib:Object
 
@@ -8494,5 +8494,5 @@
  0003:00003f64       __pmatherr_set             100c1f64     libucrtd:libm_error.obj
  0004:00000140       $R000000                   100c2140     OposInternals.res
  0004:00000a20       $R0008E0                   100c2a20     OposInternals.res
- 0004:00016678       $R016538                   100d8678     OposInternals.res
- 0004:000166b8       $R016578                   100d86b8     OposInternals.res
+ 0004:00016680       $R016540                   100d8680     OposInternals.res
+ 0004:000166c0       $R016580                   100d86c0     OposInternals.res

@@ -1,6 +1,6 @@
  Opos_Internals
 
- Timestamp is 61a75936 (Wed Dec  1 20:15:02 2021)
+ Timestamp is 61c2a035 (Wed Dec 22 12:49:09 2021)
 
  Preferred load address is 0000000180000000
 
@@ -55,7 +55,7 @@
  0004:00000000 000096d8H .pdata                  DATA
  0005:00000000 000000fcH _RDATA                  DATA
  0006:00000000 00000140H .rsrc$01                DATA
- 0006:00000140 000166f8H .rsrc$02                DATA
+ 0006:00000140 00016700H .rsrc$02                DATA
 
   Address         Publics by Value              Rva+Base               Lib:Object
 
@@ -15439,5 +15439,5 @@
  0005:000000d8       MoveSmallXmm               00000001801010d8     libvcruntimed:memcpy.obj
  0006:00000140       $R000000                   0000000180102140     OposInternals.res
  0006:00000a20       $R0008E0                   0000000180102a20     OposInternals.res
- 0006:00016678       $R016538                   0000000180118678     OposInternals.res
- 0006:000166b8       $R016578                   00000001801186b8     OposInternals.res
+ 0006:00016680       $R016540                   0000000180118680     OposInternals.res
+ 0006:000166c0       $R016580                   00000001801186c0     OposInternals.res

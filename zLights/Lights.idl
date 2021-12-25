@@ -10,7 +10,7 @@
 **  2013/09/29 Update license section.
 **  2015/02/07 Update license section.
 **  2015/02/07 Version 1.14.001.
-**  2021/12/02 Version 1.16.000.                                    K. Fukuchi
+**  2021/12/25 Version 1.16.000.                                    K. Fukuchi
 **
 *****************************************************************************
 **
@@ -49,6 +49,10 @@ import "ocidl.idl";
 //  - First interface with the APIs defined from original through that release.
 //  - Later interfaces derive from previous and add their releases' new APIs.
 //  - Current interface derives from previous and adds its release's new APIs.
+
+//
+//========== Previous Interface: 1.12 ==========
+//
 
     [
         object,
@@ -196,10 +200,58 @@ import "ocidl.idl";
         object,
         uuid(CCB91361-B81E-11D2-AB74-0040054C3719),
         dual,
+        helpstring("IOPOSLights 1.12 Interface (Old Invariant)"),
+        pointer_default(unique)
+    ]
+    interface IOPOSLights_1_12_zz : IOPOSLights_1_12
+    {
+    };
+
+//
+//========== Current Interface: 1.16 ==========
+//
+
+    [
+        object,
+        uuid(CCB92361-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSLights 1.16 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSLights_1_16 : IDispatch
+    {
+    // Release 1.16
+        [propget, id(74), helpstring("property CapPattern")]
+        HRESULT CapPattern( [out, retval] long* pCapPattern );
+        [id(92), helpstring("method SwitchOffPattern")]
+        HRESULT SwitchOffPattern( 
+            [out, retval] long* pRC );
+        [id(93), helpstring("method SwitchOnMultiple")]
+        HRESULT SwitchOnMultiple( 
+            [in] BSTR LightNumbers, 
+            [in] long BlinkOnCycle, 
+            [in] long BlinkOffCycle, 
+            [in] long Color, 
+            [in] long Alarm, 
+            [out, retval] long* pRC );
+        [id(94), helpstring("method SwitchOnPattern")]
+        HRESULT SwitchOnPattern( 
+            [in] long Pattern, 
+            [in] long Alarm, 
+            [out, retval] long* pRC );
+    };
+
+//
+//---------- IOPOSLights Interface: Invariant Name ----------
+//
+    [
+        object,
+        uuid(CCB93361-B81E-11D2-AB74-0040054C3719),
+        dual,
         helpstring("IOPOSLights Current Interface"),
         pointer_default(unique)
     ]
-    interface IOPOSLights : IOPOSLights_1_12
+    interface IOPOSLights : IOPOSLights_1_16
     {
     };
 
@@ -245,7 +297,9 @@ library OposLights_CCO
     coclass OPOSLights
     {
         [default] interface IOPOSLights;
+        interface IOPOSLights_1_16;
         interface IOPOSLights_1_12;
+        interface IOPOSLights_1_12_zz; // (Old invariant interface.)
         [default, source] dispinterface _IOPOSLightsEvents;
     };
 };

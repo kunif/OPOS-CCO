@@ -1,6 +1,6 @@
                      OPOS Common Control Objects
-                               1.16.000 (Beta2)
-                      Updated December 22, 2021
+                               1.16.000 (Beta3)
+                      Updated December 25, 2021
 
 Contents of this file:
  * Features
@@ -87,6 +87,10 @@ This key's permissions must allow at least read access.
 ====================================================================
     Update History
 ====================================================================
+
+1.16.000 (Beta3) - December 25, 2021
+
+ * Correct Lights, POSPower devices OCX/PIA/Policy did not update for RCSD feature.
 
 1.16.000 (Beta2) - December 22, 2021
 

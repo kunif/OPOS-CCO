@@ -15,7 +15,7 @@
 **  2015/02/07 Version 1.14.001.
 **  2020/06/01 Version 1.15.000.                                    K. Fukuchi
 **             Changed include guard from #ifndef __XXXX_H__ to #pragma once.
-**  2021/12/02 Version 1.16.000.
+**  2021/12/25 Version 1.16.000.
 **
 *****************************************************************************
 **
@@ -243,7 +243,9 @@ BEGIN_COM_MAP(COPOSPOSPower)
     COM_INTERFACE_ENTRY_IID(IID_IDispatch, IOPOSPOSPower)
     //   Map each COM interface to the current interface implementation.
     COM_INTERFACE_ENTRY_IID(IID_IOPOSPOSPower, IOPOSPOSPower)
+    COM_INTERFACE_ENTRY_IID(IID_IOPOSPOSPower_1_16, IOPOSPOSPower)
     COM_INTERFACE_ENTRY_IID(IID_IOPOSPOSPower_1_9, IOPOSPOSPower)
+    COM_INTERFACE_ENTRY_IID(IID_IOPOSPOSPower_1_9_zz, IOPOSPOSPower)
     COM_INTERFACE_ENTRY_IID(IID_IOPOSPOSPower_1_8, IOPOSPOSPower)
     COM_INTERFACE_ENTRY_IID(IID_IOPOSPOSPower_1_5, IOPOSPOSPower)
 
@@ -408,6 +410,17 @@ public:
 // Release 1.13
 // Release 1.14
 // Release 1.15
+// Release 1.16
+    STDMETHOD(get_BatteryCapacityRemainingInSeconds)( /*[out, retval]*/ LONG* pBatteryCapacityRemainingInSeconds );
+    STDMETHOD(get_BatteryCriticallyLowThresholdInSeconds)( /*[out, retval]*/ LONG* pBatteryCriticallyLowThresholdInSeconds );
+    STDMETHOD(put_BatteryCriticallyLowThresholdInSeconds)( /*[in]*/ LONG BatteryCriticallyLowThresholdInSeconds );
+    STDMETHOD(get_BatteryLowThresholdInSeconds)( /*[out, retval]*/ LONG* pBatteryLowThresholdInSeconds );
+    STDMETHOD(put_BatteryLowThresholdInSeconds)( /*[in]*/ LONG BatteryLowThresholdInSeconds );
+    STDMETHOD(get_CapBatteryCapacityRemainingInSeconds)( /*[out, retval]*/ VARIANT_BOOL* pCapBatteryCapacityRemainingInSeconds );
+    STDMETHOD(get_CapChargeTime)( /*[out, retval]*/ VARIANT_BOOL* pCapChargeTime );
+    STDMETHOD(get_CapVariableBatteryCriticallyLowThresholdInSeconds)( /*[out, retval]*/ VARIANT_BOOL* pCapVariableBatteryCriticallyLowThresholdInSeconds );
+    STDMETHOD(get_CapVariableBatteryLowThresholdInSeconds)( /*[out, retval]*/ VARIANT_BOOL* pCapVariableBatteryLowThresholdInSeconds );
+    STDMETHOD(get_ChargeTime)( /*[out, retval]*/ LONG* pChargeTime );
 };
 
 

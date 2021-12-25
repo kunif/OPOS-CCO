@@ -10,7 +10,7 @@
 **  2013/09/29 Update license section.
 **  2015/02/07 Update license section.
 **  2015/02/07 Version 1.14.001.
-**  2021/12/02 Version 1.16.000.                                    K. Fukuchi
+**  2021/12/25 Version 1.16.000.                                    K. Fukuchi
 **
 *****************************************************************************
 **
@@ -201,7 +201,7 @@ import "ocidl.idl";
     };
 
 //
-//========== Current Interface: 1.9 ==========
+//========== Previous Interface: 1.9 ==========
 //
 
     [
@@ -277,10 +277,60 @@ import "ocidl.idl";
         object,
         uuid(CCB94221-B81E-11D2-AB74-0040054C3719),
         dual,
+        helpstring("IOPOSPOSPower 1.9 Interface (Old Invariant)"),
+        pointer_default(unique)
+    ]
+    interface IOPOSPOSPower_1_9_zz : IOPOSPOSPower_1_9
+    {
+    };
+
+//
+//========== Current Interface: 1.16 ==========
+//
+
+    [
+        object,
+        uuid(CCB95221-B81E-11D2-AB74-0040054C3719),
+        dual,
+        helpstring("IOPOSPOSPower 1.16 Interface"),
+        pointer_default(unique)
+    ]
+    interface IOPOSPOSPower_1_16 : IOPOSPOSPower_1_9
+    {
+    // Release 1.16
+        [propget, id(90), helpstring("property BatteryCapacityRemainingInSeconds")]
+        HRESULT BatteryCapacityRemainingInSeconds( [out, retval] long* pBatteryCapacityRemainingInSeconds );
+        [propget, id(91), helpstring("property BatteryCriticallyLowThresholdInSeconds")]
+        HRESULT BatteryCriticallyLowThresholdInSeconds( [out, retval] long* pBatteryCriticallyLowThresholdInSeconds );
+        [propput, id(91), helpstring("property BatteryCriticallyLowThresholdInSeconds")]
+        HRESULT BatteryCriticallyLowThresholdInSeconds( [in] long BatteryCriticallyLowThresholdInSeconds );
+        [propget, id(92), helpstring("property BatteryLowThresholdInSeconds")]
+        HRESULT BatteryLowThresholdInSeconds( [out, retval] long* pBatteryLowThresholdInSeconds );
+        [propput, id(92), helpstring("property BatteryLowThresholdInSeconds")]
+        HRESULT BatteryLowThresholdInSeconds( [in] long BatteryLowThresholdInSeconds );
+        [propget, id(93), helpstring("property CapBatteryCapacityRemainingInSeconds")]
+        HRESULT CapBatteryCapacityRemainingInSeconds( [out, retval] VARIANT_BOOL* pCapBatteryCapacityRemainingInSeconds );
+        [propget, id(94), helpstring("property CapChargeTime")]
+        HRESULT CapChargeTime( [out, retval] VARIANT_BOOL* pCapChargeTime );
+        [propget, id(95), helpstring("property CapVariableBatteryCriticallyLowThresholdInSeconds")]
+        HRESULT CapVariableBatteryCriticallyLowThresholdInSeconds( [out, retval] VARIANT_BOOL* pCapVariableBatteryCriticallyLowThresholdInSeconds );
+        [propget, id(96), helpstring("property CapVariableBatteryLowThresholdInSeconds")]
+        HRESULT CapVariableBatteryLowThresholdInSeconds( [out, retval] VARIANT_BOOL* pCapVariableBatteryLowThresholdInSeconds );
+        [propget, id(97), helpstring("property PowerSource")]
+        HRESULT ChargeTime( [out, retval] long* pChargeTime );
+    };
+
+//
+//---------- IOPOSPOSPower Interface: Invariant Name ----------
+//
+    [
+        object,
+        uuid(CCB96221-B81E-11D2-AB74-0040054C3719),
+        dual,
         helpstring("IOPOSPOSPower Current Interface"),
         pointer_default(unique)
     ]
-    interface IOPOSPOSPower : IOPOSPOSPower_1_9
+    interface IOPOSPOSPower : IOPOSPOSPower_1_16
     {
     };
 
@@ -326,7 +376,9 @@ library OposPOSPower_CCO
     coclass OPOSPOSPower
     {
         [default] interface IOPOSPOSPower;
+        interface IOPOSPOSPower_1_16;
         interface IOPOSPOSPower_1_9;
+        interface IOPOSPOSPower_1_9_zz; // (Old invariant interface.)
         interface IOPOSPOSPower_1_8;
         interface IOPOSPOSPower_1_5;
         [default, source] dispinterface _IOPOSPOSPowerEvents;

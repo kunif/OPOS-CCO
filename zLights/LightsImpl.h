@@ -15,7 +15,7 @@
 **  2015/02/07 Version 1.14.001.
 **  2020/06/01 Version 1.15.000.                                    K. Fukuchi
 **             Changed include guard from #ifndef __XXXX_H__ to #pragma once.
-**  2021/12/02 Version 1.16.000.
+**  2021/12/25 Version 1.16.000.
 **
 *****************************************************************************
 **
@@ -105,7 +105,7 @@ limitations under the License.
 // Data.
 /////////////////////////////////////////////////////////////////////////////
 
-#define SO_DISP_COUNT 18
+#define SO_DISP_COUNT 21
 // Hidden window class and window name.
 extern TCHAR g_WindowName[];
 // Control Object description.
@@ -243,7 +243,9 @@ BEGIN_COM_MAP(COPOSLights)
     COM_INTERFACE_ENTRY_IID(IID_IDispatch, IOPOSLights)
     //   Map each COM interface to the current interface implementation.
     COM_INTERFACE_ENTRY_IID(IID_IOPOSLights, IOPOSLights)
+    COM_INTERFACE_ENTRY_IID(IID_IOPOSLights_1_16, IOPOSLights)
     COM_INTERFACE_ENTRY_IID(IID_IOPOSLights_1_12, IOPOSLights)
+    COM_INTERFACE_ENTRY_IID(IID_IOPOSLights_1_12_zz, IOPOSLights)
 
     COM_INTERFACE_ENTRY(IViewObjectEx)
     COM_INTERFACE_ENTRY(IViewObject2)
@@ -380,6 +382,21 @@ public:
 // Release 1.13
 // Release 1.14
 // Release 1.15
+// Release 1.16
+    STDMETHOD(get_CapPattern)( /*[out, retval]*/ LONG* pCapPattern );
+    STDMETHOD(SwitchOffPattern)( 
+        /*[out, retval]*/ long* pRC );
+    STDMETHOD(SwitchOnMultiple)( 
+        /*[in]*/ BSTR LightNumbers, 
+        /*[in]*/ LONG BlinkOnCycle, 
+        /*[in]*/ LONG BlinkOffCycle, 
+        /*[in]*/ LONG Color, 
+        /*[in]*/ LONG Alarm, 
+        /*[out, retval]*/ long* pRC );
+    STDMETHOD(SwitchOnPattern)( 
+        /*[in]*/ LONG Pattern, 
+        /*[in]*/ LONG Alarm, 
+        /*[out, retval]*/ long* pRC );
 };
 
 

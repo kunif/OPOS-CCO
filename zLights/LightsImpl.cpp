@@ -18,7 +18,7 @@
 **               Updates to copies and printf to remove any
 **               potential buffer overflows.
 **  2015/02/07 Version 1.14.001.
-**  2021/12/02 Version 1.16.000.                                    K. Fukuchi
+**  2021/12/25 Version 1.16.000.                                    K. Fukuchi
 **
 *****************************************************************************
 **
@@ -128,6 +128,12 @@ static char* s_SOMethodNames[SO_DISP_COUNT + 1] =
         #define nDISwitchOff 16
     "SwitchOn",
         #define nDISwitchOn 17
+    "SwitchOffPattern",
+        #define nDISwitchOffPattern 18
+    "SwitchOnMultiple",
+        #define nDISwitchOnMultiple 19
+    "SwitchOnPattern",
+        #define nDISwitchOnPattern 20
     0
 };
 
@@ -140,7 +146,11 @@ static char* s_SOMethodNames[SO_DISP_COUNT + 1] =
 
 static int s_RequiredMethodsPerRelease[] =
 {
-     18  // Release 1.12
+     18, // Release 1.12
+     18, // Release 1.13
+     18, // Release 1.14
+     18, // Release 1.15
+     21  // Release 1.16
 };
 
 const int MinorReleaseInitial = 12;
@@ -1291,6 +1301,63 @@ STDMETHODIMP COPOSLights::SwitchOn(
     return DoInvoke( DEBUGPARAM("SwitchOn") S_OK, Vars, 5, nDISwitchOn, pRC );
 }
 
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//!!!! Release 1.13
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//!!!! Release 1.14
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//!!!! Release 1.15
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//!!!! Release 1.16
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//===========================================================================
+
+STDMETHODIMP COPOSLights::SwitchOffPattern( 
+    /*[out, retval]*/ long* pRC )
+{
+    return DoInvoke( DEBUGPARAM("SwitchOffPattern") S_OK, NULL, 0, nDISwitchOffPattern, pRC );
+}
+
+//===========================================================================
+
+STDMETHODIMP COPOSLights::SwitchOnMultiple( 
+    /*[in]*/ BSTR LightNumbers, 
+    /*[in]*/ LONG BlinkOnCycle, 
+    /*[in]*/ LONG BlinkOffCycle, 
+    /*[in]*/ LONG Pattern, 
+    /*[in]*/ LONG Alarm, 
+    /*[out, retval]*/ long* pRC )
+{
+    OposVariant Vars[5];
+    HRESULT hRC = S_OK;
+    Vars[4].SetBSTR( LightNumbers, hRC );
+    Vars[3].SetLONG( BlinkOnCycle );
+    Vars[2].SetLONG( BlinkOffCycle );
+    Vars[1].SetLONG( Pattern );
+    Vars[0].SetLONG( Alarm );
+    return DoInvoke( DEBUGPARAM("SwitchOnMultiple") S_OK, Vars, 5, nDISwitchOnMultiple, pRC );
+}
+
+//===========================================================================
+
+STDMETHODIMP COPOSLights::SwitchOnPattern( 
+    /*[in]*/ LONG Pattern, 
+    /*[in]*/ LONG Alarm, 
+    /*[out, retval]*/ long* pRC )
+{
+    OposVariant Vars[2];
+    Vars[1].SetLONG( Pattern );
+    Vars[0].SetLONG( Alarm );
+    return DoInvoke( DEBUGPARAM("SwitchOnPattern") S_OK, Vars, 2, nDISwitchOnPattern, pRC );
+}
+
 /////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -1575,6 +1642,28 @@ STDMETHODIMP COPOSLights::get_MaxLights( /*[out, retval]*/ LONG* pMaxLights )
     return GetOposProp( DEBUGPARAM("MaxLights") PIDXLgt_MaxLights, pMaxLights, 12 /*MinorVersion*/ );
 }
 
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//!!!! Release 1.13
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//!!!! Release 1.14
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//!!!! Release 1.15
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//!!!! Release 1.16
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//===========================================================================
+
+STDMETHODIMP COPOSLights::get_CapPattern( /*[out, retval]*/ LONG* pCapPattern )
+{
+    return GetOposProp( DEBUGPARAM("CapPattern") PIDXLgt_CapPattern, pCapPattern, 16 /*MinorVersion*/ );
+}
 
 /////////////////////////////////////////////////////////////////////////////
 // Debug build tracing support.

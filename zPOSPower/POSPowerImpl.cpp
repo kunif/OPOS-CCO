@@ -18,7 +18,7 @@
 **               Updates to copies and printf to remove any
 **               potential buffer overflows.
 **  2015/02/07 Version 1.14.001.
-**  2021/12/02 Version 1.16.000.                                    K. Fukuchi
+**  2021/12/25 Version 1.16.000.                                    K. Fukuchi
 **
 *****************************************************************************
 **
@@ -1744,6 +1744,104 @@ STDMETHODIMP COPOSPOSPower::get_CapVariableBatteryLowThreshold( /*[out, retval]*
 STDMETHODIMP COPOSPOSPower::get_PowerSource( /*[out, retval]*/ LONG* pPowerSource )
 {
     return GetOposProp( DEBUGPARAM("PowerSource") PIDXPwr_PowerSource, pPowerSource, 9 /*MinorVersion*/ );
+}
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//!!!! Release 1.10
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//!!!! Release 1.11
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//!!!! Release 1.12
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//!!!! Release 1.13
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//!!!! Release 1.14
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//!!!! Release 1.15
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//!!!! Release 1.16
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//===========================================================================
+
+STDMETHODIMP COPOSPOSPower::get_BatteryCapacityRemainingInSeconds( /*[out, retval]*/ LONG* pBatteryCapacityRemainingInSeconds )
+{
+    return GetOposProp( DEBUGPARAM("BatteryCapacityRemainingInSeconds") PIDXPwr_BatteryCapacityRemainingInSeconds, pBatteryCapacityRemainingInSeconds, 16 /*MinorVersion*/ );
+}
+
+//===========================================================================
+
+STDMETHODIMP COPOSPOSPower::get_BatteryCriticallyLowThresholdInSeconds( /*[out, retval]*/ LONG* pBatteryCriticallyLowThresholdInSeconds )
+{
+    return GetOposProp( DEBUGPARAM("BatteryCriticallyLowThresholdInSeconds") PIDXPwr_BatteryCriticallyLowThresholdInSeconds, pBatteryCriticallyLowThresholdInSeconds, 16 /*MinorVersion*/ );
+}
+
+//---------------------------------------------------------------------------
+
+STDMETHODIMP COPOSPOSPower::put_BatteryCriticallyLowThresholdInSeconds( /*[in]*/ LONG BatteryCriticallyLowThresholdInSeconds )
+{
+    return SetOposProp( DEBUGPARAM("BatteryCriticallyLowThresholdInSeconds") PIDXPwr_BatteryCriticallyLowThresholdInSeconds, BatteryCriticallyLowThresholdInSeconds, 16 /*MinorVersion*/ );
+}
+
+//===========================================================================
+
+STDMETHODIMP COPOSPOSPower::get_BatteryLowThresholdInSeconds( /*[out, retval]*/ LONG* pBatteryLowThresholdInSeconds )
+{
+    return GetOposProp( DEBUGPARAM("BatteryLowThresholdInSeconds") PIDXPwr_BatteryLowThresholdInSeconds, pBatteryLowThresholdInSeconds, 16 /*MinorVersion*/ );
+}
+
+//---------------------------------------------------------------------------
+
+STDMETHODIMP COPOSPOSPower::put_BatteryLowThresholdInSeconds( /*[in]*/ LONG BatteryLowThresholdInSeconds )
+{
+    return SetOposProp( DEBUGPARAM("BatteryLowThresholdInSeconds") PIDXPwr_BatteryLowThresholdInSeconds, BatteryLowThresholdInSeconds, 16 /*MinorVersion*/ );
+}
+
+//===========================================================================
+
+STDMETHODIMP COPOSPOSPower::get_CapBatteryCapacityRemainingInSeconds( /*[out, retval]*/ VARIANT_BOOL* pCapBatteryCapacityRemainingInSeconds )
+{
+    return GetOposProp( DEBUGPARAM("CapBatteryCapacityRemainingInSeconds") PIDXPwr_CapBatteryCapacityRemainingInSeconds, pCapBatteryCapacityRemainingInSeconds, 16 /*MinorVersion*/ );
+}
+
+//===========================================================================
+
+STDMETHODIMP COPOSPOSPower::get_CapChargeTime( /*[out, retval]*/ VARIANT_BOOL* pCapChargeTime )
+{
+    return GetOposProp( DEBUGPARAM("CapChargeTime") PIDXPwr_CapChargeTime, pCapChargeTime, 16 /*MinorVersion*/ );
+}
+
+//===========================================================================
+
+STDMETHODIMP COPOSPOSPower::get_CapVariableBatteryCriticallyLowThresholdInSeconds( /*[out, retval]*/ VARIANT_BOOL* pCapVariableBatteryCriticallyLowThresholdInSeconds )
+{
+    return GetOposProp( DEBUGPARAM("CapVariableBatteryCriticallyLowThresholdInSeconds") PIDXPwr_CapVariableBatteryCriticallyLowThresholdInSeconds, pCapVariableBatteryCriticallyLowThresholdInSeconds, 16 /*MinorVersion*/ );
+}
+
+//===========================================================================
+
+STDMETHODIMP COPOSPOSPower::get_CapVariableBatteryLowThresholdInSeconds( /*[out, retval]*/ VARIANT_BOOL* pCapVariableBatteryLowThresholdInSeconds )
+{
+    return GetOposProp( DEBUGPARAM("CapVariableBatteryLowThresholdInSeconds") PIDXPwr_CapVariableBatteryLowThresholdInSeconds, pCapVariableBatteryLowThresholdInSeconds, 16 /*MinorVersion*/ );
+}
+
+//===========================================================================
+
+STDMETHODIMP COPOSPOSPower::get_ChargeTime( /*[out, retval]*/ LONG* pChargeTime )
+{
+    return GetOposProp( DEBUGPARAM("ChargeTime") PIDXPwr_ChargeTime, pChargeTime, 16 /*MinorVersion*/ );
 }
 
 

@@ -4,7 +4,7 @@
 !!
 !!     Date                   Modification                          Author
 !! -----------|----------------------------------------------------|----------
-!!  2021/12/02 1.16.000: Initial version.                           K. Fukuchi
+!!  2021/12/28 1.16.000: Initial version.                           K. Fukuchi
 !!
 !!***************************************************************************
 
@@ -121,7 +121,7 @@ UUIDEvents      =UUID*
 !> Specific Properties
   R  1.16  60 CapAssociatedHardTotalsDevice(BSTR)
   R  1.16  61 CapMultiPlay(BOOL)
-  R  1.16  62 CapSoundTypeListBSTR)
+  R  1.16  62 CapSoundTypeList(BSTR)
   R  1.16  63 CapStorage(LONG)
   R  1.16  64 CapVolume(BOOL)
   R  1.16  65 DeviceSoundList(BSTR)

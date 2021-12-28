@@ -4,7 +4,7 @@
 !!
 !!     Date                   Modification                          Author
 !! -----------|----------------------------------------------------|----------
-!!  2021/12/02 1.16.000: Initial version.                           K. Fukuchi
+!!  2021/12/28 1.16.000: Initial version.                           K. Fukuchi
 !!
 !!***************************************************************************
 
@@ -125,7 +125,7 @@ UUIDEvents      =UUID*
   R  1.16  63 CapVoice(BOOL)
   R  1.16  64 CapVolume(BOOL)
   RW 1.16  65 Language(BSTR)
-  R  1.16  66 LanguageListBSTR)
+  R  1.16  66 LanguageList(BSTR)
   R  1.16  67 OutputIDList(BSTR)
   RW 1.16  68 Pitch(LONG)
   RW 1.16  69 Speed(LONG)

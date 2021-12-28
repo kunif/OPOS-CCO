@@ -19,7 +19,7 @@ enum
 
     PIDXGctl_AutoMode                         = 1038001,
     PIDXGctl_AutoModeList                     = 1038002,
-    PIDXGctl_JoinList                         = 1038003,
+    PIDXGctl_JointList                        = 1038003,
     PIDXGctl_MotionList                       = 1038004,
     PIDXGctl_PoseList                         = 1038005,
 

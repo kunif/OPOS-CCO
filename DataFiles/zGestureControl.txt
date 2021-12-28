@@ -4,7 +4,7 @@
 !!
 !!     Date                   Modification                          Author
 !! -----------|----------------------------------------------------|----------
-!!  2021/12/02 1.16.000: Initial version.                           K. Fukuchi
+!!  2021/12/28 1.16.000: Initial version.                           K. Fukuchi
 !!
 !!***************************************************************************
 
@@ -127,8 +127,8 @@ UUIDEvents      =UUID*
   R  1.16  65 CapPose(BOOL)
   R  1.16  66 CapPoseCreation(BOOL)
   R  1.16  67 CapStorage(LONG)
-  R  1.16  68 JointListBSTR)
-  R  1.16  69 MotionListBSTR)
+  R  1.16  68 JointList(BSTR)
+  R  1.16  69 MotionList(BSTR)
   RW 1.16  70 PoseCreationMode(BOOL)
   R  1.16  71 PoseList(BSTR)
   RW 1.16  72 Storage(LONG)

@@ -1,6 +1,6 @@
                      OPOS Common Control Objects
-                               1.16.000 (Beta3)
-                      Updated December 25, 2021
+                               1.16.000 (Beta4)
+                      Updated December 28, 2021
 
 Contents of this file:
  * Features
@@ -87,6 +87,11 @@ This key's permissions must allow at least read access.
 ====================================================================
     Update History
 ====================================================================
+
+1.16.000 (Beta4) - December 28, 2021
+
+ * Correct typo, GestureControl source code for Opos_Internals.dll.
+ * Correct typo, some devices DataFiles.
 
 1.16.000 (Beta3) - December 25, 2021
 

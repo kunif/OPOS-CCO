@@ -1,6 +1,6 @@
                      OPOS Common Control Objects
-                               1.16.000 (Beta4)
-                      Updated December 28, 2021
+                               1.16.000 (Beta5)
+                      Updated January 18, 2022
 
 Contents of this file:
  * Features
@@ -87,6 +87,10 @@ This key's permissions must allow at least read access.
 ====================================================================
     Update History
 ====================================================================
+
+1.16.000 (Beta5) - January 18, 2022
+
+ * Add POSPower StatusUpdateEvent constant to OposPwr.h, Opos_Constants.dll.
 
 1.16.000 (Beta4) - December 28, 2021
 

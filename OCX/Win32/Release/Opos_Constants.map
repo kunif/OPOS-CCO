@@ -1,6 +1,6 @@
  Opos_Constants
 
- Timestamp is 61a75ba1 (Wed Dec  1 20:25:21 2021)
+ Timestamp is 61e61be0 (Tue Jan 18 10:46:08 2022)
 
  Preferred load address is 10000000
 
@@ -49,7 +49,7 @@
  0003:00000910 00000018H .data$rs                DATA
  0003:00000928 00000ae8H .bss                    DATA
  0004:00000000 00000140H .rsrc$01                DATA
- 0004:00000140 0001daf0H .rsrc$02                DATA
+ 0004:00000140 0001db48H .rsrc$02                DATA
 
   Address         Publics by Value              Rva+Base       Lib:Object
 
@@ -98,15 +98,15 @@
  0001:00000240       ?Release@CRegObject@ATL@@UAGKXZ 10001240 f i OposConstants.obj
  0001:00000250       ?AddReplacement@CRegObject@ATL@@UAGJPB_W0@Z 10001250 f i OposConstants.obj
  0001:00000290       ?ClearReplacements@CRegObject@ATL@@UAGJXZ 10001290 f i OposConstants.obj
- 0001:000002b0       ??_GCRegObject@ATL@@UAEPAXI@Z 100012b0 f i OposConstants.obj
  0001:000002b0       ??_ECRegObject@ATL@@UAEPAXI@Z 100012b0 f i OposConstants.obj
+ 0001:000002b0       ??_GCRegObject@ATL@@UAEPAXI@Z 100012b0 f i OposConstants.obj
  0001:00000320       ??1CRegObject@ATL@@UAE@XZ  10001320 f i OposConstants.obj
  0001:00000370       ?Add@CExpansionVector@ATL@@QAEHPB_W0@Z 10001370 f i OposConstants.obj
  0001:000004e0       ?AddValue@CRegParser@ATL@@IAEJAAVCRegKey@2@PB_WPA_W@Z 100014e0 f i OposConstants.obj
  0001:00000990       ?Allocate@?$CTempBuffer@_W$0EAA@VCCRTAllocator@ATL@@@ATL@@QAEPA_WI@Z 10001990 f i OposConstants.obj
  0001:000009e0       ?AllocateHeap@?$CTempBuffer@_W$0EAA@VCCRTAllocator@ATL@@@ATL@@AAEXI@Z 100019e0 f i OposConstants.obj
- 0001:000009e0       ?AllocateHeap@?$CTempBuffer@E$0BAA@VCCRTAllocator@ATL@@@ATL@@AAEXI@Z 100019e0 f i OposConstants.obj
  0001:000009e0       ?AllocateHeap@?$CTempBuffer@_W$0BAA@VCCRTAllocator@ATL@@@ATL@@AAEXI@Z 100019e0 f i OposConstants.obj
+ 0001:000009e0       ?AllocateHeap@?$CTempBuffer@E$0BAA@VCCRTAllocator@ATL@@@ATL@@AAEXI@Z 100019e0 f i OposConstants.obj
  0001:00000a10       ?Append@CParseBuffer@CRegParser@ATL@@QAEHPB_WH@Z 10001a10 f i OposConstants.obj
  0001:00000ac0       ?AtlCrtErrorCheck@ATL@@YAHH@Z 10001ac0 f i OposConstants.obj
  0001:00000b60       ?AtlHresultFromLastError@ATL@@YAJXZ 10001b60 f i OposConstants.obj
@@ -172,8 +172,8 @@
  0001:00003d11       ___report_securityfailure  10004d11 f   LIBCMT:gs_report.obj
  0001:00003de0       ??_U@YAPAXIABUnothrow_t@std@@@Z 10004de0 f   LIBCMT:new_array_nothrow.obj
  0001:00003de9       @__security_check_cookie@4 10004de9 f   LIBCMT:secchk.obj
- 0001:00003e00       __alloca_probe             10004e00 f   LIBCMT:chkstk.obj
  0001:00003e00       __chkstk                   10004e00 f   LIBCMT:chkstk.obj
+ 0001:00003e00       __alloca_probe             10004e00 f   LIBCMT:chkstk.obj
  0001:0000416b       __DllMainCRTStartup@12     1000516b f   LIBCMT:dll_dllmain.obj
  0001:0000418e       @_guard_check_icall_nop@4  1000518e f i LIBCMT:guard_support.obj
  0001:00004191       ___isa_available_init      10005191 f   LIBCMT:cpu_disp.obj
@@ -199,24 +199,24 @@
  0001:000046ef       ??0bad_array_new_length@std@@QAE@XZ 100056ef f i LIBCMT:throw_bad_alloc.obj
  0001:00004707       ??0exception@std@@QAE@ABV01@@Z 10005707 f i LIBCMT:throw_bad_alloc.obj
  0001:00004733       ??1bad_exception@std@@UAE@XZ 10005733 f i libvcruntime:frame.obj
- 0001:00004733       ??1bad_array_new_length@std@@UAE@XZ 10005733 f i LIBCMT:throw_bad_alloc.obj
  0001:00004733       ??1bad_alloc@std@@UAE@XZ   10005733 f i LIBCMT:throw_bad_alloc.obj
+ 0001:00004733       ??1bad_array_new_length@std@@UAE@XZ 10005733 f i LIBCMT:throw_bad_alloc.obj
+ 0001:00004744       ??_Gbad_alloc@std@@UAEPAXI@Z 10005744 f i LIBCMT:throw_bad_alloc.obj
  0001:00004744       ??_Ebad_array_new_length@std@@UAEPAXI@Z 10005744 f i LIBCMT:throw_bad_alloc.obj
  0001:00004744       ??_Ebad_exception@std@@UAEPAXI@Z 10005744 f i libvcruntime:frame.obj
  0001:00004744       ??_Gbad_exception@std@@UAEPAXI@Z 10005744 f i libvcruntime:frame.obj
  0001:00004744       ??_Ebad_alloc@std@@UAEPAXI@Z 10005744 f i LIBCMT:throw_bad_alloc.obj
  0001:00004744       ??_Gexception@std@@UAEPAXI@Z 10005744 f i LIBCMT:throw_bad_alloc.obj
- 0001:00004744       ??_Gbad_alloc@std@@UAEPAXI@Z 10005744 f i LIBCMT:throw_bad_alloc.obj
- 0001:00004744       ??_Eexception@std@@UAEPAXI@Z 10005744 f i LIBCMT:throw_bad_alloc.obj
  0001:00004744       ??_Gbad_array_new_length@std@@UAEPAXI@Z 10005744 f i LIBCMT:throw_bad_alloc.obj
+ 0001:00004744       ??_Eexception@std@@UAEPAXI@Z 10005744 f i LIBCMT:throw_bad_alloc.obj
  0001:00004771       ?__scrt_throw_std_bad_alloc@@YAXXZ 10005771 f   LIBCMT:throw_bad_alloc.obj
  0001:0000478e       ?__scrt_throw_std_bad_array_new_length@@YAXXZ 1000578e f   LIBCMT:throw_bad_alloc.obj
  0001:000047ab       ?what@exception@std@@UBEPBDXZ 100057ab f i LIBCMT:throw_bad_alloc.obj
  0001:000047b8       ??_Etype_info@@UAEPAXI@Z   100057b8 f i LIBCMT:std_type_info_static.obj
  0001:000047b8       ??_Gtype_info@@UAEPAXI@Z   100057b8 f i LIBCMT:std_type_info_static.obj
  0001:000047db       _wcsstr                    100057db f   libvcruntime:wcsstr.obj
- 0001:00004a50       _memmove                   10005a50 f   libvcruntime:memmove.obj
  0001:00004a50       _memcpy                    10005a50 f   libvcruntime:memcpy.obj
+ 0001:00004a50       _memmove                   10005a50 f   libvcruntime:memmove.obj
  0001:00004fd0       _memset                    10005fd0 f   libvcruntime:memset.obj
  0001:00005130       ___vcrt_initialize         10006130 f   libvcruntime:initialization.obj
  0001:0000514f       ___vcrt_thread_attach      1000614f f   libvcruntime:initialization.obj
@@ -319,8 +319,8 @@
  0001:00007cdd       ___dcrt_uninitialize_environments_nolock 10008cdd f   libucrt:environment_initialization.obj
  0001:00007d2e       __initialize_narrow_environment 10008d2e f   libucrt:environment_initialization.obj
  0001:00007de9       ??$__crt_fast_encode_pointer@PAP6AXXZ@@YAPAP6AXXZQAP6AXXZ@Z 10008de9 f i libucrt:onexit.obj
- 0001:00007de9       ??$__crt_fast_encode_pointer@PAX@@YAPAXQAX@Z 10008de9 f i libucrt:initialization.obj
  0001:00007de9       ??$__crt_fast_encode_pointer@P6AHXZ@@YAP6AHXZQ6AHXZ@Z 10008de9 f i libucrt:onexit.obj
+ 0001:00007de9       ??$__crt_fast_encode_pointer@PAX@@YAPAXQAX@Z 10008de9 f i libucrt:initialization.obj
  0001:00007fe4       __crt_atexit               10008fe4 f   libucrt:onexit.obj
  0001:00007ffa       __execute_onexit_table     10008ffa f   libucrt:onexit.obj
  0001:00008038       __initialize_onexit_table  10009038 f   libucrt:onexit.obj
@@ -366,8 +366,8 @@
  0001:00008ef3       ??$__acrt_convert_wcs_mbs_cp@_WDV<lambda_28bda7af82a03b66c1cb3803a755f95d>@@U__crt_win32_buffer_internal_dynamic_resizing@@@@YAHQB_WAAV?$__crt_win32_buffer@DU__crt_win32_buffer_internal_dynamic_resizing@@@@ABV<lambda_28bda7af82a03b66c1cb3803a755f95d>@@I@Z 10009ef3 f i libucrt:argv_wildcards.obj
  0001:00008fb9       ??$__acrt_mbs_to_wcs_cp@U__crt_win32_buffer_internal_dynamic_resizing@@@@YAHQBDAAV?$__crt_win32_buffer@_WU__crt_win32_buffer_internal_dynamic_resizing@@@@I@Z 10009fb9 f i libucrt:argv_wildcards.obj
  0001:00009489       ??0_LocaleUpdate@@QAE@QAU__crt_locale_pointers@@@Z 1000a489 f i libucrt:argv_wildcards.obj
- 0001:00009534       ??R<lambda_0fec1a7b3f42a53036604e18c2d5e07e>@@QBEHIQB_WQADI@Z 1000a534 f i libucrt:getmodulefilenamea.obj
  0001:00009534       ??R<lambda_28bda7af82a03b66c1cb3803a755f95d>@@QBEHIQB_WQADI@Z 1000a534 f i libucrt:argv_wildcards.obj
+ 0001:00009534       ??R<lambda_0fec1a7b3f42a53036604e18c2d5e07e>@@QBEHIQB_WQADI@Z 1000a534 f i libucrt:getmodulefilenamea.obj
  0001:00009558       ?__acrt_get_utf8_acp_compatibility_codepage@@YAIXZ 1000a558 f i libucrt:argv_wildcards.obj
  0001:00009597       ?_deallocate@?$__crt_win32_buffer@DU__crt_win32_buffer_internal_dynamic_resizing@@@@AAEXXZ 1000a597 f i libucrt:argv_wildcards.obj
  0001:00009597       ?_deallocate@?$__crt_win32_buffer@_WU__crt_win32_buffer_internal_dynamic_resizing@@@@AAEXXZ 1000a597 f i libucrt:argv_wildcards.obj
@@ -1494,7 +1494,7 @@
  0003:00000954       ?bInitialized@?1??DeleteSubKey@CRegKey@ATL@@QAEJPB_W@Z@4_NA 10018954     OposConstants.obj
  0003:00000958       ?_Module@@3VCComModule@ATL@@A 10018958     OposConstants.obj
  0003:000009ac       ?_AtlBaseModule@ATL@@3VCAtlBaseModule@1@A 100189ac     atls:atlbase.obj
- 0003:000009e4       ___@@_PchSym_@00@UzABUPdlipUBAUhUrmgvinvwrzgvUexgllohUzgohOmzgrevkilqPBACIAJCBDBUlyqiUcIGUhgwzucOlyq@4B2008FD98C1DD4 100189e4     atls:stdafx.obj
+ 0003:000009e4       ___@@_PchSym_@00@UzABUPdlipUDIUhUrmgvinvwrzgvUexgllohUzgohOmzgrevkilqPBACIAJCBDBUlyqiUcIGUhgwzucOlyq@4B2008FD98C1DD4 100189e4     atls:stdafx.obj
  0003:000009e8       ___scrt_current_native_startup_state 100189e8     LIBCMT:utility.obj
  0003:000009ec       ___scrt_native_startup_lock 100189ec     LIBCMT:utility.obj
  0003:00000d30       ___isa_available           10018d30     LIBCMT:cpu_disp.obj
@@ -2149,5 +2149,5 @@
  0003:000013fc       __pmatherr_set             100193fc     libucrt:libm_error.obj
  0004:00000140       $R000000                   1001a140     OposConstants.res
  0004:00000aa8       $R000968                   1001aaa8     OposConstants.res
- 0004:0001da70       $R01D930                   10037a70     OposConstants.res
- 0004:0001dab0       $R01D970                   10037ab0     OposConstants.res
+ 0004:0001dac8       $R01D988                   10037ac8     OposConstants.res
+ 0004:0001db08       $R01D9C8                   10037b08     OposConstants.res

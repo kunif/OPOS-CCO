@@ -11,6 +11,8 @@
 //   Add PowerSource constants.
 //   Add Reason constants for RestartPOS, StandbyPOS, SuspendPOS.
 //   Add StatusUpdateEvent constants for battery support.
+// 2022-01-18 OPOS Release 1.16                                  KF
+//   Add StatusUpdateEvent constants for battery support by in seconds.
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -69,5 +71,6 @@ const LONG PWR_SUE_USER_STANDBY             = 25; // (added in 1.9)
 const LONG PWR_SUE_SUSPEND                  = 26; // (added in 1.9)
 const LONG PWR_SUE_USER_SUSPEND             = 27; // (added in 1.9)
 const LONG PWR_SUE_PWR_SOURCE               = 28; // (added in 1.9)
+const LONG PWR_SUE_BAT_CAPACITY_REMAINING_IN_SECONDS = 29; // (added in 1.16)
 
 #endif                  // !defined(OPOSPOWER_H)

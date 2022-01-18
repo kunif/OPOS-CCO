@@ -1,6 +1,6 @@
  Opos_Constants
 
- Timestamp is 61a75d0e (Wed Dec  1 20:31:26 2021)
+ Timestamp is 61e61bdc (Tue Jan 18 10:46:04 2022)
 
  Preferred load address is 10000000
 
@@ -51,7 +51,7 @@
  0003:00000980 000000b8H .data$rs                DATA
  0003:00000a38 00003544H .bss                    DATA
  0004:00000000 00000140H .rsrc$01                DATA
- 0004:00000140 0001daf0H .rsrc$02                DATA
+ 0004:00000140 0001db48H .rsrc$02                DATA
 
   Address         Publics by Value              Rva+Base       Lib:Object
 
@@ -3923,8 +3923,8 @@
  0002:00007b5c       ??_C@_1BC@GCKHIPE@?$AAN?$AAo?$AAR?$AAe?$AAm?$AAo?$AAv?$AAe@ 1009db5c     atls:stdafx.obj
  0002:00007b70       ??_C@_1O@JDLOHAN@?$AAD?$AAe?$AAl?$AAe?$AAt?$AAe@ 1009db70     atls:stdafx.obj
  0002:00007b88       ?nothrow@std@@3Unothrow_t@1@B 1009db88     LIBCMTD:std_nothrow.obj
- 0002:00007b8c       __pRawDllMain              1009db8c     LIBCMTD:dll_dllmain.obj
  0002:00007b8c       __pDefaultRawDllMain       1009db8c     LIBCMTD:dll_dllmain.obj
+ 0002:00007b8c       __pRawDllMain              1009db8c     LIBCMTD:dll_dllmain.obj
  0002:00007c30       ??_C@_0NN@JMPELKLB@The?5value?5of?5ESP?5was?5not?5proper@ 1009dc30     LIBCMTD:error.obj
  0002:00007d10       ??_C@_0BBN@ELNNILBE@A?5cast?5to?5a?5smaller?5data?5type?5h@ 1009dd10     LIBCMTD:error.obj
  0002:00007e30       ??_C@_0BN@BPOGFMJL@Stack?5memory?5was?5corrupted?$AN?6@ 1009de30     LIBCMTD:error.obj
@@ -5715,7 +5715,7 @@
  0003:00002bb4       ?bInitialized@?1??DeleteSubKey@CRegKey@ATL@@QAEJPB_W@Z@4_NA 100c0bb4     OposConstants.obj
  0003:00002bb8       ?_Module@@3VCComModule@ATL@@A 100c0bb8     OposConstants.obj
  0003:00002c0c       ?_AtlBaseModule@ATL@@3VCAtlBaseModule@1@A 100c0c0c     atls:atlbase.obj
- 0003:00002c44       ___@@_PchSym_@00@UzABUPdlipUBAUhUrmgvinvwrzgvUexgllohUzgohOmzgrevkilqPBACIAJCBDBUlyqiUcIGUhgwzucOlyq@4B2008FD98C1DD4 100c0c44     atls:stdafx.obj
+ 0003:00002c44       ___@@_PchSym_@00@UzABUPdlipUDIUhUrmgvinvwrzgvUexgllohUzgohOmzgrevkilqPBACIAJCBDBUlyqiUcIGUhgwzucOlyq@4B2008FD98C1DD4 100c0c44     atls:stdafx.obj
  0003:00002c48       ___scrt_current_native_startup_state 100c0c48     LIBCMTD:utility.obj
  0003:00002c4c       ___scrt_native_startup_lock 100c0c4c     LIBCMTD:utility.obj
  0003:00002f90       ___isa_available           100c0f90     LIBCMTD:cpu_disp.obj
@@ -7958,15 +7958,15 @@
  0002:00001e70       $SG114466                  10097e70     StdAfx.obj
  0002:00001e94       $SG114467                  10097e94     StdAfx.obj
  0002:00001ea0       $SG114468                  10097ea0     StdAfx.obj
- 0002:00002610       $SG196639                  10098610     OposConstants.obj
- 0002:00002620       $SG196640                  10098620     OposConstants.obj
- 0002:00002628       $SG196641                  10098628     OposConstants.obj
+ 0002:00002610       $SG196640                  10098610     OposConstants.obj
+ 0002:00002620       $SG196641                  10098620     OposConstants.obj
+ 0002:00002628       $SG196642                  10098628     OposConstants.obj
  0002:00002678       $SG188471                  10098678     OposConstants.obj
- 0002:0000267c       $SG196666                  1009867c     OposConstants.obj
- 0002:0000268c       $SG196667                  1009868c     OposConstants.obj
- 0002:00002694       $SG188475                  10098694     OposConstants.obj
- 0002:000026b0       $SG196668                  100986b0     OposConstants.obj
- 0002:00002700       $SG188476                  10098700     OposConstants.obj
+ 0002:0000267c       $SG196667                  1009867c     OposConstants.obj
+ 0002:0000268c       $SG188475                  1009868c     OposConstants.obj
+ 0002:000026a8       $SG196668                  100986a8     OposConstants.obj
+ 0002:000026b0       $SG188476                  100986b0     OposConstants.obj
+ 0002:000026b8       $SG196669                  100986b8     OposConstants.obj
  0002:00002708       $SG188477                  10098708     OposConstants.obj
  0002:000027e0       $SG188480                  100987e0     OposConstants.obj
  0002:000027f4       $SG188481                  100987f4     OposConstants.obj
@@ -7987,30 +7987,30 @@
  0002:00002c30       $SG188578                  10098c30     OposConstants.obj
  0002:00002d08       $SG188580                  10098d08     OposConstants.obj
  0002:00002d74       $SG188592                  10098d74     OposConstants.obj
- 0002:00002d7c       $SG196820                  10098d7c     OposConstants.obj
+ 0002:00002d7c       $SG196821                  10098d7c     OposConstants.obj
  0002:00002d98       $SG188581                  10098d98     OposConstants.obj
  0002:00002de0       $SG188582                  10098de0     OposConstants.obj
  0002:00002e4c       $SG188583                  10098e4c     OposConstants.obj
  0002:00002e7c       $SG188591                  10098e7c     OposConstants.obj
- 0002:00002e8c       $SG196821                  10098e8c     OposConstants.obj
+ 0002:00002e8c       $SG196822                  10098e8c     OposConstants.obj
  0002:00002e94       $SG184161                  10098e94     OposConstants.obj
  0002:00002e98       $SG188593                  10098e98     OposConstants.obj
- 0002:00002f70       $SG196822                  10098f70     OposConstants.obj
- 0002:00002fc0       $SG196851                  10098fc0     OposConstants.obj
- 0002:00002fd8       $SG196852                  10098fd8     OposConstants.obj
- 0002:00002fe0       $SG196853                  10098fe0     OposConstants.obj
- 0002:000030b8       $SG196887                  100990b8     OposConstants.obj
- 0002:000030d0       $SG196888                  100990d0     OposConstants.obj
- 0002:000030d8       $SG196889                  100990d8     OposConstants.obj
- 0002:000031b0       $SG196923                  100991b0     OposConstants.obj
- 0002:000031c8       $SG196924                  100991c8     OposConstants.obj
- 0002:000031d0       $SG196925                  100991d0     OposConstants.obj
- 0002:000032a8       $SG196959                  100992a8     OposConstants.obj
- 0002:000032c0       $SG196960                  100992c0     OposConstants.obj
- 0002:000032c8       $SG196961                  100992c8     OposConstants.obj
- 0002:000033a0       $SG197183                  100993a0     OposConstants.obj
- 0002:000033b0       $SG197184                  100993b0     OposConstants.obj
- 0002:000033b8       $SG197185                  100993b8     OposConstants.obj
+ 0002:00002f70       $SG196823                  10098f70     OposConstants.obj
+ 0002:00002fc0       $SG196852                  10098fc0     OposConstants.obj
+ 0002:00002fd8       $SG196853                  10098fd8     OposConstants.obj
+ 0002:00002fe0       $SG196854                  10098fe0     OposConstants.obj
+ 0002:000030b8       $SG196888                  100990b8     OposConstants.obj
+ 0002:000030d0       $SG196889                  100990d0     OposConstants.obj
+ 0002:000030d8       $SG196890                  100990d8     OposConstants.obj
+ 0002:000031b0       $SG196924                  100991b0     OposConstants.obj
+ 0002:000031c8       $SG196925                  100991c8     OposConstants.obj
+ 0002:000031d0       $SG196926                  100991d0     OposConstants.obj
+ 0002:000032a8       $SG196960                  100992a8     OposConstants.obj
+ 0002:000032c0       $SG196961                  100992c0     OposConstants.obj
+ 0002:000032c8       $SG196962                  100992c8     OposConstants.obj
+ 0002:000033a0       $SG197184                  100993a0     OposConstants.obj
+ 0002:000033b0       $SG197185                  100993b0     OposConstants.obj
+ 0002:000033b8       $SG197186                  100993b8     OposConstants.obj
  0002:00003408       $SG184144                  10099408     OposConstants.obj
  0002:00003418       $SG184145                  10099418     OposConstants.obj
  0002:00003420       $SG184146                  10099420     OposConstants.obj
@@ -8059,33 +8059,33 @@
  0002:000038f8       $SG113324                  100998f8     OposConstants.obj
  0002:00003908       $SG114466                  10099908     OposConstants.obj
  0002:0000392c       $SG114467                  1009992c     OposConstants.obj
- 0002:00003934       $SG196483                  10099934     OposConstants.obj
+ 0002:00003934       $SG196484                  10099934     OposConstants.obj
  0002:00003970       $SG114468                  10099970     OposConstants.obj
- 0002:00003a48       $SG196458                  10099a48     OposConstants.obj
- 0002:00003a60       $SG196459                  10099a60     OposConstants.obj
- 0002:00003a68       $SG196460                  10099a68     OposConstants.obj
- 0002:00003b3c       $SG196520                  10099b3c     OposConstants.obj
- 0002:00003b60       $SG196463                  10099b60     OposConstants.obj
- 0002:00003bcc       $SG196484                  10099bcc     OposConstants.obj
- 0002:00003bd4       $SG196527                  10099bd4     OposConstants.obj
- 0002:00003c00       $SG196464                  10099c00     OposConstants.obj
- 0002:00003c50       $SG196485                  10099c50     OposConstants.obj
- 0002:00003d24       $SG196521                  10099d24     OposConstants.obj
- 0002:00003d2c       $SG196546                  10099d2c     OposConstants.obj
- 0002:00003d50       $SG196522                  10099d50     OposConstants.obj
- 0002:00003e24       $SG196528                  10099e24     OposConstants.obj
- 0002:00003e2c       $SG196549                  10099e2c     OposConstants.obj
- 0002:00003e50       $SG196529                  10099e50     OposConstants.obj
- 0002:00003f24       $SG196547                  10099f24     OposConstants.obj
- 0002:00003f2c       $SG196569                  10099f2c     OposConstants.obj
- 0002:00003f50       $SG196548                  10099f50     OposConstants.obj
- 0002:00004024       $SG196550                  1009a024     OposConstants.obj
- 0002:0000402c       $SG196593                  1009a02c     OposConstants.obj
- 0002:00004068       $SG196551                  1009a068     OposConstants.obj
- 0002:0000413c       $SG196570                  1009a13c     OposConstants.obj
- 0002:00004148       $SG196571                  1009a148     OposConstants.obj
- 0002:0000421c       $SG196594                  1009a21c     OposConstants.obj
- 0002:00004228       $SG196595                  1009a228     OposConstants.obj
+ 0002:00003a48       $SG196459                  10099a48     OposConstants.obj
+ 0002:00003a60       $SG196460                  10099a60     OposConstants.obj
+ 0002:00003a68       $SG196461                  10099a68     OposConstants.obj
+ 0002:00003b3c       $SG196521                  10099b3c     OposConstants.obj
+ 0002:00003b60       $SG196464                  10099b60     OposConstants.obj
+ 0002:00003bcc       $SG196485                  10099bcc     OposConstants.obj
+ 0002:00003bd4       $SG196528                  10099bd4     OposConstants.obj
+ 0002:00003c00       $SG196465                  10099c00     OposConstants.obj
+ 0002:00003c50       $SG196486                  10099c50     OposConstants.obj
+ 0002:00003d24       $SG196522                  10099d24     OposConstants.obj
+ 0002:00003d2c       $SG196547                  10099d2c     OposConstants.obj
+ 0002:00003d50       $SG196523                  10099d50     OposConstants.obj
+ 0002:00003e24       $SG196529                  10099e24     OposConstants.obj
+ 0002:00003e2c       $SG196550                  10099e2c     OposConstants.obj
+ 0002:00003e50       $SG196530                  10099e50     OposConstants.obj
+ 0002:00003f24       $SG196548                  10099f24     OposConstants.obj
+ 0002:00003f2c       $SG196570                  10099f2c     OposConstants.obj
+ 0002:00003f50       $SG196549                  10099f50     OposConstants.obj
+ 0002:00004024       $SG196551                  1009a024     OposConstants.obj
+ 0002:0000402c       $SG196594                  1009a02c     OposConstants.obj
+ 0002:00004068       $SG196552                  1009a068     OposConstants.obj
+ 0002:0000413c       $SG196571                  1009a13c     OposConstants.obj
+ 0002:00004148       $SG196572                  1009a148     OposConstants.obj
+ 0002:0000421c       $SG196595                  1009a21c     OposConstants.obj
+ 0002:00004228       $SG196596                  1009a228     OposConstants.obj
  0002:00007b80       _GS_ExceptionPointers      1009db80     LIBCMTD:gs_report.obj
  0002:00007b90       ?_RTC_ErrorMessages@@3QBQBDB 1009db90     LIBCMTD:error.obj
  0002:00007ba8       ?_RTC_NoFalsePositives@@3QBHB 1009dba8     LIBCMTD:error.obj
@@ -8494,5 +8494,5 @@
  0003:00003f64       __pmatherr_set             100c1f64     libucrtd:libm_error.obj
  0004:00000140       $R000000                   100c2140     OposConstants.res
  0004:00000aa8       $R000968                   100c2aa8     OposConstants.res
- 0004:0001da70       $R01D930                   100dfa70     OposConstants.res
- 0004:0001dab0       $R01D970                   100dfab0     OposConstants.res
+ 0004:0001dac8       $R01D988                   100dfac8     OposConstants.res
+ 0004:0001db08       $R01D9C8                   100dfb08     OposConstants.res

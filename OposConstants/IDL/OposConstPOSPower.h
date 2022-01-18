@@ -33,5 +33,6 @@ enum
     PWR_SUE_USER_STANDBY                      = 25,
     PWR_SUE_SUSPEND                           = 26,
     PWR_SUE_USER_SUSPEND                      = 27,
-    PWR_SUE_PWR_SOURCE                        = 28
+    PWR_SUE_PWR_SOURCE                        = 28,
+    PWR_SUE_BAT_CAPACITY_REMAINING_IN_SECONDS = 29
 } OPOSPOSPowerConstants;

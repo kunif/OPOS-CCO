@@ -1,6 +1,6 @@
                      OPOS Common Control Objects
-                               1.16.000 (Beta5)
-                      Updated January 18, 2022
+                               1.16.000 (Beta6)
+                      Updated January 21, 2022
 
 Contents of this file:
  * Features
@@ -87,6 +87,10 @@ This key's permissions must allow at least read access.
 ====================================================================
     Update History
 ====================================================================
+
+1.16.000 (Beta6) - January 21, 2022
+
+ * Correct Lights device OCX/PIA/Policy. becouse .idl source code was incorrect.
 
 1.16.000 (Beta5) - January 18, 2022
 

@@ -1,6 +1,6 @@
  OPOSLights
 
- Timestamp is 61c670e6 (Sat Dec 25 10:16:22 2021)
+ Timestamp is 61ea191a (Fri Jan 21 11:23:22 2022)
 
  Preferred load address is 0000000180000000
 
@@ -63,26 +63,26 @@
 
   Address         Publics by Value              Rva+Base               Lib:Object
 
- 0000:00000000       ___safe_se_handler_table   0000000000000000     <absolute>
- 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
  0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
  0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
  0000:00000000       __guard_iat_table          0000000000000000     <absolute>
- 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
- 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
- 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
- 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
- 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
- 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
- 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
  0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
- 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
  0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
  0000:00000000       ___safe_se_handler_count   0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
  0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
  0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
  0000:00000000       __guard_fids_table         0000000000000000     <absolute>
- 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
  0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
  0000:00000000       __enclave_config           0000000000000000     <absolute>
  0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
@@ -119,28 +119,28 @@
  0001:000009f4       ?Reset@?$CComEnumImpl@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@@ATL@@UEAAJXZ 00000001800019f4 f i Lights.obj
  0001:000009f4       ?Reset@?$CComEnumImpl@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPEAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@@ATL@@UEAAJXZ 00000001800019f4 f i Lights.obj
  0001:00000a00       ?Clone@?$CComEnumImpl@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@@ATL@@UEAAJPEAPEAUIEnumConnections@@@Z 0000000180001a00 f i Lights.obj
- 0001:00000b2c       ?AddRef@?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAKXZ 0000000180001b2c f i Lights.obj
  0001:00000b2c       ?AddRef@?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPEAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAKXZ 0000000180001b2c f i Lights.obj
- 0001:00000b38       ?Release@?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAKXZ 0000000180001b38 f i Lights.obj
+ 0001:00000b2c       ?AddRef@?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAKXZ 0000000180001b2c f i Lights.obj
  0001:00000b38       ?Release@?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPEAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAKXZ 0000000180001b38 f i Lights.obj
+ 0001:00000b38       ?Release@?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAKXZ 0000000180001b38 f i Lights.obj
  0001:00000b8c       ?QueryInterface@?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z 0000000180001b8c f i Lights.obj
- 0001:00000ba0       ??_G?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAPEAXI@Z 0000000180001ba0 f i Lights.obj
  0001:00000ba0       ??_E?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAPEAXI@Z 0000000180001ba0 f i Lights.obj
- 0001:00000bf8       _guard_check_icall_nop     0000000180001bf8 f i LIBCMT:guard_support.obj
+ 0001:00000ba0       ??_G?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAPEAXI@Z 0000000180001ba0 f i Lights.obj
  0001:00000bf8       ?ObjectMain@CComObjectRootBase@ATL@@SAX_N@Z 0000000180001bf8 f i Lights.obj
+ 0001:00000bf8       _guard_check_icall_nop     0000000180001bf8 f i LIBCMT:guard_support.obj
  0001:00000bf8       ?OnFinalMessage@?$CWindowImplBaseT@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@2@@ATL@@UEAAXPEAUHWND__@@@Z 0000000180001bf8 f i Lights.obj
- 0001:00000bfc       ?EnableModeless@?$IOleInPlaceActiveObjectImpl@VCOPOSLights@@@ATL@@UEAAJH@Z 0000000180001bfc f i Lights.obj
- 0001:00000bfc       ?OnAmbientPropertyChange@?$IOleControlImpl@VCOPOSLights@@@ATL@@UEAAJJ@Z 0000000180001bfc f i Lights.obj
- 0001:00000bfc       ?SaveCompleted@?$IPersistStorageImpl@VCOPOSLights@@@ATL@@UEAAJPEAUIStorage@@@Z 0000000180001bfc f i Lights.obj
- 0001:00000bfc       ?Release@CRegObject@ATL@@UEAAKXZ 0000000180001bfc f i Lights.obj
- 0001:00000bfc       ?ResizeBorder@?$IOleInPlaceActiveObjectImpl@VCOPOSLights@@@ATL@@UEAAJPEBUtagRECT@@PEAUIOleInPlaceUIWindow@@H@Z 0000000180001bfc f i Lights.obj
- 0001:00000bfc       ?SetHostNames@?$IOleObjectImpl@VCOPOSLights@@@ATL@@UEAAJPEB_W0@Z 0000000180001bfc f i Lights.obj
  0001:00000bfc       ?HandsOffStorage@?$IPersistStorageImpl@VCOPOSLights@@@ATL@@UEAAJXZ 0000000180001bfc f i Lights.obj
  0001:00000bfc       ?OnFrameWindowActivate@?$IOleInPlaceActiveObjectImpl@VCOPOSLights@@@ATL@@UEAAJH@Z 0000000180001bfc f i Lights.obj
+ 0001:00000bfc       ?SetHostNames@?$IOleObjectImpl@VCOPOSLights@@@ATL@@UEAAJPEB_W0@Z 0000000180001bfc f i Lights.obj
+ 0001:00000bfc       ?Release@CRegObject@ATL@@UEAAKXZ 0000000180001bfc f i Lights.obj
  0001:00000bfc       ?GetObjectDescription@?$CComCoClass@VCOPOSLights@@$1?CLSID_OPOSLights@@3U_GUID@@B@ATL@@SAPEB_WXZ 0000000180001bfc f i Lights.obj
+ 0001:00000bfc       ?EnableModeless@?$IOleInPlaceActiveObjectImpl@VCOPOSLights@@@ATL@@UEAAJH@Z 0000000180001bfc f i Lights.obj
  0001:00000bfc       ?Update@?$IOleObjectImpl@VCOPOSLights@@@ATL@@UEAAJXZ 0000000180001bfc f i Lights.obj
- 0001:00000bfc       ?GetCategoryMap@CComObjectRootBase@ATL@@SAPEBU_ATL_CATMAP_ENTRY@2@XZ 0000000180001bfc f i Lights.obj
+ 0001:00000bfc       ?ResizeBorder@?$IOleInPlaceActiveObjectImpl@VCOPOSLights@@@ATL@@UEAAJPEBUtagRECT@@PEAUIOleInPlaceUIWindow@@H@Z 0000000180001bfc f i Lights.obj
  0001:00000bfc       ?IsUpToDate@?$IOleObjectImpl@VCOPOSLights@@@ATL@@UEAAJXZ 0000000180001bfc f i Lights.obj
+ 0001:00000bfc       ?OnAmbientPropertyChange@?$IOleControlImpl@VCOPOSLights@@@ATL@@UEAAJJ@Z 0000000180001bfc f i Lights.obj
+ 0001:00000bfc       ?GetCategoryMap@CComObjectRootBase@ATL@@SAPEBU_ATL_CATMAP_ENTRY@2@XZ 0000000180001bfc f i Lights.obj
+ 0001:00000bfc       ?SaveCompleted@?$IPersistStorageImpl@VCOPOSLights@@@ATL@@UEAAJPEAUIStorage@@@Z 0000000180001bfc f i Lights.obj
  0001:00000c00       ??_E?$CComObject@VCOPOSLights@@@ATL@@W7EAAPEAXI@Z 0000000180001c00 f i Lights.obj
  0001:00000c0c       ??_E?$CComObject@VCOPOSLights@@@ATL@@WHA@EAAPEAXI@Z 0000000180001c0c f i Lights.obj
  0001:00000c18       ?QueryInterface@?$CComObject@VCOPOSLights@@@ATL@@WLI@EAAJAEBU_GUID@@PEAPEAX@Z 0000000180001c18 f i Lights.obj
@@ -233,8 +233,8 @@
  0001:0000102c       ?Release@?$CComContainedObject@VCOPOSLights@@@ATL@@WBEA@EAAKXZ 000000018000202c f i Lights.obj
  0001:00001038       ?CreateInstance@CComClassFactory@ATL@@UEAAJPEAUIUnknown@@AEBU_GUID@@PEAPEAX@Z 0000000180002038 f i Lights.obj
  0001:00001098       ?LockServer@CComClassFactory@ATL@@UEAAJH@Z 0000000180002098 f i Lights.obj
- 0001:000010bc       ??_ECComClassFactory@ATL@@UEAAPEAXI@Z 00000001800020bc f i Lights.obj
  0001:000010bc       ??_GCComClassFactory@ATL@@UEAAPEAXI@Z 00000001800020bc f i Lights.obj
+ 0001:000010bc       ??_ECComClassFactory@ATL@@UEAAPEAXI@Z 00000001800020bc f i Lights.obj
  0001:0000110c       ?GetWindowProc@?$CWindowImplBaseT@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@2@@ATL@@UEAAP6A_JPEAUHWND__@@I_K_J@ZXZ 000000018000210c f i Lights.obj
  0001:00001114       ?StartWindowProc@?$CWindowImplBaseT@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@2@@ATL@@SA_JPEAUHWND__@@I_K_J@Z 0000000180002114 f i Lights.obj
  0001:000011c8       ?GetTypeInfoCount@?$IDispatchImpl@UIOPOSLights@@$1?IID_IOPOSLights@@3U_GUID@@B$1?LIBID_OposLights_CCO@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UEAAJPEAI@Z 00000001800021c8 f i Lights.obj
@@ -243,38 +243,38 @@
  0001:0000124c       ?Invoke@?$IDispatchImpl@UIOPOSLights@@$1?IID_IOPOSLights@@3U_GUID@@B$1?LIBID_OposLights_CCO@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UEAAJJAEBU_GUID@@KGPEAUtagDISPPARAMS@@PEAUtagVARIANT@@PEAUtagEXCEPINFO@@PEAI@Z 000000018000224c f i Lights.obj
  0001:000012dc       ?CreateControlWindow@?$CComControl@VCOPOSLights@@V?$CWindowImpl@VCOPOSLights@@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@3@@ATL@@@ATL@@UEAAPEAUHWND__@@PEAU3@AEAUtagRECT@@@Z 00000001800022dc f i Lights.obj
  0001:00001314       ?ControlQueryInterface@?$CComControl@VCOPOSLights@@V?$CWindowImpl@VCOPOSLights@@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@3@@ATL@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z 0000000180002314 f i Lights.obj
+ 0001:00001328       ?GetUserClassID@?$IOleObjectImpl@VCOPOSLights@@@ATL@@UEAAJPEAU_GUID@@@Z 0000000180002328 f i Lights.obj
  0001:00001328       ?GetClassID@?$IPersistStreamInitImpl@VCOPOSLights@@@ATL@@UEAAJPEAU_GUID@@@Z 0000000180002328 f i Lights.obj
  0001:00001328       ?GetClassID@?$IPersistStorageImpl@VCOPOSLights@@@ATL@@UEAAJPEAU_GUID@@@Z 0000000180002328 f i Lights.obj
- 0001:00001328       ?GetUserClassID@?$IOleObjectImpl@VCOPOSLights@@@ATL@@UEAAJPEAU_GUID@@@Z 0000000180002328 f i Lights.obj
  0001:00001344       ?IsDirty@?$IPersistStreamInitImpl@VCOPOSLights@@@ATL@@UEAAJXZ 0000000180002344 f i Lights.obj
  0001:00001360       ?Load@?$IPersistStreamInitImpl@VCOPOSLights@@@ATL@@UEAAJPEAUIStream@@@Z 0000000180002360 f i Lights.obj
  0001:00001378       ?Save@?$IPersistStreamInitImpl@VCOPOSLights@@@ATL@@UEAAJPEAUIStream@@H@Z 0000000180002378 f i Lights.obj
  0001:00001390       ?GetSizeMax@?$IPersistStreamInitImpl@VCOPOSLights@@@ATL@@UEAAJPEAT_ULARGE_INTEGER@@@Z 0000000180002390 f i Lights.obj
  0001:000015b4       ?InitNew@?$IPersistStreamInitImpl@VCOPOSLights@@@ATL@@UEAAJXZ 00000001800025b4 f i Lights.obj
- 0001:000015cc       ?Freeze@?$IViewObjectExImpl@VCOPOSLights@@@ATL@@UEAAJKJPEAXPEAK@Z 00000001800025cc f i Lights.obj
- 0001:000015cc       ?GetControlInfo@?$IOleControlImpl@VCOPOSLights@@@ATL@@UEAAJPEAUtagCONTROLINFO@@@Z 00000001800025cc f i Lights.obj
- 0001:000015cc       ?SOOutputCompleteDummy@COPOSLights@@MEAAJJ@Z 00000001800025cc f i Lights.obj
- 0001:000015cc       ?EnumFormatEtc@?$IDataObjectImpl@VCOPOSLights@@@ATL@@UEAAJKPEAPEAUIEnumFORMATETC@@@Z 00000001800025cc f i Lights.obj
- 0001:000015cc       ?GetClipboardData@?$IOleObjectImpl@VCOPOSLights@@@ATL@@UEAAJKPEAPEAUIDataObject@@@Z 00000001800025cc f i Lights.obj
- 0001:000015cc       ?GetDropTarget@?$IOleInPlaceObjectWindowlessImpl@VCOPOSLights@@@ATL@@UEAAJPEAPEAUIDropTarget@@@Z 00000001800025cc f i Lights.obj
- 0001:000015cc       ?SetColorScheme@?$IOleObjectImpl@VCOPOSLights@@@ATL@@UEAAJPEAUtagLOGPALETTE@@@Z 00000001800025cc f i Lights.obj
- 0001:000015cc       ?GetRect@?$IViewObjectExImpl@VCOPOSLights@@@ATL@@UEAAJKPEAU_RECTL@@@Z 00000001800025cc f i Lights.obj
- 0001:000015cc       ?QueryGetData@?$IDataObjectImpl@VCOPOSLights@@@ATL@@UEAAJPEAUtagFORMATETC@@@Z 00000001800025cc f i Lights.obj
- 0001:000015cc       ?InitFromData@?$IOleObjectImpl@VCOPOSLights@@@ATL@@UEAAJPEAUIDataObject@@HK@Z 00000001800025cc f i Lights.obj
- 0001:000015cc       ?GetCanonicalFormatEtc@?$IDataObjectImpl@VCOPOSLights@@@ATL@@UEAAJPEAUtagFORMATETC@@0@Z 00000001800025cc f i Lights.obj
- 0001:000015cc       ?ContextSensitiveHelp@?$IOleInPlaceObjectWindowlessImpl@VCOPOSLights@@@ATL@@UEAAJH@Z 00000001800025cc f i Lights.obj
- 0001:000015cc       ?OnMnemonic@?$IOleControlImpl@VCOPOSLights@@@ATL@@UEAAJPEAUtagMSG@@@Z 00000001800025cc f i Lights.obj
- 0001:000015cc       ?ReactivateAndUndo@?$IOleInPlaceObjectWindowlessImpl@VCOPOSLights@@@ATL@@UEAAJXZ 00000001800025cc f i Lights.obj
- 0001:000015cc       ?GetColorSet@?$IViewObjectExImpl@VCOPOSLights@@@ATL@@UEAAJKJPEAXPEAUtagDVTARGETDEVICE@@PEAUHDC__@@PEAPEAUtagLOGPALETTE@@@Z 00000001800025cc f i Lights.obj
- 0001:000015cc       ?SOErrorDummy@COPOSLights@@MEAAJJJJPEAJ@Z 00000001800025cc f i Lights.obj
- 0001:000015cc       ?SODataDummy@COPOSLights@@MEAAJJ@Z 00000001800025cc f i Lights.obj
- 0001:000015cc       ?GetDataHere@?$IDataObjectImpl@VCOPOSLights@@@ATL@@UEAAJPEAUtagFORMATETC@@PEAUtagSTGMEDIUM@@@Z 00000001800025cc f i Lights.obj
- 0001:000015cc       ?SetMoniker@?$IOleObjectImpl@VCOPOSLights@@@ATL@@UEAAJKPEAUIMoniker@@@Z 00000001800025cc f i Lights.obj
- 0001:000015cc       ?SetData@?$IDataObjectImpl@VCOPOSLights@@@ATL@@UEAAJPEAUtagFORMATETC@@PEAUtagSTGMEDIUM@@H@Z 00000001800025cc f i Lights.obj
- 0001:000015cc       ?ContextSensitiveHelp@?$IOleInPlaceActiveObjectImpl@VCOPOSLights@@@ATL@@UEAAJH@Z 00000001800025cc f i Lights.obj
- 0001:000015cc       ?QueryInterface@CRegObject@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z 00000001800025cc f i Lights.obj
  0001:000015cc       ?Unfreeze@?$IViewObjectExImpl@VCOPOSLights@@@ATL@@UEAAJK@Z 00000001800025cc f i Lights.obj
+ 0001:000015cc       ?ReactivateAndUndo@?$IOleInPlaceObjectWindowlessImpl@VCOPOSLights@@@ATL@@UEAAJXZ 00000001800025cc f i Lights.obj
+ 0001:000015cc       ?SetData@?$IDataObjectImpl@VCOPOSLights@@@ATL@@UEAAJPEAUtagFORMATETC@@PEAUtagSTGMEDIUM@@H@Z 00000001800025cc f i Lights.obj
+ 0001:000015cc       ?Freeze@?$IViewObjectExImpl@VCOPOSLights@@@ATL@@UEAAJKJPEAXPEAK@Z 00000001800025cc f i Lights.obj
+ 0001:000015cc       ?SOErrorDummy@COPOSLights@@MEAAJJJJPEAJ@Z 00000001800025cc f i Lights.obj
+ 0001:000015cc       ?GetCanonicalFormatEtc@?$IDataObjectImpl@VCOPOSLights@@@ATL@@UEAAJPEAUtagFORMATETC@@0@Z 00000001800025cc f i Lights.obj
+ 0001:000015cc       ?ContextSensitiveHelp@?$IOleInPlaceActiveObjectImpl@VCOPOSLights@@@ATL@@UEAAJH@Z 00000001800025cc f i Lights.obj
+ 0001:000015cc       ?EnumFormatEtc@?$IDataObjectImpl@VCOPOSLights@@@ATL@@UEAAJKPEAPEAUIEnumFORMATETC@@@Z 00000001800025cc f i Lights.obj
+ 0001:000015cc       ?QueryGetData@?$IDataObjectImpl@VCOPOSLights@@@ATL@@UEAAJPEAUtagFORMATETC@@@Z 00000001800025cc f i Lights.obj
  0001:000015cc       ?GetMoniker@?$IOleObjectImpl@VCOPOSLights@@@ATL@@UEAAJKKPEAPEAUIMoniker@@@Z 00000001800025cc f i Lights.obj
+ 0001:000015cc       ?SetMoniker@?$IOleObjectImpl@VCOPOSLights@@@ATL@@UEAAJKPEAUIMoniker@@@Z 00000001800025cc f i Lights.obj
+ 0001:000015cc       ?GetDataHere@?$IDataObjectImpl@VCOPOSLights@@@ATL@@UEAAJPEAUtagFORMATETC@@PEAUtagSTGMEDIUM@@@Z 00000001800025cc f i Lights.obj
+ 0001:000015cc       ?GetColorSet@?$IViewObjectExImpl@VCOPOSLights@@@ATL@@UEAAJKJPEAXPEAUtagDVTARGETDEVICE@@PEAUHDC__@@PEAPEAUtagLOGPALETTE@@@Z 00000001800025cc f i Lights.obj
+ 0001:000015cc       ?InitFromData@?$IOleObjectImpl@VCOPOSLights@@@ATL@@UEAAJPEAUIDataObject@@HK@Z 00000001800025cc f i Lights.obj
+ 0001:000015cc       ?GetClipboardData@?$IOleObjectImpl@VCOPOSLights@@@ATL@@UEAAJKPEAPEAUIDataObject@@@Z 00000001800025cc f i Lights.obj
+ 0001:000015cc       ?ContextSensitiveHelp@?$IOleInPlaceObjectWindowlessImpl@VCOPOSLights@@@ATL@@UEAAJH@Z 00000001800025cc f i Lights.obj
+ 0001:000015cc       ?GetDropTarget@?$IOleInPlaceObjectWindowlessImpl@VCOPOSLights@@@ATL@@UEAAJPEAPEAUIDropTarget@@@Z 00000001800025cc f i Lights.obj
+ 0001:000015cc       ?SOOutputCompleteDummy@COPOSLights@@MEAAJJ@Z 00000001800025cc f i Lights.obj
+ 0001:000015cc       ?GetControlInfo@?$IOleControlImpl@VCOPOSLights@@@ATL@@UEAAJPEAUtagCONTROLINFO@@@Z 00000001800025cc f i Lights.obj
+ 0001:000015cc       ?SetColorScheme@?$IOleObjectImpl@VCOPOSLights@@@ATL@@UEAAJPEAUtagLOGPALETTE@@@Z 00000001800025cc f i Lights.obj
+ 0001:000015cc       ?QueryInterface@CRegObject@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z 00000001800025cc f i Lights.obj
+ 0001:000015cc       ?OnMnemonic@?$IOleControlImpl@VCOPOSLights@@@ATL@@UEAAJPEAUtagMSG@@@Z 00000001800025cc f i Lights.obj
+ 0001:000015cc       ?GetRect@?$IViewObjectExImpl@VCOPOSLights@@@ATL@@UEAAJKPEAU_RECTL@@@Z 00000001800025cc f i Lights.obj
+ 0001:000015cc       ?SODataDummy@COPOSLights@@MEAAJJ@Z 00000001800025cc f i Lights.obj
  0001:000015d4       ?SetClientSite@?$IOleObjectImpl@VCOPOSLights@@@ATL@@UEAAJPEAUIOleClientSite@@@Z 00000001800025d4 f i Lights.obj
  0001:000015f0       ?GetClientSite@?$IOleObjectImpl@VCOPOSLights@@@ATL@@UEAAJPEAPEAUIOleClientSite@@@Z 00000001800025f0 f i Lights.obj
  0001:00001638       ?Close@?$IOleObjectImpl@VCOPOSLights@@@ATL@@UEAAJK@Z 0000000180002638 f i Lights.obj
@@ -324,14 +324,14 @@
  0001:00002580       _get_startup_argv_mode     0000000180003580 f i LIBCMT:argv_mode.obj
  0001:00002588       ?GetInterfaceSafetyOptions@?$IObjectSafetyImpl@VCOPOSLights@@$02@ATL@@UEAAJAEBU_GUID@@PEAK1@Z 0000000180003588 f i Lights.obj
  0001:0000261c       ?SetInterfaceSafetyOptions@?$IObjectSafetyImpl@VCOPOSLights@@$02@ATL@@UEAAJAEBU_GUID@@KK@Z 000000018000361c f i Lights.obj
- 0001:000026c0       ?_LocCPQueryInterface@?$IConnectionPointImpl@VCOPOSLights@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z 00000001800036c0 f i Lights.obj
  0001:000026c0       ?_LocCPQueryInterface@?$IConnectionPointImpl@VCOPOSLights@@$1?DIID__IOPOSLightsEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z 00000001800036c0 f i Lights.obj
+ 0001:000026c0       ?_LocCPQueryInterface@?$IConnectionPointImpl@VCOPOSLights@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z 00000001800036c0 f i Lights.obj
  0001:00002734       ?GetConnectionInterface@?$IConnectionPointImpl@VCOPOSLights@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UEAAJPEAU_GUID@@@Z 0000000180003734 f i Lights.obj
  0001:00002750       ?GetConnectionPointContainer@?$IConnectionPointImpl@VCOPOSLights@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UEAAJPEAPEAUIConnectionPointContainer@@@Z 0000000180003750 f i Lights.obj
  0001:00002770       ?Advise@?$IConnectionPointImpl@VCOPOSLights@@$1?DIID__IOPOSLightsEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UEAAJPEAUIUnknown@@PEAK@Z 0000000180003770 f i Lights.obj
  0001:00002770       ?Advise@?$IConnectionPointImpl@VCOPOSLights@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UEAAJPEAUIUnknown@@PEAK@Z 0000000180003770 f i Lights.obj
- 0001:0000282c       ?Unadvise@?$IConnectionPointImpl@VCOPOSLights@@$1?DIID__IOPOSLightsEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UEAAJK@Z 000000018000382c f i Lights.obj
  0001:0000282c       ?Unadvise@?$IConnectionPointImpl@VCOPOSLights@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UEAAJK@Z 000000018000382c f i Lights.obj
+ 0001:0000282c       ?Unadvise@?$IConnectionPointImpl@VCOPOSLights@@$1?DIID__IOPOSLightsEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UEAAJK@Z 000000018000382c f i Lights.obj
  0001:00002894       ?EnumConnections@?$IConnectionPointImpl@VCOPOSLights@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UEAAJPEAPEAUIEnumConnections@@@Z 0000000180003894 f i Lights.obj
  0001:00002894       ?EnumConnections@?$IConnectionPointImpl@VCOPOSLights@@$1?DIID__IOPOSLightsEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UEAAJPEAPEAUIEnumConnections@@@Z 0000000180003894 f i Lights.obj
  0001:00002a28       ?GetConnectionInterface@?$IConnectionPointImpl@VCOPOSLights@@$1?DIID__IOPOSLightsEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UEAAJPEAU_GUID@@@Z 0000000180003a28 f i Lights.obj
@@ -349,8 +349,8 @@
  0001:00002c7c       ?UpdateRegistryFromResourceD@CComModule@ATL@@UEAAJPEB_WHPEAU_ATL_REGMAP_ENTRY@2@@Z 0000000180003c7c f i Lights.obj
  0001:00002c84       ?UpdateRegistryFromResource@CComModule@ATL@@UEAAJPEB_WHPEAU_ATL_REGMAP_ENTRY@2@@Z 0000000180003c84 f i Lights.obj
  0001:00002c8c       ?UpdateRegistryFromResource@CComModule@ATL@@UEAAJIHPEAU_ATL_REGMAP_ENTRY@2@@Z 0000000180003c8c f i Lights.obj
- 0001:00002c94       ??_GCComModule@ATL@@UEAAPEAXI@Z 0000000180003c94 f i Lights.obj
  0001:00002c94       ??_ECComModule@ATL@@UEAAPEAXI@Z 0000000180003c94 f i Lights.obj
+ 0001:00002c94       ??_GCComModule@ATL@@UEAAPEAXI@Z 0000000180003c94 f i Lights.obj
  0001:00002cd4       ?CreateInstance@?$CComCreator@V?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@@ATL@@SAJPEAXAEBU_GUID@@PEAPEAX@Z 0000000180003cd4 f i Lights.obj
  0001:00002df8       ?CreateInstance@?$CComCreator2@V?$CComCreator@V?$CComObject@VCOPOSLights@@@ATL@@@ATL@@V?$CComCreator@V?$CComAggObject@VCOPOSLights@@@ATL@@@2@@ATL@@SAJPEAXAEBU_GUID@@PEAPEAX@Z 0000000180003df8 f i Lights.obj
  0001:00002e08       ?AddRef@?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UEAAKXZ 0000000180003e08 f i Lights.obj
@@ -362,8 +362,8 @@
  0001:00002fa4       ?Skip@?$CComEnumImpl@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPEAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@@ATL@@UEAAJK@Z 0000000180003fa4 f i Lights.obj
  0001:00002fd0       ?Clone@?$CComEnumImpl@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPEAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@@ATL@@UEAAJPEAPEAUIEnumConnectionPoints@@@Z 0000000180003fd0 f i Lights.obj
  0001:000030fc       ?QueryInterface@?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPEAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z 00000001800040fc f i Lights.obj
- 0001:00003110       ??_E?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPEAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAPEAXI@Z 0000000180004110 f i Lights.obj
  0001:00003110       ??_G?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPEAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAPEAXI@Z 0000000180004110 f i Lights.obj
+ 0001:00003110       ??_E?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPEAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAPEAXI@Z 0000000180004110 f i Lights.obj
  0001:00003168       ?AddReplacement@CRegObject@ATL@@UEAAJPEB_W0@Z 0000000180004168 f i Lights.obj
  0001:00003198       ?ClearReplacements@CRegObject@ATL@@UEAAJXZ 0000000180004198 f i Lights.obj
  0001:000031a4       ??_ECRegObject@ATL@@UEAAPEAXI@Z 00000001800041a4 f i Lights.obj
@@ -374,8 +374,8 @@
  0001:000032e4       ?AddRef@?$CComContainedObject@VCOPOSLights@@@ATL@@UEAAKXZ 00000001800042e4 f i Lights.obj
  0001:000032f4       ?Release@?$CComContainedObject@VCOPOSLights@@@ATL@@UEAAKXZ 00000001800042f4 f i Lights.obj
  0001:00003304       ?QueryInterface@?$CComContainedObject@VCOPOSLights@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z 0000000180004304 f i Lights.obj
- 0001:00003314       ??_E?$CComAggObject@VCOPOSLights@@@ATL@@UEAAPEAXI@Z 0000000180004314 f i Lights.obj
  0001:00003314       ??_G?$CComAggObject@VCOPOSLights@@@ATL@@UEAAPEAXI@Z 0000000180004314 f i Lights.obj
+ 0001:00003314       ??_E?$CComAggObject@VCOPOSLights@@@ATL@@UEAAPEAXI@Z 0000000180004314 f i Lights.obj
  0001:0000336c       ?AddRef@?$CComObject@VCOPOSLights@@@ATL@@UEAAKXZ 000000018000436c f i Lights.obj
  0001:0000337c       ?Release@?$CComObject@VCOPOSLights@@@ATL@@UEAAKXZ 000000018000437c f i Lights.obj
  0001:000033d4       ?QueryInterface@?$CComObject@VCOPOSLights@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z 00000001800043d4 f i Lights.obj
@@ -389,17 +389,17 @@
  0001:00003acc       ??1?$CComObject@VCOPOSLights@@@ATL@@UEAA@XZ 0000000180004acc f i Lights.obj
  0001:00003bec       ??_G?$CComContainedObject@VCOPOSLights@@@ATL@@UEAAPEAXI@Z 0000000180004bec f i Lights.obj
  0001:00003bec       ??_E?$CComContainedObject@VCOPOSLights@@@ATL@@UEAAPEAXI@Z 0000000180004bec f i Lights.obj
- 0001:00003c20       ??_E?$CComObject@VCOPOSLights@@@ATL@@UEAAPEAXI@Z 0000000180004c20 f i Lights.obj
  0001:00003c20       ??_G?$CComObject@VCOPOSLights@@@ATL@@UEAAPEAXI@Z 0000000180004c20 f i Lights.obj
+ 0001:00003c20       ??_E?$CComObject@VCOPOSLights@@@ATL@@UEAAPEAXI@Z 0000000180004c20 f i Lights.obj
  0001:00003c54       ?Add@?$CSimpleArray@GV?$CSimpleArrayEqualHelper@G@ATL@@@ATL@@QEAAHAEBG@Z 0000000180004c54 f i Lights.obj
  0001:00003cf4       ?Add@?$CSimpleMap@PEA_WPEA_WVCExpansionVectorEqualHelper@ATL@@@ATL@@QEAAHAEBQEA_W0@Z 0000000180004cf4 f i Lights.obj
  0001:00003d90       ?Add@CComDynamicUnkArray@ATL@@QEAAKPEAUIUnknown@@@Z 0000000180004d90 f i Lights.obj
  0001:00003e74       ?Add@CExpansionVector@ATL@@QEAAHPEB_W0@Z 0000000180004e74 f i Lights.obj
  0001:00003fa8       ?AddTermFunc@CAtlModule@ATL@@QEAAJP6AX_K@Z0@Z 0000000180004fa8 f i Lights.obj
  0001:00004044       ?AddValue@CRegParser@ATL@@IEAAJAEAVCRegKey@2@PEB_WPEA_W@Z 0000000180005044 f i Lights.obj
- 0001:00004454       ?AllocateHeap@?$CTempBuffer@E$0BAA@VCCRTAllocator@ATL@@@ATL@@AEAAX_K@Z 0000000180005454 f i Lights.obj
- 0001:00004454       ?AllocateHeap@?$CTempBuffer@_W$0EAA@VCCRTAllocator@ATL@@@ATL@@AEAAX_K@Z 0000000180005454 f i Lights.obj
  0001:00004454       ?AllocateHeap@?$CTempBuffer@_W$0BAA@VCCRTAllocator@ATL@@@ATL@@AEAAX_K@Z 0000000180005454 f i Lights.obj
+ 0001:00004454       ?AllocateHeap@?$CTempBuffer@_W$0EAA@VCCRTAllocator@ATL@@@ATL@@AEAAX_K@Z 0000000180005454 f i Lights.obj
+ 0001:00004454       ?AllocateHeap@?$CTempBuffer@E$0BAA@VCCRTAllocator@ATL@@@ATL@@AEAAX_K@Z 0000000180005454 f i Lights.obj
  0001:00004480       ?Append@CParseBuffer@CRegParser@ATL@@QEAAHPEB_WH@Z 0000000180005480 f i Lights.obj
  0001:000045b4       ?AtlComModuleGetClassObject@ATL@@YAJPEAU_ATL_COM_MODULE70@1@AEBU_GUID@@1PEAPEAX@Z 00000001800055b4 f i Lights.obj
  0001:000046f0       ?AtlComModuleRegisterServer@ATL@@YAJPEAU_ATL_COM_MODULE70@1@HPEBU_GUID@@@Z 00000001800056f0 f i Lights.obj
@@ -431,8 +431,8 @@
  0001:00006044       ?FireViewChange@CComControlBase@ATL@@QEAAJXZ 0000000180007044 f i Lights.obj
  0001:000060a8       ?Fire_DirectIOEvent@?$CProxy_IOPOSEvents@VCOPOSLights@@@@QEAAXJPEAJPEAPEA_W@Z 00000001800070a8 f i Lights.obj
  0001:00006208       ?Fire_StatusUpdateEvent@?$CProxy_IOPOSEvents@VCOPOSLights@@@@QEAAXJ@Z 0000000180007208 f i Lights.obj
- 0001:000062f4       ?FreeHeap@?$CTempBuffer@E$0BAA@VCCRTAllocator@ATL@@@ATL@@AEAAXXZ 00000001800072f4 f i Lights.obj
  0001:000062f4       ?FreeHeap@?$CTempBuffer@_W$0BAA@VCCRTAllocator@ATL@@@ATL@@AEAAXXZ 00000001800072f4 f i Lights.obj
+ 0001:000062f4       ?FreeHeap@?$CTempBuffer@E$0BAA@VCCRTAllocator@ATL@@@ATL@@AEAAXXZ 00000001800072f4 f i Lights.obj
  0001:000062f4       ?FreeHeap@?$CTempBuffer@_W$0EAA@VCCRTAllocator@ATL@@@ATL@@AEAAXXZ 00000001800072f4 f i Lights.obj
  0001:000062fc       ?GetAmbientLocaleID@CComControlBase@ATL@@QEAAJAEAK@Z 00000001800072fc f i Lights.obj
  0001:000063bc       ?GetAmbientUserMode@CComControlBase@ATL@@QEAAJAEAH@Z 00000001800073bc f i Lights.obj
@@ -622,17 +622,17 @@
  0001:0000eed8       ??0bad_array_new_length@std@@QEAA@AEBV01@@Z 000000018000fed8 f i LIBCMT:throw_bad_alloc.obj
  0001:0000ef14       ??0bad_array_new_length@std@@QEAA@XZ 000000018000ff14 f i LIBCMT:throw_bad_alloc.obj
  0001:0000ef34       ??0exception@std@@QEAA@AEBV01@@Z 000000018000ff34 f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000ef68       ??1bad_alloc@std@@UEAA@XZ  000000018000ff68 f i LIBCMT:throw_bad_alloc.obj
  0001:0000ef68       ??1bad_array_new_length@std@@UEAA@XZ 000000018000ff68 f i LIBCMT:throw_bad_alloc.obj
  0001:0000ef68       ??1bad_exception@std@@UEAA@XZ 000000018000ff68 f i libvcruntime:frame.obj
- 0001:0000ef68       ??1bad_alloc@std@@UEAA@XZ  000000018000ff68 f i LIBCMT:throw_bad_alloc.obj
- 0001:0000ef7c       ??_Ebad_array_new_length@std@@UEAAPEAXI@Z 000000018000ff7c f i LIBCMT:throw_bad_alloc.obj
  0001:0000ef7c       ??_Gbad_array_new_length@std@@UEAAPEAXI@Z 000000018000ff7c f i LIBCMT:throw_bad_alloc.obj
- 0001:0000ef7c       ??_Gbad_alloc@std@@UEAAPEAXI@Z 000000018000ff7c f i LIBCMT:throw_bad_alloc.obj
- 0001:0000ef7c       ??_Ebad_alloc@std@@UEAAPEAXI@Z 000000018000ff7c f i LIBCMT:throw_bad_alloc.obj
- 0001:0000ef7c       ??_Ebad_exception@std@@UEAAPEAXI@Z 000000018000ff7c f i libvcruntime:frame.obj
- 0001:0000ef7c       ??_Gbad_exception@std@@UEAAPEAXI@Z 000000018000ff7c f i libvcruntime:frame.obj
  0001:0000ef7c       ??_Gexception@std@@UEAAPEAXI@Z 000000018000ff7c f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000ef7c       ??_Ebad_alloc@std@@UEAAPEAXI@Z 000000018000ff7c f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000ef7c       ??_Ebad_array_new_length@std@@UEAAPEAXI@Z 000000018000ff7c f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000ef7c       ??_Gbad_alloc@std@@UEAAPEAXI@Z 000000018000ff7c f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000ef7c       ??_Gbad_exception@std@@UEAAPEAXI@Z 000000018000ff7c f i libvcruntime:frame.obj
  0001:0000ef7c       ??_Eexception@std@@UEAAPEAXI@Z 000000018000ff7c f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000ef7c       ??_Ebad_exception@std@@UEAAPEAXI@Z 000000018000ff7c f i libvcruntime:frame.obj
  0001:0000efc0       ?__scrt_throw_std_bad_alloc@@YAXXZ 000000018000ffc0 f   LIBCMT:throw_bad_alloc.obj
  0001:0000efe0       ?__scrt_throw_std_bad_array_new_length@@YAXXZ 000000018000ffe0 f   LIBCMT:throw_bad_alloc.obj
  0001:0000f000       ?what@exception@std@@UEBAPEBDXZ 0000000180010000 f i LIBCMT:throw_bad_alloc.obj
@@ -650,8 +650,8 @@
  0001:0000f580       wcsstr                     0000000180010580 f   libvcruntime:wcsstr.obj
  0001:0000f7b0       memcmp                     00000001800107b0 f   libvcruntime:memcmp.obj
  0001:0000f890       memcpy_repmovs             0000000180010890 f   libvcruntime:memcpy.obj
- 0001:0000f8b0       memcpy                     00000001800108b0 f   libvcruntime:memcpy.obj
  0001:0000f8b0       memmove                    00000001800108b0 f   libvcruntime:memcpy.obj
+ 0001:0000f8b0       memcpy                     00000001800108b0 f   libvcruntime:memcpy.obj
  0001:0000ff40       memset_repmovs             0000000180010f40 f   libvcruntime:memset.obj
  0001:0000ff60       memset                     0000000180010f60 f   libvcruntime:memset.obj
  0001:000100f0       __vcrt_initialize          00000001800110f0 f   libvcruntime:initialization.obj
@@ -2176,7 +2176,7 @@
  0003:000015e0       ?_OptionsStorage@?1??__local_stdio_scanf_options@@9@4_KA 00000001800365e0     LIBCMT:default_local_stdio_options.obj
  0003:000015f0       ?_AtlBaseModule@ATL@@3VCAtlBaseModule@1@A 00000001800365f0     atls:atlbase.obj
  0003:00001650       ?__AtlThunkPool@@3PEAT_SLIST_HEADER@@EA 0000000180036650     atls:atlthunk.obj
- 0003:0000167c       __@@_PchSym_@00@UzABUPdlipUCAUhUrmgvinvwrzgvUexgllohUzgohOmzgrevkilqPBACIAJCBDBUlyqiUznwGEUhgwzucOlyq@4B2008FD98C1DD4 000000018003667c     atls:stdafx.obj
+ 0003:0000167c       __@@_PchSym_@00@UzABUPdlipUEJUhUrmgvinvwrzgvUexgllohUzgohOmzgrevkilqPBACIAJCBDBUlyqiUznwGEUhgwzucOlyq@4B2008FD98C1DD4 000000018003667c     atls:stdafx.obj
  0003:00001680       ?__WinRTOutOfMemoryExceptionCallback@@3P6APEAXXZEA 0000000180036680     libvcruntime:ehhelpers.obj
  0003:00001688       __pPurecall                0000000180036688     libvcruntime:purevirt_data.obj
  0003:00001740       ?pArgList@UnDecorator@@0PEAVReplicator@@EA 0000000180036740     libvcruntime:undname.obj

@@ -10,7 +10,7 @@
 **  2013/09/29 Update license section.
 **  2015/02/07 Update license section.
 **  2015/02/07 Version 1.14.001.
-**  2021/12/25 Version 1.16.000.                                    K. Fukuchi
+**  2022/01/21 Version 1.16.000.                                    K. Fukuchi
 **
 *****************************************************************************
 **
@@ -218,7 +218,7 @@ import "ocidl.idl";
         helpstring("IOPOSLights 1.16 Interface"),
         pointer_default(unique)
     ]
-    interface IOPOSLights_1_16 : IDispatch
+    interface IOPOSLights_1_16 : IOPOSLights_1_12
     {
     // Release 1.16
         [propget, id(74), helpstring("property CapPattern")]

@@ -1,6 +1,6 @@
  Opos_Interfaces
 
- Timestamp is 61a75bed (Wed Dec  1 20:26:37 2021)
+ Timestamp is 61fa0eeb (Wed Feb  2 13:56:11 2022)
 
  Preferred load address is 10000000
 
@@ -3970,8 +3970,8 @@
  0002:00007e44       ??_C@_1BC@GCKHIPE@?$AAN?$AAo?$AAR?$AAe?$AAm?$AAo?$AAv?$AAe@ 1009de44     atls:stdafx.obj
  0002:00007e58       ??_C@_1O@JDLOHAN@?$AAD?$AAe?$AAl?$AAe?$AAt?$AAe@ 1009de58     atls:stdafx.obj
  0002:00007e70       ?nothrow@std@@3Unothrow_t@1@B 1009de70     LIBCMTD:std_nothrow.obj
- 0002:00007e74       __pDefaultRawDllMain       1009de74     LIBCMTD:dll_dllmain.obj
  0002:00007e74       __pRawDllMain              1009de74     LIBCMTD:dll_dllmain.obj
+ 0002:00007e74       __pDefaultRawDllMain       1009de74     LIBCMTD:dll_dllmain.obj
  0002:00007f18       ??_C@_0NN@JMPELKLB@The?5value?5of?5ESP?5was?5not?5proper@ 1009df18     LIBCMTD:error.obj
  0002:00007ff8       ??_C@_0BBN@ELNNILBE@A?5cast?5to?5a?5smaller?5data?5type?5h@ 1009dff8     LIBCMTD:error.obj
  0002:00008118       ??_C@_0BN@BPOGFMJL@Stack?5memory?5was?5corrupted?$AN?6@ 1009e118     LIBCMTD:error.obj
@@ -5762,7 +5762,7 @@
  0003:00002bb4       ?bInitialized@?1??DeleteSubKey@CRegKey@ATL@@QAEJPB_W@Z@4_NA 100c0bb4     OposInterfaces.obj
  0003:00002bb8       ?_Module@@3VCComModule@ATL@@A 100c0bb8     OposInterfaces.obj
  0003:00002c0c       ?_AtlBaseModule@ATL@@3VCAtlBaseModule@1@A 100c0c0c     atls:atlbase.obj
- 0003:00002c44       ___@@_PchSym_@00@UzABUPdlipUBAUhUrmgvinvwrzgvUexgllohUzgohOmzgrevkilqPBACIAJCBDBUlyqiUcIGUhgwzucOlyq@4B2008FD98C1DD4 100c0c44     atls:stdafx.obj
+ 0003:00002c44       ___@@_PchSym_@00@UzABUPdlipUDIUhUrmgvinvwrzgvUexgllohUzgohOmzgrevkilqPBACIAJCBDBUlyqiUcIGUhgwzucOlyq@4B2008FD98C1DD4 100c0c44     atls:stdafx.obj
  0003:00002c48       ___scrt_current_native_startup_state 100c0c48     LIBCMTD:utility.obj
  0003:00002c4c       ___scrt_native_startup_lock 100c0c4c     LIBCMTD:utility.obj
  0003:00002f90       ___isa_available           100c0f90     LIBCMTD:cpu_disp.obj

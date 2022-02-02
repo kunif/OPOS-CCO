@@ -33,7 +33,7 @@ dispinterface IOPOSGraphicDisplaySO
         [id(20)] LONG GetOpenResult(void);
 
         // Device Specific Method
-        [id(81)] LONG CancelLoading(void);
+        [id(81)] LONG CancelURLLoading(void);
         [id(82)] LONG GoURLBack(void);
         [id(83)] LONG GoURLForward(void);
         [id(84)] LONG LoadImage([in] BSTR FileName);

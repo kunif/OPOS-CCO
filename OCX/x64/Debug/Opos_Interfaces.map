@@ -1,6 +1,6 @@
  Opos_Interfaces
 
- Timestamp is 61a75932 (Wed Dec  1 20:14:58 2021)
+ Timestamp is 61fa0ede (Wed Feb  2 13:55:58 2022)
 
  Preferred load address is 0000000180000000
 
@@ -5753,7 +5753,7 @@
  0003:00002e80       ?bInitialized@?1??DeleteSubKey@CRegKey@ATL@@QEAAJPEB_W@Z@4_NA 00000001800f4e80     OposInterfaces.obj
  0003:00002e90       ?_Module@@3VCComModule@ATL@@A 00000001800f4e90     OposInterfaces.obj
  0003:00002f30       ?_AtlBaseModule@ATL@@3VCAtlBaseModule@1@A 00000001800f4f30     atls:atlbase.obj
- 0003:00002f90       __@@_PchSym_@00@UzABUPdlipUCAUhUrmgvinvwrzgvUexgllohUzgohOmzgrevkilqPBACIAJCBDBUlyqiUznwGEUhgwzucOlyq@4B2008FD98C1DD4 00000001800f4f90     atls:stdafx.obj
+ 0003:00002f90       __@@_PchSym_@00@UzABUPdlipUEJUhUrmgvinvwrzgvUexgllohUzgohOmzgrevkilqPBACIAJCBDBUlyqiUznwGEUhgwzucOlyq@4B2008FD98C1DD4 00000001800f4f90     atls:stdafx.obj
  0003:00002f98       __scrt_current_native_startup_state 00000001800f4f98     LIBCMTD:utility.obj
  0003:00002fa0       __scrt_native_startup_lock 00000001800f4fa0     LIBCMTD:utility.obj
  0003:00003564       __favor                    00000001800f5564     LIBCMTD:cpu_disp.obj

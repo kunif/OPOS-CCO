@@ -4,7 +4,7 @@
 !!
 !!     Date                   Modification                          Author
 !! -----------|----------------------------------------------------|----------
-!!  2021/12/02 1.16.000: Initial version.                           K. Fukuchi
+!!  2022/02/02 1.16.000: Initial version.                           K. Fukuchi
 !!
 !!***************************************************************************
 
@@ -139,7 +139,7 @@ UUIDEvents      =UUID*
   RW 1.16  77 Volume(LONG)
 !
 !> Specific Methods
- M   1.16 100 CancelLoading()
+ M   1.16 100 CancelURLLoading()
  M   1.16 101 GoURLBack()
  M   1.16 102 GoURLForward()
  M   1.16 103 LoadImage(BSTR FileName)

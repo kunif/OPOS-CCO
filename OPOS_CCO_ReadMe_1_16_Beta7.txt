@@ -1,6 +1,6 @@
                      OPOS Common Control Objects
-                               1.16.000 (Beta6)
-                      Updated January 21, 2022
+                               1.16.000 (Beta7)
+                      Updated February 2, 2022
 
 Contents of this file:
  * Features
@@ -87,6 +87,10 @@ This key's permissions must allow at least read access.
 ====================================================================
     Update History
 ====================================================================
+
+1.16.000 (Beta7) - February 2, 2022
+
+ * Correct GraphicDisplay device OCX/PIA/Policy, Opos_Interfaces.dll. becouse method name was incorrect.
 
 1.16.000 (Beta6) - January 21, 2022
 

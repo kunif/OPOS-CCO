@@ -1,6 +1,6 @@
  OPOSGraphicDisplay
 
- Timestamp is 61a757d8 (Wed Dec  1 20:09:12 2021)
+ Timestamp is 61fa0ec2 (Wed Feb  2 13:55:30 2022)
 
  Preferred load address is 0000000180000000
 
@@ -59,7 +59,7 @@
  0004:00000000 00002064H .pdata                  DATA
  0005:00000000 000000f4H _RDATA                  DATA
  0006:00000000 00000220H .rsrc$01                DATA
- 0006:00000220 00004340H .rsrc$02                DATA
+ 0006:00000220 00004348H .rsrc$02                DATA
 
   Address         Publics by Value              Rva+Base               Lib:Object
 
@@ -121,26 +121,26 @@
  0001:00000a00       ?Clone@?$CComEnumImpl@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@@ATL@@UEAAJPEAPEAUIEnumConnections@@@Z 0000000180001a00 f i GraphicDisplay.obj
  0001:00000b2c       ?AddRef@?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAKXZ 0000000180001b2c f i GraphicDisplay.obj
  0001:00000b2c       ?AddRef@?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPEAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAKXZ 0000000180001b2c f i GraphicDisplay.obj
- 0001:00000b38       ?Release@?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPEAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAKXZ 0000000180001b38 f i GraphicDisplay.obj
  0001:00000b38       ?Release@?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAKXZ 0000000180001b38 f i GraphicDisplay.obj
+ 0001:00000b38       ?Release@?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPEAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAKXZ 0000000180001b38 f i GraphicDisplay.obj
  0001:00000b8c       ?QueryInterface@?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z 0000000180001b8c f i GraphicDisplay.obj
  0001:00000ba0       ??_E?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAPEAXI@Z 0000000180001ba0 f i GraphicDisplay.obj
  0001:00000ba0       ??_G?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAPEAXI@Z 0000000180001ba0 f i GraphicDisplay.obj
  0001:00000bf8       ?OnFinalMessage@?$CWindowImplBaseT@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@2@@ATL@@UEAAXPEAUHWND__@@@Z 0000000180001bf8 f i GraphicDisplay.obj
  0001:00000bf8       _guard_check_icall_nop     0000000180001bf8 f i LIBCMT:guard_support.obj
  0001:00000bf8       ?ObjectMain@CComObjectRootBase@ATL@@SAX_N@Z 0000000180001bf8 f i GraphicDisplay.obj
- 0001:00000bfc       ?Release@CRegObject@ATL@@UEAAKXZ 0000000180001bfc f i GraphicDisplay.obj
- 0001:00000bfc       ?SaveCompleted@?$IPersistStorageImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEAUIStorage@@@Z 0000000180001bfc f i GraphicDisplay.obj
- 0001:00000bfc       ?Update@?$IOleObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJXZ 0000000180001bfc f i GraphicDisplay.obj
  0001:00000bfc       ?ResizeBorder@?$IOleInPlaceActiveObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEBUtagRECT@@PEAUIOleInPlaceUIWindow@@H@Z 0000000180001bfc f i GraphicDisplay.obj
  0001:00000bfc       ?OnAmbientPropertyChange@?$IOleControlImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJJ@Z 0000000180001bfc f i GraphicDisplay.obj
- 0001:00000bfc       ?IsUpToDate@?$IOleObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJXZ 0000000180001bfc f i GraphicDisplay.obj
- 0001:00000bfc       ?GetObjectDescription@?$CComCoClass@VCOPOSGraphicDisplay@@$1?CLSID_OPOSGraphicDisplay@@3U_GUID@@B@ATL@@SAPEB_WXZ 0000000180001bfc f i GraphicDisplay.obj
  0001:00000bfc       ?EnableModeless@?$IOleInPlaceActiveObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJH@Z 0000000180001bfc f i GraphicDisplay.obj
- 0001:00000bfc       ?OnFrameWindowActivate@?$IOleInPlaceActiveObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJH@Z 0000000180001bfc f i GraphicDisplay.obj
  0001:00000bfc       ?GetCategoryMap@CComObjectRootBase@ATL@@SAPEBU_ATL_CATMAP_ENTRY@2@XZ 0000000180001bfc f i GraphicDisplay.obj
- 0001:00000bfc       ?HandsOffStorage@?$IPersistStorageImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJXZ 0000000180001bfc f i GraphicDisplay.obj
  0001:00000bfc       ?SetHostNames@?$IOleObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEB_W0@Z 0000000180001bfc f i GraphicDisplay.obj
+ 0001:00000bfc       ?SaveCompleted@?$IPersistStorageImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEAUIStorage@@@Z 0000000180001bfc f i GraphicDisplay.obj
+ 0001:00000bfc       ?HandsOffStorage@?$IPersistStorageImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJXZ 0000000180001bfc f i GraphicDisplay.obj
+ 0001:00000bfc       ?IsUpToDate@?$IOleObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJXZ 0000000180001bfc f i GraphicDisplay.obj
+ 0001:00000bfc       ?Update@?$IOleObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJXZ 0000000180001bfc f i GraphicDisplay.obj
+ 0001:00000bfc       ?GetObjectDescription@?$CComCoClass@VCOPOSGraphicDisplay@@$1?CLSID_OPOSGraphicDisplay@@3U_GUID@@B@ATL@@SAPEB_WXZ 0000000180001bfc f i GraphicDisplay.obj
+ 0001:00000bfc       ?Release@CRegObject@ATL@@UEAAKXZ 0000000180001bfc f i GraphicDisplay.obj
+ 0001:00000bfc       ?OnFrameWindowActivate@?$IOleInPlaceActiveObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJH@Z 0000000180001bfc f i GraphicDisplay.obj
  0001:00000c00       ??_E?$CComObject@VCOPOSGraphicDisplay@@@ATL@@W7EAAPEAXI@Z 0000000180001c00 f i GraphicDisplay.obj
  0001:00000c0c       ??_E?$CComObject@VCOPOSGraphicDisplay@@@ATL@@WHA@EAAPEAXI@Z 0000000180001c0c f i GraphicDisplay.obj
  0001:00000c18       ?QueryInterface@?$CComObject@VCOPOSGraphicDisplay@@@ATL@@WLI@EAAJAEBU_GUID@@PEAPEAX@Z 0000000180001c18 f i GraphicDisplay.obj
@@ -243,35 +243,35 @@
  0001:0000124c       ?Invoke@?$IDispatchImpl@UIOPOSGraphicDisplay@@$1?IID_IOPOSGraphicDisplay@@3U_GUID@@B$1?LIBID_OposGraphicDisplay_CCO@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UEAAJJAEBU_GUID@@KGPEAUtagDISPPARAMS@@PEAUtagVARIANT@@PEAUtagEXCEPINFO@@PEAI@Z 000000018000224c f i GraphicDisplay.obj
  0001:000012dc       ?CreateControlWindow@?$CComControl@VCOPOSGraphicDisplay@@V?$CWindowImpl@VCOPOSGraphicDisplay@@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@3@@ATL@@@ATL@@UEAAPEAUHWND__@@PEAU3@AEAUtagRECT@@@Z 00000001800022dc f i GraphicDisplay.obj
  0001:00001314       ?ControlQueryInterface@?$CComControl@VCOPOSGraphicDisplay@@V?$CWindowImpl@VCOPOSGraphicDisplay@@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@3@@ATL@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z 0000000180002314 f i GraphicDisplay.obj
- 0001:00001328       ?GetClassID@?$IPersistStreamInitImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEAU_GUID@@@Z 0000000180002328 f i GraphicDisplay.obj
- 0001:00001328       ?GetClassID@?$IPersistStorageImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEAU_GUID@@@Z 0000000180002328 f i GraphicDisplay.obj
  0001:00001328       ?GetUserClassID@?$IOleObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEAU_GUID@@@Z 0000000180002328 f i GraphicDisplay.obj
+ 0001:00001328       ?GetClassID@?$IPersistStorageImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEAU_GUID@@@Z 0000000180002328 f i GraphicDisplay.obj
+ 0001:00001328       ?GetClassID@?$IPersistStreamInitImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEAU_GUID@@@Z 0000000180002328 f i GraphicDisplay.obj
  0001:00001344       ?IsDirty@?$IPersistStreamInitImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJXZ 0000000180002344 f i GraphicDisplay.obj
  0001:00001360       ?Load@?$IPersistStreamInitImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEAUIStream@@@Z 0000000180002360 f i GraphicDisplay.obj
  0001:00001378       ?Save@?$IPersistStreamInitImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEAUIStream@@H@Z 0000000180002378 f i GraphicDisplay.obj
  0001:00001390       ?GetSizeMax@?$IPersistStreamInitImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEAT_ULARGE_INTEGER@@@Z 0000000180002390 f i GraphicDisplay.obj
  0001:000015b4       ?InitNew@?$IPersistStreamInitImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJXZ 00000001800025b4 f i GraphicDisplay.obj
- 0001:000015cc       ?SODataDummy@COPOSGraphicDisplay@@MEAAJJ@Z 00000001800025cc f i GraphicDisplay.obj
- 0001:000015cc       ?SetColorScheme@?$IOleObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEAUtagLOGPALETTE@@@Z 00000001800025cc f i GraphicDisplay.obj
- 0001:000015cc       ?GetDataHere@?$IDataObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEAUtagFORMATETC@@PEAUtagSTGMEDIUM@@@Z 00000001800025cc f i GraphicDisplay.obj
- 0001:000015cc       ?Freeze@?$IViewObjectExImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJKJPEAXPEAK@Z 00000001800025cc f i GraphicDisplay.obj
  0001:000015cc       ?GetColorSet@?$IViewObjectExImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJKJPEAXPEAUtagDVTARGETDEVICE@@PEAUHDC__@@PEAPEAUtagLOGPALETTE@@@Z 00000001800025cc f i GraphicDisplay.obj
- 0001:000015cc       ?Unfreeze@?$IViewObjectExImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJK@Z 00000001800025cc f i GraphicDisplay.obj
- 0001:000015cc       ?InitFromData@?$IOleObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEAUIDataObject@@HK@Z 00000001800025cc f i GraphicDisplay.obj
  0001:000015cc       ?QueryGetData@?$IDataObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEAUtagFORMATETC@@@Z 00000001800025cc f i GraphicDisplay.obj
+ 0001:000015cc       ?Unfreeze@?$IViewObjectExImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJK@Z 00000001800025cc f i GraphicDisplay.obj
+ 0001:000015cc       ?SetColorScheme@?$IOleObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEAUtagLOGPALETTE@@@Z 00000001800025cc f i GraphicDisplay.obj
  0001:000015cc       ?GetDropTarget@?$IOleInPlaceObjectWindowlessImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEAPEAUIDropTarget@@@Z 00000001800025cc f i GraphicDisplay.obj
- 0001:000015cc       ?GetRect@?$IViewObjectExImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJKPEAU_RECTL@@@Z 00000001800025cc f i GraphicDisplay.obj
- 0001:000015cc       ?QueryInterface@CRegObject@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z 00000001800025cc f i GraphicDisplay.obj
- 0001:000015cc       ?SetMoniker@?$IOleObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJKPEAUIMoniker@@@Z 00000001800025cc f i GraphicDisplay.obj
- 0001:000015cc       ?ContextSensitiveHelp@?$IOleInPlaceActiveObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJH@Z 00000001800025cc f i GraphicDisplay.obj
- 0001:000015cc       ?GetControlInfo@?$IOleControlImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEAUtagCONTROLINFO@@@Z 00000001800025cc f i GraphicDisplay.obj
- 0001:000015cc       ?GetCanonicalFormatEtc@?$IDataObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEAUtagFORMATETC@@0@Z 00000001800025cc f i GraphicDisplay.obj
- 0001:000015cc       ?ReactivateAndUndo@?$IOleInPlaceObjectWindowlessImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJXZ 00000001800025cc f i GraphicDisplay.obj
- 0001:000015cc       ?GetClipboardData@?$IOleObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJKPEAPEAUIDataObject@@@Z 00000001800025cc f i GraphicDisplay.obj
- 0001:000015cc       ?GetMoniker@?$IOleObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJKKPEAPEAUIMoniker@@@Z 00000001800025cc f i GraphicDisplay.obj
+ 0001:000015cc       ?InitFromData@?$IOleObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEAUIDataObject@@HK@Z 00000001800025cc f i GraphicDisplay.obj
  0001:000015cc       ?OnMnemonic@?$IOleControlImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEAUtagMSG@@@Z 00000001800025cc f i GraphicDisplay.obj
  0001:000015cc       ?EnumFormatEtc@?$IDataObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJKPEAPEAUIEnumFORMATETC@@@Z 00000001800025cc f i GraphicDisplay.obj
+ 0001:000015cc       ?GetDataHere@?$IDataObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEAUtagFORMATETC@@PEAUtagSTGMEDIUM@@@Z 00000001800025cc f i GraphicDisplay.obj
+ 0001:000015cc       ?SODataDummy@COPOSGraphicDisplay@@MEAAJJ@Z 00000001800025cc f i GraphicDisplay.obj
+ 0001:000015cc       ?GetCanonicalFormatEtc@?$IDataObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEAUtagFORMATETC@@0@Z 00000001800025cc f i GraphicDisplay.obj
+ 0001:000015cc       ?ContextSensitiveHelp@?$IOleInPlaceActiveObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJH@Z 00000001800025cc f i GraphicDisplay.obj
+ 0001:000015cc       ?GetClipboardData@?$IOleObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJKPEAPEAUIDataObject@@@Z 00000001800025cc f i GraphicDisplay.obj
+ 0001:000015cc       ?GetMoniker@?$IOleObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJKKPEAPEAUIMoniker@@@Z 00000001800025cc f i GraphicDisplay.obj
+ 0001:000015cc       ?QueryInterface@CRegObject@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z 00000001800025cc f i GraphicDisplay.obj
  0001:000015cc       ?ContextSensitiveHelp@?$IOleInPlaceObjectWindowlessImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJH@Z 00000001800025cc f i GraphicDisplay.obj
+ 0001:000015cc       ?GetRect@?$IViewObjectExImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJKPEAU_RECTL@@@Z 00000001800025cc f i GraphicDisplay.obj
+ 0001:000015cc       ?SetMoniker@?$IOleObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJKPEAUIMoniker@@@Z 00000001800025cc f i GraphicDisplay.obj
+ 0001:000015cc       ?ReactivateAndUndo@?$IOleInPlaceObjectWindowlessImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJXZ 00000001800025cc f i GraphicDisplay.obj
+ 0001:000015cc       ?GetControlInfo@?$IOleControlImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEAUtagCONTROLINFO@@@Z 00000001800025cc f i GraphicDisplay.obj
+ 0001:000015cc       ?Freeze@?$IViewObjectExImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJKJPEAXPEAK@Z 00000001800025cc f i GraphicDisplay.obj
  0001:000015cc       ?SetData@?$IDataObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEAUtagFORMATETC@@PEAUtagSTGMEDIUM@@H@Z 00000001800025cc f i GraphicDisplay.obj
  0001:000015d4       ?SetClientSite@?$IOleObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEAUIOleClientSite@@@Z 00000001800025d4 f i GraphicDisplay.obj
  0001:000015f0       ?GetClientSite@?$IOleObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEAPEAUIOleClientSite@@@Z 00000001800025f0 f i GraphicDisplay.obj
@@ -317,19 +317,19 @@
  0001:000024b8       ?EnumDAdvise@?$IDataObjectImpl@VCOPOSGraphicDisplay@@@ATL@@UEAAJPEAPEAUIEnumSTATDATA@@@Z 00000001800034b8 f i GraphicDisplay.obj
  0001:000024f4       ?GetClassInfoW@?$IProvideClassInfo2Impl@$1?CLSID_OPOSGraphicDisplay@@3U_GUID@@B$1?DIID__IOPOSGraphicDisplayEvents@@3U2@B$1?LIBID_OposGraphicDisplay_CCO@@3U2@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UEAAJPEAPEAUITypeInfo@@@Z 00000001800034f4 f i GraphicDisplay.obj
  0001:0000254c       ?GetGUID@?$IProvideClassInfo2Impl@$1?CLSID_OPOSGraphicDisplay@@3U_GUID@@B$1?DIID__IOPOSGraphicDisplayEvents@@3U2@B$1?LIBID_OposGraphicDisplay_CCO@@3U2@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@UEAAJKPEAU_GUID@@@Z 000000018000354c f i GraphicDisplay.obj
+ 0001:00002580       ?FAccessAllowed@?$IObjectSafetyImpl@VCOPOSGraphicDisplay@@$02@ATL@@MEAAHXZ 0000000180003580 f i GraphicDisplay.obj
  0001:00002580       ?AddRef@CRegObject@ATL@@UEAAKXZ 0000000180003580 f i GraphicDisplay.obj
  0001:00002580       _get_startup_argv_mode     0000000180003580 f i LIBCMT:argv_mode.obj
- 0001:00002580       ?FAccessAllowed@?$IObjectSafetyImpl@VCOPOSGraphicDisplay@@$02@ATL@@MEAAHXZ 0000000180003580 f i GraphicDisplay.obj
  0001:00002588       ?GetInterfaceSafetyOptions@?$IObjectSafetyImpl@VCOPOSGraphicDisplay@@$02@ATL@@UEAAJAEBU_GUID@@PEAK1@Z 0000000180003588 f i GraphicDisplay.obj
  0001:0000261c       ?SetInterfaceSafetyOptions@?$IObjectSafetyImpl@VCOPOSGraphicDisplay@@$02@ATL@@UEAAJAEBU_GUID@@KK@Z 000000018000361c f i GraphicDisplay.obj
- 0001:000026c0       ?_LocCPQueryInterface@?$IConnectionPointImpl@VCOPOSGraphicDisplay@@$1?DIID__IOPOSGraphicDisplayEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z 00000001800036c0 f i GraphicDisplay.obj
  0001:000026c0       ?_LocCPQueryInterface@?$IConnectionPointImpl@VCOPOSGraphicDisplay@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z 00000001800036c0 f i GraphicDisplay.obj
+ 0001:000026c0       ?_LocCPQueryInterface@?$IConnectionPointImpl@VCOPOSGraphicDisplay@@$1?DIID__IOPOSGraphicDisplayEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z 00000001800036c0 f i GraphicDisplay.obj
  0001:00002734       ?GetConnectionInterface@?$IConnectionPointImpl@VCOPOSGraphicDisplay@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UEAAJPEAU_GUID@@@Z 0000000180003734 f i GraphicDisplay.obj
  0001:00002750       ?GetConnectionPointContainer@?$IConnectionPointImpl@VCOPOSGraphicDisplay@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UEAAJPEAPEAUIConnectionPointContainer@@@Z 0000000180003750 f i GraphicDisplay.obj
- 0001:00002770       ?Advise@?$IConnectionPointImpl@VCOPOSGraphicDisplay@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UEAAJPEAUIUnknown@@PEAK@Z 0000000180003770 f i GraphicDisplay.obj
  0001:00002770       ?Advise@?$IConnectionPointImpl@VCOPOSGraphicDisplay@@$1?DIID__IOPOSGraphicDisplayEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UEAAJPEAUIUnknown@@PEAK@Z 0000000180003770 f i GraphicDisplay.obj
- 0001:0000282c       ?Unadvise@?$IConnectionPointImpl@VCOPOSGraphicDisplay@@$1?DIID__IOPOSGraphicDisplayEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UEAAJK@Z 000000018000382c f i GraphicDisplay.obj
+ 0001:00002770       ?Advise@?$IConnectionPointImpl@VCOPOSGraphicDisplay@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UEAAJPEAUIUnknown@@PEAK@Z 0000000180003770 f i GraphicDisplay.obj
  0001:0000282c       ?Unadvise@?$IConnectionPointImpl@VCOPOSGraphicDisplay@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UEAAJK@Z 000000018000382c f i GraphicDisplay.obj
+ 0001:0000282c       ?Unadvise@?$IConnectionPointImpl@VCOPOSGraphicDisplay@@$1?DIID__IOPOSGraphicDisplayEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UEAAJK@Z 000000018000382c f i GraphicDisplay.obj
  0001:00002894       ?EnumConnections@?$IConnectionPointImpl@VCOPOSGraphicDisplay@@$1?DIID__IOPOSGraphicDisplayEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UEAAJPEAPEAUIEnumConnections@@@Z 0000000180003894 f i GraphicDisplay.obj
  0001:00002894       ?EnumConnections@?$IConnectionPointImpl@VCOPOSGraphicDisplay@@$1?IID_IPropertyNotifySink@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UEAAJPEAPEAUIEnumConnections@@@Z 0000000180003894 f i GraphicDisplay.obj
  0001:00002a28       ?GetConnectionInterface@?$IConnectionPointImpl@VCOPOSGraphicDisplay@@$1?DIID__IOPOSGraphicDisplayEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@UEAAJPEAU_GUID@@@Z 0000000180003a28 f i GraphicDisplay.obj
@@ -349,8 +349,8 @@
  0001:00002d54       ?UpdateRegistryFromResourceD@CComModule@ATL@@UEAAJPEB_WHPEAU_ATL_REGMAP_ENTRY@2@@Z 0000000180003d54 f i GraphicDisplay.obj
  0001:00002d5c       ?UpdateRegistryFromResource@CComModule@ATL@@UEAAJPEB_WHPEAU_ATL_REGMAP_ENTRY@2@@Z 0000000180003d5c f i GraphicDisplay.obj
  0001:00002d64       ?UpdateRegistryFromResource@CComModule@ATL@@UEAAJIHPEAU_ATL_REGMAP_ENTRY@2@@Z 0000000180003d64 f i GraphicDisplay.obj
- 0001:00002d6c       ??_GCComModule@ATL@@UEAAPEAXI@Z 0000000180003d6c f i GraphicDisplay.obj
  0001:00002d6c       ??_ECComModule@ATL@@UEAAPEAXI@Z 0000000180003d6c f i GraphicDisplay.obj
+ 0001:00002d6c       ??_GCComModule@ATL@@UEAAPEAXI@Z 0000000180003d6c f i GraphicDisplay.obj
  0001:00002dac       ?CreateInstance@?$CComCreator@V?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@@ATL@@SAJPEAXAEBU_GUID@@PEAPEAX@Z 0000000180003dac f i GraphicDisplay.obj
  0001:00002ed0       ?CreateInstance@?$CComCreator2@V?$CComCreator@V?$CComObject@VCOPOSGraphicDisplay@@@ATL@@@ATL@@V?$CComCreator@V?$CComAggObject@VCOPOSGraphicDisplay@@@ATL@@@2@@ATL@@SAJPEAXAEBU_GUID@@PEAPEAX@Z 0000000180003ed0 f i GraphicDisplay.obj
  0001:00002ee0       ?AddRef@?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UEAAKXZ 0000000180003ee0 f i GraphicDisplay.obj
@@ -362,8 +362,8 @@
  0001:0000307c       ?Skip@?$CComEnumImpl@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPEAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@@ATL@@UEAAJK@Z 000000018000407c f i GraphicDisplay.obj
  0001:000030a8       ?Clone@?$CComEnumImpl@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPEAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@@ATL@@UEAAJPEAPEAUIEnumConnectionPoints@@@Z 00000001800040a8 f i GraphicDisplay.obj
  0001:000031d4       ?QueryInterface@?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPEAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z 00000001800041d4 f i GraphicDisplay.obj
- 0001:000031e8       ??_G?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPEAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAPEAXI@Z 00000001800041e8 f i GraphicDisplay.obj
  0001:000031e8       ??_E?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPEAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAPEAXI@Z 00000001800041e8 f i GraphicDisplay.obj
+ 0001:000031e8       ??_G?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPEAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAPEAXI@Z 00000001800041e8 f i GraphicDisplay.obj
  0001:00003240       ?AddReplacement@CRegObject@ATL@@UEAAJPEB_W0@Z 0000000180004240 f i GraphicDisplay.obj
  0001:00003270       ?ClearReplacements@CRegObject@ATL@@UEAAJXZ 0000000180004270 f i GraphicDisplay.obj
  0001:0000327c       ??_GCRegObject@ATL@@UEAAPEAXI@Z 000000018000427c f i GraphicDisplay.obj
@@ -374,8 +374,8 @@
  0001:000033bc       ?AddRef@?$CComContainedObject@VCOPOSGraphicDisplay@@@ATL@@UEAAKXZ 00000001800043bc f i GraphicDisplay.obj
  0001:000033cc       ?Release@?$CComContainedObject@VCOPOSGraphicDisplay@@@ATL@@UEAAKXZ 00000001800043cc f i GraphicDisplay.obj
  0001:000033dc       ?QueryInterface@?$CComContainedObject@VCOPOSGraphicDisplay@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z 00000001800043dc f i GraphicDisplay.obj
- 0001:000033ec       ??_E?$CComAggObject@VCOPOSGraphicDisplay@@@ATL@@UEAAPEAXI@Z 00000001800043ec f i GraphicDisplay.obj
  0001:000033ec       ??_G?$CComAggObject@VCOPOSGraphicDisplay@@@ATL@@UEAAPEAXI@Z 00000001800043ec f i GraphicDisplay.obj
+ 0001:000033ec       ??_E?$CComAggObject@VCOPOSGraphicDisplay@@@ATL@@UEAAPEAXI@Z 00000001800043ec f i GraphicDisplay.obj
  0001:00003444       ?AddRef@?$CComObject@VCOPOSGraphicDisplay@@@ATL@@UEAAKXZ 0000000180004444 f i GraphicDisplay.obj
  0001:00003454       ?Release@?$CComObject@VCOPOSGraphicDisplay@@@ATL@@UEAAKXZ 0000000180004454 f i GraphicDisplay.obj
  0001:000034ac       ?QueryInterface@?$CComObject@VCOPOSGraphicDisplay@@@ATL@@UEAAJAEBU_GUID@@PEAPEAX@Z 00000001800044ac f i GraphicDisplay.obj
@@ -387,8 +387,8 @@
  0001:00003af4       ??1?$CComEnumImpl@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPEAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@@ATL@@UEAA@XZ 0000000180004af4 f i GraphicDisplay.obj
  0001:00003b4c       ??1?$CComEnumImpl@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@@ATL@@UEAA@XZ 0000000180004b4c f i GraphicDisplay.obj
  0001:00003ba4       ??1?$CComObject@VCOPOSGraphicDisplay@@@ATL@@UEAA@XZ 0000000180004ba4 f i GraphicDisplay.obj
- 0001:00003cc4       ??_E?$CComContainedObject@VCOPOSGraphicDisplay@@@ATL@@UEAAPEAXI@Z 0000000180004cc4 f i GraphicDisplay.obj
  0001:00003cc4       ??_G?$CComContainedObject@VCOPOSGraphicDisplay@@@ATL@@UEAAPEAXI@Z 0000000180004cc4 f i GraphicDisplay.obj
+ 0001:00003cc4       ??_E?$CComContainedObject@VCOPOSGraphicDisplay@@@ATL@@UEAAPEAXI@Z 0000000180004cc4 f i GraphicDisplay.obj
  0001:00003cf8       ??_E?$CComObject@VCOPOSGraphicDisplay@@@ATL@@UEAAPEAXI@Z 0000000180004cf8 f i GraphicDisplay.obj
  0001:00003cf8       ??_G?$CComObject@VCOPOSGraphicDisplay@@@ATL@@UEAAPEAXI@Z 0000000180004cf8 f i GraphicDisplay.obj
  0001:00003d2c       ?Add@?$CSimpleArray@GV?$CSimpleArrayEqualHelper@G@ATL@@@ATL@@QEAAHAEBG@Z 0000000180004d2c f i GraphicDisplay.obj
@@ -398,8 +398,8 @@
  0001:00004080       ?AddTermFunc@CAtlModule@ATL@@QEAAJP6AX_K@Z0@Z 0000000180005080 f i GraphicDisplay.obj
  0001:0000411c       ?AddValue@CRegParser@ATL@@IEAAJAEAVCRegKey@2@PEB_WPEA_W@Z 000000018000511c f i GraphicDisplay.obj
  0001:0000452c       ?AllocateHeap@?$CTempBuffer@E$0BAA@VCCRTAllocator@ATL@@@ATL@@AEAAX_K@Z 000000018000552c f i GraphicDisplay.obj
- 0001:0000452c       ?AllocateHeap@?$CTempBuffer@_W$0EAA@VCCRTAllocator@ATL@@@ATL@@AEAAX_K@Z 000000018000552c f i GraphicDisplay.obj
  0001:0000452c       ?AllocateHeap@?$CTempBuffer@_W$0BAA@VCCRTAllocator@ATL@@@ATL@@AEAAX_K@Z 000000018000552c f i GraphicDisplay.obj
+ 0001:0000452c       ?AllocateHeap@?$CTempBuffer@_W$0EAA@VCCRTAllocator@ATL@@@ATL@@AEAAX_K@Z 000000018000552c f i GraphicDisplay.obj
  0001:00004558       ?Append@CParseBuffer@CRegParser@ATL@@QEAAHPEB_WH@Z 0000000180005558 f i GraphicDisplay.obj
  0001:0000468c       ?AtlComModuleGetClassObject@ATL@@YAJPEAU_ATL_COM_MODULE70@1@AEBU_GUID@@1PEAPEAX@Z 000000018000568c f i GraphicDisplay.obj
  0001:000047c8       ?AtlComModuleRegisterServer@ATL@@YAJPEAU_ATL_COM_MODULE70@1@HPEBU_GUID@@@Z 00000001800057c8 f i GraphicDisplay.obj
@@ -433,9 +433,9 @@
  0001:000062e0       ?Fire_ErrorEvent@?$CProxy_IOPOSEvents@VCOPOSGraphicDisplay@@@@QEAAXJJJPEAJ@Z 00000001800072e0 f i GraphicDisplay.obj
  0001:00006454       ?Fire_OutputCompleteEvent@?$CProxy_IOPOSEvents@VCOPOSGraphicDisplay@@@@QEAAXJ@Z 0000000180007454 f i GraphicDisplay.obj
  0001:00006540       ?Fire_StatusUpdateEvent@?$CProxy_IOPOSEvents@VCOPOSGraphicDisplay@@@@QEAAXJ@Z 0000000180007540 f i GraphicDisplay.obj
- 0001:0000662c       ?FreeHeap@?$CTempBuffer@_W$0BAA@VCCRTAllocator@ATL@@@ATL@@AEAAXXZ 000000018000762c f i GraphicDisplay.obj
- 0001:0000662c       ?FreeHeap@?$CTempBuffer@E$0BAA@VCCRTAllocator@ATL@@@ATL@@AEAAXXZ 000000018000762c f i GraphicDisplay.obj
  0001:0000662c       ?FreeHeap@?$CTempBuffer@_W$0EAA@VCCRTAllocator@ATL@@@ATL@@AEAAXXZ 000000018000762c f i GraphicDisplay.obj
+ 0001:0000662c       ?FreeHeap@?$CTempBuffer@E$0BAA@VCCRTAllocator@ATL@@@ATL@@AEAAXXZ 000000018000762c f i GraphicDisplay.obj
+ 0001:0000662c       ?FreeHeap@?$CTempBuffer@_W$0BAA@VCCRTAllocator@ATL@@@ATL@@AEAAXXZ 000000018000762c f i GraphicDisplay.obj
  0001:00006634       ?GetAmbientLocaleID@CComControlBase@ATL@@QEAAJAEAK@Z 0000000180007634 f i GraphicDisplay.obj
  0001:000066f4       ?GetAmbientUserMode@CComControlBase@ATL@@QEAAJAEAH@Z 00000001800076f4 f i GraphicDisplay.obj
  0001:000067c4       ?GetClassObject@CComModule@ATL@@QEAAJAEBU_GUID@@0PEAPEAX@Z 00000001800077c4 f i GraphicDisplay.obj
@@ -509,7 +509,7 @@
  0001:0000bd54       ??1?$IConnectionPointImpl@VCOPOSGraphicDisplay@@$1?DIID__IOPOSGraphicDisplayEvents@@3U_GUID@@BVCComDynamicUnkArray@ATL@@@ATL@@QEAA@XZ 000000018000cd54 f i GraphicDisplayImpl.obj
  0001:0000bdb0       ??1CComControlBase@ATL@@UEAA@XZ 000000018000cdb0 f i GraphicDisplayImpl.obj
  0001:0000be2c       ??1COPOSGraphicDisplay@@UEAA@XZ 000000018000ce2c f   GraphicDisplayImpl.obj
- 0001:0000be90       ?CancelLoading@COPOSGraphicDisplay@@UEAAJPEAJ@Z 000000018000ce90 f   GraphicDisplayImpl.obj
+ 0001:0000be90       ?CancelURLLoading@COPOSGraphicDisplay@@UEAAJPEAJ@Z 000000018000ce90 f   GraphicDisplayImpl.obj
  0001:0000beb8       ?CheckHealth@COPOSGraphicDisplay@@UEAAJJPEAJ@Z 000000018000ceb8 f   GraphicDisplayImpl.obj
  0001:0000bf34       ?ClaimDevice@COPOSGraphicDisplay@@UEAAJJPEAJ@Z 000000018000cf34 f   GraphicDisplayImpl.obj
  0001:0000bfd4       ?ClearOutput@COPOSGraphicDisplay@@UEAAJPEAJ@Z 000000018000cfd4 f   GraphicDisplayImpl.obj
@@ -595,8 +595,8 @@
  0001:0000e24c       ?put_Volume@COPOSGraphicDisplay@@UEAAJJ@Z 000000018000f24c f   GraphicDisplayImpl.obj
  0001:0000e260       ?s_EventWindowProc@COPOSGraphicDisplay@@KA_JPEAUHWND__@@I_K_J@Z 000000018000f260 f i GraphicDisplayImpl.obj
  0001:0000e2dc       ??_U@YAPEAX_K@Z            000000018000f2dc f   LIBCMT:new_array.obj
- 0001:0000e2e4       ??3@YAXPEAX_K@Z            000000018000f2e4 f   LIBCMT:delete_scalar_size.obj
  0001:0000e2e4       ??_V@YAXPEAX@Z             000000018000f2e4 f   LIBCMT:delete_array.obj
+ 0001:0000e2e4       ??3@YAXPEAX_K@Z            000000018000f2e4 f   LIBCMT:delete_scalar_size.obj
  0001:0000e2ec       ??_V@YAXPEAX_K@Z           000000018000f2ec f   LIBCMT:delete_array_size.obj
  0001:0000e2f4       __scrt_acquire_startup_lock 000000018000f2f4 f   LIBCMT:utility.obj
  0001:0000e330       __scrt_dllmain_after_initialize_c 000000018000f330 f   LIBCMT:utility.obj
@@ -649,17 +649,17 @@
  0001:0000f598       ??0bad_array_new_length@std@@QEAA@AEBV01@@Z 0000000180010598 f i LIBCMT:throw_bad_alloc.obj
  0001:0000f5d4       ??0bad_array_new_length@std@@QEAA@XZ 00000001800105d4 f i LIBCMT:throw_bad_alloc.obj
  0001:0000f5f4       ??0exception@std@@QEAA@AEBV01@@Z 00000001800105f4 f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000f628       ??1bad_array_new_length@std@@UEAA@XZ 0000000180010628 f i LIBCMT:throw_bad_alloc.obj
  0001:0000f628       ??1bad_exception@std@@UEAA@XZ 0000000180010628 f i libvcruntime:frame.obj
  0001:0000f628       ??1bad_alloc@std@@UEAA@XZ  0000000180010628 f i LIBCMT:throw_bad_alloc.obj
- 0001:0000f628       ??1bad_array_new_length@std@@UEAA@XZ 0000000180010628 f i LIBCMT:throw_bad_alloc.obj
- 0001:0000f63c       ??_Gbad_exception@std@@UEAAPEAXI@Z 000000018001063c f i libvcruntime:frame.obj
- 0001:0000f63c       ??_Ebad_array_new_length@std@@UEAAPEAXI@Z 000000018001063c f i LIBCMT:throw_bad_alloc.obj
- 0001:0000f63c       ??_Gbad_alloc@std@@UEAAPEAXI@Z 000000018001063c f i LIBCMT:throw_bad_alloc.obj
- 0001:0000f63c       ??_Ebad_exception@std@@UEAAPEAXI@Z 000000018001063c f i libvcruntime:frame.obj
- 0001:0000f63c       ??_Eexception@std@@UEAAPEAXI@Z 000000018001063c f i LIBCMT:throw_bad_alloc.obj
- 0001:0000f63c       ??_Ebad_alloc@std@@UEAAPEAXI@Z 000000018001063c f i LIBCMT:throw_bad_alloc.obj
- 0001:0000f63c       ??_Gbad_array_new_length@std@@UEAAPEAXI@Z 000000018001063c f i LIBCMT:throw_bad_alloc.obj
  0001:0000f63c       ??_Gexception@std@@UEAAPEAXI@Z 000000018001063c f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000f63c       ??_Gbad_alloc@std@@UEAAPEAXI@Z 000000018001063c f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000f63c       ??_Gbad_array_new_length@std@@UEAAPEAXI@Z 000000018001063c f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000f63c       ??_Ebad_alloc@std@@UEAAPEAXI@Z 000000018001063c f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000f63c       ??_Gbad_exception@std@@UEAAPEAXI@Z 000000018001063c f i libvcruntime:frame.obj
+ 0001:0000f63c       ??_Eexception@std@@UEAAPEAXI@Z 000000018001063c f i LIBCMT:throw_bad_alloc.obj
+ 0001:0000f63c       ??_Ebad_exception@std@@UEAAPEAXI@Z 000000018001063c f i libvcruntime:frame.obj
+ 0001:0000f63c       ??_Ebad_array_new_length@std@@UEAAPEAXI@Z 000000018001063c f i LIBCMT:throw_bad_alloc.obj
  0001:0000f680       ?__scrt_throw_std_bad_alloc@@YAXXZ 0000000180010680 f   LIBCMT:throw_bad_alloc.obj
  0001:0000f6a0       ?__scrt_throw_std_bad_array_new_length@@YAXXZ 00000001800106a0 f   LIBCMT:throw_bad_alloc.obj
  0001:0000f6c0       ?what@exception@std@@UEBAPEBDXZ 00000001800106c0 f i LIBCMT:throw_bad_alloc.obj
@@ -1403,28 +1403,28 @@
  0002:00002528       ??_C@_0BB@KOHIKNFC@UpdateStatistics@ 0000000180028528     GraphicDisplayImpl.obj
  0002:00002540       ??_C@_0BH@PBKBNMGB@CompareFirmwareVersion@ 0000000180028540     GraphicDisplayImpl.obj
  0002:00002558       ??_C@_0P@FBPDPIPA@UpdateFirmware@ 0000000180028558     GraphicDisplayImpl.obj
- 0002:00002568       ??_C@_0O@MHDIOAHN@CancelLoading@ 0000000180028568     GraphicDisplayImpl.obj
- 0002:00002578       ??_C@_09FPOOFGFE@GoURLBack@ 0000000180028578     GraphicDisplayImpl.obj
- 0002:00002588       ??_C@_0N@KMHHOPHP@GoURLForward@ 0000000180028588     GraphicDisplayImpl.obj
- 0002:00002598       ??_C@_09OHOMMMHI@LoadImage@ 0000000180028598     GraphicDisplayImpl.obj
- 0002:000025a8       ??_C@_07PJCMMDAN@LoadURL@  00000001800285a8     GraphicDisplayImpl.obj
- 0002:000025b0       ??_C@_09CMEPLGIN@PlayVideo@ 00000001800285b0     GraphicDisplayImpl.obj
- 0002:000025c0       ??_C@_09FAHCLKAG@StopVideo@ 00000001800285c0     GraphicDisplayImpl.obj
- 0002:000025d0       ??_C@_0L@NIJDLNFL@UpdatePage@ 00000001800285d0     GraphicDisplayImpl.obj
- 0002:000025e0       ??_7?$CProxy_IOPOSEvents@VCOPOSGraphicDisplay@@@@6B@ 00000001800285e0     GraphicDisplayImpl.obj
- 0002:00002620       ??_C@_1BA@IFHENID@?$AA?$FL?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?$FN@ 0000000180028620     GraphicDisplayImpl.obj
- 0002:00002630       ??_C@_0DB@DHHLOAKN@SOFTWARE?2OLEforRetail?2ServiceOP@ 0000000180028630     GraphicDisplayImpl.obj
- 0002:00002668       ??_C@_1M@IAIJHCCH@?$AAC?$AAl?$AAo?$AAs?$AAe@ 0000000180028668     GraphicDisplayImpl.obj
- 0002:00002678       ??_C@_1M@PCPKGJAH@?$AAC?$AAl?$AAa?$AAi?$AAm@ 0000000180028678     GraphicDisplayImpl.obj
- 0002:00002688       ??_C@_1BA@NDFKIOCP@?$AAR?$AAe?$AAl?$AAe?$AAa?$AAs?$AAe@ 0000000180028688     GraphicDisplayImpl.obj
- 0002:00002698       ??_C@_0P@CGHGOJIM@GraphicDisplay@ 0000000180028698     GraphicDisplayImpl.obj
- 0002:000026a8       ??_C@_1BM@IJMNMBPK@?$AAG?$AAe?$AAt?$AAO?$AAp?$AAe?$AAn?$AAR?$AAe?$AAs?$AAu?$AAl?$AAt@ 00000001800286a8     GraphicDisplayImpl.obj
- 0002:000026c8       IID_IDispatch              00000001800286c8     uuid:oaidl_i.obj
- 0002:000026d8       IID_IPropertyNotifySink    00000001800286d8     uuid:ocidl_i.obj
- 0002:000026e8       GUID_NULL                  00000001800286e8     uuid:cguid_i.obj
- 0002:000026f8       CLSID_StdGlobalInterfaceTable 00000001800286f8     uuid:cguid_i.obj
- 0002:00002708       CLSID_StdComponentCategoriesMgr 0000000180028708     uuid:ieguids.obj
- 0002:00002718       IID_IUnknown               0000000180028718     uuid:unknwn_i.obj
+ 0002:00002568       ??_C@_0BB@MADDABJL@CancelURLLoading@ 0000000180028568     GraphicDisplayImpl.obj
+ 0002:00002580       ??_C@_09FPOOFGFE@GoURLBack@ 0000000180028580     GraphicDisplayImpl.obj
+ 0002:00002590       ??_C@_0N@KMHHOPHP@GoURLForward@ 0000000180028590     GraphicDisplayImpl.obj
+ 0002:000025a0       ??_C@_09OHOMMMHI@LoadImage@ 00000001800285a0     GraphicDisplayImpl.obj
+ 0002:000025b0       ??_C@_07PJCMMDAN@LoadURL@  00000001800285b0     GraphicDisplayImpl.obj
+ 0002:000025b8       ??_C@_09CMEPLGIN@PlayVideo@ 00000001800285b8     GraphicDisplayImpl.obj
+ 0002:000025c8       ??_C@_09FAHCLKAG@StopVideo@ 00000001800285c8     GraphicDisplayImpl.obj
+ 0002:000025d8       ??_C@_0L@NIJDLNFL@UpdatePage@ 00000001800285d8     GraphicDisplayImpl.obj
+ 0002:000025e8       ??_7?$CProxy_IOPOSEvents@VCOPOSGraphicDisplay@@@@6B@ 00000001800285e8     GraphicDisplayImpl.obj
+ 0002:00002628       ??_C@_1BA@IFHENID@?$AA?$FL?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?$FN@ 0000000180028628     GraphicDisplayImpl.obj
+ 0002:00002638       ??_C@_0DB@DHHLOAKN@SOFTWARE?2OLEforRetail?2ServiceOP@ 0000000180028638     GraphicDisplayImpl.obj
+ 0002:00002670       ??_C@_1M@IAIJHCCH@?$AAC?$AAl?$AAo?$AAs?$AAe@ 0000000180028670     GraphicDisplayImpl.obj
+ 0002:00002680       ??_C@_1M@PCPKGJAH@?$AAC?$AAl?$AAa?$AAi?$AAm@ 0000000180028680     GraphicDisplayImpl.obj
+ 0002:00002690       ??_C@_1BA@NDFKIOCP@?$AAR?$AAe?$AAl?$AAe?$AAa?$AAs?$AAe@ 0000000180028690     GraphicDisplayImpl.obj
+ 0002:000026a0       ??_C@_0P@CGHGOJIM@GraphicDisplay@ 00000001800286a0     GraphicDisplayImpl.obj
+ 0002:000026b0       ??_C@_1BM@IJMNMBPK@?$AAG?$AAe?$AAt?$AAO?$AAp?$AAe?$AAn?$AAR?$AAe?$AAs?$AAu?$AAl?$AAt@ 00000001800286b0     GraphicDisplayImpl.obj
+ 0002:000026d0       IID_IDispatch              00000001800286d0     uuid:oaidl_i.obj
+ 0002:000026e0       IID_IPropertyNotifySink    00000001800286e0     uuid:ocidl_i.obj
+ 0002:000026f0       GUID_NULL                  00000001800286f0     uuid:cguid_i.obj
+ 0002:00002700       CLSID_StdGlobalInterfaceTable 0000000180028700     uuid:cguid_i.obj
+ 0002:00002710       CLSID_StdComponentCategoriesMgr 0000000180028710     uuid:ieguids.obj
+ 0002:00002720       IID_IUnknown               0000000180028720     uuid:unknwn_i.obj
  0002:00002730       __xmm@ffffffffffffffffffffffffffffffff 0000000180028730     LIBCMT:utility.obj
  0002:00002740       ??_C@_1EC@JIJBPKFM@?$AAa?$AAp?$AAi?$AA?9?$AAm?$AAs?$AA?9?$AAw?$AAi?$AAn?$AA?9?$AAc?$AAo?$AAr?$AAe@ 0000000180028740     LIBCMT:thread_safe_statics.obj
  0002:00002788       ??_C@_1BK@MGMFAEKH@?$AAk?$AAe?$AAr?$AAn?$AAe?$AAl?$AA3?$AA2?$AA?4?$AAd?$AAl?$AAl@ 0000000180028788     LIBCMT:thread_safe_statics.obj
@@ -2207,7 +2207,7 @@
  0003:000015f0       ?_OptionsStorage@?1??__local_stdio_scanf_options@@9@4_KA 00000001800365f0     LIBCMT:default_local_stdio_options.obj
  0003:00001600       ?_AtlBaseModule@ATL@@3VCAtlBaseModule@1@A 0000000180036600     atls:atlbase.obj
  0003:00001660       ?__AtlThunkPool@@3PEAT_SLIST_HEADER@@EA 0000000180036660     atls:atlthunk.obj
- 0003:0000168c       __@@_PchSym_@00@UzABUPdlipUCAUhUrmgvinvwrzgvUexgllohUzgohOmzgrevkilqPBACIAJCBDBUlyqiUznwGEUhgwzucOlyq@4B2008FD98C1DD4 000000018003668c     atls:stdafx.obj
+ 0003:0000168c       __@@_PchSym_@00@UzABUPdlipUEJUhUrmgvinvwrzgvUexgllohUzgohOmzgrevkilqPBACIAJCBDBUlyqiUznwGEUhgwzucOlyq@4B2008FD98C1DD4 000000018003668c     atls:stdafx.obj
  0003:00001690       ?__WinRTOutOfMemoryExceptionCallback@@3P6APEAXXZEA 0000000180036690     libvcruntime:ehhelpers.obj
  0003:00001698       __pPurecall                0000000180036698     libvcruntime:purevirt_data.obj
  0003:00001750       ?pArgList@UnDecorator@@0PEAVReplicator@@EA 0000000180036750     libvcruntime:undname.obj
@@ -3181,7 +3181,7 @@
  0002:0000b8e8       $unwind$?fp_format_f@@YAHQEBNQEAD_K12HW4__acrt_rounding_mode@@AEAV__crt_cached_ptd_host@@@Z 00000001800318e8     libucrt:cvt.obj
  0002:0000b8e8       $unwind$__acrt_LCMapStringEx 00000001800318e8     libucrt:winapi_thunks.obj
  0002:0000b8fc       $unwind$?CreateControlWindow@?$CComControl@VCOPOSGraphicDisplay@@V?$CWindowImpl@VCOPOSGraphicDisplay@@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@3@@ATL@@@ATL@@UEAAPEAUHWND__@@PEAU3@AEAUtagRECT@@@Z 00000001800318fc     GraphicDisplay.obj
- 0002:0000b8fc       $unwind$?CancelLoading@COPOSGraphicDisplay@@UEAAJPEAJ@Z 00000001800318fc     GraphicDisplayImpl.obj
+ 0002:0000b8fc       $unwind$?CancelURLLoading@COPOSGraphicDisplay@@UEAAJPEAJ@Z 00000001800318fc     GraphicDisplayImpl.obj
  0002:0000b8fc       $unwind$?ClearOutput@COPOSGraphicDisplay@@UEAAJPEAJ@Z 00000001800318fc     GraphicDisplayImpl.obj
  0002:0000b8fc       $unwind$?GoURLBack@COPOSGraphicDisplay@@UEAAJPEAJ@Z 00000001800318fc     GraphicDisplayImpl.obj
  0002:0000b8fc       $unwind$?GoURLForward@COPOSGraphicDisplay@@UEAAJPEAJ@Z 00000001800318fc     GraphicDisplayImpl.obj
@@ -3532,5 +3532,5 @@
  0006:00000c58       $R000A38                   000000018003cc58     GraphicDisplay.res
  0006:00000ec0       $R000CA0                   000000018003cec0     GraphicDisplay.res
  0006:000013a0       $R001180                   000000018003d3a0     GraphicDisplay.res
- 0006:000043a0       $R004180                   00000001800403a0     GraphicDisplay.res
- 0006:000043e0       $R0041C0                   00000001800403e0     GraphicDisplay.res
+ 0006:000043a8       $R004188                   00000001800403a8     GraphicDisplay.res
+ 0006:000043e8       $R0041C8                   00000001800403e8     GraphicDisplay.res

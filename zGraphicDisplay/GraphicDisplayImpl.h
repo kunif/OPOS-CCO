@@ -4,7 +4,7 @@
 **
 **     Date                   Modification                          Author
 ** -----------|----------------------------------------------------|----------
-**  2021/12/02 Initial Version from similar sources.                K. Fukuchi
+**  2022/02/02 Initial Version from similar sources.                K. Fukuchi
 **             Changed include guard from #ifndef __XXXX_H__ to #pragma once.
 **
 *****************************************************************************
@@ -380,7 +380,7 @@ public:
     STDMETHOD(get_VideoTypeList)( /*[out, retval]*/ BSTR* pVideoTypeList );
     STDMETHOD(get_Volume)( /*[out, retval]*/ LONG* pVolume );
     STDMETHOD(put_Volume)( /*[in]*/ LONG Volume );
-    STDMETHOD(CancelLoading)( 
+    STDMETHOD(CancelURLLoading)( 
         /*[out, retval]*/ long* pRC );
     STDMETHOD(GoURLBack)( 
         /*[out, retval]*/ long* pRC );

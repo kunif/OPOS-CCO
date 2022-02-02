@@ -1,6 +1,6 @@
  Opos_Interfaces
 
- Timestamp is 61a75a84 (Wed Dec  1 20:20:36 2021)
+ Timestamp is 61fa0ed3 (Wed Feb  2 13:55:47 2022)
 
  Preferred load address is 10000000
 
@@ -87,19 +87,19 @@
  0001:00000140       ?GetLockCount@CAtlModule@ATL@@UAEJXZ 10001140 f i OposInterfaces.obj
  0001:00000150       ?GetGITPtr@CAtlModule@ATL@@UAEJPAPAUIGlobalInterfaceTable@@@Z 10001150 f i OposInterfaces.obj
  0001:000001a0       ?AddCommonRGSReplacements@?$CAtlModuleT@VCComModule@ATL@@@ATL@@UAEJPAUIRegistrarBase@@@Z 100011a0 f i OposInterfaces.obj
- 0001:000001c0       ?UpdateRegistryFromResourceD@CComModule@ATL@@UAGJIHPAU_ATL_REGMAP_ENTRY@2@@Z 100011c0 f i OposInterfaces.obj
  0001:000001c0       ?UpdateRegistryFromResourceD@CComModule@ATL@@UAGJPB_WHPAU_ATL_REGMAP_ENTRY@2@@Z 100011c0 f i OposInterfaces.obj
+ 0001:000001c0       ?UpdateRegistryFromResourceD@CComModule@ATL@@UAGJIHPAU_ATL_REGMAP_ENTRY@2@@Z 100011c0 f i OposInterfaces.obj
  0001:000001d0       ?UpdateRegistryFromResource@CComModule@ATL@@UAGJPB_WHPAU_ATL_REGMAP_ENTRY@2@@Z 100011d0 f i OposInterfaces.obj
  0001:000001e0       ?UpdateRegistryFromResource@CComModule@ATL@@UAGJIHPAU_ATL_REGMAP_ENTRY@2@@Z 100011e0 f i OposInterfaces.obj
- 0001:000001f0       ??_ECComModule@ATL@@UAEPAXI@Z 100011f0 f i OposInterfaces.obj
  0001:000001f0       ??_GCComModule@ATL@@UAEPAXI@Z 100011f0 f i OposInterfaces.obj
+ 0001:000001f0       ??_ECComModule@ATL@@UAEPAXI@Z 100011f0 f i OposInterfaces.obj
  0001:00000220       ?QueryInterface@CRegObject@ATL@@UAGJABU_GUID@@PAPAX@Z 10001220 f i OposInterfaces.obj
  0001:00000230       ?AddRef@CRegObject@ATL@@UAGKXZ 10001230 f i OposInterfaces.obj
  0001:00000240       ?Release@CRegObject@ATL@@UAGKXZ 10001240 f i OposInterfaces.obj
  0001:00000250       ?AddReplacement@CRegObject@ATL@@UAGJPB_W0@Z 10001250 f i OposInterfaces.obj
  0001:00000290       ?ClearReplacements@CRegObject@ATL@@UAGJXZ 10001290 f i OposInterfaces.obj
- 0001:000002b0       ??_GCRegObject@ATL@@UAEPAXI@Z 100012b0 f i OposInterfaces.obj
  0001:000002b0       ??_ECRegObject@ATL@@UAEPAXI@Z 100012b0 f i OposInterfaces.obj
+ 0001:000002b0       ??_GCRegObject@ATL@@UAEPAXI@Z 100012b0 f i OposInterfaces.obj
  0001:00000320       ??1CRegObject@ATL@@UAE@XZ  10001320 f i OposInterfaces.obj
  0001:00000370       ?Add@CExpansionVector@ATL@@QAEHPB_W0@Z 10001370 f i OposInterfaces.obj
  0001:000004e0       ?AddValue@CRegParser@ATL@@IAEJAAVCRegKey@2@PB_WPA_W@Z 100014e0 f i OposInterfaces.obj
@@ -119,9 +119,9 @@
  0001:00001370       ?ClearReplacements@CExpansionVector@ATL@@QAEJXZ 10002370 f i OposInterfaces.obj
  0001:00001400       ?DeleteSubKey@CRegKey@ATL@@QAEJPB_W@Z 10002400 f i OposInterfaces.obj
  0001:000014e0       ?EscapeSingleQuote@CAtlModule@ATL@@SAXPA_WIPB_W@Z 100024e0 f i OposInterfaces.obj
- 0001:00001530       ?FreeHeap@?$CTempBuffer@_W$0EAA@VCCRTAllocator@ATL@@@ATL@@AAEXXZ 10002530 f i OposInterfaces.obj
- 0001:00001530       ?FreeHeap@?$CTempBuffer@_W$0BAA@VCCRTAllocator@ATL@@@ATL@@AAEXXZ 10002530 f i OposInterfaces.obj
  0001:00001530       ?FreeHeap@?$CTempBuffer@E$0BAA@VCCRTAllocator@ATL@@@ATL@@AAEXXZ 10002530 f i OposInterfaces.obj
+ 0001:00001530       ?FreeHeap@?$CTempBuffer@_W$0BAA@VCCRTAllocator@ATL@@@ATL@@AAEXXZ 10002530 f i OposInterfaces.obj
+ 0001:00001530       ?FreeHeap@?$CTempBuffer@_W$0EAA@VCCRTAllocator@ATL@@@ATL@@AAEXXZ 10002530 f i OposInterfaces.obj
  0001:00001540       ?GetClassObject@CComModule@ATL@@QAEJABU_GUID@@0PAPAX@Z 10002540 f i OposInterfaces.obj
  0001:000016f0       ?NextToken@CRegParser@ATL@@IAEJPA_W@Z 100026f0 f i OposInterfaces.obj
  0001:00001890       ?PreProcessBuffer@CRegParser@ATL@@QAEJPA_WPAPA_W@Z 10002890 f i OposInterfaces.obj
@@ -199,24 +199,24 @@
  0001:000046ef       ??0bad_array_new_length@std@@QAE@XZ 100056ef f i LIBCMT:throw_bad_alloc.obj
  0001:00004707       ??0exception@std@@QAE@ABV01@@Z 10005707 f i LIBCMT:throw_bad_alloc.obj
  0001:00004733       ??1bad_array_new_length@std@@UAE@XZ 10005733 f i LIBCMT:throw_bad_alloc.obj
- 0001:00004733       ??1bad_alloc@std@@UAE@XZ   10005733 f i LIBCMT:throw_bad_alloc.obj
  0001:00004733       ??1bad_exception@std@@UAE@XZ 10005733 f i libvcruntime:frame.obj
- 0001:00004744       ??_Eexception@std@@UAEPAXI@Z 10005744 f i LIBCMT:throw_bad_alloc.obj
- 0001:00004744       ??_Ebad_exception@std@@UAEPAXI@Z 10005744 f i libvcruntime:frame.obj
- 0001:00004744       ??_Gbad_alloc@std@@UAEPAXI@Z 10005744 f i LIBCMT:throw_bad_alloc.obj
- 0001:00004744       ??_Gexception@std@@UAEPAXI@Z 10005744 f i LIBCMT:throw_bad_alloc.obj
- 0001:00004744       ??_Ebad_alloc@std@@UAEPAXI@Z 10005744 f i LIBCMT:throw_bad_alloc.obj
- 0001:00004744       ??_Ebad_array_new_length@std@@UAEPAXI@Z 10005744 f i LIBCMT:throw_bad_alloc.obj
- 0001:00004744       ??_Gbad_array_new_length@std@@UAEPAXI@Z 10005744 f i LIBCMT:throw_bad_alloc.obj
+ 0001:00004733       ??1bad_alloc@std@@UAE@XZ   10005733 f i LIBCMT:throw_bad_alloc.obj
  0001:00004744       ??_Gbad_exception@std@@UAEPAXI@Z 10005744 f i libvcruntime:frame.obj
+ 0001:00004744       ??_Ebad_array_new_length@std@@UAEPAXI@Z 10005744 f i LIBCMT:throw_bad_alloc.obj
+ 0001:00004744       ??_Gbad_alloc@std@@UAEPAXI@Z 10005744 f i LIBCMT:throw_bad_alloc.obj
+ 0001:00004744       ??_Ebad_exception@std@@UAEPAXI@Z 10005744 f i libvcruntime:frame.obj
+ 0001:00004744       ??_Eexception@std@@UAEPAXI@Z 10005744 f i LIBCMT:throw_bad_alloc.obj
+ 0001:00004744       ??_Gexception@std@@UAEPAXI@Z 10005744 f i LIBCMT:throw_bad_alloc.obj
+ 0001:00004744       ??_Gbad_array_new_length@std@@UAEPAXI@Z 10005744 f i LIBCMT:throw_bad_alloc.obj
+ 0001:00004744       ??_Ebad_alloc@std@@UAEPAXI@Z 10005744 f i LIBCMT:throw_bad_alloc.obj
  0001:00004771       ?__scrt_throw_std_bad_alloc@@YAXXZ 10005771 f   LIBCMT:throw_bad_alloc.obj
  0001:0000478e       ?__scrt_throw_std_bad_array_new_length@@YAXXZ 1000578e f   LIBCMT:throw_bad_alloc.obj
  0001:000047ab       ?what@exception@std@@UBEPBDXZ 100057ab f i LIBCMT:throw_bad_alloc.obj
  0001:000047b8       ??_Gtype_info@@UAEPAXI@Z   100057b8 f i LIBCMT:std_type_info_static.obj
  0001:000047b8       ??_Etype_info@@UAEPAXI@Z   100057b8 f i LIBCMT:std_type_info_static.obj
  0001:000047db       _wcsstr                    100057db f   libvcruntime:wcsstr.obj
- 0001:00004a50       _memcpy                    10005a50 f   libvcruntime:memcpy.obj
  0001:00004a50       _memmove                   10005a50 f   libvcruntime:memmove.obj
+ 0001:00004a50       _memcpy                    10005a50 f   libvcruntime:memcpy.obj
  0001:00004fd0       _memset                    10005fd0 f   libvcruntime:memset.obj
  0001:00005130       ___vcrt_initialize         10006130 f   libvcruntime:initialization.obj
  0001:0000514f       ___vcrt_thread_attach      1000614f f   libvcruntime:initialization.obj
@@ -278,8 +278,8 @@
  0001:00006c80       ___vcrt_InitializeCriticalSectionEx 10007c80 f   libvcruntime:winapi_downlevel.obj
  0001:00006cd0       __NLG_Notify1              10007cd0 f   libvcruntime:exsup.obj
  0001:00006ce0       __NLG_Notify               10007ce0 f   libvcruntime:exsup.obj
- 0001:00006cf7       __NLG_Dispatch             10007cf7     libvcruntime:exsup.obj
  0001:00006cf7       __NLG_Dispatch2            10007cf7     libvcruntime:exsup.obj
+ 0001:00006cf7       __NLG_Dispatch             10007cf7     libvcruntime:exsup.obj
  0001:00006d00       __NLG_Call                 10007d00 f   libvcruntime:exsup.obj
  0001:00006d02       __NLG_Return2              10007d02     libvcruntime:exsup.obj
  0001:00006d03       _unexpected                10007d03 f   libvcruntime:unexpected.obj
@@ -318,8 +318,8 @@
  0001:00007b31       __configure_narrow_argv    10008b31 f   libucrt:argv_parsing.obj
  0001:00007cdd       ___dcrt_uninitialize_environments_nolock 10008cdd f   libucrt:environment_initialization.obj
  0001:00007d2e       __initialize_narrow_environment 10008d2e f   libucrt:environment_initialization.obj
- 0001:00007de9       ??$__crt_fast_encode_pointer@PAP6AXXZ@@YAPAP6AXXZQAP6AXXZ@Z 10008de9 f i libucrt:onexit.obj
  0001:00007de9       ??$__crt_fast_encode_pointer@P6AHXZ@@YAP6AHXZQ6AHXZ@Z 10008de9 f i libucrt:onexit.obj
+ 0001:00007de9       ??$__crt_fast_encode_pointer@PAP6AXXZ@@YAPAP6AXXZQAP6AXXZ@Z 10008de9 f i libucrt:onexit.obj
  0001:00007de9       ??$__crt_fast_encode_pointer@PAX@@YAPAXQAX@Z 10008de9 f i libucrt:initialization.obj
  0001:00007fe4       __crt_atexit               10008fe4 f   libucrt:onexit.obj
  0001:00007ffa       __execute_onexit_table     10008ffa f   libucrt:onexit.obj
@@ -555,8 +555,8 @@
  0001:0000fb18       __EH_prolog3_catch         10010b18 f   LIBCMT:ehprolg3.obj
  0001:0000fb50       __alloca_probe_16          10010b50 f   LIBCMT:alloca16.obj
  0001:0000fb66       __alloca_probe_8           10010b66     LIBCMT:alloca16.obj
- 0001:0000fb80       __filter_x86_sse2_floating_point_exception 10010b80 f   LIBCMT:x86_exception_filter.obj
  0001:0000fb80       __filter_x86_sse2_floating_point_exception_default 10010b80 f   LIBCMT:x86_exception_filter.obj
+ 0001:0000fb80       __filter_x86_sse2_floating_point_exception 10010b80 f   LIBCMT:x86_exception_filter.obj
  0002:00000000       __imp__RegQueryInfoKeyW@48 10011000     advapi32:ADVAPI32.dll
  0002:00000004       __imp__RegOpenKeyExW@20    10011004     advapi32:ADVAPI32.dll
  0002:00000008       __imp__RegEnumKeyExW@32    10011008     advapi32:ADVAPI32.dll
@@ -738,8 +738,8 @@
  0002:00000784       _GUID_ATLVer110            10011784     atls:atlbase.obj
  0002:00000798       ??_C@_1IC@ONKHOIDK@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?3?$AA?5?$AAU?$AAn?$AAa?$AAb?$AAl?$AAe?$AA?5@ 10011798     atls:atlbase.obj
  0002:0000081a       ?nothrow@std@@3Unothrow_t@1@B 1001181a     LIBCMT:std_nothrow.obj
- 0002:00000824       __pDefaultRawDllMain       10011824     LIBCMT:dll_dllmain.obj
  0002:00000824       __pRawDllMain              10011824     LIBCMT:dll_dllmain.obj
+ 0002:00000824       __pDefaultRawDllMain       10011824     LIBCMT:dll_dllmain.obj
  0002:0000082c       ??_7exception@std@@6B@     1001182c     LIBCMT:throw_bad_alloc.obj
  0002:00000834       ??_C@_0BC@EOODALEL@Unknown?5exception@ 10011834     LIBCMT:throw_bad_alloc.obj
  0002:0000084c       ??_7bad_alloc@std@@6B@     1001184c     LIBCMT:throw_bad_alloc.obj
@@ -1494,7 +1494,7 @@
  0003:00000954       ?bInitialized@?1??DeleteSubKey@CRegKey@ATL@@QAEJPB_W@Z@4_NA 10018954     OposInterfaces.obj
  0003:00000958       ?_Module@@3VCComModule@ATL@@A 10018958     OposInterfaces.obj
  0003:000009ac       ?_AtlBaseModule@ATL@@3VCAtlBaseModule@1@A 100189ac     atls:atlbase.obj
- 0003:000009e4       ___@@_PchSym_@00@UzABUPdlipUBAUhUrmgvinvwrzgvUexgllohUzgohOmzgrevkilqPBACIAJCBDBUlyqiUcIGUhgwzucOlyq@4B2008FD98C1DD4 100189e4     atls:stdafx.obj
+ 0003:000009e4       ___@@_PchSym_@00@UzABUPdlipUDIUhUrmgvinvwrzgvUexgllohUzgohOmzgrevkilqPBACIAJCBDBUlyqiUcIGUhgwzucOlyq@4B2008FD98C1DD4 100189e4     atls:stdafx.obj
  0003:000009e8       ___scrt_current_native_startup_state 100189e8     LIBCMT:utility.obj
  0003:000009ec       ___scrt_native_startup_lock 100189ec     LIBCMT:utility.obj
  0003:00000d30       ___isa_available           10018d30     LIBCMT:cpu_disp.obj

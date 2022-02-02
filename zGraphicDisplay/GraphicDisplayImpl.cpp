@@ -4,7 +4,7 @@
 **
 **     Date                   Modification                          Author
 ** -----------|----------------------------------------------------|----------
-**  2021/12/02 Initial Version from similar sources.                K. Fukuchi
+**  2022/02/02 Initial Version from similar sources.                K. Fukuchi
 **
 *****************************************************************************
 **
@@ -112,8 +112,8 @@ static char* s_SOMethodNames[SO_DISP_COUNT + 1] =
         #define nDICompareFirmwareVersion 15
     "UpdateFirmware",
         #define nDIUpdateFirmware 16
-    "CancelLoading",
-        #define nDICancelLoading 17
+    "CancelURLLoading",
+        #define nDICancelURLLoading 17
     "GoURLBack",
         #define nDIGoURLBack 18
     "GoURLForward",
@@ -1271,10 +1271,10 @@ STDMETHODIMP COPOSGraphicDisplay::UpdateFirmware(
 
 //===========================================================================
 
-STDMETHODIMP COPOSGraphicDisplay::CancelLoading( 
+STDMETHODIMP COPOSGraphicDisplay::CancelURLLoading( 
     /*[out, retval]*/ long* pRC )
 {
-    return DoInvoke( DEBUGPARAM("CancelLoading") S_OK, NULL, 0, nDICancelLoading, pRC );
+    return DoInvoke( DEBUGPARAM("CancelURLLoading") S_OK, NULL, 0, nDICancelURLLoading, pRC );
 }
 
 //===========================================================================

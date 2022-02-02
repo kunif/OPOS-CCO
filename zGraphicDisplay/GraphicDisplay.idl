@@ -4,7 +4,7 @@
 **
 **     Date                   Modification                          Author
 ** -----------|----------------------------------------------------|----------
-**  2021/12/02 Initial Version from similar sources.                K. Fukuchi
+**  2022/02/02 Initial Version from similar sources.                K. Fukuchi
 **
 *****************************************************************************
 **
@@ -211,8 +211,8 @@ import "ocidl.idl";
         HRESULT Volume( [out, retval] long* pVolume );
         [propput, id(77), helpstring("property Volume")]
         HRESULT Volume( [in] long Volume );
-        [id(100), helpstring("method CancelLoading")]
-        HRESULT CancelLoading( 
+        [id(100), helpstring("method CancelURLLoading")]
+        HRESULT CancelURLLoading( 
             [out, retval] long* pRC );
         [id(101), helpstring("method GoBack")]
         HRESULT GoURLBack( 

@@ -1,6 +1,6 @@
  OPOSGraphicDisplay
 
- Timestamp is 61fa0eda (Wed Feb  2 13:55:54 2022)
+ Timestamp is 61fa2976 (Wed Feb  2 15:49:26 2022)
 
  Preferred load address is 0000000180000000
 
@@ -61,35 +61,35 @@
  0004:00000000 0000c840H .pdata                  DATA
  0005:00000000 000000fcH _RDATA                  DATA
  0006:00000000 00000220H .rsrc$01                DATA
- 0006:00000220 00004358H .rsrc$02                DATA
+ 0006:00000220 00004360H .rsrc$02                DATA
 
   Address         Publics by Value              Rva+Base               Lib:Object
 
- 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
- 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
- 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
- 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
  0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
  0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
- 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
- 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
  0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
- 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
- 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
  0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
  0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
- 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
  0000:00000000       ___safe_se_handler_table   0000000000000000     <absolute>
  0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
- 0000:00000000       __enclave_config           0000000000000000     <absolute>
- 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
- 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
- 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
- 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
- 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
- 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
  0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
- 0000:00000000       ___safe_se_handler_count   0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
  0000:00000100       __guard_flags              0000000000000100     <absolute>
  0000:00000000       __ImageBase                0000000180000000     <linker-defined>
  0001:00000d90       ?_assert@@YAXPEB_W0I@Z     0000000180001d90 f   Assert.obj
@@ -543,16 +543,16 @@
  0001:0000927c       ??_E?$CComContainedObject@VCOPOSGraphicDisplay@@@ATL@@WHA@EAAPEAXI@Z 000000018000a27c f i GraphicDisplay.obj
  0001:00009288       ??_E?$CComObject@VCOPOSGraphicDisplay@@@ATL@@W7EAAPEAXI@Z 000000018000a288 f i GraphicDisplay.obj
  0001:00009294       ??_E?$CComObject@VCOPOSGraphicDisplay@@@ATL@@WHA@EAAPEAXI@Z 000000018000a294 f i GraphicDisplay.obj
- 0001:000092a0       ??_E?$CComAggObject@VCOPOSGraphicDisplay@@@ATL@@UEAAPEAXI@Z 000000018000a2a0 f i GraphicDisplay.obj
  0001:000092a0       ??_G?$CComAggObject@VCOPOSGraphicDisplay@@@ATL@@UEAAPEAXI@Z 000000018000a2a0 f i GraphicDisplay.obj
+ 0001:000092a0       ??_E?$CComAggObject@VCOPOSGraphicDisplay@@@ATL@@UEAAPEAXI@Z 000000018000a2a0 f i GraphicDisplay.obj
  0001:000092e0       ??_E?$CComContainedObject@VCOPOSGraphicDisplay@@@ATL@@UEAAPEAXI@Z 000000018000a2e0 f i GraphicDisplay.obj
  0001:000092e0       ??_G?$CComContainedObject@VCOPOSGraphicDisplay@@@ATL@@UEAAPEAXI@Z 000000018000a2e0 f i GraphicDisplay.obj
  0001:00009320       ??_E?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPEAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAPEAXI@Z 000000018000a320 f i GraphicDisplay.obj
  0001:00009320       ??_G?$CComObject@V?$CComEnum@UIEnumConnectionPoints@@$1?_GUID_b196b285_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BPEAUIConnectionPoint@@V?$_CopyInterface@UIConnectionPoint@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAPEAXI@Z 000000018000a320 f i GraphicDisplay.obj
  0001:00009360       ??_G?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAPEAXI@Z 000000018000a360 f i GraphicDisplay.obj
  0001:00009360       ??_E?$CComObject@V?$CComEnum@UIEnumConnections@@$1?_GUID_b196b287_bab4_101a_b69c_00aa00341d07@@3U__s_GUID@@BUtagCONNECTDATA@@V?$_Copy@UtagCONNECTDATA@@@ATL@@VCComSingleThreadModel@6@@ATL@@@ATL@@UEAAPEAXI@Z 000000018000a360 f i GraphicDisplay.obj
- 0001:000093a0       ??_G?$CComObject@VCOPOSGraphicDisplay@@@ATL@@UEAAPEAXI@Z 000000018000a3a0 f i GraphicDisplay.obj
  0001:000093a0       ??_E?$CComObject@VCOPOSGraphicDisplay@@@ATL@@UEAAPEAXI@Z 000000018000a3a0 f i GraphicDisplay.obj
+ 0001:000093a0       ??_G?$CComObject@VCOPOSGraphicDisplay@@@ATL@@UEAAPEAXI@Z 000000018000a3a0 f i GraphicDisplay.obj
  0001:000093e0       ??_E?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UEAAPEAXI@Z 000000018000a3e0 f i GraphicDisplay.obj
  0001:000093e0       ??_G?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@UEAAPEAXI@Z 000000018000a3e0 f i GraphicDisplay.obj
  0001:00009420       ??_GCComClassFactory@ATL@@UEAAPEAXI@Z 000000018000a420 f i GraphicDisplay.obj
@@ -1215,7 +1215,7 @@
  0001:0002d200       ?LoadURL@COPOSGraphicDisplay@@UEAAJPEA_WPEAJ@Z 000000018002e200 f   GraphicDisplayImpl.obj
  0001:0002d2e0       ?PlayVideo@COPOSGraphicDisplay@@UEAAJPEA_WFPEAJ@Z 000000018002e2e0 f   GraphicDisplayImpl.obj
  0001:0002d410       ?StopVideo@COPOSGraphicDisplay@@UEAAJPEAJ@Z 000000018002e410 f   GraphicDisplayImpl.obj
- 0001:0002d470       ?UpdatePage@COPOSGraphicDisplay@@UEAAJPEAJ@Z 000000018002e470 f   GraphicDisplayImpl.obj
+ 0001:0002d470       ?UpdateURLPage@COPOSGraphicDisplay@@UEAAJPEAJ@Z 000000018002e470 f   GraphicDisplayImpl.obj
  0001:0002d4c0       ??0?$CComControl@VCOPOSGraphicDisplay@@V?$CWindowImpl@VCOPOSGraphicDisplay@@VCWindow@ATL@@V?$CWinTraits@$0FGAAAAAA@$0A@@3@@ATL@@@ATL@@QEAA@XZ 000000018002e4c0 f i GraphicDisplayImpl.obj
  0001:0002d500       ??0?$CComPtr@UIAdviseSink@@@ATL@@QEAA@XZ 000000018002e500 f i GraphicDisplayImpl.obj
  0001:0002d520       ??0?$CComPtr@UIDataAdviseHolder@@@ATL@@QEAA@XZ 000000018002e520 f i GraphicDisplayImpl.obj
@@ -1575,10 +1575,10 @@
  0001:00032f90       ??1exception@std@@UEAA@XZ  0000000180033f90 f i LIBCMTD:throw_bad_alloc.obj
  0001:00032fc0       ??_Ebad_alloc@std@@UEAAPEAXI@Z 0000000180033fc0 f i LIBCMTD:throw_bad_alloc.obj
  0001:00032fc0       ??_Gbad_alloc@std@@UEAAPEAXI@Z 0000000180033fc0 f i LIBCMTD:throw_bad_alloc.obj
- 0001:00033000       ??_Gbad_array_new_length@std@@UEAAPEAXI@Z 0000000180034000 f i LIBCMTD:throw_bad_alloc.obj
  0001:00033000       ??_Ebad_array_new_length@std@@UEAAPEAXI@Z 0000000180034000 f i LIBCMTD:throw_bad_alloc.obj
- 0001:00033040       ??_Gexception@std@@UEAAPEAXI@Z 0000000180034040 f i LIBCMTD:throw_bad_alloc.obj
+ 0001:00033000       ??_Gbad_array_new_length@std@@UEAAPEAXI@Z 0000000180034000 f i LIBCMTD:throw_bad_alloc.obj
  0001:00033040       ??_Eexception@std@@UEAAPEAXI@Z 0000000180034040 f i LIBCMTD:throw_bad_alloc.obj
+ 0001:00033040       ??_Gexception@std@@UEAAPEAXI@Z 0000000180034040 f i LIBCMTD:throw_bad_alloc.obj
  0001:00033080       ?__scrt_throw_std_bad_alloc@@YAXXZ 0000000180034080 f   LIBCMTD:throw_bad_alloc.obj
  0001:000330b0       ?__scrt_throw_std_bad_array_new_length@@YAXXZ 00000001800340b0 f   LIBCMTD:throw_bad_alloc.obj
  0001:000330e0       ?what@exception@std@@UEBAPEBDXZ 00000001800340e0 f i LIBCMTD:throw_bad_alloc.obj
@@ -1625,8 +1625,8 @@
  0001:00034130       _set_purecall_handler      0000000180035130 f   libvcruntimed:purevirt.obj
  0001:00034160       memcmp                     0000000180035160 f   libvcruntimed:memcmp.obj
  0001:00034240       memcpy_repmovs             0000000180035240 f   libvcruntimed:memcpy.obj
- 0001:00034260       memmove                    0000000180035260 f   libvcruntimed:memcpy.obj
  0001:00034260       memcpy                     0000000180035260 f   libvcruntimed:memcpy.obj
+ 0001:00034260       memmove                    0000000180035260 f   libvcruntimed:memcpy.obj
  0001:000348e0       wcsstr                     00000001800358e0 f   libvcruntimed:wcsstr.obj
  0001:00034f40       __vcrt_initialize          0000000180035f40 f   libvcruntimed:initialization.obj
  0001:00034f80       __vcrt_thread_attach       0000000180035f80 f   libvcruntimed:initialization.obj
@@ -15156,21 +15156,21 @@
  0002:000158c8       $SG195189                  00000001800fd8c8     GraphicDisplayImpl.obj
  0002:000158e0       $SG194937                  00000001800fd8e0     GraphicDisplayImpl.obj
  0002:00015960       $SG194965                  00000001800fd960     GraphicDisplayImpl.obj
- 0002:000159a8       $SG195132                  00000001800fd9a8     GraphicDisplayImpl.obj
- 0002:000159b8       $SG195164                  00000001800fd9b8     GraphicDisplayImpl.obj
- 0002:000159e8       $SG195194                  00000001800fd9e8     GraphicDisplayImpl.obj
- 0002:00015a00       $SG194975                  00000001800fda00     GraphicDisplayImpl.obj
- 0002:00015a48       $SG194991                  00000001800fda48     GraphicDisplayImpl.obj
- 0002:00015a58       $SG194997                  00000001800fda58     GraphicDisplayImpl.obj
- 0002:00015a68       $SG195011                  00000001800fda68     GraphicDisplayImpl.obj
- 0002:00015a78       $SG195076                  00000001800fda78     GraphicDisplayImpl.obj
- 0002:00015a88       $SG195092                  00000001800fda88     GraphicDisplayImpl.obj
- 0002:00015a98       $SG195115                  00000001800fda98     GraphicDisplayImpl.obj
- 0002:00015aa8       $SG195121                  00000001800fdaa8     GraphicDisplayImpl.obj
- 0002:00015ab8       $SG195127                  00000001800fdab8     GraphicDisplayImpl.obj
- 0002:00015ac8       $SG195140                  00000001800fdac8     GraphicDisplayImpl.obj
- 0002:00015b08       $SG195143                  00000001800fdb08     GraphicDisplayImpl.obj
- 0002:00015b18       $SG195144                  00000001800fdb18     GraphicDisplayImpl.obj
+ 0002:000159a8       $SG195127                  00000001800fd9a8     GraphicDisplayImpl.obj
+ 0002:000159b8       $SG195194                  00000001800fd9b8     GraphicDisplayImpl.obj
+ 0002:000159d0       $SG194975                  00000001800fd9d0     GraphicDisplayImpl.obj
+ 0002:00015a18       $SG194991                  00000001800fda18     GraphicDisplayImpl.obj
+ 0002:00015a28       $SG194997                  00000001800fda28     GraphicDisplayImpl.obj
+ 0002:00015a38       $SG195011                  00000001800fda38     GraphicDisplayImpl.obj
+ 0002:00015a48       $SG195076                  00000001800fda48     GraphicDisplayImpl.obj
+ 0002:00015a58       $SG195092                  00000001800fda58     GraphicDisplayImpl.obj
+ 0002:00015a68       $SG195115                  00000001800fda68     GraphicDisplayImpl.obj
+ 0002:00015a78       $SG195121                  00000001800fda78     GraphicDisplayImpl.obj
+ 0002:00015a88       $SG195132                  00000001800fda88     GraphicDisplayImpl.obj
+ 0002:00015a98       $SG195140                  00000001800fda98     GraphicDisplayImpl.obj
+ 0002:00015ad8       $SG195143                  00000001800fdad8     GraphicDisplayImpl.obj
+ 0002:00015ae8       $SG195144                  00000001800fdae8     GraphicDisplayImpl.obj
+ 0002:00015af8       $SG195164                  00000001800fdaf8     GraphicDisplayImpl.obj
  0002:00015b28       $SG195199                  00000001800fdb28     GraphicDisplayImpl.obj
  0002:00015b40       $SG195155                  00000001800fdb40     GraphicDisplayImpl.obj
  0002:00015b88       $SG195156                  00000001800fdb88     GraphicDisplayImpl.obj
@@ -16836,7 +16836,7 @@
  0002:000400e8       $unwind$?LoadURL@COPOSGraphicDisplay@@UEAAJPEA_WPEAJ@Z 00000001801280e8     GraphicDisplayImpl.obj
  0002:000400f4       $unwind$?PlayVideo@COPOSGraphicDisplay@@UEAAJPEA_WFPEAJ@Z 00000001801280f4     GraphicDisplayImpl.obj
  0002:00040100       $unwind$?StopVideo@COPOSGraphicDisplay@@UEAAJPEAJ@Z 0000000180128100     GraphicDisplayImpl.obj
- 0002:00040108       $unwind$?UpdatePage@COPOSGraphicDisplay@@UEAAJPEAJ@Z 0000000180128108     GraphicDisplayImpl.obj
+ 0002:00040108       $unwind$?UpdateURLPage@COPOSGraphicDisplay@@UEAAJPEAJ@Z 0000000180128108     GraphicDisplayImpl.obj
  0002:00040110       $unwind$?SetRC@COPOSGraphicDisplay@@IEAAJJ@Z 0000000180128110     GraphicDisplayImpl.obj
  0002:00040118       $unwind$?EventInit@COPOSGraphicDisplay@@IEAAJXZ 0000000180128118     GraphicDisplayImpl.obj
  0002:00040124       $unwind$?EventOpen@COPOSGraphicDisplay@@IEAAXXZ 0000000180128124     GraphicDisplayImpl.obj
@@ -20096,5 +20096,5 @@
  0006:00000c68       $R000A48                   0000000180144c68     GraphicDisplay.res
  0006:00000ed0       $R000CB0                   0000000180144ed0     GraphicDisplay.res
  0006:000013b0       $R001190                   00000001801453b0     GraphicDisplay.res
- 0006:000043b8       $R004198                   00000001801483b8     GraphicDisplay.res
- 0006:000043f8       $R0041D8                   00000001801483f8     GraphicDisplay.res
+ 0006:000043c0       $R0041A0                   00000001801483c0     GraphicDisplay.res
+ 0006:00004400       $R0041E0                   0000000180148400     GraphicDisplay.res

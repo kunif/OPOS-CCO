@@ -126,8 +126,8 @@ static char* s_SOMethodNames[SO_DISP_COUNT + 1] =
         #define nDIPlayVideo 22
     "StopVideo",
         #define nDIStopVideo 23
-    "UpdatePage",
-        #define nDIUpdatePage 24
+    "UpdateURLPage",
+        #define nDIUpdateURLPage 24
     0
 };
 
@@ -1341,10 +1341,10 @@ STDMETHODIMP COPOSGraphicDisplay::StopVideo(
 
 //===========================================================================
 
-STDMETHODIMP COPOSGraphicDisplay::UpdatePage( 
+STDMETHODIMP COPOSGraphicDisplay::UpdateURLPage( 
     /*[out, retval]*/ long* pRC )
 {
-    return DoInvoke( DEBUGPARAM("UpdatePage") S_OK, NULL, 0, nDIUpdatePage, pRC );
+    return DoInvoke( DEBUGPARAM("UpdateURLPage") S_OK, NULL, 0, nDIUpdateURLPage, pRC );
 }
 
 //===========================================================================

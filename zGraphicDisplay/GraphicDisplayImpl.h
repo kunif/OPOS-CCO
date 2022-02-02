@@ -398,7 +398,7 @@ public:
         /*[out, retval]*/ long* pRC );
     STDMETHOD(StopVideo)( 
         /*[out, retval]*/ long* pRC );
-    STDMETHOD(UpdatePage)( 
+    STDMETHOD(UpdateURLPage)( 
         /*[out, retval]*/ long* pRC );
 };
 

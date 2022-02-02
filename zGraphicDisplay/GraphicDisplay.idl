@@ -236,8 +236,8 @@ import "ocidl.idl";
         [id(106), helpstring("method StopVideo")]
         HRESULT StopVideo( 
             [out, retval] long* pRC );
-        [id(107), helpstring("method UpdatePage")]
-        HRESULT UpdatePage( 
+        [id(107), helpstring("method UpdateURLPage")]
+        HRESULT UpdateURLPage( 
             [out, retval] long* pRC );
     };
 

@@ -6,7 +6,7 @@
 //
 // Modification history
 // ------------------------------------------------------------------
-// 2021-12-02 OPOS Release 1.16                                  KF
+// 2022-02-18 OPOS Release 1.16                                  KF
 //
 /////////////////////////////////////////////////////////////////////
 
@@ -36,6 +36,13 @@ const LONG SPLY_ST_HOST_HARDTOTALS      = 3;
 
 const LONG SPLY_SUE_START_PLAY_SOUND          =11;
 const LONG SPLY_SUE_STOP_PLAY_SOUND           =12;
+
+
+/////////////////////////////////////////////////////////////////////
+// "ResultCodeExtended" Property Constants
+/////////////////////////////////////////////////////////////////////
+
+const LONG OPOS_ESPLY_NOROOM        = 201;
 
 
 #endif                  // !defined(OPOSSPLY_H)

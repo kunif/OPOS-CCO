@@ -12,5 +12,6 @@ enum
     SPLY_ST_HARDTOTALS                        = 2,
     SPLY_ST_HOST_HARDTOTALS                   = 3,
     SPLY_SUE_START_PLAY_SOUND                 = 11,
-    SPLY_SUE_STOP_PLAY_SOUND                  = 12
+    SPLY_SUE_STOP_PLAY_SOUND                  = 12,
+    OPOS_ESPLY_NOROOM                         = 201
 } OPOSSoundPlayerConstants;

@@ -1,6 +1,6 @@
                      OPOS Common Control Objects
-                               1.16.000 (Beta7)
-                      Updated February 2, 2022
+                               1.16.000 (Beta8)
+                      Updated February 18, 2022
 
 Contents of this file:
  * Features
@@ -87,6 +87,10 @@ This key's permissions must allow at least read access.
 ====================================================================
     Update History
 ====================================================================
+
+1.16.000 (Beta8) - February 18, 2022
+
+ * Add SoundPlayer ErrorEvent constant to OposSply.h, Opos_Constants.dll.
 
 1.16.000 (Beta7) - February 2, 2022
 
